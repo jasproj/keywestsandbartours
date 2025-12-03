@@ -99,7 +99,7 @@
             z-index: 2;
             text-align: center;
             max-width: 1200px;
-            padding: 0 2rem;
+            padding: 2rem 1rem;
         }
 
         .hero h1 {
@@ -542,6 +542,43 @@
             text-align: center;
         }
 
+        .subscribe-form {
+            display: flex;
+            gap: 1rem;
+            max-width: 600px;
+            margin: 0 auto;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .subscribe-input {
+            flex: 1;
+            min-width: 250px;
+            padding: 1.2rem 1.5rem;
+            background: rgba(247,247,255,0.1);
+            border: 2px solid var(--secondary);
+            border-radius: 50px;
+            color: var(--light);
+            font-size: 1rem;
+            font-family: 'Outfit', sans-serif;
+            transition: all 0.3s ease;
+        }
+
+        .subscribe-input:focus {
+            outline: none;
+            background: rgba(247,247,255,0.15);
+            border-color: var(--accent);
+        }
+
+        .subscribe-input::placeholder {
+            color: rgba(247,247,255,0.5);
+        }
+
+        .subscribe-form .cta-primary {
+            flex: 0 0 auto;
+            min-width: 200px;
+        }
+
         footer {
             background: rgba(10,17,40,0.9);
             padding: 3rem 2rem;
@@ -620,14 +657,46 @@
             }
             
             .trust-bar {
-                gap: 2rem;
+                gap: 1.5rem;
+                margin-top: 2rem;
             }
 
-            .floating-cta {
-                bottom: 1rem;
-                right: 1rem;
-                padding: 1rem 2rem;
-                font-size: 0.9rem;
+            .trust-item {
+                padding: 1rem 1.5rem;
+            }
+
+            .trust-number {
+                font-size: 2.5rem;
+            }
+
+            .trust-label {
+                font-size: 0.8rem;
+            }
+
+            .subscribe-form {
+                flex-direction: column;
+            }
+
+            .subscribe-input,
+            .subscribe-form .cta-primary {
+                width: 100%;
+                min-width: 100%;
+            }
+
+            .hero h1 {
+                font-size: clamp(2.5rem, 12vw, 6rem);
+            }
+
+            .hero-subtitle {
+                font-size: clamp(1rem, 4vw, 1.5rem);
+            }
+
+            .featured-info h3 {
+                font-size: 2.5rem;
+            }
+
+            .tour-card h3 {
+                font-size: 2rem;
             }
 
             .booking-notification {
@@ -661,7 +730,6 @@
         <div class="hero-content">
             <h1>PARADISE<br>AWAITS</h1>
             <p class="hero-subtitle">Crystal Waters • Epic Adventures • Native Captains</p>
-            <a href="#tours" class="cta-primary">Book Your Adventure</a>
             <div class="trust-bar">
                 <div class="trust-item">
                     <div class="trust-number">892+</div>
@@ -672,8 +740,8 @@
                     <div class="trust-label">Adventures This Year</div>
                 </div>
                 <div class="trust-item">
-                    <div class="trust-number">15+</div>
-                    <div class="trust-label">Years Experience</div>
+                    <div class="trust-number">100%</div>
+                    <div class="trust-label">Native Captains</div>
                 </div>
             </div>
         </div>
@@ -932,14 +1000,23 @@
         </div>
     </section>
 
-    <!-- Contact Section -->
+    <!-- Email Subscribe Section -->
     <section class="contact-section" id="contact">
         <div class="container">
-            <h2 class="section-title">Ready to Book Your Adventure?</h2>
-            <p style="font-size: 1.3rem; margin-bottom: 2rem; max-width: 700px; margin-left: auto; margin-right: auto;">
-                Click any "Book Now" button above to check real-time availability and reserve your spot instantly through our secure booking system.
+            <h2 class="section-title">Never Miss a Deal</h2>
+            <p style="font-size: 1.3rem; margin-bottom: 1rem; max-width: 700px; margin-left: auto; margin-right: auto;">
+                Get exclusive access to <strong>last-minute availability</strong> and special pricing
             </p>
-            <a href="#tours" class="cta-primary">View All Tours</a>
+            <p style="font-size: 1.1rem; margin-bottom: 2.5rem; max-width: 600px; margin-left: auto; margin-right: auto; color: var(--secondary);">
+                Subscribers get first dibs on cancellations and weather-perfect days
+            </p>
+            <form class="subscribe-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                <input type="email" name="email" placeholder="Enter your email" required class="subscribe-input">
+                <button type="submit" class="cta-primary">Get Last-Minute Deals</button>
+            </form>
+            <p style="font-size: 0.85rem; margin-top: 1.5rem; opacity: 0.7;">
+                We respect your privacy. Unsubscribe anytime. No spam, just exclusive deals.
+            </p>
         </div>
     </section>
 
@@ -947,7 +1024,7 @@
         <p style="font-size: 1.1rem; margin-bottom: 1rem;">&copy; 2024 Walk The Plank Adventures LLC</p>
         <p style="color: var(--secondary); margin-bottom: 1.5rem;">Key West, Florida | Licensed & Insured • USCG Certified</p>
         <div class="footer-links">
-            <a href="mailto:info@walktheplankadventures.com">Email Us</a>
+            <a href="/cdn-cgi/l/email-protection#f39a9d959cb384929f98879b96839f929d98929785969d8786819680dd909c9e">Email Us</a>
             <a href="https://youtube.com/@walktheplankadventures" target="_blank">YouTube</a>
             <a href="#tours">Book a Tour</a>
         </div>
@@ -956,13 +1033,11 @@
         </p>
     </footer>
 
-    <a href="#tours" class="floating-cta">Book Now</a>
-
     <div class="booking-notification">
         <strong>Jennifer from Boston</strong> just booked a sandbar tour! 🎉
     </div>
 
-    <script>
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
         // Smooth scrolling
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
@@ -988,9 +1063,4 @@
 
         setInterval(() => {
             currentNotification = (currentNotification + 1) % notifications.length;
-            const notif = notifications[currentNotification];
-            notificationEl.innerHTML = `<strong>${notif.name}</strong> just booked a ${notif.tour}! 🎉`;
-        }, 5000);
-    </script>
-</body>
-</html>
+            const notif = notifications[currentNotifica
