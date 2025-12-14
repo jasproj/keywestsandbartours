@@ -123,12 +123,26 @@ ul, ol { list-style: none; }
 }
 
 .logo-tagline {
-    font-size: 0.7rem;
+    font-size: 0.75rem;
     font-weight: 500;
     color: var(--gray-500);
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    padding-left: 2.25rem;
+    letter-spacing: 0.02em;
+}
+
+/* Logo Text Styling */
+.logo-text {
+    color: var(--logo-text);
+    letter-spacing: -0.02em;
+    font-weight: 700;
+    font-size: 1.25rem;
+}
+
+.footer .logo-text {
+    color: var(--white);
+}
+
+.footer .logo-tagline {
+    color: var(--ocean-light);
 }
 
 /* Header Weather Widget */
@@ -313,16 +327,11 @@ ul, ol { list-style: none; }
 
 .hero-logo {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: var(--space-md);
+    gap: var(--space-sm);
     margin-bottom: var(--space-lg);
-}
-
-.hero-logo-flower {
-    font-size: 3.5rem;
-    line-height: 1;
-    filter: drop-shadow(0 4px 8px rgba(0,0,0,0.3));
 }
 
 .hero-logo-text {
@@ -331,6 +340,16 @@ ul, ol { list-style: none; }
     font-weight: 700;
     letter-spacing: -0.02em;
     text-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    color: var(--white);
+}
+
+.hero-logo-tagline {
+    font-family: var(--font-body);
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: var(--ocean-light);
+    letter-spacing: 0.02em;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.3);
 }
 
 .hero-subtitle {
