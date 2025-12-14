@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Key West Sandbar Tours | Best Florida Keys Tours & Adventures | Book Direct</title>
+    <meta name="description" content="Discover the best Key West tours & Florida Keys adventures. Sandbar trips, snorkeling, sunset cruises, dolphin tours & more. Book direct with local operators.">
+    <meta name="keywords" content="Key West tours, Florida Keys activities, sandbar tours, Key West snorkeling, sunset cruises, dolphin tours, Key West boat tours">
+    <link rel="canonical" href="https://keywestsandbartours.com/">
+    
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://keywestsandbartours.com/">
+    <meta property="og:title" content="Key West Sandbar Tours | Best Florida Keys Adventures">
+    <meta property="og:description" content="Discover the best Key West tours & Florida Keys adventures. Book direct with local operators.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1580799516449-b56c21b6eb72?w=1200">
+    
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌴</text></svg>">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles.css">
+    
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "TravelAgency",
+        "name": "Key West Sandbar Tours",
+        "description": "Florida Keys' premier tour discovery platform featuring the best Key West adventures and activities.",
+        "url": "https://keywestsandbartours.com",
+        "areaServed": {"@type": "Place", "name": "Florida Keys, United States"}
+    }
+    </script>
+</head>
+<body>
+    <!-- HEADER -->
+    <header class="header">
+        <div class="header-container">
+            <div class="logo-group">
+                <a href="/" class="logo">
+                    <span class="logo-flower">🌴</span>
+                    <span class="logo-text">Sandbar Tours</span>
+                </a>
+                <span class="logo-tagline">Key West Tour Discovery</span>
+            </div>
+            <div class="header-weather" id="header-weather">
+                <span class="weather-icon">☀️</span>
+                <span class="weather-temp">--°F</span>
+                <span class="weather-location">Key West</span>
+            </div>
+            <nav class="nav-desktop">
+                <a href="#tours-section">Tours</a>
+                <a href="#areas">Areas</a>
+                <a href="about.html">About</a>
+                <a href="#faq">FAQs</a>
+            </nav>
+            <button class="mobile-menu-btn" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+        <nav class="nav-mobile">
+            <a href="#tours-section">Tours</a>
+            <a href="#areas">Areas</a>
+            <a href="about.html">About</a>
+            <a href="#faq">FAQs</a>
+        </nav>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="hero-bg">
+            <div class="hero-slide"></div>
+            <div class="hero-slide"></div>
+            <div class="hero-slide"></div>
+            <div class="hero-slide"></div>
+        </div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <p class="hero-tagline">Paradise Starts Here</p>
+            <div class="hero-logo">
+                <span class="hero-logo-flower">🌴</span>
+                <span class="hero-logo-text">Sandbar Tours</span>
+            </div>
+            <p class="hero-subtitle">476 tours from verified local operators in Key West & Stock Island.<br>Book direct with local captains. Support local businesses.</p>
+            
+            <div class="hero-search">
+                <div class="search-input-wrap">
+                    <span class="search-icon">🔍</span>
+                    <input type="text" id="hero-search" placeholder="Search sandbar, snorkeling, sunset cruises..." autocomplete="off">
+                </div>
+                <button class="search-btn" onclick="executeHeroSearch()">Find Tours</button>
+            </div>
+            
+            <!-- Scrolling Category Tags -->
+            <div class="quick-tags-wrapper">
+                <div class="quick-tags">
+                    <button onclick="quickFilter('sandbar')">🏝️ Sandbar Trips</button>
+                    <button onclick="quickFilter('snorkel')">🤿 Snorkeling</button>
+                    <button onclick="quickFilter('sunset')">🌅 Sunset Cruises</button>
+                    <button onclick="quickFilter('dolphin')">🐬 Dolphins</button>
+                    <button onclick="quickFilter('boat')">🚤 Boat Tours</button>
+                    <button onclick="quickFilter('kayak')">🚣 Kayaking</button>
+                    <button onclick="quickFilter('jet')">🚀 Jet Skis</button>
+                    <button onclick="quickFilter('fishing')">🎣 Fishing</button>
+                    <button onclick="quickFilter('parasail')">🪂 Parasailing</button>
+                    <button onclick="quickFilter('sail')">⛵ Sailing</button>
+                    <button onclick="quickFilter('scuba')">🤿 Scuba Diving</button>
+                    <button onclick="quickFilter('food')">🍽️ Food Tours</button>
+                    <button onclick="quickFilter('eco')">🌿 Eco Tours</button>
+                    <button onclick="quickFilter('private')">✨ Private Charters</button>
+                    <button onclick="quickFilter('party')">🎉 Party Boats</button>
+                    <button onclick="quickFilter('history')">🏛️ History Tours</button>
+                    <!-- Duplicate for seamless loop -->
+                    <button onclick="quickFilter('sandbar')">🏝️ Sandbar Trips</button>
+                    <button onclick="quickFilter('snorkel')">🤿 Snorkeling</button>
+                    <button onclick="quickFilter('sunset')">🌅 Sunset Cruises</button>
+                    <button onclick="quickFilter('dolphin')">🐬 Dolphins</button>
+                    <button onclick="quickFilter('boat')">🚤 Boat Tours</button>
+                    <button onclick="quickFilter('kayak')">🚣 Kayaking</button>
+                    <button onclick="quickFilter('jet')">🚀 Jet Skis</button>
+                    <button onclick="quickFilter('fishing')">🎣 Fishing</button>
+                    <button onclick="quickFilter('parasail')">🪂 Parasailing</button>
+                    <button onclick="quickFilter('sail')">⛵ Sailing</button>
+                    <button onclick="quickFilter('scuba')">🤿 Scuba Diving</button>
+                    <button onclick="quickFilter('food')">🍽️ Food Tours</button>
+                    <button onclick="quickFilter('eco')">🌿 Eco Tours</button>
+                    <button onclick="quickFilter('private')">✨ Private Charters</button>
+                    <button onclick="quickFilter('party')">🎉 Party Boats</button>
+                    <button onclick="quickFilter('history')">🏛️ History Tours</button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="trust-bar">
+            <div class="trust-item">
+                <span class="trust-number" id="tour-count">476</span>
+                <span class="trust-label">Local Tours</span>
+            </div>
+            <div class="trust-divider"></div>
+            <div class="trust-item">
+                <span class="trust-number">2</span>
+                <span class="trust-label">Keys Areas</span>
+            </div>
+            <div class="trust-divider"></div>
+            <div class="trust-item">
+                <span class="trust-number">100%</span>
+                <span class="trust-label">Local Operators</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- AREAS -->
+    <section class="islands-nav" id="areas">
+        <div class="container">
+            <h2 class="section-title">Explore the Florida Keys</h2>
+            <p class="section-subtitle">Discover tours from Key West and the surrounding islands.</p>
+            
+            <div class="islands-grid" style="grid-template-columns: repeat(2, 1fr); max-width: 800px; margin: 0 auto;">
+                <a href="key-west.html" class="island-card">
+                    <div class="island-img" style="background-image: url('https://images.unsplash.com/photo-1580799516449-b56c21b6eb72?w=600')"></div>
+                    <div class="island-content">
+                        <h3>Key West</h3>
+                        <p>Duval Street • Mallory Square • Southernmost Point</p>
+                        <span class="island-count">401 Adventures</span>
+                    </div>
+                </a>
+                
+                <a href="stock-island.html" class="island-card">
+                    <div class="island-img" style="background-image: url('https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=600')"></div>
+                    <div class="island-content">
+                        <h3>Stock Island</h3>
+                        <p>Working Waterfront • Local Charters • Hidden Gem</p>
+                        <span class="island-count">72 Adventures</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- TOURS -->
+    <section class="tours-section" id="tours-section">
+        <div class="tours-hero-banner">
+            <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=2400&q=90" alt="Crystal clear Florida Keys waters">
+            <div class="tours-hero-overlay"></div>
+            <div class="tours-hero-content">
+                <h2>Find Your Perfect Adventure</h2>
+                <p>Browse 476 tours from trusted local operators</p>
+            </div>
+        </div>
+        <div class="container">
+            
+            <div class="filters-bar">
+                <div class="filter-group">
+                    <label for="island-filter">Area</label>
+                    <select id="island-filter">
+                        <option value="">All Areas</option>
+                        <option value="key west">Key West (401)</option>
+                        <option value="stock island">Stock Island (72)</option>
+                        <option value="lower keys">Lower Keys (3)</option>
+                    </select>
+                </div>
+                
+                <div class="filter-group">
+                    <label for="activity-filter">Activity</label>
+                    <select id="activity-filter">
+                        <option value="">All Activities</option>
+                        <option value="Sandbar">🏝️ Sandbar Trips</option>
+                        <option value="Snorkel">🤿 Snorkeling</option>
+                        <option value="Sunset">🌅 Sunset Cruises</option>
+                        <option value="Dolphin">🐬 Dolphins</option>
+                        <option value="Boat Tour">🚤 Boat Tours</option>
+                        <option value="Kayak">🚣 Kayaking</option>
+                        <option value="Jet Ski">🚀 Jet Skis</option>
+                        <option value="Fishing">🎣 Fishing</option>
+                        <option value="Parasail">🪂 Parasailing</option>
+                        <option value="Sailing">⛵ Sailing</option>
+                        <option value="Scuba">🤿 Scuba Diving</option>
+                        <option value="Food Tour">🍽️ Food Tours</option>
+                        <option value="Eco Tour">🌿 Eco Tours</option>
+                        <option value="Private">✨ Private Charters</option>
+                    </select>
+                </div>
+                
+                <div class="filter-group">
+                    <label for="sort-filter">Sort By</label>
+                    <select id="sort-filter">
+                        <option value="quality">Top Rated</option>
+                        <option value="name">Name A-Z</option>
+                    </select>
+                </div>
+                
+                <div class="search-inline">
+                    <input type="text" id="search-input" placeholder="Search tours...">
+                </div>
+                
+                <button class="clear-filters" onclick="clearAllFilters()">Clear All</button>
+            </div>
+            
+            <div class="results-info">
+                <span id="results-count">Loading adventures...</span>
+                <button class="shuffle-btn" onclick="shuffleTours()">🎲 Shuffle</button>
+            </div>
+            
+            <div class="tours-grid" id="tours-grid">
+                <div class="loading-state">
+                    <div class="loading-spinner"></div>
+                    <p>Loading adventures...</p>
+                </div>
+            </div>
+            
+            <div class="load-more-wrap">
+                <button class="load-more-btn" id="load-more" onclick="loadMoreTours()">
+                    Load More Adventures <span>→</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- WHY US -->
+    <section class="why-section" id="why">
+        <div class="container">
+            <h2 class="section-title">Why Book With Sandbar Tours?</h2>
+            <p class="section-subtitle">We connect you directly with the Keys' best local tour operators.</p>
+            
+            <div class="why-grid">
+                <div class="why-card">
+                    <div class="why-icon">🏝️</div>
+                    <h3>Local Operators Only</h3>
+                    <p>Every tour is from a verified local operator. Real Keys businesses, real experiences, real paradise.</p>
+                </div>
+                
+                <div class="why-card">
+                    <div class="why-icon">💰</div>
+                    <h3>Book Direct</h3>
+                    <p>No middleman markup. Book directly with the tour operator at their prices.</p>
+                </div>
+                
+                <div class="why-card">
+                    <div class="why-icon">🐬</div>
+                    <h3>Support Local</h3>
+                    <p>Your booking supports Florida Keys families and small businesses.</p>
+                </div>
+                
+                <div class="why-card">
+                    <div class="why-icon">📱</div>
+                    <h3>Instant Confirmation</h3>
+                    <p>Real-time availability. Book now, get confirmed instantly.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- EMAIL -->
+    <section class="signup-section">
+        <div class="container">
+            <div class="signup-box">
+                <div class="signup-content">
+                    <h2>🌴 Get Insider Keys Tips</h2>
+                    <p>Join travelers getting exclusive deals and local secrets.</p>
+                </div>
+                <form class="signup-form" id="email-form">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit">Get the Guide</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq-section" id="faq">
+        <div class="container">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            
+            <div class="faq-grid">
+                <details class="faq-item">
+                    <summary>What are the best things to do in Key West?</summary>
+                    <div class="faq-answer">
+                        <p>Top activities include sandbar trips with crystal-clear waters, snorkeling at the only living coral reef in North America, sunset cruises at Mallory Square, dolphin watching, parasailing, fishing charters, and exploring Duval Street. We feature the best local tours across all categories.</p>
+                    </div>
+                </details>
+                
+                <details class="faq-item">
+                    <summary>What is a sandbar tour?</summary>
+                    <div class="faq-answer">
+                        <p>Sandbar tours take you to shallow sandbars in the backcountry where you can wade in crystal-clear, waist-deep water, relax, swim, and enjoy the stunning Keys scenery. Many tours include snorkeling stops, drinks, and snacks. It's one of the most popular Key West experiences!</p>
+                    </div>
+                </details>
+                
+                <details class="faq-item">
+                    <summary>How do I book tours through Sandbar Tours?</summary>
+                    <div class="faq-answer">
+                        <p>Browse tours, filter by area or activity, and click "Book Now." You'll be connected directly with the tour operator's booking system. Most offer free cancellation 24-48 hours before your activity.</p>
+                    </div>
+                </details>
+                
+                <details class="faq-item">
+                    <summary>What's the best time to visit Key West?</summary>
+                    <div class="faq-answer">
+                        <p>Key West is beautiful year-round! <strong>Winter (Dec–Mar)</strong> has perfect weather and is peak season. <strong>Spring (Apr–May)</strong> offers fewer crowds and great conditions. <strong>Summer & Fall</strong> are warmer with occasional afternoon showers and the best deals.</p>
+                    </div>
+                </details>
+                
+                <details class="faq-item">
+                    <summary>What should I bring on a boat tour?</summary>
+                    <div class="faq-answer">
+                        <p>Essentials include: sunscreen (reef-safe preferred), sunglasses, hat, swimsuit, towel, and water. Most boats provide snorkel gear. Consider bringing a waterproof phone case and motion sickness prevention if you're prone to seasickness.</p>
+                    </div>
+                </details>
+                
+                <details class="faq-item">
+                    <summary>Are your prices better than Viator or Expedia?</summary>
+                    <div class="faq-answer">
+                        <p>We connect you directly with local tour operators through their booking systems, so you get their direct prices. More of your money stays in the Florida Keys' local economy.</p>
+                    </div>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="/" class="logo">
+                        <span class="logo-flower">🌴</span>
+                        <span class="logo-text">Sandbar Tours</span>
+                    </a>
+                    <p>Your guide to the best Florida Keys adventures. Verified local operators, instant booking.</p>
+                    <p class="footer-tagline">See you in paradise! 🌴</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Areas</h4>
+                    <ul>
+                        <li><a href="key-west.html">Key West (401)</a></li>
+                        <li><a href="stock-island.html">Stock Island (72)</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Popular</h4>
+                    <ul>
+                        <li><a href="#" onclick="quickFilter('sandbar'); return false;">Sandbar Trips</a></li>
+                        <li><a href="#" onclick="quickFilter('snorkel'); return false;">Snorkeling</a></li>
+                        <li><a href="#" onclick="quickFilter('sunset'); return false;">Sunset Cruises</a></li>
+                        <li><a href="#" onclick="quickFilter('dolphin'); return false;">Dolphin Tours</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="#faq">FAQs</a></li>
+                        <li><a href="mailto:hello@keywestsandbartours.com">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Key West Sandbar Tours. All rights reserved.</p>
+                <p class="affiliate-disclosure">We may earn a commission when you book through our links. This helps support our site at no cost to you.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- MOBILE CTA -->
+    <div class="mobile-cta" id="mobile-cta">
+        <a href="#tours-section" class="mobile-cta-btn">
+            <span>🌴</span> Find Your Adventure
+        </a>
+    </div>
+
+    <!-- FOMO -->
+    <div class="notification" id="notification">
+        <div class="notification-content">
+            <span class="notification-icon">🎉</span>
+            <div class="notification-text">
+                <strong id="notification-name">Sarah from Miami</strong>
+                <span id="notification-action">just booked a sandbar tour!</span>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

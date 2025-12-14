@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>stock island Tours & Activities | Sandbar Tours</title>
+    <meta name="description" content="Discover the best stock island tours and activities. Sandbar trips, snorkeling, sunset cruises, dolphin tours, fishing charters and more. Book direct with local operators.">
+    <link rel="canonical" href="https://keywestsandbartours.com/stock-island.html">
+    
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="stock island Tours & Activities | Sandbar Tours">
+    <meta property="og:description" content="The best stock island tours and adventures. Book direct with local operators.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1580799516449-b56c21b6eb72?w=1200">
+    
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌴</text></svg>">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .location-hero {
+            position: relative;
+            min-height: 60vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: var(--white);
+            padding-top: 80px;
+        }
+        
+        .location-hero-bg {
+            position: absolute;
+            inset: 0;
+            background: url('https://images.unsplash.com/photo-1580799516449-b56c21b6eb72?auto=format&fit=crop&w=2400&q=90') center/cover;
+            z-index: -2;
+        }
+        
+        .location-hero-overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to bottom, rgba(11, 85, 99, 0.6), rgba(11, 85, 99, 0.8));
+            z-index: -1;
+        }
+        
+        .location-hero-content h1 {
+            font-family: var(--font-display);
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: var(--space-md);
+            text-shadow: 0 4px 12px rgba(0,0,0,0.3);
+        }
+        
+        .location-hero-content p {
+            font-size: 1.25rem;
+            opacity: 0.95;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .location-highlights {
+            padding: var(--space-3xl) 0;
+            background: var(--off-white);
+        }
+        
+        .highlights-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: var(--space-2xl);
+            align-items: center;
+        }
+        
+        .highlights-image {
+            border-radius: var(--radius-xl);
+            overflow: hidden;
+            box-shadow: var(--shadow-xl);
+        }
+        
+        .highlights-image img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+        }
+        
+        .highlights-content h2 {
+            font-family: var(--font-display);
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--gray-900);
+            margin-bottom: var(--space-lg);
+        }
+        
+        .highlights-content p {
+            color: var(--gray-700);
+            line-height: 1.8;
+            margin-bottom: var(--space-lg);
+        }
+        
+        .highlight-list {
+            display: flex;
+            flex-direction: column;
+            gap: var(--space-sm);
+        }
+        
+        .highlight-item {
+            display: flex;
+            align-items: center;
+            gap: var(--space-sm);
+            color: var(--gray-700);
+        }
+        
+        .highlight-item span {
+            font-size: 1.25rem;
+        }
+        
+        @media (max-width: 768px) {
+            .location-hero-content h1 {
+                font-size: 2.5rem;
+            }
+            
+            .highlights-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .highlights-image {
+                order: -1;
+            }
+            
+            .highlights-image img {
+                height: 280px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- HEADER -->
+    <header class="header">
+        <div class="header-container">
+            <div class="logo-group">
+                <a href="/" class="logo">
+                    <span class="logo-flower">🌴</span>
+                    <span class="logo-text">Sandbar Tours</span>
+                </a>
+                <span class="logo-tagline">stock island Tour Discovery</span>
+            </div>
+            <nav class="nav-desktop">
+                <a href="/#tours-section">Tours</a>
+                <a href="/#areas">Areas</a>
+                <a href="about.html">About</a>
+                <a href="/#faq">FAQs</a>
+            </nav>
+            <button class="mobile-menu-btn" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+        <nav class="nav-mobile">
+            <a href="/#tours-section">Tours</a>
+            <a href="/#areas">Areas</a>
+            <a href="about.html">About</a>
+            <a href="/#faq">FAQs</a>
+        </nav>
+    </header>
+
+    <!-- LOCATION HERO -->
+    <section class="location-hero">
+        <div class="location-hero-bg"></div>
+        <div class="location-hero-overlay"></div>
+        <div class="location-hero-content">
+            <h1>🌴 stock island</h1>
+            <p>The working waterfront of the Keys. Explore the best tours and adventures in the heart of the Florida Keys.</p>
+        </div>
+    </section>
+
+    <!-- HIGHLIGHTS -->
+    <section class="location-highlights">
+        <div class="container">
+            <div class="highlights-grid">
+                <div class="highlights-content">
+                    <h2>Why Visit stock island?</h2>
+                    <p>stock island is where tropical relaxation meets endless adventure. From world-class snorkeling on North America's only living coral barrier reef to legendary sunset celebrations at Mallory Square, this island paradise offers something for everyone.</p>
+                    <p>Whether you're seeking thrilling water sports, romantic sunset sails, or a taste of the island's rich history and quirky culture, stock island delivers unforgettable experiences.</p>
+                    
+                    <div class="highlight-list">
+                        <div class="highlight-item">
+                            <span>🏝️</span>
+                            <p>Crystal-clear sandbar trips in the backcountry</p>
+                        </div>
+                        <div class="highlight-item">
+                            <span>🤿</span>
+                            <p>Snorkeling the only living coral reef in North America</p>
+                        </div>
+                        <div class="highlight-item">
+                            <span>🌅</span>
+                            <p>World-famous Mallory Square sunset celebrations</p>
+                        </div>
+                        <div class="highlight-item">
+                            <span>🐬</span>
+                            <p>Dolphin watching in pristine Gulf waters</p>
+                        </div>
+                        <div class="highlight-item">
+                            <span>🏛️</span>
+                            <p>Historic Old Town and Hemingway's legacy</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="highlights-image">
+                    <img src="https://images.unsplash.com/photo-1580799516449-b56c21b6eb72?w=800" alt="stock island harbor and waterfront">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TOURS -->
+    <section class="tours-section" id="tours-section">
+        <div class="container">
+            <h2 class="section-title">stock island Tours</h2>
+            <p class="section-subtitle">Explore adventures from local stock island operators</p>
+            
+            <div class="filters-bar">
+                <div class="filter-group">
+                    <label for="activity-filter">Activity</label>
+                    <select id="activity-filter">
+                        <option value="">All Activities</option>
+                        <option value="Sandbar">🏝️ Sandbar Trips</option>
+                        <option value="Snorkel">🤿 Snorkeling</option>
+                        <option value="Sunset">🌅 Sunset Cruises</option>
+                        <option value="Dolphin">🐬 Dolphins</option>
+                        <option value="Boat Tour">🚤 Boat Tours</option>
+                        <option value="Kayak">🚣 Kayaking</option>
+                        <option value="Jet Ski">🚀 Jet Skis</option>
+                        <option value="Fishing">🎣 Fishing</option>
+                        <option value="Parasail">🪂 Parasailing</option>
+                        <option value="Sailing">⛵ Sailing</option>
+                        <option value="Scuba">🤿 Scuba Diving</option>
+                        <option value="Private">✨ Private Charters</option>
+                    </select>
+                </div>
+                
+                <div class="filter-group">
+                    <label for="sort-filter">Sort By</label>
+                    <select id="sort-filter">
+                        <option value="quality">Top Rated</option>
+                        <option value="name">Name A-Z</option>
+                    </select>
+                </div>
+                
+                <div class="search-inline">
+                    <input type="text" id="search-input" placeholder="Search stock island tours...">
+                </div>
+                
+                <button class="clear-filters" onclick="clearAllFilters()">Clear All</button>
+            </div>
+            
+            <div class="results-info">
+                <span id="results-count">Loading adventures...</span>
+                <button class="shuffle-btn" onclick="shuffleTours()">🎲 Shuffle</button>
+            </div>
+            
+            <div class="tours-grid" id="tours-grid">
+                <div class="loading-state">
+                    <div class="loading-spinner"></div>
+                    <p>Loading adventures...</p>
+                </div>
+            </div>
+            
+            <div class="load-more-wrap">
+                <button class="load-more-btn" id="load-more" onclick="loadMoreTours()">
+                    Load More Adventures <span>→</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="/" class="logo">
+                        <span class="logo-flower">🌴</span>
+                        <span class="logo-text">Sandbar Tours</span>
+                    </a>
+                    <p>Your guide to the best Florida Keys adventures. Verified local operators, instant booking.</p>
+                    <p class="footer-tagline">See you in paradise! 🌴</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Areas</h4>
+                    <ul>
+                        <li><a href="stock-island.html">stock island</a></li>
+                        <li><a href="stock-island.html">Stock Island</a></li>
+                        <li><a href="marathon.html">Marathon</a></li>
+                        <li><a href="islamorada.html">Islamorada</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Popular</h4>
+                    <ul>
+                        <li><a href="/?search=sandbar">Sandbar Trips</a></li>
+                        <li><a href="/?search=snorkel">Snorkeling</a></li>
+                        <li><a href="/?search=sunset">Sunset Cruises</a></li>
+                        <li><a href="/?search=dolphin">Dolphin Tours</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="/#faq">FAQs</a></li>
+                        <li><a href="mailto:hello@keywestsandbartours.com">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 stock island Sandbar Tours. All rights reserved.</p>
+                <p class="affiliate-disclosure">We may earn a commission when you book through our links. This helps support our site at no cost to you.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Configuration for stock island page
+        const CONFIG = {
+            toursPerPage: 12,
+            locationFilter: 'stock island'
+        };
+        
+        let allTours = [];
+        let filteredTours = [];
+        let displayedCount = 0;
+        let currentFilters = {
+            activity: '',
+            search: '',
+            sort: 'quality'
+        };
+        
+        document.addEventListener('DOMContentLoaded', async () => {
+            await loadTours();
+            setupEventListeners();
+            initMobileMenu();
+            initStickyHeader();
+        });
+        
+        async function loadTours() {
+            try {
+                const response = await fetch('tours-data.json');
+                const data = await response.json();
+                
+                // Filter to stock island only
+                allTours = data.filter(tour => 
+                    tour.island.toLowerCase() === CONFIG.locationFilter
+                );
+                
+                // Shuffle
+                allTours = fisherYatesShuffle([...allTours]);
+                applyFilters();
+            } catch (error) {
+                console.error('Error loading tours:', error);
+                document.getElementById('tours-grid').innerHTML = `
+                    <div class="loading-state">
+                        <p>Unable to load tours. Please refresh the page.</p>
+                    </div>
+                `;
+            }
+        }
+        
+        function fisherYatesShuffle(array) {
+            for (let i = array.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [array[i], array[j]] = [array[j], array[i]];
+            }
+            return array;
+        }
+        
+        function applyFilters() {
+            filteredTours = allTours.filter(tour => {
+                if (currentFilters.activity && !tour.tags.some(tag => 
+                    tag.toLowerCase().includes(currentFilters.activity.toLowerCase())
+                )) {
+                    return false;
+                }
+                
+                if (currentFilters.search) {
+                    const searchableContent = `${tour.name} ${tour.company} ${tour.tags.join(' ')}`.toLowerCase();
+                    if (!searchableContent.includes(currentFilters.search.toLowerCase())) {
+                        return false;
+                    }
+                }
+                
+                return true;
+            });
+            
+            if (currentFilters.sort === 'quality') {
+                filteredTours.sort((a, b) => (b.qualityScore || 0) - (a.qualityScore || 0));
+            } else if (currentFilters.sort === 'name') {
+                filteredTours.sort((a, b) => a.name.localeCompare(b.name));
+            }
+            
+            displayedCount = 0;
+            renderTours(true);
+            updateResultsCount();
+        }
+        
+        function renderTours(reset = false) {
+            const grid = document.getElementById('tours-grid');
+            const loadMoreBtn = document.getElementById('load-more');
+            
+            if (reset) {
+                grid.innerHTML = '';
+                displayedCount = 0;
+            }
+            
+            const toShow = filteredTours.slice(displayedCount, displayedCount + CONFIG.toursPerPage);
+            
+            if (toShow.length === 0 && displayedCount === 0) {
+                grid.innerHTML = `
+                    <div class="loading-state">
+                        <p>No tours found. Try adjusting your filters.</p>
+                    </div>
+                `;
+                loadMoreBtn.classList.add('hidden');
+                return;
+            }
+            
+            toShow.forEach(tour => {
+                const card = createTourCard(tour);
+                grid.appendChild(card);
+            });
+            
+            displayedCount += toShow.length;
+            
+            if (displayedCount >= filteredTours.length) {
+                loadMoreBtn.classList.add('hidden');
+            } else {
+                loadMoreBtn.classList.remove('hidden');
+            }
+        }
+        
+        function createTourCard(tour) {
+            const card = document.createElement('div');
+            card.className = 'tour-card';
+            
+            const tagsHTML = tour.tags.slice(0, 3).map(tag => 
+                `<span class="tour-tag">${tag}</span>`
+            ).join('');
+            
+            card.innerHTML = `
+                <div class="tour-card-img">
+                    <img src="${tour.image}" alt="${tour.name}" loading="lazy">
+                    <span class="tour-location-badge">${tour.location}</span>
+                </div>
+                <div class="tour-card-content">
+                    <p class="tour-company">${tour.company}</p>
+                    <h3 class="tour-name">${tour.name}</h3>
+                    <div class="tour-tags">${tagsHTML}</div>
+                    <a href="${tour.bookingLink}" target="_blank" rel="noopener" class="tour-cta">Book Now →</a>
+                </div>
+            `;
+            
+            return card;
+        }
+        
+        function updateResultsCount() {
+            const countEl = document.getElementById('results-count');
+            if (filteredTours.length === 0) {
+                countEl.textContent = 'No tours found';
+            } else if (filteredTours.length === 1) {
+                countEl.textContent = '1 stock island adventure found';
+            } else {
+                countEl.textContent = `${filteredTours.length} stock island adventures found`;
+            }
+        }
+        
+        function setupEventListeners() {
+            const activityFilter = document.getElementById('activity-filter');
+            const sortFilter = document.getElementById('sort-filter');
+            const searchInput = document.getElementById('search-input');
+            
+            activityFilter?.addEventListener('change', (e) => {
+                currentFilters.activity = e.target.value;
+                applyFilters();
+            });
+            
+            sortFilter?.addEventListener('change', (e) => {
+                currentFilters.sort = e.target.value;
+                applyFilters();
+            });
+            
+            searchInput?.addEventListener('input', (e) => {
+                clearTimeout(window.searchDebounce);
+                window.searchDebounce = setTimeout(() => {
+                    currentFilters.search = e.target.value;
+                    applyFilters();
+                }, 300);
+            });
+        }
+        
+        function clearAllFilters() {
+            currentFilters = { activity: '', search: '', sort: 'quality' };
+            document.getElementById('activity-filter').value = '';
+            document.getElementById('sort-filter').value = 'quality';
+            document.getElementById('search-input').value = '';
+            applyFilters();
+        }
+        
+        function loadMoreTours() {
+            renderTours(false);
+        }
+        
+        function shuffleTours() {
+            filteredTours = fisherYatesShuffle([...filteredTours]);
+            displayedCount = 0;
+            renderTours(true);
+        }
+        
+        function initMobileMenu() {
+            const menuBtn = document.querySelector('.mobile-menu-btn');
+            const mobileNav = document.querySelector('.nav-mobile');
+            
+            menuBtn?.addEventListener('click', () => {
+                mobileNav.classList.toggle('active');
+            });
+        }
+        
+        function initStickyHeader() {
+            const header = document.querySelector('.header');
+            window.addEventListener('scroll', () => {
+                if (window.pageYOffset > 50) {
+                    header.classList.add('scrolled');
+                } else {
+                    header.classList.remove('scrolled');
+                }
+            });
+        }
+    </script>
+</body>
+</html>
