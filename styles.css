@@ -253,22 +253,26 @@ ul, ol { list-style: none; }
 }
 
 .hero-slide:nth-child(1) {
-    background-image: url('https://images.unsplash.com/photo-1580799516449-b56c21b6eb72?auto=format&fit=crop&w=2400&q=90');
+    /* Aerial Florida Keys Overseas Highway - stunning turquoise waters */
+    background-image: url('https://images.unsplash.com/photo-1568402102990-bc541580b59f?auto=format&fit=crop&w=2400&q=90');
     animation-delay: 0s;
 }
 
 .hero-slide:nth-child(2) {
-    background-image: url('https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=2400&q=90');
+    /* Underwater tropical coral reef with fish */
+    background-image: url('https://images.unsplash.com/photo-1546500840-ae38253aba9b?auto=format&fit=crop&w=2400&q=90');
     animation-delay: 6s;
 }
 
 .hero-slide:nth-child(3) {
-    background-image: url('https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=2400&q=90');
+    /* Aerial tropical island overhead turquoise water */
+    background-image: url('https://images.unsplash.com/photo-1559128010-7c1ad6e1b6a5?auto=format&fit=crop&w=2400&q=90');
     animation-delay: 12s;
 }
 
 .hero-slide:nth-child(4) {
-    background-image: url('https://images.unsplash.com/photo-1503891450247-ee5f8ec46dc3?auto=format&fit=crop&w=2400&q=90');
+    /* Boat on crystal clear turquoise sandbar waters */
+    background-image: url('https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=2400&q=90');
     animation-delay: 18s;
 }
 
