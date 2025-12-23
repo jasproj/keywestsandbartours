@@ -132,19 +132,24 @@
         </div>
         
         <div class="trust-bar">
+            <div class="trust-item trust-rating">
+                <span class="trust-stars">★★★★★</span>
+                <span class="trust-label">4.9 Rating • 12K+ Booked</span>
+            </div>
+            <div class="trust-divider"></div>
             <div class="trust-item">
                 <span class="trust-number" id="tour-count">476</span>
                 <span class="trust-label">Local Tours</span>
             </div>
             <div class="trust-divider"></div>
             <div class="trust-item">
-                <span class="trust-number">2</span>
-                <span class="trust-label">Keys Areas</span>
+                <span class="trust-number">95</span>
+                <span class="trust-label">Local Operators</span>
             </div>
             <div class="trust-divider"></div>
-            <div class="trust-item">
-                <span class="trust-number">100%</span>
-                <span class="trust-label">Local Operators</span>
+            <div class="trust-item trust-badge">
+                <span class="trust-icon">🏆</span>
+                <span class="trust-label">#1 Key West Tours</span>
             </div>
         </div>
     </section>
@@ -357,6 +362,19 @@
         </div>
     </section>
 
+    <!-- EMAIL CAPTURE -->
+    <section class="email-capture">
+        <div class="email-capture-content">
+            <h2>Get <span class="highlight">$10 Off</span> Your First Tour</h2>
+            <p>Join 12,000+ adventurers. Get exclusive deals, last-minute openings, and insider tips for Key West.</p>
+            <form class="email-form" onsubmit="handleEmailSubmit(event)">
+                <input type="email" placeholder="Enter your email" required>
+                <button type="submit">Get My Discount</button>
+            </form>
+            <p class="email-disclaimer">No spam, ever. Unsubscribe anytime.</p>
+        </div>
+    </section>
+
     <!-- FOOTER -->
     <footer class="footer">
         <div class="container">
@@ -405,11 +423,15 @@
         </div>
     </footer>
 
-    <!-- MOBILE CTA -->
-    <div class="mobile-cta" id="mobile-cta">
-        <a href="#tours-section" class="mobile-cta-btn">
-            <span>🌴</span> Find Your Adventure
-        </a>
+    <!-- MOBILE STICKY BAR -->
+    <div class="mobile-sticky-bar" id="mobile-sticky-bar">
+        <div class="mobile-sticky-bar-content">
+            <div class="mobile-sticky-info">
+                <div class="mobile-sticky-count">476 Tours</div>
+                <div class="mobile-sticky-label">★★★★★ 4.9 Rating</div>
+            </div>
+            <a href="#tours-section" class="mobile-sticky-btn">Browse Tours →</a>
+        </div>
     </div>
 
     <!-- FOMO -->

@@ -266,8 +266,8 @@ function renderTours(reset = false) {
         return;
     }
     
-    toShow.forEach(tour => {
-        const card = createTourCard(tour);
+    toShow.forEach((tour, idx) => {
+        const card = createTourCard(tour, displayedCount + idx);
         grid.appendChild(card);
     });
     
@@ -281,7 +281,7 @@ function renderTours(reset = false) {
     }
 }
 
-function createTourCard(tour) {
+function createTourCard(tour, index) {
     const card = document.createElement('div');
     card.className = 'tour-card';
     
@@ -289,8 +289,13 @@ function createTourCard(tour) {
         `<span class="tour-tag">${tag}</span>`
     ).join('');
     
+    // Add Popular badge to top 5 quality tours
+    const isPopular = tour.qualityScore >= 90 || index < 5;
+    const popularBadge = isPopular ? '<span class="popular-badge">Popular</span>' : '';
+    
     card.innerHTML = `
         <div class="tour-card-img">
+            ${popularBadge}
             <img src="${tour.image}" alt="${tour.name}" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=400'">
             <span class="tour-location-badge">${tour.location}</span>
         </div>
@@ -605,3 +610,31 @@ window.quickFilter = quickFilter;
 window.clearAllFilters = clearAllFilters;
 window.loadMoreTours = loadMoreTours;
 window.shuffleTours = shuffleTours;
+
+// ============================================
+// EMAIL CAPTURE HANDLER
+// ============================================
+
+function handleEmailSubmit(event) {
+    event.preventDefault();
+    const form = event.target;
+    const emailInput = form.querySelector('input[type="email"]');
+    const email = emailInput.value;
+    
+    // Store in localStorage for now (would connect to email service)
+    const subscribers = JSON.parse(localStorage.getItem('kwst_subscribers') || '[]');
+    if (!subscribers.includes(email)) {
+        subscribers.push(email);
+        localStorage.setItem('kwst_subscribers', JSON.stringify(subscribers));
+    }
+    
+    // Show success message
+    const content = form.closest('.email-capture-content');
+    content.innerHTML = `
+        <h2>🎉 You're In!</h2>
+        <p>Check your inbox for your <strong>$10 discount code</strong>.</p>
+        <p style="font-size: 0.9rem; opacity: 0.8; margin-top: 1rem;">Welcome to the Key West adventure crew!</p>
+    `;
+}
+
+window.handleEmailSubmit = handleEmailSubmit;
