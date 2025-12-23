@@ -140,10 +140,12 @@ async function initApp() {
 
 async function loadTours() {
     try {
-        const response = await fetch('tours-data.json');
+        // Cache-bust to ensure fresh data
+        const response = await fetch('tours-data.json?t=' + Date.now());
         allTours = await response.json();
         
-        // Shuffle on load for variety
+        // Aggressive shuffle on load - do it twice for extra randomness
+        allTours = fisherYatesShuffle([...allTours]);
         allTours = fisherYatesShuffle([...allTours]);
         
         // Update tour count in trust bar
@@ -163,8 +165,17 @@ async function loadTours() {
     }
 }
 
-// Fisher-Yates shuffle
+// Fisher-Yates shuffle with better entropy
 function fisherYatesShuffle(array) {
+    // Use timestamp + random for better entropy
+    const seed = Date.now() + Math.random() * 1000000;
+    for (let i = array.length - 1; i > 0; i--) {
+        // Mix in current index for more randomness
+        const rand = Math.sin(seed * (i + 1)) * 10000;
+        const j = Math.floor(Math.abs(rand - Math.floor(rand)) * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+    }
+    // Second pass with pure Math.random for extra shuffle
     for (let i = array.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
         [array[i], array[j]] = [array[j], array[i]];
@@ -232,13 +243,15 @@ function applyFilters() {
         return true;
     });
     
-    // Sort (random preserves the shuffle order)
+    // Sort (random shuffles every time for true randomization)
     if (currentFilters.sort === 'quality') {
         filteredTours.sort((a, b) => (b.qualityScore || 0) - (a.qualityScore || 0));
     } else if (currentFilters.sort === 'name') {
         filteredTours.sort((a, b) => a.name.localeCompare(b.name));
+    } else {
+        // 'random' - shuffle filtered results fresh every time
+        filteredTours = fisherYatesShuffle([...filteredTours]);
     }
-    // 'random' does nothing - keeps shuffled order
     
     // Reset display
     displayedCount = 0;
@@ -290,8 +303,8 @@ function createTourCard(tour, index) {
         `<span class="tour-tag">${tag}</span>`
     ).join('');
     
-    // Add Popular badge to top 5 quality tours
-    const isPopular = tour.qualityScore >= 90 || index < 5;
+    // Add Popular badge only for genuinely high-rated tours (not position-based)
+    const isPopular = tour.qualityScore >= 95;
     const popularBadge = isPopular ? '<span class="popular-badge">Popular</span>' : '';
     
     card.innerHTML = `

@@ -240,6 +240,7 @@
                 <div class="filter-group">
                     <label for="sort-filter">Sort By</label>
                     <select id="sort-filter">
+                        <option value="random">Discover</option>
                         <option value="quality">Top Rated</option>
                         <option value="name">Name A-Z</option>
                     </select>
@@ -335,7 +336,7 @@
         let currentFilters = {
             activity: '',
             search: '',
-            sort: 'quality'
+            sort: 'random'
         };
         
         document.addEventListener('DOMContentLoaded', async () => {
@@ -347,7 +348,8 @@
         
         async function loadTours() {
             try {
-                const response = await fetch('tours-data.json');
+                // Cache-bust to ensure fresh data
+                const response = await fetch('tours-data.json?t=' + Date.now());
                 const data = await response.json();
                 
                 // Filter to stock island only
@@ -355,7 +357,8 @@
                     tour.island.toLowerCase() === CONFIG.locationFilter
                 );
                 
-                // Shuffle
+                // Aggressive shuffle - do it twice
+                allTours = fisherYatesShuffle([...allTours]);
                 allTours = fisherYatesShuffle([...allTours]);
                 applyFilters();
             } catch (error) {
@@ -368,7 +371,14 @@
             }
         }
         
+        // Fisher-Yates shuffle with better entropy
         function fisherYatesShuffle(array) {
+            const seed = Date.now() + Math.random() * 1000000;
+            for (let i = array.length - 1; i > 0; i--) {
+                const rand = Math.sin(seed * (i + 1)) * 10000;
+                const j = Math.floor(Math.abs(rand - Math.floor(rand)) * (i + 1));
+                [array[i], array[j]] = [array[j], array[i]];
+            }
             for (let i = array.length - 1; i > 0; i--) {
                 const j = Math.floor(Math.random() * (i + 1));
                 [array[i], array[j]] = [array[j], array[i]];
@@ -398,6 +408,9 @@
                 filteredTours.sort((a, b) => (b.qualityScore || 0) - (a.qualityScore || 0));
             } else if (currentFilters.sort === 'name') {
                 filteredTours.sort((a, b) => a.name.localeCompare(b.name));
+            } else {
+                // Random - shuffle fresh every time
+                filteredTours = fisherYatesShuffle([...filteredTours]);
             }
             
             displayedCount = 0;
