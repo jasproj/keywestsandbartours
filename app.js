@@ -33,7 +33,7 @@ let currentFilters = {
     island: '',
     activity: '',
     search: '',
-    sort: 'quality'
+    sort: 'random'
 };
 
 // COMPREHENSIVE Search synonyms - maps user input to tour tags/content
@@ -232,12 +232,13 @@ function applyFilters() {
         return true;
     });
     
-    // Sort
+    // Sort (random preserves the shuffle order)
     if (currentFilters.sort === 'quality') {
         filteredTours.sort((a, b) => (b.qualityScore || 0) - (a.qualityScore || 0));
     } else if (currentFilters.sort === 'name') {
         filteredTours.sort((a, b) => a.name.localeCompare(b.name));
     }
+    // 'random' does nothing - keeps shuffled order
     
     // Reset display
     displayedCount = 0;
@@ -414,11 +415,11 @@ function quickFilter(term) {
 }
 
 function clearAllFilters() {
-    currentFilters = { island: '', activity: '', search: '', sort: 'quality' };
+    currentFilters = { island: '', activity: '', search: '', sort: 'random' };
     
     document.getElementById('island-filter').value = '';
     document.getElementById('activity-filter').value = '';
-    document.getElementById('sort-filter').value = 'quality';
+    document.getElementById('sort-filter').value = 'random';
     document.getElementById('search-input').value = '';
     
     const heroSearch = document.getElementById('hero-search');

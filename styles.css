@@ -30,6 +30,7 @@
     
     /* Typography - Fun & Friendly */
     --font-display: 'Outfit', -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-brand: 'Fredoka', 'Outfit', -apple-system, sans-serif;
     --font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
     
     /* Spacing */
@@ -131,10 +132,11 @@ ul, ol { list-style: none; }
 
 /* Logo Text Styling */
 .logo-text {
+    font-family: var(--font-brand);
     color: var(--logo-text);
-    letter-spacing: -0.02em;
-    font-weight: 700;
-    font-size: 1.25rem;
+    letter-spacing: -0.01em;
+    font-weight: 600;
+    font-size: 1.35rem;
 }
 
 .footer .logo-text {
@@ -335,10 +337,10 @@ ul, ol { list-style: none; }
 }
 
 .hero-logo-text {
-    font-family: var(--font-display);
+    font-family: var(--font-brand);
     font-size: 3.5rem;
-    font-weight: 700;
-    letter-spacing: -0.02em;
+    font-weight: 600;
+    letter-spacing: -0.01em;
     text-shadow: 0 4px 12px rgba(0,0,0,0.3);
     color: var(--white);
 }
