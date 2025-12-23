@@ -357,9 +357,22 @@
                     tour.island.toLowerCase() === CONFIG.locationFilter
                 );
                 
-                // Aggressive shuffle - do it twice
-                allTours = fisherYatesShuffle([...allTours]);
-                allTours = fisherYatesShuffle([...allTours]);
+                // Get recently shown tours
+                const recentlyShown = JSON.parse(localStorage.getItem('kwst_si_recent') || '[]');
+                
+                // Crypto-grade shuffle
+                allTours = cryptoShuffle([...allTours]);
+                
+                // Move recently shown to back
+                if (recentlyShown.length > 0) {
+                    const notRecent = allTours.filter(t => !recentlyShown.includes(t.id));
+                    const recent = allTours.filter(t => recentlyShown.includes(t.id));
+                    allTours = [...cryptoShuffle(notRecent), ...cryptoShuffle(recent)];
+                }
+                
+                // Store first 48 as recently shown
+                localStorage.setItem('kwst_si_recent', JSON.stringify(allTours.slice(0, 48).map(t => t.id)));
+                
                 applyFilters();
             } catch (error) {
                 console.error('Error loading tours:', error);
@@ -371,17 +384,22 @@
             }
         }
         
-        // Fisher-Yates shuffle with better entropy
-        function fisherYatesShuffle(array) {
-            const seed = Date.now() + Math.random() * 1000000;
-            for (let i = array.length - 1; i > 0; i--) {
-                const rand = Math.sin(seed * (i + 1)) * 10000;
-                const j = Math.floor(Math.abs(rand - Math.floor(rand)) * (i + 1));
-                [array[i], array[j]] = [array[j], array[i]];
-            }
-            for (let i = array.length - 1; i > 0; i--) {
-                const j = Math.floor(Math.random() * (i + 1));
-                [array[i], array[j]] = [array[j], array[i]];
+        // Crypto-grade shuffle
+        function cryptoShuffle(array) {
+            const n = array.length;
+            if (n === 0) return array;
+            if (window.crypto && window.crypto.getRandomValues) {
+                const randomValues = new Uint32Array(n);
+                window.crypto.getRandomValues(randomValues);
+                for (let i = n - 1; i > 0; i--) {
+                    const j = randomValues[i] % (i + 1);
+                    [array[i], array[j]] = [array[j], array[i]];
+                }
+            } else {
+                for (let i = n - 1; i > 0; i--) {
+                    const j = Math.floor(Math.random() * (i + 1));
+                    [array[i], array[j]] = [array[j], array[i]];
+                }
             }
             return array;
         }
@@ -410,7 +428,7 @@
                 filteredTours.sort((a, b) => a.name.localeCompare(b.name));
             } else {
                 // Random - shuffle fresh every time
-                filteredTours = fisherYatesShuffle([...filteredTours]);
+                filteredTours = cryptoShuffle([...filteredTours]);
             }
             
             displayedCount = 0;
@@ -525,7 +543,7 @@
         }
         
         function shuffleTours() {
-            filteredTours = fisherYatesShuffle([...filteredTours]);
+            filteredTours = cryptoShuffle([...filteredTours]);
             displayedCount = 0;
             renderTours(true);
         }

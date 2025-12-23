@@ -144,9 +144,22 @@ async function loadTours() {
         const response = await fetch('tours-data.json?t=' + Date.now());
         allTours = await response.json();
         
-        // Aggressive shuffle on load - do it twice for extra randomness
-        allTours = fisherYatesShuffle([...allTours]);
-        allTours = fisherYatesShuffle([...allTours]);
+        // Get recently shown tours from localStorage
+        const recentlyShown = JSON.parse(localStorage.getItem('kwst_recent') || '[]');
+        
+        // Crypto-grade shuffle
+        allTours = cryptoShuffle([...allTours]);
+        
+        // Move recently shown tours to the back so they don't appear first
+        if (recentlyShown.length > 0) {
+            const notRecent = allTours.filter(t => !recentlyShown.includes(t.id));
+            const recent = allTours.filter(t => recentlyShown.includes(t.id));
+            allTours = [...cryptoShuffle(notRecent), ...cryptoShuffle(recent)];
+        }
+        
+        // Store first 48 tour IDs as "recently shown" (4 pages worth)
+        const newRecent = allTours.slice(0, 48).map(t => t.id);
+        localStorage.setItem('kwst_recent', JSON.stringify(newRecent));
         
         // Update tour count in trust bar
         const tourCountEl = document.getElementById('tour-count');
@@ -165,20 +178,26 @@ async function loadTours() {
     }
 }
 
-// Fisher-Yates shuffle with better entropy
-function fisherYatesShuffle(array) {
-    // Use timestamp + random for better entropy
-    const seed = Date.now() + Math.random() * 1000000;
-    for (let i = array.length - 1; i > 0; i--) {
-        // Mix in current index for more randomness
-        const rand = Math.sin(seed * (i + 1)) * 10000;
-        const j = Math.floor(Math.abs(rand - Math.floor(rand)) * (i + 1));
-        [array[i], array[j]] = [array[j], array[i]];
-    }
-    // Second pass with pure Math.random for extra shuffle
-    for (let i = array.length - 1; i > 0; i--) {
-        const j = Math.floor(Math.random() * (i + 1));
-        [array[i], array[j]] = [array[j], array[i]];
+// Crypto-grade shuffle using crypto.getRandomValues
+function cryptoShuffle(array) {
+    const n = array.length;
+    if (n === 0) return array;
+    
+    // Use crypto API for true randomness
+    if (window.crypto && window.crypto.getRandomValues) {
+        const randomValues = new Uint32Array(n);
+        window.crypto.getRandomValues(randomValues);
+        
+        for (let i = n - 1; i > 0; i--) {
+            const j = randomValues[i] % (i + 1);
+            [array[i], array[j]] = [array[j], array[i]];
+        }
+    } else {
+        // Fallback
+        for (let i = n - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [array[i], array[j]] = [array[j], array[i]];
+        }
     }
     return array;
 }
@@ -250,7 +269,7 @@ function applyFilters() {
         filteredTours.sort((a, b) => a.name.localeCompare(b.name));
     } else {
         // 'random' - shuffle filtered results fresh every time
-        filteredTours = fisherYatesShuffle([...filteredTours]);
+        filteredTours = cryptoShuffle([...filteredTours]);
     }
     
     // Reset display
@@ -446,7 +465,7 @@ function loadMoreTours() {
 }
 
 function shuffleTours() {
-    filteredTours = fisherYatesShuffle([...filteredTours]);
+    filteredTours = cryptoShuffle([...filteredTours]);
     displayedCount = 0;
     renderTours(true);
 }
