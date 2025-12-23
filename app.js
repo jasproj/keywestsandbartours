@@ -632,8 +632,8 @@ function handleEmailSubmit(event) {
     const content = form.closest('.email-capture-content');
     content.innerHTML = `
         <h2>🎉 You're In!</h2>
-        <p>Check your inbox for your <strong>$10 discount code</strong>.</p>
-        <p style="font-size: 0.9rem; opacity: 0.8; margin-top: 1rem;">Welcome to the Key West adventure crew!</p>
+        <p>We'll send you the best last-minute deals and insider tips.</p>
+        <p style="font-size: 0.9rem; opacity: 0.8; margin-top: 1rem;">Welcome to the crew!</p>
     `;
 }
 
