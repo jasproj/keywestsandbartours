@@ -671,3 +671,143 @@ function handleEmailSubmit(event) {
 }
 
 window.handleEmailSubmit = handleEmailSubmit;
+
+/* ============================================
+   RANDOMIZING FAQ SYSTEM
+   ============================================ */
+
+const ALL_FAQS = [
+    {
+        question: "What are the best things to do in Key West?",
+        answer: "Top activities include sandbar trips with crystal-clear waters, snorkeling at the only living coral reef in North America, sunset cruises at Mallory Square, dolphin watching, parasailing, fishing charters, jet ski tours, kayaking through mangroves, and exploring Duval Street. We feature the best local tours across all categories."
+    },
+    {
+        question: "What is a sandbar tour?",
+        answer: "Sandbar tours take you to shallow sandbars in the backcountry where you can wade in crystal-clear, waist-deep water, relax, swim, and enjoy the stunning Keys scenery. Popular spots include Snipes Point, Woman Key, and Boca Grande. Many tours include snorkeling stops, drinks, and snacks. It's one of the most popular Key West experiences!"
+    },
+    {
+        question: "How do I book tours through Sandbar Tours?",
+        answer: "Browse tours, filter by area or activity, and click \"Book Now.\" You'll be connected directly with the tour operator's booking system. Most offer free cancellation 24-48 hours before your activity. We feature over 476 tours from verified local operators."
+    },
+    {
+        question: "What's the best time to visit Key West?",
+        answer: "Key West is beautiful year-round! <strong>Winter (Dec–Mar)</strong> has perfect weather and is peak season. <strong>Spring (Apr–May)</strong> offers fewer crowds and great conditions. <strong>Summer & Fall</strong> are warmer with occasional afternoon showers and the best deals on tours and accommodations."
+    },
+    {
+        question: "What should I bring on a boat tour?",
+        answer: "Essentials include: reef-safe sunscreen, sunglasses, hat, swimsuit, towel, and water. Most boats provide snorkel gear. Consider bringing a waterproof phone case and motion sickness prevention if you're prone to seasickness. Some tours allow you to bring your own food and drinks (BYOB)."
+    },
+    {
+        question: "Are your prices better than Viator or Expedia?",
+        answer: "We connect you directly with local tour operators through their booking systems, so you get their direct prices—no middleman markups. More of your money stays in the Florida Keys' local economy and goes directly to the captains and crew who create your experience."
+    },
+    {
+        question: "Where are the best sandbars in Key West?",
+        answer: "The most popular sandbars include Snipes Point (great for beginners), Woman Key (beautiful and secluded), Boca Grande (crystal-clear water), Jewfish Basin (calm and shallow), and the Mud Keys area. Each has its own character, and most sandbar tours visit multiple spots."
+    },
+    {
+        question: "Can I see dolphins in Key West?",
+        answer: "Absolutely! Bottlenose dolphins are commonly spotted in the backcountry waters. Dedicated dolphin tours take you to their favorite spots, but you might also see them on sandbar trips, sunset cruises, or even kayak tours. Morning trips often have the best dolphin sightings."
+    },
+    {
+        question: "What is the Florida Keys National Marine Sanctuary?",
+        answer: "The sanctuary protects 2,900 square nautical miles of waters surrounding the Keys, including the only living coral barrier reef in the continental United States. All tours operate within these protected waters. Responsible operators help preserve this unique ecosystem for future generations."
+    },
+    {
+        question: "How much do Key West tours typically cost?",
+        answer: "Prices vary by activity. Snorkeling trips start around $50-80 per person. Sandbar tours range from $75-150. Private charters run $400-800 for 4 hours. Sunset cruises start at $50. Parasailing is around $80-100. Fishing charters range from $600-1200 depending on duration and boat size."
+    },
+    {
+        question: "Are tours suitable for children?",
+        answer: "Most tours welcome children! Sandbar trips are perfect for families—kids love playing in the shallow, calm water. Many operators offer life jackets for little ones. Check individual tour descriptions for age recommendations. Some fishing and diving tours may have minimum age requirements."
+    },
+    {
+        question: "What's the difference between Key West and Stock Island tours?",
+        answer: "Key West tours typically depart from marinas near downtown and Old Town. Stock Island (just north of Key West) offers a more local, less touristy experience with excellent fishing and diving operations. Both areas access the same beautiful waters—it's mainly about departure location."
+    },
+    {
+        question: "Do I need to know how to swim for boat tours?",
+        answer: "Not necessarily! Many tours offer flotation devices and you can enjoy sandbars while wading in shallow water. However, snorkeling and diving activities do require basic swimming ability. Always let your captain know about your comfort level in the water."
+    },
+    {
+        question: "What is backcountry Key West?",
+        answer: "The backcountry refers to the shallow flats, mangrove islands, and sandbars on the Gulf side of Key West (north/northwest). It's calmer than the Atlantic side, with crystal-clear water perfect for sandbar trips, kayaking, paddleboarding, and wildlife watching."
+    },
+    {
+        question: "Can I bring alcohol on boat tours?",
+        answer: "Many tours are BYOB (bring your own beverages), while others include drinks or offer a cash bar. Check individual tour descriptions. Some sunset cruises and party boats feature open bars with beer, wine, and cocktails included in the price."
+    },
+    {
+        question: "What if my tour gets cancelled due to weather?",
+        answer: "Safety comes first! If weather conditions are unsafe, operators will reschedule or offer a full refund. Most cancellation policies allow free rebooking 24-48 hours in advance. Check individual tour policies, and consider booking early in your trip so you have backup days."
+    },
+    {
+        question: "What is reef-safe sunscreen?",
+        answer: "Reef-safe sunscreen is free from oxybenzone and octinoxate—chemicals that damage coral reefs. These ingredients are banned in the Florida Keys. Look for mineral-based sunscreens with zinc oxide or titanium dioxide. Protecting the reef helps preserve Key West's incredible snorkeling."
+    },
+    {
+        question: "How long are most boat tours?",
+        answer: "Tour lengths vary: quick trips like parasailing are about 1 hour. Snorkeling and sandbar tours typically run 3-4 hours. Half-day fishing charters are 4-5 hours. Full-day adventures can be 6-8 hours. Sunset cruises are usually 2 hours. Private charters let you customize duration."
+    },
+    {
+        question: "What marine life might I see?",
+        answer: "The Keys are home to incredible biodiversity! Expect to see tropical fish (parrotfish, angelfish, tangs), sea turtles, dolphins, manatees (especially in winter), stingrays, nurse sharks, lobsters, starfish, and countless coral species. Lucky visitors spot eagle rays, barracuda, and even whale sharks!"
+    },
+    {
+        question: "Do I need to tip boat captains and crew?",
+        answer: "Tipping is customary and appreciated. Standard gratuity is 15-20% of the tour cost, similar to restaurant service. For exceptional service or private charters, 20%+ is common. Tips are often the primary income for crew members. Cash is preferred but some operators accept card tips."
+    },
+    {
+        question: "What's the best snorkeling in Key West?",
+        answer: "Top snorkel spots include Sand Key (shallow reef, great for beginners), Eastern Dry Rocks (diverse coral and fish), Western Dry Rocks (larger marine life), and the Vandenberg wreck (advanced). The reef is about 5 miles offshore—you'll need a boat tour to reach it."
+    },
+    {
+        question: "Can I book a private charter?",
+        answer: "Yes! Private charters give you exclusive use of a boat with your own captain. Perfect for families, groups, special occasions, or anyone wanting a personalized experience. You can customize the itinerary—combine snorkeling, sandbar time, sunset viewing, or fishing in one trip."
+    },
+    {
+        question: "What happens if I get seasick?",
+        answer: "The backcountry (where sandbar tours go) has calmer water than the open ocean. If prone to seasickness, take preventative medication before boarding, stay on deck with fresh air, watch the horizon, and avoid heavy meals. Ginger and acupressure bands can help too."
+    },
+    {
+        question: "Are eco-tours worth it?",
+        answer: "Absolutely! Eco-tours offer educational experiences led by knowledgeable guides who share insights about marine ecosystems, wildlife behavior, and conservation. You'll often see more wildlife with guides who know where to look. Plus, eco-operators prioritize sustainable practices."
+    },
+    {
+        question: "What fish can I catch in Key West?",
+        answer: "The Keys offer world-class fishing! Inshore: bonefish, permit, tarpon, snook, redfish. Offshore: mahi-mahi, tuna, wahoo, sailfish, marlin. Reef: snapper, grouper, hogfish. Species vary by season. Tarpon fishing (April-July) is legendary. Charter captains know the best spots."
+    },
+    {
+        question: "How far in advance should I book?",
+        answer: "During peak season (December-April), book 1-2 weeks ahead for popular tours. Sunset cruises and private charters fill fastest. Off-season, a few days notice is usually fine. Last-minute availability exists, but you'll have fewer choices. Sign up for our deals to catch cancellations!"
+    }
+];
+
+function initializeFAQs() {
+    const container = document.getElementById('faq-container');
+    if (!container) return;
+    
+    // Crypto-grade shuffle for true randomness
+    const shuffled = [...ALL_FAQS];
+    for (let i = shuffled.length - 1; i > 0; i--) {
+        const randomArray = new Uint32Array(1);
+        window.crypto.getRandomValues(randomArray);
+        const j = randomArray[0] % (i + 1);
+        [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+    }
+    
+    // Display 6 random FAQs
+    const selectedFAQs = shuffled.slice(0, 6);
+    
+    container.innerHTML = selectedFAQs.map(faq => `
+        <details class="faq-item">
+            <summary>${faq.question}</summary>
+            <div class="faq-answer">
+                <p>${faq.answer}</p>
+            </div>
+        </details>
+    `).join('');
+}
+
+// Initialize FAQs on page load
+document.addEventListener('DOMContentLoaded', initializeFAQs);
