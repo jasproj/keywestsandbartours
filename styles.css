@@ -159,18 +159,27 @@ ul, ol { list-style: none; }
 .logo-img {
     height: 55px;
     width: auto;
+    background: white;
+    padding: 8px 16px;
+    border-radius: 50px;
 }
 
 .hero-logo-img {
     max-width: 500px;
     width: 90%;
     height: auto;
-    filter: drop-shadow(0 4px 20px rgba(0,0,0,0.3));
+    background: white;
+    padding: 20px 40px;
+    border-radius: 60px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.2);
 }
 
 .footer-logo-img {
     height: 70px;
     width: auto;
+    background: white;
+    padding: 10px 20px;
+    border-radius: 50px;
 }
 
 /* Header Weather Widget */
