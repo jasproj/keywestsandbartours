@@ -290,69 +290,40 @@ ul, ol { list-style: none; }
     background-size: cover;
     background-position: center;
     opacity: 0;
-    animation: heroFade 54s infinite;
+    animation: heroFade 30s infinite;
     transform: scale(1.05);
 }
 
 .hero-slide:nth-child(1) {
-    /* Highway through ocean */
-    background-image: url('https://source.unsplash.com/ZyuhycbC1FY/2400x1600');
+    background-image: url('https://images.unsplash.com/photo-1740989973337-1039ba5f9908?auto=format&fit=crop&w=2400&q=90');
     animation-delay: 0s;
 }
 
 .hero-slide:nth-child(2) {
-    /* Gray wooden dock */
-    background-image: url('https://source.unsplash.com/LwPmzW65U4M/2400x1600');
+    background-image: url('https://images.unsplash.com/photo-1519500900873-696f4e3171de?auto=format&fit=crop&w=2400&q=90');
     animation-delay: 6s;
 }
 
 .hero-slide:nth-child(3) {
-    /* Boat image */
-    background-image: url('https://source.unsplash.com/4oOVTLXDoIA/2400x1600');
+    background-image: url('https://images.unsplash.com/photo-1577372970039-2ac351969c87?auto=format&fit=crop&w=2400&q=90');
     animation-delay: 12s;
 }
 
 .hero-slide:nth-child(4) {
-    /* Aerial view island */
-    background-image: url('https://source.unsplash.com/ZTqnyhYvhKk/2400x1600');
+    background-image: url('https://images.unsplash.com/photo-1464925257126-6450e871c667?auto=format&fit=crop&w=2400&q=90');
     animation-delay: 18s;
 }
 
 .hero-slide:nth-child(5) {
-    /* Bikes near beach fence */
-    background-image: url('https://source.unsplash.com/HkAbnEf0Jwc/2400x1600');
+    background-image: url('https://images.unsplash.com/photo-1668565858550-61ca2c9eed27?auto=format&fit=crop&w=2400&q=90');
     animation-delay: 24s;
-}
-
-.hero-slide:nth-child(6) {
-    /* Beach building */
-    background-image: url('https://source.unsplash.com/m7GlfExrTf8/2400x1600');
-    animation-delay: 30s;
-}
-
-.hero-slide:nth-child(7) {
-    /* Palm trees */
-    background-image: url('https://source.unsplash.com/CpeUoLVTAs8/2400x1600');
-    animation-delay: 36s;
-}
-
-.hero-slide:nth-child(8) {
-    /* Underwater */
-    background-image: url('https://source.unsplash.com/1braZySlEKA/2400x1600');
-    animation-delay: 42s;
-}
-
-.hero-slide:nth-child(9) {
-    /* Boat on water */
-    background-image: url('https://source.unsplash.com/A9DA7Gf0rD0/2400x1600');
-    animation-delay: 48s;
 }
 
 @keyframes heroFade {
     0% { opacity: 0; transform: scale(1.05); }
-    2% { opacity: 1; transform: scale(1); }
-    9% { opacity: 1; transform: scale(1.02); }
-    11% { opacity: 0; transform: scale(1.05); }
+    3% { opacity: 1; transform: scale(1); }
+    17% { opacity: 1; transform: scale(1.02); }
+    20% { opacity: 0; transform: scale(1.05); }
     100% { opacity: 0; transform: scale(1.05); }
 }
 
