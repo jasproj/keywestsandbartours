@@ -295,21 +295,25 @@ ul, ol { list-style: none; }
 }
 
 .hero-slide:nth-child(1) {
+    /* Aerial Florida Keys Overseas Highway - stunning turquoise waters */
     background-image: url('https://images.unsplash.com/photo-1568402102990-bc541580b59f?auto=format&fit=crop&w=2400&q=90');
     animation-delay: 0s;
 }
 
 .hero-slide:nth-child(2) {
+    /* Underwater tropical coral reef with fish */
     background-image: url('https://images.unsplash.com/photo-1546500840-ae38253aba9b?auto=format&fit=crop&w=2400&q=90');
     animation-delay: 6s;
 }
 
 .hero-slide:nth-child(3) {
+    /* Aerial tropical island overhead turquoise water */
     background-image: url('https://images.unsplash.com/photo-1559128010-7c1ad6e1b6a5?auto=format&fit=crop&w=2400&q=90');
     animation-delay: 12s;
 }
 
 .hero-slide:nth-child(4) {
+    /* Boat on crystal clear turquoise sandbar waters */
     background-image: url('https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=2400&q=90');
     animation-delay: 18s;
 }
@@ -1386,6 +1390,7 @@ ul, ol { list-style: none; }
         max-width: none;
     }
     
+    /* Logo tagline on mobile - smaller but visible */
     .logo-tagline {
         font-size: 0.6rem;
         padding-left: 2rem;
