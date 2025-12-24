@@ -290,39 +290,69 @@ ul, ol { list-style: none; }
     background-size: cover;
     background-position: center;
     opacity: 0;
-    animation: heroFade 24s infinite;
+    animation: heroFade 54s infinite;
     transform: scale(1.05);
 }
 
 .hero-slide:nth-child(1) {
-    /* Boats in crystal clear turquoise Caribbean water */
-    background-image: url('https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=2400&q=90');
+    /* Highway through ocean */
+    background-image: url('https://source.unsplash.com/ZyuhycbC1FY/2400x1600');
     animation-delay: 0s;
 }
 
 .hero-slide:nth-child(2) {
-    /* Jet ski on blue water */
-    background-image: url('https://images.unsplash.com/photo-1626697556651-67edaea57068?auto=format&fit=crop&w=2400&q=90');
+    /* Gray wooden dock */
+    background-image: url('https://source.unsplash.com/LwPmzW65U4M/2400x1600');
     animation-delay: 6s;
 }
 
 .hero-slide:nth-child(3) {
-    /* Tropical beach white sand turquoise water */
-    background-image: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=2400&q=90');
+    /* Boat image */
+    background-image: url('https://source.unsplash.com/4oOVTLXDoIA/2400x1600');
     animation-delay: 12s;
 }
 
 .hero-slide:nth-child(4) {
-    /* Fishing boat in tropical waters */
-    background-image: url('https://images.unsplash.com/photo-1596464716127-f2a82984de30?auto=format&fit=crop&w=2400&q=90');
+    /* Aerial view island */
+    background-image: url('https://source.unsplash.com/ZTqnyhYvhKk/2400x1600');
     animation-delay: 18s;
+}
+
+.hero-slide:nth-child(5) {
+    /* Bikes near beach fence */
+    background-image: url('https://source.unsplash.com/HkAbnEf0Jwc/2400x1600');
+    animation-delay: 24s;
+}
+
+.hero-slide:nth-child(6) {
+    /* Beach building */
+    background-image: url('https://source.unsplash.com/m7GlfExrTf8/2400x1600');
+    animation-delay: 30s;
+}
+
+.hero-slide:nth-child(7) {
+    /* Palm trees */
+    background-image: url('https://source.unsplash.com/CpeUoLVTAs8/2400x1600');
+    animation-delay: 36s;
+}
+
+.hero-slide:nth-child(8) {
+    /* Underwater */
+    background-image: url('https://source.unsplash.com/1braZySlEKA/2400x1600');
+    animation-delay: 42s;
+}
+
+.hero-slide:nth-child(9) {
+    /* Boat on water */
+    background-image: url('https://source.unsplash.com/A9DA7Gf0rD0/2400x1600');
+    animation-delay: 48s;
 }
 
 @keyframes heroFade {
     0% { opacity: 0; transform: scale(1.05); }
-    4% { opacity: 1; transform: scale(1); }
-    25% { opacity: 1; transform: scale(1.02); }
-    29% { opacity: 0; transform: scale(1.05); }
+    2% { opacity: 1; transform: scale(1); }
+    9% { opacity: 1; transform: scale(1.02); }
+    11% { opacity: 0; transform: scale(1.05); }
     100% { opacity: 0; transform: scale(1.05); }
 }
 
