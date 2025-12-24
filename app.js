@@ -131,6 +131,7 @@ async function initApp() {
     initMobileCTA();
     initFOMO();
     initWeather();
+    initializeFAQs();
     checkURLParams();
 }
 
@@ -809,5 +810,4 @@ function initializeFAQs() {
     `).join('');
 }
 
-// Initialize FAQs on page load
-document.addEventListener('DOMContentLoaded', initializeFAQs);
+// initializeFAQs is called from initApp()
