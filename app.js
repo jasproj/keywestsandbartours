@@ -327,8 +327,8 @@ function createTourCard(tour, index) {
     const isPopular = tour.qualityScore >= 95;
     const popularBadge = isPopular ? '<span class="popular-badge">Popular</span>' : '';
     
-    // Price display
-    const priceHTML = tour.price ? `<span class="tour-price">From ${tour.price}</span>` : '';
+    // Price ribbon
+    const priceRibbon = tour.price ? `<span class="price-ribbon">${tour.price}</span>` : '';
     
     // Description (truncate to ~100 chars for card display)
     let descHTML = '';
@@ -342,6 +342,7 @@ function createTourCard(tour, index) {
     card.innerHTML = `
         <div class="tour-card-img">
             ${popularBadge}
+            ${priceRibbon}
             <img src="${tour.image}" alt="${tour.name}" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=400'">
             <span class="tour-location-badge">${tour.location}</span>
         </div>
@@ -350,10 +351,7 @@ function createTourCard(tour, index) {
             <h3 class="tour-name">${tour.name}</h3>
             ${descHTML}
             <div class="tour-tags">${tagsHTML}</div>
-            <div class="tour-card-footer">
-                ${priceHTML}
-                <a href="${tour.bookingLink}" target="_blank" rel="noopener" class="tour-cta">Book Now →</a>
-            </div>
+            <a href="${tour.bookingLink}" target="_blank" rel="noopener" class="tour-cta">Book Now →</a>
         </div>
     `;
     
