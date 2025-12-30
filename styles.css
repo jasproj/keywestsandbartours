@@ -1779,7 +1779,12 @@ body:has(.promo-banner) .hero {
    =================== */
 .guide-section {
     padding: 80px 0;
-    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    background: 
+        linear-gradient(135deg, rgba(27, 58, 87, 0.85) 0%, rgba(59, 184, 195, 0.8) 100%),
+        url('https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=1920&q=80');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
 
 .guide-wrapper {
@@ -1789,10 +1794,10 @@ body:has(.promo-banner) .hero {
     align-items: center;
     max-width: 900px;
     margin: 0 auto;
-    background: white;
+    background: rgba(255, 255, 255, 0.97);
     border-radius: 24px;
     padding: 50px;
-    box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+    box-shadow: 0 20px 60px rgba(0,0,0,0.3);
 }
 
 .guide-preview {
@@ -1935,6 +1940,10 @@ body:has(.promo-banner) .hero {
         grid-template-columns: 1fr;
         padding: 30px 25px;
         gap: 30px;
+    }
+    
+    .guide-section {
+        background-attachment: scroll;
     }
     
     .guide-preview {
