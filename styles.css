@@ -331,12 +331,7 @@ ul, ol { list-style: none; }
 .hero-overlay {
     position: absolute;
     inset: 0;
-    background: linear-gradient(
-        to bottom,
-        rgba(0, 0, 0, 0.1) 0%,
-        rgba(0, 0, 0, 0.2) 50%,
-        rgba(0, 0, 0, 0.35) 100%
-    );
+    background: rgba(255, 255, 255, 0.1);
     z-index: -1;
 }
 
@@ -362,20 +357,6 @@ ul, ol { list-style: none; }
     justify-content: center;
     gap: var(--space-sm);
     margin-bottom: var(--space-lg);
-    position: relative;
-}
-
-.hero-logo::before {
-    content: '';
-    position: absolute;
-    width: 320px;
-    height: 320px;
-    background: rgba(255, 255, 255, 0.5);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    border-radius: 50%;
-    z-index: -1;
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
 }
 
 .hero-logo-text {
@@ -1647,18 +1628,6 @@ ul, ol { list-style: none; }
     }
 }
 
-/* ============================================
-   WARMER OVERLAY FOR HERO
-   ============================================ */
-.hero-overlay {
-    background: linear-gradient(
-        180deg,
-        rgba(0, 0, 0, 0.3) 0%,
-        rgba(11, 85, 99, 0.4) 50%,
-        rgba(255, 107, 107, 0.1) 100%
-    );
-}
-
 /* ==========================================
    NEW FEATURES - MATCHING WANDERHAWAII
    ========================================== */
@@ -2032,11 +2001,6 @@ body:has(.promo-banner) .hero {
         max-width: 280px;
     }
     
-    .hero-logo::before {
-        width: 240px;
-        height: 240px;
-    }
-    
     .tour-description {
         font-size: 0.85rem;
         -webkit-line-clamp: 2;
@@ -2071,10 +2035,5 @@ body:has(.promo-banner) .hero {
     
     .hero-logo-img {
         max-width: 320px;
-    }
-    
-    .hero-logo::before {
-        width: 280px;
-        height: 280px;
     }
 }
