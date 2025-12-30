@@ -1974,3 +1974,53 @@ body:has(.promo-banner) .hero {
         width: 100%;
     }
 }
+
+/* ===================
+   TOUR CARD PRICE & DESCRIPTION
+   =================== */
+.tour-description {
+    font-size: 0.9rem;
+    color: #555;
+    line-height: 1.5;
+    margin: 10px 0;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.tour-card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: auto;
+    padding-top: 12px;
+    gap: 10px;
+}
+
+.tour-price {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #0B4F5C;
+}
+
+.tour-card-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.tour-card-footer .tour-cta {
+    margin-top: 0;
+}
+
+@media (max-width: 480px) {
+    .tour-card-footer {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    .tour-price {
+        text-align: center;
+        margin-bottom: 8px;
+    }
+}
