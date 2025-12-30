@@ -157,7 +157,7 @@ ul, ol { list-style: none; }
 
 /* Logo Image Styles */
 .logo-img {
-    height: 55px;
+    height: 66px;
     width: auto;
 }
 
@@ -169,7 +169,7 @@ ul, ol { list-style: none; }
 }
 
 .footer-logo-img {
-    height: 70px;
+    height: 84px;
     width: auto;
 }
 
@@ -2002,5 +2002,53 @@ body:has(.promo-banner) .hero {
         padding: 5px 35px;
         top: 15px;
         right: -38px;
+    }
+    
+    .logo-img {
+        height: 50px;
+    }
+    
+    .footer-logo-img {
+        height: 70px;
+    }
+    
+    .hero-logo-img {
+        max-width: 280px;
+    }
+    
+    .tour-description {
+        font-size: 0.85rem;
+        -webkit-line-clamp: 2;
+    }
+    
+    .area-card-content h3 {
+        font-size: 1.2rem;
+    }
+    
+    .area-count {
+        font-size: 0.8rem;
+        padding: 5px 12px;
+    }
+    
+    .guide-content h2 {
+        font-size: 1.4rem;
+    }
+    
+    .guide-checklist li {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .logo-img {
+        height: 55px;
+    }
+    
+    .footer-logo-img {
+        height: 75px;
+    }
+    
+    .hero-logo-img {
+        max-width: 320px;
     }
 }
