@@ -1651,3 +1651,326 @@ ul, ol { list-style: none; }
         rgba(255, 107, 107, 0.1) 100%
     );
 }
+
+/* ==========================================
+   NEW FEATURES - MATCHING WANDERHAWAII
+   ========================================== */
+
+/* ===================
+   1. TOP PROMO BANNER
+   =================== */
+.promo-banner {
+    background: linear-gradient(135deg, #0B4F5C 0%, #0d6574 100%);
+    color: white;
+    padding: 12px 50px 12px 20px;
+    text-align: center;
+    font-size: 0.95rem;
+    position: relative;
+    z-index: 1001;
+}
+
+.promo-banner a {
+    color: white;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.promo-banner a:hover {
+    opacity: 0.9;
+}
+
+.banner-cta {
+    background: rgba(255,255,255,0.2);
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-weight: 600;
+    margin-left: 8px;
+}
+
+.banner-close {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    opacity: 0.7;
+    line-height: 1;
+    padding: 5px;
+}
+
+.banner-close:hover {
+    opacity: 1;
+}
+
+/* Adjust header position when banner is visible */
+body:has(.promo-banner) .header {
+    top: 44px;
+}
+
+body:has(.promo-banner) .hero {
+    padding-top: calc(80px + 44px);
+}
+
+/* ===================
+   2. EXPLORE BY AREA CARDS
+   =================== */
+.explore-areas {
+    padding: 60px 0;
+    background: linear-gradient(to bottom, rgba(11, 79, 92, 0.03), transparent);
+}
+
+.section-subtitle {
+    text-align: center;
+    color: #666;
+    margin-top: -15px;
+    margin-bottom: 40px;
+    font-size: 1.1rem;
+}
+
+.area-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 24px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.area-card {
+    background: white;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.area-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 40px rgba(0,0,0,0.15);
+}
+
+.area-card-image {
+    height: 160px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.area-card-image::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom, transparent 50%, rgba(0,0,0,0.3));
+}
+
+.area-card-content {
+    padding: 20px;
+}
+
+.area-card-content h3 {
+    font-size: 1.4rem;
+    margin: 0 0 8px 0;
+    color: #1a1a1a;
+}
+
+.area-card-content p {
+    color: #666;
+    margin: 0 0 12px 0;
+    font-size: 0.95rem;
+}
+
+.area-count {
+    display: inline-block;
+    background: #0B4F5C;
+    color: white;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+/* ===================
+   3. ENHANCED GUIDE SECTION
+   =================== */
+.guide-section {
+    padding: 80px 0;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+}
+
+.guide-wrapper {
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    gap: 50px;
+    align-items: center;
+    max-width: 900px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 24px;
+    padding: 50px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+}
+
+.guide-preview {
+    background: linear-gradient(135deg, #0B4F5C 0%, #0d6574 100%);
+    border-radius: 16px;
+    padding: 30px;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+.guide-badge {
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #FF6B6B;
+    color: white;
+    padding: 4px 12px;
+    border-radius: 12px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+.guide-icon {
+    font-size: 4rem;
+    margin: 20px 0 15px;
+}
+
+.guide-title-preview strong {
+    display: block;
+    font-size: 1.3rem;
+    line-height: 1.3;
+}
+
+.guide-title-preview span {
+    display: block;
+    font-size: 0.9rem;
+    opacity: 0.9;
+    margin-top: 8px;
+}
+
+.guide-content h2 {
+    font-size: 1.8rem;
+    margin: 0 0 10px 0;
+    color: #1a1a1a;
+}
+
+.guide-content > p {
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.guide-checklist {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 25px 0;
+}
+
+.guide-checklist li {
+    padding: 8px 0;
+    color: #444;
+    font-size: 1rem;
+}
+
+.guide-checklist li::before {
+    content: none;
+}
+
+.guide-form {
+    display: flex;
+    gap: 12px;
+}
+
+.guide-form input[type="email"] {
+    flex: 1;
+    padding: 14px 18px;
+    border: 2px solid #e0e0e0;
+    border-radius: 10px;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+}
+
+.guide-form input[type="email"]:focus {
+    outline: none;
+    border-color: #0B4F5C;
+}
+
+.guide-form button {
+    background: #FF6B6B;
+    color: white;
+    border: none;
+    padding: 14px 24px;
+    border-radius: 10px;
+    font-weight: 600;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: background 0.3s;
+}
+
+.guide-form button:hover {
+    background: #e85555;
+}
+
+.guide-privacy {
+    font-size: 0.85rem;
+    color: #888;
+    margin-top: 15px;
+}
+
+/* ===================
+   MOBILE RESPONSIVE
+   =================== */
+@media (max-width: 768px) {
+    .promo-banner {
+        font-size: 0.85rem;
+        padding: 10px 40px 10px 15px;
+    }
+    
+    .banner-cta {
+        display: block;
+        margin: 8px auto 0;
+    }
+    
+    body:has(.promo-banner) .header {
+        top: 60px;
+    }
+    
+    body:has(.promo-banner) .hero {
+        padding-top: calc(80px + 60px);
+    }
+    
+    .area-cards {
+        grid-template-columns: 1fr;
+        padding: 0 20px;
+    }
+    
+    .guide-wrapper {
+        grid-template-columns: 1fr;
+        padding: 30px 25px;
+        gap: 30px;
+    }
+    
+    .guide-preview {
+        max-width: 250px;
+        margin: 0 auto;
+    }
+    
+    .guide-form {
+        flex-direction: column;
+    }
+    
+    .guide-form button {
+        width: 100%;
+    }
+}

@@ -183,6 +183,14 @@
     </script>
 </head>
 <body>
+    <!-- TOP PROMO BANNER -->
+    <div class="promo-banner" id="promo-banner">
+        <a href="#free-guide">
+            🌴 <strong>FREE KEYS TRIP PLANNER:</strong> Subscribe and get the Ultimate 7-Day Itinerary!
+            <span class="banner-cta">Get It Free →</span>
+        </a>
+        <button class="banner-close" onclick="document.getElementById('promo-banner').style.display='none'">×</button>
+    </div>
     <!-- HEADER -->
     <header class="header">
         <div class="header-container">
@@ -299,6 +307,43 @@
         </div>
     </section>
 
+    <!-- EXPLORE BY AREA -->
+    <section class="explore-areas">
+        <div class="container">
+            <h2 class="section-title">Explore by Area</h2>
+            <p class="section-subtitle">Each area has its own vibe. Find your perfect Keys adventure.</p>
+            
+            <div class="area-cards">
+                <a href="key-west.html" class="area-card">
+                    <div class="area-card-image" style="background-image: url('https://images.unsplash.com/photo-1580305859419-175d1a513cbc?auto=format&fit=crop&w=800&q=80')"></div>
+                    <div class="area-card-content">
+                        <h3>Key West</h3>
+                        <p>Duval Street • Mallory Square • Sandbars</p>
+                        <span class="area-count">401 Adventures</span>
+                    </div>
+                </a>
+                
+                <a href="stock-island.html" class="area-card">
+                    <div class="area-card-image" style="background-image: url('https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=800&q=80')"></div>
+                    <div class="area-card-content">
+                        <h3>Stock Island</h3>
+                        <p>Local Marinas • Backcountry • Fishing</p>
+                        <span class="area-count">72 Adventures</span>
+                    </div>
+                </a>
+                
+                <a href="#tours-section" class="area-card">
+                    <div class="area-card-image" style="background-image: url('https://images.unsplash.com/photo-1559128010-7c1ad6e1b6a5?auto=format&fit=crop&w=800&q=80')"></div>
+                    <div class="area-card-content">
+                        <h3>Lower Keys</h3>
+                        <p>Big Pine Key • Bahia Honda • Looe Key</p>
+                        <span class="area-count">3 Adventures</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
     <!-- TOURS -->
     <section class="tours-section" id="tours-section">
         <div class="container">
@@ -407,18 +452,39 @@
         </div>
     </section>
 
-    <!-- EMAIL -->
-    <section class="signup-section">
+    <!-- FREE GUIDE SECTION -->
+    <section class="guide-section" id="free-guide">
         <div class="container">
-            <div class="signup-box">
-                <div class="signup-content">
-                    <h2>🌴 Get Insider Keys Tips</h2>
-                    <p>Join travelers getting exclusive deals and local secrets.</p>
+            <div class="guide-wrapper">
+                <div class="guide-preview">
+                    <div class="guide-badge">FREE PDF</div>
+                    <div class="guide-icon">🌴</div>
+                    <div class="guide-title-preview">
+                        <strong>Ultimate Florida Keys<br>Trip Planner</strong>
+                        <span>7-Day Itinerary + Tips</span>
+                    </div>
                 </div>
-                <form class="signup-form" id="email-form">
-                    <input type="email" placeholder="Enter your email" required>
-                    <button type="submit">Get the Guide</button>
-                </form>
+                
+                <div class="guide-content">
+                    <h2>Get the Free Keys Trip Planner</h2>
+                    <p>Everything you need to plan your perfect Florida Keys adventure:</p>
+                    
+                    <ul class="guide-checklist">
+                        <li>✓ 7-day itineraries for Key West & beyond</li>
+                        <li>✓ Best times to book popular tours</li>
+                        <li>✓ Local secrets & hidden sandbars</li>
+                        <li>✓ Packing checklist by activity</li>
+                        <li>✓ Money-saving tips from locals</li>
+                    </ul>
+                    
+                    <form class="guide-form" action="https://formspree.io/f/maqwzvpy" method="POST">
+                        <input type="hidden" name="_subject" value="New Keys Trip Planner Request">
+                        <input type="email" name="email" placeholder="Enter your email" required>
+                        <button type="submit">Send Me the Free Guide</button>
+                    </form>
+                    
+                    <p class="guide-privacy">🔒 No spam, ever. Unsubscribe anytime.</p>
+                </div>
             </div>
         </div>
     </section>
@@ -525,7 +591,7 @@
                     <ul>
                         <li><a href="about.html">About Us</a></li>
                         <li><a href="#faq">FAQs</a></li>
-                        <li><a href="mailto:walktheplankadventures@gmail.com">Contact</a></li>
+                        <li><a href="/cdn-cgi/l/email-protection#2b5c4a47405f434e5b474a45404a4f5d4e455f5e594e586b4c464a424705484446">Contact</a></li>
                     </ul>
                 </div>
             </div>
@@ -557,8 +623,4 @@
                 <span id="notification-action">just booked a sandbar tour!</span>
             </div>
         </div>
-    </div>
-
-    <script src="app.js"></script>
-</body>
-</html>
+    </di
