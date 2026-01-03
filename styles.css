@@ -791,7 +791,7 @@ ul, ol { list-style: none; }
     background: var(--white);
     border-radius: var(--radius-lg);
     overflow: hidden;
-    border: 1px solid var(--gray-300);
+    border: 2px solid rgba(0, 0, 0, 0.1);
     transition: all var(--transition-base);
 }
 
