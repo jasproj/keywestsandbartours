@@ -1704,12 +1704,23 @@ ul, ol { list-style: none; }
 }
 
 /* Adjust header position when banner is visible */
-body:has(.promo-banner) .header {
+body:has(.promo-banner:not([style*="display: none"])) .header {
     top: 44px;
 }
 
-body:has(.promo-banner) .hero {
+body:has(.promo-banner:not([style*="display: none"])) .hero {
     padding-top: calc(80px + 44px);
+}
+
+/* When banner is closed, reset positions */
+body.banner-closed .header,
+body:has(.promo-banner[style*="display: none"]) .header {
+    top: 0;
+}
+
+body.banner-closed .hero,
+body:has(.promo-banner[style*="display: none"]) .hero {
+    padding-top: 80px;
 }
 
 /* ===================
@@ -1939,12 +1950,22 @@ body:has(.promo-banner) .hero {
         margin: 8px auto 0;
     }
     
-    body:has(.promo-banner) .header {
+    body:has(.promo-banner:not([style*="display: none"])) .header {
         top: 60px;
     }
     
-    body:has(.promo-banner) .hero {
+    body:has(.promo-banner:not([style*="display: none"])) .hero {
         padding-top: calc(80px + 60px);
+    }
+    
+    body.banner-closed .header,
+    body:has(.promo-banner[style*="display: none"]) .header {
+        top: 0;
+    }
+    
+    body.banner-closed .hero,
+    body:has(.promo-banner[style*="display: none"]) .hero {
+        padding-top: 80px;
     }
     
     .area-cards {
