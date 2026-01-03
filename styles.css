@@ -787,6 +787,7 @@ ul, ol { list-style: none; }
 
 /* Tour Card */
 .tour-card {
+    position: relative;
     background: var(--white);
     border-radius: var(--radius-lg);
     overflow: hidden;
@@ -827,6 +828,21 @@ ul, ol { list-style: none; }
     font-size: 0.75rem;
     font-weight: 600;
     color: var(--ocean-deep);
+}
+
+/* Price Badge - Clean horizontal badge replacing diagonal ribbon */
+.price-badge {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    background: linear-gradient(135deg, #E87B4A 0%, #D66A3D 100%);
+    color: white;
+    font-size: 0.95rem;
+    font-weight: 700;
+    padding: 6px 12px;
+    border-radius: 8px;
+    z-index: 10;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.25);
 }
 
 .tour-card-content {
@@ -1411,6 +1427,11 @@ ul, ol { list-style: none; }
     .section-title {
         font-size: 1.75rem;
     }
+    
+    .price-badge {
+        font-size: 0.85rem;
+        padding: 5px 10px;
+    }
 }
 
 /* ============================================
@@ -1502,10 +1523,6 @@ ul, ol { list-style: none; }
 /* ============================================
    POPULAR BADGE FOR TOUR CARDS
    ============================================ */
-.tour-card {
-    position: relative;
-}
-
 .popular-badge {
     position: absolute;
     top: var(--space-sm);
@@ -1960,7 +1977,7 @@ body:has(.promo-banner) .hero {
 }
 
 /* ===================
-   TOUR CARD PRICE RIBBON & DESCRIPTION
+   TOUR CARD DESCRIPTION
    =================== */
 .tour-description {
     font-size: 0.9rem;
@@ -1973,30 +1990,7 @@ body:has(.promo-banner) .hero {
     overflow: hidden;
 }
 
-.price-ribbon {
-    position: absolute;
-    top: 18px;
-    right: -35px;
-    background: linear-gradient(135deg, #E87B4A 0%, #D66A3D 100%);
-    color: white;
-    font-size: 0.85rem;
-    font-weight: 700;
-    padding: 6px 40px;
-    transform: rotate(45deg);
-    z-index: 10;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
-    text-align: center;
-    letter-spacing: 0.5px;
-}
-
 @media (max-width: 480px) {
-    .price-ribbon {
-        font-size: 0.75rem;
-        padding: 5px 35px;
-        top: 15px;
-        right: -38px;
-    }
-    
     .logo-img {
         height: 60px;
     }
