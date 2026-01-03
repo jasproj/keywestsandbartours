@@ -2056,23 +2056,26 @@ body:has(.promo-banner) .hero {
 .testimonials-scroll {
     position: relative;
     width: 100%;
-    overflow-x: auto;
-    overflow-y: hidden;
-    -webkit-overflow-scrolling: touch;
-    scrollbar-width: none;
-    -ms-overflow-style: none;
-    padding-bottom: 10px;
-}
-
-.testimonials-scroll::-webkit-scrollbar {
-    display: none;
+    overflow: hidden;
+    mask-image: linear-gradient(to right, transparent, black 5%, black 95%, transparent);
+    -webkit-mask-image: linear-gradient(to right, transparent, black 5%, black 95%, transparent);
 }
 
 .testimonials-track {
     display: flex;
     gap: 20px;
-    padding: 10px 20px;
+    padding: 10px 0;
     width: max-content;
+    animation: scrollTestimonials 30s linear infinite;
+}
+
+.testimonials-track:hover {
+    animation-play-state: paused;
+}
+
+@keyframes scrollTestimonials {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
 }
 
 .testimonial-card {
@@ -2134,5 +2137,9 @@ body:has(.promo-banner) .hero {
     
     .testimonial-text {
         font-size: 0.9rem;
+    }
+    
+    .testimonials-track {
+        animation-duration: 25s;
     }
 }
