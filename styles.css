@@ -834,14 +834,18 @@ ul, ol { list-style: none; }
     position: absolute;
     bottom: 12px;
     right: 12px;
-    background: rgba(0, 0, 0, 0.85);
+    background: linear-gradient(135deg, #E87B4A 0%, #D66A3D 100%);
     color: white;
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-weight: 700;
-    padding: 8px 14px;
+    padding: 7px 12px;
     border-radius: 8px;
     z-index: 10;
-    backdrop-filter: blur(4px);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.25);
+}
+
+.price-ribbon::before {
+    content: '$';
 }
 
 .tour-card-content {
@@ -1428,8 +1432,8 @@ ul, ol { list-style: none; }
     }
     
     .price-ribbon {
-        font-size: 0.85rem;
-        padding: 5px 10px;
+        font-size: 0.8rem;
+        padding: 5px 9px;
     }
 }
 
