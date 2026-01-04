@@ -371,7 +371,7 @@ function createTourCard(tour, index) {
             ${popularBadge}
             ${priceBadge}
             <img src="${tour.image}" alt="${tour.name}" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=400'">
-            <span class="tour-location-badge">${tour.location}</span>
+            <span class="tour-location-badge">${tour.location.split('/').pop()}</span>
         </div>
         <div class="tour-card-content">
             <p class="tour-company">${tour.company}</p>
