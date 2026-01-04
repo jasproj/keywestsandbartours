@@ -901,3 +901,83 @@ function initializeFAQs() {
 }
 
 // initializeFAQs is called from initApp()
+
+/* ============================================
+   WEATHER TICKER - LIVE DATA
+   ============================================ */
+
+async function initWeatherTicker() {
+    const KEY_WEST_LAT = 24.5551;
+    const KEY_WEST_LON = -81.7800;
+    
+    try {
+        // Fetch weather from Open-Meteo (free, no API key)
+        const weatherUrl = `https://api.open-meteo.com/v1/forecast?latitude=${KEY_WEST_LAT}&longitude=${KEY_WEST_LON}&current=temperature_2m,relative_humidity_2m,wind_speed_10m,uv_index,visibility&temperature_unit=fahrenheit&wind_speed_unit=mph&timezone=America%2FNew_York`;
+        
+        const weatherRes = await fetch(weatherUrl);
+        const weatherData = await weatherRes.json();
+        
+        if (weatherData.current) {
+            const c = weatherData.current;
+            const temp = Math.round(c.temperature_2m);
+            const humidity = Math.round(c.relative_humidity_2m);
+            const wind = Math.round(c.wind_speed_10m);
+            const uv = c.uv_index?.toFixed(1) || '--';
+            const vis = c.visibility ? Math.round(c.visibility / 1609.34) : '--'; // meters to miles
+            
+            // Update primary
+            document.getElementById('wxTemp').textContent = temp;
+            document.getElementById('wxHumidity').textContent = humidity;
+            document.getElementById('wxWind').textContent = wind;
+            document.getElementById('wxUV').textContent = uv;
+            document.getElementById('wxVis').textContent = vis;
+            
+            // Update duplicates for seamless loop
+            document.querySelectorAll('.wxTempDup').forEach(el => el.textContent = temp);
+            document.querySelectorAll('.wxHumidityDup').forEach(el => el.textContent = humidity);
+            document.querySelectorAll('.wxWindDup').forEach(el => el.textContent = wind);
+            document.querySelectorAll('.wxUVDup').forEach(el => el.textContent = uv);
+            document.querySelectorAll('.wxVisDup').forEach(el => el.textContent = vis);
+        }
+        
+        // Fetch tide from NOAA (Key West station)
+        const now = new Date();
+        const dateStr = now.toISOString().split('T')[0].replace(/-/g, '');
+        const tideUrl = `https://api.tidesandcurrents.noaa.gov/api/prod/datagetter?date=today&station=8724580&product=predictions&datum=MLLW&time_zone=lst_ldt&interval=hilo&units=english&format=json`;
+        
+        const tideRes = await fetch(tideUrl);
+        const tideData = await tideRes.json();
+        
+        if (tideData.predictions && tideData.predictions.length > 0) {
+            const nowTime = now.getTime();
+            let nextTide = null;
+            
+            for (const pred of tideData.predictions) {
+                const tideTime = new Date(pred.t).getTime();
+                if (tideTime > nowTime) {
+                    nextTide = pred;
+                    break;
+                }
+            }
+            
+            if (nextTide) {
+                const tideType = nextTide.type === 'H' ? 'High' : 'Low';
+                const tideTimeStr = new Date(nextTide.t).toLocaleTimeString('en-US', { hour: 'numeric', minute: '2-digit' });
+                const tideText = `${tideType} @ ${tideTimeStr}`;
+                
+                document.getElementById('wxTide').textContent = tideText;
+                document.querySelectorAll('.wxTideDup').forEach(el => el.textContent = tideText);
+            }
+        }
+        
+    } catch (err) {
+        console.log('Weather fetch error:', err);
+    }
+}
+
+// Init weather on page load
+document.addEventListener('DOMContentLoaded', () => {
+    initWeatherTicker();
+    // Refresh every 15 minutes
+    setInterval(initWeatherTicker, 15 * 60 * 1000);
+});

@@ -2206,13 +2206,13 @@ body:has(.promo-banner[style*="display: none"]) .hero {
    ============================================ */
 
 .weather-radar-section {
-    padding: 60px 0;
+    padding: 60px 0 40px;
     background: linear-gradient(180deg, #f8fdff 0%, #e6f4f8 100%);
 }
 
 .weather-header {
     text-align: center;
-    margin-bottom: 32px;
+    margin-bottom: 24px;
 }
 
 .weather-header h2 {
@@ -2229,87 +2229,76 @@ body:has(.promo-banner[style*="display: none"]) .hero {
     margin: 0;
 }
 
-.weather-content {
-    display: grid;
-    grid-template-columns: 1fr 280px;
-    gap: 24px;
-    align-items: start;
-}
-
 .weather-radar {
     border-radius: 16px;
     overflow: hidden;
     box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+    margin-bottom: 20px;
 }
 
 .weather-radar iframe {
     display: block;
 }
 
-.weather-tips {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-}
-
-.weather-tip {
-    display: flex;
-    gap: 14px;
-    align-items: flex-start;
-    background: white;
-    padding: 18px;
+/* Weather Ticker */
+.weather-ticker-wrap {
+    overflow: hidden;
+    background: linear-gradient(135deg, var(--ocean-deep) 0%, #0d6a7a 100%);
     border-radius: 12px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+    padding: 14px 0;
+    box-shadow: 0 4px 15px rgba(11, 85, 99, 0.3);
 }
 
-.weather-tip .tip-icon {
-    font-size: 1.5rem;
-    flex-shrink: 0;
+.weather-ticker {
+    display: flex;
+    gap: 40px;
+    animation: tickerScroll 25s linear infinite;
+    width: max-content;
 }
 
-.weather-tip strong {
-    display: block;
+.ticker-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: white;
     font-size: 0.95rem;
-    color: var(--gray-800);
-    margin-bottom: 4px;
+    font-weight: 500;
+    white-space: nowrap;
 }
 
-.weather-tip p {
-    margin: 0;
-    font-size: 0.85rem;
-    color: var(--gray-500);
-    line-height: 1.4;
+.ticker-icon {
+    font-size: 1.1rem;
+}
+
+@keyframes tickerScroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
+
+.weather-ticker-wrap:hover .weather-ticker {
+    animation-play-state: paused;
 }
 
 /* Mobile responsive */
 @media (max-width: 768px) {
     .weather-radar-section {
-        padding: 40px 0;
+        padding: 40px 0 30px;
     }
     
     .weather-header h2 {
         font-size: 1.5rem;
     }
     
-    .weather-content {
-        grid-template-columns: 1fr;
-    }
-    
     .weather-radar iframe {
         height: 280px;
     }
     
-    .weather-tips {
-        flex-direction: row;
-        overflow-x: auto;
-        gap: 12px;
-        padding-bottom: 8px;
-        -webkit-overflow-scrolling: touch;
+    .weather-ticker {
+        gap: 30px;
+        animation-duration: 20s;
     }
     
-    .weather-tip {
-        flex-shrink: 0;
-        width: 200px;
-        padding: 14px;
+    .ticker-item {
+        font-size: 0.85rem;
     }
 }

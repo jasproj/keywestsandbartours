@@ -756,41 +756,33 @@
         <div class="container">
             <div class="weather-header">
                 <h2>Florida Keys Live Weather</h2>
-                <p>Real-time radar & conditions for planning your perfect tour day</p>
+                <p>Real-time conditions for planning your perfect tour day</p>
             </div>
-            <div class="weather-content">
-                <div class="weather-radar">
-                    <iframe 
-                        src="https://embed.windy.com/embed2.html?lat=24.65&lon=-81.4&zoom=8&level=surface&overlay=radar&menu=&message=&marker=&calendar=&pressure=&type=map&location=coordinates&detail=&metricWind=mph&metricTemp=%C2%B0F&radarRange=-1"
-                        width="100%" 
-                        height="350" 
-                        frameborder="0"
-                        loading="lazy"
-                        title="Key West Weather Radar">
-                    </iframe>
-                </div>
-                <div class="weather-tips">
-                    <div class="weather-tip">
-                        <span class="tip-icon">🌅</span>
-                        <div>
-                            <strong>Morning Tours</strong>
-                            <p>Calmest waters, best visibility for snorkeling</p>
-                        </div>
-                    </div>
-                    <div class="weather-tip">
-                        <span class="tip-icon">⛵</span>
-                        <div>
-                            <strong>Wind Check</strong>
-                            <p>Under 15mph ideal for sandbar trips</p>
-                        </div>
-                    </div>
-                    <div class="weather-tip">
-                        <span class="tip-icon">🌧️</span>
-                        <div>
-                            <strong>Afternoon Showers</strong>
-                            <p>Common in summer — usually pass quickly</p>
-                        </div>
-                    </div>
+            <div class="weather-radar">
+                <iframe 
+                    src="https://embed.windy.com/embed2.html?lat=24.65&lon=-81.4&zoom=8&level=surface&overlay=radar&menu=&message=&marker=&calendar=&pressure=&type=map&location=coordinates&detail=&metricWind=mph&metricTemp=%C2%B0F&radarRange=-1"
+                    width="100%" 
+                    height="350" 
+                    frameborder="0"
+                    loading="lazy"
+                    title="Key West Weather Radar">
+                </iframe>
+            </div>
+            <div class="weather-ticker-wrap">
+                <div class="weather-ticker" id="weatherTicker">
+                    <div class="ticker-item"><span class="ticker-icon">🌡️</span> <span id="wxTemp">--</span>°F</div>
+                    <div class="ticker-item"><span class="ticker-icon">💧</span> Humidity: <span id="wxHumidity">--</span>%</div>
+                    <div class="ticker-item"><span class="ticker-icon">💨</span> Wind: <span id="wxWind">--</span> mph</div>
+                    <div class="ticker-item"><span class="ticker-icon">☀️</span> UV Index: <span id="wxUV">--</span></div>
+                    <div class="ticker-item"><span class="ticker-icon">🌊</span> Tide: <span id="wxTide">--</span></div>
+                    <div class="ticker-item"><span class="ticker-icon">👁️</span> Visibility: <span id="wxVis">--</span> mi</div>
+                    <!-- Duplicate for seamless loop -->
+                    <div class="ticker-item"><span class="ticker-icon">🌡️</span> <span class="wxTempDup">--</span>°F</div>
+                    <div class="ticker-item"><span class="ticker-icon">💧</span> Humidity: <span class="wxHumidityDup">--</span>%</div>
+                    <div class="ticker-item"><span class="ticker-icon">💨</span> Wind: <span class="wxWindDup">--</span> mph</div>
+                    <div class="ticker-item"><span class="ticker-icon">☀️</span> UV Index: <span class="wxUVDup">--</span></div>
+                    <div class="ticker-item"><span class="ticker-icon">🌊</span> Tide: <span class="wxTideDup">--</span></div>
+                    <div class="ticker-item"><span class="ticker-icon">👁️</span> Visibility: <span class="wxVisDup">--</span> mi</div>
                 </div>
             </div>
         </div>
