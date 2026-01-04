@@ -848,6 +848,18 @@ ul, ol { list-style: none; }
     content: '$';
 }
 
+/* Free Cancellation Badge */
+.cancel-badge {
+    display: inline-block;
+    background: #e8f5e9;
+    color: #2e7d32;
+    font-size: 0.75rem;
+    font-weight: 600;
+    padding: 4px 8px;
+    border-radius: 4px;
+    margin-bottom: 8px;
+}
+
 .tour-card-content {
     padding: var(--space-lg);
 }
