@@ -354,9 +354,6 @@ function createTourCard(tour, index) {
     // Price badge with dollar sign
     const priceBadge = tour.price ? `<span class="price-ribbon">${tour.price}</span>` : '';
     
-    // Free cancellation badge
-    const cancelBadge = tour.freeCancellation ? '<span class="cancel-badge">✓ Free Cancellation</span>' : '';
-    
     // Description (truncate to ~100 chars for card display)
     let descHTML = '';
     if (tour.description) {
@@ -376,7 +373,6 @@ function createTourCard(tour, index) {
         <div class="tour-card-content">
             <p class="tour-company">${tour.company}</p>
             <h3 class="tour-name">${tour.name}</h3>
-            ${cancelBadge}
             ${descHTML}
             <div class="tour-tags">${tagsHTML}</div>
             <a href="${tour.bookingLink}" target="_blank" rel="noopener" class="tour-cta">Book Now →</a>
