@@ -244,40 +244,36 @@ function applyFilters() {
             }
         }
         
-        // Search filter with synonyms
+        // Search filter - exact + synonym matching only (no fuzzy)
         if (currentFilters.search) {
-            const searchTerms = currentFilters.search.toLowerCase().split(' ').filter(t => t.length > 0);
-            const searchableContent = `${tour.name} ${tour.company} ${tour.tags.join(' ')} ${tour.location}`.toLowerCase();
+            const searchTerms = currentFilters.search.toLowerCase().split(' ').filter(t => t.length > 1);
+            const searchableContent = `${tour.name} ${tour.company} ${tour.tags.join(' ')} ${tour.location} ${tour.description || ''}`.toLowerCase();
             
-            const matchesSearch = searchTerms.some(term => {
-                // Direct match
+            const matchesSearch = searchTerms.every(term => {
+                // 1. Direct match in content
                 if (searchableContent.includes(term)) return true;
                 
-                // Synonym match
+                // 2. Synonym expansion - check if term matches a synonym key or value
                 for (const [key, synonyms] of Object.entries(SYNONYMS)) {
-                    if (key.includes(term) || synonyms.some(s => s.toLowerCase().includes(term))) {
-                        if (searchableContent.includes(key) || synonyms.some(s => searchableContent.includes(s.toLowerCase()))) {
-                            return true;
-                        }
+                    const keyLower = key.toLowerCase();
+                    const synonymsLower = synonyms.map(s => s.toLowerCase());
+                    
+                    // If search term matches this synonym group
+                    if (keyLower === term || keyLower.includes(term) || synonymsLower.some(s => s === term || s.includes(term))) {
+                        // Check if ANY word from this synonym group appears in tour content
+                        if (searchableContent.includes(keyLower)) return true;
+                        if (synonymsLower.some(s => searchableContent.includes(s))) return true;
                     }
                 }
                 
-                // Location keyword match
+                // 3. Location keyword match
                 for (const [location, keywords] of Object.entries(LOCATION_KEYWORDS)) {
                     if (keywords.some(k => k.includes(term))) {
-                        if (tour.island.toLowerCase() === location) {
-                            return true;
-                        }
+                        if (tour.island.toLowerCase() === location) return true;
                     }
                 }
                 
-                // Fuzzy match (60% threshold)
-                const words = searchableContent.split(/\s+/);
-                return words.some(word => {
-                    if (word.length < 3 || term.length < 3) return false;
-                    const matches = [...term].filter((char, i) => word[i] === char).length;
-                    return matches / Math.max(term.length, word.length) >= 0.6;
-                });
+                return false;
             });
             
             if (!matchesSearch) return false;
