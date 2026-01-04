@@ -830,7 +830,7 @@ ul, ol { list-style: none; }
 }
 
 /* Price Badge - Bottom-right corner of image */
-.price-badge {
+.price-ribbon {
     position: absolute;
     bottom: 12px;
     right: 12px;
@@ -1427,7 +1427,7 @@ ul, ol { list-style: none; }
         font-size: 1.75rem;
     }
     
-    .price-badge {
+    .price-ribbon {
         font-size: 0.85rem;
         padding: 5px 10px;
     }
