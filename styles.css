@@ -804,7 +804,6 @@ ul, ol { list-style: none; }
 .tour-card-img {
     position: relative;
     height: 200px;
-    overflow: hidden;
 }
 
 .tour-card-img img {
