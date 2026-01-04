@@ -172,6 +172,13 @@ async function loadTours() {
             tourCountEl.textContent = allTours.length;
         }
         
+        // Update operator count (unique companies)
+        const operatorCountEl = document.getElementById('operator-count');
+        if (operatorCountEl) {
+            const uniqueCompanies = new Set(allTours.map(t => t.company)).size;
+            operatorCountEl.textContent = uniqueCompanies;
+        }
+        
         applyFilters();
     } catch (error) {
         console.error('Error loading tours:', error);
