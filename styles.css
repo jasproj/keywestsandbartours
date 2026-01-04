@@ -2200,3 +2200,116 @@ body:has(.promo-banner[style*="display: none"]) .hero {
     margin-left: 4px;
     font-weight: 500;
 }
+
+/* ============================================
+   WEATHER RADAR SECTION
+   ============================================ */
+
+.weather-radar-section {
+    padding: 60px 0;
+    background: linear-gradient(180deg, #f8fdff 0%, #e6f4f8 100%);
+}
+
+.weather-header {
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.weather-header h2 {
+    font-family: var(--font-display);
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--ocean-deep);
+    margin: 0 0 8px;
+}
+
+.weather-header p {
+    color: var(--gray-500);
+    font-size: 1rem;
+    margin: 0;
+}
+
+.weather-content {
+    display: grid;
+    grid-template-columns: 1fr 280px;
+    gap: 24px;
+    align-items: start;
+}
+
+.weather-radar {
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+}
+
+.weather-radar iframe {
+    display: block;
+}
+
+.weather-tips {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.weather-tip {
+    display: flex;
+    gap: 14px;
+    align-items: flex-start;
+    background: white;
+    padding: 18px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.weather-tip .tip-icon {
+    font-size: 1.5rem;
+    flex-shrink: 0;
+}
+
+.weather-tip strong {
+    display: block;
+    font-size: 0.95rem;
+    color: var(--gray-800);
+    margin-bottom: 4px;
+}
+
+.weather-tip p {
+    margin: 0;
+    font-size: 0.85rem;
+    color: var(--gray-500);
+    line-height: 1.4;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+    .weather-radar-section {
+        padding: 40px 0;
+    }
+    
+    .weather-header h2 {
+        font-size: 1.5rem;
+    }
+    
+    .weather-content {
+        grid-template-columns: 1fr;
+    }
+    
+    .weather-radar iframe {
+        height: 280px;
+    }
+    
+    .weather-tips {
+        flex-direction: row;
+        overflow-x: auto;
+        gap: 12px;
+        padding-bottom: 8px;
+        -webkit-overflow-scrolling: touch;
+    }
+    
+    .weather-tip {
+        flex-shrink: 0;
+        width: 200px;
+        padding: 14px;
+    }
+}
