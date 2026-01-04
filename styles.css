@@ -2167,3 +2167,36 @@ body:has(.promo-banner[style*="display: none"]) .hero {
         animation-duration: 25s;
     }
 }
+
+/* Star Ratings */
+.star-rating {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    margin: 6px 0 8px 0;
+}
+
+.star-rating .star {
+    font-size: 0.9rem;
+    line-height: 1;
+}
+
+.star-rating .star.full {
+    color: #F59E0B;
+}
+
+.star-rating .star.half {
+    color: #F59E0B;
+    position: relative;
+}
+
+.star-rating .star.empty {
+    color: #D1D5DB;
+}
+
+.star-rating .rating-num {
+    font-size: 0.8rem;
+    color: #6B7280;
+    margin-left: 4px;
+    font-weight: 500;
+}
