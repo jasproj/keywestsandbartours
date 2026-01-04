@@ -364,14 +364,16 @@ function createTourCard(tour, index) {
     const starRating = tour.qualityScore ? Math.min(5, Math.max(3, (tour.qualityScore / 20))).toFixed(1) : null;
     const starsHTML = starRating ? createStarsHTML(parseFloat(starRating)) : '';
     
-    // Description (truncate to ~100 chars for card display)
-    let descHTML = '';
-    if (tour.description) {
-        const shortDesc = tour.description.length > 120 
-            ? tour.description.substring(0, 117) + '...' 
-            : tour.description;
-        descHTML = `<p class="tour-description">${shortDesc}</p>`;
+    // Description - use existing or generate fallback from tags/name
+    let description = tour.description;
+    if (!description || description.trim() === '') {
+        description = generateFallbackDescription(tour);
     }
+    
+    const shortDesc = description.length > 120 
+        ? description.substring(0, 117) + '...' 
+        : description;
+    const descHTML = `<p class="tour-description">${shortDesc}</p>`;
     
     card.innerHTML = `
         <div class="tour-card-img">
@@ -391,6 +393,52 @@ function createTourCard(tour, index) {
     `;
     
     return card;
+}
+
+// Generate fallback description from tour tags/name when none exists
+function generateFallbackDescription(tour) {
+    const tags = tour.tags || [];
+    const name = tour.name || '';
+    const company = tour.company || '';
+    const location = tour.island || 'Key West';
+    
+    // Tag-based description templates
+    const tagDescriptions = {
+        'Snorkel': `Dive into crystal-clear waters and discover vibrant coral reefs and tropical fish.`,
+        'Sandbar': `Wade through pristine shallow waters at a secluded sandbar paradise.`,
+        'Sunset': `Watch the sky transform into brilliant oranges and pinks over the Gulf.`,
+        'Dolphin': `Encounter playful dolphins in their natural habitat.`,
+        'Fishing': `Cast your line in world-class fishing waters with experienced captains.`,
+        'Kayak': `Paddle through calm mangrove trails and spot native wildlife.`,
+        'Jet Ski': `Feel the thrill of riding across turquoise waters.`,
+        'Parasail': `Soar high above the Keys for breathtaking aerial views.`,
+        'Sailing': `Glide across the water on a classic sailing adventure.`,
+        'Catamaran': `Cruise in comfort aboard a spacious catamaran.`,
+        'Scuba': `Explore underwater worlds with professional dive guides.`,
+        'Eco Tour': `Discover the unique ecosystems of the Florida Keys.`,
+        'Private': `Enjoy an exclusive experience tailored just for your group.`,
+        'Boat Tour': `Cruise the beautiful waters surrounding ${location}.`,
+        'Boat Rental': `Captain your own vessel and explore at your pace.`
+    };
+    
+    // Find matching tag description
+    let desc = '';
+    for (const tag of tags) {
+        for (const [key, template] of Object.entries(tagDescriptions)) {
+            if (tag.toLowerCase().includes(key.toLowerCase())) {
+                desc = template;
+                break;
+            }
+        }
+        if (desc) break;
+    }
+    
+    // Fallback if no tag match
+    if (!desc) {
+        desc = `Join ${company} for this popular ${location} adventure.`;
+    }
+    
+    return `${desc} Book with ${company} today.`;
 }
 
 // Generate star rating HTML
