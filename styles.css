@@ -829,19 +829,19 @@ ul, ol { list-style: none; }
     color: var(--ocean-deep);
 }
 
-/* Price Badge - Clean horizontal badge top-right */
+/* Price Badge - Bottom-right corner of image */
 .price-badge {
     position: absolute;
-    bottom: -14px;
+    bottom: 12px;
     right: 12px;
-    background: linear-gradient(135deg, #E87B4A 0%, #D66A3D 100%);
+    background: rgba(0, 0, 0, 0.85);
     color: white;
-    font-size: 1rem;
+    font-size: 1.1rem;
     font-weight: 700;
     padding: 8px 14px;
     border-radius: 8px;
     z-index: 10;
-    box-shadow: 0 3px 10px rgba(0,0,0,0.3);
+    backdrop-filter: blur(4px);
 }
 
 .tour-card-content {
