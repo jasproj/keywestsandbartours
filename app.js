@@ -356,6 +356,10 @@ function createTourCard(tour, index) {
     // Price badge with dollar sign
     const priceBadge = tour.price ? `<span class="price-ribbon">${tour.price}</span>` : '';
     
+    // Star rating from qualityScore (0-100 → 0-5 stars)
+    const starRating = tour.qualityScore ? Math.min(5, Math.max(3, (tour.qualityScore / 20))).toFixed(1) : null;
+    const starsHTML = starRating ? createStarsHTML(parseFloat(starRating)) : '';
+    
     // Description (truncate to ~100 chars for card display)
     let descHTML = '';
     if (tour.description) {
@@ -375,13 +379,50 @@ function createTourCard(tour, index) {
         <div class="tour-card-content">
             <p class="tour-company">${tour.company}</p>
             <h3 class="tour-name">${tour.name}</h3>
+            ${starsHTML}
             ${descHTML}
             <div class="tour-tags">${tagsHTML}</div>
-            <a href="${tour.bookingLink}" target="_blank" rel="noopener" class="tour-cta">Book Now →</a>
+            <a href="${tour.bookingLink}" target="_blank" rel="noopener" class="tour-cta" onclick="trackBookClick('${tour.id}', '${tour.name.replace(/'/g, "\\'")}', '${tour.company.replace(/'/g, "\\'")}')">Book Now →</a>
         </div>
     `;
     
     return card;
+}
+
+// Generate star rating HTML
+function createStarsHTML(rating) {
+    const fullStars = Math.floor(rating);
+    const hasHalf = rating % 1 >= 0.3 && rating % 1 < 0.8;
+    const emptyStars = 5 - fullStars - (hasHalf ? 1 : 0);
+    
+    let html = '<div class="star-rating">';
+    for (let i = 0; i < fullStars; i++) html += '<span class="star full">★</span>';
+    if (hasHalf) html += '<span class="star half">★</span>';
+    for (let i = 0; i < emptyStars; i++) html += '<span class="star empty">☆</span>';
+    html += `<span class="rating-num">${rating.toFixed(1)}</span></div>`;
+    return html;
+}
+
+// GA4 + Facebook Pixel tracking for affiliate clicks
+function trackBookClick(tourId, tourName, company) {
+    // GA4 event
+    if (typeof gtag !== 'undefined') {
+        gtag('event', 'affiliate_click', {
+            tour_id: tourId,
+            tour_name: tourName,
+            company: company,
+            event_category: 'booking',
+            event_label: tourName
+        });
+    }
+    // Facebook Pixel event
+    if (typeof fbq !== 'undefined') {
+        fbq('track', 'InitiateCheckout', {
+            content_name: tourName,
+            content_ids: [tourId],
+            content_type: 'product'
+        });
+    }
 }
 
 function updateResultsCount() {
