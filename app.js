@@ -32,6 +32,7 @@ let displayedCount = 0;
 let currentFilters = {
     island: '',
     activity: '',
+    duration: '',
     search: '',
     sort: 'random'
 };
@@ -221,6 +222,25 @@ function applyFilters() {
             return false;
         }
         
+        // Duration filter
+        if (currentFilters.duration) {
+            const duration = tour.duration || 0;
+            switch (currentFilters.duration) {
+                case 'short':
+                    if (duration === 0 || duration >= 120) return false;
+                    break;
+                case 'medium':
+                    if (duration < 120 || duration > 240) return false;
+                    break;
+                case 'half':
+                    if (duration < 240 || duration > 360) return false;
+                    break;
+                case 'full':
+                    if (duration < 360) return false;
+                    break;
+            }
+        }
+        
         // Search filter with synonyms
         if (currentFilters.search) {
             const searchTerms = currentFilters.search.toLowerCase().split(' ').filter(t => t.length > 0);
@@ -263,11 +283,15 @@ function applyFilters() {
         return true;
     });
     
-    // Sort (random shuffles every time for true randomization)
+    // Sort
     if (currentFilters.sort === 'quality') {
         filteredTours.sort((a, b) => (b.qualityScore || 0) - (a.qualityScore || 0));
     } else if (currentFilters.sort === 'name') {
         filteredTours.sort((a, b) => a.name.localeCompare(b.name));
+    } else if (currentFilters.sort === 'price-low') {
+        filteredTours.sort((a, b) => (a.price || 9999) - (b.price || 9999));
+    } else if (currentFilters.sort === 'price-high') {
+        filteredTours.sort((a, b) => (b.price || 0) - (a.price || 0));
     } else {
         // 'random' - shuffle filtered results fresh every time
         filteredTours = cryptoShuffle([...filteredTours]);
@@ -327,8 +351,11 @@ function createTourCard(tour, index) {
     const isPopular = tour.qualityScore >= 95;
     const popularBadge = isPopular ? '<span class="popular-badge">Popular</span>' : '';
     
-    // Price ribbon
-    const priceRibbon = tour.price ? `<span class="price-ribbon">${tour.price}</span>` : '';
+    // Price badge with dollar sign
+    const priceBadge = tour.price ? `<span class="price-ribbon">${tour.price}</span>` : '';
+    
+    // Free cancellation badge
+    const cancelBadge = tour.freeCancellation ? '<span class="cancel-badge">✓ Free Cancellation</span>' : '';
     
     // Description (truncate to ~100 chars for card display)
     let descHTML = '';
@@ -342,13 +369,14 @@ function createTourCard(tour, index) {
     card.innerHTML = `
         <div class="tour-card-img">
             ${popularBadge}
-            ${priceRibbon}
+            ${priceBadge}
             <img src="${tour.image}" alt="${tour.name}" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=400'">
-            <span class="tour-location-badge">${tour.location}</span>
+            <span class="tour-location-badge">${tour.location.split('/').pop()}</span>
         </div>
         <div class="tour-card-content">
             <p class="tour-company">${tour.company}</p>
             <h3 class="tour-name">${tour.name}</h3>
+            ${cancelBadge}
             ${descHTML}
             <div class="tour-tags">${tagsHTML}</div>
             <a href="${tour.bookingLink}" target="_blank" rel="noopener" class="tour-cta">Book Now →</a>
@@ -377,6 +405,7 @@ function setupEventListeners() {
     // Filter dropdowns
     const islandFilter = document.getElementById('island-filter');
     const activityFilter = document.getElementById('activity-filter');
+    const durationFilter = document.getElementById('duration-filter');
     const sortFilter = document.getElementById('sort-filter');
     const searchInput = document.getElementById('search-input');
     const heroSearch = document.getElementById('hero-search');
@@ -391,6 +420,13 @@ function setupEventListeners() {
     if (activityFilter) {
         activityFilter.addEventListener('change', (e) => {
             currentFilters.activity = e.target.value;
+            applyFilters();
+        });
+    }
+    
+    if (durationFilter) {
+        durationFilter.addEventListener('change', (e) => {
+            currentFilters.duration = e.target.value;
             applyFilters();
         });
     }
@@ -462,10 +498,11 @@ function quickFilter(term) {
 }
 
 function clearAllFilters() {
-    currentFilters = { island: '', activity: '', search: '', sort: 'random' };
+    currentFilters = { island: '', activity: '', duration: '', search: '', sort: 'random' };
     
     document.getElementById('island-filter').value = '';
     document.getElementById('activity-filter').value = '';
+    document.getElementById('duration-filter').value = '';
     document.getElementById('sort-filter').value = 'random';
     document.getElementById('search-input').value = '';
     
