@@ -132,6 +132,7 @@ async function initApp() {
     initMobileCTA();
     initFOMO();
     initWeather();
+    initWeatherTicker(); // Live weather ticker
     initializeFAQs();
     checkURLParams();
 }
@@ -975,9 +976,6 @@ async function initWeatherTicker() {
     }
 }
 
-// Init weather on page load
-document.addEventListener('DOMContentLoaded', () => {
-    initWeatherTicker();
-    // Refresh every 15 minutes
-    setInterval(initWeatherTicker, 15 * 60 * 1000);
-});
+// initWeatherTicker is called from initApp()
+// Refresh weather every 15 minutes
+setInterval(initWeatherTicker, 15 * 60 * 1000);
