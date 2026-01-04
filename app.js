@@ -146,22 +146,24 @@ async function loadTours() {
         const response = await fetch('tours-data.json?t=' + Date.now());
         allTours = await response.json();
         
-        // Get recently shown tours from localStorage
-        const recentlyShown = JSON.parse(localStorage.getItem('kwst_recent') || '[]');
-        
-        // Crypto-grade shuffle
+        // Pure crypto shuffle - truly random every time
         allTours = cryptoShuffle([...allTours]);
         
-        // Move recently shown tours to the back so they don't appear first
-        if (recentlyShown.length > 0) {
-            const notRecent = allTours.filter(t => !recentlyShown.includes(t.id));
-            const recent = allTours.filter(t => recentlyShown.includes(t.id));
-            allTours = [...cryptoShuffle(notRecent), ...cryptoShuffle(recent)];
+        // Get this session's shown tours (resets when browser closes)
+        const sessionShown = JSON.parse(sessionStorage.getItem('kwst_session') || '[]');
+        
+        // If we have session history, push those to the back
+        if (sessionShown.length > 0 && sessionShown.length < allTours.length * 0.8) {
+            const notShown = allTours.filter(t => !sessionShown.includes(t.id));
+            const shown = allTours.filter(t => sessionShown.includes(t.id));
+            // Put unshown first (shuffled), then shown (shuffled)
+            allTours = [...cryptoShuffle(notShown), ...cryptoShuffle(shown)];
         }
         
-        // Store first 48 tour IDs as "recently shown" (4 pages worth)
-        const newRecent = allTours.slice(0, 48).map(t => t.id);
-        localStorage.setItem('kwst_recent', JSON.stringify(newRecent));
+        // Track first 24 tours shown this session
+        const newSessionShown = [...new Set([...sessionShown, ...allTours.slice(0, 24).map(t => t.id)])];
+        // Cap at 200 to prevent memory issues, keep most recent
+        sessionStorage.setItem('kwst_session', JSON.stringify(newSessionShown.slice(-200)));
         
         // Update tour count in trust bar
         const tourCountEl = document.getElementById('tour-count');
