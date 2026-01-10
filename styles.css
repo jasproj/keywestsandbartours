@@ -1319,12 +1319,24 @@ body {
 
 /* Footer - Mobile First */
 .footer {
-    background: #FDF8F0;
-    padding: 40px 15px 100px; /* Extra padding for mobile CTA */
+    background: linear-gradient(180deg, #1B3A57 0%, #0f2438 100%);
+    padding: 50px 15px 100px;
+    color: white;
+    position: relative;
+}
+
+.footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #3BB8C3, #E87B4A, #3BB8C3);
 }
 
 @media (min-width: 768px) {
-    .footer { padding: 60px 20px 30px; }
+    .footer { padding: 70px 20px 40px; }
 }
 
 .footer-grid {
@@ -1351,31 +1363,35 @@ body {
 }
 
 .footer-brand p {
-    color: #666;
-    font-size: 0.85rem;
-    margin-top: 12px;
-    line-height: 1.5;
+    color: rgba(255,255,255,0.7);
+    font-size: 0.9rem;
+    margin-top: 15px;
+    line-height: 1.6;
 }
 
 .footer-logo,
 .footer-logo-img {
-    height: 50px;
-    max-width: 200px;
+    height: 125px;
+    max-width: 300px;
     width: auto;
+    filter: brightness(1.1);
 }
 
 @media (min-width: 768px) {
     .footer-logo,
     .footer-logo-img { 
-        height: 60px;
+        height: 150px;
         max-width: none;
     }
 }
 
 .footer-links h4 {
-    color: #1B3A57;
-    margin-bottom: 12px;
+    color: #3BB8C3;
+    margin-bottom: 15px;
     font-size: 0.95rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
 }
 
 .footer-links ul {
@@ -1383,40 +1399,49 @@ body {
 }
 
 .footer-links li {
-    margin-bottom: 8px;
+    margin-bottom: 10px;
 }
 
 .footer-links a {
-    color: #666;
+    color: rgba(255,255,255,0.8);
     text-decoration: none;
-    font-size: 0.85rem;
-    transition: color 0.3s;
+    font-size: 0.9rem;
+    transition: all 0.3s;
     padding: 4px 0;
     display: inline-block;
 }
 
 .footer-links a:hover {
     color: #E87B4A;
+    transform: translateX(3px);
 }
 
 .footer-bottom {
-    margin-top: 30px;
-    padding-top: 20px;
-    border-top: 1px solid #e0e0e0;
+    margin-top: 40px;
+    padding-top: 25px;
+    border-top: 1px solid rgba(255,255,255,0.15);
     text-align: center;
 }
 
 @media (min-width: 768px) {
     .footer-bottom {
         max-width: 1200px;
-        margin: 40px auto 0;
-        padding-top: 25px;
+        margin: 50px auto 0;
+        padding-top: 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
 }
 
 .footer-bottom p {
-    color: #999;
-    font-size: 0.8rem;
+    color: rgba(255,255,255,0.5);
+    font-size: 0.85rem;
+}
+
+.footer-bottom a {
+    color: #3BB8C3;
+    text-decoration: none;
 }
 
 /* Mobile CTA - Fixed at bottom */
