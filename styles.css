@@ -176,6 +176,9 @@ body {
     width: auto;
     margin-bottom: 15px;
     filter: drop-shadow(0 4px 15px rgba(0,0,0,0.3));
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 @media (min-width: 768px) {
