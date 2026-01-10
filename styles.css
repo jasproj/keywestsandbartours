@@ -157,7 +157,9 @@ body {
 /* Hero - Mobile First */
 .hero {
     padding: 70px 15px 30px;
-    background: linear-gradient(135deg, #1B3A57 0%, #3BB8C3 100%);
+    background: linear-gradient(rgba(27, 58, 87, 0.6), rgba(59, 184, 195, 0.6)), url('hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
     text-align: center;
     color: white;
 }
