@@ -464,7 +464,7 @@ body {
     }
 }
 
-.trust-item {
+.trust-section .trust-item {
     display: flex;
     align-items: flex-start;
     gap: 10px;
@@ -1168,7 +1168,8 @@ body {
 
 /* Guide Section - Mobile First */
 .guide-section {
-    background: linear-gradient(135deg, #1B3A57 0%, #3BB8C3 100%);
+    position: relative;
+    overflow: hidden;
     padding: 40px 15px;
 }
 
@@ -1176,7 +1177,32 @@ body {
     .guide-section { padding: 60px 20px; }
 }
 
+.guide-video-bg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+    object-fit: cover;
+}
+
+.guide-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(27, 58, 87, 0.85) 0%, rgba(59, 184, 195, 0.75) 100%);
+    z-index: 1;
+}
+
 .guide-content {
+    position: relative;
+    z-index: 2;
     max-width: 600px;
     margin: 0 auto;
     text-align: center;
@@ -1420,10 +1446,32 @@ body {
 
 /* Area Page Styles - Mobile First */
 .area-hero {
+    position: relative;
     padding: 70px 15px 30px;
     background: linear-gradient(135deg, #1B3A57 0%, #3BB8C3 100%);
     text-align: center;
     color: white;
+}
+
+.area-hero.has-bg {
+    background-size: cover;
+    background-position: center;
+}
+
+.area-hero.has-bg::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(27, 58, 87, 0.75) 0%, rgba(59, 184, 195, 0.6) 100%);
+    z-index: 1;
+}
+
+.area-hero > * {
+    position: relative;
+    z-index: 2;
 }
 
 @media (min-width: 768px) {

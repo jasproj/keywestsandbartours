@@ -40,23 +40,32 @@ function matchesActivity(tour, activity) {
     if (!activity) return true;
     const tags = (tour.tags || []).join(' ').toLowerCase();
     const name = (tour.name || '').toLowerCase();
+    const desc = (tour.description || '').toLowerCase();
     
     const activityMap = {
         'snorkel': ['snorkel', 'reef'],
-        'boat': ['boat', 'cruise', 'charter'],
+        'boat': ['boat tour', 'cruise', 'charter'],
         'fishing': ['fish', 'angling'],
         'sunset': ['sunset'],
         'dolphin': ['dolphin'],
-        'kayak': ['kayak', 'paddle'],
-        'jet-ski': ['jet ski', 'jetski', 'waverunner'],
+        'sandbar': ['sandbar', 'sand bar'],
+        'kayak': ['kayak'],
+        'paddleboard': ['paddleboard', 'paddle board', 'sup', 'stand up paddle'],
+        'jet-ski': ['jet ski', 'jetski', 'waverunner', 'jet-ski'],
         'scuba': ['scuba', 'dive', 'diving'],
         'sailing': ['sail', 'catamaran'],
         'parasail': ['parasail'],
+        'kiteboard': ['kiteboard', 'kite board', 'kitesurf'],
+        'rental': ['rental', 'boat rental'],
+        'walking': ['walking tour', 'walk tour', 'ghost tour', 'historic tour'],
+        'food': ['food tour', 'culinary', 'tasting'],
+        'bike': ['bike', 'bicycle', 'cycling'],
+        'museum': ['museum', 'aquarium', 'exhibit'],
         'private': ['private']
     };
     
     const keywords = activityMap[activity] || [activity];
-    return keywords.some(kw => tags.includes(kw) || name.includes(kw));
+    return keywords.some(kw => tags.includes(kw) || name.includes(kw) || desc.includes(kw));
 }
 
 // Format duration
