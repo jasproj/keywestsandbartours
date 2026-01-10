@@ -1231,12 +1231,19 @@ body {
     line-height: 1.5;
 }
 
-.footer-logo {
+.footer-logo,
+.footer-logo-img {
     height: 50px;
+    max-width: 200px;
+    width: auto;
 }
 
 @media (min-width: 768px) {
-    .footer-logo { height: 60px; }
+    .footer-logo,
+    .footer-logo-img { 
+        height: 60px;
+        max-width: none;
+    }
 }
 
 .footer-links h4 {
