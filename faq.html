@@ -3,11 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FAQs | Key West Sandbar Tours | Florida Keys Questions Answered</title>
-    <meta name="description" content="Frequently asked questions about Key West tours, sandbar trips, snorkeling, sunset cruises, and Florida Keys adventures. Get answers before you book.">
+    <title>FAQ | Key West Sandbar Tours | Booking Help & Tour Questions</title>
+    <meta name="description" content="Frequently asked questions about booking Florida Keys tours. Cancellation policies, what to bring, weather, payment, and more.">
     <link rel="canonical" href="https://keywestsandbartours.com/faq.html">
     
-    <!-- Google tag (gtag.js) -->
+    <meta property="og:title" content="FAQ | Key West Sandbar Tours">
+    <meta property="og:description" content="Answers to common questions about booking Florida Keys tours and activities.">
+    <meta property="og:image" content="https://keywestsandbartours.com/og-image.jpg">
+    
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png">
+    
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-B6ER6JP7QV"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -16,431 +22,458 @@
         gtag('config', 'G-B6ER6JP7QV');
     </script>
     
-    <!-- Open Graph -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://keywestsandbartours.com/faq.html">
-    <meta property="og:title" content="FAQs | Key West Sandbar Tours">
-    <meta property="og:description" content="Frequently asked questions about Key West tours and Florida Keys adventures.">
-    <meta property="og:image" content="https://keywestsandbartours.com/logo.png">
-    
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Outfit:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-    
     <link rel="stylesheet" href="styles.css">
-    
-    <!-- FAQPage Schema -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "FAQPage",
-        "mainEntity": [
-            {
-                "@type": "Question",
-                "name": "What are the best things to do in Key West?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Top activities include sandbar trips with crystal-clear waters, snorkeling at the only living coral reef in North America, sunset cruises at Mallory Square, dolphin watching, parasailing, fishing charters, jet ski tours, kayaking through mangroves, and exploring Duval Street."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "What is a sandbar tour in Key West?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Sandbar tours take you to shallow sandbars in the backcountry where you can wade in crystal-clear, waist-deep water, relax, swim, and enjoy stunning Keys scenery. Popular sandbars include Snipes Point, Woman Key, Boca Grande, and Jewfish Basin."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "What's the best time to visit Key West?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Key West is beautiful year-round. Winter (December-March) has perfect weather and is peak season. Spring (April-May) offers fewer crowds and great conditions. Summer and Fall are warmer with occasional afternoon showers and the best deals."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "How much do Key West tours cost?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Tour prices vary by activity. Snorkeling trips start around $50-80 per person. Sandbar tours range from $75-150. Private charters typically run $400-800 for 4 hours. Sunset cruises start at $50. Fishing charters range from $600-1200."
-                }
-            }
-        ]
-    }
-    </script>
-    
     <style>
-        .faq-page-hero {
-            background: linear-gradient(135deg, var(--ocean-deep), var(--ocean-mid));
-            padding: 140px 20px 60px;
-            text-align: center;
+        .faq-hero {
+            background: linear-gradient(135deg, #1B3A57 0%, #3BB8C3 100%);
             color: white;
+            padding: 100px 20px 50px;
+            text-align: center;
         }
-        
-        .faq-page-hero h1 {
-            font-family: var(--font-display);
-            font-size: 2.5rem;
-            font-weight: 700;
+        .faq-hero h1 {
+            font-size: 2rem;
             margin-bottom: 10px;
         }
-        
-        .faq-page-hero p {
+        .faq-hero p {
             opacity: 0.9;
             font-size: 1.1rem;
         }
-        
-        .faq-page-content {
-            padding: 60px 20px;
-            max-width: 800px;
-            margin: 0 auto;
+        @media (min-width: 768px) {
+            .faq-hero { padding: 120px 20px 60px; }
+            .faq-hero h1 { font-size: 2.5rem; }
         }
         
-        .faq-category {
+        .faq-content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px 60px;
+        }
+        
+        .faq-section {
             margin-bottom: 40px;
         }
         
-        .faq-category-title {
-            font-family: var(--font-display);
-            font-size: 1.5rem;
-            font-weight: 700;
-            color: var(--ocean-deep);
+        .faq-section h2 {
+            color: #1B3A57;
+            font-size: 1.4rem;
             margin-bottom: 20px;
             padding-bottom: 10px;
-            border-bottom: 2px solid var(--ocean-light);
+            border-bottom: 2px solid #3BB8C3;
         }
         
-        .faq-back-link {
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            color: var(--ocean-mid);
+        .faq-item {
+            margin-bottom: 20px;
+            background: #f9f9f9;
+            border-radius: 12px;
+            overflow: hidden;
+        }
+        
+        .faq-question {
+            padding: 18px 20px;
             font-weight: 600;
-            margin-bottom: 30px;
-            transition: color 0.2s;
+            color: #1B3A57;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: background 0.3s;
         }
         
-        .faq-back-link:hover {
-            color: var(--ocean-deep);
+        .faq-question:hover {
+            background: #f0f0f0;
+        }
+        
+        .faq-question::after {
+            content: '+';
+            font-size: 1.5rem;
+            font-weight: 300;
+            color: #3BB8C3;
+            transition: transform 0.3s;
+        }
+        
+        .faq-item.active .faq-question::after {
+            transform: rotate(45deg);
+        }
+        
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+        }
+        
+        .faq-item.active .faq-answer {
+            max-height: 500px;
+        }
+        
+        .faq-answer-content {
+            padding: 0 20px 20px;
+            color: #555;
+            line-height: 1.7;
+        }
+        
+        .faq-answer-content ul {
+            margin: 10px 0;
+            padding-left: 20px;
+        }
+        
+        .faq-answer-content li {
+            margin-bottom: 8px;
+        }
+        
+        .faq-cta {
+            background: linear-gradient(135deg, #1B3A57, #3BB8C3);
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+            border-radius: 16px;
+            margin-top: 40px;
+        }
+        
+        .faq-cta h3 {
+            margin-bottom: 15px;
+            font-size: 1.3rem;
+        }
+        
+        .faq-cta p {
+            opacity: 0.9;
+            margin-bottom: 20px;
+        }
+        
+        .faq-cta a {
+            display: inline-block;
+            background: #E87B4A;
+            color: white;
+            padding: 14px 30px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        
+        .contact-box {
+            background: #FDF8F0;
+            padding: 25px;
+            border-radius: 12px;
+            text-align: center;
+            margin-top: 30px;
+        }
+        
+        .contact-box h4 {
+            color: #1B3A57;
+            margin-bottom: 10px;
+        }
+        
+        .contact-box a {
+            color: #3BB8C3;
+            font-weight: 600;
+            text-decoration: none;
         }
     </style>
 </head>
 <body>
-    <!-- HEADER -->
     <header class="header">
         <div class="header-container">
-            <div class="logo-group">
-                <a href="/" class="logo">
-                    <img src="logo.png" alt="Key West Sandbar Tours" class="logo-img">
-                </a>
-            </div>
+            <a href="/" class="logo">
+                <img src="logo.png" alt="Key West Sandbar Tours" class="logo-img">
+                <span class="logo-text">Key West Sandbar Tours</span>
+            </a>
             <nav class="nav-desktop">
                 <a href="/#tours-section">Tours</a>
-                <a href="about.html">About</a>
-                <a href="faq.html">FAQs</a>
+                <a href="/#areas">Areas</a>
+                <a href="blog/">Blog</a>
             </nav>
-            <button class="mobile-menu-btn" aria-label="Menu">
-                <span></span><span></span><span></span>
-            </button>
+            <a href="tel:7276232652" class="header-phone">
+                <span class="phone-icon">📞</span>
+                <span class="phone-number">(727) 623-2652</span>
+            </a>
+            <button class="nav-toggle" aria-label="Menu" onclick="document.querySelector('.nav-mobile').classList.toggle('active')">☰</button>
         </div>
-        <nav class="nav-mobile">
-            <a href="/#tours-section">Tours</a>
-            <a href="about.html">About</a>
-            <a href="faq.html">FAQs</a>
-        </nav>
     </header>
+    
+    <nav class="nav-mobile">
+        <a href="/#tours-section">Tours</a>
+        <a href="/#areas">Areas</a>
+        <a href="blog/">Blog</a>
+    </nav>
 
-    <!-- HERO -->
-    <section class="faq-page-hero">
+    <section class="faq-hero">
         <h1>Frequently Asked Questions</h1>
-        <p>Everything you need to know about Key West tours</p>
+        <p>Everything you need to know about booking Florida Keys tours</p>
     </section>
 
-    <!-- FAQ CONTENT -->
-    <div class="faq-page-content">
-        <a href="/" class="faq-back-link">← Back to Tours</a>
+    <div class="faq-content">
         
-        <!-- GENERAL -->
-        <div class="faq-category">
-            <h2 class="faq-category-title">🌴 General Questions</h2>
+        <!-- Booking Section -->
+        <div class="faq-section">
+            <h2>📅 Booking & Reservations</h2>
             
-            <details class="faq-item">
-                <summary>What are the best things to do in Key West?</summary>
+            <div class="faq-item">
+                <div class="faq-question">How do I book a tour?</div>
                 <div class="faq-answer">
-                    <p>Top activities include sandbar trips with crystal-clear waters, snorkeling at the only living coral reef in North America, sunset cruises at Mallory Square, dolphin watching, parasailing, fishing charters, jet ski tours, kayaking through mangroves, and exploring Duval Street. We feature the best local tours across all categories.</p>
+                    <div class="faq-answer-content">
+                        Click the "Book Now" button on any tour to go directly to the operator's booking page. All bookings are processed securely through FareHarbor, a trusted booking platform used by thousands of tour operators worldwide. You'll receive instant confirmation via email.
+                    </div>
                 </div>
-            </details>
+            </div>
             
-            <details class="faq-item">
-                <summary>What's the best time to visit Key West?</summary>
+            <div class="faq-item">
+                <div class="faq-question">Do I need to book in advance?</div>
                 <div class="faq-answer">
-                    <p>Key West is beautiful year-round! <strong>Winter (Dec–Mar)</strong> has perfect weather and is peak season. <strong>Spring (Apr–May)</strong> offers fewer crowds and great conditions. <strong>Summer & Fall</strong> are warmer with occasional afternoon showers and the best deals on tours and accommodations.</p>
+                    <div class="faq-answer-content">
+                        We strongly recommend booking at least 24-48 hours in advance, especially during peak season (December-April) and holidays. Popular tours like sunset cruises and snorkeling trips can sell out days ahead. Some tours accept same-day bookings if space is available.
+                    </div>
                 </div>
-            </details>
+            </div>
             
-            <details class="faq-item">
-                <summary>How do I book tours through Sandbar Tours?</summary>
+            <div class="faq-item">
+                <div class="faq-question">Is my payment secure?</div>
                 <div class="faq-answer">
-                    <p>Browse tours, filter by area or activity, and click "Book Now." You'll be connected directly with the tour operator's booking system. Most offer free cancellation 24-48 hours before your activity. We feature over 476 tours from verified local operators.</p>
+                    <div class="faq-answer-content">
+                        Yes. All payments are processed through FareHarbor's secure checkout system with SSL encryption. Your credit card information is never stored on our site. FareHarbor processes millions of bookings annually and is trusted by tour operators worldwide.
+                    </div>
                 </div>
-            </details>
+            </div>
             
-            <details class="faq-item">
-                <summary>Are your prices better than Viator or Expedia?</summary>
+            <div class="faq-item">
+                <div class="faq-question">Will I receive confirmation?</div>
                 <div class="faq-answer">
-                    <p>We connect you directly with local tour operators through their booking systems, so you get their direct prices—no middleman markups. More of your money stays in the Florida Keys' local economy and goes directly to the captains and crew who create your experience.</p>
+                    <div class="faq-answer-content">
+                        Yes, you'll receive instant email confirmation with your booking details, meeting location, and contact information for the tour operator. We recommend saving this email and bringing it (digital or printed) on the day of your tour.
+                    </div>
                 </div>
-            </details>
-            
-            <details class="faq-item">
-                <summary>How far in advance should I book?</summary>
-                <div class="faq-answer">
-                    <p>During peak season (December-April), book 1-2 weeks ahead for popular tours. Sunset cruises and private charters fill fastest. Off-season, a few days notice is usually fine. Last-minute availability exists, but you'll have fewer choices. Sign up for our deals to catch cancellations!</p>
-                </div>
-            </details>
+            </div>
         </div>
-        
-        <!-- SANDBAR TOURS -->
-        <div class="faq-category">
-            <h2 class="faq-category-title">🏝️ Sandbar Tours</h2>
+
+        <!-- Cancellation Section -->
+        <div class="faq-section">
+            <h2>❌ Cancellations & Refunds</h2>
             
-            <details class="faq-item">
-                <summary>What is a sandbar tour?</summary>
+            <div class="faq-item">
+                <div class="faq-question">What is the cancellation policy?</div>
                 <div class="faq-answer">
-                    <p>Sandbar tours take you to shallow sandbars in the backcountry where you can wade in crystal-clear, waist-deep water, relax, swim, and enjoy the stunning Keys scenery. Popular spots include Snipes Point, Woman Key, and Boca Grande. Many tours include snorkeling stops, drinks, and snacks. It's one of the most popular Key West experiences!</p>
+                    <div class="faq-answer-content">
+                        Most tours offer free cancellation up to 24-48 hours before the scheduled departure. Specific policies vary by operator and are clearly displayed on each tour's booking page. Check the cancellation policy before booking.
+                    </div>
                 </div>
-            </details>
+            </div>
             
-            <details class="faq-item">
-                <summary>Where are the best sandbars in Key West?</summary>
+            <div class="faq-item">
+                <div class="faq-question">What happens if the weather is bad?</div>
                 <div class="faq-answer">
-                    <p>The most popular sandbars include Snipes Point (great for beginners), Woman Key (beautiful and secluded), Boca Grande (crystal-clear water), Jewfish Basin (calm and shallow), and the Mud Keys area. Each has its own character, and most sandbar tours visit multiple spots.</p>
+                    <div class="faq-answer-content">
+                        Tour operators prioritize safety above all else. If weather conditions are unsafe (high winds, lightning, rough seas), the operator will contact you to reschedule or offer a full refund. Light rain usually doesn't cancel tours — the Florida Keys often have brief showers that pass quickly.
+                    </div>
                 </div>
-            </details>
+            </div>
             
-            <details class="faq-item">
-                <summary>What is backcountry Key West?</summary>
+            <div class="faq-item">
+                <div class="faq-question">How do I get a refund?</div>
                 <div class="faq-answer">
-                    <p>The backcountry refers to the shallow flats, mangrove islands, and sandbars on the Gulf side of Key West (north/northwest). It's calmer than the Atlantic side, with crystal-clear water perfect for sandbar trips, kayaking, paddleboarding, and wildlife watching.</p>
+                    <div class="faq-answer-content">
+                        Contact the tour operator directly using the information in your confirmation email. Refunds are typically processed within 5-7 business days back to your original payment method. For weather cancellations made by the operator, refunds are automatic.
+                    </div>
                 </div>
-            </details>
+            </div>
         </div>
-        
-        <!-- BOAT TOURS -->
-        <div class="faq-category">
-            <h2 class="faq-category-title">🚤 Boat Tours & Cruises</h2>
+
+        <!-- What to Bring Section -->
+        <div class="faq-section">
+            <h2>🎒 What to Bring</h2>
             
-            <details class="faq-item">
-                <summary>What should I bring on a boat tour?</summary>
+            <div class="faq-item">
+                <div class="faq-question">What should I bring on a boat tour?</div>
                 <div class="faq-answer">
-                    <p>Essentials include: reef-safe sunscreen, sunglasses, hat, swimsuit, towel, and water. Most boats provide snorkel gear. Consider bringing a waterproof phone case and motion sickness prevention if you're prone to seasickness. Some tours allow you to bring your own food and drinks (BYOB).</p>
+                    <div class="faq-answer-content">
+                        <ul>
+                            <li><strong>Sunscreen</strong> — reef-safe is preferred (and required in some areas)</li>
+                            <li><strong>Sunglasses</strong> with a strap so they don't fall overboard</li>
+                            <li><strong>Hat</strong> for sun protection</li>
+                            <li><strong>Towel</strong> (some tours provide them)</li>
+                            <li><strong>Swimsuit</strong> worn under clothes</li>
+                            <li><strong>Light cover-up or dry clothes</strong> for after</li>
+                            <li><strong>Camera</strong> (waterproof recommended)</li>
+                            <li><strong>Cash</strong> for tips (15-20% is customary)</li>
+                            <li><strong>Motion sickness medication</strong> if you're prone to seasickness</li>
+                        </ul>
+                    </div>
                 </div>
-            </details>
+            </div>
             
-            <details class="faq-item">
-                <summary>How long are most boat tours?</summary>
+            <div class="faq-item">
+                <div class="faq-question">Is snorkel gear provided?</div>
                 <div class="faq-answer">
-                    <p>Tour lengths vary: quick trips like parasailing are about 1 hour. Snorkeling and sandbar tours typically run 3-4 hours. Half-day fishing charters are 4-5 hours. Full-day adventures can be 6-8 hours. Sunset cruises are usually 2 hours. Private charters let you customize duration.</p>
+                    <div class="faq-answer-content">
+                        Most snorkeling tours include mask, snorkel, and fins in the price. The tour description will specify what's included. If you wear prescription glasses, consider bringing your own prescription mask or contact lenses.
+                    </div>
                 </div>
-            </details>
+            </div>
             
-            <details class="faq-item">
-                <summary>Can I bring alcohol on boat tours?</summary>
+            <div class="faq-item">
+                <div class="faq-question">Can I bring food and drinks?</div>
                 <div class="faq-answer">
-                    <p>Many tours are BYOB (bring your own beverages), while others include drinks or offer a cash bar. Check individual tour descriptions. Some sunset cruises and party boats feature open bars with beer, wine, and cocktails included in the price.</p>
+                    <div class="faq-answer-content">
+                        This varies by tour. Many tours include snacks, water, or even full meals. Some allow you to bring your own cooler with food and beverages. Check the tour description or contact the operator directly. Note: Glass containers are typically not allowed on boats.
+                    </div>
                 </div>
-            </details>
+            </div>
             
-            <details class="faq-item">
-                <summary>What happens if I get seasick?</summary>
+            <div class="faq-item">
+                <div class="faq-question">What should I NOT bring?</div>
                 <div class="faq-answer">
-                    <p>The backcountry (where sandbar tours go) has calmer water than the open ocean. If prone to seasickness, take preventative medication before boarding, stay on deck with fresh air, watch the horizon, and avoid heavy meals. Ginger and acupressure bands can help too.</p>
+                    <div class="faq-answer-content">
+                        <ul>
+                            <li>Glass bottles or containers</li>
+                            <li>Illegal substances</li>
+                            <li>Valuables you can't get wet</li>
+                            <li>Bananas (many fishing captains consider them bad luck!)</li>
+                            <li>Drones (prohibited in many areas without permits)</li>
+                        </ul>
+                    </div>
                 </div>
-            </details>
-            
-            <details class="faq-item">
-                <summary>What if my tour gets cancelled due to weather?</summary>
-                <div class="faq-answer">
-                    <p>Safety comes first! If weather conditions are unsafe, operators will reschedule or offer a full refund. Most cancellation policies allow free rebooking 24-48 hours in advance. Check individual tour policies, and consider booking early in your trip so you have backup days.</p>
-                </div>
-            </details>
-            
-            <details class="faq-item">
-                <summary>Can I book a private charter?</summary>
-                <div class="faq-answer">
-                    <p>Yes! Private charters give you exclusive use of a boat with your own captain. Perfect for families, groups, special occasions, or anyone wanting a personalized experience. You can customize the itinerary—combine snorkeling, sandbar time, sunset viewing, or fishing in one trip.</p>
-                </div>
-            </details>
+            </div>
         </div>
-        
-        <!-- MARINE LIFE -->
-        <div class="faq-category">
-            <h2 class="faq-category-title">🐬 Marine Life & Snorkeling</h2>
+
+        <!-- Meeting & Logistics Section -->
+        <div class="faq-section">
+            <h2>📍 Meeting Points & Logistics</h2>
             
-            <details class="faq-item">
-                <summary>Can I see dolphins in Key West?</summary>
+            <div class="faq-item">
+                <div class="faq-question">Where do I meet for my tour?</div>
                 <div class="faq-answer">
-                    <p>Absolutely! Bottlenose dolphins are commonly spotted in the backcountry waters. Dedicated dolphin tours take you to their favorite spots, but you might also see them on sandbar trips, sunset cruises, or even kayak tours. Morning trips often have the best dolphin sightings.</p>
+                    <div class="faq-answer-content">
+                        Meeting locations vary by tour and operator. Your confirmation email will include the exact address, often with GPS coordinates and parking instructions. Common meeting points include marinas at Key West Historic Seaport, Stock Island, and various locations throughout the Keys.
+                    </div>
                 </div>
-            </details>
+            </div>
             
-            <details class="faq-item">
-                <summary>What marine life might I see?</summary>
+            <div class="faq-item">
+                <div class="faq-question">Is parking available?</div>
                 <div class="faq-answer">
-                    <p>The Keys are home to incredible biodiversity! Expect to see tropical fish (parrotfish, angelfish, tangs), sea turtles, dolphins, manatees (especially in winter), stingrays, nurse sharks, lobsters, starfish, and countless coral species. Lucky visitors spot eagle rays, barracuda, and even whale sharks!</p>
+                    <div class="faq-answer-content">
+                        Most marinas have parking available, though it may be limited or paid. Your confirmation email will include parking details. In Key West, consider using the Park 'N Ride at Old Town Garage or arriving early to find street parking. Rideshare services are also widely available.
+                    </div>
                 </div>
-            </details>
+            </div>
             
-            <details class="faq-item">
-                <summary>What's the best snorkeling in Key West?</summary>
+            <div class="faq-item">
+                <div class="faq-question">How early should I arrive?</div>
                 <div class="faq-answer">
-                    <p>Top snorkel spots include Sand Key (shallow reef, great for beginners), Eastern Dry Rocks (diverse coral and fish), Western Dry Rocks (larger marine life), and the Vandenberg wreck (advanced). The reef is about 5 miles offshore—you'll need a boat tour to reach it.</p>
+                    <div class="faq-answer-content">
+                        Arrive at least 15-30 minutes before your scheduled departure. This allows time for check-in, safety briefings, and boarding. Tours depart on schedule and cannot wait for late arrivals.
+                    </div>
                 </div>
-            </details>
-            
-            <details class="faq-item">
-                <summary>Do I need to know how to swim for boat tours?</summary>
-                <div class="faq-answer">
-                    <p>Not necessarily! Many tours offer flotation devices and you can enjoy sandbars while wading in shallow water. However, snorkeling and diving activities do require basic swimming ability. Always let your captain know about your comfort level in the water.</p>
-                </div>
-            </details>
-            
-            <details class="faq-item">
-                <summary>What is the Florida Keys National Marine Sanctuary?</summary>
-                <div class="faq-answer">
-                    <p>The sanctuary protects 2,900 square nautical miles of waters surrounding the Keys, including the only living coral barrier reef in the continental United States. All tours operate within these protected waters. Responsible operators help preserve this unique ecosystem for future generations.</p>
-                </div>
-            </details>
-            
-            <details class="faq-item">
-                <summary>What is reef-safe sunscreen?</summary>
-                <div class="faq-answer">
-                    <p>Reef-safe sunscreen is free from oxybenzone and octinoxate—chemicals that damage coral reefs. These ingredients are banned in the Florida Keys. Look for mineral-based sunscreens with zinc oxide or titanium dioxide. Protecting the reef helps preserve Key West's incredible snorkeling.</p>
-                </div>
-            </details>
+            </div>
         </div>
-        
-        <!-- FISHING -->
-        <div class="faq-category">
-            <h2 class="faq-category-title">🎣 Fishing</h2>
+
+        <!-- Special Needs Section -->
+        <div class="faq-section">
+            <h2>👨‍👩‍👧‍👦 Special Needs & Accessibility</h2>
             
-            <details class="faq-item">
-                <summary>What fish can I catch in Key West?</summary>
+            <div class="faq-item">
+                <div class="faq-question">Are tours family-friendly?</div>
                 <div class="faq-answer">
-                    <p>The Keys offer world-class fishing! Inshore: bonefish, permit, tarpon, snook, redfish. Offshore: mahi-mahi, tuna, wahoo, sailfish, marlin. Reef: snapper, grouper, hogfish. Species vary by season. Tarpon fishing (April-July) is legendary. Charter captains know the best spots.</p>
+                    <div class="faq-answer-content">
+                        Many tours welcome children of all ages. Tour descriptions list minimum age requirements if applicable. Some tours offer family-specific departures. Young children may need to be held by a parent during certain activities.
+                    </div>
                 </div>
-            </details>
+            </div>
             
-            <details class="faq-item">
-                <summary>What's the difference between Key West and Stock Island tours?</summary>
+            <div class="faq-item">
+                <div class="faq-question">Are tours wheelchair accessible?</div>
                 <div class="faq-answer">
-                    <p>Key West tours typically depart from marinas near downtown and Old Town. Stock Island (just north of Key West) offers a more local, less touristy experience with excellent fishing and diving operations. Both areas access the same beautiful waters—it's mainly about departure location.</p>
+                    <div class="faq-answer-content">
+                        Accessibility varies by boat and tour type. Contact the tour operator directly to discuss specific needs — many are happy to accommodate guests with mobility challenges. Some larger vessels have accessible features while smaller boats may have limitations.
+                    </div>
                 </div>
-            </details>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">I get seasick. What should I do?</div>
+                <div class="faq-answer">
+                    <div class="faq-answer-content">
+                        Take motion sickness medication (like Dramamine or Bonine) 30-60 minutes before departure. Ginger candies can also help. Stay on deck with fresh air and keep your eyes on the horizon. Consider shorter tours or trips in calmer backcountry waters if you're very sensitive.
+                    </div>
+                </div>
+            </div>
         </div>
-        
-        <!-- PRICING & BOOKING -->
-        <div class="faq-category">
-            <h2 class="faq-category-title">💰 Pricing & Booking</h2>
+
+        <!-- Tipping Section -->
+        <div class="faq-section">
+            <h2>💵 Tipping & Gratuity</h2>
             
-            <details class="faq-item">
-                <summary>How much do Key West tours typically cost?</summary>
+            <div class="faq-item">
+                <div class="faq-question">Should I tip the crew?</div>
                 <div class="faq-answer">
-                    <p>Prices vary by activity. Snorkeling trips start around $50-80 per person. Sandbar tours range from $75-150. Private charters run $400-800 for 4 hours. Sunset cruises start at $50. Parasailing is around $80-100. Fishing charters range from $600-1200 depending on duration and boat size.</p>
+                    <div class="faq-answer-content">
+                        Yes, tipping is customary and appreciated. Captains and crew work hard to ensure you have an amazing experience. The standard tip is 15-20% of the tour price, similar to restaurant service. Cash is preferred as it goes directly to the crew.
+                    </div>
                 </div>
-            </details>
+            </div>
             
-            <details class="faq-item">
-                <summary>Do I need to tip boat captains and crew?</summary>
+            <div class="faq-item">
+                <div class="faq-question">Is gratuity included in the price?</div>
                 <div class="faq-answer">
-                    <p>Tipping is customary and appreciated. Standard gratuity is 15-20% of the tour cost, similar to restaurant service. For exceptional service or private charters, 20%+ is common. Tips are often the primary income for crew members. Cash is preferred but some operators accept card tips.</p>
+                    <div class="faq-answer-content">
+                        Gratuity is typically NOT included in tour prices unless specifically stated. Check the tour description for details. Even on tours where a gratuity is included, additional tips for exceptional service are always welcome.
+                    </div>
                 </div>
-            </details>
-            
-            <details class="faq-item">
-                <summary>Are tours suitable for children?</summary>
-                <div class="faq-answer">
-                    <p>Most tours welcome children! Sandbar trips are perfect for families—kids love playing in the shallow, calm water. Many operators offer life jackets for little ones. Check individual tour descriptions for age recommendations. Some fishing and diving tours may have minimum age requirements.</p>
-                </div>
-            </details>
+            </div>
         </div>
-        
-        <!-- ECO TOURS -->
-        <div class="faq-category">
-            <h2 class="faq-category-title">🌿 Eco Tours</h2>
-            
-            <details class="faq-item">
-                <summary>Are eco-tours worth it?</summary>
-                <div class="faq-answer">
-                    <p>Absolutely! Eco-tours offer educational experiences led by knowledgeable guides who share insights about marine ecosystems, wildlife behavior, and conservation. You'll often see more wildlife with guides who know where to look. Plus, eco-operators prioritize sustainable practices.</p>
-                </div>
-            </details>
+
+        <!-- Contact Box -->
+        <div class="contact-box">
+            <h4>Still have questions?</h4>
+            <p>Call us at <a href="tel:7276232652">(727) 623-2652</a></p>
+            <p>Or contact the tour operator directly using the information on their booking page.</p>
         </div>
-        
-        <div style="text-align: center; margin-top: 50px; padding-top: 30px; border-top: 1px solid #eee;">
-            <p style="color: #666; margin-bottom: 20px;">Still have questions?</p>
-            <a href="mailto:walktheplankadventures@gmail.com" style="display: inline-block; background: var(--ocean-mid); color: white; padding: 12px 30px; border-radius: 8px; font-weight: 600; text-decoration: none;">Contact Us</a>
+
+        <!-- CTA -->
+        <div class="faq-cta">
+            <h3>Ready to Book Your Adventure?</h3>
+            <p>Browse 1,010+ verified tours from local Florida Keys operators</p>
+            <a href="/#tours-section">Explore Tours →</a>
         </div>
     </div>
 
-    <!-- FOOTER -->
     <footer class="footer">
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-brand">
-                    <a href="/" class="logo">
-                        <img src="logo.png" alt="Key West Sandbar Tours" class="footer-logo-img">
-                    </a>
-                    <p>Your guide to the best Florida Keys adventures. Verified local operators, instant booking.</p>
-                    <p class="footer-tagline">See you in paradise! 🌴</p>
-                </div>
-                
-                <div class="footer-links">
-                    <h4>Areas</h4>
-                    <ul>
-                        <li><a href="key-west.html">Key West (409)</a></li>
-                        <li><a href="stock-island.html">Stock Island (70)</a></li>
-                        <li><a href="/#tours-section">Big Pine Key (2)</a></li>
-                    </ul>
-                </div>
-                
-                <div class="footer-links">
-                    <h4>Popular</h4>
-                    <ul>
-                        <li><a href="/#tours-section">Sandbar Trips</a></li>
-                        <li><a href="/#tours-section">Snorkeling</a></li>
-                        <li><a href="/#tours-section">Sunset Cruises</a></li>
-                        <li><a href="/#tours-section">Dolphin Tours</a></li>
-                    </ul>
-                </div>
-                
-                <div class="footer-links">
-                    <h4>Company</h4>
-                    <ul>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="faq.html">FAQs</a></li>
-                        <li><a href="mailto:walktheplankadventures@gmail.com">Contact</a></li>
-                    </ul>
-                </div>
+        <div class="footer-content">
+            <div class="footer-brand">
+                <img src="logo.png" alt="Key West Sandbar Tours" class="footer-logo">
+                <p>Your trusted guide to Florida Keys adventures. Book direct with verified local operators.</p>
             </div>
-            
-            <div class="footer-bottom">
-                <p>&copy; 2025 Key West Sandbar Tours. All rights reserved.</p>
-                <p class="affiliate-disclosure">We may earn a commission when you book through our links. This helps support our site at no cost to you.</p>
+            <div class="footer-links">
+                <h4>Explore</h4>
+                <a href="key-west.html">Key West</a>
+                <a href="key-largo.html">Key Largo</a>
+                <a href="islamorada.html">Islamorada</a>
+                <a href="marathon.html">Marathon</a>
             </div>
+            <div class="footer-links">
+                <h4>Resources</h4>
+                <a href="blog/">Travel Blog</a>
+                <a href="faq.html">FAQ</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 Key West Sandbar Tours. All rights reserved.</p>
+            <p>Bookings powered by <a href="https://fareharbor.com" target="_blank" style="color:#3BB8C3;">FareHarbor</a></p>
         </div>
     </footer>
 
     <script>
-        // Mobile menu
-        document.querySelector('.mobile-menu-btn')?.addEventListener('click', function() {
-            document.querySelector('.nav-mobile').classList.toggle('active');
-            this.classList.toggle('active');
+        // FAQ Accordion
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const item = question.parentElement;
+                const wasActive = item.classList.contains('active');
+                
+                // Close all items
+                document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('active'));
+                
+                // Open clicked item if it wasn't already open
+                if (!wasActive) {
+                    item.classList.add('active');
+                }
+            });
         });
     </script>
 </body>

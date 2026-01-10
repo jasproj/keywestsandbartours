@@ -107,6 +107,33 @@ body {
     color: #E87B4A;
 }
 
+.header-phone {
+    display: none;
+    align-items: center;
+    gap: 6px;
+    color: #1B3A57;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.95rem;
+    padding: 8px 14px;
+    background: rgba(59, 184, 195, 0.1);
+    border-radius: 25px;
+    transition: all 0.3s;
+}
+
+.header-phone:hover {
+    background: rgba(59, 184, 195, 0.2);
+    color: #3BB8C3;
+}
+
+.phone-icon {
+    font-size: 1rem;
+}
+
+@media (min-width: 900px) {
+    .header-phone { display: flex; }
+}
+
 .nav-toggle {
     display: flex;
     align-items: center;
@@ -413,6 +440,79 @@ body {
 
 @media (min-width: 768px) {
     .stat-label { font-size: 0.85rem; }
+}
+
+/* Trust Section */
+.trust-section {
+    background: linear-gradient(135deg, #1B3A57 0%, #2a4d6e 100%);
+    padding: 20px 15px;
+}
+
+.trust-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+    .trust-container {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 30px;
+        padding: 10px 20px;
+    }
+}
+
+.trust-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    color: white;
+}
+
+.trust-icon {
+    font-size: 1.2rem;
+    flex-shrink: 0;
+    width: 28px;
+    height: 28px;
+    background: rgba(255,255,255,0.15);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (min-width: 768px) {
+    .trust-icon {
+        font-size: 1.4rem;
+        width: 36px;
+        height: 36px;
+    }
+}
+
+.trust-text {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.trust-text strong {
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+@media (min-width: 768px) {
+    .trust-text strong { font-size: 0.95rem; }
+}
+
+.trust-text span {
+    font-size: 0.7rem;
+    opacity: 0.8;
+}
+
+@media (min-width: 768px) {
+    .trust-text span { font-size: 0.8rem; }
 }
 
 /* Areas Section - Mobile First */
