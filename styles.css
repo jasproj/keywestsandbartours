@@ -282,6 +282,40 @@ body {
     background: #d66a3d;
 }
 
+/* Ticker */
+.ticker-wrap {
+    margin-top: 20px;
+    overflow: hidden;
+    width: 100%;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    mask-image: linear-gradient(to right, transparent, white 10%, white 90%, transparent);
+    -webkit-mask-image: linear-gradient(to right, transparent, white 10%, white 90%, transparent);
+}
+
+.ticker {
+    display: flex;
+    gap: 25px;
+    animation: ticker 20s linear infinite;
+    width: max-content;
+}
+
+.ticker span {
+    font-size: 0.85rem;
+    opacity: 0.9;
+    white-space: nowrap;
+}
+
+@keyframes ticker {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
 /* Trust Bar - Mobile First */
 .trust-bar {
     background: white;
