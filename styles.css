@@ -172,7 +172,7 @@ body {
 }
 
 .hero-logo {
-    height: 100px;
+    height: 250px;
     width: auto;
     margin-bottom: 15px;
     filter: drop-shadow(0 2px 10px rgba(0,0,0,0.3));
@@ -183,7 +183,7 @@ body {
 
 @media (min-width: 768px) {
     .hero-logo {
-        height: 140px;
+        height: 350px;
         margin-bottom: 20px;
     }
 }
@@ -226,7 +226,14 @@ body {
     margin-bottom: 20px;
 }
 
+.mobile-break {
+    display: block;
+}
+
 @media (min-width: 768px) {
+    .mobile-break {
+        display: none;
+    }
     .hero p { 
         font-size: 1.1rem;
         margin-bottom: 25px;
