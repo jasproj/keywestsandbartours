@@ -78,7 +78,6 @@ function createTourCard(tour) {
     
     const badges = [];
     if (tour.qualityScore >= 95) badges.push('<span class="badge badge-top">⭐ Top Rated</span>');
-    if (tour.freeCancellation) badges.push('<span class="badge badge-cancel">✓ Free Cancel</span>');
     
     const ratingHtml = tour.rating ? 
         `<span class="tour-rating">★ ${tour.rating}${tour.reviewCount ? ` (${tour.reviewCount})` : ''}</span>` : '';
@@ -160,8 +159,15 @@ function applyFilters() {
             filteredTours.sort((a, b) => (a.name || '').localeCompare(b.name || ''));
             break;
         case 'quality':
-        default:
             filteredTours.sort((a, b) => (b.qualityScore || 0) - (a.qualityScore || 0));
+            break;
+        case 'shuffle':
+        default:
+            // Re-shuffle for variety
+            for (let i = filteredTours.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [filteredTours[i], filteredTours[j]] = [filteredTours[j], filteredTours[i]];
+            }
             break;
     }
     
