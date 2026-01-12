@@ -1,0 +1,933 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dry Tortugas Day Trips from Key West | Seaplane & Ferry Options</title>
+    <meta name="description" content="Dry Tortugas day trips from Key West. Compare seaplane (40 min) vs ferry (2.5 hrs). Fort Jefferson tours, pristine snorkeling. Instant confirmation, free cancellation.">
+    <link rel="canonical" href="https://keywestsandbartours.com/dry-tortugas">
+    
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://keywestsandbartours.com/dry-tortugas">
+    <meta property="og:title" content="Dry Tortugas Day Trips | Seaplane & Ferry from Key West">
+    <meta property="og:description" content="Compare seaplane vs ferry to Dry Tortugas. Fort Jefferson, world-class snorkeling, instant confirmation.">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-67D7X60CJF"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-67D7X60CJF');
+        
+        function trackBookingClick(label) {
+            gtag('event', 'booking_click', {
+                'event_category': 'conversion',
+                'event_label': label,
+                'page_type': 'dry-tortugas'
+            });
+        }
+    </script>
+    
+    <style>
+        :root {
+            --ocean-deep: #0C4A6E;
+            --ocean-mid: #0369A1;
+            --sky: #E0F2FE;
+            --sunset-orange: #F97316;
+            --gold: #FBBF24;
+            --white: #FFFFFF;
+            --off-white: #F8FAFC;
+            --text-dark: #0F172A;
+            --text-muted: #64748B;
+            --success: #10B981;
+            --border: #E2E8F0;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            font-family: 'DM Sans', sans-serif;
+            color: var(--text-dark);
+            line-height: 1.6;
+            background: var(--white);
+        }
+        
+        /* Header */
+        .header {
+            background: var(--white);
+            padding: 12px 20px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 100;
+            box-shadow: 0 2px 20px rgba(0,0,0,0.08);
+        }
+        
+        .header-inner {
+            max-width: 1100px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: var(--ocean-deep);
+            text-decoration: none;
+        }
+        
+        .header-cta {
+            background: var(--sunset-orange);
+            color: var(--white);
+            padding: 10px 20px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.9rem;
+            transition: all 0.2s;
+        }
+        
+        .header-cta:hover {
+            background: #EA580C;
+        }
+        
+        /* Hero */
+        .hero {
+            padding: 100px 20px 60px;
+            background: linear-gradient(180deg, var(--sky) 0%, var(--white) 100%);
+            text-align: center;
+        }
+        
+        .hero-inner {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        
+        .hero h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(2rem, 5vw, 3rem);
+            color: var(--ocean-deep);
+            margin-bottom: 12px;
+        }
+        
+        .hero-sub {
+            font-size: 1.15rem;
+            color: var(--text-muted);
+            margin-bottom: 40px;
+        }
+        
+        /* Option Cards */
+        .options-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 24px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .option-card {
+            background: var(--white);
+            border-radius: 20px;
+            padding: 32px 24px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.08);
+            position: relative;
+            transition: all 0.3s;
+        }
+        
+        .option-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 50px rgba(0,0,0,0.12);
+        }
+        
+        .option-card.primary {
+            border: 3px solid var(--sunset-orange);
+        }
+        
+        .option-badge {
+            position: absolute;
+            top: -12px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: var(--sunset-orange);
+            color: var(--white);
+            padding: 6px 16px;
+            border-radius: 50px;
+            font-size: 0.75rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            white-space: nowrap;
+        }
+        
+        .option-card:not(.primary) .option-badge {
+            background: var(--ocean-mid);
+        }
+        
+        .option-icon {
+            font-size: 3rem;
+            margin-bottom: 16px;
+        }
+        
+        .option-card h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem;
+            color: var(--ocean-deep);
+            margin-bottom: 8px;
+        }
+        
+        .option-highlight {
+            font-size: 1rem;
+            color: var(--text-muted);
+            margin-bottom: 16px;
+        }
+        
+        .option-price {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--ocean-deep);
+            margin-bottom: 4px;
+        }
+        
+        .option-price span {
+            font-size: 1rem;
+            font-weight: 400;
+            color: var(--text-muted);
+        }
+        
+        .option-cta {
+            display: block;
+            width: 100%;
+            padding: 16px 24px;
+            border-radius: 12px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1rem;
+            text-align: center;
+            margin-top: 20px;
+            transition: all 0.2s;
+            min-height: 52px;
+        }
+        
+        .option-card.primary .option-cta {
+            background: var(--sunset-orange);
+            color: var(--white);
+        }
+        
+        .option-card.primary .option-cta:hover {
+            background: #EA580C;
+        }
+        
+        .option-card:not(.primary) .option-cta {
+            background: var(--ocean-deep);
+            color: var(--white);
+        }
+        
+        .option-card:not(.primary) .option-cta:hover {
+            background: var(--ocean-mid);
+        }
+        
+        /* Trust Row */
+        .trust-row {
+            background: var(--ocean-deep);
+            padding: 20px;
+        }
+        
+        .trust-inner {
+            max-width: 900px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            gap: 32px;
+            flex-wrap: wrap;
+        }
+        
+        .trust-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            color: var(--white);
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+        
+        .trust-item svg {
+            width: 18px;
+            height: 18px;
+            color: var(--gold);
+        }
+        
+        /* Comparison Table */
+        .comparison {
+            padding: 80px 20px;
+            background: var(--white);
+        }
+        
+        .comparison-inner {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .section-label {
+            font-size: 0.8rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: var(--sunset-orange);
+            margin-bottom: 8px;
+            text-align: center;
+        }
+        
+        .section-title {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(1.75rem, 4vw, 2.25rem);
+            color: var(--ocean-deep);
+            margin-bottom: 40px;
+            text-align: center;
+        }
+        
+        .comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+            background: var(--white);
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+        }
+        
+        .comparison-table thead {
+            background: var(--ocean-deep);
+            color: var(--white);
+        }
+        
+        .comparison-table th {
+            padding: 20px 16px;
+            font-weight: 700;
+            font-size: 1rem;
+            text-align: center;
+        }
+        
+        .comparison-table th:first-child {
+            text-align: left;
+        }
+        
+        .comparison-table th.winner {
+            background: var(--sunset-orange);
+        }
+        
+        .comparison-table td {
+            padding: 16px;
+            border-bottom: 1px solid var(--border);
+            text-align: center;
+        }
+        
+        .comparison-table td:first-child {
+            text-align: left;
+            font-weight: 600;
+            color: var(--text-dark);
+        }
+        
+        .comparison-table tr:last-child td {
+            border-bottom: none;
+        }
+        
+        .winner-cell {
+            background: #FEF3C7;
+            font-weight: 600;
+            color: var(--ocean-deep);
+        }
+        
+        .check {
+            color: var(--success);
+            font-weight: 700;
+        }
+        
+        /* Visual Proof */
+        .visuals {
+            padding: 60px 20px;
+            background: var(--off-white);
+        }
+        
+        .visuals-inner {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        
+        .visuals-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr;
+            gap: 16px;
+        }
+        
+        .visual-img {
+            border-radius: 16px;
+            overflow: hidden;
+            height: 250px;
+        }
+        
+        .visual-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .visual-img:first-child {
+            grid-row: span 2;
+            height: 100%;
+        }
+        
+        /* Who This Is For */
+        .who {
+            padding: 80px 20px;
+            background: var(--white);
+        }
+        
+        .who-inner {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        
+        .who-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 16px;
+            margin-top: 40px;
+        }
+        
+        .who-item {
+            background: var(--off-white);
+            padding: 24px 16px;
+            border-radius: 16px;
+            text-align: center;
+        }
+        
+        .who-icon {
+            font-size: 2rem;
+            margin-bottom: 12px;
+        }
+        
+        .who-item h3 {
+            font-size: 0.95rem;
+            font-weight: 600;
+            color: var(--ocean-deep);
+        }
+        
+        /* FAQ */
+        .faq {
+            padding: 80px 20px;
+            background: var(--off-white);
+        }
+        
+        .faq-inner {
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        
+        .faq-item {
+            background: var(--white);
+            border-radius: 12px;
+            padding: 24px;
+            margin-bottom: 16px;
+        }
+        
+        .faq-question {
+            font-size: 1.05rem;
+            font-weight: 700;
+            color: var(--ocean-deep);
+            margin-bottom: 12px;
+        }
+        
+        .faq-answer {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            line-height: 1.7;
+        }
+        
+        /* Final CTA */
+        .final-cta {
+            padding: 80px 20px;
+            background: linear-gradient(135deg, var(--sky) 0%, #BAE6FD 100%);
+            text-align: center;
+        }
+        
+        .final-cta-inner {
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        
+        .final-cta h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(1.75rem, 4vw, 2.5rem);
+            color: var(--ocean-deep);
+            margin-bottom: 12px;
+        }
+        
+        .final-cta-urgency {
+            font-size: 1rem;
+            color: var(--text-muted);
+            margin-bottom: 30px;
+        }
+        
+        .final-cta-buttons {
+            display: flex;
+            gap: 16px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .final-btn {
+            padding: 18px 32px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1rem;
+            transition: all 0.2s;
+            min-height: 56px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .final-btn-primary {
+            background: var(--sunset-orange);
+            color: var(--white);
+            box-shadow: 0 8px 25px rgba(249, 115, 22, 0.3);
+        }
+        
+        .final-btn-primary:hover {
+            background: #EA580C;
+            transform: translateY(-2px);
+        }
+        
+        .final-btn-secondary {
+            background: var(--ocean-deep);
+            color: var(--white);
+        }
+        
+        .final-btn-secondary:hover {
+            background: var(--ocean-mid);
+        }
+        
+        /* Footer */
+        .footer {
+            background: var(--text-dark);
+            color: var(--white);
+            padding: 30px 20px;
+            text-align: center;
+        }
+        
+        .footer p {
+            opacity: 0.7;
+            font-size: 0.85rem;
+        }
+        
+        .footer a {
+            color: var(--white);
+            text-decoration: none;
+        }
+        
+        /* Mobile - Tablet */
+        @media (max-width: 900px) {
+            .options-grid {
+                grid-template-columns: 1fr;
+                max-width: 400px;
+            }
+            
+            .visuals-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+            
+            .visual-img:first-child {
+                grid-column: span 2;
+                grid-row: span 1;
+                height: 250px;
+            }
+            
+            .comparison, .who, .faq, .final-cta {
+                padding: 60px 16px;
+            }
+        }
+        
+        /* Mobile - Phone */
+        @media (max-width: 600px) {
+            .header {
+                padding: 10px 16px;
+            }
+            
+            .logo {
+                font-size: 1rem;
+            }
+            
+            .header-cta {
+                padding: 8px 14px;
+                font-size: 0.8rem;
+            }
+            
+            .hero {
+                padding: 90px 16px 40px;
+            }
+            
+            .hero h1 {
+                font-size: 1.75rem;
+            }
+            
+            .hero-sub {
+                font-size: 1rem;
+            }
+            
+            .option-card {
+                padding: 28px 20px;
+            }
+            
+            .option-card h2 {
+                font-size: 1.3rem;
+            }
+            
+            .option-price {
+                font-size: 1.75rem;
+            }
+            
+            .option-cta {
+                padding: 14px 20px;
+            }
+            
+            .trust-inner {
+                flex-direction: column;
+                gap: 12px;
+                align-items: center;
+            }
+            
+            .trust-item {
+                font-size: 0.85rem;
+            }
+            
+            .section-title {
+                font-size: 1.5rem;
+            }
+            
+            .comparison-table {
+                font-size: 0.85rem;
+            }
+            
+            .comparison-table th,
+            .comparison-table td {
+                padding: 12px 8px;
+            }
+            
+            .visuals-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .visual-img:first-child {
+                grid-column: span 1;
+            }
+            
+            .visual-img {
+                height: 200px;
+            }
+            
+            .who-grid {
+                grid-template-columns: 1fr 1fr;
+                gap: 12px;
+            }
+            
+            .who-item {
+                padding: 20px 12px;
+            }
+            
+            .who-icon {
+                font-size: 1.5rem;
+            }
+            
+            .who-item h3 {
+                font-size: 0.85rem;
+            }
+            
+            .faq-item {
+                padding: 20px 16px;
+            }
+            
+            .faq-question {
+                font-size: 0.95rem;
+            }
+            
+            .faq-answer {
+                font-size: 0.9rem;
+            }
+            
+            .final-cta h2 {
+                font-size: 1.5rem;
+            }
+            
+            .final-cta-buttons {
+                flex-direction: column;
+                align-items: stretch;
+            }
+            
+            .final-btn {
+                width: 100%;
+            }
+        }
+        
+        /* Extra small */
+        @media (max-width: 380px) {
+            .hero h1 {
+                font-size: 1.5rem;
+            }
+            
+            .who-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .comparison-table {
+                font-size: 0.75rem;
+            }
+        }
+        
+        /* Touch devices */
+        @media (hover: none) and (pointer: coarse) {
+            .option-cta,
+            .final-btn,
+            .header-cta {
+                min-height: 48px;
+            }
+            
+            .option-card:hover {
+                transform: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-inner">
+            <a href="/" class="logo">Key West Sandbar Tours</a>
+            <a href="#options" class="header-cta">Book Now →</a>
+        </div>
+    </header>
+    
+    <!-- Hero -->
+    <section class="hero" id="options">
+        <div class="hero-inner">
+            <h1>Dry Tortugas Day Trips from Key West</h1>
+            <p class="hero-sub">Seaplane & Ferry Options · Instant Confirmation</p>
+            
+            <!-- Two Option Cards -->
+            <div class="options-grid">
+                <!-- Seaplane - PRIMARY -->
+                <div class="option-card primary">
+                    <span class="option-badge">Best Experience</span>
+                    <div class="option-icon">✈️</div>
+                    <h2>Seaplane</h2>
+                    <p class="option-highlight">40-minute scenic flight · 2.5-6.5 hrs on island</p>
+                    <div class="option-price">From $507 <span>/ person</span></div>
+                    <a href="https://keywestseaplanecharters.com/reservations/" target="_blank" class="option-cta" onclick="trackBookingClick('dry_tortugas_seaplane')">Check Seaplane Availability</a>
+                </div>
+                
+                <!-- Ferry -->
+                <div class="option-card">
+                    <span class="option-badge">Most Affordable</span>
+                    <div class="option-icon">⛴️</div>
+                    <h2>Ferry</h2>
+                    <p class="option-highlight">2.5-hour boat ride · 4 hrs on island</p>
+                    <div class="option-price">From $220 <span>/ person</span></div>
+                    <a href="https://fareharbor.com/embeds/book/yankeefreedom/items/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&full-items=yes&flow=no" target="_blank" class="option-cta" onclick="trackBookingClick('dry_tortugas_ferry')">Check Ferry Availability</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Trust Row -->
+    <div class="trust-row">
+        <div class="trust-inner">
+            <div class="trust-item">
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                Free Cancellation
+            </div>
+            <div class="trust-item">
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+                Instant Confirmation
+            </div>
+            <div class="trust-item">
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+                Verified Operators
+            </div>
+            <div class="trust-item">
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/></svg>
+                Secure Checkout
+            </div>
+        </div>
+    </div>
+    
+    <!-- Comparison Table -->
+    <section class="comparison">
+        <div class="comparison-inner">
+            <div class="section-label">Compare</div>
+            <h2 class="section-title">Seaplane vs. Ferry</h2>
+            
+            <table class="comparison-table">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th class="winner">✈️ Seaplane</th>
+                        <th>⛴️ Ferry</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Travel Time</td>
+                        <td class="winner-cell">40 minutes</td>
+                        <td>2.5 hours</td>
+                    </tr>
+                    <tr>
+                        <td>Time on Island</td>
+                        <td class="winner-cell">2.5 - 6.5 hours</td>
+                        <td>4 hours</td>
+                    </tr>
+                    <tr>
+                        <td>Aerial Views</td>
+                        <td class="winner-cell check">✓ Stunning</td>
+                        <td>—</td>
+                    </tr>
+                    <tr>
+                        <td>See Shipwrecks</td>
+                        <td class="winner-cell check">✓ From above</td>
+                        <td>—</td>
+                    </tr>
+                    <tr>
+                        <td>Group Size</td>
+                        <td>10 passengers</td>
+                        <td class="winner-cell">100+ passengers</td>
+                    </tr>
+                    <tr>
+                        <td>Price</td>
+                        <td>$507 - $890</td>
+                        <td class="winner-cell">$220</td>
+                    </tr>
+                    <tr>
+                        <td>Best For</td>
+                        <td class="winner-cell">Bucket-list experience</td>
+                        <td>Budget travelers</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+    
+    <!-- Visual Proof -->
+    <section class="visuals">
+        <div class="visuals-inner">
+            <div class="visuals-grid">
+                <div class="visual-img">
+                    <img src="https://images.unsplash.com/photo-1568402102990-bc541580b59f?w=800&h=600&fit=crop" alt="Fort Jefferson at Dry Tortugas National Park">
+                </div>
+                <div class="visual-img">
+                    <img src="https://images.unsplash.com/photo-1569154941061-e231b4725ef1?w=400&h=300&fit=crop" alt="Seaplane flying over turquoise water">
+                </div>
+                <div class="visual-img">
+                    <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=400&h=300&fit=crop" alt="Crystal clear snorkeling water">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Who This Is For -->
+    <section class="who">
+        <div class="who-inner">
+            <div class="section-label">Perfect For</div>
+            <h2 class="section-title">Who Should Visit Dry Tortugas?</h2>
+            
+            <div class="who-grid">
+                <div class="who-item">
+                    <div class="who-icon">🎯</div>
+                    <h3>Bucket-List Travelers</h3>
+                </div>
+                <div class="who-item">
+                    <div class="who-icon">💑</div>
+                    <h3>Couples</h3>
+                </div>
+                <div class="who-item">
+                    <div class="who-icon">⏱️</div>
+                    <h3>Short Trips</h3>
+                </div>
+                <div class="who-item">
+                    <div class="who-icon">✨</div>
+                    <h3>Luxury Seekers</h3>
+                </div>
+                <div class="who-item">
+                    <div class="who-icon">🌴</div>
+                    <h3>First-Time Key West Visitors</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- FAQ -->
+    <section class="faq">
+        <div class="faq-inner">
+            <div class="section-label">FAQ</div>
+            <h2 class="section-title">Common Questions</h2>
+            
+            <div class="faq-item">
+                <div class="faq-question">Should I take the seaplane or ferry?</div>
+                <p class="faq-answer">If budget allows, the seaplane is the better experience. You'll see the reef, shipwrecks, dolphins, and sharks from above — views you simply can't get from the ferry. Plus, you save 4+ hours of travel time, giving you more time at the park or back in Key West.</p>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">Will I get seasick on the ferry?</div>
+                <p class="faq-answer">The 2.5-hour ferry ride can be rough in choppy conditions. If you're prone to motion sickness, consider taking medication beforehand or opting for the seaplane, which offers a smooth, scenic flight.</p>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">What happens if weather cancels my trip?</div>
+                <p class="faq-answer">Both operators offer full refunds for weather-related cancellations. The seaplane has a $50 change fee if you reschedule more than 48 hours out; no refunds within 48 hours for passenger cancellations.</p>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">Can I bring kids?</div>
+                <p class="faq-answer">Yes! Both options are family-friendly. Children under 2 fly free on laps (seaplane). Kids 12 and under get discounted rates on both the seaplane and ferry.</p>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">How's the snorkeling?</div>
+                <p class="faq-answer">World-class. Dry Tortugas has some of the clearest water and healthiest reefs in North America. No crowds, incredible visibility, and abundant marine life including sea turtles, rays, and tropical fish.</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Final CTA -->
+    <section class="final-cta">
+        <div class="final-cta-inner">
+            <h2>Ready to Visit Fort Jefferson?</h2>
+            <p class="final-cta-urgency">Seats are limited and often sell out in advance.</p>
+            
+            <div class="final-cta-buttons">
+                <a href="https://keywestseaplanecharters.com/reservations/" target="_blank" class="final-btn final-btn-primary" onclick="trackBookingClick('dry_tortugas_seaplane')">Check Seaplane Availability</a>
+                <a href="https://fareharbor.com/embeds/book/yankeefreedom/items/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&full-items=yes&flow=no" target="_blank" class="final-btn final-btn-secondary" onclick="trackBookingClick('dry_tortugas_ferry')">Check Ferry Availability</a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <p>© 2025 <a href="/">Key West Sandbar Tours</a>. All rights reserved.</p>
+    </footer>
+</body>
+</html>
