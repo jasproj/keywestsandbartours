@@ -6,6 +6,9 @@
     <title>Private Sandbar Charters Key West | Bachelorette, Birthday & Group Boats</title>
     <meta name="description" content="Book private sandbar charters in Key West. Perfect for bachelorette parties, birthdays & groups of 6-36. BYOB, instant confirmation, free cancellation. From $450.">
     <link rel="canonical" href="https://keywestsandbartours.com/private-sandbar-charters">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png">
+    <link rel="apple-touch-icon" href="favicon-32.png">
     
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://keywestsandbartours.com/private-sandbar-charters">
@@ -135,6 +138,16 @@
             font-weight: 700;
             color: var(--ocean-deep);
             text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .logo-img {
+            width: 36px;
+            height: 36px;
+            border-radius: 8px;
+            object-fit: cover;
         }
         
         .header-cta {
@@ -693,6 +706,14 @@
             text-align: center;
         }
         
+        .footer-logo {
+            width: 50px;
+            height: 50px;
+            border-radius: 10px;
+            object-fit: cover;
+            margin-bottom: 16px;
+        }
+        
         .footer p {
             opacity: 0.7;
             font-size: 0.9rem;
@@ -982,7 +1003,10 @@
     <!-- Header -->
     <header class="header">
         <div class="header-inner">
-            <a href="/" class="logo">Key West Sandbar Tours</a>
+            <a href="/" class="logo">
+                <img src="favicon-32.png" alt="Key West Sandbar Tours" class="logo-img">
+                Key West Sandbar Tours
+            </a>
             <a href="#tours" class="header-cta">View Charters →</a>
         </div>
     </header>
@@ -1274,6 +1298,7 @@
     
     <!-- Footer -->
     <footer class="footer">
+        <img src="favicon-32.png" alt="Key West Sandbar Tours" class="footer-logo">
         <p>© 2025 <a href="/">Key West Sandbar Tours</a>. All rights reserved.</p>
     </footer>
     
