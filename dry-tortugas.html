@@ -6,6 +6,9 @@
     <title>Dry Tortugas Day Trips from Key West | Seaplane & Ferry Options</title>
     <meta name="description" content="Dry Tortugas day trips from Key West. Compare seaplane (40 min) vs ferry (2.5 hrs). Fort Jefferson tours, pristine snorkeling. Instant confirmation, free cancellation.">
     <link rel="canonical" href="https://keywestsandbartours.com/dry-tortugas">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png">
+    <link rel="apple-touch-icon" href="favicon-32.png">
     
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://keywestsandbartours.com/dry-tortugas">
@@ -36,11 +39,14 @@
         :root {
             --ocean-deep: #0C4A6E;
             --ocean-mid: #0369A1;
+            --ocean-light: #38BDF8;
             --sky: #E0F2FE;
             --sunset-orange: #F97316;
+            --coral: #FF6B6B;
             --gold: #FBBF24;
             --white: #FFFFFF;
             --off-white: #F8FAFC;
+            --sand: #F5E6D3;
             --text-dark: #0F172A;
             --text-muted: #64748B;
             --success: #10B981;
@@ -77,7 +83,7 @@
         }
         
         .header-inner {
-            max-width: 1100px;
+            max-width: 1200px;
             margin: 0 auto;
             display: flex;
             justify-content: space-between;
@@ -86,30 +92,40 @@
         
         .logo {
             font-family: 'Playfair Display', serif;
-            font-size: 1.2rem;
+            font-size: 1.3rem;
             font-weight: 700;
             color: var(--ocean-deep);
             text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .logo-img {
+            width: 36px;
+            height: 36px;
+            border-radius: 8px;
+            object-fit: cover;
         }
         
         .header-cta {
-            background: var(--sunset-orange);
+            background: var(--ocean-deep);
             color: var(--white);
-            padding: 10px 20px;
+            padding: 10px 24px;
             border-radius: 50px;
             text-decoration: none;
             font-weight: 600;
             font-size: 0.9rem;
-            transition: all 0.2s;
+            transition: all 0.3s ease;
         }
         
         .header-cta:hover {
-            background: #EA580C;
+            background: var(--ocean-mid);
         }
         
         /* Hero */
         .hero {
-            padding: 100px 20px 60px;
+            padding: 120px 20px 60px;
             background: linear-gradient(180deg, var(--sky) 0%, var(--white) 100%);
             text-align: center;
         }
@@ -124,6 +140,10 @@
             font-size: clamp(2rem, 5vw, 3rem);
             color: var(--ocean-deep);
             margin-bottom: 12px;
+        }
+        
+        .hero h1 span {
+            color: var(--sunset-orange);
         }
         
         .hero-sub {
@@ -146,17 +166,23 @@
             border-radius: 20px;
             padding: 32px 24px;
             box-shadow: 0 10px 40px rgba(0,0,0,0.08);
+            border: 2px solid var(--border);
             position: relative;
-            transition: all 0.3s;
+            transition: all 0.3s ease;
         }
         
         .option-card:hover {
             transform: translateY(-5px);
             box-shadow: 0 20px 50px rgba(0,0,0,0.12);
+            border-color: var(--ocean-light);
         }
         
         .option-card.primary {
             border: 3px solid var(--sunset-orange);
+        }
+        
+        .option-card.primary:hover {
+            border-color: var(--sunset-orange);
         }
         
         .option-badge {
@@ -272,24 +298,14 @@
             color: var(--gold);
         }
         
-        /* Comparison Table */
-        .comparison {
-            padding: 80px 20px;
-            background: var(--white);
-        }
-        
-        .comparison-inner {
-            max-width: 800px;
-            margin: 0 auto;
-        }
-        
+        /* Section Labels */
         .section-label {
-            font-size: 0.8rem;
+            font-size: 0.85rem;
             font-weight: 700;
             text-transform: uppercase;
             letter-spacing: 2px;
             color: var(--sunset-orange);
-            margin-bottom: 8px;
+            margin-bottom: 12px;
             text-align: center;
         }
         
@@ -301,6 +317,17 @@
             text-align: center;
         }
         
+        /* Comparison Table */
+        .comparison {
+            padding: 80px 20px;
+            background: var(--white);
+        }
+        
+        .comparison-inner {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
         .comparison-table {
             width: 100%;
             border-collapse: collapse;
@@ -308,6 +335,7 @@
             border-radius: 16px;
             overflow: hidden;
             box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            border: 2px solid var(--border);
         }
         
         .comparison-table thead {
@@ -391,41 +419,55 @@
             height: 100%;
         }
         
-        /* Who This Is For */
+        /* Who This Is For - Subtle Pills */
         .who {
-            padding: 80px 20px;
+            padding: 50px 20px;
             background: var(--white);
         }
         
         .who-inner {
-            max-width: 800px;
+            max-width: 900px;
             margin: 0 auto;
             text-align: center;
         }
         
+        .who .section-title {
+            font-size: clamp(1.5rem, 3vw, 2rem);
+            margin-bottom: 30px;
+        }
+        
         .who-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            display: flex;
+            justify-content: center;
             gap: 16px;
-            margin-top: 40px;
+            flex-wrap: wrap;
         }
         
         .who-item {
-            background: var(--off-white);
-            padding: 24px 16px;
-            border-radius: 16px;
-            text-align: center;
+            background: var(--white);
+            padding: 16px 20px;
+            border-radius: 50px;
+            border: 1px solid var(--border);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            transition: all 0.2s ease;
+        }
+        
+        .who-item:hover {
+            border-color: var(--ocean-light);
+            background: #F8FAFC;
         }
         
         .who-icon {
-            font-size: 2rem;
-            margin-bottom: 12px;
+            font-size: 1.4rem;
         }
         
         .who-item h3 {
             font-size: 0.95rem;
             font-weight: 600;
-            color: var(--ocean-deep);
+            color: var(--text-dark);
+            margin: 0;
         }
         
         /* FAQ */
@@ -444,6 +486,7 @@
             border-radius: 12px;
             padding: 24px;
             margin-bottom: 16px;
+            border: 1px solid var(--border);
         }
         
         .faq-question {
@@ -528,8 +571,16 @@
         .footer {
             background: var(--text-dark);
             color: var(--white);
-            padding: 30px 20px;
+            padding: 40px 20px;
             text-align: center;
+        }
+        
+        .footer-logo {
+            width: 50px;
+            height: 50px;
+            border-radius: 10px;
+            object-fit: cover;
+            margin-bottom: 16px;
         }
         
         .footer p {
@@ -571,16 +622,16 @@
             }
             
             .logo {
-                font-size: 1rem;
+                font-size: 1.1rem;
             }
             
             .header-cta {
-                padding: 8px 14px;
-                font-size: 0.8rem;
+                padding: 8px 16px;
+                font-size: 0.85rem;
             }
             
             .hero {
-                padding: 90px 16px 40px;
+                padding: 100px 16px 40px;
             }
             
             .hero h1 {
@@ -643,16 +694,11 @@
             }
             
             .who-grid {
-                grid-template-columns: 1fr 1fr;
                 gap: 12px;
             }
             
             .who-item {
-                padding: 20px 12px;
-            }
-            
-            .who-icon {
-                font-size: 1.5rem;
+                padding: 12px 16px;
             }
             
             .who-item h3 {
@@ -692,7 +738,8 @@
             }
             
             .who-grid {
-                grid-template-columns: 1fr;
+                flex-direction: column;
+                align-items: center;
             }
             
             .comparison-table {
@@ -718,7 +765,10 @@
     <!-- Header -->
     <header class="header">
         <div class="header-inner">
-            <a href="/" class="logo">Key West Sandbar Tours</a>
+            <a href="/" class="logo">
+                <img src="favicon-32.png" alt="Key West Sandbar Tours" class="logo-img">
+                Key West Sandbar Tours
+            </a>
             <a href="#options" class="header-cta">Book Now →</a>
         </div>
     </header>
@@ -726,7 +776,7 @@
     <!-- Hero -->
     <section class="hero" id="options">
         <div class="hero-inner">
-            <h1>Dry Tortugas Day Trips from Key West</h1>
+            <h1>Dry Tortugas Day Trips from <span>Key West</span></h1>
             <p class="hero-sub">Seaplane & Ferry Options · Instant Confirmation</p>
             
             <!-- Two Option Cards -->
@@ -848,7 +898,7 @@
         </div>
     </section>
     
-    <!-- Who This Is For -->
+    <!-- Who This Is For - Subtle Pills -->
     <section class="who">
         <div class="who-inner">
             <div class="section-label">Perfect For</div>
@@ -927,6 +977,7 @@
     
     <!-- Footer -->
     <footer class="footer">
+        <img src="favicon-32.png" alt="Key West Sandbar Tours" class="footer-logo">
         <p>© 2025 <a href="/">Key West Sandbar Tours</a>. All rights reserved.</p>
     </footer>
 </body>
