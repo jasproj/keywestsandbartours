@@ -348,14 +348,14 @@
             color: var(--gold);
         }
         
-        /* Best For Section */
+        /* Best For Section - Subtle */
         .best-for {
-            padding: 80px 20px;
+            padding: 50px 20px;
             background: var(--white);
         }
         
         .best-for-inner {
-            max-width: 1000px;
+            max-width: 900px;
             margin: 0 auto;
             text-align: center;
         }
@@ -376,40 +376,47 @@
             margin-bottom: 50px;
         }
         
+        .best-for .section-title {
+            font-size: clamp(1.5rem, 3vw, 2rem);
+            margin-bottom: 30px;
+        }
+        
         .best-for-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 24px;
+            display: flex;
+            justify-content: center;
+            gap: 16px;
+            flex-wrap: wrap;
         }
         
         .best-for-card {
-            background: linear-gradient(135deg, #FFF8F0 0%, var(--white) 100%);
-            padding: 30px 24px;
-            border-radius: 20px;
-            border: 2px solid transparent;
-            transition: all 0.3s ease;
+            background: var(--white);
+            padding: 16px 20px;
+            border-radius: 50px;
+            border: 1px solid var(--border);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            transition: all 0.2s ease;
         }
         
         .best-for-card:hover {
-            border-color: var(--coral);
-            transform: translateY(-5px);
+            border-color: var(--ocean-light);
+            background: #F8FAFC;
         }
         
         .best-for-icon {
-            font-size: 2.5rem;
-            margin-bottom: 16px;
+            font-size: 1.4rem;
         }
         
         .best-for-card h3 {
-            font-size: 1.1rem;
-            font-weight: 700;
-            color: var(--ocean-deep);
-            margin-bottom: 8px;
+            font-size: 0.95rem;
+            font-weight: 600;
+            color: var(--text-dark);
+            margin: 0;
         }
         
         .best-for-card p {
-            font-size: 0.9rem;
-            color: var(--text-muted);
+            display: none;
         }
         
         /* Tours Section */
