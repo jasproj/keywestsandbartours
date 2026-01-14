@@ -1,0 +1,1351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bachelorette Party Boats Key West | Private Sandbar Charters</title>
+    <meta name="description" content="Book the best bachelorette party boats in Key West. Private sandbar charters for your crew. BYOB, champagne-ready, Instagram-worthy. From $600. Free cancellation.">
+    <link rel="canonical" href="https://keywestsandbartours.com/bachelorette-party-boats">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png">
+    <link rel="apple-touch-icon" href="favicon-32.png">
+    
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://keywestsandbartours.com/bachelorette-party-boats">
+    <meta property="og:title" content="Bachelorette Party Boats Key West | Your Crew, Your Sandbar">
+    <meta property="og:description" content="Private sandbar charters for bachelorette parties. BYOB, Instagram-worthy, unforgettable.">
+    <meta property="og:image" content="https://keywestsandbartours.com/bachelorette-hero.png">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-67D7X60CJF"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-67D7X60CJF');
+        
+        function trackBookingClick(tourName, tourId, price) {
+            gtag('event', 'booking_click', {
+                'event_category': 'conversion',
+                'event_label': tourName,
+                'tour_id': tourId,
+                'value': price,
+                'page_type': 'bachelorette-party-boats'
+            });
+        }
+    </script>
+    
+    <style>
+        :root {
+            --sand: #F5E6D3;
+            --ocean-deep: #0A3D62;
+            --ocean-light: #1E90FF;
+            --coral: #FF6B6B;
+            --white: #FFFFFF;
+            --text-dark: #1A1A2E;
+            --text-muted: #6B7280;
+            --gold: #D4AF37;
+            --success: #10B981;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            font-family: 'DM Sans', sans-serif;
+            color: var(--text-dark);
+            line-height: 1.6;
+            background: var(--white);
+            overflow-x: hidden;
+        }
+        
+        /* Sticky CTA Bar */
+        .sticky-cta {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: var(--ocean-deep);
+            padding: 12px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1000;
+            transform: translateY(100%);
+            transition: transform 0.3s ease;
+        }
+        
+        .sticky-cta.visible {
+            transform: translateY(0);
+        }
+        
+        .sticky-cta-text {
+            color: var(--white);
+            font-weight: 600;
+        }
+        
+        .sticky-cta-text span {
+            color: var(--gold);
+        }
+        
+        .sticky-cta-btn {
+            background: var(--coral);
+            color: var(--white);
+            padding: 12px 28px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 700;
+            transition: all 0.3s ease;
+        }
+        
+        .sticky-cta-btn:hover {
+            background: #ff5252;
+            transform: scale(1.05);
+        }
+        
+        /* Header */
+        .header {
+            background: var(--white);
+            padding: 12px 20px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 100;
+            box-shadow: 0 2px 20px rgba(0,0,0,0.08);
+        }
+        
+        .header-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: var(--ocean-deep);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .logo-img {
+            width: 36px;
+            height: 36px;
+            border-radius: 8px;
+            object-fit: cover;
+        }
+        
+        .header-cta {
+            background: var(--ocean-deep);
+            color: var(--white);
+            padding: 10px 24px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.9rem;
+            transition: all 0.3s ease;
+        }
+        
+        .header-cta:hover {
+            background: var(--ocean-light);
+        }
+        
+        /* Hero Section */
+        .hero {
+            padding: 120px 20px 60px;
+            background: linear-gradient(135deg, var(--sand) 0%, #FFF8F0 100%);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -20%;
+            width: 80%;
+            height: 200%;
+            background: radial-gradient(ellipse, rgba(30, 144, 255, 0.08) 0%, transparent 70%);
+            pointer-events: none;
+        }
+        
+        .hero-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+        
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: var(--white);
+            padding: 8px 16px;
+            border-radius: 50px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: var(--ocean-deep);
+            margin-bottom: 20px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+        }
+        
+        .hero-badge-dot {
+            width: 8px;
+            height: 8px;
+            background: var(--success);
+            border-radius: 50%;
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
+        }
+        
+        .hero h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(2.5rem, 5vw, 3.8rem);
+            font-weight: 700;
+            line-height: 1.1;
+            color: var(--ocean-deep);
+            margin-bottom: 20px;
+        }
+        
+        .hero h1 span {
+            color: var(--coral);
+        }
+        
+        .hero-subtitle {
+            font-size: 1.2rem;
+            color: var(--text-muted);
+            margin-bottom: 30px;
+            max-width: 500px;
+        }
+        
+        .hero-stats {
+            display: flex;
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+        
+        .hero-stat {
+            text-align: left;
+        }
+        
+        .hero-stat-number {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--ocean-deep);
+        }
+        
+        .hero-stat-label {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+        }
+        
+        .hero-cta {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            background: var(--coral);
+            color: var(--white);
+            padding: 18px 36px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 8px 30px rgba(255, 107, 107, 0.4);
+        }
+        
+        .hero-cta:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 40px rgba(255, 107, 107, 0.5);
+        }
+        
+        .hero-cta svg {
+            width: 20px;
+            height: 20px;
+        }
+        
+        .hero-image {
+            position: relative;
+        }
+        
+        .hero-image img {
+            width: 100%;
+            border-radius: 20px;
+            box-shadow: 0 30px 60px rgba(0,0,0,0.15);
+        }
+        
+        .hero-image-badge {
+            position: absolute;
+            bottom: -20px;
+            left: 20px;
+            background: var(--white);
+            padding: 16px 24px;
+            border-radius: 16px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.12);
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        
+        .hero-image-badge-icon {
+            width: 48px;
+            height: 48px;
+            background: var(--success);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+            font-size: 1.5rem;
+        }
+        
+        .hero-image-badge-text strong {
+            display: block;
+            font-size: 1rem;
+            color: var(--text-dark);
+        }
+        
+        .hero-image-badge-text span {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+        }
+        
+        /* Trust Bar */
+        .trust-bar {
+            background: var(--ocean-deep);
+            padding: 20px;
+        }
+        
+        .trust-bar-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            flex-wrap: wrap;
+        }
+        
+        .trust-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: var(--white);
+            font-size: 0.95rem;
+        }
+        
+        .trust-item svg {
+            width: 20px;
+            height: 20px;
+            color: var(--gold);
+        }
+        
+        /* Best For Section - Subtle */
+        .best-for {
+            padding: 50px 20px;
+            background: var(--white);
+        }
+        
+        .best-for-inner {
+            max-width: 900px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        
+        .section-label {
+            font-size: 0.85rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: var(--coral);
+            margin-bottom: 12px;
+        }
+        
+        .section-title {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(2rem, 4vw, 2.8rem);
+            color: var(--ocean-deep);
+            margin-bottom: 50px;
+        }
+        
+        .best-for .section-title {
+            font-size: clamp(1.5rem, 3vw, 2rem);
+            margin-bottom: 30px;
+        }
+        
+        .best-for-grid {
+            display: flex;
+            justify-content: center;
+            gap: 16px;
+            flex-wrap: wrap;
+        }
+        
+        .best-for-card {
+            background: var(--white);
+            padding: 16px 20px;
+            border-radius: 50px;
+            border: 1px solid var(--border);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            transition: all 0.2s ease;
+        }
+        
+        .best-for-card:hover {
+            border-color: var(--ocean-light);
+            background: #F8FAFC;
+        }
+        
+        .best-for-icon {
+            font-size: 1.4rem;
+        }
+        
+        .best-for-card h3 {
+            font-size: 0.95rem;
+            font-weight: 600;
+            color: var(--text-dark);
+            margin: 0;
+        }
+        
+        .best-for-card p {
+            display: none;
+        }
+        
+        /* Tours Section */
+        .tours {
+            padding: 80px 20px;
+            background: linear-gradient(180deg, #F8FAFC 0%, var(--white) 100%);
+        }
+        
+        .tours-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .tours-header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        
+        .tours-grid {
+            display: grid;
+            gap: 30px;
+        }
+        
+        .tour-card {
+            background: var(--white);
+            border-radius: 24px;
+            overflow: hidden;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.08);
+            border: 2px solid #E2E8F0;
+            display: grid;
+            grid-template-columns: 300px 1fr;
+            transition: all 0.3s ease;
+        }
+        
+        .tour-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 60px rgba(0,0,0,0.12);
+            border-color: var(--ocean-light);
+        }
+        
+        .tour-card-image {
+            height: 100%;
+            min-height: 280px;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+        
+        .tour-card-badge {
+            position: absolute;
+            top: 16px;
+            left: 16px;
+            background: var(--coral);
+            color: var(--white);
+            padding: 6px 14px;
+            border-radius: 50px;
+            font-size: 0.8rem;
+            font-weight: 700;
+        }
+        
+        .tour-card-content {
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .tour-card-company {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            margin-bottom: 8px;
+        }
+        
+        .tour-card h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem;
+            color: var(--ocean-deep);
+            margin-bottom: 12px;
+        }
+        
+        .tour-card-meta {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 16px;
+        }
+        
+        .tour-card-meta-item {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            font-size: 0.9rem;
+            color: var(--text-muted);
+        }
+        
+        .tour-card-description {
+            font-size: 0.95rem;
+            color: var(--text-muted);
+            margin-bottom: 20px;
+            flex-grow: 1;
+        }
+        
+        .tour-card-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 20px;
+            border-top: 1px solid #E5E7EB;
+        }
+        
+        .tour-card-price {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--ocean-deep);
+        }
+        
+        .tour-card-price span {
+            font-size: 0.9rem;
+            font-weight: 400;
+            color: var(--text-muted);
+        }
+        
+        .tour-card-cta {
+            background: var(--ocean-deep);
+            color: var(--white);
+            padding: 14px 28px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 700;
+            transition: all 0.3s ease;
+        }
+        
+        .tour-card-cta:hover {
+            background: var(--ocean-light);
+        }
+        
+        /* Why Section */
+        .why {
+            padding: 80px 20px;
+            background: var(--ocean-deep);
+            color: var(--white);
+        }
+        
+        .why-inner {
+            max-width: 1000px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        
+        .why .section-label {
+            color: var(--gold);
+        }
+        
+        .why .section-title {
+            color: var(--white);
+            margin-bottom: 50px;
+        }
+        
+        .why-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+        
+        .why-card {
+            text-align: left;
+            padding: 30px;
+            background: rgba(255,255,255,0.05);
+            border-radius: 20px;
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+        
+        .why-card-icon {
+            font-size: 2rem;
+            margin-bottom: 16px;
+        }
+        
+        .why-card h3 {
+            font-size: 1.2rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+        
+        .why-card p {
+            font-size: 0.95rem;
+            color: rgba(255,255,255,0.7);
+        }
+        
+        /* FAQ Section */
+        .faq {
+            padding: 80px 20px;
+            background: var(--white);
+        }
+        
+        .faq-inner {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .faq-header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        
+        .faq-item {
+            border-bottom: 1px solid #E5E7EB;
+            padding: 24px 0;
+        }
+        
+        .faq-question {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--ocean-deep);
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .faq-answer {
+            margin-top: 16px;
+            color: var(--text-muted);
+            line-height: 1.7;
+        }
+        
+        /* Final CTA */
+        .final-cta {
+            padding: 100px 20px;
+            background: linear-gradient(135deg, var(--sand) 0%, #FFF8F0 100%);
+            text-align: center;
+        }
+        
+        .final-cta-inner {
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        
+        .final-cta h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(2rem, 4vw, 3rem);
+            color: var(--ocean-deep);
+            margin-bottom: 20px;
+        }
+        
+        .final-cta p {
+            font-size: 1.1rem;
+            color: var(--text-muted);
+            margin-bottom: 30px;
+        }
+        
+        .final-cta-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            background: var(--coral);
+            color: var(--white);
+            padding: 20px 44px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.2rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 8px 30px rgba(255, 107, 107, 0.4);
+        }
+        
+        .final-cta-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 40px rgba(255, 107, 107, 0.5);
+        }
+        
+        .final-cta-sub {
+            margin-top: 20px;
+            font-size: 0.9rem;
+            color: var(--text-muted);
+        }
+        
+        /* Footer */
+        .footer {
+            background: var(--text-dark);
+            color: var(--white);
+            padding: 40px 20px;
+            text-align: center;
+        }
+        
+        .footer-logo {
+            width: 50px;
+            height: 50px;
+            border-radius: 10px;
+            object-fit: cover;
+            margin-bottom: 16px;
+        }
+        
+        .footer p {
+            opacity: 0.7;
+            font-size: 0.9rem;
+        }
+        
+        .footer a {
+            color: var(--white);
+            text-decoration: none;
+        }
+        
+        /* Mobile Responsive - Tablet */
+        @media (max-width: 900px) {
+            .hero {
+                padding: 100px 16px 40px;
+            }
+            
+            .hero-inner {
+                grid-template-columns: 1fr;
+                text-align: center;
+                gap: 30px;
+            }
+            
+            .hero-subtitle {
+                margin-left: auto;
+                margin-right: auto;
+            }
+            
+            .hero-stats {
+                justify-content: center;
+            }
+            
+            .hero-image {
+                order: -1;
+                max-width: 100%;
+                margin: 0 auto;
+            }
+            
+            .hero-image img {
+                border-radius: 16px;
+            }
+            
+            .hero-image-badge {
+                bottom: -10px;
+                left: 10px;
+                padding: 12px 16px;
+            }
+            
+            .tour-card {
+                grid-template-columns: 1fr;
+            }
+            
+            .tour-card-image {
+                min-height: 200px;
+            }
+            
+            .sticky-cta {
+                flex-direction: column;
+                gap: 10px;
+                text-align: center;
+                padding: 12px 16px;
+            }
+            
+            .best-for, .tours, .why, .faq, .final-cta {
+                padding: 60px 16px;
+            }
+            
+            .why-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        /* Mobile Responsive - Phone */
+        @media (max-width: 600px) {
+            .header {
+                padding: 10px 16px;
+            }
+            
+            .logo {
+                font-size: 1.1rem;
+            }
+            
+            .header-cta {
+                padding: 8px 16px;
+                font-size: 0.85rem;
+            }
+            
+            .hero {
+                padding: 90px 16px 30px;
+            }
+            
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .hero-subtitle {
+                font-size: 1rem;
+            }
+            
+            .hero-badge {
+                font-size: 0.8rem;
+                padding: 6px 12px;
+            }
+            
+            .hero-stats {
+                flex-direction: row;
+                gap: 12px;
+                flex-wrap: wrap;
+            }
+            
+            .hero-stat {
+                flex: 1;
+                min-width: 80px;
+                text-align: center;
+            }
+            
+            .hero-stat-number {
+                font-size: 1.5rem;
+            }
+            
+            .hero-stat-label {
+                font-size: 0.75rem;
+            }
+            
+            .hero-cta {
+                width: 100%;
+                justify-content: center;
+                padding: 16px 24px;
+                font-size: 1rem;
+            }
+            
+            .hero-image-badge {
+                display: none;
+            }
+            
+            .trust-bar-inner {
+                flex-direction: column;
+                gap: 12px;
+            }
+            
+            .trust-item {
+                font-size: 0.85rem;
+            }
+            
+            .section-title {
+                font-size: 1.6rem;
+            }
+            
+            .best-for-grid {
+                grid-template-columns: 1fr 1fr;
+                gap: 12px;
+            }
+            
+            .best-for-card {
+                padding: 20px 16px;
+            }
+            
+            .best-for-icon {
+                font-size: 2rem;
+            }
+            
+            .best-for-card h3 {
+                font-size: 0.95rem;
+            }
+            
+            .best-for-card p {
+                font-size: 0.8rem;
+            }
+            
+            .tour-card-content {
+                padding: 20px;
+            }
+            
+            .tour-card h3 {
+                font-size: 1.25rem;
+            }
+            
+            .tour-card-meta {
+                flex-wrap: wrap;
+                gap: 10px;
+            }
+            
+            .tour-card-meta-item {
+                font-size: 0.8rem;
+            }
+            
+            .tour-card-description {
+                font-size: 0.9rem;
+            }
+            
+            .tour-card-footer {
+                flex-direction: column;
+                gap: 16px;
+                align-items: stretch;
+            }
+            
+            .tour-card-price {
+                font-size: 1.5rem;
+            }
+            
+            .tour-card-cta {
+                width: 100%;
+                text-align: center;
+                padding: 16px 24px;
+                font-size: 1rem;
+                /* Make touch target bigger */
+                min-height: 52px;
+            }
+            
+            .why-card {
+                padding: 24px 20px;
+            }
+            
+            .faq-question {
+                font-size: 1rem;
+            }
+            
+            .faq-answer {
+                font-size: 0.9rem;
+            }
+            
+            .final-cta h2 {
+                font-size: 1.6rem;
+            }
+            
+            .final-cta p {
+                font-size: 1rem;
+            }
+            
+            .final-cta-btn {
+                width: 100%;
+                justify-content: center;
+                padding: 18px 24px;
+                font-size: 1rem;
+            }
+            
+            .sticky-cta {
+                padding: 10px 16px;
+            }
+            
+            .sticky-cta-text {
+                font-size: 0.9rem;
+            }
+            
+            .sticky-cta-btn {
+                width: 100%;
+                text-align: center;
+                padding: 14px 20px;
+                font-size: 1rem;
+                /* Minimum touch target */
+                min-height: 48px;
+            }
+        }
+        
+        /* Extra small phones */
+        @media (max-width: 380px) {
+            .hero h1 {
+                font-size: 1.75rem;
+            }
+            
+            .best-for-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .hero-stats {
+                flex-direction: column;
+                gap: 8px;
+            }
+        }
+        
+        /* Touch-friendly enhancements */
+        @media (hover: none) and (pointer: coarse) {
+            .tour-card-cta,
+            .hero-cta,
+            .final-cta-btn,
+            .sticky-cta-btn,
+            .header-cta {
+                /* Ensure minimum 48px touch targets */
+                min-height: 48px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-inner">
+            <a href="/" class="logo">
+                <img src="favicon-32.png" alt="Key West Sandbar Tours" class="logo-img">
+                Key West Sandbar Tours
+            </a>
+            <a href="#tours" class="header-cta">View Charters →</a>
+        </div>
+    </header>
+    
+    <!-- Sticky CTA -->
+    <div class="sticky-cta" id="stickyCta">
+        <div class="sticky-cta-text">🎉 Bach parties love this · From <span>$600</span></div>
+        <a href="#tours" class="sticky-cta-btn">Book Your Boat</a>
+    </div>
+    
+    <!-- Hero -->
+    <section class="hero">
+        <div class="hero-inner">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span class="hero-badge-dot"></span>
+                    Instant Confirmation · 500+ Bach Parties Booked
+                </div>
+                <h1>Bachelorette Party Boats in <span>Key West</span></h1>
+                <p class="hero-subtitle">Your crew. Your sandbar. Your rules. Private boats with BYOB, Bluetooth speakers, and crystal-clear water made for Instagram.</p>
+                
+                <div class="hero-stats">
+                    <div class="hero-stat">
+                        <div class="hero-stat-number">6-12</div>
+                        <div class="hero-stat-label">Girls per boat</div>
+                    </div>
+                    <div class="hero-stat">
+                        <div class="hero-stat-number">BYOB</div>
+                        <div class="hero-stat-label">Champagne ready</div>
+                    </div>
+                    <div class="hero-stat">
+                        <div class="hero-stat-number">4.9★</div>
+                        <div class="hero-stat-label">Bride approved</div>
+                    </div>
+                </div>
+                
+                <a href="#tours" class="hero-cta">
+                    Find Your Boat
+                    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+                </a>
+            </div>
+            
+            <div class="hero-image">
+                <img src="luxury-charter-hero.png" alt="Bachelorette party on private boat in Key West">
+                <div class="hero-image-badge">
+                    <div class="hero-image-badge-icon">✓</div>
+                    <div class="hero-image-badge-text">
+                        <strong>Free Cancellation</strong>
+                        <span>Plans change, we get it</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Trust Bar -->
+    <div class="trust-bar">
+        <div class="trust-bar-inner">
+            <div class="trust-item">
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+                Secure Checkout via FareHarbor
+            </div>
+            <div class="trust-item">
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                Verified Local Operators
+            </div>
+            <div class="trust-item">
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                Same-Day Booking Available
+            </div>
+        </div>
+    </div>
+    
+    <!-- Best For Section -->
+    <section class="best-for">
+        <div class="best-for-inner">
+            <div class="section-label">Made For</div>
+            <h2 class="section-title">The Ultimate Girls' Day</h2>
+            
+            <div class="best-for-grid">
+                <div class="best-for-card">
+                    <div class="best-for-icon">👰</div>
+                    <h3>Bachelorette Parties</h3>
+                    <p></p>
+                </div>
+                <div class="best-for-card">
+                    <div class="best-for-icon">👯‍♀️</div>
+                    <h3>Girls' Trips</h3>
+                    <p></p>
+                </div>
+                <div class="best-for-card">
+                    <div class="best-for-icon">🎂</div>
+                    <h3>Birthday Celebrations</h3>
+                    <p></p>
+                </div>
+                <div class="best-for-card">
+                    <div class="best-for-icon">💍</div>
+                    <h3>Bridal Showers</h3>
+                    <p></p>
+                </div>
+                <div class="best-for-card">
+                    <div class="best-for-icon">🥂</div>
+                    <h3>Divorce Parties</h3>
+                    <p></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Tours Section -->
+    <section class="tours" id="tours">
+        <div class="tours-inner">
+            <div class="tours-header">
+                <div class="section-label">Bride-Approved</div>
+                <h2 class="section-title">Party Boats for Your Crew</h2>
+            </div>
+            
+            <div class="tours-grid">
+                <!-- Tour 1: Premium Full Day -->
+                <div class="tour-card">
+                    <div class="tour-card-image" style="background-image: url('sandbar-couple.jpg')">
+                        <span class="tour-card-badge">👑 VIP Experience</span>
+                    </div>
+                    <div class="tour-card-content">
+                        <div class="tour-card-company">Reel Paradise Charters</div>
+                        <h3>Custom Full-Day Charter</h3>
+                        <div class="tour-card-meta">
+                            <span class="tour-card-meta-item">⏱️ 8 Hours</span>
+                            <span class="tour-card-meta-item">👥 Private group</span>
+                            <span class="tour-card-meta-item">🤿 Snorkel included</span>
+                        </div>
+                        <p class="tour-card-description">Snorkeling, swimming, fishing, and sandbar exploration. Captains know the best spots for the day's conditions. Ultimate flexibility.</p>
+                        <div class="tour-card-footer">
+                            <div class="tour-card-price">$899 <span>/ boat</span></div>
+                            <a href="https://fareharbor.com/embeds/book/reelparadisecharters/items/643995/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&full-items=yes&flow=no" target="_blank" class="tour-card-cta" onclick="trackBookingClick('Custom Boat Charter', '643995', 899)">Check Availability</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Tour 2: Quick Luxury -->
+                <div class="tour-card">
+                    <div class="tour-card-image" style="background-image: url('blog-sunset-cruises.jpg')">
+                        <span class="tour-card-badge">📸 Insta-Ready</span>
+                    </div>
+                    <div class="tour-card-content">
+                        <div class="tour-card-company">Laid Back Key West</div>
+                        <h3>Private Sandbar Tour</h3>
+                        <div class="tour-card-meta">
+                            <span class="tour-card-meta-item">⏱️ 3 Hours</span>
+                            <span class="tour-card-meta-item">👥 Up to 6 guests</span>
+                            <span class="tour-card-meta-item">✓ Free cancellation</span>
+                        </div>
+                        <p class="tour-card-description">Perfect for couples or small groups short on time. Hit the sandbar, soak up the sun, and be back for dinner reservations.</p>
+                        <div class="tour-card-footer">
+                            <div class="tour-card-price">$850 <span>/ boat</span></div>
+                            <a href="https://fareharbor.com/embeds/book/laidbackkeywest/items/265305/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&full-items=yes&flow=no" target="_blank" class="tour-card-cta" onclick="trackBookingClick('Private Sandbar Tour', '265305', 850)">Check Availability</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Tour 3: Customizable -->
+                <div class="tour-card">
+                    <div class="tour-card-image" style="background-image: url('blog-lobster.jpg')">
+                        <span class="tour-card-badge">🎨 You Design It</span>
+                    </div>
+                    <div class="tour-card-content">
+                        <div class="tour-card-company">Coastal Key West Charters</div>
+                        <h3>Design Your Own Charter</h3>
+                        <div class="tour-card-meta">
+                            <span class="tour-card-meta-item">⏱️ 4 Hours</span>
+                            <span class="tour-card-meta-item">👥 Private group</span>
+                            <span class="tour-card-meta-item">✓ Free cancellation</span>
+                        </div>
+                        <p class="tour-card-description">Mix it up: dolphin watch + sandbar, snorkel + sunset, or pure sandbar party. You design it, captain delivers.</p>
+                        <div class="tour-card-footer">
+                            <div class="tour-card-price">$800 <span>/ boat</span></div>
+                            <a href="https://fareharbor.com/embeds/book/coastalkeywestcharters/items/565580/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&full-items=yes&flow=no" target="_blank" class="tour-card-cta" onclick="trackBookingClick('Design Your Own Charter', '565580', 800)">Check Availability</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Tour 4: Party/Anniversary -->
+                <div class="tour-card">
+                    <div class="tour-card-image" style="background-image: url('sandbar-floating.jpg')">
+                        <span class="tour-card-badge">🔥 #1 for Bach Parties</span>
+                    </div>
+                    <div class="tour-card-content">
+                        <div class="tour-card-company">Island Vibe Charters</div>
+                        <h3>6-Hour Sandbar Tour</h3>
+                        <div class="tour-card-meta">
+                            <span class="tour-card-meta-item">⏱️ 6 Hours</span>
+                            <span class="tour-card-meta-item">👥 Up to 12 guests</span>
+                            <span class="tour-card-meta-item">✓ Free cancellation</span>
+                        </div>
+                        <p class="tour-card-description">Perfect for anniversaries, birthdays, and bachelorettes. Chill or party — your call. Water, ice, coolers, snorkel gear included.</p>
+                        <div class="tour-card-footer">
+                            <div class="tour-card-price">$680 <span>/ boat</span></div>
+                            <a href="https://fareharbor.com/embeds/book/islandvibecharters/items/301595/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&full-items=yes&flow=no" target="_blank" class="tour-card-cta" onclick="trackBookingClick('Sandbar Tour', '301595', 680)">Check Availability</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Tour 5: Budget Entry -->
+                <div class="tour-card">
+                    <div class="tour-card-image" style="background-image: url('sandbar-mangroves.jpg')">
+                        <span class="tour-card-badge">💰 Budget-Friendly</span>
+                    </div>
+                    <div class="tour-card-content">
+                        <div class="tour-card-company">Key West Coastal Charters</div>
+                        <h3>Famous Sandbar Trip</h3>
+                        <div class="tour-card-meta">
+                            <span class="tour-card-meta-item">⏱️ 4 Hours</span>
+                            <span class="tour-card-meta-item">👥 Up to 6 guests</span>
+                            <span class="tour-card-meta-item">✓ Free cancellation</span>
+                        </div>
+                        <p class="tour-card-description">"Stay and play" trip to the best sandbar for the day. Captain picks the spot based on tides and conditions. BYOB welcome.</p>
+                        <div class="tour-card-footer">
+                            <div class="tour-card-price">$600 <span>/ boat</span></div>
+                            <a href="https://fareharbor.com/embeds/book/keywestcoastalcharters/items/445498/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&full-items=yes&flow=no" target="_blank" class="tour-card-cta" onclick="trackBookingClick('Famous Sandbar Trip', '445498', 600)">Check Availability</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Why Section -->
+    <section class="why">
+        <div class="why-inner">
+            <div class="section-label">Why Us</div>
+            <h2 class="section-title">Why Bach Parties Love These Boats</h2>
+            
+            <div class="why-grid">
+                <div class="why-card">
+                    <div class="why-card-icon">🎉</div>
+                    <h3>Party-Ready</h3>
+                    <p>Bluetooth speakers, coolers, space to dance. Captains are used to bach parties and won't kill the vibe.</p>
+                </div>
+                <div class="why-card">
+                    <div class="why-card-icon">🍾</div>
+                    <h3>BYOB = Your Bar</h3>
+                    <p>Bring champagne, seltzers, snacks. No overpriced boat drinks. Your budget, your booze.</p>
+                </div>
+                <div class="why-card">
+                    <div class="why-card-icon">📸</div>
+                    <h3>Instagram Gold</h3>
+                    <p>Crystal clear water, white sandbars, golden hour light. Your photographer (or just your iPhone) will thank you.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- FAQ Section -->
+    <section class="faq">
+        <div class="faq-inner">
+            <div class="faq-header">
+                <div class="section-label">FAQ</div>
+                <h2 class="section-title">Questions from Maids of Honor</h2>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">How many girls can fit on one boat?</div>
+                <p class="faq-answer">Most boats fit 6-12 comfortably. For larger crews (12-20+), we can help you find a bigger vessel or split into two boats that anchor together at the sandbar.</p>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">Can we bring champagne and drinks?</div>
+                <p class="faq-answer">Yes! All boats are BYOB. Bring champagne, seltzers, whatever you want. Coolers and ice are provided. Pro tip: Freeze water bottles to keep drinks cold longer.</p>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">Do boats have Bluetooth speakers?</div>
+                <p class="faq-answer">Most boats have Bluetooth speakers for your playlist. Check individual listings or ask when booking. Captains are used to bach party vibes.</p>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">What if the bride gets seasick?</div>
+                <p class="faq-answer">The sandbars are in calm, protected waters — not open ocean. Very few people get seasick. But if she's prone, take Dramamine 30 min before departure just in case.</p>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">Can we decorate the boat?</div>
+                <p class="faq-answer">Light decorations are usually fine — sashes, balloons, banners. Just ask the captain first and avoid anything that could damage the boat or blow away.</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Final CTA -->
+    <section class="final-cta">
+        <div class="final-cta-inner">
+            <h2>Make Her Last Fling the Best Thing 💍</h2>
+            <p>⚡ Instant confirmation · Free cancellation · BYOB</p>
+            <a href="#tours" class="final-cta-btn">
+                Book the Boat
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" width="20" height="20"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+            </a>
+            <p class="final-cta-sub">🔒 Secure checkout · Split payment available · No hidden fees</p>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <img src="favicon-32.png" alt="Key West Sandbar Tours" class="footer-logo">
+        <p>© 2025 <a href="/">Key West Sandbar Tours</a>. All rights reserved.</p>
+    </footer>
+    
+    <script>
+        // Sticky CTA visibility
+        const stickyCta = document.getElementById('stickyCta');
+        const toursSection = document.getElementById('tours');
+        
+        window.addEventListener('scroll', () => {
+            const scrollY = window.scrollY;
+            const toursTop = toursSection.offsetTop;
+            
+            if (scrollY > 400 && scrollY < toursTop - 200) {
+                stickyCta.classList.add('visible');
+            } else {
+                stickyCta.classList.remove('visible');
+            }
+        });
+        
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
