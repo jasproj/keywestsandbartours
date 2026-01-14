@@ -1,0 +1,1208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sunset Cruises Key West | Private Sails, Catamarans & Romantic Charters</title>
+    <meta name="description" content="Book sunset cruises in Key West. Private sails, romantic charters, champagne cruises & group boats. From $350. Instant confirmation, free cancellation.">
+    <link rel="canonical" href="https://keywestsandbartours.com/sunset-cruises">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png">
+    <link rel="apple-touch-icon" href="favicon-32.png">
+    
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://keywestsandbartours.com/sunset-cruises">
+    <meta property="og:title" content="Sunset Cruises Key West | Private & Romantic Sails">
+    <meta property="og:description" content="Private sunset sails, romantic charters, champagne cruises. Instant confirmation.">
+    <meta property="og:image" content="https://keywestsandbartours.com/sunset-cruise-hero.png">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-67D7X60CJF"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-67D7X60CJF');
+        
+        function trackBookingClick(tourName, tourId, price) {
+            gtag('event', 'booking_click', {
+                'event_category': 'conversion',
+                'event_label': tourName,
+                'tour_id': tourId,
+                'value': price,
+                'page_type': 'sunset-cruises'
+            });
+        }
+    </script>
+    
+    <style>
+        :root {
+            --ocean-deep: #0C4A6E;
+            --ocean-mid: #0369A1;
+            --ocean-light: #38BDF8;
+            --sky: #E0F2FE;
+            --coral: #FF6B6B;
+            --gold: #FBBF24;
+            --sunset-orange: #F97316;
+            --sunset-pink: #EC4899;
+            --white: #FFFFFF;
+            --off-white: #F8FAFC;
+            --sand: #F5E6D3;
+            --text-dark: #0F172A;
+            --text-muted: #64748B;
+            --success: #10B981;
+            --border: #E2E8F0;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            font-family: 'DM Sans', sans-serif;
+            color: var(--text-dark);
+            line-height: 1.6;
+            background: var(--white);
+        }
+        
+        /* Sticky CTA */
+        .sticky-cta {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: var(--ocean-deep);
+            padding: 12px 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 16px;
+            z-index: 99;
+            transform: translateY(100%);
+            transition: transform 0.3s ease;
+        }
+        
+        .sticky-cta.visible {
+            transform: translateY(0);
+        }
+        
+        .sticky-cta-text {
+            color: var(--white);
+            font-weight: 600;
+        }
+        
+        .sticky-cta-text span {
+            color: var(--gold);
+        }
+        
+        .sticky-cta-btn {
+            background: var(--sunset-orange);
+            color: var(--white);
+            padding: 12px 28px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 700;
+            transition: all 0.3s ease;
+        }
+        
+        .sticky-cta-btn:hover {
+            background: #EA580C;
+            transform: scale(1.05);
+        }
+        
+        /* Header */
+        .header {
+            background: var(--white);
+            padding: 12px 20px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 100;
+            box-shadow: 0 2px 20px rgba(0,0,0,0.08);
+        }
+        
+        .header-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: var(--ocean-deep);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .logo-img {
+            width: 36px;
+            height: 36px;
+            border-radius: 8px;
+            object-fit: cover;
+        }
+        
+        .header-cta {
+            background: var(--ocean-deep);
+            color: var(--white);
+            padding: 10px 24px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.9rem;
+            transition: all 0.3s ease;
+        }
+        
+        .header-cta:hover {
+            background: var(--ocean-mid);
+        }
+        
+        /* Hero */
+        .hero {
+            padding: 120px 20px 60px;
+            background: linear-gradient(135deg, #FDF4E3 0%, #FFECD2 50%, #FCB69F 100%);
+        }
+        
+        .hero-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+        
+        .hero-content {
+            max-width: 560px;
+        }
+        
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(255,255,255,0.9);
+            padding: 8px 16px;
+            border-radius: 50px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: var(--ocean-deep);
+            margin-bottom: 20px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+        }
+        
+        .hero-badge-dot {
+            width: 8px;
+            height: 8px;
+            background: var(--success);
+            border-radius: 50%;
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
+        }
+        
+        .hero h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(2.2rem, 5vw, 3.2rem);
+            color: var(--ocean-deep);
+            line-height: 1.15;
+            margin-bottom: 20px;
+        }
+        
+        .hero h1 span {
+            color: var(--sunset-orange);
+        }
+        
+        .hero-subtitle {
+            font-size: 1.15rem;
+            color: var(--text-muted);
+            margin-bottom: 32px;
+            max-width: 480px;
+        }
+        
+        .hero-stats {
+            display: flex;
+            gap: 32px;
+            margin-bottom: 32px;
+        }
+        
+        .hero-stat {
+            text-align: center;
+        }
+        
+        .hero-stat-number {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--ocean-deep);
+        }
+        
+        .hero-stat-label {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .hero-cta {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: var(--sunset-orange);
+            color: var(--white);
+            padding: 16px 32px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.05rem;
+            box-shadow: 0 8px 25px rgba(249,115,22,0.3);
+            transition: all 0.3s ease;
+        }
+        
+        .hero-cta:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 35px rgba(249,115,22,0.4);
+        }
+        
+        .hero-cta svg {
+            width: 20px;
+            height: 20px;
+        }
+        
+        .hero-image {
+            position: relative;
+        }
+        
+        .hero-image img {
+            width: 100%;
+            border-radius: 24px;
+            box-shadow: 0 25px 60px rgba(0,0,0,0.15);
+        }
+        
+        .hero-image-badge {
+            position: absolute;
+            bottom: -20px;
+            left: 20px;
+            background: var(--white);
+            padding: 16px 20px;
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        
+        .hero-image-badge-icon {
+            width: 40px;
+            height: 40px;
+            background: var(--success);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+            font-weight: 700;
+        }
+        
+        .hero-image-badge-text strong {
+            display: block;
+            font-size: 0.95rem;
+            color: var(--text-dark);
+        }
+        
+        .hero-image-badge-text span {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+        }
+        
+        /* Trust Bar */
+        .trust-bar {
+            background: var(--ocean-deep);
+            padding: 20px;
+        }
+        
+        .trust-bar-inner {
+            max-width: 1000px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            flex-wrap: wrap;
+        }
+        
+        .trust-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: var(--white);
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+        
+        .trust-item svg {
+            width: 20px;
+            height: 20px;
+            color: var(--gold);
+        }
+        
+        /* Best For Section - Subtle */
+        .best-for {
+            padding: 50px 20px;
+            background: var(--white);
+        }
+        
+        .best-for-inner {
+            max-width: 900px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        
+        .section-label {
+            font-size: 0.85rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: var(--sunset-orange);
+            margin-bottom: 12px;
+        }
+        
+        .section-title {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(2rem, 4vw, 2.8rem);
+            color: var(--ocean-deep);
+            margin-bottom: 50px;
+        }
+        
+        .best-for .section-title {
+            font-size: clamp(1.5rem, 3vw, 2rem);
+            margin-bottom: 30px;
+        }
+        
+        .best-for-grid {
+            display: flex;
+            justify-content: center;
+            gap: 16px;
+            flex-wrap: wrap;
+        }
+        
+        .best-for-card {
+            background: var(--white);
+            padding: 16px 20px;
+            border-radius: 50px;
+            border: 1px solid var(--border);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            transition: all 0.2s ease;
+        }
+        
+        .best-for-card:hover {
+            border-color: var(--ocean-light);
+            background: #F8FAFC;
+        }
+        
+        .best-for-icon {
+            font-size: 1.4rem;
+        }
+        
+        .best-for-card h3 {
+            font-size: 0.95rem;
+            font-weight: 600;
+            color: var(--text-dark);
+            margin: 0;
+        }
+        
+        .best-for-card p {
+            display: none;
+        }
+        
+        /* Tours Section */
+        .tours {
+            padding: 80px 20px;
+            background: linear-gradient(180deg, #F8FAFC 0%, var(--white) 100%);
+        }
+        
+        .tours-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .tours-header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        
+        .tours-grid {
+            display: grid;
+            gap: 30px;
+        }
+        
+        .tour-card {
+            background: var(--white);
+            border-radius: 24px;
+            overflow: hidden;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.08);
+            border: 2px solid #E2E8F0;
+            display: grid;
+            grid-template-columns: 300px 1fr;
+            transition: all 0.3s ease;
+        }
+        
+        .tour-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 60px rgba(0,0,0,0.12);
+            border-color: var(--ocean-light);
+        }
+        
+        .tour-card-image {
+            height: 100%;
+            min-height: 280px;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+        
+        .tour-card-badge {
+            position: absolute;
+            top: 16px;
+            left: 16px;
+            background: var(--sunset-orange);
+            color: var(--white);
+            padding: 6px 14px;
+            border-radius: 50px;
+            font-size: 0.75rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        
+        .tour-card-content {
+            padding: 32px;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .tour-card-company {
+            font-size: 0.85rem;
+            color: var(--ocean-mid);
+            font-weight: 600;
+            margin-bottom: 8px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .tour-card-content h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem;
+            color: var(--ocean-deep);
+            margin-bottom: 12px;
+        }
+        
+        .tour-card-meta {
+            display: flex;
+            gap: 16px;
+            margin-bottom: 16px;
+            flex-wrap: wrap;
+        }
+        
+        .tour-card-meta-item {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+        }
+        
+        .tour-card-description {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            line-height: 1.7;
+            margin-bottom: 24px;
+            flex-grow: 1;
+        }
+        
+        .tour-card-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 20px;
+            border-top: 1px solid var(--border);
+        }
+        
+        .tour-card-price {
+            font-size: 1.75rem;
+            font-weight: 700;
+            color: var(--ocean-deep);
+        }
+        
+        .tour-card-price span {
+            font-size: 0.9rem;
+            font-weight: 400;
+            color: var(--text-muted);
+        }
+        
+        .tour-card-cta {
+            background: var(--sunset-orange);
+            color: var(--white);
+            padding: 14px 28px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 0.95rem;
+            transition: all 0.2s ease;
+            white-space: nowrap;
+        }
+        
+        .tour-card-cta:hover {
+            background: #EA580C;
+            transform: scale(1.05);
+        }
+        
+        /* FAQ Section */
+        .faq {
+            padding: 80px 20px;
+            background: var(--white);
+        }
+        
+        .faq-inner {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .faq-grid {
+            display: grid;
+            gap: 16px;
+        }
+        
+        .faq-item {
+            background: var(--off-white);
+            border-radius: 16px;
+            padding: 24px 28px;
+            border: 1px solid var(--border);
+        }
+        
+        .faq-question {
+            font-weight: 700;
+            color: var(--ocean-deep);
+            margin-bottom: 12px;
+            font-size: 1.05rem;
+        }
+        
+        .faq-answer {
+            color: var(--text-muted);
+            line-height: 1.7;
+        }
+        
+        /* Final CTA */
+        .final-cta {
+            padding: 80px 20px;
+            background: linear-gradient(135deg, #FFECD2 0%, #FCB69F 100%);
+            text-align: center;
+        }
+        
+        .final-cta-inner {
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        
+        .final-cta h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(1.75rem, 4vw, 2.5rem);
+            color: var(--ocean-deep);
+            margin-bottom: 12px;
+        }
+        
+        .final-cta p {
+            color: var(--text-muted);
+            margin-bottom: 30px;
+            font-size: 1.1rem;
+        }
+        
+        .final-cta-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: var(--sunset-orange);
+            color: var(--white);
+            padding: 18px 36px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.1rem;
+            box-shadow: 0 8px 25px rgba(249,115,22,0.3);
+            transition: all 0.3s ease;
+        }
+        
+        .final-cta-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 35px rgba(249,115,22,0.4);
+        }
+        
+        /* Footer */
+        .footer {
+            background: var(--text-dark);
+            color: var(--white);
+            padding: 40px 20px;
+            text-align: center;
+        }
+        
+        .footer-logo {
+            width: 50px;
+            height: 50px;
+            border-radius: 10px;
+            object-fit: cover;
+            margin-bottom: 16px;
+        }
+        
+        .footer p {
+            opacity: 0.7;
+            font-size: 0.9rem;
+        }
+        
+        .footer a {
+            color: var(--white);
+            text-decoration: none;
+        }
+        
+        /* Mobile Responsive - Tablet */
+        @media (max-width: 900px) {
+            .hero {
+                padding: 100px 16px 40px;
+            }
+            
+            .hero-inner {
+                grid-template-columns: 1fr;
+                text-align: center;
+                gap: 30px;
+            }
+            
+            .hero-subtitle {
+                margin-left: auto;
+                margin-right: auto;
+            }
+            
+            .hero-stats {
+                justify-content: center;
+            }
+            
+            .hero-image {
+                order: -1;
+                max-width: 500px;
+                margin: 0 auto;
+            }
+            
+            .hero-image-badge {
+                bottom: -15px;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+            
+            .tour-card {
+                grid-template-columns: 1fr;
+            }
+            
+            .tour-card-image {
+                min-height: 220px;
+            }
+        }
+        
+        /* Mobile Responsive - Phone */
+        @media (max-width: 600px) {
+            .header {
+                padding: 10px 16px;
+            }
+            
+            .logo {
+                font-size: 1.1rem;
+            }
+            
+            .header-cta {
+                padding: 8px 16px;
+                font-size: 0.85rem;
+            }
+            
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+            
+            .hero-subtitle {
+                font-size: 1rem;
+            }
+            
+            .hero-stats {
+                gap: 20px;
+            }
+            
+            .hero-stat-number {
+                font-size: 1.25rem;
+            }
+            
+            .hero-cta {
+                width: 100%;
+                justify-content: center;
+                padding: 16px 24px;
+            }
+            
+            .trust-bar-inner {
+                flex-direction: column;
+                gap: 12px;
+                align-items: center;
+            }
+            
+            .best-for-grid {
+                gap: 10px;
+            }
+            
+            .best-for-card {
+                padding: 12px 16px;
+            }
+            
+            .best-for-card h3 {
+                font-size: 0.85rem;
+            }
+            
+            .tours {
+                padding: 50px 16px;
+            }
+            
+            .section-title {
+                font-size: 1.6rem;
+            }
+            
+            .tour-card-content {
+                padding: 24px 20px;
+            }
+            
+            .tour-card-content h3 {
+                font-size: 1.3rem;
+            }
+            
+            .tour-card-footer {
+                flex-direction: column;
+                gap: 16px;
+                align-items: stretch;
+            }
+            
+            .tour-card-price {
+                text-align: center;
+            }
+            
+            .tour-card-cta {
+                text-align: center;
+                padding: 16px 24px;
+            }
+            
+            .faq {
+                padding: 50px 16px;
+            }
+            
+            .faq-item {
+                padding: 20px;
+            }
+            
+            .final-cta {
+                padding: 60px 16px;
+            }
+            
+            .final-cta-btn {
+                width: 100%;
+                justify-content: center;
+            }
+            
+            .sticky-cta {
+                flex-direction: column;
+                gap: 10px;
+                padding: 16px;
+            }
+            
+            .sticky-cta-btn {
+                width: 100%;
+                text-align: center;
+            }
+        }
+        
+        /* Extra small phones */
+        @media (max-width: 380px) {
+            .hero h1 {
+                font-size: 1.5rem;
+            }
+            
+            .hero-stats {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            
+            .best-for-grid {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .tour-card-meta {
+                flex-direction: column;
+                gap: 8px;
+            }
+        }
+        
+        /* Touch-friendly for mobile */
+        @media (hover: none) and (pointer: coarse) {
+            .tour-card-cta,
+            .hero-cta,
+            .final-cta-btn,
+            .sticky-cta-btn,
+            .header-cta {
+                min-height: 48px;
+            }
+            
+            .tour-card:hover {
+                transform: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-inner">
+            <a href="/" class="logo">
+                <img src="favicon-32.png" alt="Key West Sandbar Tours" class="logo-img">
+                Key West Sandbar Tours
+            </a>
+            <a href="#tours" class="header-cta">View Cruises →</a>
+        </div>
+    </header>
+    
+    <!-- Sticky CTA -->
+    <div class="sticky-cta" id="stickyCta">
+        <div class="sticky-cta-text">Sunset cruises from <span>$350</span></div>
+        <a href="#tours" class="sticky-cta-btn">Check Availability</a>
+    </div>
+    
+    <!-- Hero -->
+    <section class="hero">
+        <div class="hero-inner">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span class="hero-badge-dot"></span>
+                    Instant Confirmation
+                </div>
+                <h1>Sunset Cruises in <span>Key West</span></h1>
+                <p class="hero-subtitle">Private sails, romantic charters, and champagne cruises. Watch the legendary Key West sunset from the water.</p>
+                
+                <div class="hero-stats">
+                    <div class="hero-stat">
+                        <div class="hero-stat-number">$350+</div>
+                        <div class="hero-stat-label">Starting price</div>
+                    </div>
+                    <div class="hero-stat">
+                        <div class="hero-stat-number">2-4hr</div>
+                        <div class="hero-stat-label">Cruise options</div>
+                    </div>
+                    <div class="hero-stat">
+                        <div class="hero-stat-number">BYOB</div>
+                        <div class="hero-stat-label">Most boats</div>
+                    </div>
+                </div>
+                
+                <a href="#tours" class="hero-cta">
+                    View Sunset Cruises
+                    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+                </a>
+            </div>
+            
+            <div class="hero-image">
+                <img src="blog-sunset-cruises.jpg" alt="Sunset cruise in Key West with golden sky">
+                <div class="hero-image-badge">
+                    <div class="hero-image-badge-icon">✓</div>
+                    <div class="hero-image-badge-text">
+                        <strong>Free Cancellation</strong>
+                        <span>Most cruises</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Trust Bar -->
+    <div class="trust-bar">
+        <div class="trust-bar-inner">
+            <div class="trust-item">
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+                Secure Checkout via FareHarbor
+            </div>
+            <div class="trust-item">
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                Verified Local Captains
+            </div>
+            <div class="trust-item">
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                Same-Day Booking Available
+            </div>
+        </div>
+    </div>
+    
+    <!-- Best For Section -->
+    <section class="best-for">
+        <div class="best-for-inner">
+            <div class="section-label">Perfect For</div>
+            <h2 class="section-title">Who Books Sunset Cruises?</h2>
+            
+            <div class="best-for-grid">
+                <div class="best-for-card">
+                    <div class="best-for-icon">💍</div>
+                    <h3>Proposals</h3>
+                </div>
+                <div class="best-for-card">
+                    <div class="best-for-icon">💑</div>
+                    <h3>Anniversaries</h3>
+                </div>
+                <div class="best-for-card">
+                    <div class="best-for-icon">🥂</div>
+                    <h3>Honeymoons</h3>
+                </div>
+                <div class="best-for-card">
+                    <div class="best-for-icon">🎉</div>
+                    <h3>Celebrations</h3>
+                </div>
+                <div class="best-for-card">
+                    <div class="best-for-icon">👨‍👩‍👧‍👦</div>
+                    <h3>Family Trips</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Tours Section -->
+    <section class="tours" id="tours">
+        <div class="tours-inner">
+            <div class="tours-header">
+                <div class="section-label">Book Now</div>
+                <h2 class="section-title">Private Sunset Cruises</h2>
+            </div>
+            
+            <div class="tours-grid">
+                <!-- Tour 1: Sunset Atlantia - $2,000 -->
+                <div class="tour-card">
+                    <div class="tour-card-image" style="background-image: url('https://images.unsplash.com/photo-1567899378494-47b22a2ae96a?w=400')">
+                        <span class="tour-card-badge">Ultra Luxury</span>
+                    </div>
+                    <div class="tour-card-content">
+                        <div class="tour-card-company">Laroma Yachts Florida</div>
+                        <h3>Sunset Atlantia Yacht Charter</h3>
+                        <div class="tour-card-meta">
+                            <span class="tour-card-meta-item">⏱️ 2 Hours</span>
+                            <span class="tour-card-meta-item">👥 Up to 12 guests</span>
+                            <span class="tour-card-meta-item">🍾 Full bar & galley</span>
+                        </div>
+                        <p class="tour-card-description">The ultimate luxury sunset experience. Watch the sun dip below the horizon from a spacious yacht with professional crew, full bar, and premium amenities.</p>
+                        <div class="tour-card-footer">
+                            <div class="tour-card-price">$2,000 <span>/ charter</span></div>
+                            <a href="https://fareharbor.com/embeds/book/laromayachts/items/639170/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&full-items=yes&flow=no" target="_blank" class="tour-card-cta" onclick="trackBookingClick('Sunset Atlantia', '639170', 2000)">Check Availability</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Tour 2: Private Romantic Sunset - $995 -->
+                <div class="tour-card">
+                    <div class="tour-card-image" style="background-image: url('blog-sunset-cruises.jpg')">
+                        <span class="tour-card-badge">Romantic</span>
+                    </div>
+                    <div class="tour-card-content">
+                        <div class="tour-card-company">Six Fins Charter</div>
+                        <h3>Private Romantic Sunset Cruise</h3>
+                        <div class="tour-card-meta">
+                            <span class="tour-card-meta-item">⏱️ 3 Hours</span>
+                            <span class="tour-card-meta-item">👥 2-6 guests</span>
+                            <span class="tour-card-meta-item">🥂 Champagne included</span>
+                        </div>
+                        <p class="tour-card-description">Intimate sunset cruise perfect for proposals, anniversaries, or honeymoons. Champagne, appetizers, and front-row seats to Key West's legendary sunset.</p>
+                        <div class="tour-card-footer">
+                            <div class="tour-card-price">$995 <span>/ charter</span></div>
+                            <a href="https://fareharbor.com/embeds/book/sixfinscharters/items/532157/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&full-items=yes&flow=no" target="_blank" class="tour-card-cta" onclick="trackBookingClick('Romantic Sunset Cruise', '532157', 995)">Check Availability</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Tour 3: Snorkel Sunset Combo - $995 -->
+                <div class="tour-card">
+                    <div class="tour-card-image" style="background-image: url('sandbar-floating.jpg')">
+                        <span class="tour-card-badge">Best Value</span>
+                    </div>
+                    <div class="tour-card-content">
+                        <div class="tour-card-company">Sunset Sail Key West</div>
+                        <h3>4hr Private Snorkel & Sunset Combo</h3>
+                        <div class="tour-card-meta">
+                            <span class="tour-card-meta-item">⏱️ 4 Hours</span>
+                            <span class="tour-card-meta-item">👥 Private group</span>
+                            <span class="tour-card-meta-item">🤿 Snorkel + sunset</span>
+                        </div>
+                        <p class="tour-card-description">Best of both worlds — snorkel pristine reefs, explore backcountry sponge beds, then finish with a stunning sunset sail. All gear included.</p>
+                        <div class="tour-card-footer">
+                            <div class="tour-card-price">$995 <span>/ charter</span></div>
+                            <a href="https://fareharbor.com/embeds/book/sunsetsailkeywest/items/43842/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&full-items=yes&flow=no" target="_blank" class="tour-card-cta" onclick="trackBookingClick('Snorkel Sunset Combo', '43842', 995)">Check Availability</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Tour 4: Around the Island - $550 -->
+                <div class="tour-card">
+                    <div class="tour-card-image" style="background-image: url('sandbar-mangroves.jpg')">
+                        <span class="tour-card-badge">Island Tour</span>
+                    </div>
+                    <div class="tour-card-content">
+                        <div class="tour-card-company">Coastal Key West Charters</div>
+                        <h3>Around the Island with Sunset</h3>
+                        <div class="tour-card-meta">
+                            <span class="tour-card-meta-item">⏱️ 2 Hours</span>
+                            <span class="tour-card-meta-item">👥 Up to 6 guests</span>
+                            <span class="tour-card-meta-item">📍 20+ landmarks</span>
+                        </div>
+                        <p class="tour-card-description">Circle Key West and see over 20 points of interest — historic sites, celebrity homes, and hidden coves — all culminating with a perfect sunset view.</p>
+                        <div class="tour-card-footer">
+                            <div class="tour-card-price">$550 <span>/ charter</span></div>
+                            <a href="https://fareharbor.com/embeds/book/coastalkeywestcharters/items/565584/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&full-items=yes&flow=no" target="_blank" class="tour-card-cta" onclick="trackBookingClick('Around Island Sunset', '565584', 550)">Check Availability</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Tour 5: Salty Soul Sunset - $450 -->
+                <div class="tour-card">
+                    <div class="tour-card-image" style="background-image: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=400')">
+                        <span class="tour-card-badge">Popular</span>
+                    </div>
+                    <div class="tour-card-content">
+                        <div class="tour-card-company">Salty Soul Charters</div>
+                        <h3>Private Sunset Cruise</h3>
+                        <div class="tour-card-meta">
+                            <span class="tour-card-meta-item">⏱️ 2 Hours</span>
+                            <span class="tour-card-meta-item">👥 Up to 6 guests</span>
+                            <span class="tour-card-meta-item">🍺 BYOB friendly</span>
+                        </div>
+                        <p class="tour-card-description">Gather friends and family for a private two-hour sunset cruise aboard a comfortable Nautic Star. BYOB welcome, coolers provided.</p>
+                        <div class="tour-card-footer">
+                            <div class="tour-card-price">$450 <span>/ charter</span></div>
+                            <a href="https://fareharbor.com/embeds/book/saltysoulcharters/items/324540/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&full-items=yes&flow=no" target="_blank" class="tour-card-cta" onclick="trackBookingClick('Salty Soul Sunset', '324540', 450)">Check Availability</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Tour 6: Sunset Sail - $350 -->
+                <div class="tour-card">
+                    <div class="tour-card-image" style="background-image: url('https://images.unsplash.com/photo-1540946485063-a40da27545f8?w=400')">
+                        <span class="tour-card-badge">Great Value</span>
+                    </div>
+                    <div class="tour-card-content">
+                        <div class="tour-card-company">Sail Away Key West</div>
+                        <h3>Private Sunset Sail</h3>
+                        <div class="tour-card-meta">
+                            <span class="tour-card-meta-item">⏱️ 3 Hours</span>
+                            <span class="tour-card-meta-item">👥 Up to 6 guests</span>
+                            <span class="tour-card-meta-item">⛵ Classic sailboat</span>
+                        </div>
+                        <p class="tour-card-description">Step away from the crowds for your own private sunset sail. Classic sailboat experience with wind in your hair and the sun setting on the horizon.</p>
+                        <div class="tour-card-footer">
+                            <div class="tour-card-price">$350 <span>/ charter</span></div>
+                            <a href="https://fareharbor.com/embeds/book/sailawaykeywest/items/334822/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&full-items=yes&flow=no" target="_blank" class="tour-card-cta" onclick="trackBookingClick('Sunset Sail', '334822', 350)">Check Availability</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- FAQ Section -->
+    <section class="faq">
+        <div class="faq-inner">
+            <div class="tours-header">
+                <div class="section-label">Questions</div>
+                <h2 class="section-title">Sunset Cruise FAQ</h2>
+            </div>
+            
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <div class="faq-question">What time do sunset cruises depart?</div>
+                    <p class="faq-answer">Most sunset cruises depart 1.5-2 hours before sunset to ensure you're in the perfect spot when the sun goes down. Exact times vary by season — operators will confirm your departure time after booking.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">Can we bring our own drinks?</div>
+                    <p class="faq-answer">Most private charters are BYOB friendly. You can bring your own food, drinks, and alcohol. Coolers and ice are typically provided. Some luxury cruises include drinks — check each listing for specifics.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">What if the weather is bad?</div>
+                    <p class="faq-answer">Captains monitor weather closely. If conditions are unsafe, you'll be offered a full refund or the option to reschedule. Light clouds can actually make for more dramatic sunset colors!</p>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">Are sunset cruises good for proposals?</div>
+                    <p class="faq-answer">Absolutely — Key West sunsets are world-famous for a reason. Many captains are happy to help coordinate the perfect moment. Just let them know in advance so they can assist.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">Should I book a private or shared cruise?</div>
+                    <p class="faq-answer">All cruises on this page are private charters — just you and your group. No strangers, no schedules to follow. The boat, captain, and sunset are all yours.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Final CTA -->
+    <section class="final-cta">
+        <div class="final-cta-inner">
+            <h2>Ready for an Unforgettable Sunset?</h2>
+            <p>Book your private Key West sunset cruise today. Most boats offer free cancellation.</p>
+            <a href="#tours" class="final-cta-btn">
+                Browse Sunset Cruises
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" width="20" height="20"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"/></svg>
+            </a>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <img src="favicon-32.png" alt="Key West Sandbar Tours" class="footer-logo">
+        <p>© 2025 <a href="/">Key West Sandbar Tours</a>. All rights reserved.</p>
+    </footer>
+    
+    <script>
+        // Sticky CTA visibility
+        const stickyCta = document.getElementById('stickyCta');
+        const toursSection = document.getElementById('tours');
+        
+        window.addEventListener('scroll', () => {
+            const scrollY = window.scrollY;
+            const toursTop = toursSection.offsetTop;
+            
+            if (scrollY > 400 && scrollY < toursTop - 200) {
+                stickyCta.classList.add('visible');
+            } else {
+                stickyCta.classList.remove('visible');
+            }
+        });
+        
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
