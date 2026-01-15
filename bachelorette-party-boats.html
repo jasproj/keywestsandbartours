@@ -166,171 +166,167 @@
             background: var(--ocean-light);
         }
         
-        /* Hero Section */
-        .hero {
-            padding: 120px 20px 60px;
-            background: linear-gradient(135deg, var(--sand) 0%, #FFF8F0 100%);
+        /* Hero Video Section */
+        .hero-video {
             position: relative;
+            height: 70vh;
+            max-height: 550px;
+            min-height: 400px;
             overflow: hidden;
+            background: var(--ocean-deep);
+            margin-top: 60px;
         }
         
-        .hero::before {
-            content: '';
+        .hero-video__media {
             position: absolute;
-            top: -50%;
-            right: -20%;
-            width: 80%;
-            height: 200%;
-            background: radial-gradient(ellipse, rgba(30, 144, 255, 0.08) 0%, transparent 70%);
-            pointer-events: none;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: 1;
         }
         
-        .hero-inner {
-            max-width: 1200px;
-            margin: 0 auto;
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 60px;
-            align-items: center;
+        .hero-video__overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(
+                to bottom,
+                rgba(10, 61, 98, 0.3) 0%,
+                rgba(10, 61, 98, 0.5) 50%,
+                rgba(10, 61, 98, 0.7) 100%
+            );
+            z-index: 2;
         }
         
-        .hero-badge {
-            display: inline-flex;
+        .hero-video__content {
+            position: relative;
+            z-index: 3;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
             align-items: center;
-            gap: 8px;
-            background: var(--white);
+            text-align: center;
+            padding: 20px;
+            color: var(--white);
+        }
+        
+        .hero-video__badge {
+            background: var(--coral);
+            color: var(--white);
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 2px;
+            text-transform: uppercase;
             padding: 8px 16px;
-            border-radius: 50px;
-            font-size: 0.85rem;
-            font-weight: 600;
-            color: var(--ocean-deep);
-            margin-bottom: 20px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+            border-radius: 4px;
+            margin-bottom: 16px;
         }
         
-        .hero-badge-dot {
-            width: 8px;
-            height: 8px;
-            background: var(--success);
-            border-radius: 50%;
-            animation: pulse 2s infinite;
-        }
-        
-        @keyframes pulse {
-            0%, 100% { opacity: 1; }
-            50% { opacity: 0.5; }
-        }
-        
-        .hero h1 {
+        .hero-video__title {
             font-family: 'Playfair Display', serif;
-            font-size: clamp(2.5rem, 5vw, 3.8rem);
+            font-size: clamp(32px, 6vw, 56px);
             font-weight: 700;
             line-height: 1.1;
-            color: var(--ocean-deep);
-            margin-bottom: 20px;
+            margin: 0 0 16px 0;
+            text-shadow: 0 2px 20px rgba(0,0,0,0.3);
         }
         
-        .hero h1 span {
-            color: var(--coral);
-        }
-        
-        .hero-subtitle {
-            font-size: 1.2rem;
-            color: var(--text-muted);
-            margin-bottom: 30px;
+        .hero-video__subtitle {
+            font-size: clamp(16px, 2.5vw, 20px);
+            font-weight: 400;
+            opacity: 0.95;
+            margin: 0 0 24px 0;
             max-width: 500px;
         }
         
-        .hero-stats {
+        .hero-video__stats {
             display: flex;
-            gap: 30px;
-            margin-bottom: 30px;
+            gap: 32px;
+            margin-bottom: 28px;
         }
         
-        .hero-stat {
-            text-align: left;
+        .hero-video__stat {
+            text-align: center;
         }
         
-        .hero-stat-number {
-            font-size: 2rem;
+        .hero-video__stat-number {
+            font-size: 1.5rem;
             font-weight: 700;
-            color: var(--ocean-deep);
         }
         
-        .hero-stat-label {
-            font-size: 0.85rem;
-            color: var(--text-muted);
+        .hero-video__stat-label {
+            font-size: 0.8rem;
+            opacity: 0.85;
         }
         
-        .hero-cta {
-            display: inline-flex;
-            align-items: center;
-            gap: 12px;
+        .hero-video__cta {
+            display: inline-block;
             background: var(--coral);
             color: var(--white);
-            padding: 18px 36px;
-            border-radius: 50px;
-            text-decoration: none;
+            font-size: 16px;
             font-weight: 700;
-            font-size: 1.1rem;
-            transition: all 0.3s ease;
+            text-decoration: none;
+            padding: 16px 40px;
+            border-radius: 50px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            min-height: 48px;
             box-shadow: 0 8px 30px rgba(255, 107, 107, 0.4);
         }
         
-        .hero-cta:hover {
-            transform: translateY(-3px);
+        .hero-video__cta:hover {
+            transform: translateY(-2px);
             box-shadow: 0 12px 40px rgba(255, 107, 107, 0.5);
         }
         
-        .hero-cta svg {
-            width: 20px;
-            height: 20px;
-        }
-        
-        .hero-image {
-            position: relative;
-        }
-        
-        .hero-image img {
-            width: 100%;
-            border-radius: 20px;
-            box-shadow: 0 30px 60px rgba(0,0,0,0.15);
-        }
-        
-        .hero-image-badge {
+        .hero-video__scroll {
             position: absolute;
-            bottom: -20px;
-            left: 20px;
-            background: var(--white);
-            padding: 16px 24px;
-            border-radius: 16px;
-            box-shadow: 0 10px 40px rgba(0,0,0,0.12);
-            display: flex;
-            align-items: center;
-            gap: 12px;
-        }
-        
-        .hero-image-badge-icon {
-            width: 48px;
-            height: 48px;
-            background: var(--success);
-            border-radius: 12px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            bottom: 24px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 3;
             color: var(--white);
-            font-size: 1.5rem;
+            opacity: 0.7;
+            animation: bounce 2s infinite;
         }
         
-        .hero-image-badge-text strong {
-            display: block;
-            font-size: 1rem;
-            color: var(--text-dark);
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% { transform: translateX(-50%) translateY(0); }
+            40% { transform: translateX(-50%) translateY(-8px); }
+            60% { transform: translateX(-50%) translateY(-4px); }
         }
         
-        .hero-image-badge-text span {
-            font-size: 0.85rem;
-            color: var(--text-muted);
+        /* Mobile: Shorter hero */
+        @media (max-width: 768px) {
+            .hero-video {
+                max-height: 480px;
+                min-height: 380px;
+            }
+            
+            .hero-video__stats {
+                gap: 20px;
+            }
+            
+            .hero-video__cta {
+                padding: 14px 32px;
+            }
+        }
+        
+        /* Reduced motion preference */
+        @media (prefers-reduced-motion: reduce) {
+            .hero-video__media {
+                display: none;
+            }
+            .hero-video {
+                background: var(--ocean-deep) url('hero-poster.png') center/cover;
+            }
+            .hero-video__scroll {
+                animation: none;
+            }
         }
         
         /* Trust Bar */
@@ -1024,48 +1020,49 @@
         <a href="#tours" class="sticky-cta-btn">Book Your Boat</a>
     </div>
     
-    <!-- Hero -->
-    <section class="hero">
-        <div class="hero-inner">
-            <div class="hero-content">
-                <div class="hero-badge">
-                    <span class="hero-badge-dot"></span>
-                    Instant Confirmation · 500+ Bach Parties Booked
+    <!-- Hero Video -->
+    <section class="hero-video">
+        <video 
+            class="hero-video__media"
+            autoplay 
+            muted 
+            loop 
+            playsinline
+            poster="hero-poster.png"
+        >
+            <source src="hero-video.webm" type="video/webm">
+            <source src="hero-video.mp4" type="video/mp4">
+        </video>
+        
+        <div class="hero-video__overlay"></div>
+        
+        <div class="hero-video__content">
+            <span class="hero-video__badge">Private Bachelorette Charters</span>
+            <h1 class="hero-video__title">Your Crew. Your Sandbar.<br>Your Key West.</h1>
+            <p class="hero-video__subtitle">Private boat to a hidden sandbar. Champagne, swimming, sunset. BYOB welcome.</p>
+            
+            <div class="hero-video__stats">
+                <div class="hero-video__stat">
+                    <div class="hero-video__stat-number">6-12</div>
+                    <div class="hero-video__stat-label">Girls per boat</div>
                 </div>
-                <h1>Bachelorette Party Boats in <span>Key West</span></h1>
-                <p class="hero-subtitle">Your crew. Your sandbar. Your rules. Private boats with BYOB, Bluetooth speakers, and crystal-clear water made for Instagram.</p>
-                
-                <div class="hero-stats">
-                    <div class="hero-stat">
-                        <div class="hero-stat-number">6-12</div>
-                        <div class="hero-stat-label">Girls per boat</div>
-                    </div>
-                    <div class="hero-stat">
-                        <div class="hero-stat-number">BYOB</div>
-                        <div class="hero-stat-label">Champagne ready</div>
-                    </div>
-                    <div class="hero-stat">
-                        <div class="hero-stat-number">4.9★</div>
-                        <div class="hero-stat-label">Bride approved</div>
-                    </div>
+                <div class="hero-video__stat">
+                    <div class="hero-video__stat-number">BYOB</div>
+                    <div class="hero-video__stat-label">Champagne ready</div>
                 </div>
-                
-                <a href="#tours" class="hero-cta">
-                    Find Your Boat
-                    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
-                </a>
+                <div class="hero-video__stat">
+                    <div class="hero-video__stat-number">4.9★</div>
+                    <div class="hero-video__stat-label">Bride approved</div>
+                </div>
             </div>
             
-            <div class="hero-image">
-                <img src="luxury-charter-hero.png" alt="Bachelorette party on private boat in Key West">
-                <div class="hero-image-badge">
-                    <div class="hero-image-badge-icon">✓</div>
-                    <div class="hero-image-badge-text">
-                        <strong>Free Cancellation</strong>
-                        <span>Plans change, we get it</span>
-                    </div>
-                </div>
-            </div>
+            <a href="#tours" class="hero-video__cta" onclick="trackBookingClick('Hero CTA', 'hero', 0)">Find Your Boat</a>
+        </div>
+        
+        <div class="hero-video__scroll">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 5v14M5 12l7 7 7-7"/>
+            </svg>
         </div>
     </section>
     
