@@ -3,20 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Private Sandbar Charters Key West | Groups & Celebrations from $799</title>
-    <meta name="description" content="Book private sandbar charters in Key West. Perfect for groups, birthdays & celebrations. BYOB, local captains, hidden sandbars. From $799. Free cancellation.">
+    <title>Private Sandbar Charters Key West | Full-Day Boat Trips from $799</title>
+    <meta name="description" content="Book private sandbar charters in Key West. Full-day boat trips to hidden sandbars with snorkeling, swimming & dolphins. From $799. BYOB welcome.">
     <link rel="canonical" href="https://keywestsandbartours.com/private-sandbar-charters">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
     
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://keywestsandbartours.com/private-sandbar-charters">
     <meta property="og:title" content="Private Sandbar Charters Key West | From $799">
-    <meta property="og:description" content="Book private sandbar charters in Key West. BYOB, local captains, hidden sandbars.">
+    <meta property="og:description" content="Full-day private boat trips to hidden sandbars. Snorkeling, dolphins, BYOB.">
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
     
-    <!-- GA4 -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-67D7X60CJF"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -37,27 +37,59 @@
     
     <style>
         :root {
-            --navy: #1B3A57;
+            --sand: #F5E6D3;
+            --ocean-deep: #1B3A57;
+            --ocean-mid: #2E5A7C;
+            --ocean-light: #3BB8C3;
             --coral: #E87B4A;
-            --teal: #3BB8C3;
-            --sand: #FDF8F0;
             --white: #FFFFFF;
-            --text: #1A1A2E;
+            --off-white: #FDF8F0;
+            --text-dark: #1A1A2E;
             --text-muted: #6B7280;
-            --gold: #D4AF37;
+            --border: #E2E8F0;
         }
         
         * { margin: 0; padding: 0; box-sizing: border-box; }
         html { scroll-behavior: smooth; }
         
         body {
-            font-family: 'DM Sans', system-ui, sans-serif;
-            color: var(--text);
+            font-family: 'DM Sans', sans-serif;
+            color: var(--text-dark);
             line-height: 1.6;
             background: var(--white);
         }
         
-        /* Header */
+        .sticky-cta {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: var(--ocean-deep);
+            padding: 12px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1000;
+            transform: translateY(100%);
+            transition: transform 0.3s ease;
+        }
+        
+        .sticky-cta.visible { transform: translateY(0); }
+        .sticky-cta-text { color: var(--white); font-weight: 600; }
+        .sticky-cta-text span { color: var(--coral); }
+        
+        .sticky-cta-btn {
+            background: var(--coral);
+            color: var(--white);
+            padding: 12px 28px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 700;
+            min-height: 48px;
+            display: flex;
+            align-items: center;
+        }
+        
         .header {
             background: var(--white);
             padding: 12px 20px;
@@ -78,93 +110,245 @@
         }
         
         .logo {
-            font-size: 1.1rem;
+            font-family: 'Playfair Display', serif;
+            font-size: 1.2rem;
             font-weight: 700;
-            color: var(--navy);
+            color: var(--ocean-deep);
             text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 10px;
         }
+        
+        .logo-img { width: 36px; height: 36px; border-radius: 8px; }
         
         .header-cta {
-            background: var(--coral);
+            background: var(--ocean-deep);
             color: var(--white);
-            padding: 10px 20px;
-            border-radius: 6px;
+            padding: 10px 24px;
+            border-radius: 50px;
             text-decoration: none;
             font-weight: 600;
             font-size: 0.9rem;
+            min-height: 48px;
+            display: flex;
+            align-items: center;
         }
         
-        /* Hero - Compact */
-        .hero {
-            padding: 80px 20px 30px;
-            background: linear-gradient(135deg, var(--sand) 0%, #FFF8F0 100%);
+        .hero-video {
+            position: relative;
+            height: 70vh;
+            max-height: 550px;
+            min-height: 400px;
+            overflow: hidden;
+            background: var(--ocean-deep);
+            margin-top: 60px;
+        }
+        
+        .hero-video__media {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center center;
+            z-index: 1;
+        }
+        
+        .hero-video__overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(
+                to bottom,
+                rgba(27, 58, 87, 0.3) 0%,
+                rgba(27, 58, 87, 0.5) 50%,
+                rgba(27, 58, 87, 0.7) 100%
+            );
+            z-index: 2;
+        }
+        
+        .hero-video__content {
+            position: relative;
+            z-index: 3;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
             text-align: center;
+            padding: 20px;
+            color: var(--white);
         }
         
-        .hero h1 {
-            font-size: clamp(1.5rem, 5vw, 2.2rem);
-            color: var(--navy);
-            margin-bottom: 8px;
+        .hero-video__badge {
+            background: var(--coral);
+            color: var(--white);
+            font-size: 12px;
             font-weight: 700;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            padding: 8px 16px;
+            border-radius: 4px;
+            margin-bottom: 16px;
         }
         
-        .hero p {
-            color: var(--text-muted);
-            font-size: 1rem;
-            margin-bottom: 12px;
+        .hero-video__title {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(28px, 6vw, 56px);
+            font-weight: 700;
+            line-height: 1.1;
+            margin: 0 0 16px 0;
+            text-shadow: 0 2px 20px rgba(0,0,0,0.3);
         }
         
-        .hero-price {
+        .hero-video__subtitle {
+            font-size: clamp(16px, 2.5vw, 20px);
+            opacity: 0.95;
+            margin: 0 0 24px 0;
+            max-width: 550px;
+        }
+        
+        .hero-video__stats {
+            display: flex;
+            gap: 32px;
+            margin-bottom: 28px;
+        }
+        
+        .hero-video__stat { text-align: center; }
+        .hero-video__stat-number { font-size: 1.5rem; font-weight: 700; }
+        .hero-video__stat-label { font-size: 0.8rem; opacity: 0.85; }
+        
+        .hero-video__cta {
             display: inline-block;
             background: var(--coral);
-            color: white;
-            padding: 6px 16px;
-            border-radius: 20px;
-            font-weight: 600;
-            font-size: 0.9rem;
+            color: var(--white);
+            font-size: 16px;
+            font-weight: 700;
+            text-decoration: none;
+            padding: 16px 40px;
+            border-radius: 50px;
+            min-height: 48px;
+            box-shadow: 0 8px 30px rgba(232, 123, 74, 0.4);
         }
         
-        /* Trust Bar */
+        .hero-video__scroll {
+            position: absolute;
+            bottom: 24px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 3;
+            color: var(--white);
+            opacity: 0.7;
+            animation: bounce 2s infinite;
+        }
+        
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% { transform: translateX(-50%) translateY(0); }
+            40% { transform: translateX(-50%) translateY(-8px); }
+            60% { transform: translateX(-50%) translateY(-4px); }
+        }
+        
         .trust-bar {
-            background: var(--navy);
-            padding: 12px 20px;
+            background: var(--ocean-deep);
+            padding: 16px 20px;
+        }
+        
+        .trust-bar-inner {
+            max-width: 1200px;
+            margin: 0 auto;
             display: flex;
             justify-content: center;
-            gap: 24px;
+            gap: 40px;
             flex-wrap: wrap;
         }
         
         .trust-item {
-            color: var(--white);
-            font-size: 0.85rem;
             display: flex;
             align-items: center;
-            gap: 6px;
+            gap: 8px;
+            color: var(--white);
+            font-size: 0.9rem;
+            font-weight: 500;
         }
         
-        /* Tours Section */
-        .tours {
+        .trust-item svg { width: 20px; height: 20px; flex-shrink: 0; }
+        
+        .best-for {
+            background: var(--off-white);
             padding: 40px 20px;
+        }
+        
+        .best-for-inner {
+            max-width: 900px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        
+        .best-for h2 {
+            font-family: 'Playfair Display', serif;
+            color: var(--ocean-deep);
+            margin-bottom: 20px;
+            font-size: 1.5rem;
+        }
+        
+        .best-for-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 12px;
+        }
+        
+        .best-for-pill {
+            background: var(--white);
+            padding: 12px 20px;
+            border-radius: 50px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            color: var(--text-dark);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+        }
+        
+        .tours {
+            padding: 60px 20px;
+            background: var(--white);
+        }
+        
+        .tours-inner {
             max-width: 1200px;
             margin: 0 auto;
         }
         
-        .tours h2 {
+        .section-label {
             text-align: center;
-            font-size: 1.5rem;
-            color: var(--navy);
-            margin-bottom: 24px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: var(--coral);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 8px;
         }
         
-        .tour-grid {
+        .section-title {
+            text-align: center;
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(1.5rem, 4vw, 2rem);
+            color: var(--ocean-deep);
+            margin-bottom: 40px;
+        }
+        
+        .tours-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
             gap: 24px;
         }
         
         .tour-card {
             background: var(--white);
-            border-radius: 12px;
+            border-radius: 16px;
             overflow: hidden;
             box-shadow: 0 4px 20px rgba(0,0,0,0.08);
             transition: transform 0.2s, box-shadow 0.2s;
@@ -172,80 +356,93 @@
         
         .tour-card:hover {
             transform: translateY(-4px);
-            box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+            box-shadow: 0 12px 40px rgba(0,0,0,0.12);
         }
         
-        .tour-image {
-            height: 180px;
+        .tour-card-image {
+            height: 200px;
             background-size: cover;
             background-position: center;
             position: relative;
         }
         
-        .tour-price-badge {
+        .tour-card-badge {
+            position: absolute;
+            top: 12px;
+            left: 12px;
+            background: var(--coral);
+            color: var(--white);
+            padding: 6px 12px;
+            border-radius: 4px;
+            font-size: 0.75rem;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+        
+        .tour-card-price {
             position: absolute;
             top: 12px;
             right: 12px;
-            background: var(--coral);
-            color: white;
-            padding: 6px 12px;
-            border-radius: 4px;
+            background: var(--ocean-deep);
+            color: var(--white);
+            padding: 8px 14px;
+            border-radius: 6px;
+            font-size: 1.2rem;
             font-weight: 700;
-            font-size: 1.1rem;
         }
         
-        .tour-content {
-            padding: 16px;
-        }
+        .tour-card-content { padding: 20px; }
         
-        .tour-company {
+        .tour-card-company {
             font-size: 0.8rem;
-            color: var(--teal);
+            color: var(--ocean-light);
             font-weight: 600;
-            margin-bottom: 4px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 6px;
         }
         
-        .tour-card h3 {
-            font-size: 1.1rem;
-            color: var(--navy);
-            margin-bottom: 8px;
+        .tour-card-content h3 {
+            font-size: 1.15rem;
+            color: var(--ocean-deep);
+            margin-bottom: 10px;
+            font-weight: 700;
         }
         
-        .tour-meta {
+        .tour-card-meta {
             display: flex;
-            gap: 12px;
+            gap: 16px;
+            margin-bottom: 12px;
             font-size: 0.85rem;
             color: var(--text-muted);
-            margin-bottom: 10px;
         }
         
-        .tour-description {
+        .tour-card-description {
             font-size: 0.9rem;
             color: var(--text-muted);
+            line-height: 1.6;
             margin-bottom: 16px;
-            line-height: 1.5;
         }
         
-        .tour-cta {
+        .tour-card-cta {
             display: block;
             background: var(--coral);
-            color: white;
+            color: var(--white);
             text-align: center;
-            padding: 12px;
-            border-radius: 6px;
+            padding: 14px 20px;
+            border-radius: 8px;
             text-decoration: none;
-            font-weight: 600;
+            font-weight: 700;
+            font-size: 0.95rem;
+            min-height: 48px;
             transition: background 0.2s;
         }
         
-        .tour-cta:hover {
-            background: #d66a3d;
-        }
+        .tour-card-cta:hover { background: #d46a3c; }
         
-        /* FAQ */
         .faq {
-            background: var(--sand);
-            padding: 40px 20px;
+            background: var(--off-white);
+            padding: 60px 20px;
         }
         
         .faq-inner {
@@ -253,291 +450,302 @@
             margin: 0 auto;
         }
         
-        .faq h2 {
-            text-align: center;
-            color: var(--navy);
-            margin-bottom: 24px;
-        }
-        
         .faq-item {
             background: var(--white);
-            padding: 16px 20px;
-            border-radius: 8px;
+            padding: 20px 24px;
+            border-radius: 12px;
             margin-bottom: 12px;
         }
         
-        .faq-item h3 {
-            color: var(--navy);
-            font-size: 1rem;
+        .faq-question {
+            font-weight: 700;
+            color: var(--ocean-deep);
             margin-bottom: 8px;
+            font-size: 1rem;
         }
         
-        .faq-item p {
+        .faq-answer {
             color: var(--text-muted);
-            font-size: 0.9rem;
+            font-size: 0.95rem;
+            line-height: 1.6;
         }
         
-        /* Footer */
-        .footer {
-            background: var(--navy);
-            color: var(--white);
+        .final-cta {
+            background: linear-gradient(135deg, var(--ocean-deep) 0%, var(--ocean-mid) 100%);
+            padding: 60px 20px;
             text-align: center;
-            padding: 24px 20px;
-            font-size: 0.85rem;
         }
         
-        .footer a { color: var(--teal); }
-        
-        /* Sticky CTA - Mobile */
-        .sticky-cta {
-            position: fixed;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            background: var(--navy);
-            padding: 12px 20px;
-            display: none;
-            justify-content: space-between;
-            align-items: center;
-            z-index: 1000;
-        }
-        
-        .sticky-cta.visible { display: flex; }
-        
-        .sticky-cta span {
+        .final-cta h2 {
+            font-family: 'Playfair Display', serif;
             color: var(--white);
-            font-weight: 600;
+            font-size: clamp(1.5rem, 4vw, 2rem);
+            margin-bottom: 12px;
         }
         
-        .sticky-cta a {
+        .final-cta p {
+            color: rgba(255,255,255,0.85);
+            margin-bottom: 24px;
+        }
+        
+        .final-cta-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
             background: var(--coral);
-            color: white;
-            padding: 10px 20px;
-            border-radius: 6px;
+            color: var(--white);
+            padding: 16px 32px;
+            border-radius: 50px;
             text-decoration: none;
-            font-weight: 600;
+            font-weight: 700;
+            min-height: 48px;
         }
         
-        @media (min-width: 768px) {
-            .sticky-cta { display: none !important; }
+        .footer {
+            background: var(--text-dark);
+            color: var(--white);
+            padding: 30px 20px;
+            text-align: center;
+        }
+        
+        .footer a { color: var(--white); }
+        
+        @media (max-width: 768px) {
+            .hero-video__media {
+                object-position: 70% center;
+            }
+        }
+        
+        @media (max-width: 600px) {
+            .hero-video {
+                min-height: 450px;
+                max-height: 500px;
+            }
+            
+            .hero-video__stats { gap: 20px; }
+            
+            .trust-bar-inner {
+                flex-direction: column;
+                gap: 12px;
+                align-items: center;
+            }
+            
+            .tours-grid { grid-template-columns: 1fr; }
+            
+            .sticky-cta {
+                flex-direction: column;
+                gap: 10px;
+                text-align: center;
+            }
         }
     </style>
 </head>
 <body>
-    <!-- Header -->
     <header class="header">
         <div class="header-inner">
-            <a href="/" class="logo">Key West Sandbar Tours</a>
+            <a href="/" class="logo">
+                <img src="favicon-32.png" alt="" class="logo-img">
+                Key West Sandbar Tours
+            </a>
             <a href="#tours" class="header-cta">View Charters</a>
         </div>
     </header>
     
-    <!-- Hero -->
-    <section class="hero">
-        <h1>Private Sandbar Charters</h1>
-        <p>Your boat. Your crew. Hidden sandbars only locals know.</p>
-        <span class="hero-price">From $799 / boat</span>
-    </section>
-    
-    <!-- Trust Bar -->
-    <div class="trust-bar">
-        <div class="trust-item">✓ Private boat, no strangers</div>
-        <div class="trust-item">✓ BYOB welcome</div>
-        <div class="trust-item">✓ Free cancellation</div>
-        <div class="trust-item">✓ Local captains</div>
+    <div class="sticky-cta" id="stickyCta">
+        <div class="sticky-cta-text">Private sandbars from <span>$799</span></div>
+        <a href="#tours" class="sticky-cta-btn">Find Your Boat</a>
     </div>
     
-    <!-- Tours -->
-    <section class="tours" id="tours">
-        <h2>Choose Your Charter</h2>
-        <div class="tour-grid">
-            
-            <!-- Tour 1 -->
-            <div class="tour-card">
-                <div class="tour-image" style="background-image: url('https://cdn.filestackcontent.com/PSniqjuXRSaTrcKulURZ')">
-                    <div class="tour-price-badge">$901</div>
+    <section class="hero-video">
+        <video class="hero-video__media" autoplay muted loop playsinline poster="hero-poster.png">
+            <source src="hero-video.webm" type="video/webm">
+            <source src="hero-video.mp4" type="video/mp4">
+        </video>
+        <div class="hero-video__overlay"></div>
+        <div class="hero-video__content">
+            <span class="hero-video__badge">Private Sandbar Charters</span>
+            <h1 class="hero-video__title">Your Own Sandbar.<br>Your Own Adventure.</h1>
+            <p class="hero-video__subtitle">Private boat to hidden sandbars most tourists never see. Snorkeling, dolphins, swimming. BYOB welcome.</p>
+            <div class="hero-video__stats">
+                <div class="hero-video__stat">
+                    <div class="hero-video__stat-number">$799+</div>
+                    <div class="hero-video__stat-label">Full day charter</div>
                 </div>
-                <div class="tour-content">
-                    <div class="tour-company">Conch Queen Charters</div>
-                    <h3>Sandbar Snorkel Dolphin Full Day</h3>
-                    <div class="tour-meta">
-                        <span>⏱ 6 hours</span>
-                        <span>👥 Private</span>
-                    </div>
-                    <p class="tour-description">The ultimate combo: sandbar hangout, snorkeling, and dolphin watching. Full day on the water with everything included.</p>
-                    <a href="https://fareharbor.com/embeds/book/conchqueencharters/items/669744/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&full-items=yes&flow=no" 
-                       target="_blank" 
-                       class="tour-cta"
-                       onclick="trackBookingClick('Sandbar Snorkel Dolphin Full Day', '669744', 901)">
-                        Check Availability
-                    </a>
+                <div class="hero-video__stat">
+                    <div class="hero-video__stat-number">4-8hr</div>
+                    <div class="hero-video__stat-label">Trip options</div>
+                </div>
+                <div class="hero-video__stat">
+                    <div class="hero-video__stat-number">BYOB</div>
+                    <div class="hero-video__stat-label">Food & drinks</div>
                 </div>
             </div>
-            
-            <!-- Tour 2 -->
-            <div class="tour-card">
-                <div class="tour-image" style="background-image: url('https://cdn.filestackcontent.com/1nWGfBzQTAKTAQrYrWwE')">
-                    <div class="tour-price-badge">$899</div>
-                </div>
-                <div class="tour-content">
-                    <div class="tour-company">Reel Paradise Charters</div>
-                    <h3>Custom Boat Charter</h3>
-                    <div class="tour-meta">
-                        <span>⏱ 8 hours</span>
-                        <span>👥 Private</span>
-                    </div>
-                    <p class="tour-description">Snorkeling, swimming, fishing, sandbar exploration. Full day charter - you design the itinerary with your captain.</p>
-                    <a href="https://fareharbor.com/embeds/book/reelparadisecharters/items/643995/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&full-items=yes&flow=no" 
-                       target="_blank" 
-                       class="tour-cta"
-                       onclick="trackBookingClick('Custom Boat Charter', '643995', 899)">
-                        Check Availability
-                    </a>
-                </div>
-            </div>
-            
-            <!-- Tour 3 -->
-            <div class="tour-card">
-                <div class="tour-image" style="background-image: url('https://cdn.filestackcontent.com/dnT7hAyQTyDfMBhnYKRN')">
-                    <div class="tour-price-badge">$850</div>
-                </div>
-                <div class="tour-content">
-                    <div class="tour-company">Laid Back Key West</div>
-                    <h3>Private Sandbar Tour</h3>
-                    <div class="tour-meta">
-                        <span>⏱ 3 hours</span>
-                        <span>👥 Private</span>
-                    </div>
-                    <p class="tour-description">Captain Eric knows the backcountry like his backyard. Hit the best sandbar based on tides. Snorkel gear, cooler, ice included.</p>
-                    <a href="https://fareharbor.com/embeds/book/laidbackkeywest/items/265305/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&full-items=yes&flow=no" 
-                       target="_blank" 
-                       class="tour-cta"
-                       onclick="trackBookingClick('Private Sandbar Tour', '265305', 850)">
-                        Check Availability
-                    </a>
-                </div>
-            </div>
-            
-            <!-- Tour 4 -->
-            <div class="tour-card">
-                <div class="tour-image" style="background-image: url('https://cdn.filestackcontent.com/SSUWVgRSFmKypV0nk2vA')">
-                    <div class="tour-price-badge">$825</div>
-                </div>
-                <div class="tour-content">
-                    <div class="tour-company">Low Tide Charter</div>
-                    <h3>6 Hour Sandbar Trip</h3>
-                    <div class="tour-meta">
-                        <span>⏱ 6 hours</span>
-                        <span>👥 Private</span>
-                    </div>
-                    <p class="tour-description">Ultimate backcountry adventure. Hit Mud Key, Snipe Key, or wherever conditions are best. Multiple sandbar stops included.</p>
-                    <a href="https://fareharbor.com/embeds/book/lowtidecharter/items/217112/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&full-items=yes&flow=no" 
-                       target="_blank" 
-                       class="tour-cta"
-                       onclick="trackBookingClick('6 Hour Sandbar Trip', '217112', 825)">
-                        Check Availability
-                    </a>
-                </div>
-            </div>
-            
-            <!-- Tour 5 -->
-            <div class="tour-card">
-                <div class="tour-image" style="background-image: url('https://cdn.filestackcontent.com/HLM4CQnRKDs9P37ps5FQ')">
-                    <div class="tour-price-badge">$800</div>
-                </div>
-                <div class="tour-content">
-                    <div class="tour-company">Coastal Key West Charters</div>
-                    <h3>Design Your Own Charter</h3>
-                    <div class="tour-meta">
-                        <span>⏱ 4 hours</span>
-                        <span>👥 Private</span>
-                    </div>
-                    <p class="tour-description">Mix it up: dolphin watch + sandbar, snorkel + sunset, or pure sandbar day. You design it, captain delivers.</p>
-                    <a href="https://fareharbor.com/embeds/book/coastalkeywestcharters/items/565580/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&full-items=yes&flow=no" 
-                       target="_blank" 
-                       class="tour-cta"
-                       onclick="trackBookingClick('Design Your Own Charter', '565580', 800)">
-                        Check Availability
-                    </a>
-                </div>
-            </div>
-            
-            <!-- Tour 6 -->
-            <div class="tour-card">
-                <div class="tour-image" style="background-image: url('https://cdn.filestackcontent.com/QjXLR9TdibEVRhbcusA2')">
-                    <div class="tour-price-badge">$799</div>
-                </div>
-                <div class="tour-content">
-                    <div class="tour-company">Lagerheads Watersports</div>
-                    <h3>Sandbar Boat Rental w/ Captain</h3>
-                    <div class="tour-meta">
-                        <span>⏱ 4 hours</span>
-                        <span>👥 Up to 10</span>
-                    </div>
-                    <p class="tour-description">Captain-guided sandbar trip. No glass bottles, BYOB welcome. Snorkel gear and floats provided. Great for groups.</p>
-                    <a href="https://fareharbor.com/embeds/book/lagerheadswatersports/items/399290/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&full-items=yes&flow=no" 
-                       target="_blank" 
-                       class="tour-cta"
-                       onclick="trackBookingClick('Sandbar Boat Rental', '399290', 799)">
-                        Check Availability
-                    </a>
-                </div>
-            </div>
-            
+            <a href="#tours" class="hero-video__cta" onclick="trackBookingClick('Hero CTA', 'hero', 0)">Find Your Charter</a>
+        </div>
+        <div class="hero-video__scroll">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
         </div>
     </section>
     
-    <!-- FAQ -->
+    <div class="trust-bar">
+        <div class="trust-bar-inner">
+            <div class="trust-item">
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+                Secure Checkout
+            </div>
+            <div class="trust-item">
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                Verified Local Captains
+            </div>
+            <div class="trust-item">
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                Free Cancellation
+            </div>
+        </div>
+    </div>
+    
+    <section class="best-for">
+        <div class="best-for-inner">
+            <h2>Perfect For</h2>
+            <div class="best-for-grid">
+                <div class="best-for-pill">👨‍👩‍👧‍👦 Families</div>
+                <div class="best-for-pill">👫 Couples</div>
+                <div class="best-for-pill">🎉 Friend Groups</div>
+                <div class="best-for-pill">🤿 Snorkelers</div>
+                <div class="best-for-pill">🐬 Wildlife Lovers</div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="tours" id="tours">
+        <div class="tours-inner">
+            <div class="section-label">Private Charters</div>
+            <h2 class="section-title">Full-Day Sandbar Adventures</h2>
+            <div class="tours-grid">
+                <div class="tour-card">
+                    <div class="tour-card-image" style="background-image: url('https://cdn.filestackcontent.com/JQBUVZJRSqSyPNlVvVHg')">
+                        <span class="tour-card-badge">Full Day</span>
+                        <span class="tour-card-price">$901</span>
+                    </div>
+                    <div class="tour-card-content">
+                        <div class="tour-card-company">Conch Queen Charters</div>
+                        <h3>Sandbar Snorkel Dolphin Full Day</h3>
+                        <div class="tour-card-meta"><span>⏱ 6 hours</span><span>👥 Private</span></div>
+                        <p class="tour-card-description">The complete Keys experience: dolphins, sandbars, and snorkeling in one trip. Crystal clear backcountry waters await.</p>
+                        <a href="https://fareharbor.com/embeds/book/conchqueencharters/items/669744/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&full-items=yes&flow=no" target="_blank" class="tour-card-cta" onclick="trackBookingClick('Conch Queen Full Day', '669744', 901)">Check Availability</a>
+                    </div>
+                </div>
+                <div class="tour-card">
+                    <div class="tour-card-image" style="background-image: url('https://cdn.filestackcontent.com/K5oANdR3SO2pVGtFzaol')">
+                        <span class="tour-card-badge">Customizable</span>
+                        <span class="tour-card-price">$899</span>
+                    </div>
+                    <div class="tour-card-content">
+                        <div class="tour-card-company">Reel Paradise Charters</div>
+                        <h3>Custom Boat Charter</h3>
+                        <div class="tour-card-meta"><span>⏱ 4-8 hours</span><span>👥 Up to 6</span></div>
+                        <p class="tour-card-description">You design the day. Sandbars, snorkeling, fishing, dolphins — mix and match. Captain knows all the spots.</p>
+                        <a href="https://fareharbor.com/embeds/book/reelparadisecharters/items/643995/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&full-items=yes&flow=no" target="_blank" class="tour-card-cta" onclick="trackBookingClick('Reel Paradise Custom', '643995', 899)">Check Availability</a>
+                    </div>
+                </div>
+                <div class="tour-card">
+                    <div class="tour-card-image" style="background-image: url('https://cdn.filestackcontent.com/Wq8ypVCRcKOYAL68M1QQ')">
+                        <span class="tour-card-price">$850</span>
+                    </div>
+                    <div class="tour-card-content">
+                        <div class="tour-card-company">Laid Back Key West</div>
+                        <h3>Private Sandbar Tour</h3>
+                        <div class="tour-card-meta"><span>⏱ 6 hours</span><span>👥 Private</span></div>
+                        <p class="tour-card-description">Exactly what it sounds like: laid back vibes, hidden sandbars, no crowds. BYOB, snorkel gear included.</p>
+                        <a href="https://fareharbor.com/embeds/book/laidbackkeywest/items/265305/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&full-items=yes&flow=no" target="_blank" class="tour-card-cta" onclick="trackBookingClick('Laid Back Sandbar', '265305', 850)">Check Availability</a>
+                    </div>
+                </div>
+                <div class="tour-card">
+                    <div class="tour-card-image" style="background-image: url('https://cdn.filestackcontent.com/8o2VGLSCREeiSsyYPDYA')">
+                        <span class="tour-card-price">$825</span>
+                    </div>
+                    <div class="tour-card-content">
+                        <div class="tour-card-company">Low Tide Charters</div>
+                        <h3>6 Hour Sandbar Trip</h3>
+                        <div class="tour-card-meta"><span>⏱ 6 hours</span><span>👥 Up to 6</span></div>
+                        <p class="tour-card-description">Full day of island hopping and sandbar exploration. Cooler, ice, and all the time you need to explore.</p>
+                        <a href="https://fareharbor.com/embeds/book/lowtidekw/items/217112/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&full-items=yes&flow=no" target="_blank" class="tour-card-cta" onclick="trackBookingClick('Low Tide 6 Hour', '217112', 825)">Check Availability</a>
+                    </div>
+                </div>
+                <div class="tour-card">
+                    <div class="tour-card-image" style="background-image: url('https://cdn.filestackcontent.com/ffIASap9Tu7EfH6qfrcr')">
+                        <span class="tour-card-badge">Design Your Day</span>
+                        <span class="tour-card-price">$800</span>
+                    </div>
+                    <div class="tour-card-content">
+                        <div class="tour-card-company">Coastal Key West Charters</div>
+                        <h3>Design Your Own Charter</h3>
+                        <div class="tour-card-meta"><span>⏱ 4 hours</span><span>👥 Private</span></div>
+                        <p class="tour-card-description">Your trip, your way. Build the perfect day with a captain who knows every sandbar, reef, and dolphin hangout.</p>
+                        <a href="https://fareharbor.com/embeds/book/keywestcoastalcharters/items/565580/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&full-items=yes&flow=no" target="_blank" class="tour-card-cta" onclick="trackBookingClick('Coastal Design Your Own', '565580', 800)">Check Availability</a>
+                    </div>
+                </div>
+                <div class="tour-card">
+                    <div class="tour-card-image" style="background-image: url('https://cdn.filestackcontent.com/tTjSWl6zSvWln8gmCDZ6')">
+                        <span class="tour-card-badge">Great Value</span>
+                        <span class="tour-card-price">$799</span>
+                    </div>
+                    <div class="tour-card-content">
+                        <div class="tour-card-company">Lagerheads Watersports</div>
+                        <h3>Sandbar Boat Rental w/Captain</h3>
+                        <div class="tour-card-meta"><span>⏱ 4 hours</span><span>👥 Up to 10</span></div>
+                        <p class="tour-card-description">Best value sandbar trip. Captain handles the boat, you handle the fun. Snorkel gear, cooler, all included.</p>
+                        <a href="https://fareharbor.com/embeds/book/lagerheadswatersports/items/399290/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&full-items=yes&flow=no" target="_blank" class="tour-card-cta" onclick="trackBookingClick('Lagerheads Sandbar Rental', '399290', 799)">Check Availability</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
     <section class="faq">
         <div class="faq-inner">
-            <h2>Common Questions</h2>
-            
+            <div class="section-label">FAQ</div>
+            <h2 class="section-title">Sandbar Questions</h2>
             <div class="faq-item">
-                <h3>What sandbars will we visit?</h3>
-                <p>Popular spots include Snipes Point, Mud Keys, Woman Key, and Boca Grande Key. Your captain picks the best sandbar based on tides, weather, and crowd levels that day.</p>
+                <div class="faq-question">What's a sandbar?</div>
+                <p class="faq-answer">A sandbar is a shallow area of sand that emerges from the ocean at low tide. Key West's backcountry is full of them — knee-deep turquoise water, soft sand, and usually no one else around.</p>
             </div>
-            
             <div class="faq-item">
-                <h3>What should we bring?</h3>
-                <p>Sunscreen (reef-safe please), towels, sunglasses, and any food/drinks you want. Most charters provide coolers, ice, water, and snorkel gear. Cash tip for captain appreciated.</p>
+                <div class="faq-question">What should we bring?</div>
+                <p class="faq-answer">Sunscreen (reef-safe preferred), towels, food & drinks (BYOB welcome), and a waterproof phone case. Most boats provide snorkel gear, coolers, and ice.</p>
             </div>
-            
             <div class="faq-item">
-                <h3>How deep is the water at the sandbar?</h3>
-                <p>Typically ankle to waist deep depending on tide. Perfect for wading, floating, and hanging out. Deeper water nearby for swimming and snorkeling.</p>
+                <div class="faq-question">Will we see dolphins?</div>
+                <p class="faq-answer">Very likely! Dolphins are common in the backcountry. Your captain knows where they hang out but can't guarantee sightings — they're wild animals after all.</p>
             </div>
-            
             <div class="faq-item">
-                <h3>What's the cancellation policy?</h3>
-                <p>Most charters offer free cancellation 24-48 hours in advance. Weather cancellations are always refunded or rescheduled. Check individual listings for specific policies.</p>
+                <div class="faq-question">Is it good for kids?</div>
+                <p class="faq-answer">Perfect for kids. Shallow water, soft sand, no waves. Bring their snorkel gear or use the boat's — they'll see fish, starfish, and maybe rays.</p>
             </div>
         </div>
     </section>
     
-    <!-- Footer -->
+    <section class="final-cta">
+        <h2>Ready for Your Private Sandbar?</h2>
+        <p>Same-day booking available · Instant confirmation · Free cancellation on most charters</p>
+        <a href="#tours" class="final-cta-btn">Find Your Charter <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" width="20" height="20"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg></a>
+    </section>
+    
     <footer class="footer">
         <p>© 2025 <a href="/">Key West Sandbar Tours</a>. All rights reserved.</p>
     </footer>
     
-    <!-- Sticky CTA Mobile -->
-    <div class="sticky-cta" id="stickyCta">
-        <span>From $799/boat</span>
-        <a href="#tours">View Charters</a>
-    </div>
-    
     <script>
-        // Show sticky CTA on scroll
         const stickyCta = document.getElementById('stickyCta');
-        let lastScroll = 0;
-        
+        const toursSection = document.getElementById('tours');
         window.addEventListener('scroll', () => {
-            const currentScroll = window.scrollY;
-            if (currentScroll > 300) {
+            const scrollY = window.scrollY;
+            const toursTop = toursSection.offsetTop;
+            if (scrollY > 400 && scrollY < toursTop - 200) {
                 stickyCta.classList.add('visible');
             } else {
                 stickyCta.classList.remove('visible');
             }
-            lastScroll = currentScroll;
         });
     </script>
 </body>
