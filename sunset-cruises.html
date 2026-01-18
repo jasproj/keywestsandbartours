@@ -184,11 +184,13 @@
         /* ===== PERFECT FOR PILLS (auto-scroll marquee) ===== */
         .best-for {
             background: linear-gradient(135deg, #FEF3C7 0%, var(--off-white) 100%);
-            padding: 16px 0;
+            padding: 16px 20px;
             overflow: hidden;
         }
         
         .best-for-inner {
+            max-width: 1200px;
+            margin: 0 auto;
             text-align: center;
         }
         
@@ -197,18 +199,19 @@
             color: var(--ocean-deep);
             margin-bottom: 12px;
             font-size: 1.1rem;
-            padding: 0 20px;
         }
         
         .marquee-wrapper {
             overflow: hidden;
             width: 100%;
+            mask-image: linear-gradient(to right, transparent, black 3%, black 97%, transparent);
+            -webkit-mask-image: linear-gradient(to right, transparent, black 3%, black 97%, transparent);
         }
         
         .best-for-grid {
             display: flex;
             gap: 12px;
-            animation: marquee 20s linear infinite;
+            animation: marquee 22s linear infinite;
             width: max-content;
             padding: 4px 0 8px;
         }
@@ -625,7 +628,7 @@
                 
                 <!-- TOUR 1: Six Fins Romantic - $995 -->
                 <div class="tour-card">
-                    <div class="tour-card-image" style="background-image: url('https://cdn.filestackcontent.com/dUz5aAyR9CR0PeWgW3Jj')">
+                    <div class="tour-card-image" style="background-image: url('images/private_romantic.webp')">
                         <span class="tour-card-badge">Romantic</span>
                         <span class="tour-card-price">$995</span>
                     </div>
@@ -638,10 +641,24 @@
                     </div>
                 </div>
                 
+                <!-- TOUR 2: Snorkel Sunset Combo - $995 -->
+                <div class="tour-card">
+                    <div class="tour-card-image" style="background-image: url('https://cdn.filestackcontent.com/NWiGSVqVQ9SMTkPcpcxn')">
+                        <span class="tour-card-badge">Adventure</span>
+                        <span class="tour-card-price">$995</span>
+                    </div>
+                    <div class="tour-card-content">
+                        <div class="tour-card-company">Sunset Sail Key West</div>
+                        <h3>4hr Private Snorkel Sunset Combo</h3>
+                        <div class="tour-card-meta"><span>⏱ 4 hours</span><span>👥 Private</span></div>
+                        <p class="tour-card-description">Snorkel the backcountry reefs, then watch the sunset paint the sky. Adventure + romance in one trip.</p>
+                        <a href="https://fareharbor.com/embeds/book/sunsetsailkeywest/items/43842/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&full-items=yes&flow=no" target="_blank" class="tour-card-cta" onclick="trackBookingClick('Sunset Sail Snorkel Combo', '43842', 995)">Check Availability</a>
+                    </div>
+                </div>
 
                 <!-- TOUR 3: Proposal Sunset Sail - $825 -->
                 <div class="tour-card">
-                    <div class="tour-card-image" style="background-image: url('https://cdn.filestackcontent.com/H3xkFlYfQoqIPUathNTw')">
+                    <div class="tour-card-image" style="background-image: url('images/second_proposal.webp')">
                         <span class="tour-card-badge">💍 Proposals</span>
                         <span class="tour-card-price">$825</span>
                     </div>
@@ -654,25 +671,24 @@
                     </div>
                 </div>
                 
-                <!-- TOUR 4: TNT Combo - $700 -->
+                <!-- TOUR 4: Lilypad Sail - $695 -->
                 <div class="tour-card">
-                    <div class="tour-card-image" style="background-image: url('https://cdn.filestackcontent.com/FjJxf3T8QQK1Utsl5MD4')">
-                        <span class="tour-card-badge">Full Day</span>
-                        <span class="tour-card-price">$700</span>
+                    <div class="tour-card-image" style="background-image: url('https://cdn.filestackcontent.com/iQZxrWHYTe2fJ8pYcvHb')">
+                        <span class="tour-card-badge">Unique</span>
+                        <span class="tour-card-price">$695</span>
                     </div>
                     <div class="tour-card-content">
-                        <div class="tour-card-company">TNT Charters</div>
-                        <h3>6hr Combo: Sandbar | Snorkel | Sunset</h3>
-                        <div class="tour-card-meta"><span>⏱ 6 hours</span><span>👥 Private</span></div>
-                        <p class="tour-card-description">Hit the sandbar, snorkel the reef, finish with sunset at secluded Picnic Island. The whole day covered.</p>
-                        <a href="https://fareharbor.com/embeds/book/tntchartersflkeys/items/570164/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&full-items=yes&flow=no" target="_blank" class="tour-card-cta" onclick="trackBookingClick('TNT Combo Sunset', '570164', 700)">Check Availability</a>
+                        <div class="tour-card-company">Sunset Sail Key West</div>
+                        <h3>3hr Private Chillout Lilypad Sail</h3>
+                        <div class="tour-card-meta"><span>⏱ 3 hours</span><span>👥 Private</span></div>
+                        <p class="tour-card-description">Giant 6x12ft floating lilypad in shallow water. Sail, swim, float, sunset. Peak relaxation.</p>
+                        <a href="https://fareharbor.com/embeds/book/sunsetsailkeywest/items/52700/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&full-items=yes&flow=no" target="_blank" class="tour-card-cta" onclick="trackBookingClick('Lilypad Sunset Sail', '52700', 695)">Check Availability</a>
                     </div>
                 </div>
-                
 
-                <!-- TOUR 6: Private Sunset Sail - $645 -->
+                <!-- TOUR 5: Private Sunset Sail - $645 -->
                 <div class="tour-card">
-                    <div class="tour-card-image" style="background-image: url('https://cdn.filestackcontent.com/taVNi28LSk2a9s7D8NSb')">
+                    <div class="tour-card-image" style="background-image: url('images/private_harbor.webp')">
                         <span class="tour-card-badge">Sailing</span>
                         <span class="tour-card-price">$645</span>
                     </div>
@@ -687,7 +703,7 @@
                 
                 <!-- TOUR 5: Salty Soul Sunset Cruise - $450 -->
                 <div class="tour-card">
-                    <div class="tour-card-image" style="background-image: url('https://cdn.filestackcontent.com/1MoSzTrcT9SnQD2AxyEt')">
+                    <div class="tour-card-image" style="background-image: url('images/salty_soul.webp')">
                         <span class="tour-card-badge">Private</span>
                         <span class="tour-card-price">$450</span>
                     </div>
@@ -722,7 +738,7 @@
                 
                 <!-- TOUR 7: Sushi & Sunset - $89 -->
                 <div class="tour-card">
-                    <div class="tour-card-image" style="background-image: url('https://cdn.filestackcontent.com/Zl3tg2RyRfah0x9E8YQ1')">
+                    <div class="tour-card-image" style="background-image: url('images/sushi.webp')">
                         <span class="tour-card-badge">Food Included</span>
                         <span class="tour-card-price">$89</span>
                     </div>
