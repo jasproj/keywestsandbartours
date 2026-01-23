@@ -43,17 +43,18 @@
     
     <style>
         :root {
+            /* Base (constant) */
             --sand: #F5E6D3;
-            --ocean-deep: #1B3A57;
-            --ocean-mid: #2E5A7C;
-            --ocean-light: #3BB8C3;
-            --coral: #E87B4A;
-            --sunset-gold: #F59E0B;
-            --sunset-orange: #EA580C;
+            --ocean-deep: #0A3D62;
+            --ocean-light: #1E90FF;
             --white: #FFFFFF;
-            --off-white: #FDF8F0;
             --text-dark: #1A1A2E;
             --text-muted: #6B7280;
+            
+            /* Theme */
+            --accent: #F59E0B;
+            --accent-glow: rgba(245, 158, 11, 0.4);
+            --accent-text: var(--ocean-deep);
         }
         
         * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -172,8 +173,8 @@
         }
         
         .hero-video__badge {
-            background: var(--sunset-gold);
-            color: var(--ocean-deep);
+            background: var(--accent);
+            color: var(--accent-text);
             font-size: 12px;
             font-weight: 700;
             letter-spacing: 2px;
@@ -211,15 +212,15 @@
         
         .hero-video__cta {
             display: inline-block;
-            background: var(--sunset-gold);
-            color: var(--ocean-deep);
+            background: var(--accent);
+            color: var(--accent-text);
             font-size: 16px;
             font-weight: 700;
             text-decoration: none;
             padding: 16px 40px;
             border-radius: 50px;
             min-height: 48px;
-            box-shadow: 0 8px 30px rgba(245, 158, 11, 0.4);
+            box-shadow: 0 8px 30px var(--accent-glow);
         }
         
         /* ===== TRUST BAR ===== */
@@ -311,30 +312,39 @@
         /* ===== TOURS SECTION ===== */
         .tours {
             padding: 48px 20px;
-            background: var(--white);
+            background: var(--sand);
         }
         
         .tours-inner {
             max-width: 1200px;
             margin: 0 auto;
+            text-align: center;
         }
         
         .section-label {
-            text-align: center;
-            font-size: 0.8rem;
-            font-weight: 600;
-            color: var(--sunset-gold);
+            display: inline-block;
+            background: var(--accent);
+            color: var(--accent-text);
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 1.5px;
             text-transform: uppercase;
-            letter-spacing: 2px;
-            margin-bottom: 6px;
+            padding: 6px 14px;
+            border-radius: 4px;
+            margin-bottom: 12px;
         }
         
         .section-title {
-            text-align: center;
             font-family: 'Playfair Display', serif;
-            font-size: 1.5rem;
+            font-size: 1.75rem;
             color: var(--ocean-deep);
-            margin-bottom: 32px;
+            margin-bottom: 8px;
+        }
+        
+        .section-subtitle {
+            color: var(--text-muted);
+            font-size: 1rem;
+            margin-bottom: 24px;
         }
         
         .tours-grid {
@@ -367,8 +377,8 @@
             position: absolute;
             top: 10px;
             left: 10px;
-            background: var(--sunset-gold);
-            color: var(--ocean-deep);
+            background: var(--accent);
+            color: var(--accent-text);
             padding: 5px 10px;
             border-radius: 4px;
             font-size: 0.7rem;
@@ -428,14 +438,14 @@
         
         .tour-card-cta {
             display: block;
-            background: var(--sunset-gold);
-            color: var(--ocean-deep);
+            background: var(--accent);
+            color: var(--accent-text);
             text-align: center;
             padding: 14px 20px;
             border-radius: 8px;
             text-decoration: none;
             font-weight: 700;
-            font-size: 0.9rem;
+            font-size: 0.95rem;
             min-height: 48px;
             transition: background 0.2s;
         }
@@ -475,6 +485,7 @@
             z-index: 3;
             max-width: 800px;
             margin: 0 auto;
+            text-align: center;
         }
         
         .faq .section-label,
@@ -493,6 +504,7 @@
             width: 100%;
             opacity: 0;
             transition: opacity 0.6s ease-in-out;
+            text-align: left;
         }
         
         .faq-item.active {
@@ -551,7 +563,7 @@
         
         /* ===== FINAL CTA ===== */
         .final-cta {
-            background: linear-gradient(135deg, var(--ocean-deep) 0%, var(--ocean-mid) 100%);
+            background: linear-gradient(135deg, var(--ocean-deep) 0%, var(--ocean-light) 100%);
             padding: 48px 20px;
             text-align: center;
         }
@@ -572,10 +584,10 @@
         .final-cta-btn {
             display: inline-flex;
             align-items: center;
-            gap: 8px;
-            background: var(--sunset-gold);
-            color: var(--ocean-deep);
-            padding: 14px 28px;
+            gap: 10px;
+            background: var(--accent);
+            color: var(--accent-text);
+            padding: 16px 32px;
             border-radius: 50px;
             text-decoration: none;
             font-weight: 700;
@@ -611,19 +623,18 @@
         
         .sticky-cta.visible { transform: translateY(0); }
         .sticky-cta-text { color: var(--white); font-weight: 600; font-size: 0.9rem; }
-        .sticky-cta-text span { color: var(--sunset-gold); }
+        .sticky-cta-text span { color: var(--accent); }
         
         .sticky-cta-btn {
-            background: var(--sunset-gold);
-            color: var(--ocean-deep);
-            padding: 12px 24px;
+            background: var(--accent);
+            color: var(--accent-text);
+            padding: 12px 28px;
             border-radius: 50px;
             text-decoration: none;
             font-weight: 700;
             min-height: 48px;
             display: flex;
             align-items: center;
-            font-size: 0.9rem;
         }
         
         /* ===== MOBILE RESPONSIVE ===== */
