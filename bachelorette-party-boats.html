@@ -299,13 +299,15 @@
         
         .trust-item svg { width: 20px; height: 20px; flex-shrink: 0; }
         
+        /* ===== PERFECT FOR PILLS (auto-scroll marquee) ===== */
         .best-for {
             background: linear-gradient(135deg, #FDF2F8 0%, var(--sand) 100%);
-            padding: 40px 20px;
+            padding: 16px 20px;
+            overflow: hidden;
         }
         
         .best-for-inner {
-            max-width: 900px;
+            max-width: 1200px;
             margin: 0 auto;
             text-align: center;
         }
@@ -313,25 +315,44 @@
         .best-for h2 {
             font-family: 'Playfair Display', serif;
             color: var(--ocean-deep);
-            margin-bottom: 20px;
-            font-size: 1.5rem;
+            margin-bottom: 12px;
+            font-size: 1.1rem;
+        }
+        
+        .marquee-wrapper {
+            overflow: hidden;
+            width: 100%;
+            mask-image: linear-gradient(to right, transparent, black 3%, black 97%, transparent);
+            -webkit-mask-image: linear-gradient(to right, transparent, black 3%, black 97%, transparent);
         }
         
         .best-for-grid {
             display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
             gap: 12px;
+            animation: marquee 25s linear infinite;
+            width: max-content;
+            padding: 4px 0 8px;
+        }
+        
+        .best-for-grid:hover {
+            animation-play-state: paused;
+        }
+        
+        @keyframes marquee {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
         }
         
         .best-for-pill {
             background: var(--white);
-            padding: 12px 20px;
+            padding: 10px 18px;
             border-radius: 50px;
-            font-size: 0.9rem;
+            font-size: 0.85rem;
             font-weight: 500;
             color: var(--text-dark);
             box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+            flex-shrink: 0;
+            white-space: nowrap;
         }
         
         .tours {
@@ -628,12 +649,31 @@
     <section class="best-for">
         <div class="best-for-inner">
             <h2>Perfect For</h2>
-            <div class="best-for-grid">
-                <div class="best-for-pill">💍 Bachelorette Parties</div>
-                <div class="best-for-pill">🎂 Birthday Celebrations</div>
-                <div class="best-for-pill">👯 Girls Trips</div>
-                <div class="best-for-pill">🍾 Bridal Showers</div>
-                <div class="best-for-pill">📸 Instagram Content</div>
+            <div class="marquee-wrapper">
+                <div class="best-for-grid">
+                    <!-- First set (10 pills) -->
+                    <div class="best-for-pill">💍 Bachelorette Parties</div>
+                    <div class="best-for-pill">🎂 Birthday Celebrations</div>
+                    <div class="best-for-pill">👯 Girls Trips</div>
+                    <div class="best-for-pill">🍾 Bridal Showers</div>
+                    <div class="best-for-pill">📸 Instagram Content</div>
+                    <div class="best-for-pill">🎉 Divorce Parties</div>
+                    <div class="best-for-pill">🌴 Reunion Trips</div>
+                    <div class="best-for-pill">✈️ Send-Off Parties</div>
+                    <div class="best-for-pill">💅 Besties Weekend</div>
+                    <div class="best-for-pill">💒 Last Fling</div>
+                    <!-- Duplicate set for seamless loop -->
+                    <div class="best-for-pill">💍 Bachelorette Parties</div>
+                    <div class="best-for-pill">🎂 Birthday Celebrations</div>
+                    <div class="best-for-pill">👯 Girls Trips</div>
+                    <div class="best-for-pill">🍾 Bridal Showers</div>
+                    <div class="best-for-pill">📸 Instagram Content</div>
+                    <div class="best-for-pill">🎉 Divorce Parties</div>
+                    <div class="best-for-pill">🌴 Reunion Trips</div>
+                    <div class="best-for-pill">✈️ Send-Off Parties</div>
+                    <div class="best-for-pill">💅 Besties Weekend</div>
+                    <div class="best-for-pill">💒 Last Fling</div>
+                </div>
             </div>
         </div>
     </section>
