@@ -154,6 +154,7 @@
                 height: 200px;
                 min-height: 200px;
                 max-height: 200px;
+                margin-top: 56px;
             }
             .hero-video__title {
                 font-size: 24px;
@@ -255,23 +256,6 @@
             border-radius: 50px;
             min-height: 48px;
             box-shadow: 0 8px 30px rgba(255, 107, 107, 0.4);
-        }
-        
-        .hero-video__scroll {
-            position: absolute;
-            bottom: 24px;
-            left: 50%;
-            transform: translateX(-50%);
-            z-index: 3;
-            color: var(--white);
-            opacity: 0.7;
-            animation: bounce 2s infinite;
-        }
-        
-        @keyframes bounce {
-            0%, 20%, 50%, 80%, 100% { transform: translateX(-50%) translateY(0); }
-            40% { transform: translateX(-50%) translateY(-8px); }
-            60% { transform: translateX(-50%) translateY(-4px); }
         }
         
         .trust-bar {
@@ -636,9 +620,6 @@
                 </div>
             </div>
             <a href="#tours" class="hero-video__cta" onclick="trackBookingClick('Hero CTA', 'hero', 0)">Find Your Boat</a>
-        </div>
-        <div class="hero-video__scroll">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
         </div>
     </section>
     
