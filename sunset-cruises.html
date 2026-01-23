@@ -113,7 +113,7 @@
             align-items: center;
         }
         
-        /* ===== MOBILE-FIRST HERO ===== */
+        /* ===== MOBILE-FIRST HERO (120px on mobile) ===== */
         .hero {
             background: linear-gradient(rgba(0,51,102,0.45), rgba(0,51,102,0.35)), url('og-sunset-cruises.png') center/cover no-repeat;
             padding: 24px 20px;
@@ -398,40 +398,51 @@
             font-weight: 700;
             color: var(--ocean-deep);
             margin-bottom: 6px;
+            font-size: 0.95rem;
         }
         
         .faq-answer {
             color: var(--text-muted);
-            font-size: 0.95rem;
+            font-size: 0.9rem;
+            line-height: 1.6;
         }
         
         /* ===== BRANDING ===== */
         .branding {
-            background: var(--white);
-            padding: 32px 20px;
             text-align: center;
+            padding: 40px 20px;
+            background: var(--off-white);
         }
         
-        .branding-logo { height: 50px; margin-bottom: 8px; }
-        .branding p { color: var(--text-muted); font-size: 0.9rem; }
+        .branding-logo {
+            max-width: 180px;
+            height: auto;
+            margin-bottom: 12px;
+        }
+        
+        .branding p {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
         
         /* ===== FINAL CTA ===== */
         .final-cta {
-            background: linear-gradient(135deg, var(--ocean-deep) 0%, #0D4A6F 100%);
+            background: linear-gradient(135deg, var(--ocean-deep) 0%, var(--ocean-mid) 100%);
             padding: 48px 20px;
             text-align: center;
-            color: var(--white);
         }
         
         .final-cta h2 {
             font-family: 'Playfair Display', serif;
-            font-size: 1.75rem;
-            margin-bottom: 12px;
+            color: var(--white);
+            font-size: 1.5rem;
+            margin-bottom: 10px;
         }
         
         .final-cta p {
-            opacity: 0.9;
-            margin-bottom: 24px;
+            color: rgba(255,255,255,0.85);
+            margin-bottom: 20px;
+            font-size: 0.95rem;
         }
         
         .final-cta-btn {
@@ -440,7 +451,7 @@
             gap: 8px;
             background: var(--sunset-gold);
             color: var(--ocean-deep);
-            padding: 16px 32px;
+            padding: 14px 28px;
             border-radius: 50px;
             text-decoration: none;
             font-weight: 700;
@@ -450,13 +461,13 @@
         /* ===== FOOTER ===== */
         .footer {
             background: var(--text-dark);
+            color: var(--white);
             padding: 24px 20px;
             text-align: center;
-            color: rgba(255,255,255,0.6);
-            font-size: 0.85rem;
+            font-size: 0.9rem;
         }
         
-        .footer a { color: rgba(255,255,255,0.8); }
+        .footer a { color: var(--white); }
         
         /* ===== STICKY CTA ===== */
         .sticky-cta {
@@ -475,142 +486,193 @@
         }
         
         .sticky-cta.visible { transform: translateY(0); }
-        .sticky-cta-text { color: var(--white); font-weight: 600; }
+        .sticky-cta-text { color: var(--white); font-weight: 600; font-size: 0.9rem; }
         .sticky-cta-text span { color: var(--sunset-gold); }
         
         .sticky-cta-btn {
             background: var(--sunset-gold);
             color: var(--ocean-deep);
-            padding: 12px 28px;
+            padding: 12px 24px;
             border-radius: 50px;
             text-decoration: none;
             font-weight: 700;
             min-height: 48px;
             display: flex;
             align-items: center;
+            font-size: 0.9rem;
+        }
+        
+        /* ===== MOBILE RESPONSIVE ===== */
+        @media (max-width: 600px) {
+            .header { padding: 10px 16px; }
+            .logo { font-size: 0.95rem; }
+            .logo-img { width: 28px; height: 28px; }
+            .header-cta { padding: 10px 16px; font-size: 0.8rem; }
+            
+            .hero { padding: 20px 16px; }
+            .hero h1 { font-size: 1.5rem; }
+            .hero-sub { font-size: 0.9rem; margin-bottom: 14px; }
+            .hero-cta { padding: 12px 28px; font-size: 0.95rem; }
+            
+            .trust-bar-inner { gap: 16px; }
+            .trust-item { font-size: 0.8rem; }
+            
+            .tours { padding: 32px 16px; }
+            .section-title { font-size: 1.25rem; margin-bottom: 24px; }
+            .tours-grid { grid-template-columns: 1fr; gap: 16px; }
+            
+            .tour-card-image { height: 160px; }
+            .tour-card-content { padding: 14px; }
+            .tour-card-content h3 { font-size: 1rem; }
+            
+            .faq { padding: 32px 16px; }
+            .faq-item { padding: 16px; }
+            
+            .final-cta { padding: 32px 16px; }
+            .final-cta h2 { font-size: 1.25rem; }
+            
+            .sticky-cta {
+                flex-direction: column;
+                gap: 8px;
+                text-align: center;
+                padding: 10px 16px;
+            }
+        }
+        
+        /* Desktop enhancements */
+        @media (min-width: 768px) {
+            .hero {
+                padding: 48px 20px;
+            }
+            .hero h1 { font-size: 2.5rem; }
+            .hero-sub { font-size: 1.1rem; }
         }
     </style>
 </head>
 <body>
-    <!-- STICKY CTA -->
-    <div class="sticky-cta" id="stickyCta">
-        <div class="sticky-cta-text">From <span>$80</span> · Free Cancellation</div>
-        <a href="#tours" class="sticky-cta-btn">See Sunset Cruises</a>
-    </div>
-    
     <!-- HEADER -->
     <header class="header">
         <div class="header-inner">
             <a href="/" class="logo">
-                <img src="logo.png" alt="KWST" class="logo-img">
+                <img src="favicon-32.png" alt="" class="logo-img">
                 Key West Sandbar Tours
             </a>
             <a href="#tours" class="header-cta">View Cruises</a>
         </div>
     </header>
     
-    <!-- HERO -->
+    <!-- STICKY CTA (shows after scroll) -->
+    <div class="sticky-cta" id="stickyCta">
+        <div class="sticky-cta-text">Sunset cruises from <span>$80</span></div>
+        <a href="#tours" class="sticky-cta-btn">See All Cruises</a>
+    </div>
+    
+    <!-- HERO (Compact, mobile-first) -->
     <section class="hero">
-        <div class="hero-badge">🌅 Sunset Cruises</div>
-        <h1>Where the Gulf<br>Meets the Atlantic</h1>
-        <p class="hero-sub">Key West's legendary sunsets from the water. Private sails, dinner cruises, proposals.</p>
-        <a href="#tours" class="hero-cta">Find Your Cruise</a>
+        <span class="hero-badge">Private Sunset Cruises</span>
+        <h1>Watch the Sun Disappear Into the Gulf</h1>
+        <p class="hero-sub">Private charters from $80 · Romantic sails · Proposal packages · Dinner cruises</p>
+        <a href="#tours" class="hero-cta" onclick="trackBookingClick('Hero CTA', 'hero', 0)">Find Your Sunset →</a>
     </section>
     
     <!-- TRUST BAR -->
     <div class="trust-bar">
         <div class="trust-bar-inner">
             <div class="trust-item">
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+                Secure Checkout
+            </div>
+            <div class="trust-item">
                 <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
-                Free Cancellation
+                Verified Captains
             </div>
             <div class="trust-item">
                 <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-                Instant Confirmation
-            </div>
-            <div class="trust-item">
-                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg>
-                Proposals Welcome
+                Free Cancellation
             </div>
         </div>
     </div>
     
-    <!-- PERFECT FOR -->
+    <!-- PERFECT FOR (auto-scroll) -->
     <section class="best-for">
         <div class="best-for-inner">
             <h2>Perfect For</h2>
             <div class="marquee-wrapper">
                 <div class="best-for-grid">
-                    <span class="best-for-pill">💍 Proposals</span>
-                    <span class="best-for-pill">💑 Romantic Evenings</span>
-                    <span class="best-for-pill">🎂 Anniversaries</span>
-                    <span class="best-for-pill">🍽️ Dinner Cruises</span>
-                    <span class="best-for-pill">⛵ Sailing Enthusiasts</span>
-                    <span class="best-for-pill">📸 Photography</span>
-                    <span class="best-for-pill">🥂 Champagne Toasts</span>
-                    <span class="best-for-pill">👨‍👩‍👧‍👦 Family Trips</span>
-                    <span class="best-for-pill">💍 Proposals</span>
-                    <span class="best-for-pill">💑 Romantic Evenings</span>
-                    <span class="best-for-pill">🎂 Anniversaries</span>
-                    <span class="best-for-pill">🍽️ Dinner Cruises</span>
-                    <span class="best-for-pill">⛵ Sailing Enthusiasts</span>
-                    <span class="best-for-pill">📸 Photography</span>
-                    <span class="best-for-pill">🥂 Champagne Toasts</span>
-                    <span class="best-for-pill">👨‍👩‍👧‍👦 Family Trips</span>
+                    <!-- First set -->
+                    <div class="best-for-pill">💍 Proposals</div>
+                    <div class="best-for-pill">🥂 Anniversaries</div>
+                    <div class="best-for-pill">👫 Date Night</div>
+                    <div class="best-for-pill">📸 Photography</div>
+                    <div class="best-for-pill">🎂 Celebrations</div>
+                    <div class="best-for-pill">💒 Honeymoons</div>
+                    <div class="best-for-pill">👯 Girls Trip</div>
+                    <div class="best-for-pill">👨‍👩‍👧 Family Time</div>
+                    <div class="best-for-pill">🌴 Couples Getaway</div>
+                    <!-- Duplicate set for seamless loop -->
+                    <div class="best-for-pill">💍 Proposals</div>
+                    <div class="best-for-pill">🥂 Anniversaries</div>
+                    <div class="best-for-pill">👫 Date Night</div>
+                    <div class="best-for-pill">📸 Photography</div>
+                    <div class="best-for-pill">🎂 Celebrations</div>
+                    <div class="best-for-pill">💒 Honeymoons</div>
+                    <div class="best-for-pill">👯 Girls Trip</div>
+                    <div class="best-for-pill">👨‍👩‍👧 Family Time</div>
+                    <div class="best-for-pill">🌴 Couples Getaway</div>
                 </div>
             </div>
         </div>
     </section>
     
-    <!-- TOURS -->
+    <!-- TOURS (8 tours, sorted by price high to low) -->
     <section class="tours" id="tours">
         <div class="tours-inner">
-            <div class="section-label">Hand-Picked Cruises</div>
-            <h2 class="section-title">Sunset Cruises</h2>
+            <div class="section-label">Sunset Experiences</div>
+            <h2 class="section-title">Private Sunset Cruises</h2>
             <div class="tours-grid">
                 
-                <!-- TOUR 1: Champagne Sunset - $1,325 -->
+                <!-- TOUR 1: Six Fins Romantic - $995 -->
                 <div class="tour-card">
-                    <div class="tour-card-image" style="background-image: url('https://cdn.filestackcontent.com/3wqTRpBcTEGBmRqVWqRf')">
+                    <div class="tour-card-image" style="background-image: url('private_romantic.webp')">
                         <span class="tour-card-badge">Romantic</span>
-                        <span class="tour-card-price">$1,325</span>
+                        <span class="tour-card-price">$995</span>
+                    </div>
+                    <div class="tour-card-content">
+                        <div class="tour-card-company">Six Fins Charter</div>
+                        <h3>Private Romantic Sunset Cruise</h3>
+                        <div class="tour-card-meta"><span>⏱ 3 hours</span><span>👥 Private</span></div>
+                        <p class="tour-card-description">Intimate sunset cruise designed for couples. Perfect for proposals, anniversaries, or just because you're in Key West together.</p>
+                        <a href="https://fareharbor.com/embeds/book/sixfinscharter/items/532157/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&full-items=yes&flow=no" target="_blank" class="tour-card-cta" onclick="trackBookingClick('Six Fins Romantic Sunset', '532157', 995)">Check Availability</a>
+                    </div>
+                </div>
+                
+                <!-- TOUR 2: Snorkel Sunset Combo - $995 -->
+                <div class="tour-card">
+                    <div class="tour-card-image" style="background-image: url('4_hour_private_snorkel.webp')">
+                        <span class="tour-card-badge">Adventure</span>
+                        <span class="tour-card-price">$995</span>
                     </div>
                     <div class="tour-card-content">
                         <div class="tour-card-company">Sunset Sail Key West</div>
-                        <h3>Champagne Sunset Sail</h3>
-                        <div class="tour-card-meta"><span>⏱ 2 hours</span><span>👥 Private</span></div>
-                        <p class="tour-card-description">Your own catamaran, champagne, appetizers, two hours watching Key West's famous sunset. Captain handles everything.</p>
-                        <a href="https://fareharbor.com/embeds/book/sunsetsailkeywest/items/1195/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&full-items=yes&flow=no" target="_blank" class="tour-card-cta" onclick="trackBookingClick('Champagne Sunset Sail', '1195', 1325)">Check Availability</a>
+                        <h3>4hr Private Snorkel Sunset Combo</h3>
+                        <div class="tour-card-meta"><span>⏱ 4 hours</span><span>👥 Private</span></div>
+                        <p class="tour-card-description">Snorkel the backcountry reefs, then watch the sunset paint the sky. Adventure + romance in one trip.</p>
+                        <a href="https://fareharbor.com/embeds/book/sunsetsailkeywest/items/43842/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&full-items=yes&flow=no" target="_blank" class="tour-card-cta" onclick="trackBookingClick('Sunset Sail Snorkel Combo', '43842', 995)">Check Availability</a>
                     </div>
                 </div>
-                
-                <!-- TOUR 2: Danger Sunset - $565 -->
+
+                <!-- TOUR 3: Proposal Sunset Sail - $825 -->
                 <div class="tour-card">
-                    <div class="tour-card-image" style="background-image: url('https://cdn.filestackcontent.com/kOJFswxeQbWU6g0Cc6bZ')">
-                        <span class="tour-card-badge">Best Seller</span>
-                        <span class="tour-card-price">$565</span>
+                    <div class="tour-card-image" style="background-image: url('second_proposal.webp')">
+                        <span class="tour-card-badge">💍 Proposals</span>
+                        <span class="tour-card-price">$825</span>
                     </div>
                     <div class="tour-card-content">
-                        <div class="tour-card-company">Danger Charters</div>
-                        <h3>Private Sunset Sail</h3>
+                        <div class="tour-card-company">Sunset Sail Key West</div>
+                        <h3>2hr Proposal Private Sunset Sail</h3>
                         <div class="tour-card-meta"><span>⏱ 2 hours</span><span>👥 Private</span></div>
-                        <p class="tour-card-description">Classic schooner sailing into the sunset. Wind in your hair, dolphins alongside. The Key West experience.</p>
-                        <a href="https://fareharbor.com/embeds/book/dangercharters/items/16653/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&full-items=yes&flow=no" target="_blank" class="tour-card-cta" onclick="trackBookingClick('Danger Sunset Sail', '16653', 565)">Check Availability</a>
-                    </div>
-                </div>
-                
-                <!-- TOUR 3: Proposal Sunset Package - $595 -->
-                <div class="tour-card">
-                    <div class="tour-card-image" style="background-image: url('https://cdn.filestackcontent.com/DaJ0eDVTJuOkBFyPJNMw')">
-                        <span class="tour-card-badge">💍 Proposal</span>
-                        <span class="tour-card-price">$595</span>
-                    </div>
-                    <div class="tour-card-content">
-                        <div class="tour-card-company">Danger Charters</div>
-                        <h3>Proposal Sunset Sail Package</h3>
-                        <div class="tour-card-meta"><span>⏱ 2 hours</span><span>👥 Just you two</span></div>
-                        <p class="tour-card-description">Private boat, champagne chilled, crew in on the secret. They've done hundreds of these. She'll say yes.</p>
-                        <a href="https://fareharbor.com/embeds/book/dangercharters/items/17261/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&full-items=yes&flow=no" target="_blank" class="tour-card-cta" onclick="trackBookingClick('Proposal Sunset Sail', '17261', 595)">Check Availability</a>
+                        <p class="tour-card-description">Korbel champagne, a single rose, private captain and mate. They've helped hundreds say yes.</p>
+                        <a href="https://fareharbor.com/embeds/book/sunsetsailkeywest/items/72539/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&full-items=yes&flow=no" target="_blank" class="tour-card-cta" onclick="trackBookingClick('Proposal Sunset Sail', '72539', 825)">Check Availability</a>
                     </div>
                 </div>
                 
