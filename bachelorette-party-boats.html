@@ -343,7 +343,7 @@
         }
         
         .tours {
-            padding: 48px 20px;
+            padding: 60px 20px;
             background: var(--white);
         }
         
@@ -471,20 +471,55 @@
         .tour-card-cta:hover { background: #db2777; }
         
         .faq {
-            background: var(--sand);
+            position: relative;
             padding: 60px 20px;
+            overflow: hidden;
+        }
+        
+        .faq-video {
+            position: absolute;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            object-fit: cover;
+            z-index: 1;
+        }
+        
+        .faq-overlay {
+            position: absolute;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            background: rgba(0, 51, 102, 0.85);
+            z-index: 2;
         }
         
         .faq-inner {
+            position: relative;
+            z-index: 3;
             max-width: 800px;
             margin: 0 auto;
         }
         
+        .faq .section-label,
+        .faq .section-title { color: var(--white); }
+        
+        .faq-slideshow {
+            position: relative;
+            min-height: 160px;
+        }
+        
         .faq-item {
-            background: var(--white);
-            padding: 20px 24px;
+            background: rgba(255, 255, 255, 0.95);
+            padding: 24px 28px;
             border-radius: 12px;
-            margin-bottom: 12px;
+            position: absolute;
+            width: 100%;
+            opacity: 0;
+            transition: opacity 0.6s ease-in-out;
+        }
+        
+        .faq-item.active {
+            opacity: 1;
+            position: relative;
         }
         
         .faq-question {
@@ -499,6 +534,24 @@
             font-size: 0.95rem;
             line-height: 1.6;
         }
+        
+        .faq-dots {
+            display: flex;
+            justify-content: center;
+            gap: 8px;
+            margin-top: 20px;
+        }
+        
+        .faq-dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.4);
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        
+        .faq-dot.active { background: var(--white); }
         
         /* ===== BRANDING SECTION ===== */
         .branding {
@@ -799,24 +852,36 @@
     </div>
     
     <section class="faq">
+        <video class="faq-video" autoplay muted loop playsinline>
+            <source src="wtpa_hero_drone.mp4" type="video/mp4">
+        </video>
+        <div class="faq-overlay"></div>
         <div class="faq-inner">
             <div class="section-label">FAQ</div>
             <h2 class="section-title">Bachelorette Questions</h2>
-            <div class="faq-item">
-                <div class="faq-question">Can we bring decorations?</div>
-                <p class="faq-answer">Yes! Bring banners, sashes, inflatables — whatever makes it special. Just no glitter (terrible for the ocean) and clean up before you go.</p>
+            <div class="faq-slideshow" id="faqSlideshow">
+                <div class="faq-item active">
+                    <div class="faq-question">Can we bring decorations?</div>
+                    <p class="faq-answer">Yes! Bring banners, sashes, inflatables — whatever makes it special. Just no glitter (terrible for the ocean) and clean up before you go.</p>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">Is there a bathroom on the boat?</div>
+                    <p class="faq-answer">Most larger boats have a head (marine toilet). Smaller boats — you'll use the ocean or hold it. Ask when booking if this matters.</p>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">Can we play our own music?</div>
+                    <p class="faq-answer">Yes! Most boats have Bluetooth speakers. Bring a charged phone with your playlist ready. Captain controls volume.</p>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">How many people can fit?</div>
+                    <p class="faq-answer">Boats range from 6 to 49 guests. Tell them your group size and they'll recommend the right boat.</p>
+                </div>
             </div>
-            <div class="faq-item">
-                <div class="faq-question">Is there a bathroom on the boat?</div>
-                <p class="faq-answer">Most larger boats have a head (marine toilet). Smaller boats — you'll use the ocean or hold it. Ask when booking if this matters.</p>
-            </div>
-            <div class="faq-item">
-                <div class="faq-question">Can we play our own music?</div>
-                <p class="faq-answer">Yes! Most boats have Bluetooth speakers. Bring a charged phone with your playlist ready. Captain controls volume.</p>
-            </div>
-            <div class="faq-item">
-                <div class="faq-question">How many people can fit?</div>
-                <p class="faq-answer">Boats range from 6 to 49 guests. Tell them your group size and they'll recommend the right boat.</p>
+            <div class="faq-dots">
+                <span class="faq-dot active" data-index="0"></span>
+                <span class="faq-dot" data-index="1"></span>
+                <span class="faq-dot" data-index="2"></span>
+                <span class="faq-dot" data-index="3"></span>
             </div>
         </div>
     </section>
@@ -838,6 +903,7 @@
     </footer>
     
     <script>
+        // Sticky CTA
         const stickyCta = document.getElementById('stickyCta');
         const toursSection = document.getElementById('tours');
         window.addEventListener('scroll', () => {
@@ -849,6 +915,20 @@
                 stickyCta.classList.remove('visible');
             }
         });
+        
+        // FAQ Slideshow
+        const faqItems = document.querySelectorAll('.faq-item');
+        const faqDots = document.querySelectorAll('.faq-dot');
+        let currentFaq = 0;
+        
+        function showFaq(index) {
+            faqItems.forEach((item, i) => item.classList.toggle('active', i === index));
+            faqDots.forEach((dot, i) => dot.classList.toggle('active', i === index));
+            currentFaq = index;
+        }
+        
+        setInterval(() => showFaq((currentFaq + 1) % faqItems.length), 5000);
+        faqDots.forEach(dot => dot.addEventListener('click', () => showFaq(parseInt(dot.dataset.index))));
     </script>
 </body>
 </html>

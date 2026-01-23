@@ -113,51 +113,108 @@
             align-items: center;
         }
         
-        /* ===== MOBILE-FIRST HERO (120px on mobile) ===== */
-        .hero {
-            background: linear-gradient(rgba(0,51,102,0.45), rgba(0,51,102,0.35)), url('og-sunset-cruises.png') center/cover no-repeat;
-            padding: 24px 20px;
+        /* ===== VIDEO HERO ===== */
+        .hero-video {
+            position: relative;
+            height: 70vh;
+            max-height: 550px;
+            min-height: 400px;
+            overflow: hidden;
+            background: var(--ocean-deep);
+        }
+        
+        @media (max-width: 768px) {
+            .hero-video {
+                height: auto;
+                min-height: 280px;
+                max-height: none;
+                padding: 20px 0;
+            }
+            .hero-video__badge { display: none; }
+            .hero-video__title { font-size: 24px; }
+            .hero-video__subtitle { font-size: 14px; }
+            .hero-video__cta { padding: 12px 24px; font-size: 14px; }
+        }
+        
+        .hero-video__media {
+            position: absolute;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            object-fit: cover;
+            object-position: center center;
+            z-index: 1;
+        }
+        
+        .hero-video__overlay {
+            position: absolute;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            background: linear-gradient(to bottom, rgba(10,61,98,0.3) 0%, rgba(10,61,98,0.5) 50%, rgba(10,61,98,0.7) 100%);
+            z-index: 2;
+        }
+        
+        .hero-video__content {
+            position: relative;
+            z-index: 3;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
             text-align: center;
+            padding: 20px;
             color: var(--white);
         }
         
-        .hero-badge {
-            display: inline-block;
+        .hero-video__badge {
             background: var(--sunset-gold);
             color: var(--ocean-deep);
-            font-size: 11px;
+            font-size: 12px;
             font-weight: 700;
-            letter-spacing: 1.5px;
+            letter-spacing: 2px;
             text-transform: uppercase;
-            padding: 6px 14px;
+            padding: 8px 16px;
             border-radius: 4px;
-            margin-bottom: 12px;
-        }
-        
-        .hero h1 {
-            font-family: 'Playfair Display', serif;
-            font-size: 1.75rem;
-            font-weight: 700;
-            line-height: 1.2;
-            margin-bottom: 8px;
-        }
-        
-        .hero-sub {
-            font-size: 0.95rem;
-            opacity: 0.9;
             margin-bottom: 16px;
         }
         
-        .hero-cta {
+        .hero-video__title {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(28px, 6vw, 56px);
+            font-weight: 700;
+            line-height: 1.1;
+            margin: 0 0 16px 0;
+            text-shadow: 0 2px 20px rgba(0,0,0,0.3);
+        }
+        
+        .hero-video__subtitle {
+            font-size: clamp(16px, 2.5vw, 20px);
+            opacity: 0.95;
+            margin: 0 0 24px 0;
+            max-width: 500px;
+        }
+        
+        .hero-video__stats {
+            display: flex;
+            gap: 32px;
+            margin-bottom: 28px;
+        }
+        
+        .hero-video__stat { text-align: center; }
+        .hero-video__stat-number { font-size: 1.5rem; font-weight: 700; }
+        .hero-video__stat-label { font-size: 0.8rem; opacity: 0.85; }
+        
+        .hero-video__cta {
             display: inline-block;
             background: var(--sunset-gold);
             color: var(--ocean-deep);
-            font-size: 1rem;
+            font-size: 16px;
             font-weight: 700;
             text-decoration: none;
-            padding: 14px 32px;
+            padding: 16px 40px;
             border-radius: 50px;
             min-height: 48px;
+            box-shadow: 0 8px 30px rgba(245,158,11,0.4);
         }
         
         /* ===== TRUST BAR ===== */
@@ -171,7 +228,7 @@
             margin: 0 auto;
             display: flex;
             justify-content: center;
-            gap: 40px;
+            gap: 24px;
             flex-wrap: wrap;
         }
         
@@ -378,34 +435,87 @@
         
         /* ===== FAQ ===== */
         .faq {
-            background: var(--off-white);
-            padding: 48px 20px;
+            position: relative;
+            padding: 60px 20px;
+            overflow: hidden;
+        }
+        
+        .faq-video {
+            position: absolute;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            object-fit: cover;
+            z-index: 1;
+        }
+        
+        .faq-overlay {
+            position: absolute;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            background: rgba(0, 51, 102, 0.85);
+            z-index: 2;
         }
         
         .faq-inner {
+            position: relative;
+            z-index: 3;
             max-width: 800px;
             margin: 0 auto;
         }
         
+        .faq .section-label,
+        .faq .section-title { color: var(--white); }
+        
+        .faq-slideshow {
+            position: relative;
+            min-height: 160px;
+        }
+        
         .faq-item {
-            background: var(--white);
-            padding: 18px 20px;
-            border-radius: 10px;
-            margin-bottom: 10px;
+            background: rgba(255, 255, 255, 0.95);
+            padding: 24px 28px;
+            border-radius: 12px;
+            position: absolute;
+            width: 100%;
+            opacity: 0;
+            transition: opacity 0.6s ease-in-out;
+        }
+        
+        .faq-item.active {
+            opacity: 1;
+            position: relative;
         }
         
         .faq-question {
             font-weight: 700;
             color: var(--ocean-deep);
-            margin-bottom: 6px;
-            font-size: 0.95rem;
+            margin-bottom: 8px;
+            font-size: 1rem;
         }
         
         .faq-answer {
             color: var(--text-muted);
-            font-size: 0.9rem;
+            font-size: 0.95rem;
             line-height: 1.6;
         }
+        
+        .faq-dots {
+            display: flex;
+            justify-content: center;
+            gap: 8px;
+            margin-top: 20px;
+        }
+        
+        .faq-dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.4);
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        
+        .faq-dot.active { background: var(--white); }
         
         /* ===== BRANDING ===== */
         .branding {
@@ -557,7 +667,6 @@
                 <img src="favicon-32.png" alt="" class="logo-img">
                 Key West Sandbar Tours
             </a>
-            <a href="#tours" class="header-cta">View Cruises</a>
         </div>
     </header>
     
@@ -567,12 +676,33 @@
         <a href="#tours" class="sticky-cta-btn">See All Cruises</a>
     </div>
     
-    <!-- HERO (Compact, mobile-first) -->
-    <section class="hero">
-        <span class="hero-badge">Private Sunset Cruises</span>
-        <h1>Watch the Sun Disappear Into the Gulf</h1>
-        <p class="hero-sub">Private charters from $80 · Romantic sails · Proposal packages · Dinner cruises</p>
-        <a href="#tours" class="hero-cta" onclick="trackBookingClick('Hero CTA', 'hero', 0)">Find Your Sunset →</a>
+    <!-- HERO VIDEO -->
+    <section class="hero-video">
+        <video class="hero-video__media" autoplay muted loop playsinline poster="og-sunset-cruises.png">
+            <source src="hero-video.webm" type="video/webm">
+            <source src="hero-video.mp4" type="video/mp4">
+        </video>
+        <div class="hero-video__overlay"></div>
+        <div class="hero-video__content">
+            <span class="hero-video__badge">Private Sunset Cruises</span>
+            <h1 class="hero-video__title">Watch the Sun Disappear<br>Into the Gulf</h1>
+            <p class="hero-video__subtitle">Private charters from $80 · Romantic sails · Proposal packages · Dinner cruises</p>
+            <div class="hero-video__stats">
+                <div class="hero-video__stat">
+                    <div class="hero-video__stat-number">$80+</div>
+                    <div class="hero-video__stat-label">Per person</div>
+                </div>
+                <div class="hero-video__stat">
+                    <div class="hero-video__stat-number">2-3hr</div>
+                    <div class="hero-video__stat-label">Cruise time</div>
+                </div>
+                <div class="hero-video__stat">
+                    <div class="hero-video__stat-number">4.9★</div>
+                    <div class="hero-video__stat-label">Guest rated</div>
+                </div>
+            </div>
+            <a href="#tours" class="hero-video__cta" onclick="trackBookingClick('Hero CTA', 'hero', 0)">Find Your Sunset</a>
+        </div>
     </section>
     
     <!-- TRUST BAR -->
@@ -770,26 +900,56 @@
         </div>
     </section>
     
+    <!-- TRUST BAR #2 -->
+    <div class="trust-bar">
+        <div class="trust-bar-inner">
+            <div class="trust-item">
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+                Secure Checkout
+            </div>
+            <div class="trust-item">
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                Verified Local Operators
+            </div>
+            <div class="trust-item">
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                Same-Day Booking
+            </div>
+        </div>
+    </div>
+    
     <!-- FAQ -->
     <section class="faq">
+        <video class="faq-video" autoplay muted loop playsinline>
+            <source src="wtpa_hero_drone.mp4" type="video/mp4">
+        </video>
+        <div class="faq-overlay"></div>
         <div class="faq-inner">
             <div class="section-label">FAQ</div>
             <h2 class="section-title">Sunset Questions</h2>
-            <div class="faq-item">
-                <div class="faq-question">What time do sunset cruises leave?</div>
-                <p class="faq-answer">Departure times vary by season. Expect 5-7pm most of the year. Your captain confirms exact time based on that day's sunset.</p>
+            <div class="faq-slideshow" id="faqSlideshow">
+                <div class="faq-item active">
+                    <div class="faq-question">What time do sunset cruises leave?</div>
+                    <p class="faq-answer">Departure times vary by season. Expect 5-7pm most of the year. Your captain confirms exact time based on that day's sunset.</p>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">Can you help with a proposal?</div>
+                    <p class="faq-answer">Absolutely. Many captains have helped stage proposals. Let them know in advance — they can help with timing, champagne, even photography coordination.</p>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">What if it's cloudy?</div>
+                    <p class="faq-answer">Cloudy sunsets are often the most dramatic. If weather is truly bad, operators offer full refunds or rescheduling.</p>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">Private vs shared — what's the difference?</div>
+                    <p class="faq-answer">Private means just your group and captain. Shared cruises have other guests but cost less. Both see the same sunset.</p>
+                </div>
             </div>
-            <div class="faq-item">
-                <div class="faq-question">Can you help with a proposal?</div>
-                <p class="faq-answer">Absolutely. Many captains have helped stage proposals. Let them know in advance — they can help with timing, champagne, even photography coordination.</p>
-            </div>
-            <div class="faq-item">
-                <div class="faq-question">What if it's cloudy?</div>
-                <p class="faq-answer">Cloudy sunsets are often the most dramatic. If weather is truly bad, operators offer full refunds or rescheduling.</p>
-            </div>
-            <div class="faq-item">
-                <div class="faq-question">Private vs shared — what's the difference?</div>
-                <p class="faq-answer">Private means just your group and captain. Shared cruises have other guests but cost less. Both see the same sunset.</p>
+            <div class="faq-dots">
+                <span class="faq-dot active" data-index="0"></span>
+                <span class="faq-dot" data-index="1"></span>
+                <span class="faq-dot" data-index="2"></span>
+                <span class="faq-dot" data-index="3"></span>
             </div>
         </div>
     </section>
@@ -804,7 +964,7 @@
     <section class="final-cta">
         <h2>Ready to Watch the Sun Disappear?</h2>
         <p>Same-day booking · Instant confirmation · Free cancellation</p>
-        <a href="/" class="final-cta-btn">Browse All Key West Tours →</a>
+        <a href="/" class="final-cta-btn">Browse All Key West Tours <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" width="20" height="20"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg></a>
     </section>
     
     <!-- FOOTER -->
@@ -814,6 +974,7 @@
     
     <!-- STICKY CTA LOGIC -->
     <script>
+        // Sticky CTA
         const stickyCta = document.getElementById('stickyCta');
         const toursSection = document.getElementById('tours');
         let lastScroll = 0;
@@ -823,7 +984,6 @@
             const toursTop = toursSection.offsetTop;
             const toursBottom = toursTop + toursSection.offsetHeight;
             
-            // Show when past hero, hide when in tours section
             if (scrollY > 200 && (scrollY < toursTop - 100 || scrollY > toursBottom)) {
                 stickyCta.classList.add('visible');
             } else {
@@ -831,6 +991,20 @@
             }
             lastScroll = scrollY;
         });
+        
+        // FAQ Slideshow
+        const faqItems = document.querySelectorAll('.faq-item');
+        const faqDots = document.querySelectorAll('.faq-dot');
+        let currentFaq = 0;
+        
+        function showFaq(index) {
+            faqItems.forEach((item, i) => item.classList.toggle('active', i === index));
+            faqDots.forEach((dot, i) => dot.classList.toggle('active', i === index));
+            currentFaq = index;
+        }
+        
+        setInterval(() => showFaq((currentFaq + 1) % faqItems.length), 5000);
+        faqDots.forEach(dot => dot.addEventListener('click', () => showFaq(parseInt(dot.dataset.index))));
     </script>
 </body>
 </html>
