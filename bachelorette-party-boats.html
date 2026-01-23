@@ -343,7 +343,7 @@
         }
         
         .tours {
-            padding: 60px 20px;
+            padding: 48px 20px;
             background: var(--white);
         }
         
@@ -354,31 +354,31 @@
         
         .section-label {
             text-align: center;
-            font-size: 0.85rem;
+            font-size: 0.8rem;
             font-weight: 600;
             color: var(--coral);
             text-transform: uppercase;
             letter-spacing: 2px;
-            margin-bottom: 8px;
+            margin-bottom: 6px;
         }
         
         .section-title {
             text-align: center;
             font-family: 'Playfair Display', serif;
-            font-size: clamp(1.5rem, 4vw, 2rem);
+            font-size: 1.5rem;
             color: var(--ocean-deep);
-            margin-bottom: 40px;
+            margin-bottom: 32px;
         }
         
         .tours-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
-            gap: 24px;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 20px;
         }
         
         .tour-card {
             background: var(--white);
-            border-radius: 16px;
+            border-radius: 12px;
             overflow: hidden;
             box-shadow: 0 4px 20px rgba(0,0,0,0.08);
             transition: transform 0.2s, box-shadow 0.2s;
@@ -390,7 +390,7 @@
         }
         
         .tour-card-image {
-            height: 200px;
+            height: 180px;
             background-size: cover;
             background-position: center;
             position: relative;
@@ -398,81 +398,86 @@
         
         .tour-card-badge {
             position: absolute;
-            top: 12px;
-            left: 12px;
+            top: 10px;
+            left: 10px;
             background: var(--coral);
             color: var(--white);
-            padding: 6px 12px;
+            padding: 5px 10px;
             border-radius: 4px;
-            font-size: 0.75rem;
+            font-size: 0.7rem;
             font-weight: 700;
             text-transform: uppercase;
         }
         
         .tour-card-price {
             position: absolute;
-            top: 12px;
-            right: 12px;
-            background: var(--pink);
+            top: 10px;
+            right: 10px;
+            background: var(--ocean-deep);
             color: var(--white);
-            padding: 8px 14px;
+            padding: 6px 12px;
             border-radius: 6px;
-            font-size: 1.2rem;
+            font-size: 1.1rem;
             font-weight: 700;
         }
         
-        .tour-card-content { padding: 20px; }
+        .tour-card-content { padding: 16px; }
         
         .tour-card-company {
-            font-size: 0.8rem;
+            font-size: 0.75rem;
             color: var(--ocean-light);
             font-weight: 600;
             text-transform: uppercase;
             letter-spacing: 0.5px;
-            margin-bottom: 6px;
+            margin-bottom: 4px;
         }
         
         .tour-card-content h3 {
-            font-size: 1.15rem;
+            font-size: 1.05rem;
             color: var(--ocean-deep);
-            margin-bottom: 10px;
+            margin-bottom: 8px;
             font-weight: 700;
+            line-height: 1.3;
         }
         
         .tour-card-meta {
             display: flex;
-            gap: 16px;
-            margin-bottom: 12px;
-            font-size: 0.85rem;
+            gap: 12px;
+            margin-bottom: 10px;
+            font-size: 0.8rem;
             color: var(--text-muted);
         }
         
         .tour-card-description {
-            font-size: 0.9rem;
+            font-size: 0.85rem;
             color: var(--text-muted);
-            line-height: 1.6;
-            margin-bottom: 16px;
+            line-height: 1.5;
+            margin-bottom: 14px;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
         }
         
         .tour-card-cta {
             display: block;
-            background: var(--pink);
+            background: var(--coral);
             color: var(--white);
             text-align: center;
             padding: 14px 20px;
             border-radius: 8px;
             text-decoration: none;
             font-weight: 700;
-            font-size: 0.95rem;
+            font-size: 0.9rem;
             min-height: 48px;
             transition: background 0.2s;
         }
         
-        .tour-card-cta:hover { background: #db2777; }
+        .tour-card-cta:hover { background: #E55A5A; }
         
         .faq {
             background: var(--sand);
-            padding: 60px 20px;
+            padding: 48px 20px;
         }
         
         .faq-inner {
@@ -482,64 +487,53 @@
         
         .faq-item {
             background: var(--white);
-            padding: 20px 24px;
-            border-radius: 12px;
-            margin-bottom: 12px;
+            padding: 18px 20px;
+            border-radius: 10px;
+            margin-bottom: 10px;
         }
         
         .faq-question {
             font-weight: 700;
             color: var(--ocean-deep);
-            margin-bottom: 8px;
-            font-size: 1rem;
+            margin-bottom: 6px;
         }
         
         .faq-answer {
             color: var(--text-muted);
             font-size: 0.95rem;
-            line-height: 1.6;
         }
         
-        /* ===== BRANDING SECTION ===== */
         .branding {
+            background: var(--white);
+            padding: 32px 20px;
             text-align: center;
-            padding: 40px 20px;
-            background: var(--sand);
         }
         
-        .branding-logo {
-            max-width: 180px;
-            height: auto;
-            margin-bottom: 12px;
-        }
-        
-        .branding p {
-            color: var(--text-muted);
-            font-size: 0.95rem;
-        }
+        .branding-logo { height: 50px; margin-bottom: 8px; }
+        .branding p { color: var(--text-muted); font-size: 0.9rem; }
         
         .final-cta {
-            background: linear-gradient(135deg, var(--ocean-deep) 0%, #0C4A6E 100%);
-            padding: 60px 20px;
+            background: linear-gradient(135deg, var(--ocean-deep) 0%, #0D4A6F 100%);
+            padding: 48px 20px;
             text-align: center;
+            color: var(--white);
         }
         
         .final-cta h2 {
             font-family: 'Playfair Display', serif;
-            color: var(--white);
-            font-size: clamp(1.5rem, 4vw, 2rem);
+            font-size: 1.75rem;
             margin-bottom: 12px;
         }
         
         .final-cta p {
-            color: rgba(255,255,255,0.85);
+            opacity: 0.9;
             margin-bottom: 24px;
         }
         
         .final-cta-btn {
             display: inline-flex;
             align-items: center;
-            gap: 10px;
+            gap: 8px;
             background: var(--coral);
             color: var(--white);
             padding: 16px 32px;
@@ -551,108 +545,92 @@
         
         .footer {
             background: var(--text-dark);
-            color: var(--white);
-            padding: 30px 20px;
+            padding: 24px 20px;
             text-align: center;
+            color: rgba(255,255,255,0.6);
+            font-size: 0.85rem;
         }
         
-        .footer a { color: var(--white); }
-        
-        @media (max-width: 768px) {
-            .hero-video__media {
-                object-position: 70% center;
-            }
-        }
-        
-        @media (max-width: 600px) {
-            .hero-video__stats { gap: 20px; }
-            
-            .trust-bar-inner {
-                flex-direction: column;
-                gap: 12px;
-                align-items: center;
-            }
-            
-            .tours-grid { grid-template-columns: 1fr; }
-            
-            .sticky-cta {
-                flex-direction: column;
-                gap: 10px;
-                text-align: center;
-            }
-        }
+        .footer a { color: rgba(255,255,255,0.8); }
     </style>
 </head>
 <body>
+    <div class="sticky-cta" id="stickyCta">
+        <div class="sticky-cta-text">From <span>$525</span> · Free Cancellation</div>
+        <a href="#tours" class="sticky-cta-btn">See Party Boats</a>
+    </div>
+    
     <header class="header">
         <div class="header-inner">
             <a href="/" class="logo">
-                <img src="favicon-32.png" alt="" class="logo-img">
+                <img src="logo.png" alt="KWST" class="logo-img">
                 Key West Sandbar Tours
             </a>
+            <a href="#tours" class="header-cta">View Boats</a>
         </div>
     </header>
     
-    <div class="sticky-cta" id="stickyCta">
-        <div class="sticky-cta-text">Party boats from <span>$525</span></div>
-        <a href="#tours" class="sticky-cta-btn">Find Your Boat</a>
-    </div>
-    
     <section class="hero-video">
-        <video class="hero-video__media" autoplay muted loop playsinline poster="hero-poster.png">
-            <source src="hero-video.webm" type="video/webm">
-            <source src="hero-video.mp4" type="video/mp4">
+        <video class="hero-video__media" autoplay muted loop playsinline poster="og-bachelorette-party-boats.png">
+            <source src="hero-bachelorette.mp4" type="video/mp4">
         </video>
         <div class="hero-video__overlay"></div>
         <div class="hero-video__content">
-            <span class="hero-video__badge">Private Bachelorette Charters</span>
-            <h1 class="hero-video__title">Your Crew. Your Sandbar.<br>Your Key West.</h1>
-            <p class="hero-video__subtitle">Private boat to a hidden sandbar. Champagne, swimming, sunset. BYOB welcome.</p>
+            <div class="hero-video__badge">🎉 Bachelorette Parties</div>
+            <h1 class="hero-video__title">Your Crew.<br>Your Sandbar.</h1>
+            <p class="hero-video__subtitle">Private party boats with BYOB, Bluetooth speakers, and shallow water for the whole squad.</p>
             <div class="hero-video__stats">
                 <div class="hero-video__stat">
-                    <div class="hero-video__stat-number">6-49</div>
-                    <div class="hero-video__stat-label">Group sizes</div>
+                    <div class="hero-video__stat-number">15+</div>
+                    <div class="hero-video__stat-label">Party Boats</div>
                 </div>
                 <div class="hero-video__stat">
-                    <div class="hero-video__stat-number">BYOB</div>
-                    <div class="hero-video__stat-label">Champagne ready</div>
-                </div>
-                <div class="hero-video__stat">
-                    <div class="hero-video__stat-number">4.9★</div>
-                    <div class="hero-video__stat-label">Bride approved</div>
+                    <div class="hero-video__stat-number">4-8hr</div>
+                    <div class="hero-video__stat-label">Charters</div>
                 </div>
             </div>
-            <a href="#tours" class="hero-video__cta" onclick="trackBookingClick('Hero CTA', 'hero', 0)">Find Your Boat</a>
+            <a href="#tours" class="hero-video__cta">Find Your Boat</a>
         </div>
     </section>
+    
+    <div class="trust-bar">
+        <div class="trust-bar-inner">
+            <div class="trust-item">
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                Free Cancellation
+            </div>
+            <div class="trust-item">
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                Instant Confirmation
+            </div>
+            <div class="trust-item">
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                Groups 6-49
+            </div>
+        </div>
+    </div>
     
     <section class="best-for">
         <div class="best-for-inner">
             <h2>Perfect For</h2>
             <div class="marquee-wrapper">
                 <div class="best-for-grid">
-                    <!-- First set (10 pills) -->
-                    <div class="best-for-pill">💍 Bachelorette Parties</div>
-                    <div class="best-for-pill">🎂 Birthday Celebrations</div>
-                    <div class="best-for-pill">👯 Girls Trips</div>
-                    <div class="best-for-pill">🍾 Bridal Showers</div>
-                    <div class="best-for-pill">📸 Instagram Content</div>
-                    <div class="best-for-pill">🎉 Divorce Parties</div>
-                    <div class="best-for-pill">🌴 Reunion Trips</div>
-                    <div class="best-for-pill">✈️ Send-Off Parties</div>
-                    <div class="best-for-pill">💅 Besties Weekend</div>
-                    <div class="best-for-pill">💒 Last Fling</div>
-                    <!-- Duplicate set for seamless loop -->
-                    <div class="best-for-pill">💍 Bachelorette Parties</div>
-                    <div class="best-for-pill">🎂 Birthday Celebrations</div>
-                    <div class="best-for-pill">👯 Girls Trips</div>
-                    <div class="best-for-pill">🍾 Bridal Showers</div>
-                    <div class="best-for-pill">📸 Instagram Content</div>
-                    <div class="best-for-pill">🎉 Divorce Parties</div>
-                    <div class="best-for-pill">🌴 Reunion Trips</div>
-                    <div class="best-for-pill">✈️ Send-Off Parties</div>
-                    <div class="best-for-pill">💅 Besties Weekend</div>
-                    <div class="best-for-pill">💒 Last Fling</div>
+                    <span class="best-for-pill">👰 Bachelorette Parties</span>
+                    <span class="best-for-pill">🎂 Birthday Celebrations</span>
+                    <span class="best-for-pill">👯 Girls' Trips</span>
+                    <span class="best-for-pill">🍾 BYOB Cruises</span>
+                    <span class="best-for-pill">📸 Instagram Moments</span>
+                    <span class="best-for-pill">🏝️ Sandbar Hopping</span>
+                    <span class="best-for-pill">🎵 Bluetooth Speakers</span>
+                    <span class="best-for-pill">🤿 Snorkel Stops</span>
+                    <span class="best-for-pill">👰 Bachelorette Parties</span>
+                    <span class="best-for-pill">🎂 Birthday Celebrations</span>
+                    <span class="best-for-pill">👯 Girls' Trips</span>
+                    <span class="best-for-pill">🍾 BYOB Cruises</span>
+                    <span class="best-for-pill">📸 Instagram Moments</span>
+                    <span class="best-for-pill">🏝️ Sandbar Hopping</span>
+                    <span class="best-for-pill">🎵 Bluetooth Speakers</span>
+                    <span class="best-for-pill">🤿 Snorkel Stops</span>
                 </div>
             </div>
         </div>
@@ -660,49 +638,12 @@
     
     <section class="tours" id="tours">
         <div class="tours-inner">
-            <div class="section-label">Party Boats & Charters</div>
-            <h2 class="section-title">Book Your Bachelorette Boat</h2>
+            <div class="section-label">Hand-Picked for Parties</div>
+            <h2 class="section-title">Bachelorette Party Boats</h2>
             <div class="tours-grid">
                 <div class="tour-card">
-                    <div class="tour-card-image" style="background-image: url('https://cdn.filestackcontent.com/1M4bGUlRDakYbsBPUdwi')">
-                        <span class="tour-card-badge">🔥 Party Favorite</span>
-                        <span class="tour-card-price">$949</span>
-                    </div>
-                    <div class="tour-card-content">
-                        <div class="tour-card-company">Salty Bottom Boat Party's</div>
-                        <h3>Salty Bottom Tiki Boat</h3>
-                        <div class="tour-card-meta"><span>⏱ 6 hours</span><span>👥 Private group</span></div>
-                        <p class="tour-card-description">THE party tiki boat. BYOB, Bluetooth speakers, and the sandbar all to yourselves. This is what bachelorette dreams are made of.</p>
-                        <a href="https://fareharbor.com/embeds/book/saltybottomboats/items/598629/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&full-items=yes&flow=no" target="_blank" class="tour-card-cta" onclick="trackBookingClick('Salty Bottom Tiki Boat', '598629', 949)">Check Availability</a>
-                    </div>
-                </div>
-                <div class="tour-card">
-                    <div class="tour-card-image" style="background-image: url('https://cdn.filestackcontent.com/s7FMrEY8TryUHuQKPd6X')">
-                        <span class="tour-card-badge">Half Day</span>
-                        <span class="tour-card-price">$750</span>
-                    </div>
-                    <div class="tour-card-content">
-                        <div class="tour-card-company">Salty Soul Charters</div>
-                        <h3>Half Day Private Charter</h3>
-                        <div class="tour-card-meta"><span>⏱ 4 hours</span><span>👥 Private</span></div>
-                        <p class="tour-card-description">See Key West the way it's meant to be seen — BY WATER. Snorkel, sandbar, dolphins. Pick your adventure, captain delivers.</p>
-                        <a href="https://fareharbor.com/embeds/book/saltysoulcharters/items/324538/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&full-items=yes&flow=no" target="_blank" class="tour-card-cta" onclick="trackBookingClick('Salty Soul Half Day', '324538', 750)">Check Availability</a>
-                    </div>
-                </div>
-                <div class="tour-card">
-                    <div class="tour-card-image" style="background-image: url('snorkelers1.webp')">
-                        <span class="tour-card-price">$700</span>
-                    </div>
-                    <div class="tour-card-content">
-                        <div class="tour-card-company">Key West Coastal Charters</div>
-                        <h3>Custom Combo Excursion</h3>
-                        <div class="tour-card-meta"><span>⏱ 4 hours</span><span>👥 Private</span></div>
-                        <p class="tour-card-description">Design your perfect day — dolphins, sandbars, snorkeling, sunset. You call it, captain delivers.</p>
-                        <a href="https://fareharbor.com/embeds/book/keywestcoastalcharters/items/445496/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&full-items=yes&flow=no" target="_blank" class="tour-card-cta" onclick="trackBookingClick('Custom Combo Excursion', '445496', 700)">Check Availability</a>
-                    </div>
-                </div>
-                <div class="tour-card">
-                    <div class="tour-card-image" style="background-image: url('https://cdn.filestackcontent.com/p83RWLcRkxVsS1esmxHA')">
+                    <div class="tour-card-image" style="background-image: url('https://cdn.filestackcontent.com/7RKNGSl3TrmWopp5jfwQ')">
+                        <span class="tour-card-badge">Best Seller</span>
                         <span class="tour-card-price">$680</span>
                     </div>
                     <div class="tour-card-content">
