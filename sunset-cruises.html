@@ -89,16 +89,16 @@
         
         .logo {
             font-family: 'Playfair Display', serif;
-            font-size: 1.1rem;
+            font-size: 1.2rem;
             font-weight: 700;
             color: var(--ocean-deep);
             text-decoration: none;
             display: flex;
             align-items: center;
-            gap: 8px;
+            gap: 10px;
         }
         
-        .logo-img { width: 32px; height: 32px; border-radius: 6px; }
+        .logo-img { width: 36px; height: 36px; border-radius: 8px; }
         
         .header-cta {
             background: var(--ocean-deep);
@@ -149,7 +149,12 @@
             position: absolute;
             top: 0; left: 0;
             width: 100%; height: 100%;
-            background: linear-gradient(to bottom, rgba(10,61,98,0.3) 0%, rgba(10,61,98,0.5) 50%, rgba(10,61,98,0.7) 100%);
+            background: linear-gradient(
+                to bottom,
+                rgba(10, 61, 98, 0.3) 0%,
+                rgba(10, 61, 98, 0.5) 50%,
+                rgba(10, 61, 98, 0.7) 100%
+            );
             z-index: 2;
         }
         
@@ -214,34 +219,38 @@
             padding: 16px 40px;
             border-radius: 50px;
             min-height: 48px;
-            box-shadow: 0 8px 30px rgba(245,158,11,0.4);
+            box-shadow: 0 8px 30px rgba(245, 158, 11, 0.4);
         }
         
         /* ===== TRUST BAR ===== */
         .trust-bar {
             background: var(--ocean-deep);
-            padding: 14px 20px;
+            padding: 16px 0;
+            overflow: hidden;
         }
         
         .trust-bar-inner {
-            max-width: 1200px;
-            margin: 0 auto;
             display: flex;
-            justify-content: center;
-            gap: 24px;
-            flex-wrap: wrap;
+            animation: trustScroll 25s linear infinite;
+        }
+        
+        @keyframes trustScroll {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
         }
         
         .trust-item {
             display: flex;
             align-items: center;
-            gap: 6px;
+            gap: 8px;
             color: var(--white);
-            font-size: 0.85rem;
+            font-size: 0.9rem;
             font-weight: 500;
+            white-space: nowrap;
+            padding: 0 24px;
         }
         
-        .trust-item svg { width: 18px; height: 18px; flex-shrink: 0; }
+        .trust-item svg { width: 20px; height: 20px; flex-shrink: 0; }
         
         /* ===== PERFECT FOR PILLS (auto-scroll marquee) ===== */
         .best-for {
@@ -452,7 +461,12 @@
             position: absolute;
             top: 0; left: 0;
             width: 100%; height: 100%;
-            background: rgba(0, 51, 102, 0.85);
+            background: linear-gradient(
+                to bottom,
+                rgba(10, 61, 98, 0.3) 0%,
+                rgba(10, 61, 98, 0.5) 50%,
+                rgba(10, 61, 98, 0.7) 100%
+            );
             z-index: 2;
         }
         
@@ -616,7 +630,6 @@
         @media (max-width: 600px) {
             .header { padding: 10px 16px; }
             .logo { font-size: 0.95rem; }
-            .logo-img { width: 28px; height: 28px; }
             .header-cta { padding: 10px 16px; font-size: 0.8rem; }
             
             .hero { padding: 20px 16px; }
@@ -704,24 +717,6 @@
             <a href="#tours" class="hero-video__cta" onclick="trackBookingClick('Hero CTA', 'hero', 0)">Find Your Sunset</a>
         </div>
     </section>
-    
-    <!-- TRUST BAR -->
-    <div class="trust-bar">
-        <div class="trust-bar-inner">
-            <div class="trust-item">
-                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
-                Secure Checkout
-            </div>
-            <div class="trust-item">
-                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
-                Verified Captains
-            </div>
-            <div class="trust-item">
-                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-                Free Cancellation
-            </div>
-        </div>
-    </div>
     
     <!-- PERFECT FOR (auto-scroll) -->
     <section class="best-for">
@@ -900,9 +895,10 @@
         </div>
     </section>
     
-    <!-- TRUST BAR #2 -->
+    <!-- TRUST BAR -->
     <div class="trust-bar">
         <div class="trust-bar-inner">
+            <!-- First set (6 items) -->
             <div class="trust-item">
                 <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
                 Secure Checkout
@@ -915,12 +911,49 @@
                 <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
                 Same-Day Booking
             </div>
+            <div class="trust-item">
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z"/></svg>
+                No Hidden Fees
+            </div>
+            <div class="trust-item">
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg>
+                Thousands of Happy Guests
+            </div>
+            <div class="trust-item">
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                24/7 Support
+            </div>
+            <!-- Duplicate set for seamless loop -->
+            <div class="trust-item">
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+                Secure Checkout
+            </div>
+            <div class="trust-item">
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                Verified Local Operators
+            </div>
+            <div class="trust-item">
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                Same-Day Booking
+            </div>
+            <div class="trust-item">
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z"/></svg>
+                No Hidden Fees
+            </div>
+            <div class="trust-item">
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg>
+                Thousands of Happy Guests
+            </div>
+            <div class="trust-item">
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                24/7 Support
+            </div>
         </div>
     </div>
     
     <!-- FAQ -->
     <section class="faq">
-        <video class="faq-video" autoplay muted loop playsinline>
+        <video class="faq-video" id="faqVideo" autoplay muted loop playsinline>
             <source src="wtpa_hero_drone.mp4" type="video/mp4">
         </video>
         <div class="faq-overlay"></div>
@@ -1005,6 +1038,20 @@
         
         setInterval(() => showFaq((currentFaq + 1) % faqItems.length), 5000);
         faqDots.forEach(dot => dot.addEventListener('click', () => showFaq(parseInt(dot.dataset.index))));
+        
+        // FAQ Video Slowdown (50% speed)
+        const faqVideo = document.getElementById('faqVideo');
+        if (faqVideo) faqVideo.playbackRate = 0.5;
+        
+        // Tours Randomize on Page Load
+        const toursGrid = document.querySelector('.tours-grid');
+        if (toursGrid) {
+            const cards = Array.from(toursGrid.children);
+            for (let i = cards.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                toursGrid.appendChild(cards[j]);
+            }
+        }
     </script>
 </body>
 </html>
