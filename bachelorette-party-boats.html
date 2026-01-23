@@ -513,6 +513,24 @@
             line-height: 1.6;
         }
         
+        /* ===== BRANDING SECTION ===== */
+        .branding {
+            text-align: center;
+            padding: 40px 20px;
+            background: var(--sand);
+        }
+        
+        .branding-logo {
+            max-width: 180px;
+            height: auto;
+            margin-bottom: 12px;
+        }
+        
+        .branding p {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+        
         .final-cta {
             background: linear-gradient(135deg, var(--ocean-deep) 0%, #0C4A6E 100%);
             padding: 60px 20px;
@@ -560,11 +578,6 @@
         }
         
         @media (max-width: 600px) {
-            .hero-video {
-                min-height: 450px;
-                max-height: 500px;
-            }
-            
             .hero-video__stats { gap: 20px; }
             
             .trust-bar-inner {
@@ -758,6 +771,45 @@
                         <a href="https://fareharbor.com/embeds/book/keywestpromotions/items/265953/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&full-items=yes&flow=no" target="_blank" class="tour-card-cta" onclick="trackBookingClick('Private Tiki Sandbar', '265953', 525)">Check Availability</a>
                     </div>
                 </div>
+                <div class="tour-card">
+                    <div class="tour-card-image" style="background-image: url('https://cdn.filestackcontent.com/rA5qP8vQQKmzN1C8yJKL')">
+                        <span class="tour-card-badge">Budget Party</span>
+                        <span class="tour-card-price">$375</span>
+                    </div>
+                    <div class="tour-card-content">
+                        <div class="tour-card-company">Key West Promotions</div>
+                        <h3>2hr Tiki Boat Party & Mini Sandbar</h3>
+                        <div class="tour-card-meta"><span>⏱ 2 hours</span><span>👥 Up to 6</span></div>
+                        <p class="tour-card-description">Quick escape to paradise! Cruise to a sandy-bottom spot, bring your cocktails & crew. Captain handles the rest.</p>
+                        <a href="https://fareharbor.com/embeds/book/tikiboatadventures/items/386561/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&full-items=yes&flow=no" target="_blank" class="tour-card-cta" onclick="trackBookingClick('2hr Tiki Party Mini Sandbar', '386561', 375)">Check Availability</a>
+                    </div>
+                </div>
+                <div class="tour-card">
+                    <div class="tour-card-image" style="background-image: url('https://cdn.filestackcontent.com/vK8nL2mQRKqzM3D9yHJM')">
+                        <span class="tour-card-badge">Wine Lovers</span>
+                        <span class="tour-card-price">$109</span>
+                    </div>
+                    <div class="tour-card-content">
+                        <div class="tour-card-company">Danger Charters</div>
+                        <h3>Wind & Wine Sunset Sail</h3>
+                        <div class="tour-card-meta"><span>⏱ 2 hours</span><span>🍷 Per Person</span></div>
+                        <p class="tour-card-description">Not a party boat — a boutique wine experience on a historic schooner. Fine wines, cheese, and a gorgeous sunset.</p>
+                        <a href="https://fareharbor.com/embeds/book/dangercharters/items/11006/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&full-items=yes&flow=no" target="_blank" class="tour-card-cta" onclick="trackBookingClick('Wind Wine Sunset Sail', '11006', 109)">Check Availability</a>
+                    </div>
+                </div>
+                <div class="tour-card">
+                    <div class="tour-card-image" style="background-image: url('https://cdn.filestackcontent.com/xN7kP9vRQymzO4E8zKLN')">
+                        <span class="tour-card-badge">Budget Sunset</span>
+                        <span class="tour-card-price">$79.95</span>
+                    </div>
+                    <div class="tour-card-content">
+                        <div class="tour-card-company">Cruisin Tikis Key West</div>
+                        <h3>Tiki Sunset Cruise</h3>
+                        <div class="tour-card-meta"><span>⏱ 2 hours</span><span>🍹 Per Person</span></div>
+                        <p class="tour-card-description">BYOB sunset on a floating tiki bar. Bluetooth speakers, your playlist. Skip Mallory Square crowds, toast on the water.</p>
+                        <a href="https://fareharbor.com/embeds/book/cruisintikiskeywest/items/72344/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&full-items=yes&flow=no" target="_blank" class="tour-card-cta" onclick="trackBookingClick('Cruisin Tikis Sunset', '72344', 79.95)">Check Availability</a>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -784,6 +836,12 @@
             </div>
         </div>
     </section>
+    
+    <!-- BRANDING -->
+    <div class="branding">
+        <img src="logo.png" alt="Key West Sandbar Tours" class="branding-logo">
+        <p>Your local guide to Key West bachelorette adventures</p>
+    </div>
     
     <section class="final-cta">
         <h2>Ready to Book Your Bachelorette Boat?</h2>
