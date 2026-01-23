@@ -22,6 +22,47 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
     
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "Can we bring decorations?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes! Bring banners, sashes, inflatables — whatever makes it special. Just no glitter (terrible for the ocean) and clean up before you go."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Is there a bathroom on the boat?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Most larger boats have a head (marine toilet). Smaller boats — you'll use the ocean or hold it. Ask when booking if this matters."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Can we play our own music?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes! Most boats have Bluetooth speakers. Bring a charged phone with your playlist ready. Captain controls volume."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "How many people can fit?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Boats range from 6 to 49 guests. Tell them your group size and they'll recommend the right boat."
+                }
+            }
+        ]
+    }
+    </script>
+    
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-67D7X60CJF"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -84,7 +125,7 @@
         
         .sticky-cta.visible { transform: translateY(0); }
         .sticky-cta-text { color: var(--white); font-weight: 600; }
-        .sticky-cta-text span { color: var(--gold); }
+        .sticky-cta-text span { color: var(--accent); }
         
         .sticky-cta-btn {
             background: var(--accent);
@@ -347,6 +388,124 @@
             box-shadow: 0 2px 8px rgba(0,0,0,0.06);
             flex-shrink: 0;
             white-space: nowrap;
+        }
+        
+        /* ===== TOP PICKS MODULE ===== */
+        .top-picks {
+            padding: 40px 20px 0;
+            background: var(--sand);
+        }
+        
+        .top-picks-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        
+        .top-picks-intro {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            margin-bottom: 20px;
+        }
+        
+        .top-picks-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-bottom: 32px;
+        }
+        
+        .pick-card {
+            background: var(--white);
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            border: 2px solid var(--accent);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        
+        .pick-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 40px rgba(0,0,0,0.15);
+        }
+        
+        .pick-card-image {
+            height: 180px;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+        
+        .pick-card-label {
+            position: absolute;
+            top: 12px;
+            left: 12px;
+            background: var(--accent);
+            color: var(--accent-text);
+            padding: 8px 14px;
+            border-radius: 6px;
+            font-size: 0.85rem;
+            font-weight: 700;
+        }
+        
+        .pick-card-price {
+            position: absolute;
+            top: 12px;
+            right: 12px;
+            background: var(--ocean-deep);
+            color: var(--white);
+            padding: 8px 14px;
+            border-radius: 6px;
+            font-size: 1.1rem;
+            font-weight: 700;
+        }
+        
+        .pick-card-content {
+            padding: 16px 20px 20px;
+        }
+        
+        .pick-card-company {
+            font-size: 0.75rem;
+            color: var(--ocean-light);
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 4px;
+        }
+        
+        .pick-card-content h3 {
+            font-size: 1.1rem;
+            color: var(--ocean-deep);
+            margin-bottom: 8px;
+            font-weight: 700;
+        }
+        
+        .pick-card-meta {
+            display: flex;
+            gap: 12px;
+            margin-bottom: 12px;
+            font-size: 0.8rem;
+            color: var(--text-muted);
+        }
+        
+        .pick-card-cta {
+            display: block;
+            background: var(--accent);
+            color: var(--accent-text);
+            text-align: center;
+            padding: 12px 16px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 0.9rem;
+            min-height: 48px;
+        }
+        
+        .top-picks-divider {
+            text-align: center;
+            padding: 24px 0 8px;
+            color: var(--text-muted);
+            font-size: 0.9rem;
         }
         
         .tours {
@@ -667,7 +826,7 @@
     
     <div class="sticky-cta" id="stickyCta">
         <div class="sticky-cta-text">Party boats from <span>$525</span></div>
-        <a href="#tours" class="sticky-cta-btn">Find Your Boat</a>
+        <a href="#top-picks" class="sticky-cta-btn">See Top Picks</a>
     </div>
     
     <section class="hero-video">
@@ -678,23 +837,24 @@
         <div class="hero-video__overlay"></div>
         <div class="hero-video__content">
             <span class="hero-video__badge">Private Bachelorette Charters</span>
-            <h1 class="hero-video__title">Your Crew. Your Sandbar.<br>Your Key West.</h1>
-            <p class="hero-video__subtitle">Private boat to a hidden sandbar. Champagne, swimming, sunset. BYOB welcome.</p>
+            <h1 class="hero-video__title">Bachelorette Party Boats<br>in Key West</h1>
+            <p class="hero-video__subtitle">Private boats to the sandbar — champagne, music, swimming, and sunset moments your crew will remember.</p>
             <div class="hero-video__stats">
                 <div class="hero-video__stat">
-                    <div class="hero-video__stat-number">6-49</div>
-                    <div class="hero-video__stat-label">Group sizes</div>
+                    <div class="hero-video__stat-number">From $525</div>
+                    <div class="hero-video__stat-label">Private group</div>
                 </div>
                 <div class="hero-video__stat">
                     <div class="hero-video__stat-number">BYOB</div>
-                    <div class="hero-video__stat-label">Champagne ready</div>
+                    <div class="hero-video__stat-label">Bring your own</div>
                 </div>
                 <div class="hero-video__stat">
                     <div class="hero-video__stat-number">4.9★</div>
                     <div class="hero-video__stat-label">Bride approved</div>
                 </div>
             </div>
-            <a href="#tours" class="hero-video__cta" onclick="trackBookingClick('Hero CTA', 'hero', 0)">Find Your Boat</a>
+            <a href="#top-picks" class="hero-video__cta" onclick="gtag('event','scroll_to_tours',{page_type:'bachelorette-party-boats'})">See the Best Bachelorette Boats</a>
+            <p style="margin-top: 12px; font-size: 0.85rem; opacity: 0.9;">Short on time? <a href="#top-picks" style="color: var(--accent); text-decoration: underline;">Start with our top picks →</a></p>
         </div>
     </section>
     
@@ -727,6 +887,54 @@
                     <div class="best-for-pill">💒 Last Fling</div>
                 </div>
             </div>
+        </div>
+    </section>
+    
+    <!-- TOP PICKS MODULE -->
+    <section class="top-picks" id="top-picks">
+        <div class="top-picks-inner">
+            <div class="section-label">Editor's Picks</div>
+            <h2 class="section-title">Top 3 Bachelorette Boats</h2>
+            <p class="top-picks-intro">Short on time? Start with these bride-approved favorites.</p>
+            <div class="top-picks-grid">
+                <div class="pick-card">
+                    <div class="pick-card-image" style="background-image: url('https://cdn.filestackcontent.com/1M4bGUlRDakYbsBPUdwi')">
+                        <span class="pick-card-label">💕 Most Popular</span>
+                        <span class="pick-card-price">$949</span>
+                    </div>
+                    <div class="pick-card-content">
+                        <div class="pick-card-company">Salty Bottom Boat Party's</div>
+                        <h3>Salty Bottom Tiki Boat</h3>
+                        <div class="pick-card-meta"><span>⏱ 6 hours</span><span>👥 Private</span></div>
+                        <a href="https://fareharbor.com/embeds/book/saltybottomboats/items/598629/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&full-items=yes&flow=no" target="_blank" class="pick-card-cta" onclick="trackBookingClick('Salty Bottom Tiki Boat', '598629', 949)">Check Availability</a>
+                    </div>
+                </div>
+                <div class="pick-card">
+                    <div class="pick-card-image" style="background-image: url('https://cdn.filestackcontent.com/6mzS4yoyS52Qw9PTDR9C')">
+                        <span class="pick-card-label">🍾 Biggest Party</span>
+                        <span class="pick-card-price">From $50/pp</span>
+                    </div>
+                    <div class="pick-card-content">
+                        <div class="pick-card-company">Snuba of Key West</div>
+                        <h3>Good Times 47' Catamaran</h3>
+                        <div class="pick-card-meta"><span>⏱ 4 hours</span><span>👥 Up to 49</span></div>
+                        <a href="https://fareharbor.com/embeds/book/snuba-keywest/items/487857/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&full-items=yes&flow=no" target="_blank" class="pick-card-cta" onclick="trackBookingClick('BYOB Sandbar Good Times', '487857', 50)">Check Availability</a>
+                    </div>
+                </div>
+                <div class="pick-card">
+                    <div class="pick-card-image" style="background-image: url('https://cdn.filestackcontent.com/oo3R7vP7Sb2Y7F0Y6RVo')">
+                        <span class="pick-card-label">💸 Best Value</span>
+                        <span class="pick-card-price">$525</span>
+                    </div>
+                    <div class="pick-card-content">
+                        <div class="pick-card-company">Key West Promotions</div>
+                        <h3>Private Tiki Boat Sandbar Trip</h3>
+                        <div class="pick-card-meta"><span>⏱ 4 hours</span><span>👥 Private</span></div>
+                        <a href="https://fareharbor.com/embeds/book/keywestpromotions/items/265953/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&full-items=yes&flow=no" target="_blank" class="pick-card-cta" onclick="trackBookingClick('Private Tiki Sandbar', '265953', 525)">Check Availability</a>
+                    </div>
+                </div>
+            </div>
+            <p class="top-picks-divider">— or browse all bachelorette boats below —</p>
         </div>
     </section>
     
@@ -908,7 +1116,7 @@
         </div>
     </div>
     
-    <section class="faq">
+    <section class="faq" id="faq">
         <video class="faq-video" id="faqVideo" autoplay muted loop playsinline>
             <source src="wtpa_hero_drone.mp4" type="video/mp4">
         </video>

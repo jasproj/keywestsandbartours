@@ -22,6 +22,47 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
     
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "What time do sunset cruises leave?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Departure times vary by season. Expect 5-7pm most of the year. Your captain confirms exact time based on that day's sunset."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Can you help with a proposal?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Absolutely. Many captains have helped stage proposals. Let them know in advance — they can help with timing, champagne, even photography coordination."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What if it's cloudy?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Cloudy sunsets are often the most dramatic. If weather is truly bad, operators offer full refunds or rescheduling."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Private vs shared — what's the difference?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Private means just your group and captain. Shared cruises have other guests but cost less. Both see the same sunset."
+                }
+            }
+        ]
+    }
+    </script>
+    
     <!-- GA4 Tracking -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-67D7X60CJF"></script>
     <script>
@@ -48,6 +89,7 @@
             --ocean-deep: #0A3D62;
             --ocean-light: #1E90FF;
             --white: #FFFFFF;
+            --off-white: #FAFAFA;
             --text-dark: #1A1A2E;
             --text-muted: #6B7280;
             
@@ -310,6 +352,124 @@
         }
         
         /* ===== TOURS SECTION ===== */
+        /* ===== TOP PICKS MODULE ===== */
+        .top-picks {
+            padding: 40px 20px 0;
+            background: var(--sand);
+        }
+        
+        .top-picks-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        
+        .top-picks-intro {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            margin-bottom: 20px;
+        }
+        
+        .top-picks-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-bottom: 32px;
+        }
+        
+        .pick-card {
+            background: var(--white);
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            border: 2px solid var(--accent);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        
+        .pick-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 40px rgba(0,0,0,0.15);
+        }
+        
+        .pick-card-image {
+            height: 180px;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+        
+        .pick-card-label {
+            position: absolute;
+            top: 12px;
+            left: 12px;
+            background: var(--accent);
+            color: var(--accent-text);
+            padding: 8px 14px;
+            border-radius: 6px;
+            font-size: 0.85rem;
+            font-weight: 700;
+        }
+        
+        .pick-card-price {
+            position: absolute;
+            top: 12px;
+            right: 12px;
+            background: var(--ocean-deep);
+            color: var(--white);
+            padding: 8px 14px;
+            border-radius: 6px;
+            font-size: 1.1rem;
+            font-weight: 700;
+        }
+        
+        .pick-card-content {
+            padding: 16px 20px 20px;
+        }
+        
+        .pick-card-company {
+            font-size: 0.75rem;
+            color: var(--ocean-light);
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 4px;
+        }
+        
+        .pick-card-content h3 {
+            font-size: 1.1rem;
+            color: var(--ocean-deep);
+            margin-bottom: 8px;
+            font-weight: 700;
+        }
+        
+        .pick-card-meta {
+            display: flex;
+            gap: 12px;
+            margin-bottom: 12px;
+            font-size: 0.8rem;
+            color: var(--text-muted);
+        }
+        
+        .pick-card-cta {
+            display: block;
+            background: var(--accent);
+            color: var(--accent-text);
+            text-align: center;
+            padding: 12px 16px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 0.9rem;
+            min-height: 48px;
+        }
+        
+        .top-picks-divider {
+            text-align: center;
+            padding: 24px 0 8px;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+        
         .tours {
             padding: 48px 20px;
             background: var(--sand);
@@ -709,23 +869,24 @@
         <div class="hero-video__overlay"></div>
         <div class="hero-video__content">
             <span class="hero-video__badge">Private Sunset Cruises</span>
-            <h1 class="hero-video__title">Watch the Sun Disappear<br>Into the Gulf</h1>
-            <p class="hero-video__subtitle">Private charters from $80 · Romantic sails · Proposal packages · Dinner cruises</p>
+            <h1 class="hero-video__title">Key West Sunset Cruises</h1>
+            <p class="hero-video__subtitle">Private sunset sails and cruises where the Gulf meets the Atlantic — perfect for couples, proposals, and relaxed evenings on the water.</p>
             <div class="hero-video__stats">
                 <div class="hero-video__stat">
-                    <div class="hero-video__stat-number">$80+</div>
+                    <div class="hero-video__stat-number">From $80</div>
                     <div class="hero-video__stat-label">Per person</div>
                 </div>
                 <div class="hero-video__stat">
-                    <div class="hero-video__stat-number">2-3hr</div>
-                    <div class="hero-video__stat-label">Cruise time</div>
+                    <div class="hero-video__stat-number">Private</div>
+                    <div class="hero-video__stat-label">Options available</div>
                 </div>
                 <div class="hero-video__stat">
                     <div class="hero-video__stat-number">4.9★</div>
                     <div class="hero-video__stat-label">Guest rated</div>
                 </div>
             </div>
-            <a href="#tours" class="hero-video__cta" onclick="trackBookingClick('Hero CTA', 'hero', 0)">Find Your Sunset</a>
+            <a href="#top-picks" class="hero-video__cta" onclick="gtag('event','scroll_to_tours',{page_type:'sunset-cruises'})">View Sunset Cruises</a>
+            <p style="margin-top: 12px; font-size: 0.85rem; opacity: 0.9;">Most sunsets sell out 1–2 days in advance.</p>
         </div>
     </section>
     
@@ -757,6 +918,54 @@
                     <div class="best-for-pill">🌴 Couples Getaway</div>
                 </div>
             </div>
+        </div>
+    </section>
+    
+    <!-- TOP PICKS MODULE -->
+    <section class="top-picks" id="top-picks">
+        <div class="top-picks-inner">
+            <div class="section-label">Editor's Picks</div>
+            <h2 class="section-title">Top 3 Sunset Cruises</h2>
+            <p class="top-picks-intro">Looking for something romantic or low-key? Start here.</p>
+            <div class="top-picks-grid">
+                <div class="pick-card">
+                    <div class="pick-card-image" style="background-image: url('private_romantic.webp')">
+                        <span class="pick-card-label">💕 Most Romantic</span>
+                        <span class="pick-card-price">$995</span>
+                    </div>
+                    <div class="pick-card-content">
+                        <div class="pick-card-company">Six Fins Charter</div>
+                        <h3>Private Romantic Sunset Cruise</h3>
+                        <div class="pick-card-meta"><span>⏱ 3 hours</span><span>👥 Private</span></div>
+                        <a href="https://fareharbor.com/embeds/book/sixfinscharter/items/532157/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&full-items=yes&flow=no" target="_blank" class="pick-card-cta" onclick="trackBookingClick('Private Romantic Sunset Cruise', '532157', 995)">Check Availability</a>
+                    </div>
+                </div>
+                <div class="pick-card">
+                    <div class="pick-card-image" style="background-image: url('https://cdn.filestackcontent.com/dUz5aAyR9CR0PeWgW3Jj')">
+                        <span class="pick-card-label">💍 Best for Proposals</span>
+                        <span class="pick-card-price">$825</span>
+                    </div>
+                    <div class="pick-card-content">
+                        <div class="pick-card-company">Sunset Sail Key West</div>
+                        <h3>Proposal Private Sunset Sail</h3>
+                        <div class="pick-card-meta"><span>⏱ 2 hours</span><span>👥 Private</span></div>
+                        <a href="https://fareharbor.com/embeds/book/sunsetsailkeywest/items/72539/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&full-items=yes&flow=no" target="_blank" class="pick-card-cta" onclick="trackBookingClick('Proposal Sunset Sail', '72539', 825)">Check Availability</a>
+                    </div>
+                </div>
+                <div class="pick-card">
+                    <div class="pick-card-image" style="background-image: url('https://cdn.filestackcontent.com/QgZcRNIQCypD0P9smmww')">
+                        <span class="pick-card-label">💸 Best Value</span>
+                        <span class="pick-card-price">$40</span>
+                    </div>
+                    <div class="pick-card-content">
+                        <div class="pick-card-company">Sunset Watersports</div>
+                        <h3>Sunset Sip & Sail</h3>
+                        <div class="pick-card-meta"><span>⏱ 2 hours</span><span>👥 Shared</span></div>
+                        <a href="https://fareharbor.com/embeds/book/sunsetwatersports/items/266328/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&full-items=yes&flow=no" target="_blank" class="pick-card-cta" onclick="trackBookingClick('Sunset Sip & Sail', '266328', 40)">Check Availability</a>
+                    </div>
+                </div>
+            </div>
+            <p class="top-picks-divider">— or browse all sunset cruises below —</p>
         </div>
     </section>
     
@@ -963,7 +1172,7 @@
     </div>
     
     <!-- FAQ -->
-    <section class="faq">
+    <section class="faq" id="faq">
         <video class="faq-video" id="faqVideo" autoplay muted loop playsinline>
             <source src="wtpa_hero_drone.mp4" type="video/mp4">
         </video>

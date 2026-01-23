@@ -22,6 +22,47 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
     
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "What's included in a luxury charter?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Most include captain, fuel, safety equipment, and basic amenities. Premium vessels often include snorkel gear, paddleboards, floats, and water toys. Food/drinks are typically BYOB unless specified."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Can you help with proposals?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Absolutely. Many captains have helped stage proposals. Let them know in advance and they can help with timing, location, and even photography coordination."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What about bad weather?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "All charters offer full refunds or rescheduling for weather cancellations. Your captain will contact you if conditions are unsafe."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "How far in advance should I book?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "For luxury vessels, 2-4 weeks ahead is recommended, especially during peak season (Dec-Apr). Last-minute availability sometimes exists."
+                }
+            }
+        ]
+    }
+    </script>
+    
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-67D7X60CJF"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -311,6 +352,124 @@
             color: var(--text-muted);
             font-size: 1rem;
             margin-bottom: 24px;
+        }
+        
+        /* ===== TOP PICKS MODULE ===== */
+        .top-picks {
+            padding: 40px 20px 0;
+            background: var(--sand);
+        }
+        
+        .top-picks-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        
+        .top-picks-intro {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            margin-bottom: 20px;
+        }
+        
+        .top-picks-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-bottom: 32px;
+        }
+        
+        .pick-card {
+            background: var(--white);
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            border: 2px solid var(--accent);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        
+        .pick-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 40px rgba(0,0,0,0.15);
+        }
+        
+        .pick-card-image {
+            height: 180px;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+        
+        .pick-card-label {
+            position: absolute;
+            top: 12px;
+            left: 12px;
+            background: var(--accent);
+            color: var(--accent-text);
+            padding: 8px 14px;
+            border-radius: 6px;
+            font-size: 0.85rem;
+            font-weight: 700;
+        }
+        
+        .pick-card-price {
+            position: absolute;
+            top: 12px;
+            right: 12px;
+            background: var(--ocean-deep);
+            color: var(--white);
+            padding: 8px 14px;
+            border-radius: 6px;
+            font-size: 1.1rem;
+            font-weight: 700;
+        }
+        
+        .pick-card-content {
+            padding: 16px 20px 20px;
+        }
+        
+        .pick-card-company {
+            font-size: 0.75rem;
+            color: var(--ocean-light);
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 4px;
+        }
+        
+        .pick-card-content h3 {
+            font-size: 1.1rem;
+            color: var(--ocean-deep);
+            margin-bottom: 8px;
+            font-weight: 700;
+        }
+        
+        .pick-card-meta {
+            display: flex;
+            gap: 12px;
+            margin-bottom: 12px;
+            font-size: 0.8rem;
+            color: var(--text-muted);
+        }
+        
+        .pick-card-cta {
+            display: block;
+            background: var(--accent);
+            color: var(--accent-text);
+            text-align: center;
+            padding: 12px 16px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 0.9rem;
+            min-height: 48px;
+        }
+        
+        .top-picks-divider {
+            text-align: center;
+            padding: 24px 0 8px;
+            color: var(--text-muted);
+            font-size: 0.9rem;
         }
         
         .tours {
@@ -639,12 +798,12 @@
         <div class="hero-video__overlay"></div>
         <div class="hero-video__content">
             <span class="hero-video__badge">Luxury Private Charters</span>
-            <h1 class="hero-video__title">Your Yacht. Your Crew.<br>Your Key West.</h1>
-            <p class="hero-video__subtitle">Premium catamarans, yachts, and sailing vessels. Proposals, anniversaries, celebrations done right.</p>
+            <h1 class="hero-video__title">Luxury Private Boat Charters<br>in Key West</h1>
+            <p class="hero-video__subtitle">Compare hand-selected yachts and catamarans for proposals, anniversaries, and milestone celebrations.</p>
             <div class="hero-video__stats">
                 <div class="hero-video__stat">
-                    <div class="hero-video__stat-number">$965+</div>
-                    <div class="hero-video__stat-label">Per charter</div>
+                    <div class="hero-video__stat-number">From $965</div>
+                    <div class="hero-video__stat-label">Private charter</div>
                 </div>
                 <div class="hero-video__stat">
                     <div class="hero-video__stat-number">Crewed</div>
@@ -655,7 +814,8 @@
                     <div class="hero-video__stat-label">VIP rated</div>
                 </div>
             </div>
-            <a href="#tours" class="hero-video__cta" onclick="trackBookingClick('Hero CTA', 'hero', 0)">View Fleet</a>
+            <a href="#top-picks" class="hero-video__cta" onclick="gtag('event','scroll_to_tours',{page_type:'private-boat-charters'})">Compare Luxury Boats</a>
+            <p style="margin-top: 12px; font-size: 0.85rem; opacity: 0.9;">Not sure which boat fits your occasion? <a href="#top-picks" style="color: var(--accent); text-decoration: underline;">See our picks →</a></p>
         </div>
     </section>
     
@@ -687,6 +847,54 @@
                     <div class="best-for-pill">🎉 Bachelor Parties</div>
                 </div>
             </div>
+        </div>
+    </section>
+    
+    <!-- TOP PICKS MODULE -->
+    <section class="top-picks" id="top-picks">
+        <div class="top-picks-inner">
+            <div class="section-label">Editor's Picks</div>
+            <h2 class="section-title">Top 3 Luxury Charters</h2>
+            <p class="top-picks-intro">Compare hand-selected yachts — we match the right boat to your occasion.</p>
+            <div class="top-picks-grid">
+                <div class="pick-card">
+                    <div class="pick-card-image" style="background-image: url('https://cdn.filestackcontent.com/dUz5aAyR9CR0PeWgW3Jj')">
+                        <span class="pick-card-label">💍 Romantic / Proposal</span>
+                        <span class="pick-card-price">$995</span>
+                    </div>
+                    <div class="pick-card-content">
+                        <div class="pick-card-company">Six Fins Charter</div>
+                        <h3>Private Romantic Sunset Cruise</h3>
+                        <div class="pick-card-meta"><span>⏱ 3 hours</span><span>👥 Private</span></div>
+                        <a href="https://fareharbor.com/embeds/book/sixfinscharter/items/532157/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&full-items=yes&flow=no" target="_blank" class="pick-card-cta" onclick="trackBookingClick('Private Romantic Sunset', '532157', 995)">Check Availability</a>
+                    </div>
+                </div>
+                <div class="pick-card">
+                    <div class="pick-card-image" style="background-image: url('https://cdn.filestackcontent.com/decacu4jS1KjdaOl3XbS')">
+                        <span class="pick-card-label">🎉 Group Celebration</span>
+                        <span class="pick-card-price">$2,250</span>
+                    </div>
+                    <div class="pick-card-content">
+                        <div class="pick-card-company">Laroma Yachts Florida</div>
+                        <h3>The Somewhere - Lagoon 450</h3>
+                        <div class="pick-card-meta"><span>⏱ 8 hours</span><span>👥 Up to 12</span></div>
+                        <a href="https://fareharbor.com/embeds/book/laromayachtsflorida/items/638423/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&full-items=yes&flow=no" target="_blank" class="pick-card-cta" onclick="trackBookingClick('The Somewhere Lagoon 450', '638423', 2250)">Check Availability</a>
+                    </div>
+                </div>
+                <div class="pick-card">
+                    <div class="pick-card-image" style="background-image: url('https://cdn.filestackcontent.com/bGLv6r3zS7msRvkAUQTW')">
+                        <span class="pick-card-label">💎 Ultra-Luxury</span>
+                        <span class="pick-card-price">$1,372</span>
+                    </div>
+                    <div class="pick-card-content">
+                        <div class="pick-card-company">Sail Away Key West</div>
+                        <h3>Sugar Magnolia - Lagoon 42</h3>
+                        <div class="pick-card-meta"><span>⏱ 4 hours</span><span>👥 Private</span></div>
+                        <a href="https://fareharbor.com/embeds/book/sailawaykeywest/items/404733/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&full-items=yes&flow=no" target="_blank" class="pick-card-cta" onclick="trackBookingClick('Sugar Magnolia Lagoon 42', '404733', 1372)">Check Availability</a>
+                    </div>
+                </div>
+            </div>
+            <p class="top-picks-divider">— or browse all luxury charters below —</p>
         </div>
     </section>
     
@@ -894,7 +1102,7 @@
         </div>
     </div>
     
-    <section class="faq">
+    <section class="faq" id="faq">
         <video class="faq-video" id="faqVideo" autoplay muted loop playsinline>
             <source src="wtpa_hero_drone.mp4" type="video/mp4">
         </video>
