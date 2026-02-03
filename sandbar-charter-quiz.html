@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Your Perfect Sandbar Trip | Key West Sandbar Tours</title>
+    <meta name="description" content="Answer 5 quick questions to find the perfect private sandbar charter in Key West for your group.">
+    
+    <!-- GA4 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-67D7X60CJF"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-67D7X60CJF');
+    </script>
+    
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        :root {
+            --sand: #F5E6D3;
+            --navy: #0A3D62;
+            --teal: #06B6D4;
+            --teal-dark: #0891B2;
+            --white: #FFFFFF;
+            --text: #1A1A2E;
+            --muted: #6B7280;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: var(--sand);
+            color: var(--text);
+            min-height: 100vh;
+        }
+        
+        .header {
+            background: var(--navy);
+            padding: 12px 16px;
+        }
+        .header a {
+            color: white;
+            text-decoration: none;
+            font-size: 13px;
+        }
+        
+        .quiz-wrap {
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 20px 16px 40px;
+        }
+        
+        .progress {
+            height: 4px;
+            background: #ddd;
+            border-radius: 2px;
+            margin-bottom: 8px;
+        }
+        .progress-fill {
+            height: 100%;
+            background: var(--teal);
+            border-radius: 2px;
+            transition: width 0.3s;
+        }
+        .progress-text {
+            font-size: 12px;
+            color: var(--muted);
+            text-align: center;
+            margin-bottom: 24px;
+        }
+        
+        .question {
+            display: none;
+            animation: fadeIn 0.25s ease;
+        }
+        .question.active { display: block; }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(8px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .q-emoji { font-size: 40px; text-align: center; margin-bottom: 12px; }
+        .q-title { font-size: 22px; font-weight: 700; text-align: center; margin-bottom: 6px; color: var(--navy); }
+        .q-sub { font-size: 13px; color: var(--muted); text-align: center; margin-bottom: 20px; }
+        
+        .options { display: grid; gap: 10px; }
+        .opt {
+            background: white;
+            border: 2px solid #e0e0e0;
+            border-radius: 10px;
+            padding: 14px 16px;
+            cursor: pointer;
+            transition: all 0.15s;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        .opt:hover { border-color: var(--teal); }
+        .opt.selected { border-color: var(--teal); background: rgba(6,182,212,0.1); }
+        .opt-emoji { font-size: 24px; }
+        .opt-text { font-weight: 600; font-size: 14px; }
+        .opt-sub { font-size: 12px; color: var(--muted); }
+        
+        .nav { display: flex; gap: 10px; margin-top: 24px; }
+        .btn-back {
+            background: transparent;
+            border: 2px solid #ccc;
+            color: #666;
+            padding: 12px 20px;
+            border-radius: 8px;
+            font-size: 14px;
+            font-weight: 600;
+            cursor: pointer;
+        }
+        .btn-next {
+            flex: 1;
+            background: var(--teal);
+            border: none;
+            color: white;
+            padding: 12px 20px;
+            border-radius: 8px;
+            font-size: 14px;
+            font-weight: 700;
+            cursor: pointer;
+            opacity: 0.4;
+            pointer-events: none;
+            transition: opacity 0.2s;
+        }
+        .btn-next.enabled { opacity: 1; pointer-events: auto; }
+        
+        .loading { display: none; text-align: center; padding: 80px 20px; }
+        .loading.active { display: block; }
+        .spinner {
+            width: 40px; height: 40px;
+            border: 3px solid #e0e0e0;
+            border-top-color: var(--teal);
+            border-radius: 50%;
+            animation: spin 0.8s linear infinite;
+            margin: 0 auto 16px;
+        }
+        @keyframes spin { to { transform: rotate(360deg); } }
+        
+        .results { display: none; }
+        .results.active { display: block; }
+        .results-header { text-align: center; margin-bottom: 20px; }
+        .results-header h1 { font-size: 24px; margin-bottom: 4px; color: var(--navy); }
+        .results-header p { font-size: 13px; color: var(--muted); }
+        .results-count { font-size: 12px; color: var(--muted); margin-top: 4px; }
+        
+        .tour-card {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            margin-bottom: 14px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+            border: 2px solid transparent;
+        }
+        .tour-card:first-child { border-color: var(--teal); }
+        .tour-img { width: 100%; height: 160px; object-fit: cover; background: #eee; }
+        .tour-body { padding: 14px; }
+        .tour-badge {
+            display: inline-block;
+            background: var(--teal);
+            color: white;
+            font-size: 10px;
+            font-weight: 700;
+            padding: 4px 10px;
+            border-radius: 12px;
+            margin-bottom: 8px;
+            text-transform: uppercase;
+        }
+        .tour-head { display: flex; justify-content: space-between; gap: 12px; margin-bottom: 4px; }
+        .tour-name { font-weight: 700; font-size: 15px; flex: 1; color: var(--navy); }
+        .tour-price { font-weight: 700; font-size: 18px; color: var(--teal-dark); white-space: nowrap; }
+        .tour-meta { font-size: 12px; color: var(--muted); margin-bottom: 8px; }
+        .tour-match {
+            font-size: 12px;
+            color: var(--navy);
+            background: rgba(6,182,212,0.15);
+            padding: 8px 10px;
+            border-radius: 6px;
+            margin-bottom: 12px;
+        }
+        .tour-cta {
+            display: block;
+            background: var(--teal);
+            color: white;
+            text-align: center;
+            padding: 12px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 14px;
+        }
+        
+        .more-results { text-align: center; margin: 16px 0; }
+        .more-btn {
+            background: white;
+            border: 2px solid var(--navy);
+            color: var(--navy);
+            padding: 10px 24px;
+            border-radius: 8px;
+            font-weight: 600;
+            cursor: pointer;
+        }
+        
+        .email-box {
+            background: white;
+            border: 2px dashed var(--teal);
+            border-radius: 12px;
+            padding: 18px;
+            text-align: center;
+            margin-top: 8px;
+        }
+        .email-box h3 { font-size: 15px; margin-bottom: 6px; color: var(--navy); }
+        .email-box p { font-size: 12px; color: var(--muted); margin-bottom: 12px; }
+        .email-form { display: flex; gap: 8px; flex-direction: column; }
+        .email-input {
+            flex: 1;
+            padding: 12px;
+            border: 2px solid #e0e0e0;
+            border-radius: 6px;
+            font-size: 16px;
+        }
+        .email-btn {
+            background: var(--navy);
+            color: white;
+            border: none;
+            padding: 12px 16px;
+            border-radius: 6px;
+            font-weight: 600;
+            cursor: pointer;
+        }
+        .email-success { display: none; color: #059669; font-weight: 600; }
+        
+        .restart { text-align: center; margin-top: 20px; }
+        .restart a { color: var(--muted); font-size: 12px; }
+        
+        @media (min-width: 500px) {
+            .email-form { flex-direction: row; }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <a href="/private-sandbar-charters.html">← Back to Sandbar Charters</a>
+    </div>
+    
+    <div class="quiz-wrap">
+        <div class="progress">
+            <div class="progress-fill" id="prog" style="width:20%"></div>
+        </div>
+        <div class="progress-text"><span id="step">1</span> of 5</div>
+        
+        <!-- Q1: Who's Coming -->
+        <div class="question active" id="q1">
+            <div class="q-emoji">👥</div>
+            <h2 class="q-title">Who's coming?</h2>
+            <p class="q-sub">We'll match you with the right boat</p>
+            <div class="options">
+                <div class="opt" data-v="family" onclick="pick(this,'who')">
+                    <span class="opt-emoji">👨‍👩‍👧‍👦</span>
+                    <div><div class="opt-text">Family with kids</div><div class="opt-sub">Safe, shallow, fun for all ages</div></div>
+                </div>
+                <div class="opt" data-v="couple" onclick="pick(this,'who')">
+                    <span class="opt-emoji">💑</span>
+                    <div><div class="opt-text">Just the two of us</div><div class="opt-sub">Romantic day on the water</div></div>
+                </div>
+                <div class="opt" data-v="friends" onclick="pick(this,'who')">
+                    <span class="opt-emoji">🎉</span>
+                    <div><div class="opt-text">Friend group</div><div class="opt-sub">BYOB, good vibes</div></div>
+                </div>
+                <div class="opt" data-v="mixed" onclick="pick(this,'who')">
+                    <span class="opt-emoji">🌴</span>
+                    <div><div class="opt-text">Mixed group / family reunion</div><div class="opt-sub">Adults, kids, everyone</div></div>
+                </div>
+            </div>
+            <div class="nav">
+                <button class="btn-next" id="n1" onclick="next(2)">Continue →</button>
+            </div>
+        </div>
+        
+        <!-- Q2: Group Size -->
+        <div class="question" id="q2">
+            <div class="q-emoji">🛥️</div>
+            <h2 class="q-title">How many guests?</h2>
+            <p class="q-sub">Including yourself</p>
+            <div class="options">
+                <div class="opt" data-v="small" onclick="pick(this,'size')">
+                    <span class="opt-emoji">2️⃣</span>
+                    <div><div class="opt-text">2-4 guests</div><div class="opt-sub">Cozy trip</div></div>
+                </div>
+                <div class="opt" data-v="medium" onclick="pick(this,'size')">
+                    <span class="opt-emoji">6️⃣</span>
+                    <div><div class="opt-text">5-6 guests</div><div class="opt-sub">Perfect for most boats</div></div>
+                </div>
+                <div class="opt" data-v="large" onclick="pick(this,'size')">
+                    <span class="opt-emoji">🎊</span>
+                    <div><div class="opt-text">7-12 guests</div><div class="opt-sub">Larger vessel needed</div></div>
+                </div>
+                <div class="opt" data-v="huge" onclick="pick(this,'size')">
+                    <span class="opt-emoji">🚢</span>
+                    <div><div class="opt-text">13+ guests</div><div class="opt-sub">Big group, big boat</div></div>
+                </div>
+            </div>
+            <div class="nav">
+                <button class="btn-back" onclick="back(1)">← Back</button>
+                <button class="btn-next" id="n2" onclick="next(3)">Continue →</button>
+            </div>
+        </div>
+        
+        <!-- Q3: Main Activity -->
+        <div class="question" id="q3">
+            <div class="q-emoji">🤿</div>
+            <h2 class="q-title">What do you want to do most?</h2>
+            <p class="q-sub">Pick your main activity</p>
+            <div class="options">
+                <div class="opt" data-v="relaxing" onclick="pick(this,'activity')">
+                    <span class="opt-emoji">🏝️</span>
+                    <div><div class="opt-text">Just chill at a sandbar</div><div class="opt-sub">Float, swim, relax, drink</div></div>
+                </div>
+                <div class="opt" data-v="snorkeling" onclick="pick(this,'activity')">
+                    <span class="opt-emoji">🐠</span>
+                    <div><div class="opt-text">Snorkeling</div><div class="opt-sub">See fish, coral, sea life</div></div>
+                </div>
+                <div class="opt" data-v="wildlife" onclick="pick(this,'activity')">
+                    <span class="opt-emoji">🐬</span>
+                    <div><div class="opt-text">Dolphin watching</div><div class="opt-sub">Wildlife encounters</div></div>
+                </div>
+                <div class="opt" data-v="adventure" onclick="pick(this,'activity')">
+                    <span class="opt-emoji">🧭</span>
+                    <div><div class="opt-text">Island hopping / exploring</div><div class="opt-sub">See multiple spots</div></div>
+                </div>
+            </div>
+            <div class="nav">
+                <button class="btn-back" onclick="back(2)">← Back</button>
+                <button class="btn-next" id="n3" onclick="next(4)">Continue →</button>
+            </div>
+        </div>
+        
+        <!-- Q4: Duration -->
+        <div class="question" id="q4">
+            <div class="q-emoji">⏱️</div>
+            <h2 class="q-title">How long?</h2>
+            <p class="q-sub">Half day = morning or afternoon</p>
+            <div class="options">
+                <div class="opt" data-v="half" onclick="pick(this,'duration')">
+                    <span class="opt-emoji">🌤️</span>
+                    <div><div class="opt-text">Half day (3-4 hours)</div><div class="opt-sub">Quick trip, less $$</div></div>
+                </div>
+                <div class="opt" data-v="full" onclick="pick(this,'duration')">
+                    <span class="opt-emoji">☀️</span>
+                    <div><div class="opt-text">Full day (6-8 hours)</div><div class="opt-sub">More time to explore</div></div>
+                </div>
+                <div class="opt" data-v="flexible" onclick="pick(this,'duration')">
+                    <span class="opt-emoji">🤷</span>
+                    <div><div class="opt-text">Flexible</div><div class="opt-sub">Show me both options</div></div>
+                </div>
+            </div>
+            <div class="nav">
+                <button class="btn-back" onclick="back(3)">← Back</button>
+                <button class="btn-next" id="n4" onclick="next(5)">Continue →</button>
+            </div>
+        </div>
+        
+        <!-- Q5: Budget -->
+        <div class="question" id="q5">
+            <div class="q-emoji">💰</div>
+            <h2 class="q-title">What's your budget?</h2>
+            <p class="q-sub">Total charter cost (not per person)</p>
+            <div class="options">
+                <div class="opt" data-v="budget" onclick="pick(this,'budget')">
+                    <span class="opt-emoji">💵</span>
+                    <div><div class="opt-text">Under $700</div><div class="opt-sub">Great value options</div></div>
+                </div>
+                <div class="opt" data-v="mid" onclick="pick(this,'budget')">
+                    <span class="opt-emoji">💎</span>
+                    <div><div class="opt-text">$700 - $1,000</div><div class="opt-sub">More boat, more time</div></div>
+                </div>
+                <div class="opt" data-v="premium" onclick="pick(this,'budget')">
+                    <span class="opt-emoji">👑</span>
+                    <div><div class="opt-text">$1,000+</div><div class="opt-sub">Premium experience</div></div>
+                </div>
+            </div>
+            <div class="nav">
+                <button class="btn-back" onclick="back(4)">← Back</button>
+                <button class="btn-next" id="n5" onclick="showResults()">See My Matches 🏝️</button>
+            </div>
+        </div>
+        
+        <!-- Loading -->
+        <div class="loading" id="loading">
+            <div class="spinner"></div>
+            <div>Finding your perfect sandbar trip...</div>
+        </div>
+        
+        <!-- Results -->
+        <div class="results" id="results">
+            <div class="results-header">
+                <h1>Your Perfect Matches 🏝️</h1>
+                <p>Curated for your group</p>
+                <div class="results-count" id="matchCount"></div>
+            </div>
+            <div id="tourResults"></div>
+            <div class="more-results" id="moreSection" style="display:none;">
+                <button class="more-btn" onclick="showMore()">Show More Options</button>
+            </div>
+            
+            <div class="email-box">
+                <h3>📧 Save Your Results</h3>
+                <p>Get these options + our "Sandbar Trip Packing Checklist"</p>
+                <form class="email-form" id="emailForm" onsubmit="submitEmail(event)">
+                    <input type="email" class="email-input" id="emailInput" placeholder="your@email.com" required>
+                    <button type="submit" class="email-btn">Send It</button>
+                </form>
+                <div class="email-success" id="emailOk">✓ Sent! Check your inbox</div>
+            </div>
+            
+            <div class="restart">
+                <a href="#" onclick="restart()">↻ Start over</a>
+            </div>
+        </div>
+    </div>
+
+<script>
+// Sandbar tour database - curated private charters
+const TOURS = [
+    // FAMILY FAVORITES
+    {name:"Sandbar Snorkel Dolphin Full Day", price:901, company:"Conch Queen Charters", image:"https://cdn.filestackcontent.com/PSniqjuXRSaTrcKulURZ", link:"https://fareharbor.com/embeds/book/conchqueencharters/items/669744/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&full-items=yes&flow=no", who:["family","mixed"], activity:["snorkeling","wildlife","relaxing"], duration:["full","flexible"], sizes:["small","medium"], budgets:["mid"], match:"Full day with snorkeling, dolphins & sandbar — perfect for families"},
+    {name:"Private Sandbar Tour", price:850, company:"Laid Back Key West", image:"https://cdn.filestackcontent.com/lfTU36coSeCs6VvlYDkg", link:"https://fareharbor.com/embeds/book/laidbackkeywest/items/265305/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&full-items=yes&flow=no", who:["family","friends","mixed"], activity:["relaxing","snorkeling"], duration:["half","flexible"], sizes:["small","medium"], budgets:["mid"], match:"4-hour trip to hidden sandbars — BYOB welcome, up to 6 guests"},
+    {name:"Custom Boat Charter", price:899, company:"Reel Paradise Charters", image:"https://cdn.filestackcontent.com/1nWGfBzQTAKTAQrYrWwE", link:"https://fareharbor.com/embeds/book/reelparadisecharters/items/643995/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&full-items=yes&flow=no", who:["family","friends","mixed"], activity:["relaxing","adventure"], duration:["half","full","flexible"], sizes:["small","medium"], budgets:["mid"], match:"Customize your trip — sandbar, snorkel, island hop, your choice"},
+    
+    // BUDGET OPTIONS
+    {name:"Half Day Private Charter", price:550, company:"Key West Charter Fishing", image:"https://cdn.filestackcontent.com/resize=w:1920/auto_image/FHvNJsKTzSiUNJAoJZHg", link:"https://fareharbor.com/embeds/book/keywestcharterfishing/items/270082/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&full-items=yes&flow=no", who:["couple","friends","family"], activity:["relaxing","adventure"], duration:["half","flexible"], sizes:["small"], budgets:["budget"], match:"Affordable 4-hour charter — great for couples or small groups"},
+    {name:"Private Sandbar Trips", price:649, company:"Conch Life Charters", image:"https://cdn.filestackcontent.com/resize=w:1920/auto_image/1eJ3k5URzycMT2J0xCPf", link:"https://fareharbor.com/embeds/book/keywestconchlifecharters/items/415845/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&full-items=yes&flow=no", who:["family","friends","couple"], activity:["relaxing"], duration:["full","flexible"], sizes:["small","medium"], budgets:["budget"], match:"8-hour trip with local captain — excellent value for full day"},
+    {name:"Private Sunset Charter", price:450, company:"Salty Soul Charters", image:"https://cdn.filestackcontent.com/resize=w:1920/auto_image/1eJ3k5URzycMT2J0xCPf", link:"https://fareharbor.com/embeds/book/saltysoulcharters/items/324535/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&full-items=yes&flow=no", who:["couple","friends"], activity:["relaxing"], duration:["half","flexible"], sizes:["small"], budgets:["budget"], match:"Budget-friendly sunset trip — sandbar + sunset combo"},
+    
+    // SNORKELING FOCUS
+    {name:"Reef and Sandbar Combo", price:980, company:"Island Vibe Charters", image:"https://cdn.filestackcontent.com/resize=w:1920/auto_image/y0gQVGwVS7OM0LXDlTHM", link:"https://fareharbor.com/embeds/book/islandvibecharters/items/412600/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&full-items=yes&flow=no", who:["family","friends","mixed"], activity:["snorkeling","relaxing"], duration:["full","flexible"], sizes:["small","medium"], budgets:["mid"], match:"Hit the reef AND the sandbar — best of both worlds"},
+    {name:"4hr Private Snorkel Sunset Combo", price:995, company:"Sunset Sail Key West", image:"https://cdn.filestackcontent.com/qTnwFMARSWxvLHPKXYKA", link:"https://fareharbor.com/embeds/book/sunsetsailkeywest/items/281626/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&full-items=yes&flow=no", who:["family","friends","couple"], activity:["snorkeling","relaxing"], duration:["half","flexible"], sizes:["small","medium"], budgets:["mid"], match:"Snorkel the reef then catch the sunset — 4 hours of adventure"},
+    
+    // WILDLIFE / DOLPHINS
+    {name:"Private Dolphin Playground Safari", price:995, company:"Six Fins Charter", image:"https://cdn.filestackcontent.com/dVPju7rSo279Z1WyNqlC", link:"https://fareharbor.com/embeds/book/sixfinscharter/items/532188/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&full-items=yes&flow=no", who:["family","mixed"], activity:["wildlife","adventure"], duration:["half","flexible"], sizes:["small","medium"], budgets:["mid"], match:"Dolphins in their natural habitat — kids love it"},
+    {name:"Private National Wildlife Refuge Eco Tour", price:995, company:"Six Fins Charter", image:"https://cdn.filestackcontent.com/dVPju7rSo279Z1WyNqlC", link:"https://fareharbor.com/embeds/book/sixfinscharter/items/532178/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&full-items=yes&flow=no", who:["family","mixed"], activity:["wildlife","adventure"], duration:["half","full","flexible"], sizes:["small","medium"], budgets:["mid"], match:"Exclusive wildlife refuge access — nature lover's dream"},
+    
+    // PREMIUM / LARGER GROUPS
+    {name:"Full Day Charter - Six Hours", price:925, company:"Salty Soul Charters", image:"https://cdn.filestackcontent.com/resize=w:1920/auto_image/1eJ3k5URzycMT2J0xCPf", link:"https://fareharbor.com/embeds/book/saltysoulcharters/items/324531/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&full-items=yes&flow=no", who:["family","friends","mixed"], activity:["relaxing","adventure"], duration:["full","flexible"], sizes:["small","medium"], budgets:["mid"], match:"Full 6-hour day — sandbars, snorkeling, dolphins, your itinerary"},
+    {name:"Full Day Trip", price:1700, company:"Charter SeaClusion", image:"https://cdn.filestackcontent.com/resize=w:1920/auto_image/FHvNJsKTzSiUNJAoJZHg", link:"https://fareharbor.com/embeds/book/charterseaclusion/items/271934/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&full-items=yes&flow=no", who:["friends","mixed"], activity:["relaxing","adventure"], duration:["full","flexible"], sizes:["medium","large"], budgets:["premium"], match:"Premium full-day on larger vessel — room for bigger groups"},
+    {name:"Southern Cross - Leopard 48", price:1543, company:"Sail Away Key West", image:"https://cdn.filestackcontent.com/bieLY8UBSGuBFXQq3iWy", link:"https://fareharbor.com/embeds/book/sailawaykeywest/items/335759/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&full-items=yes&flow=no", who:["friends","mixed"], activity:["relaxing","adventure"], duration:["full","flexible"], sizes:["medium","large","huge"], budgets:["premium"], match:"48ft catamaran — handles big groups in style"},
+    {name:"SNUBA Half Day Private Charter", price:2500, company:"Snuba of Key West", image:"https://cdn.filestackcontent.com/resize=w:1920/auto_image/FKuNVlRzSmOKLLb3ZQZA", link:"https://fareharbor.com/embeds/book/snubakeywest/items/271844/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&full-items=yes&flow=no", who:["friends","mixed"], activity:["snorkeling","adventure"], duration:["half","flexible"], sizes:["small","medium","large","huge"], budgets:["premium"], match:"Breathe underwater without scuba certification — bucket list"},
+    
+    // COUPLES / ROMANTIC
+    {name:"Private Romantic Sunset Cruise", price:995, company:"Six Fins Charter", image:"https://cdn.filestackcontent.com/dUz5aAyR9CR0PeWgW3Jj", link:"https://fareharbor.com/embeds/book/sixfinscharter/items/532157/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&full-items=yes&flow=no", who:["couple"], activity:["relaxing"], duration:["half","flexible"], sizes:["small"], budgets:["mid"], match:"Intimate sandbar + sunset — perfect for couples"},
+    {name:"Sunset Sail", price:850, company:"Sail Away Key West", image:"https://cdn.filestackcontent.com/8j7CsT9JRQaBm1m8dU8A", link:"https://fareharbor.com/embeds/book/sailawaykeywest/items/282398/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&full-items=yes&flow=no", who:["couple","friends"], activity:["relaxing"], duration:["half","flexible"], sizes:["small"], budgets:["mid"], match:"Classic catamaran sail — romantic vibes, golden hour"}
+];
+
+const A = {};
+let S = 1;
+let scoredTours = [];
+let showing = 3;
+
+function pick(el, key) {
+    el.parentElement.querySelectorAll('.opt').forEach(o => o.classList.remove('selected'));
+    el.classList.add('selected');
+    A[key] = el.dataset.v;
+    document.getElementById('n'+S).classList.add('enabled');
+    gtag('event', 'quiz_answer', {question: key, answer: A[key], quiz: 'sandbar'});
+}
+
+function next(n) {
+    document.getElementById('q'+S).classList.remove('active');
+    document.getElementById('q'+n).classList.add('active');
+    S = n;
+    document.getElementById('prog').style.width = (S*20)+'%';
+    document.getElementById('step').textContent = S;
+}
+
+function back(n) {
+    document.getElementById('q'+S).classList.remove('active');
+    document.getElementById('q'+n).classList.add('active');
+    S = n;
+    document.getElementById('prog').style.width = (S*20)+'%';
+    document.getElementById('step').textContent = S;
+}
+
+function showResults() {
+    document.getElementById('q5').classList.remove('active');
+    document.getElementById('loading').classList.add('active');
+    
+    scoredTours = TOURS.map(t => {
+        let score = 0;
+        
+        // Who match (highest weight)
+        if (t.who.includes(A.who)) score += 100;
+        
+        // Size match
+        if (t.sizes.includes(A.size)) score += 50;
+        
+        // Activity match
+        if (t.activity.includes(A.activity)) score += 50;
+        
+        // Duration match
+        if (t.duration.includes(A.duration)) score += 30;
+        
+        // Budget match
+        if (t.budgets.includes(A.budget)) score += 40;
+        
+        return {...t, score};
+    });
+    
+    scoredTours.sort((a, b) => {
+        if (b.score !== a.score) return b.score - a.score;
+        return a.price - b.price;
+    });
+    
+    scoredTours = scoredTours.filter(t => t.score >= 80);
+    
+    setTimeout(() => {
+        document.getElementById('loading').classList.remove('active');
+        showing = 3;
+        renderTours();
+        document.getElementById('results').classList.add('active');
+        gtag('event', 'quiz_complete', {...A, matches: scoredTours.length, quiz: 'sandbar'});
+    }, 1200);
+}
+
+function renderTours() {
+    const toShow = scoredTours.slice(0, showing);
+    const badges = ['🏆 Best Match', '🥈 Great Option', '🥉 Also Excellent'];
+    
+    document.getElementById('matchCount').textContent = 
+        `Found ${scoredTours.length} trips for your group`;
+    
+    document.getElementById('tourResults').innerHTML = toShow.map((t, i) => `
+        <div class="tour-card">
+            <img src="${t.image}" class="tour-img" alt="${t.name}" 
+                 onerror="this.style.background='linear-gradient(135deg,#06B6D4,#0A3D62)';this.style.height='120px';">
+            <div class="tour-body">
+                <span class="tour-badge">${badges[i] || '✓ Good Fit'}</span>
+                <div class="tour-head">
+                    <span class="tour-name">${t.name}</span>
+                    <span class="tour-price">$${t.price.toLocaleString()}</span>
+                </div>
+                <div class="tour-meta">${t.company}</div>
+                <div class="tour-match">✓ ${t.match}</div>
+                <a href="${t.link}" target="_blank" class="tour-cta" 
+                   onclick="trackClick('${t.name.replace(/'/g,"\\'")}',${t.price})">
+                    Check Availability →
+                </a>
+            </div>
+        </div>
+    `).join('');
+    
+    document.getElementById('moreSection').style.display = 
+        scoredTours.length > showing ? 'block' : 'none';
+}
+
+function showMore() {
+    showing += 5;
+    renderTours();
+    gtag('event', 'quiz_show_more', {showing, quiz: 'sandbar'});
+}
+
+function trackClick(name, price) {
+    gtag('event', 'booking_click', {
+        tour_name: name, 
+        tour_price: price, 
+        source: 'sandbar_quiz',
+        quiz_who: A.who,
+        quiz_activity: A.activity
+    });
+}
+
+function submitEmail(e) {
+    e.preventDefault();
+    const email = document.getElementById('emailInput').value;
+    gtag('event', 'quiz_email_capture', {...A, quiz: 'sandbar'});
+    
+    fetch('https://formspree.io/f/xpwzgkla', {
+        method: 'POST',
+        headers: {'Content-Type': 'application/json'},
+        body: JSON.stringify({
+            email, 
+            quiz: 'sandbar_charter',
+            answers: A,
+            top_matches: scoredTours.slice(0,3).map(t => t.name)
+        })
+    });
+    
+    document.getElementById('emailForm').style.display = 'none';
+    document.getElementById('emailOk').style.display = 'block';
+    localStorage.setItem('emailCaptured', 'true');
+}
+
+function restart() {
+    Object.keys(A).forEach(k => delete A[k]);
+    S = 1;
+    showing = 3;
+    document.querySelectorAll('.opt').forEach(o => o.classList.remove('selected'));
+    document.querySelectorAll('.btn-next').forEach(b => b.classList.remove('enabled'));
+    document.getElementById('results').classList.remove('active');
+    document.getElementById('q1').classList.add('active');
+    document.getElementById('prog').style.width = '20%';
+    document.getElementById('step').textContent = '1';
+    return false;
+}
+</script>
+</body>
+</html>
