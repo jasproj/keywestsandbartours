@@ -765,6 +765,234 @@
         
         .footer a { color: var(--white); text-decoration: none; }
         
+        /* ===== LEAD CAPTURE ELEMENTS ===== */
+        
+        /* 1. Sticky Quiz Bar */
+        .quiz-bar {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(135deg, #0A3D62 0%, #1565C0 100%);
+            padding: 12px 16px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 12px;
+            z-index: 1000;
+            box-shadow: 0 -4px 20px rgba(0,0,0,0.2);
+            transform: translateY(100%);
+            transition: transform 0.3s ease;
+        }
+        .quiz-bar.visible { transform: translateY(0); }
+        .quiz-bar-text {
+            color: var(--white);
+            font-size: 14px;
+            font-weight: 500;
+        }
+        .quiz-bar-text span { display: none; }
+        .quiz-bar-btn {
+            background: var(--accent);
+            color: var(--accent-text);
+            padding: 10px 18px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 13px;
+            white-space: nowrap;
+            min-height: 44px;
+            display: flex;
+            align-items: center;
+        }
+        .quiz-bar-close {
+            background: none;
+            border: none;
+            color: rgba(255,255,255,0.7);
+            font-size: 20px;
+            cursor: pointer;
+            padding: 8px;
+            line-height: 1;
+        }
+        @media (min-width: 600px) {
+            .quiz-bar-text span { display: inline; }
+        }
+        
+        /* 2. Inline Email Capture */
+        .email-capture {
+            background: linear-gradient(135deg, #FFFBEB 0%, #FEF3C7 100%);
+            border: 2px dashed var(--accent);
+            border-radius: 16px;
+            padding: 24px 20px;
+            margin: 0 auto 32px;
+            max-width: 500px;
+            text-align: center;
+        }
+        .email-capture h3 {
+            font-size: 18px;
+            color: var(--ocean-deep);
+            margin-bottom: 8px;
+        }
+        .email-capture p {
+            font-size: 14px;
+            color: var(--text-muted);
+            margin-bottom: 16px;
+        }
+        .email-capture-form {
+            display: flex;
+            gap: 8px;
+            flex-direction: column;
+        }
+        .email-capture-input {
+            flex: 1;
+            padding: 14px 16px;
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
+            font-size: 16px;
+            min-height: 48px;
+        }
+        .email-capture-input:focus {
+            outline: none;
+            border-color: var(--ocean-light);
+        }
+        .email-capture-btn {
+            background: var(--ocean-deep);
+            color: var(--white);
+            border: none;
+            padding: 14px 24px;
+            border-radius: 8px;
+            font-weight: 700;
+            font-size: 14px;
+            cursor: pointer;
+            min-height: 48px;
+        }
+        .email-capture-note {
+            font-size: 11px;
+            color: var(--text-muted);
+            margin-top: 10px;
+        }
+        .email-capture-success {
+            display: none;
+            color: #059669;
+            font-weight: 600;
+            padding: 12px;
+        }
+        @media (min-width: 500px) {
+            .email-capture-form { flex-direction: row; }
+        }
+        
+        /* 3. Exit Intent Popup */
+        .exit-popup-overlay {
+            display: none;
+            position: fixed;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: rgba(0,0,0,0.7);
+            z-index: 2000;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        .exit-popup-overlay.visible { display: flex; }
+        .exit-popup {
+            background: var(--white);
+            border-radius: 16px;
+            padding: 32px 24px;
+            max-width: 400px;
+            width: 100%;
+            text-align: center;
+            position: relative;
+            animation: popIn 0.3s ease;
+        }
+        @keyframes popIn {
+            from { transform: scale(0.9); opacity: 0; }
+            to { transform: scale(1); opacity: 1; }
+        }
+        .exit-popup-close {
+            position: absolute;
+            top: 12px; right: 12px;
+            background: none;
+            border: none;
+            font-size: 24px;
+            color: var(--text-muted);
+            cursor: pointer;
+            padding: 8px;
+            line-height: 1;
+        }
+        .exit-popup-emoji { font-size: 48px; margin-bottom: 12px; }
+        .exit-popup h3 {
+            font-size: 22px;
+            color: var(--ocean-deep);
+            margin-bottom: 8px;
+        }
+        .exit-popup p {
+            font-size: 14px;
+            color: var(--text-muted);
+            margin-bottom: 20px;
+        }
+        .exit-popup-form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .exit-popup-input {
+            padding: 14px 16px;
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
+            font-size: 16px;
+            min-height: 48px;
+        }
+        .exit-popup-btn {
+            background: var(--accent);
+            color: var(--accent-text);
+            border: none;
+            padding: 14px 24px;
+            border-radius: 8px;
+            font-weight: 700;
+            font-size: 15px;
+            cursor: pointer;
+            min-height: 48px;
+        }
+        .exit-popup-skip {
+            background: none;
+            border: none;
+            color: var(--text-muted);
+            font-size: 13px;
+            cursor: pointer;
+            margin-top: 8px;
+            text-decoration: underline;
+        }
+        
+        /* 4. Help Me Choose Button */
+        .hero-video__cta-group {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            align-items: center;
+        }
+        .hero-video__cta-secondary {
+            color: var(--white);
+            font-size: 14px;
+            font-weight: 600;
+            text-decoration: none;
+            border: 2px solid rgba(255,255,255,0.5);
+            padding: 12px 24px;
+            border-radius: 50px;
+            min-height: 44px;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            transition: all 0.2s;
+        }
+        .hero-video__cta-secondary:hover {
+            background: rgba(255,255,255,0.1);
+            border-color: var(--white);
+        }
+        @media (min-width: 500px) {
+            .hero-video__cta-group {
+                flex-direction: row;
+                gap: 16px;
+            }
+        }
+        
         @media (max-width: 600px) {
             .logo { font-size: 0.95rem; }
             .tours-grid { grid-template-columns: 1fr; }
@@ -814,8 +1042,10 @@
                     <div class="hero-video__stat-label">VIP rated</div>
                 </div>
             </div>
-            <a href="#top-picks" class="hero-video__cta" onclick="gtag('event','scroll_to_tours',{page_type:'private-boat-charters'})">Compare Luxury Boats</a>
-            <p style="margin-top: 12px; font-size: 0.85rem; opacity: 0.9;">Not sure which boat fits your occasion? <a href="#top-picks" style="color: var(--accent); text-decoration: underline;">See our picks →</a></p>
+            <div class="hero-video__cta-group">
+                <a href="#top-picks" class="hero-video__cta" onclick="gtag('event','scroll_to_tours',{page_type:'private-boat-charters'})">Compare Luxury Boats</a>
+                <a href="quiz/luxury-charter-quiz.html" class="hero-video__cta-secondary" onclick="gtag('event','quiz_start',{source:'hero'})">🤔 Help Me Choose</a>
+            </div>
         </div>
     </section>
     
@@ -895,6 +1125,18 @@
                 </div>
             </div>
             <p class="top-picks-divider">— or browse all luxury charters below —</p>
+            
+            <!-- Inline Email Capture -->
+            <div class="email-capture" id="inlineCapture">
+                <h3>📧 Planning a Special Occasion?</h3>
+                <p>Get our free "Luxury Charter Buyer's Checklist" + price drop alerts</p>
+                <form class="email-capture-form" id="inlineCaptureForm" onsubmit="submitInlineEmail(event)">
+                    <input type="email" class="email-capture-input" id="inlineEmail" placeholder="your@email.com" required>
+                    <button type="submit" class="email-capture-btn">Send It Free</button>
+                </form>
+                <div class="email-capture-success" id="inlineSuccess">✓ Check your inbox!</div>
+                <p class="email-capture-note">No spam. Unsubscribe anytime.</p>
+            </div>
         </div>
     </section>
     
@@ -1179,6 +1421,165 @@
                 toursGrid.appendChild(cards[j]);
             }
         }
+        
+        // ===== LEAD CAPTURE SCRIPTS =====
+        
+        // 1. Sticky Quiz Bar - show after 5 seconds or 30% scroll
+        const quizBar = document.getElementById('quizBar');
+        let quizBarShown = false;
+        let quizBarDismissed = sessionStorage.getItem('quizBarDismissed');
+        
+        function showQuizBar() {
+            if (!quizBarShown && !quizBarDismissed && quizBar) {
+                quizBar.classList.add('visible');
+                quizBarShown = true;
+                gtag('event', 'quiz_bar_shown', {page_type: 'private-boat-charters'});
+            }
+        }
+        
+        // Show after 5 seconds
+        setTimeout(showQuizBar, 5000);
+        
+        // Or show after scrolling 30%
+        window.addEventListener('scroll', () => {
+            const scrollPercent = (window.scrollY / (document.body.scrollHeight - window.innerHeight)) * 100;
+            if (scrollPercent > 30) showQuizBar();
+        });
+        
+        function closeQuizBar() {
+            quizBar.classList.remove('visible');
+            sessionStorage.setItem('quizBarDismissed', 'true');
+            gtag('event', 'quiz_bar_dismissed');
+        }
+        
+        // 2. Inline Email Capture
+        function submitInlineEmail(e) {
+            e.preventDefault();
+            const email = document.getElementById('inlineEmail').value;
+            
+            fetch('https://formspree.io/f/xpwzgkla', {
+                method: 'POST',
+                headers: {'Content-Type': 'application/json'},
+                body: JSON.stringify({
+                    email: email,
+                    source: 'inline_luxury_charters',
+                    page: 'private-boat-charters'
+                })
+            });
+            
+            document.getElementById('inlineCaptureForm').style.display = 'none';
+            document.getElementById('inlineSuccess').style.display = 'block';
+            localStorage.setItem('emailCaptured', 'true');
+            
+            gtag('event', 'email_capture', {
+                source: 'inline',
+                page_type: 'private-boat-charters'
+            });
+        }
+        
+        // 3. Exit Intent Popup
+        const exitPopup = document.getElementById('exitPopup');
+        let exitShown = false;
+        let emailCaptured = localStorage.getItem('emailCaptured');
+        
+        // Desktop: mouse leave
+        document.addEventListener('mouseleave', (e) => {
+            if (e.clientY < 10 && !exitShown && !emailCaptured) {
+                showExitPopup();
+            }
+        });
+        
+        // Mobile: back button or scroll up fast at top
+        let lastScrollY = 0;
+        let scrollUpCount = 0;
+        window.addEventListener('scroll', () => {
+            const currentScrollY = window.scrollY;
+            if (currentScrollY < 100 && lastScrollY > currentScrollY) {
+                scrollUpCount++;
+                if (scrollUpCount > 3 && !exitShown && !emailCaptured) {
+                    showExitPopup();
+                }
+            } else {
+                scrollUpCount = 0;
+            }
+            lastScrollY = currentScrollY;
+        });
+        
+        function showExitPopup() {
+            if (exitPopup && !exitShown && !emailCaptured) {
+                exitPopup.classList.add('visible');
+                exitShown = true;
+                document.body.style.overflow = 'hidden';
+                gtag('event', 'exit_popup_shown', {page_type: 'private-boat-charters'});
+            }
+        }
+        
+        function closeExitPopup() {
+            exitPopup.classList.remove('visible');
+            document.body.style.overflow = '';
+        }
+        
+        function skipExitPopup() {
+            closeExitPopup();
+            sessionStorage.setItem('exitPopupSkipped', 'true');
+        }
+        
+        function submitExitEmail(e) {
+            e.preventDefault();
+            const email = document.getElementById('exitEmail').value;
+            
+            fetch('https://formspree.io/f/xpwzgkla', {
+                method: 'POST',
+                headers: {'Content-Type': 'application/json'},
+                body: JSON.stringify({
+                    email: email,
+                    source: 'exit_popup_luxury_charters',
+                    page: 'private-boat-charters'
+                })
+            });
+            
+            document.getElementById('exitForm').innerHTML = '<p style="color:#059669;font-weight:600;padding:20px 0;">✓ You\'re on the list! Check your inbox.</p>';
+            localStorage.setItem('emailCaptured', 'true');
+            
+            gtag('event', 'email_capture', {
+                source: 'exit_popup',
+                page_type: 'private-boat-charters'
+            });
+            
+            setTimeout(closeExitPopup, 2000);
+        }
+        
+        // Close popup on overlay click
+        exitPopup?.addEventListener('click', (e) => {
+            if (e.target === exitPopup) closeExitPopup();
+        });
+        
+        // Close on escape key
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') closeExitPopup();
+        });
     </script>
+    
+    <!-- Sticky Quiz Bar -->
+    <div class="quiz-bar" id="quizBar">
+        <span class="quiz-bar-text">🤔 <span>Not sure which charter fits?</span> Take our 60-sec quiz</span>
+        <a href="quiz/luxury-charter-quiz.html" class="quiz-bar-btn" onclick="gtag('event','quiz_start',{source:'sticky_bar'})">Find My Boat →</a>
+        <button class="quiz-bar-close" onclick="closeQuizBar()" aria-label="Close">×</button>
+    </div>
+    
+    <!-- Exit Intent Popup -->
+    <div class="exit-popup-overlay" id="exitPopup">
+        <div class="exit-popup">
+            <button class="exit-popup-close" onclick="closeExitPopup()" aria-label="Close">×</button>
+            <div class="exit-popup-emoji">⚓</div>
+            <h3>Before You Go...</h3>
+            <p>Save these charters & get notified when prices drop</p>
+            <form class="exit-popup-form" id="exitForm" onsubmit="submitExitEmail(event)">
+                <input type="email" class="exit-popup-input" id="exitEmail" placeholder="your@email.com" required>
+                <button type="submit" class="exit-popup-btn">Save My Picks</button>
+            </form>
+            <button class="exit-popup-skip" onclick="skipExitPopup()">No thanks, I'll remember</button>
+        </div>
+    </div>
 </body>
 </html>
