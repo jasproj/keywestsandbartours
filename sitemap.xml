@@ -1,56 +1,83 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Homepage -->
   <url>
     <loc>https://keywestsandbartours.com/</loc>
-    <lastmod>2026-01-09</lastmod>
+    <lastmod>2026-03-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
+  
+  <!-- Landing Pages (Google Ads) -->
+  <url>
+    <loc>https://keywestsandbartours.com/private-sandbar-charters.html</loc>
+    <lastmod>2026-03-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+  </url>
+  <url>
+    <loc>https://keywestsandbartours.com/bachelorette-party-boats.html</loc>
+    <lastmod>2026-03-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+  </url>
+  <url>
+    <loc>https://keywestsandbartours.com/sunset-cruises.html</loc>
+    <lastmod>2026-03-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+  </url>
+  
+  <!-- Location Pages -->
   <url>
     <loc>https://keywestsandbartours.com/key-west.html</loc>
-    <lastmod>2026-01-09</lastmod>
+    <lastmod>2026-03-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://keywestsandbartours.com/marathon.html</loc>
-    <lastmod>2026-01-09</lastmod>
+    <lastmod>2026-03-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://keywestsandbartours.com/key-largo.html</loc>
-    <lastmod>2026-01-09</lastmod>
+    <lastmod>2026-03-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://keywestsandbartours.com/islamorada.html</loc>
-    <lastmod>2026-01-09</lastmod>
+    <lastmod>2026-03-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://keywestsandbartours.com/stock-island.html</loc>
-    <lastmod>2026-01-09</lastmod>
+    <lastmod>2026-03-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://keywestsandbartours.com/lower-keys.html</loc>
-    <lastmod>2026-01-09</lastmod>
+    <lastmod>2026-03-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
+  
+  <!-- Info Pages -->
   <url>
     <loc>https://keywestsandbartours.com/about.html</loc>
-    <lastmod>2026-01-09</lastmod>
+    <lastmod>2026-03-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
+  
+  <!-- Blog -->
   <url>
     <loc>https://keywestsandbartours.com/blog/</loc>
-    <lastmod>2026-01-09</lastmod>
+    <lastmod>2026-03-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
