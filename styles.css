@@ -1546,3 +1546,50 @@ body {
 .hide-scrollbar::-webkit-scrollbar {
     display: none;
 }
+/* ===========================================
+   MOBILE HERO FIX - Add this at end of styles.css
+   Target: Hero ≤120px on mobile (was ~280px)
+   =========================================== */
+
+@media (max-width: 767px) {
+    /* Compact hero padding */
+    .hero {
+        padding: 52px 15px 8px; /* Reduced from 65px 15px 15px */
+    }
+    
+    /* Smaller logo */
+    .hero-logo {
+        height: 35px; /* Reduced from 80px */
+        margin-bottom: 4px;
+    }
+    
+    /* Tighter headline */
+    .hero h1 {
+        font-size: 1.1rem;
+        margin-bottom: 3px;
+    }
+    
+    /* Hide subtitle on mobile - not needed */
+    .hero p {
+        display: none;
+    }
+    
+    /* Compact search bar */
+    .hero-search {
+        max-width: 100%;
+    }
+    
+    .hero-search input {
+        padding: 10px 12px;
+    }
+    
+    .hero-search button {
+        padding: 10px 16px;
+        min-height: 44px;
+    }
+    
+    /* Hide ticker on mobile - saves ~30px */
+    .ticker-wrap {
+        display: none;
+    }
+}
