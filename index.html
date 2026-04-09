@@ -155,7 +155,7 @@
         <h2>Key Decisions</h2>
         <p class="areas-subtitle">Each key has its own personality.<br class="mobile-break"> Find your perfect match.</p>
         <div class="areas-grid">
-            <a href="key-west.html" class="area-card">
+            <a href="key-west.html" class="area-card" onclick="trackBookingClick('Key West Tours', 'key-west', 'key-west')">
                 <div class="area-img" style="background-image: url('southernmost-point.jpg')"></div>
                 <div class="area-content">
                     <h3>Key West</h3>
@@ -163,7 +163,7 @@
                     <span class="area-count">573 Adventures</span>
                 </div>
             </a>
-            <a href="marathon.html" class="area-card">
+            <a href="marathon.html" class="area-card" onclick="trackBookingClick('Marathon Tours', 'marathon', 'marathon')">
                 <div class="area-img" style="background-image: url('https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=600')"></div>
                 <div class="area-content">
                     <h3>Marathon</h3>
@@ -171,7 +171,7 @@
                     <span class="area-count">123 Adventures</span>
                 </div>
             </a>
-            <a href="key-largo.html" class="area-card">
+            <a href="key-largo.html" class="area-card" onclick="trackBookingClick('Key Largo Tours', 'key-largo', 'key-largo')">
                 <div class="area-img" style="background-image: url('key-largo-image.jpg')"></div>
                 <div class="area-content">
                     <h3>Key Largo</h3>
@@ -179,7 +179,7 @@
                     <span class="area-count">83 Adventures</span>
                 </div>
             </a>
-            <a href="islamorada.html" class="area-card">
+            <a href="islamorada.html" class="area-card" onclick="trackBookingClick('Islamorada Tours', 'islamorada', 'islamorada')">
                 <div class="area-img" style="background-image: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=600')"></div>
                 <div class="area-content">
                     <h3>Islamorada</h3>
@@ -187,7 +187,7 @@
                     <span class="area-count">82 Adventures</span>
                 </div>
             </a>
-            <a href="stock-island.html" class="area-card">
+            <a href="stock-island.html" class="area-card" onclick="trackBookingClick('Stock Island Tours', 'stock-island', 'stock-island')">
                 <div class="area-img" style="background-image: url('https://images.unsplash.com/photo-1605281317010-fe5ffe798166?w=600')"></div>
                 <div class="area-content">
                     <h3>Stock Island</h3>
@@ -195,7 +195,7 @@
                     <span class="area-count">70 Adventures</span>
                 </div>
             </a>
-            <a href="lower-keys.html" class="area-card">
+            <a href="lower-keys.html" class="area-card" onclick="trackBookingClick('Lower Keys Tours', 'lower-keys', 'lower-keys')">
                 <div class="area-img" style="background-image: url('big-pine-key-image.jpg')"></div>
                 <div class="area-content">
                     <h3>Lower Keys</h3>
@@ -271,7 +271,7 @@
                 <option value="name">A-Z</option>
             </select>
             
-            <button class="filter-clear" onclick="clearFilters()">Clear All</button>
+            <button class="filter-clear" onclick="trackBookingClick('Filter - Clear All', 'filter-clear', 'all'); clearFilters()">Clear All</button>
         </div>
         
         <div class="tours-info">
@@ -283,7 +283,7 @@
             <p class="loading">Loading adventures...</p>
         </div>
         
-        <button id="load-more" class="load-more" onclick="loadMore()">Load More Adventures →</button>
+        <button id="load-more" class="load-more" onclick="trackBookingClick('Load More Adventures', 'load-more', 'all'); loadMore()">Load More Adventures →</button>
     </section>
 
     <section class="why-section">
@@ -379,7 +379,7 @@
         </div>
     </footer>
 
-    <a href="#tours-section" class="mobile-cta">🏝️ Find Your Adventure</a>
+    <a href="#tours-section" class="mobile-cta" onclick="trackBookingClick('Find Your Adventure', 'mobile-cta', 'all')">🏝️ Find Your Adventure</a>
 
     <script src="app.js"></script>
 </body>
