@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Private Boat Charters Key West | Key West Sandbar Tours</title>
+    <meta name="description" content="Private boat charters in Key West. Rent a boat for your group. Custom itineraries, fishing, snorkeling, celebrations.">
+    <link rel="canonical" href="https://keywestsandbartours.com/private-charters.html">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+    
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://keywestsandbartours.com/private-charters.html">
+    <meta property="og:title" content="Private Boat Charters Key West">
+    <meta property="og:description" content="Private boat charters in Key West. Rent a boat for your group. Custom itineraries, fishing, snorkeling, celebrations.">
+    <meta property="og:image" content="https://keywestsandbartours.com/og-image.jpg">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    
+    <!-- Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://keywestsandbartours.com/"},
+            {"@type": "ListItem", "position": 2, "name": "Private Boat Charters Key West", "item": "https://keywestsandbartours.com/private-charters.html"}
+        ]
+    }
+    </script>
+    
+    <!-- GA4 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-67D7X60CJF"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-67D7X60CJF');
+        
+        function trackBookingClick(tourName, tourId, price) {
+            gtag('event', 'booking_click', {
+                'event_category': 'conversion',
+                'event_label': tourName,
+                'tour_id': tourId,
+                'value': price,
+                'page_type': 'private-charters'
+            });
+        }
+    </script>
+    
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        :root {
+            --sand: #F5E6D3;
+            --ocean-deep: #0A3D62;
+            --ocean-light: #1E90FF;
+            --white: #FFFFFF;
+            --off-white: #FAFAFA;
+            --text-dark: #1A1A2E;
+            --text-muted: #6B7280;
+            --accent: #F59E0B;
+        }
+
+        body { font-family: 'DM Sans', sans-serif; color: var(--text-dark); line-height: 1.6; }
+        .header { background: var(--white); padding: 16px 20px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+        .header-inner { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-size: 1.1rem; font-weight: 700; color: var(--ocean-deep); text-decoration: none; display: flex; align-items: center; gap: 8px; }
+        .logo-img { width: 24px; height: 24px; }
+        
+        .hero { background: linear-gradient(135deg, var(--ocean-deep) 0%, var(--ocean-light) 100%); color: var(--white); padding: 48px 20px; text-align: center; }
+        .hero h1 { font-family: 'Playfair Display', serif; font-size: 2.5rem; margin-bottom: 16px; }
+        .hero p { font-size: 1.1rem; margin-bottom: 24px; opacity: 0.95; }
+        .hero a { display: inline-block; background: var(--accent); color: var(--ocean-deep); padding: 14px 32px; border-radius: 50px; text-decoration: none; font-weight: 700; }
+        
+        .intro { max-width: 1200px; margin: 0 auto; padding: 48px 20px; }
+        .intro h2 { font-family: 'Playfair Display', serif; font-size: 1.75rem; margin-bottom: 20px; }
+        .intro p { font-size: 1rem; line-height: 1.8; color: var(--text-muted); margin-bottom: 16px; }
+        
+        .tours { background: var(--sand); padding: 48px 20px; }
+        .tours-inner { max-width: 1200px; margin: 0 auto; }
+        .section-label { display: inline-block; background: var(--accent); color: var(--ocean-deep); padding: 6px 14px; border-radius: 4px; font-size: 0.85rem; font-weight: 700; margin-bottom: 12px; }
+        .section-title { font-family: 'Playfair Display', serif; font-size: 1.75rem; margin-bottom: 32px; text-align: center; }
+        
+        .tours-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 20px; }
+        .tour-card { background: var(--white); border-radius: 12px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.1); transition: transform 0.3s, box-shadow 0.3s; }
+        .tour-card:hover { transform: translateY(-8px); box-shadow: 0 8px 20px rgba(0,0,0,0.15); }
+        .tour-card-image { height: 200px; background-size: cover; background-position: center; position: relative; }
+        .tour-card-badge, .tour-card-price { position: absolute; padding: 8px 14px; border-radius: 6px; font-size: 0.85rem; font-weight: 700; }
+        .tour-card-badge { top: 12px; left: 12px; background: var(--accent); color: var(--ocean-deep); }
+        .tour-card-price { top: 12px; right: 12px; background: var(--ocean-deep); color: var(--white); }
+        .tour-card-content { padding: 20px; }
+        .tour-card-company { font-size: 0.75rem; color: var(--ocean-light); font-weight: 700; text-transform: uppercase; margin-bottom: 8px; }
+        .tour-card-content h3 { font-size: 1.1rem; color: var(--ocean-deep); margin-bottom: 8px; }
+        .tour-card-meta { display: flex; gap: 12px; margin-bottom: 12px; font-size: 0.85rem; color: var(--text-muted); }
+        .tour-card-description { font-size: 0.9rem; color: var(--text-muted); margin-bottom: 16px; }
+        .tour-card-cta { display: block; background: var(--accent); color: var(--ocean-deep); text-align: center; padding: 12px 16px; border-radius: 8px; text-decoration: none; font-weight: 700; }
+        .tour-card-cta:hover { background: #f3a500; }
+        
+        .cta-box { background: var(--white); border-radius: 12px; padding: 32px 20px; text-align: center; margin: 32px 0; }
+        .cta-box h3 { font-size: 1.5rem; margin-bottom: 16px; }
+        .cta-box a { display: inline-block; background: var(--accent); color: var(--ocean-deep); padding: 14px 32px; border-radius: 50px; text-decoration: none; font-weight: 700; }
+        
+        .faq { background: var(--off-white); padding: 48px 20px; }
+        .faq-inner { max-width: 1200px; margin: 0 auto; }
+        .faq h2 { font-family: 'Playfair Display', serif; font-size: 1.75rem; text-align: center; margin-bottom: 32px; }
+        .faq-item { background: var(--white); border-radius: 8px; margin-bottom: 12px; overflow: hidden; }
+        .faq-q { background: var(--sand); padding: 16px; border: none; cursor: pointer; display: flex; justify-content: space-between; align-items: center; width: 100%; font-size: 1rem; font-weight: 600; text-align: left; }
+        .faq-q:hover { background: #ede6d3; }
+        .faq-a { padding: 16px; background: var(--white); color: var(--text-muted); }
+        .faq-toggle { display: inline-block; width: 24px; text-align: center; }
+        
+        .footer { background: var(--text-dark); color: var(--white); padding: 24px 20px; text-align: center; font-size: 0.9rem; }
+        .footer a { color: var(--accent); text-decoration: none; }
+        
+        @media (max-width: 600px) {
+            .hero { padding: 32px 16px; }
+            .hero h1 { font-size: 1.75rem; }
+            .tours-grid { grid-template-columns: 1fr; }
+            .faq-q { padding: 14px; font-size: 0.95rem; }
+        }
+    </style>
+</head>
+<body>
+    <!-- HEADER -->
+    <header class="header">
+        <div class="header-inner">
+            <a href="/" class="logo">
+                <img src="favicon-32.png" alt="" class="logo-img">
+                Key West Sandbar Tours
+            </a>
+        </div>
+    </header>
+    
+    <!-- HERO -->
+    <section class="hero">
+        <h1>Private Boat Charters Key West</h1>
+        <p>Private boat charters in Key West. Rent a boat for your group. Custom itineraries, fishing, snorkeling, celebrations.</p>
+        <a href="#tours-grid">Browse Tours</a>
+    </section>
+    
+    <!-- INTRO -->
+    <section class="intro">
+        <h2>Private Boat Charters Key West</h2>
+        <p>Create your perfect day on the water with a private boat charter. Whether you're planning a family outing, corporate event, wedding celebration, or adventure trip, a private charter gives you complete control over your itinerary and experience.
+
+Charter boats range from 20-foot fishing vessels to 50-foot luxury catamarans. With captain and crew included, you can focus on relaxing and enjoying. Popular activities include snorkeling, fishing, exploring mangrove channels, swimming at sandbars, diving, and simply cruising. Many charters include food and beverage service.
+
+Full-day and multi-day charters are available. Prices vary based on boat size, crew, and destination. Most charter companies require advance booking, especially during peak season. Perfect for special occasions, family reunions, or groups of 6-20+ people.</p>
+    </section>
+    
+    <!-- TOURS -->
+    <section class="tours">
+        <div class="tours-inner">
+            <div class="section-label">Private Charters</div>
+            <h2 class="section-title">Available Tours</h2>
+            
+            <div id="tours-grid" class="tours-grid">
+                <!-- TOUR 1 -->
+                <div class="tour-card">
+                    <div class="tour-card-image" style="background-image: url('https://cdn.filestackcontent.com/mw2Q7gRbQfinfeMA2ccq')">
+                        <span class="tour-card-badge">Boat Rental</span>
+                        
+                    </div>
+                    <div class="tour-card-content">
+                        <div class="tour-card-company">Sunset Sail Key West</div>
+                        <h3>Private Sunset Sail on Malabar X</h3>
+                        <div class="tour-card-meta"><span>⏱ 2 hour</span><span>👥 Key West</span></div>
+                        <p class="tour-card-description">Malabar X was built by famed naval architect John Alden for himself with the intent to win the Newport Bermuda race; whi...</p>
+                        <a href="https://fareharbor.com/embeds/book/sunsetsailkeywest/items/538879/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&bookable-only=yes&full-items=yes&marketplace=yes&flow=no" target="_blank" class="tour-card-cta" onclick="trackBookingClick('Private Sunset Sail on Malabar X', '538879', null)">Check Availability</a>
+                    </div>
+                </div>
+                                <!-- TOUR 2 -->
+                <div class="tour-card">
+                    <div class="tour-card-image" style="background-image: url('https://cdn.filestackcontent.com/56td1JY9R3GfLAF6UKBc')">
+                        <span class="tour-card-badge">Boat Rental</span>
+                        
+                    </div>
+                    <div class="tour-card-content">
+                        <div class="tour-card-company">SeaLab Charters</div>
+                        <h3>Full Day Charter</h3>
+                        <div class="tour-card-meta"><span>⏱ 8 Hour</span><span>👥 Key West</span></div>
+                        <p class="tour-card-description">The Lagoon architects' attention to the interior has created an apartment-style feel but on the water! Her spacious deck...</p>
+                        <a href="https://fareharbor.com/embeds/book/sealabcharters/items/617819/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&bookable-only=yes&full-items=yes&marketplace=yes&flow=no" target="_blank" class="tour-card-cta" onclick="trackBookingClick('Full Day Charter', '617819', null)">Check Availability</a>
+                    </div>
+                </div>
+                                <!-- TOUR 3 -->
+                <div class="tour-card">
+                    <div class="tour-card-image" style="background-image: url('https://cdn.filestackcontent.com/im8YbJGcSe9VdCKv9zew')">
+                        <span class="tour-card-badge">Boat Rental</span>
+                        
+                    </div>
+                    <div class="tour-card-content">
+                        <div class="tour-card-company">SeaLab Charters</div>
+                        <h3>Half Day Charter</h3>
+                        <div class="tour-card-meta"><span>⏱ 4 Hour</span><span>👥 Key West</span></div>
+                        <p class="tour-card-description">The Lagoon architects' attention to the interior has created an apartment-style feel but on the water! Her spacious deck...</p>
+                        <a href="https://fareharbor.com/embeds/book/sealabcharters/items/617823/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&bookable-only=yes&full-items=yes&marketplace=yes&flow=no" target="_blank" class="tour-card-cta" onclick="trackBookingClick('Half Day Charter', '617823', null)">Check Availability</a>
+                    </div>
+                </div>
+                                <!-- TOUR 4 -->
+                <div class="tour-card">
+                    <div class="tour-card-image" style="background-image: url('https://cdn.filestackcontent.com/YDIfYI52ROKDONKXwH2e')">
+                        <span class="tour-card-badge">Boat Rental</span>
+                        
+                    </div>
+                    <div class="tour-card-content">
+                        <div class="tour-card-company">SeaLab Charters</div>
+                        <h3>Sunset Cruise</h3>
+                        <div class="tour-card-meta"><span>⏱ 3 Hour</span><span>👥 Key West</span></div>
+                        <p class="tour-card-description">The Lagoon architects' attention to the interior has created an apartment-style feel but on the water! Her spacious deck...</p>
+                        <a href="https://fareharbor.com/embeds/book/sealabcharters/items/617826/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&bookable-only=yes&full-items=yes&marketplace=yes&flow=no" target="_blank" class="tour-card-cta" onclick="trackBookingClick('Sunset Cruise', '617826', null)">Check Availability</a>
+                    </div>
+                </div>
+                                <!-- TOUR 5 -->
+                <div class="tour-card">
+                    <div class="tour-card-image" style="background-image: url('https://cdn.filestackcontent.com/h9LCd78zTqyHwz5fzW3G')">
+                        <span class="tour-card-badge">Boat Rental</span>
+                        
+                    </div>
+                    <div class="tour-card-content">
+                        <div class="tour-card-company">Sea Stays & Charters</div>
+                        <h3>Normandee 40ft Beneteau Sailboat</h3>
+                        <div class="tour-card-meta"><span>⏱ Varies</span><span>👥 Key West</span></div>
+                        <p class="tour-card-description">Island hopping in Key West is an unforgettable journey through a tropical paradise where each island offers its own uniq...</p>
+                        <a href="https://fareharbor.com/embeds/book/seastays/items/644946/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&bookable-only=yes&full-items=yes&marketplace=yes&flow=no" target="_blank" class="tour-card-cta" onclick="trackBookingClick('Normandee 40ft Beneteau Sailboat', '644946', null)">Check Availability</a>
+                    </div>
+                </div>
+                                <!-- TOUR 6 -->
+                <div class="tour-card">
+                    <div class="tour-card-image" style="background-image: url('https://cdn.filestackcontent.com/Of6SGtmZTSOg2XiUDrVg')">
+                        <span class="tour-card-badge">Boat Rental</span>
+                        
+                    </div>
+                    <div class="tour-card-content">
+                        <div class="tour-card-company">Laid Back Key West</div>
+                        <h3>The Dry Tortugas</h3>
+                        <div class="tour-card-meta"><span>⏱ 10 Hour</span><span>👥 Key West</span></div>
+                        <p class="tour-card-description">Enjoy a day on the water exploring from Key West all the way to the Dry Tortugas. This will be a Nice day trip enjoying ...</p>
+                        <a href="https://fareharbor.com/embeds/book/laidbackkeywest/items/431194/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&bookable-only=yes&full-items=yes&marketplace=yes&flow=no" target="_blank" class="tour-card-cta" onclick="trackBookingClick('The Dry Tortugas', '431194', null)">Check Availability</a>
+                    </div>
+                </div>
+                                <!-- TOUR 7 -->
+                <div class="tour-card">
+                    <div class="tour-card-image" style="background-image: url('https://cdn.filestackcontent.com/xXMdl7lR8a8enDbkIz3t')">
+                        <span class="tour-card-badge">Boat Rental</span>
+                        
+                    </div>
+                    <div class="tour-card-content">
+                        <div class="tour-card-company">Casual Monday Charters</div>
+                        <h3>6 Hour Sandbar Charter</h3>
+                        <div class="tour-card-meta"><span>⏱ 6 Hour</span><span>👥 Key West</span></div>
+                        <p class="tour-card-description">Come explore the picturesque waters of the Florida Keys on "Casual Monday" our 25' Twin Engine Center Console...</p>
+                        <a href="https://fareharbor.com/embeds/book/casualmondaycharters/items/303484/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&bookable-only=yes&full-items=yes&marketplace=yes&flow=no" target="_blank" class="tour-card-cta" onclick="trackBookingClick('6 Hour Sandbar Charter', '303484', null)">Check Availability</a>
+                    </div>
+                </div>
+                                <!-- TOUR 8 -->
+                <div class="tour-card">
+                    <div class="tour-card-image" style="background-image: url('https://cdn.filestackcontent.com/NLfJzRCHTc241whgMt1p')">
+                        <span class="tour-card-badge">Boat Rental</span>
+                        
+                    </div>
+                    <div class="tour-card-content">
+                        <div class="tour-card-company">The Water Traveler LLC</div>
+                        <h3>Sea Fox 2 Hour Sunset Charter</h3>
+                        <div class="tour-card-meta"><span>⏱ 2 Hour</span><span>👥 Stock Island</span></div>
+                        <p class="tour-card-description">No refunds for any reason whatsoever. Vouchers may be issues for weather or acts of God subject to individual considerat...</p>
+                        <a href="https://fareharbor.com/embeds/book/thewatertraveler/items/584113/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&bookable-only=yes&full-items=yes&marketplace=yes&flow=no" target="_blank" class="tour-card-cta" onclick="trackBookingClick('Sea Fox 2 Hour Sunset Charter', '584113', null)">Check Availability</a>
+                    </div>
+                </div>
+                                <!-- TOUR 9 -->
+                <div class="tour-card">
+                    <div class="tour-card-image" style="background-image: url('https://cdn.filestackcontent.com/mRS8dqcNQYafQ6xazaeh')">
+                        <span class="tour-card-badge">Boat Rental</span>
+                        
+                    </div>
+                    <div class="tour-card-content">
+                        <div class="tour-card-company">The Water Traveler LLC</div>
+                        <h3>Sea Fox 4 Hour Sandbar Excursion</h3>
+                        <div class="tour-card-meta"><span>⏱ 4 Hour</span><span>👥 Stock Island</span></div>
+                        <p class="tour-card-description">No refunds for any reason whatsoever. Vouchers may be issues for weather or acts of God subject to individual considerat...</p>
+                        <a href="https://fareharbor.com/embeds/book/thewatertraveler/items/584122/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&bookable-only=yes&full-items=yes&marketplace=yes&flow=no" target="_blank" class="tour-card-cta" onclick="trackBookingClick('Sea Fox 4 Hour Sandbar Excursion', '584122', null)">Check Availability</a>
+                    </div>
+                </div>
+                                <!-- TOUR 10 -->
+                <div class="tour-card">
+                    <div class="tour-card-image" style="background-image: url('https://cdn.filestackcontent.com/9K5IEdhgRiqmPidqL2LC')">
+                        <span class="tour-card-badge">Boat Rental</span>
+                        
+                    </div>
+                    <div class="tour-card-content">
+                        <div class="tour-card-company">The Water Traveler LLC</div>
+                        <h3>Sea Fox 6 Hour Sandbar Excursion</h3>
+                        <div class="tour-card-meta"><span>⏱ 6 Hour</span><span>👥 Stock Island</span></div>
+                        <p class="tour-card-description">No refunds for any reason whatsoever. Vouchers may be issues for weather or acts of God subject to individual considerat...</p>
+                        <a href="https://fareharbor.com/embeds/book/thewatertraveler/items/584128/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&bookable-only=yes&full-items=yes&marketplace=yes&flow=no" target="_blank" class="tour-card-cta" onclick="trackBookingClick('Sea Fox 6 Hour Sandbar Excursion', '584128', null)">Check Availability</a>
+                    </div>
+                </div>
+                                <!-- TOUR 11 -->
+                <div class="tour-card">
+                    <div class="tour-card-image" style="background-image: url('https://cdn.filestackcontent.com/2YotBH2R0mP4pMJF1SAg')">
+                        <span class="tour-card-badge">Boat Rental</span>
+                        
+                    </div>
+                    <div class="tour-card-content">
+                        <div class="tour-card-company">The Water Traveler LLC</div>
+                        <h3>Sea Fox 4 Hour Dive</h3>
+                        <div class="tour-card-meta"><span>⏱ 4 Hour</span><span>👥 Stock Island</span></div>
+                        <p class="tour-card-description">No refunds for any reason whatsoever. Vouchers may be issues for weather or acts of God subject to individual considerat...</p>
+                        <a href="https://fareharbor.com/embeds/book/thewatertraveler/items/584134/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&bookable-only=yes&full-items=yes&marketplace=yes&flow=no" target="_blank" class="tour-card-cta" onclick="trackBookingClick('Sea Fox 4 Hour Dive', '584134', null)">Check Availability</a>
+                    </div>
+                </div>
+                                <!-- TOUR 12 -->
+                <div class="tour-card">
+                    <div class="tour-card-image" style="background-image: url('https://cdn.filestackcontent.com/9iutJaxITP6vywbTMivd')">
+                        <span class="tour-card-badge">Boat Rental</span>
+                        
+                    </div>
+                    <div class="tour-card-content">
+                        <div class="tour-card-company">The Water Traveler LLC</div>
+                        <h3>Sea Fox 2 Hour Dolphin Watch</h3>
+                        <div class="tour-card-meta"><span>⏱ 2 Hour</span><span>👥 Stock Island</span></div>
+                        <p class="tour-card-description">No refunds for any reason whatsoever. Vouchers may be issues for weather or acts of God subject to individual considerat...</p>
+                        <a href="https://fareharbor.com/embeds/book/thewatertraveler/items/584139/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&bookable-only=yes&full-items=yes&marketplace=yes&flow=no" target="_blank" class="tour-card-cta" onclick="trackBookingClick('Sea Fox 2 Hour Dolphin Watch', '584139', null)">Check Availability</a>
+                    </div>
+                </div>
+                            </div>
+        </div>
+    </section>
+    
+    <!-- CTA -->
+    <div class="cta-box">
+        <h3>Ready to Book?</h3>
+        <p>Browse our tours above and secure your adventure in Key West.</p>
+        <a href="#tours-grid">See Available Tours</a>
+    </div>
+    
+    <!-- FAQ -->
+    <section class="faq">
+        <div class="faq-inner">
+            <h2>Frequently Asked Questions</h2>
+                <div class="faq-item">
+                    <button class="faq-q" onclick="toggleFaq(event)">
+                        <span>What's included in a private charter?</span>
+                        <span class="faq-toggle">+</span>
+                    </button>
+                    <div class="faq-a" style="display: none;">
+                        Captain and crew, boat, fuel, and basic safety equipment. Many include snorkel gear, fishing equipment, and catering. Confirm what's included when booking.
+                    </div>
+                </div>
+                                <div class="faq-item">
+                    <button class="faq-q" onclick="toggleFaq(event)">
+                        <span>How many people fit on a charter?</span>
+                        <span class="faq-toggle">+</span>
+                    </button>
+                    <div class="faq-a" style="display: none;">
+                        Depends on boat size. Small charters hold 4-6 people; large catamarans accommodate 20+. Capacity affects price.
+                    </div>
+                </div>
+                                <div class="faq-item">
+                    <button class="faq-q" onclick="toggleFaq(event)">
+                        <span>Can we customize our itinerary?</span>
+                        <span class="faq-toggle">+</span>
+                    </button>
+                    <div class="faq-a" style="display: none;">
+                        Yes. That's the advantage of private charters. Work with your captain to plan snorkeling, fishing, beach visits, or island hopping.
+                    </div>
+                </div>
+                                <div class="faq-item">
+                    <button class="faq-q" onclick="toggleFaq(event)">
+                        <span>What's the minimum booking time?</span>
+                        <span class="faq-toggle">+</span>
+                    </button>
+                    <div class="faq-a" style="display: none;">
+                        Most charters require 4-6 hours minimum. Full-day and multi-day options offer better per-hour rates.
+                    </div>
+                </div>
+                        </div>
+    </section>
+    
+    <!-- FOOTER -->
+    <footer class="footer">
+        <p>&copy; 2026 Key West Sandbar Tours. All rights reserved. <a href="/">Home</a> | <a href="/about.html">About</a> | <a href="/faq.html">FAQs</a></p>
+    </footer>
+    
+    <script>
+        function toggleFaq(event) {
+            const item = event.target.closest('.faq-item');
+            const answer = item.querySelector('.faq-a');
+            const toggle = item.querySelector('.faq-toggle');
+            
+            answer.style.display = answer.style.display === 'none' ? 'block' : 'none';
+            toggle.textContent = toggle.textContent === '+' ? '−' : '+';
+        }
+    </script>
+</body>
+</html>

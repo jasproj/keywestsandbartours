@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Key West Snorkeling Tours | Key West Sandbar Tours</title>
+    <meta name="description" content="Best snorkeling tours in Key West. Coral reefs, marine life, shallow waters. Book private or group snorkel tours.">
+    <link rel="canonical" href="https://keywestsandbartours.com/snorkeling.html">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+    
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://keywestsandbartours.com/snorkeling.html">
+    <meta property="og:title" content="Key West Snorkeling Tours">
+    <meta property="og:description" content="Best snorkeling tours in Key West. Coral reefs, marine life, shallow waters. Book private or group snorkel tours.">
+    <meta property="og:image" content="https://keywestsandbartours.com/og-image.jpg">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    
+    <!-- Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://keywestsandbartours.com/"},
+            {"@type": "ListItem", "position": 2, "name": "Key West Snorkeling Tours", "item": "https://keywestsandbartours.com/snorkeling.html"}
+        ]
+    }
+    </script>
+    
+    <!-- GA4 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-67D7X60CJF"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-67D7X60CJF');
+        
+        function trackBookingClick(tourName, tourId, price) {
+            gtag('event', 'booking_click', {
+                'event_category': 'conversion',
+                'event_label': tourName,
+                'tour_id': tourId,
+                'value': price,
+                'page_type': 'snorkeling'
+            });
+        }
+    </script>
+    
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        :root {
+            --sand: #F5E6D3;
+            --ocean-deep: #0A3D62;
+            --ocean-light: #1E90FF;
+            --white: #FFFFFF;
+            --off-white: #FAFAFA;
+            --text-dark: #1A1A2E;
+            --text-muted: #6B7280;
+            --accent: #F59E0B;
+        }
+
+        body { font-family: 'DM Sans', sans-serif; color: var(--text-dark); line-height: 1.6; }
+        .header { background: var(--white); padding: 16px 20px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+        .header-inner { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-size: 1.1rem; font-weight: 700; color: var(--ocean-deep); text-decoration: none; display: flex; align-items: center; gap: 8px; }
+        .logo-img { width: 24px; height: 24px; }
+        
+        .hero { background: linear-gradient(135deg, var(--ocean-deep) 0%, var(--ocean-light) 100%); color: var(--white); padding: 48px 20px; text-align: center; }
+        .hero h1 { font-family: 'Playfair Display', serif; font-size: 2.5rem; margin-bottom: 16px; }
+        .hero p { font-size: 1.1rem; margin-bottom: 24px; opacity: 0.95; }
+        .hero a { display: inline-block; background: var(--accent); color: var(--ocean-deep); padding: 14px 32px; border-radius: 50px; text-decoration: none; font-weight: 700; }
+        
+        .intro { max-width: 1200px; margin: 0 auto; padding: 48px 20px; }
+        .intro h2 { font-family: 'Playfair Display', serif; font-size: 1.75rem; margin-bottom: 20px; }
+        .intro p { font-size: 1rem; line-height: 1.8; color: var(--text-muted); margin-bottom: 16px; }
+        
+        .tours { background: var(--sand); padding: 48px 20px; }
+        .tours-inner { max-width: 1200px; margin: 0 auto; }
+        .section-label { display: inline-block; background: var(--accent); color: var(--ocean-deep); padding: 6px 14px; border-radius: 4px; font-size: 0.85rem; font-weight: 700; margin-bottom: 12px; }
+        .section-title { font-family: 'Playfair Display', serif; font-size: 1.75rem; margin-bottom: 32px; text-align: center; }
+        
+        .tours-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 20px; }
+        .tour-card { background: var(--white); border-radius: 12px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.1); transition: transform 0.3s, box-shadow 0.3s; }
+        .tour-card:hover { transform: translateY(-8px); box-shadow: 0 8px 20px rgba(0,0,0,0.15); }
+        .tour-card-image { height: 200px; background-size: cover; background-position: center; position: relative; }
+        .tour-card-badge, .tour-card-price { position: absolute; padding: 8px 14px; border-radius: 6px; font-size: 0.85rem; font-weight: 700; }
+        .tour-card-badge { top: 12px; left: 12px; background: var(--accent); color: var(--ocean-deep); }
+        .tour-card-price { top: 12px; right: 12px; background: var(--ocean-deep); color: var(--white); }
+        .tour-card-content { padding: 20px; }
+        .tour-card-company { font-size: 0.75rem; color: var(--ocean-light); font-weight: 700; text-transform: uppercase; margin-bottom: 8px; }
+        .tour-card-content h3 { font-size: 1.1rem; color: var(--ocean-deep); margin-bottom: 8px; }
+        .tour-card-meta { display: flex; gap: 12px; margin-bottom: 12px; font-size: 0.85rem; color: var(--text-muted); }
+        .tour-card-description { font-size: 0.9rem; color: var(--text-muted); margin-bottom: 16px; }
+        .tour-card-cta { display: block; background: var(--accent); color: var(--ocean-deep); text-align: center; padding: 12px 16px; border-radius: 8px; text-decoration: none; font-weight: 700; }
+        .tour-card-cta:hover { background: #f3a500; }
+        
+        .cta-box { background: var(--white); border-radius: 12px; padding: 32px 20px; text-align: center; margin: 32px 0; }
+        .cta-box h3 { font-size: 1.5rem; margin-bottom: 16px; }
+        .cta-box a { display: inline-block; background: var(--accent); color: var(--ocean-deep); padding: 14px 32px; border-radius: 50px; text-decoration: none; font-weight: 700; }
+        
+        .faq { background: var(--off-white); padding: 48px 20px; }
+        .faq-inner { max-width: 1200px; margin: 0 auto; }
+        .faq h2 { font-family: 'Playfair Display', serif; font-size: 1.75rem; text-align: center; margin-bottom: 32px; }
+        .faq-item { background: var(--white); border-radius: 8px; margin-bottom: 12px; overflow: hidden; }
+        .faq-q { background: var(--sand); padding: 16px; border: none; cursor: pointer; display: flex; justify-content: space-between; align-items: center; width: 100%; font-size: 1rem; font-weight: 600; text-align: left; }
+        .faq-q:hover { background: #ede6d3; }
+        .faq-a { padding: 16px; background: var(--white); color: var(--text-muted); }
+        .faq-toggle { display: inline-block; width: 24px; text-align: center; }
+        
+        .footer { background: var(--text-dark); color: var(--white); padding: 24px 20px; text-align: center; font-size: 0.9rem; }
+        .footer a { color: var(--accent); text-decoration: none; }
+        
+        @media (max-width: 600px) {
+            .hero { padding: 32px 16px; }
+            .hero h1 { font-size: 1.75rem; }
+            .tours-grid { grid-template-columns: 1fr; }
+            .faq-q { padding: 14px; font-size: 0.95rem; }
+        }
+    </style>
+</head>
+<body>
+    <!-- HEADER -->
+    <header class="header">
+        <div class="header-inner">
+            <a href="/" class="logo">
+                <img src="favicon-32.png" alt="" class="logo-img">
+                Key West Sandbar Tours
+            </a>
+        </div>
+    </header>
+    
+    <!-- HERO -->
+    <section class="hero">
+        <h1>Key West Snorkeling Tours</h1>
+        <p>Best snorkeling tours in Key West. Coral reefs, marine life, shallow waters. Book private or group snorkel tours.</p>
+        <a href="#tours-grid">Browse Tours</a>
+    </section>
+    
+    <!-- INTRO -->
+    <section class="intro">
+        <h2>Key West Snorkeling Tours</h2>
+        <p>Discover the underwater treasures of Key West with professional snorkeling tours. From shallow coral gardens teeming with tropical fish to deeper reef systems, our snorkeling experiences offer something for everyone—whether you're a first-timer or experienced snorkeler.
+
+Most tours visit the shallow backcountry reefs or offshore coral formations. You'll encounter colorful tropical fish, sea turtles, rays, and if you're lucky, dolphins. Tours include all gear (mask, fins, snorkel), though many people prefer bringing their own. Water temperatures range from 73°F in winter to 86°F in summer.
+
+Tours typically last 2-4 hours, with 1-2 hours of actual snorkeling time. Most are suitable for families and beginners. Some advanced tours visit deeper reefs with more diverse marine life. Many tours combine snorkeling with other activities like sunset viewing, dolphin watching, or fishing.</p>
+    </section>
+    
+    <!-- TOURS -->
+    <section class="tours">
+        <div class="tours-inner">
+            <div class="section-label">Snorkel Adventures</div>
+            <h2 class="section-title">Available Tours</h2>
+            
+            <div id="tours-grid" class="tours-grid">
+                <!-- TOUR 1 -->
+                <div class="tour-card">
+                    <div class="tour-card-image" style="background-image: url('https://cdn.filestackcontent.com/nZOAr70bR8yPM5lbbwiq')">
+                        <span class="tour-card-badge">Boat Tour-Private-Snorkel</span>
+                        
+                    </div>
+                    <div class="tour-card-content">
+                        <div class="tour-card-company">Six Fins Charter</div>
+                        <h3>Private Snorkel Adventure</h3>
+                        <div class="tour-card-meta"><span>⏱ 4 Hour</span><span>👥 Stock Island</span></div>
+                        <p class="tour-card-description">Explore the vibrant coral reefs with tropical fish, colorful marine life, and fascinating sea creatures. Our expert guid...</p>
+                        <a href="https://fareharbor.com/embeds/book/sixfinscharter/items/532224/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&bookable-only=yes&full-items=yes&marketplace=yes&flow=no" target="_blank" class="tour-card-cta" onclick="trackBookingClick('Private Snorkel Adventure', '532224', null)">Check Availability</a>
+                    </div>
+                </div>
+                                <!-- TOUR 2 -->
+                <div class="tour-card">
+                    <div class="tour-card-image" style="background-image: url('https://cdn.filestackcontent.com/KUs5GGppTqKKwRBE5Jpw')">
+                        <span class="tour-card-badge">Boat Rental-Snorkel-SUP</span>
+                        
+                    </div>
+                    <div class="tour-card-content">
+                        <div class="tour-card-company">The Beach Weekend - Key West</div>
+                        <h3>Multi Day All-Inclusive Boating Package!</h3>
+                        <div class="tour-card-meta"><span>⏱ Varies</span><span>👥 Stock Island</span></div>
+                        <p class="tour-card-description">Customers will receive a full refund in case of operator cancellation due to weather or other unforeseen circumstances. ...</p>
+                        <a href="https://fareharbor.com/embeds/book/thebeachweekendkeywest/items/453327/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&bookable-only=yes&full-items=yes&marketplace=yes&flow=no" target="_blank" class="tour-card-cta" onclick="trackBookingClick('Multi Day All-Inclusive Boating Package!', '453327', null)">Check Availability</a>
+                    </div>
+                </div>
+                                <!-- TOUR 3 -->
+                <div class="tour-card">
+                    <div class="tour-card-image" style="background-image: url('https://cdn.filestackcontent.com/evhHhY1TVOqPBmcLV9gk')">
+                        <span class="tour-card-badge">Boat Tour-Fishing-Food Tour-Kayak-Snorkel-SUP-Transportation-Water Activities</span>
+                        
+                    </div>
+                    <div class="tour-card-content">
+                        <div class="tour-card-company">Native Sun Private Charters</div>
+                        <h3>Private 3-Hour Boat Charter Key West</h3>
+                        <div class="tour-card-meta"><span>⏱ 3 Hour</span><span>👥 Stock Island</span></div>
+                        <p class="tour-card-description">This private custom charter will take you on an adventure snorkeling at the reef. See marine life in their natural habit...</p>
+                        <a href="https://fareharbor.com/embeds/book/nativesunprivatecharters/items/292761/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&bookable-only=yes&full-items=yes&marketplace=yes&flow=no" target="_blank" class="tour-card-cta" onclick="trackBookingClick('Private 3-Hour Boat Charter Key West', '292761', null)">Check Availability</a>
+                    </div>
+                </div>
+                                <!-- TOUR 4 -->
+                <div class="tour-card">
+                    <div class="tour-card-image" style="background-image: url('https://cdn.filestackcontent.com/4ZL8cttuReWsioTOzfir')">
+                        <span class="tour-card-badge">Boat Tour-Fishing-Food Tour-Kayak-Snorkel-Transportation-Water Activities</span>
+                        
+                    </div>
+                    <div class="tour-card-content">
+                        <div class="tour-card-company">Native Sun Private Charters</div>
+                        <h3>Private Sunset Boat Charter Key West</h3>
+                        <div class="tour-card-meta"><span>⏱ 2 Hour</span><span>👥 Stock Island</span></div>
+                        <p class="tour-card-description">Enjoy the privacy of a private charter while you take in the gorgeous sunsets that Key West celebrates nightly. Feel fre...</p>
+                        <a href="https://fareharbor.com/embeds/book/nativesunprivatecharters/items/292774/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&bookable-only=yes&full-items=yes&marketplace=yes&flow=no" target="_blank" class="tour-card-cta" onclick="trackBookingClick('Private Sunset Boat Charter Key West', '292774', null)">Check Availability</a>
+                    </div>
+                </div>
+                                <!-- TOUR 5 -->
+                <div class="tour-card">
+                    <div class="tour-card-image" style="background-image: url('https://cdn.filestackcontent.com/jbKY7bWTjCbHVPpL2A2g')">
+                        <span class="tour-card-badge">Boat Tour-Fishing-Food Tour-Kayak-Snorkel-SUP-Transportation-Water Activities</span>
+                        
+                    </div>
+                    <div class="tour-card-content">
+                        <div class="tour-card-company">Native Sun Private Charters</div>
+                        <h3>Private 4-Hour Boat Charter Key West</h3>
+                        <div class="tour-card-meta"><span>⏱ Varies</span><span>👥 Stock Island</span></div>
+                        <p class="tour-card-description">This private custom charter will take you on an adventure snorkeling at the reef. See marine life in their natural habit...</p>
+                        <a href="https://fareharbor.com/embeds/book/nativesunprivatecharters/items/292777/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&bookable-only=yes&full-items=yes&marketplace=yes&flow=no" target="_blank" class="tour-card-cta" onclick="trackBookingClick('Private 4-Hour Boat Charter Key West', '292777', null)">Check Availability</a>
+                    </div>
+                </div>
+                                <!-- TOUR 6 -->
+                <div class="tour-card">
+                    <div class="tour-card-image" style="background-image: url('https://cdn.filestackcontent.com/HRfWxtE4TI2bmcJlPJyo')">
+                        <span class="tour-card-badge">Boat Tour-Fishing-Food Tour-Kayak-Snorkel-SUP-Transportation-Water Activities</span>
+                        
+                    </div>
+                    <div class="tour-card-content">
+                        <div class="tour-card-company">Native Sun Private Charters</div>
+                        <h3>Private 6-Hour Boat Charter Key West</h3>
+                        <div class="tour-card-meta"><span>⏱ Varies</span><span>👥 Stock Island</span></div>
+                        <p class="tour-card-description">This private custom charter will take you on an adventure snorkeling at the reef. See marine life in their natural habit...</p>
+                        <a href="https://fareharbor.com/embeds/book/nativesunprivatecharters/items/292784/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&bookable-only=yes&full-items=yes&marketplace=yes&flow=no" target="_blank" class="tour-card-cta" onclick="trackBookingClick('Private 6-Hour Boat Charter Key West', '292784', null)">Check Availability</a>
+                    </div>
+                </div>
+                                <!-- TOUR 7 -->
+                <div class="tour-card">
+                    <div class="tour-card-image" style="background-image: url('https://cdn.filestackcontent.com/YI57OPGpQPmP6Nfj4DOl')">
+                        <span class="tour-card-badge">Private-Sailing-Snorkel</span>
+                        
+                    </div>
+                    <div class="tour-card-content">
+                        <div class="tour-card-company">Danger Charters</div>
+                        <h3>Private Sail & Snorkel</h3>
+                        <div class="tour-card-meta"><span>⏱ Varies</span><span>👥 Key West</span></div>
+                        <p class="tour-card-description">Sail, snorkel, and explore the unique Florida's Reef on one of our historic 65-foot schooners! On the scenic sail out to...</p>
+                        <a href="https://fareharbor.com/embeds/book/dangercharters/items/471375/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&bookable-only=yes&full-items=yes&marketplace=yes&flow=no" target="_blank" class="tour-card-cta" onclick="trackBookingClick('Private Sail & Snorkel', '471375', null)">Check Availability</a>
+                    </div>
+                </div>
+                                <!-- TOUR 8 -->
+                <div class="tour-card">
+                    <div class="tour-card-image" style="background-image: url('https://cdn.filestackcontent.com/QE8cR6KjTWywlekkauSR')">
+                        <span class="tour-card-badge">Boat Rental-Boat Tour-Private-Snorkel</span>
+                        
+                    </div>
+                    <div class="tour-card-content">
+                        <div class="tour-card-company">Mermaid Charters Key West</div>
+                        <h3>Combo:  Snorkeling, Boca Grand & Sunset Excursion!</h3>
+                        <div class="tour-card-meta"><span>⏱ Duration: 4 Hour</span><span>👥 Key West</span></div>
+                        <p class="tour-card-description">*If you would like to bring your own food and drinks along we will have cooler space available.
+Bring your own food and ...</p>
+                        <a href="https://fareharbor.com/embeds/book/mermaidcharterskeywest/items/293676/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&bookable-only=yes&full-items=yes&marketplace=yes&flow=no" target="_blank" class="tour-card-cta" onclick="trackBookingClick('Combo:  Snorkeling, Boca Grand & Sunset Excursion!', '293676', null)">Check Availability</a>
+                    </div>
+                </div>
+                                <!-- TOUR 9 -->
+                <div class="tour-card">
+                    <div class="tour-card-image" style="background-image: url('https://cdn.filestackcontent.com/pgGbd5e5RQzEGNK2l036')">
+                        <span class="tour-card-badge">Boat Rental-Snorkel</span>
+                        
+                    </div>
+                    <div class="tour-card-content">
+                        <div class="tour-card-company">Casual Monday Charters</div>
+                        <h3>4 Hour Sandbar & Snorkel Trip</h3>
+                        <div class="tour-card-meta"><span>⏱ 4 Hour</span><span>👥 Key West</span></div>
+                        <p class="tour-card-description">Join us on our 25' Center Console while we enjoy the day admiring the crystal clear water that surrounds Key West....</p>
+                        <a href="https://fareharbor.com/embeds/book/casualmondaycharters/items/406201/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&bookable-only=yes&full-items=yes&marketplace=yes&flow=no" target="_blank" class="tour-card-cta" onclick="trackBookingClick('4 Hour Sandbar & Snorkel Trip', '406201', null)">Check Availability</a>
+                    </div>
+                </div>
+                                <!-- TOUR 10 -->
+                <div class="tour-card">
+                    <div class="tour-card-image" style="background-image: url('https://cdn.filestackcontent.com/Rd2CeoDDR26Emh3IQmYq')">
+                        <span class="tour-card-badge">Sailing-Snorkel</span>
+                        
+                    </div>
+                    <div class="tour-card-content">
+                        <div class="tour-card-company">Danger Charters</div>
+                        <h3>4th of July Snorkel and Fireworks Combo</h3>
+                        <div class="tour-card-meta"><span>⏱ 5 hours</span><span>👥 Key West</span></div>
+                        <p class="tour-card-description">Embark on a Holiday Snorkeling special with Danger Charters! Relax on the seas as we sail out to a secluded snorkeling s...</p>
+                        <a href="https://fareharbor.com/embeds/book/dangercharters/items/360003/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&bookable-only=yes&full-items=yes&marketplace=yes&flow=no" target="_blank" class="tour-card-cta" onclick="trackBookingClick('4th of July Snorkel and Fireworks Combo', '360003', null)">Check Availability</a>
+                    </div>
+                </div>
+                                <!-- TOUR 11 -->
+                <div class="tour-card">
+                    <div class="tour-card-image" style="background-image: url('https://cdn.filestackcontent.com/3aXL1P79R9ugNBcuomcp')">
+                        <span class="tour-card-badge">Boat Rental-Boat Tour-Dolphin-Private-Snorkel</span>
+                        
+                    </div>
+                    <div class="tour-card-content">
+                        <div class="tour-card-company">Mermaid Charters Key West</div>
+                        <h3>Combo: Snorkeling,  Boca Grand Sandbar & Dolphin Watching</h3>
+                        <div class="tour-card-meta"><span>⏱ Duration: 4 Hour</span><span>👥 Key West</span></div>
+                        <p class="tour-card-description">*If you would like to bring your own food and drinks along we will have cooler space available.
+Bring your own food and ...</p>
+                        <a href="https://fareharbor.com/embeds/book/mermaidcharterskeywest/items/294807/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&bookable-only=yes&full-items=yes&marketplace=yes&flow=no" target="_blank" class="tour-card-cta" onclick="trackBookingClick('Combo: Snorkeling,  Boca Grand Sandbar & Dolphin Watching', '294807', null)">Check Availability</a>
+                    </div>
+                </div>
+                                <!-- TOUR 12 -->
+                <div class="tour-card">
+                    <div class="tour-card-image" style="background-image: url('https://cdn.filestackcontent.com/lt6keCgITeWdHrKTEdDl')">
+                        <span class="tour-card-badge">Boat Rental-Boat Tour-Snorkel</span>
+                        
+                    </div>
+                    <div class="tour-card-content">
+                        <div class="tour-card-company">Mermaid Charters Key West</div>
+                        <h3>Snorkeling & Sunset</h3>
+                        <div class="tour-card-meta"><span>⏱ 4 Hrs</span><span>👥 Key West</span></div>
+                        <p class="tour-card-description">We can accommodate groups of up to six people on this private charter. And don't worry about the equipment - we'll provi...</p>
+                        <a href="https://fareharbor.com/embeds/book/mermaidcharterskeywest/items/326749/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&bookable-only=yes&full-items=yes&marketplace=yes&flow=no" target="_blank" class="tour-card-cta" onclick="trackBookingClick('Snorkeling & Sunset', '326749', null)">Check Availability</a>
+                    </div>
+                </div>
+                            </div>
+        </div>
+    </section>
+    
+    <!-- CTA -->
+    <div class="cta-box">
+        <h3>Ready to Book?</h3>
+        <p>Browse our tours above and secure your adventure in Key West.</p>
+        <a href="#tours-grid">See Available Tours</a>
+    </div>
+    
+    <!-- FAQ -->
+    <section class="faq">
+        <div class="faq-inner">
+            <h2>Frequently Asked Questions</h2>
+                <div class="faq-item">
+                    <button class="faq-q" onclick="toggleFaq(event)">
+                        <span>Do I need to be a strong swimmer?</span>
+                        <span class="faq-toggle">+</span>
+                    </button>
+                    <div class="faq-a" style="display: none;">
+                        No. Most Key West snorkeling is in shallow, calm water. Guides help beginners feel comfortable. Life jackets available upon request.
+                    </div>
+                </div>
+                                <div class="faq-item">
+                    <button class="faq-q" onclick="toggleFaq(event)">
+                        <span>What will I see?</span>
+                        <span class="faq-toggle">+</span>
+                    </button>
+                    <div class="faq-a" style="display: none;">
+                        Tropical fish, sea turtles, rays, starfish, and colorful coral. Occasionally dolphins and nurse sharks (harmless). Marine life varies by location and season.
+                    </div>
+                </div>
+                                <div class="faq-item">
+                    <button class="faq-q" onclick="toggleFaq(event)">
+                        <span>Can I bring my own gear?</span>
+                        <span class="faq-toggle">+</span>
+                    </button>
+                    <div class="faq-a" style="display: none;">
+                        Yes, most operators welcome personal gear. All-inclusive tours provide mask, fins, and snorkel. Wetsuits available for cold months.
+                    </div>
+                </div>
+                                <div class="faq-item">
+                    <button class="faq-q" onclick="toggleFaq(event)">
+                        <span>How long is the snorkeling time?</span>
+                        <span class="faq-toggle">+</span>
+                    </button>
+                    <div class="faq-a" style="display: none;">
+                        Typical tours are 3-4 hours with 1-2 hours in the water. Some tours offer multiple snorkel sites with time to rest between.
+                    </div>
+                </div>
+                        </div>
+    </section>
+    
+    <!-- FOOTER -->
+    <footer class="footer">
+        <p>&copy; 2026 Key West Sandbar Tours. All rights reserved. <a href="/">Home</a> | <a href="/about.html">About</a> | <a href="/faq.html">FAQs</a></p>
+    </footer>
+    
+    <script>
+        function toggleFaq(event) {
+            const item = event.target.closest('.faq-item');
+            const answer = item.querySelector('.faq-a');
+            const toggle = item.querySelector('.faq-toggle');
+            
+            answer.style.display = answer.style.display === 'none' ? 'block' : 'none';
+            toggle.textContent = toggle.textContent === '+' ? '−' : '+';
+        }
+    </script>
+</body>
+</html>

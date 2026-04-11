@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Key West Party Boats | Key West Sandbar Tours</title>
+    <meta name="description" content="Party boats and tiki boats in Key West. Bachelorette parties, bachelor parties, group celebrations with music and drinks.">
+    <link rel="canonical" href="https://keywestsandbartours.com/party-boats.html">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+    
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://keywestsandbartours.com/party-boats.html">
+    <meta property="og:title" content="Key West Party Boats">
+    <meta property="og:description" content="Party boats and tiki boats in Key West. Bachelorette parties, bachelor parties, group celebrations with music and drinks.">
+    <meta property="og:image" content="https://keywestsandbartours.com/og-image.jpg">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    
+    <!-- Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://keywestsandbartours.com/"},
+            {"@type": "ListItem", "position": 2, "name": "Key West Party Boats", "item": "https://keywestsandbartours.com/party-boats.html"}
+        ]
+    }
+    </script>
+    
+    <!-- GA4 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-67D7X60CJF"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-67D7X60CJF');
+        
+        function trackBookingClick(tourName, tourId, price) {
+            gtag('event', 'booking_click', {
+                'event_category': 'conversion',
+                'event_label': tourName,
+                'tour_id': tourId,
+                'value': price,
+                'page_type': 'party-boats'
+            });
+        }
+    </script>
+    
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        :root {
+            --sand: #F5E6D3;
+            --ocean-deep: #0A3D62;
+            --ocean-light: #1E90FF;
+            --white: #FFFFFF;
+            --off-white: #FAFAFA;
+            --text-dark: #1A1A2E;
+            --text-muted: #6B7280;
+            --accent: #F59E0B;
+        }
+
+        body { font-family: 'DM Sans', sans-serif; color: var(--text-dark); line-height: 1.6; }
+        .header { background: var(--white); padding: 16px 20px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+        .header-inner { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-size: 1.1rem; font-weight: 700; color: var(--ocean-deep); text-decoration: none; display: flex; align-items: center; gap: 8px; }
+        .logo-img { width: 24px; height: 24px; }
+        
+        .hero { background: linear-gradient(135deg, var(--ocean-deep) 0%, var(--ocean-light) 100%); color: var(--white); padding: 48px 20px; text-align: center; }
+        .hero h1 { font-family: 'Playfair Display', serif; font-size: 2.5rem; margin-bottom: 16px; }
+        .hero p { font-size: 1.1rem; margin-bottom: 24px; opacity: 0.95; }
+        .hero a { display: inline-block; background: var(--accent); color: var(--ocean-deep); padding: 14px 32px; border-radius: 50px; text-decoration: none; font-weight: 700; }
+        
+        .intro { max-width: 1200px; margin: 0 auto; padding: 48px 20px; }
+        .intro h2 { font-family: 'Playfair Display', serif; font-size: 1.75rem; margin-bottom: 20px; }
+        .intro p { font-size: 1rem; line-height: 1.8; color: var(--text-muted); margin-bottom: 16px; }
+        
+        .tours { background: var(--sand); padding: 48px 20px; }
+        .tours-inner { max-width: 1200px; margin: 0 auto; }
+        .section-label { display: inline-block; background: var(--accent); color: var(--ocean-deep); padding: 6px 14px; border-radius: 4px; font-size: 0.85rem; font-weight: 700; margin-bottom: 12px; }
+        .section-title { font-family: 'Playfair Display', serif; font-size: 1.75rem; margin-bottom: 32px; text-align: center; }
+        
+        .tours-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 20px; }
+        .tour-card { background: var(--white); border-radius: 12px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.1); transition: transform 0.3s, box-shadow 0.3s; }
+        .tour-card:hover { transform: translateY(-8px); box-shadow: 0 8px 20px rgba(0,0,0,0.15); }
+        .tour-card-image { height: 200px; background-size: cover; background-position: center; position: relative; }
+        .tour-card-badge, .tour-card-price { position: absolute; padding: 8px 14px; border-radius: 6px; font-size: 0.85rem; font-weight: 700; }
+        .tour-card-badge { top: 12px; left: 12px; background: var(--accent); color: var(--ocean-deep); }
+        .tour-card-price { top: 12px; right: 12px; background: var(--ocean-deep); color: var(--white); }
+        .tour-card-content { padding: 20px; }
+        .tour-card-company { font-size: 0.75rem; color: var(--ocean-light); font-weight: 700; text-transform: uppercase; margin-bottom: 8px; }
+        .tour-card-content h3 { font-size: 1.1rem; color: var(--ocean-deep); margin-bottom: 8px; }
+        .tour-card-meta { display: flex; gap: 12px; margin-bottom: 12px; font-size: 0.85rem; color: var(--text-muted); }
+        .tour-card-description { font-size: 0.9rem; color: var(--text-muted); margin-bottom: 16px; }
+        .tour-card-cta { display: block; background: var(--accent); color: var(--ocean-deep); text-align: center; padding: 12px 16px; border-radius: 8px; text-decoration: none; font-weight: 700; }
+        .tour-card-cta:hover { background: #f3a500; }
+        
+        .cta-box { background: var(--white); border-radius: 12px; padding: 32px 20px; text-align: center; margin: 32px 0; }
+        .cta-box h3 { font-size: 1.5rem; margin-bottom: 16px; }
+        .cta-box a { display: inline-block; background: var(--accent); color: var(--ocean-deep); padding: 14px 32px; border-radius: 50px; text-decoration: none; font-weight: 700; }
+        
+        .faq { background: var(--off-white); padding: 48px 20px; }
+        .faq-inner { max-width: 1200px; margin: 0 auto; }
+        .faq h2 { font-family: 'Playfair Display', serif; font-size: 1.75rem; text-align: center; margin-bottom: 32px; }
+        .faq-item { background: var(--white); border-radius: 8px; margin-bottom: 12px; overflow: hidden; }
+        .faq-q { background: var(--sand); padding: 16px; border: none; cursor: pointer; display: flex; justify-content: space-between; align-items: center; width: 100%; font-size: 1rem; font-weight: 600; text-align: left; }
+        .faq-q:hover { background: #ede6d3; }
+        .faq-a { padding: 16px; background: var(--white); color: var(--text-muted); }
+        .faq-toggle { display: inline-block; width: 24px; text-align: center; }
+        
+        .footer { background: var(--text-dark); color: var(--white); padding: 24px 20px; text-align: center; font-size: 0.9rem; }
+        .footer a { color: var(--accent); text-decoration: none; }
+        
+        @media (max-width: 600px) {
+            .hero { padding: 32px 16px; }
+            .hero h1 { font-size: 1.75rem; }
+            .tours-grid { grid-template-columns: 1fr; }
+            .faq-q { padding: 14px; font-size: 0.95rem; }
+        }
+    </style>
+</head>
+<body>
+    <!-- HEADER -->
+    <header class="header">
+        <div class="header-inner">
+            <a href="/" class="logo">
+                <img src="favicon-32.png" alt="" class="logo-img">
+                Key West Sandbar Tours
+            </a>
+        </div>
+    </header>
+    
+    <!-- HERO -->
+    <section class="hero">
+        <h1>Key West Party Boats</h1>
+        <p>Party boats and tiki boats in Key West. Bachelorette parties, bachelor parties, group celebrations with music and drinks.</p>
+        <a href="#tours-grid">Browse Tours</a>
+    </section>
+    
+    <!-- INTRO -->
+    <section class="intro">
+        <h2>Key West Party Boats</h2>
+        <p>Key West party boats are the ultimate celebration experience—music, drinks, dancing, and friends all aboard. Whether it's a bachelor/bachelorette party, birthday bash, or group celebration, party boats combine cruise entertainment with social vibes.
+
+Most party boats operate as "floating bars" with DJ, dancing, and open bar options. Food is typically included or available. Boats range from small (20-30 people) to large tiki boats (100+ capacity). Some focus on daytime party vibes; others are evening party cruises. Many operators offer themed cruises like "Tiki Bar Crawl" or "Sunset Party."
+
+Tours typically last 2-4 hours. Group bookings often get discounts. Age restrictions apply (usually 21+ after 8 PM). Book in advance, especially for weekends and holidays. Perfect for celebrating milestones in true Key West style.</p>
+    </section>
+    
+    <!-- TOURS -->
+    <section class="tours">
+        <div class="tours-inner">
+            <div class="section-label">Party Cruises</div>
+            <h2 class="section-title">Available Tours</h2>
+            
+            <div id="tours-grid" class="tours-grid">
+                <!-- TOUR 1 -->
+                <div class="tour-card">
+                    <div class="tour-card-image" style="background-image: url('https://cdn.filestackcontent.com/XXdbwAp0RwCtLZI3BxzJ')">
+                        <span class="tour-card-badge">Boat Tour</span>
+                        
+                    </div>
+                    <div class="tour-card-content">
+                        <div class="tour-card-company">Six Fins Charter</div>
+                        <h3>Tiki Bar Crawl by Water</h3>
+                        <div class="tour-card-meta"><span>⏱ 4 Hour</span><span>👥 Stock Island</span></div>
+                        <p class="tour-card-description">Cruise along the picturesque coastline to a selection of outdoor Tiki establishments nestled along the water's edge, eac...</p>
+                        <a href="https://fareharbor.com/embeds/book/sixfinscharter/items/532164/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&bookable-only=yes&full-items=yes&marketplace=yes&flow=no" target="_blank" class="tour-card-cta" onclick="trackBookingClick('Tiki Bar Crawl by Water', '532164', null)">Check Availability</a>
+                    </div>
+                </div>
+                                <!-- TOUR 2 -->
+                <div class="tour-card">
+                    <div class="tour-card-image" style="background-image: url('https://cdn.filestackcontent.com/ezsTDfhxTN6S6GiUkEiV')">
+                        <span class="tour-card-badge">Boat Tour</span>
+                        
+                    </div>
+                    <div class="tour-card-content">
+                        <div class="tour-card-company">Six Fins Charter</div>
+                        <h3>Private Bachelor and Bachelorette Parties</h3>
+                        <div class="tour-card-meta"><span>⏱ 6 Hour</span><span>👥 Stock Island</span></div>
+                        <p class="tour-card-description">OPEN ITINERARY & CUSTOMIZABLEâ€”Discover the ultimate wedding experience with Six Fins Charterâ€™s exclusive boat charte...</p>
+                        <a href="https://fareharbor.com/embeds/book/sixfinscharter/items/554262/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&bookable-only=yes&full-items=yes&marketplace=yes&flow=no" target="_blank" class="tour-card-cta" onclick="trackBookingClick('Private Bachelor and Bachelorette Parties', '554262', null)">Check Availability</a>
+                    </div>
+                </div>
+                                <!-- TOUR 3 -->
+                <div class="tour-card">
+                    <div class="tour-card-image" style="background-image: url('https://cdn.filestackcontent.com/ADVCWYDT1mhLgxveOfp3')">
+                        <span class="tour-card-badge">Boat Tour-Eco Tour-Food Tour-History Tour-Hop On Hop Off-Photography Tour-Pub Crawl-Sightseeing Tour</span>
+                        
+                    </div>
+                    <div class="tour-card-content">
+                        <div class="tour-card-company">Lagerheads Watersports LLC</div>
+                        <h3>The Rum Runner Bar Crawl - ON THE WATER (UP-TO-6 PASSERNGER) 4 HRS</h3>
+                        <div class="tour-card-meta"><span>⏱ 4 HRS</span><span>👥 Key West</span></div>
+                        <p class="tour-card-description">Lagerheads has amazing drinks, beer on tap (Try the crazy Lady), and the best Cuban sandwich and fish/shrimp tacos on th...</p>
+                        <a href="https://fareharbor.com/embeds/book/lagerheadswatersports/items/353562/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&bookable-only=yes&full-items=yes&marketplace=yes&flow=no" target="_blank" class="tour-card-cta" onclick="trackBookingClick('The Rum Runner Bar Crawl - ON THE WATER (UP-TO-6 PASSERNGER) 4 HRS', '353562', null)">Check Availability</a>
+                    </div>
+                </div>
+                                <!-- TOUR 4 -->
+                <div class="tour-card">
+                    <div class="tour-card-image" style="background-image: url('https://cdn.filestackcontent.com/83cfa4ZzTkSq1eiI7nXg')">
+                        <span class="tour-card-badge">Boat Tour</span>
+                        
+                    </div>
+                    <div class="tour-card-content">
+                        <div class="tour-card-company">Barefoot Charters</div>
+                        <h3>Seabreeze Custom Charter</h3>
+                        <div class="tour-card-meta"><span>⏱ Varies</span><span>👥 Key West</span></div>
+                        <p class="tour-card-description">Years of chartering boats provides adventure and flexibility for your large group. We can accommodate family-friendly fl...</p>
+                        <a href="https://fareharbor.com/embeds/book/barefootbillyskw/items/273066/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&bookable-only=yes&full-items=yes&marketplace=yes&flow=no" target="_blank" class="tour-card-cta" onclick="trackBookingClick('Seabreeze Custom Charter', '273066', null)">Check Availability</a>
+                    </div>
+                </div>
+                                <!-- TOUR 5 -->
+                <div class="tour-card">
+                    <div class="tour-card-image" style="background-image: url('https://cdn.filestackcontent.com/G48XZGMoQaxdAeLPh4UB')">
+                        <span class="tour-card-badge">Sailing</span>
+                        
+                    </div>
+                    <div class="tour-card-content">
+                        <div class="tour-card-company">Danger Charters</div>
+                        <h3>Cinco de Mayo Sail</h3>
+                        <div class="tour-card-meta"><span>⏱ 1.5 hours</span><span>👥 Key West</span></div>
+                        <p class="tour-card-description">Celebrate Cinco de Mayo in style with an exhilarating afternoon happy hour sail! Join us for a lively celebration on the...</p>
+                        <a href="https://fareharbor.com/embeds/book/dangercharters/items/376243/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&bookable-only=yes&full-items=yes&marketplace=yes&flow=no" target="_blank" class="tour-card-cta" onclick="trackBookingClick('Cinco de Mayo Sail', '376243', null)">Check Availability</a>
+                    </div>
+                </div>
+                                <!-- TOUR 6 -->
+                <div class="tour-card">
+                    <div class="tour-card-image" style="background-image: url('https://cdn.filestackcontent.com/2vYyIWGRjaBzDMFtttnI')">
+                        <span class="tour-card-badge">Boat Tour-Catamaran-Sailing-Snorkel</span>
+                        
+                    </div>
+                    <div class="tour-card-content">
+                        <div class="tour-card-company">Sunset Watersports</div>
+                        <h3>Key West Lighted Boat Parade</h3>
+                        <div class="tour-card-meta"><span>⏱ 3 hour</span><span>👥 Key West</span></div>
+                        <p class="tour-card-description">Join us for one of the most memorable nights on the water, Key West's Lighted Boat Parade. Get festive and enjoy this ho...</p>
+                        <a href="https://fareharbor.com/embeds/book/sunsetwatersportskeywest/items/271043/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&bookable-only=yes&full-items=yes&marketplace=yes&flow=no" target="_blank" class="tour-card-cta" onclick="trackBookingClick('Key West Lighted Boat Parade', '271043', null)">Check Availability</a>
+                    </div>
+                </div>
+                                <!-- TOUR 7 -->
+                <div class="tour-card">
+                    <div class="tour-card-image" style="background-image: url('https://cdn.filestackcontent.com/ktDMoLD8Rpueuwdoqvl6')">
+                        <span class="tour-card-badge">Boat Tour</span>
+                        
+                    </div>
+                    <div class="tour-card-content">
+                        <div class="tour-card-company">Casual Monday Charters</div>
+                        <h3>Sunset Cruise</h3>
+                        <div class="tour-card-meta"><span>⏱ 2 Hours</span><span>👥 Key West</span></div>
+                        <p class="tour-card-description">Join us for a Sunset Celebration on "Casual Monday" and see the unobstructed Key West sunset on the water that everyone ...</p>
+                        <a href="https://fareharbor.com/embeds/book/casualmondaycharters/items/303491/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&bookable-only=yes&full-items=yes&marketplace=yes&flow=no" target="_blank" class="tour-card-cta" onclick="trackBookingClick('Sunset Cruise', '303491', null)">Check Availability</a>
+                    </div>
+                </div>
+                                <!-- TOUR 8 -->
+                <div class="tour-card">
+                    <div class="tour-card-image" style="background-image: url('https://cdn.filestackcontent.com/J7haTr9uRuqXZhNQUdKE')">
+                        <span class="tour-card-badge">Boat Rental-Boat Tour-Private</span>
+                        
+                    </div>
+                    <div class="tour-card-content">
+                        <div class="tour-card-company">Mermaid Charters Key West</div>
+                        <h3>Tiki Bar, Sightseeing & Boca Chia Sandbar Stop</h3>
+                        <div class="tour-card-meta"><span>⏱ Duration: 4 Hour</span><span>👥 Key West</span></div>
+                        <p class="tour-card-description">Enjoy marine life, island food, Tiki Bar cocktails, and sightseeing as you travel around the island, and take a quick di...</p>
+                        <a href="https://fareharbor.com/embeds/book/mermaidcharterskeywest/items/302262/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&bookable-only=yes&full-items=yes&marketplace=yes&flow=no" target="_blank" class="tour-card-cta" onclick="trackBookingClick('Tiki Bar, Sightseeing & Boca Chia Sandbar Stop', '302262', null)">Check Availability</a>
+                    </div>
+                </div>
+                                <!-- TOUR 9 -->
+                <div class="tour-card">
+                    <div class="tour-card-image" style="background-image: url('https://cdn.filestackcontent.com/QHSdk3AQZGbCRV5Sjxw9')">
+                        <span class="tour-card-badge">Sailing</span>
+                        
+                    </div>
+                    <div class="tour-card-content">
+                        <div class="tour-card-company">Hindu Charters LLC - Argo Navis</div>
+                        <h3>4th of July Fireworks Watch Party!</h3>
+                        <div class="tour-card-meta"><span>⏱ 2.5 hour</span><span>👥 Key West</span></div>
+                        <p class="tour-card-description">Join us for a memorable night with all the best of Key West rolled into one night.  We start our sail later than normal ...</p>
+                        <a href="https://fareharbor.com/embeds/book/sailargonavis/items/550488/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&bookable-only=yes&full-items=yes&marketplace=yes&flow=no" target="_blank" class="tour-card-cta" onclick="trackBookingClick('4th of July Fireworks Watch Party!', '550488', null)">Check Availability</a>
+                    </div>
+                </div>
+                                <!-- TOUR 10 -->
+                <div class="tour-card">
+                    <div class="tour-card-image" style="background-image: url('https://cdn.filestackcontent.com/HQLvib9iQRqrLPiuCi6g')">
+                        <span class="tour-card-badge">Boat Tour</span>
+                        
+                    </div>
+                    <div class="tour-card-content">
+                        <div class="tour-card-company">Keys Tikis LLC</div>
+                        <h3>Tiki Boat Sandbar Excursion</h3>
+                        <div class="tour-card-meta"><span>⏱ 8 Hour</span><span>👥 Key West</span></div>
+                        <p class="tour-card-description">Morning and afternoon departures available, where we whisk you away to one of the area's many epic sandbars based on wea...</p>
+                        <a href="https://fareharbor.com/embeds/book/keystikis/items/550899/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&bookable-only=yes&full-items=yes&marketplace=yes&flow=no" target="_blank" class="tour-card-cta" onclick="trackBookingClick('Tiki Boat Sandbar Excursion', '550899', null)">Check Availability</a>
+                    </div>
+                </div>
+                                <!-- TOUR 11 -->
+                <div class="tour-card">
+                    <div class="tour-card-image" style="background-image: url('https://cdn.filestackcontent.com/FmAUp2AWQdSq5Xqp41VV')">
+                        <span class="tour-card-badge">Boat Tour</span>
+                        
+                    </div>
+                    <div class="tour-card-content">
+                        <div class="tour-card-company">Keys Tikis LLC</div>
+                        <h3>Anything Goes Tiki Boat Key West Sandbar Trip</h3>
+                        <div class="tour-card-meta"><span>⏱ 6 Hour</span><span>👥 Key West</span></div>
+                        <p class="tour-card-description">This is also our famous clothing optional tour. Our (discreet) captains will take you to private areas where you can get...</p>
+                        <a href="https://fareharbor.com/embeds/book/keystikis/items/550905/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&bookable-only=yes&full-items=yes&marketplace=yes&flow=no" target="_blank" class="tour-card-cta" onclick="trackBookingClick('Anything Goes Tiki Boat Key West Sandbar Trip', '550905', null)">Check Availability</a>
+                    </div>
+                </div>
+                                <!-- TOUR 12 -->
+                <div class="tour-card">
+                    <div class="tour-card-image" style="background-image: url('https://cdn.filestackcontent.com/1Ob2N2FARvWv49KxXwtZ')">
+                        <span class="tour-card-badge">Boat Tour</span>
+                        
+                    </div>
+                    <div class="tour-card-content">
+                        <div class="tour-card-company">Keys Tikis LLC</div>
+                        <h3>Key West Tiki Boat Sunset Tour</h3>
+                        <div class="tour-card-meta"><span>⏱ 2 Hour</span><span>👥 Key West</span></div>
+                        <p class="tour-card-description">Experience the ultimate sunset in Key West with a private sunset cruise aboard our custom tiki bar boats. Toast to the b...</p>
+                        <a href="https://fareharbor.com/embeds/book/keystikis/items/550908/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&bookable-only=yes&full-items=yes&marketplace=yes&flow=no" target="_blank" class="tour-card-cta" onclick="trackBookingClick('Key West Tiki Boat Sunset Tour', '550908', null)">Check Availability</a>
+                    </div>
+                </div>
+                            </div>
+        </div>
+    </section>
+    
+    <!-- CTA -->
+    <div class="cta-box">
+        <h3>Ready to Book?</h3>
+        <p>Browse our tours above and secure your adventure in Key West.</p>
+        <a href="#tours-grid">See Available Tours</a>
+    </div>
+    
+    <!-- FAQ -->
+    <section class="faq">
+        <div class="faq-inner">
+            <h2>Frequently Asked Questions</h2>
+                <div class="faq-item">
+                    <button class="faq-q" onclick="toggleFaq(event)">
+                        <span>What's included in party boat tours?</span>
+                        <span class="faq-toggle">+</span>
+                    </button>
+                    <div class="faq-a" style="display: none;">
+                        Varies by operator. Usually includes boat, DJ/music, and some basic amenities. Open bar/drinks may be extra. Confirm what's included.
+                    </div>
+                </div>
+                                <div class="faq-item">
+                    <button class="faq-q" onclick="toggleFaq(event)">
+                        <span>Is there a dress code?</span>
+                        <span class="faq-toggle">+</span>
+                    </button>
+                    <div class="faq-a" style="display: none;">
+                        No strict dress code on most boats. Wear whatever's comfortable. Swimwear is fine. No shoes required on some tiki boats.
+                    </div>
+                </div>
+                                <div class="faq-item">
+                    <button class="faq-q" onclick="toggleFaq(event)">
+                        <span>How many people can fit?</span>
+                        <span class="faq-toggle">+</span>
+                    </button>
+                    <div class="faq-a" style="display: none;">
+                        Small party boats hold 20-40. Large tiki boats accommodate 50-150+. Groups get custom quotes.
+                    </div>
+                </div>
+                                <div class="faq-item">
+                    <button class="faq-q" onclick="toggleFaq(event)">
+                        <span>Can we bring our own drinks?</span>
+                        <span class="faq-toggle">+</span>
+                    </button>
+                    <div class="faq-a" style="display: none;">
+                        Most don't allow outside beverages. Purchase drinks onboard or book an "open bar" package.
+                    </div>
+                </div>
+                        </div>
+    </section>
+    
+    <!-- FOOTER -->
+    <footer class="footer">
+        <p>&copy; 2026 Key West Sandbar Tours. All rights reserved. <a href="/">Home</a> | <a href="/about.html">About</a> | <a href="/faq.html">FAQs</a></p>
+    </footer>
+    
+    <script>
+        function toggleFaq(event) {
+            const item = event.target.closest('.faq-item');
+            const answer = item.querySelector('.faq-a');
+            const toggle = item.querySelector('.faq-toggle');
+            
+            answer.style.display = answer.style.display === 'none' ? 'block' : 'none';
+            toggle.textContent = toggle.textContent === '+' ? '−' : '+';
+        }
+    </script>
+</body>
+</html>

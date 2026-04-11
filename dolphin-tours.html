@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Key West Dolphin Tours | Key West Sandbar Tours</title>
+    <meta name="description" content="Dolphin watching tours in Key West. See wild dolphins in their natural habitat. Educational eco-tours, family-friendly.">
+    <link rel="canonical" href="https://keywestsandbartours.com/dolphin-tours.html">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+    
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://keywestsandbartours.com/dolphin-tours.html">
+    <meta property="og:title" content="Key West Dolphin Tours">
+    <meta property="og:description" content="Dolphin watching tours in Key West. See wild dolphins in their natural habitat. Educational eco-tours, family-friendly.">
+    <meta property="og:image" content="https://keywestsandbartours.com/og-image.jpg">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    
+    <!-- Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://keywestsandbartours.com/"},
+            {"@type": "ListItem", "position": 2, "name": "Key West Dolphin Tours", "item": "https://keywestsandbartours.com/dolphin-tours.html"}
+        ]
+    }
+    </script>
+    
+    <!-- GA4 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-67D7X60CJF"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-67D7X60CJF');
+        
+        function trackBookingClick(tourName, tourId, price) {
+            gtag('event', 'booking_click', {
+                'event_category': 'conversion',
+                'event_label': tourName,
+                'tour_id': tourId,
+                'value': price,
+                'page_type': 'dolphin-tours'
+            });
+        }
+    </script>
+    
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        :root {
+            --sand: #F5E6D3;
+            --ocean-deep: #0A3D62;
+            --ocean-light: #1E90FF;
+            --white: #FFFFFF;
+            --off-white: #FAFAFA;
+            --text-dark: #1A1A2E;
+            --text-muted: #6B7280;
+            --accent: #F59E0B;
+        }
+
+        body { font-family: 'DM Sans', sans-serif; color: var(--text-dark); line-height: 1.6; }
+        .header { background: var(--white); padding: 16px 20px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+        .header-inner { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-size: 1.1rem; font-weight: 700; color: var(--ocean-deep); text-decoration: none; display: flex; align-items: center; gap: 8px; }
+        .logo-img { width: 24px; height: 24px; }
+        
+        .hero { background: linear-gradient(135deg, var(--ocean-deep) 0%, var(--ocean-light) 100%); color: var(--white); padding: 48px 20px; text-align: center; }
+        .hero h1 { font-family: 'Playfair Display', serif; font-size: 2.5rem; margin-bottom: 16px; }
+        .hero p { font-size: 1.1rem; margin-bottom: 24px; opacity: 0.95; }
+        .hero a { display: inline-block; background: var(--accent); color: var(--ocean-deep); padding: 14px 32px; border-radius: 50px; text-decoration: none; font-weight: 700; }
+        
+        .intro { max-width: 1200px; margin: 0 auto; padding: 48px 20px; }
+        .intro h2 { font-family: 'Playfair Display', serif; font-size: 1.75rem; margin-bottom: 20px; }
+        .intro p { font-size: 1rem; line-height: 1.8; color: var(--text-muted); margin-bottom: 16px; }
+        
+        .tours { background: var(--sand); padding: 48px 20px; }
+        .tours-inner { max-width: 1200px; margin: 0 auto; }
+        .section-label { display: inline-block; background: var(--accent); color: var(--ocean-deep); padding: 6px 14px; border-radius: 4px; font-size: 0.85rem; font-weight: 700; margin-bottom: 12px; }
+        .section-title { font-family: 'Playfair Display', serif; font-size: 1.75rem; margin-bottom: 32px; text-align: center; }
+        
+        .tours-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 20px; }
+        .tour-card { background: var(--white); border-radius: 12px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.1); transition: transform 0.3s, box-shadow 0.3s; }
+        .tour-card:hover { transform: translateY(-8px); box-shadow: 0 8px 20px rgba(0,0,0,0.15); }
+        .tour-card-image { height: 200px; background-size: cover; background-position: center; position: relative; }
+        .tour-card-badge, .tour-card-price { position: absolute; padding: 8px 14px; border-radius: 6px; font-size: 0.85rem; font-weight: 700; }
+        .tour-card-badge { top: 12px; left: 12px; background: var(--accent); color: var(--ocean-deep); }
+        .tour-card-price { top: 12px; right: 12px; background: var(--ocean-deep); color: var(--white); }
+        .tour-card-content { padding: 20px; }
+        .tour-card-company { font-size: 0.75rem; color: var(--ocean-light); font-weight: 700; text-transform: uppercase; margin-bottom: 8px; }
+        .tour-card-content h3 { font-size: 1.1rem; color: var(--ocean-deep); margin-bottom: 8px; }
+        .tour-card-meta { display: flex; gap: 12px; margin-bottom: 12px; font-size: 0.85rem; color: var(--text-muted); }
+        .tour-card-description { font-size: 0.9rem; color: var(--text-muted); margin-bottom: 16px; }
+        .tour-card-cta { display: block; background: var(--accent); color: var(--ocean-deep); text-align: center; padding: 12px 16px; border-radius: 8px; text-decoration: none; font-weight: 700; }
+        .tour-card-cta:hover { background: #f3a500; }
+        
+        .cta-box { background: var(--white); border-radius: 12px; padding: 32px 20px; text-align: center; margin: 32px 0; }
+        .cta-box h3 { font-size: 1.5rem; margin-bottom: 16px; }
+        .cta-box a { display: inline-block; background: var(--accent); color: var(--ocean-deep); padding: 14px 32px; border-radius: 50px; text-decoration: none; font-weight: 700; }
+        
+        .faq { background: var(--off-white); padding: 48px 20px; }
+        .faq-inner { max-width: 1200px; margin: 0 auto; }
+        .faq h2 { font-family: 'Playfair Display', serif; font-size: 1.75rem; text-align: center; margin-bottom: 32px; }
+        .faq-item { background: var(--white); border-radius: 8px; margin-bottom: 12px; overflow: hidden; }
+        .faq-q { background: var(--sand); padding: 16px; border: none; cursor: pointer; display: flex; justify-content: space-between; align-items: center; width: 100%; font-size: 1rem; font-weight: 600; text-align: left; }
+        .faq-q:hover { background: #ede6d3; }
+        .faq-a { padding: 16px; background: var(--white); color: var(--text-muted); }
+        .faq-toggle { display: inline-block; width: 24px; text-align: center; }
+        
+        .footer { background: var(--text-dark); color: var(--white); padding: 24px 20px; text-align: center; font-size: 0.9rem; }
+        .footer a { color: var(--accent); text-decoration: none; }
+        
+        @media (max-width: 600px) {
+            .hero { padding: 32px 16px; }
+            .hero h1 { font-size: 1.75rem; }
+            .tours-grid { grid-template-columns: 1fr; }
+            .faq-q { padding: 14px; font-size: 0.95rem; }
+        }
+    </style>
+</head>
+<body>
+    <!-- HEADER -->
+    <header class="header">
+        <div class="header-inner">
+            <a href="/" class="logo">
+                <img src="favicon-32.png" alt="" class="logo-img">
+                Key West Sandbar Tours
+            </a>
+        </div>
+    </header>
+    
+    <!-- HERO -->
+    <section class="hero">
+        <h1>Key West Dolphin Tours</h1>
+        <p>Dolphin watching tours in Key West. See wild dolphins in their natural habitat. Educational eco-tours, family-friendly.</p>
+        <a href="#tours-grid">Browse Tours</a>
+    </section>
+    
+    <!-- INTRO -->
+    <section class="intro">
+        <h2>Key West Dolphin Tours</h2>
+        <p>Swimming with or watching dolphins in their natural habitat is a magical Key West experience. These intelligent, playful marine mammals are found throughout the Keys and regularly spotted on dedicated dolphin tours.
+
+Most dolphin tours operate in the shallow backcountry waters where dolphins hunt and play. Tours are led by experienced guides who understand dolphin behavior and ecology. You might see Atlantic bottlenose dolphins, spotted dolphins, or even the occasional spinner dolphin. Tours are respectful of marine life—guides follow strict distance and interaction guidelines.
+
+Tours range from 2-4 hours and are suitable for all ages. Many combine dolphin watching with snorkeling, fishing, or sandbar visits. Best season is November through May, though dolphins are present year-round. Sightings are not guaranteed but highly likely on reputable tours.</p>
+    </section>
+    
+    <!-- TOURS -->
+    <section class="tours">
+        <div class="tours-inner">
+            <div class="section-label">Dolphin Encounters</div>
+            <h2 class="section-title">Available Tours</h2>
+            
+            <div id="tours-grid" class="tours-grid">
+                <!-- TOUR 1 -->
+                <div class="tour-card">
+                    <div class="tour-card-image" style="background-image: url('https://cdn.filestackcontent.com/5FUAHTKcTey4jajSulzM')">
+                        <span class="tour-card-badge">Boat Rental-Boat Tour-Dolphin-Private</span>
+                        
+                    </div>
+                    <div class="tour-card-content">
+                        <div class="tour-card-company">Mermaid Charters Key West</div>
+                        <h3>Island Excursion & Dolphin Watching</h3>
+                        <div class="tour-card-meta"><span>⏱ Duration: 4 Hour</span><span>👥 Key West</span></div>
+                        <p class="tour-card-description">Experience sand between your toes and the ocean breeze. Arrive by boat at a lovely Island where you can enjoy sunbathing...</p>
+                        <a href="https://fareharbor.com/embeds/book/mermaidcharterskeywest/items/44071/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&bookable-only=yes&full-items=yes&marketplace=yes&flow=no" target="_blank" class="tour-card-cta" onclick="trackBookingClick('Island Excursion & Dolphin Watching', '44071', null)">Check Availability</a>
+                    </div>
+                </div>
+                                <!-- TOUR 2 -->
+                <div class="tour-card">
+                    <div class="tour-card-image" style="background-image: url('https://cdn.filestackcontent.com/yvqrAhrbTReCe92L3YNq')">
+                        <span class="tour-card-badge">Boat Tour-Dolphin</span>
+                        
+                    </div>
+                    <div class="tour-card-content">
+                        <div class="tour-card-company">Mermaid Charters Key West</div>
+                        <h3>Complementary Champagne Sunset and Dolphin Watching Excursion</h3>
+                        <div class="tour-card-meta"><span>⏱ Duration: 2 Hour</span><span>👥 Key West</span></div>
+                        <p class="tour-card-description">This evening tour will take you around Key West to get the best views of the coastline. You may even spot some dolphins ...</p>
+                        <a href="https://fareharbor.com/embeds/book/mermaidcharterskeywest/items/44068/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&bookable-only=yes&full-items=yes&marketplace=yes&flow=no" target="_blank" class="tour-card-cta" onclick="trackBookingClick('Complementary Champagne Sunset and Dolphin Watching Excursion', '44068', null)">Check Availability</a>
+                    </div>
+                </div>
+                                <!-- TOUR 3 -->
+                <div class="tour-card">
+                    <div class="tour-card-image" style="background-image: url('https://cdn.filestackcontent.com/3aXL1P79R9ugNBcuomcp')">
+                        <span class="tour-card-badge">Boat Rental-Boat Tour-Dolphin-Private-Snorkel</span>
+                        
+                    </div>
+                    <div class="tour-card-content">
+                        <div class="tour-card-company">Mermaid Charters Key West</div>
+                        <h3>Combo: Snorkeling,  Boca Grand Sandbar & Dolphin Watching</h3>
+                        <div class="tour-card-meta"><span>⏱ Duration: 4 Hour</span><span>👥 Key West</span></div>
+                        <p class="tour-card-description">*If you would like to bring your own food and drinks along we will have cooler space available.
+Bring your own food and ...</p>
+                        <a href="https://fareharbor.com/embeds/book/mermaidcharterskeywest/items/294807/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&bookable-only=yes&full-items=yes&marketplace=yes&flow=no" target="_blank" class="tour-card-cta" onclick="trackBookingClick('Combo: Snorkeling,  Boca Grand Sandbar & Dolphin Watching', '294807', null)">Check Availability</a>
+                    </div>
+                </div>
+                                <!-- TOUR 4 -->
+                <div class="tour-card">
+                    <div class="tour-card-image" style="background-image: url('https://cdn.filestackcontent.com/ihwpgTOTz2JYhbMDlLMm')">
+                        <span class="tour-card-badge">Boat Tour-Dolphin-Snorkel</span>
+                        
+                    </div>
+                    <div class="tour-card-content">
+                        <div class="tour-card-company">Low Tide Charter</div>
+                        <h3>8 Hour Sandbar Trip</h3>
+                        <div class="tour-card-meta"><span>⏱ 8 Hour</span><span>👥 Key West</span></div>
+                        <p class="tour-card-description">Our tours take you on the ultimate back country adventure, stopping at one or multiple sandbars as you'd like. We can br...</p>
+                        <a href="https://fareharbor.com/embeds/book/lowtidecharter/items/278565/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&bookable-only=yes&full-items=yes&marketplace=yes&flow=no" target="_blank" class="tour-card-cta" onclick="trackBookingClick('8 Hour Sandbar Trip', '278565', null)">Check Availability</a>
+                    </div>
+                </div>
+                                <!-- TOUR 5 -->
+                <div class="tour-card">
+                    <div class="tour-card-image" style="background-image: url('https://cdn.filestackcontent.com/A7ZthohRa6rxd3S50Pam')">
+                        <span class="tour-card-badge">Dolphin</span>
+                        
+                    </div>
+                    <div class="tour-card-content">
+                        <div class="tour-card-company">Mermaid Charters Key West</div>
+                        <h3>Swimming, Sightseeing, Dolphin Watching</h3>
+                        <div class="tour-card-meta"><span>⏱ 2 Hrs</span><span>👥 Key West</span></div>
+                        <p class="tour-card-description">...</p>
+                        <a href="https://fareharbor.com/embeds/book/mermaidcharterskeywest/items/327096/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&bookable-only=yes&full-items=yes&marketplace=yes&flow=no" target="_blank" class="tour-card-cta" onclick="trackBookingClick('Swimming, Sightseeing, Dolphin Watching', '327096', null)">Check Availability</a>
+                    </div>
+                </div>
+                                <!-- TOUR 6 -->
+                <div class="tour-card">
+                    <div class="tour-card-image" style="background-image: url('https://cdn.filestackcontent.com/NZSsogA8TP6oHxuMBheO')">
+                        <span class="tour-card-badge">Boat Tour-Dolphin-Eco Tour-Food Tour-Photography Tour-Private-Snorkel</span>
+                        
+                    </div>
+                    <div class="tour-card-content">
+                        <div class="tour-card-company">Pirate Adventure Charters</div>
+                        <h3>4 Hour Eco Tour & Dolphin Watch</h3>
+                        <div class="tour-card-meta"><span>⏱ 4 Hour</span><span>👥 Key West</span></div>
+                        <p class="tour-card-description">Observe â€œSafari Styleâ€ our resident pods of dolphin that feed, play and socialize in the shallow waters North and We...</p>
+                        <a href="https://fareharbor.com/embeds/book/pirateadventurecharters/items/315398/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&bookable-only=yes&full-items=yes&marketplace=yes&flow=no" target="_blank" class="tour-card-cta" onclick="trackBookingClick('4 Hour Eco Tour & Dolphin Watch', '315398', null)">Check Availability</a>
+                    </div>
+                </div>
+                                <!-- TOUR 7 -->
+                <div class="tour-card">
+                    <div class="tour-card-image" style="background-image: url('https://cdn.filestackcontent.com/42KIVSdQiqb5MKxwWAdm')">
+                        <span class="tour-card-badge">Boat Tour-Dolphin-Food Tour-Private-Water Activities</span>
+                        
+                    </div>
+                    <div class="tour-card-content">
+                        <div class="tour-card-company">Pirate Adventure Charters</div>
+                        <h3>Sunset and Dolphin Watching Excursion</h3>
+                        <div class="tour-card-meta"><span>⏱ 2 Hour</span><span>👥 Key West</span></div>
+                        <p class="tour-card-description">Relax and enjoy complimentary beer, wine, champagne, or soda. Snuggle up with that special someone as the sun paints the...</p>
+                        <a href="https://fareharbor.com/embeds/book/pirateadventurecharters/items/315395/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&bookable-only=yes&full-items=yes&marketplace=yes&flow=no" target="_blank" class="tour-card-cta" onclick="trackBookingClick('Sunset and Dolphin Watching Excursion', '315395', null)">Check Availability</a>
+                    </div>
+                </div>
+                                <!-- TOUR 8 -->
+                <div class="tour-card">
+                    <div class="tour-card-image" style="background-image: url('https://cdn.filestackcontent.com/9gpicD27RmOuxIABe9uU')">
+                        <span class="tour-card-badge">Boat Tour-Dolphin-Eco Tour-Food Tour-Photography Tour-Private-Snorkel</span>
+                        
+                    </div>
+                    <div class="tour-card-content">
+                        <div class="tour-card-company">Pirate Adventure Charters</div>
+                        <h3>6 Hour Eco Tour & Dolphin Watch</h3>
+                        <div class="tour-card-meta"><span>⏱ 6 Hour</span><span>👥 Key West</span></div>
+                        <p class="tour-card-description">Observe â€œSafari Styleâ€ our resident pods of dolphin that feed, play and socialize in the shallow waters North and We...</p>
+                        <a href="https://fareharbor.com/embeds/book/pirateadventurecharters/items/315412/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&bookable-only=yes&full-items=yes&marketplace=yes&flow=no" target="_blank" class="tour-card-cta" onclick="trackBookingClick('6 Hour Eco Tour & Dolphin Watch', '315412', null)">Check Availability</a>
+                    </div>
+                </div>
+                                <!-- TOUR 9 -->
+                <div class="tour-card">
+                    <div class="tour-card-image" style="background-image: url('https://cdn.filestackcontent.com/unBV82WQam9LF5jsr8nc')">
+                        <span class="tour-card-badge">Dolphin-Wellness-Photography Tour-Private-SUP</span>
+                        
+                    </div>
+                    <div class="tour-card-content">
+                        <div class="tour-card-company">Namaste Key West</div>
+                        <h3>ZEN PADDLE</h3>
+                        <div class="tour-card-meta"><span>⏱ Varies</span><span>👥 Key West</span></div>
+                        <p class="tour-card-description">We begin our Zen Paddle in a protected canal. Once we exit the canal and enter the shallow bay, we deepen our breath, si...</p>
+                        <a href="https://fareharbor.com/embeds/book/namastekw/items/326154/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&bookable-only=yes&full-items=yes&marketplace=yes&flow=no" target="_blank" class="tour-card-cta" onclick="trackBookingClick('ZEN PADDLE', '326154', null)">Check Availability</a>
+                    </div>
+                </div>
+                                <!-- TOUR 10 -->
+                <div class="tour-card">
+                    <div class="tour-card-image" style="background-image: url('https://cdn.filestackcontent.com/c6vqgYTxR5OJgup4OF2Q')">
+                        <span class="tour-card-badge">Dolphin</span>
+                        
+                    </div>
+                    <div class="tour-card-content">
+                        <div class="tour-card-company">Up The Keys</div>
+                        <h3>Custom Tour - Dolphins & 7-mile bridge</h3>
+                        <div class="tour-card-meta"><span>⏱ Varies</span><span>👥 Key West</span></div>
+                        <p class="tour-card-description">...</p>
+                        <a href="https://fareharbor.com/embeds/book/upthekeys/items/371979/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&bookable-only=yes&full-items=yes&marketplace=yes&flow=no" target="_blank" class="tour-card-cta" onclick="trackBookingClick('Custom Tour - Dolphins & 7-mile bridge', '371979', null)">Check Availability</a>
+                    </div>
+                </div>
+                                <!-- TOUR 11 -->
+                <div class="tour-card">
+                    <div class="tour-card-image" style="background-image: url('https://cdn.filestackcontent.com/JGkGnveTR2eWUBcL9SI3')">
+                        <span class="tour-card-badge">Dolphin</span>
+                        
+                    </div>
+                    <div class="tour-card-content">
+                        <div class="tour-card-company">Island Dolphin Care</div>
+                        <h3>Shavasana Float</h3>
+                        <div class="tour-card-meta"><span>⏱ 10 min</span><span>👥 Key Largo</span></div>
+                        <p class="tour-card-description">...</p>
+                        <a href="https://fareharbor.com/embeds/book/islanddolphincare/items/212505/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&bookable-only=yes&full-items=yes&marketplace=yes&flow=no" target="_blank" class="tour-card-cta" onclick="trackBookingClick('Shavasana Float', '212505', null)">Check Availability</a>
+                    </div>
+                </div>
+                                <!-- TOUR 12 -->
+                <div class="tour-card">
+                    <div class="tour-card-image" style="background-image: url('https://cdn.filestackcontent.com/eyipyBAbQ1icCLBjB35h')">
+                        <span class="tour-card-badge">Dolphin-Events</span>
+                        <span class="tour-card-price">$25</span>
+                    </div>
+                    <div class="tour-card-content">
+                        <div class="tour-card-company">Island Dolphin Care</div>
+                        <h3>2021 PEC Connect POD Event Sponsorship</h3>
+                        <div class="tour-card-meta"><span>⏱ Varies</span><span>👥 Key Largo</span></div>
+                        <p class="tour-card-description">We Care and We Know You Do Too
+YOU CAN GET INVOLVED:
+Become a Sponsor
+Levels
+$25,000 - Dolphin Visionary
+$10,000 - POD (...</p>
+                        <a href="https://fareharbor.com/embeds/book/islanddolphincare/items/335197/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&bookable-only=yes&full-items=yes&marketplace=yes&flow=no" target="_blank" class="tour-card-cta" onclick="trackBookingClick('2021 PEC Connect POD Event Sponsorship', '335197', 25)">Check Availability</a>
+                    </div>
+                </div>
+                            </div>
+        </div>
+    </section>
+    
+    <!-- CTA -->
+    <div class="cta-box">
+        <h3>Ready to Book?</h3>
+        <p>Browse our tours above and secure your adventure in Key West.</p>
+        <a href="#tours-grid">See Available Tours</a>
+    </div>
+    
+    <!-- FAQ -->
+    <section class="faq">
+        <div class="faq-inner">
+            <h2>Frequently Asked Questions</h2>
+                <div class="faq-item">
+                    <button class="faq-q" onclick="toggleFaq(event)">
+                        <span>Will we see dolphins for sure?</span>
+                        <span class="faq-toggle">+</span>
+                    </button>
+                    <div class="faq-a" style="display: none;">
+                        Sightings are highly likely but not guaranteed. Guides know the best locations. If no dolphins are spotted, most operators offer partial refunds or rescheduling.
+                    </div>
+                </div>
+                                <div class="faq-item">
+                    <button class="faq-q" onclick="toggleFaq(event)">
+                        <span>Can we swim with the dolphins?</span>
+                        <span class="faq-toggle">+</span>
+                    </button>
+                    <div class="faq-a" style="display: none;">
+                        No. Federal law prohibits dolphin interaction. Tours observe from boats only. This protects dolphins from stress and keeps them wild.
+                    </div>
+                </div>
+                                <div class="faq-item">
+                    <button class="faq-q" onclick="toggleFaq(event)">
+                        <span>What else happens on the tour?</span>
+                        <span class="faq-toggle">+</span>
+                    </button>
+                    <div class="faq-a" style="display: none;">
+                        Many dolphin tours also include snorkeling, fishing, or time at sandbars. Some focus purely on dolphin watching and education.
+                    </div>
+                </div>
+                                <div class="faq-item">
+                    <button class="faq-q" onclick="toggleFaq(event)">
+                        <span>Are children allowed?</span>
+                        <span class="faq-toggle">+</span>
+                    </button>
+                    <div class="faq-a" style="display: none;">
+                        Yes. Dolphin tours are family-friendly. Great educational opportunity for kids to learn about marine biology.
+                    </div>
+                </div>
+                        </div>
+    </section>
+    
+    <!-- FOOTER -->
+    <footer class="footer">
+        <p>&copy; 2026 Key West Sandbar Tours. All rights reserved. <a href="/">Home</a> | <a href="/about.html">About</a> | <a href="/faq.html">FAQs</a></p>
+    </footer>
+    
+    <script>
+        function toggleFaq(event) {
+            const item = event.target.closest('.faq-item');
+            const answer = item.querySelector('.faq-a');
+            const toggle = item.querySelector('.faq-toggle');
+            
+            answer.style.display = answer.style.display === 'none' ? 'block' : 'none';
+            toggle.textContent = toggle.textContent === '+' ? '−' : '+';
+        }
+    </script>
+</body>
+</html>
