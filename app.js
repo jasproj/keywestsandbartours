@@ -132,7 +132,7 @@ function createTourCard(tour) {
     return `
         <article class="tour-card">
             <div class="tour-image">
-                <img src="${tour.image}" alt="${tour.name}" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=400'">
+                <img src="${tour.image}" alt="${tour.name}" loading="lazy" width="400" height="300" onerror="this.src='https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=400'" style="width: 100%; height: auto; object-fit: cover;">
                 ${priceHtml}
                 <div class="tour-badges">${badges.join('')}</div>
                 <div class="tour-location">📍 ${areaName}</div>
