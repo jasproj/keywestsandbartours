@@ -338,3 +338,156 @@ async function initAreaPage(areaSlug) {
 
 // Start
 document.addEventListener('DOMContentLoaded', init);
+
+// ===== TOURISTTIP SCHEMA INJECTION =====
+function generateTourSchema(tour) {
+    return {
+        "@context": "https://schema.org",
+        "@type": "TouristTrip",
+        "name": tour.name,
+        "description": tour.description || "",
+        "touristType": tour.tags ? tour.tags.join(", ") : "",
+        "offers": {
+            "@type": "Offer",
+            "price": tour.price || "",
+            "priceCurrency": "USD",
+            "url": tour.bookingLink,
+            "availability": "https://schema.org/InStock"
+        },
+        "provider": {
+            "@type": "LocalBusiness",
+            "name": tour.company
+        }
+    };
+}
+
+function injectTourSchemas() {
+    document.querySelectorAll('.tour-card').forEach(card => {
+        const title = card.querySelector('.tour-name')?.textContent || '';
+        const company = card.querySelector('.tour-company')?.textContent || '';
+        const desc = card.querySelector('.tour-description')?.textContent || '';
+        const link = card.querySelector('.tour-cta')?.href || card.querySelector('a')?.href || '';
+        
+        if (title && link) {
+            const schema = {
+                "@context": "https://schema.org",
+                "@type": "TouristTrip",
+                "name": title,
+                "description": desc,
+                "offers": {
+                    "@type": "Offer",
+                    "priceCurrency": "USD",
+                    "url": link,
+                    "availability": "https://schema.org/InStock"
+                },
+                "provider": {
+                    "@type": "LocalBusiness",
+                    "name": company
+                }
+            };
+            
+            const script = document.createElement('script');
+            script.type = 'application/ld+json';
+            script.textContent = JSON.stringify(schema);
+            card.insertBefore(script, card.firstChild);
+        }
+    });
+}
+
+// ===== STICKY MOBILE CTA BAR =====
+document.addEventListener('DOMContentLoaded', () => {
+    // Create sticky CTA bar
+    const stickyBar = document.createElement('div');
+    stickyBar.id = 'sticky-cta-bar';
+    stickyBar.style.cssText = `
+        display: none;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 48px;
+        background: #1a472a;
+        border-top: 1px solid rgba(26, 71, 42, 0.2);
+        z-index: 999;
+        padding: 0 1rem;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.1);
+        animation: slideUp 300ms ease-out;
+    `;
+    
+    const button = document.createElement('button');
+    button.textContent = 'Book Your Tour';
+    button.style.cssText = `
+        background: white;
+        color: #1a472a;
+        padding: 12px 24px;
+        border-radius: 9999px;
+        font-weight: 600;
+        font-size: 14px;
+        width: 100%;
+        max-width: 300px;
+        border: none;
+        cursor: pointer;
+        transition: all 150ms ease;
+    `;
+    
+    button.addEventListener('click', () => {
+        const toursGrid = document.getElementById('tours');
+        if (toursGrid) {
+            toursGrid.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+    });
+    
+    button.addEventListener('mouseover', () => {
+        button.style.transform = 'scale(1.02)';
+    });
+    
+    button.addEventListener('mouseout', () => {
+        button.style.transform = 'scale(1)';
+    });
+    
+    stickyBar.appendChild(button);
+    document.body.appendChild(stickyBar);
+    
+    // Add CSS animation
+    const style = document.createElement('style');
+    style.textContent = `
+        @keyframes slideUp {
+            from {
+                transform: translateY(100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            #sticky-cta-bar {
+                display: flex !important;
+            }
+        }
+    `;
+    document.head.appendChild(style);
+    
+    // Show sticky bar after scrolling past hero
+    const heroSection = document.querySelector('.hero') || document.querySelector('header');
+    let heroScrolled = false;
+    
+    window.addEventListener('scroll', () => {
+        const scrolled = window.scrollY > (heroSection?.offsetHeight || 300);
+        
+        if (scrolled && !heroScrolled) {
+            stickyBar.style.display = 'flex';
+            heroScrolled = true;
+        } else if (!scrolled && heroScrolled) {
+            stickyBar.style.display = 'none';
+            heroScrolled = false;
+        }
+    });
+    
+    // Inject schemas after tours load
+    setTimeout(injectTourSchemas, 500);
+});
