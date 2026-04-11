@@ -126,12 +126,43 @@ function createTourCard(tour) {
                    target="_blank" 
                    rel="noopener" 
                    class="tour-cta"
-                   onclick="trackBookingClick('${safeName}', '${tour.id}', '${area}')">
+                   onclick="trackBookingClickEnhanced('${safeName}', '${tour.id}', '${area}')">
                     Check Availability →
                 </a>
             </div>
         </article>
     `;
+}
+
+// GA4 Tracking Functions
+function trackBookingClickEnhanced(tourName, tourId, area) {
+    gtag('event', 'booking_click', {
+        tour_id: tourId,
+        tour_name: tourName,
+        area: area,
+        event_category: 'conversion'
+    });
+}
+
+function trackFilterChange(filterType, value) {
+    gtag('event', 'filter_used', {
+        filter_type: filterType,
+        value: value,
+        event_category: 'engagement'
+    });
+}
+
+function trackSearchUsed(searchTerm) {
+    gtag('event', 'search_used', {
+        query: searchTerm,
+        event_category: 'engagement'
+    });
+}
+
+function trackLoadMoreClick() {
+    gtag('event', 'load_more_clicked', {
+        event_category: 'engagement'
+    });
 }
 
 // Filter tours
@@ -141,6 +172,12 @@ function applyFilters() {
     const priceFilter = document.getElementById('priceFilter')?.value || '';
     const sortFilter = document.getElementById('sortFilter')?.value || 'quality';
     const searchQuery = (document.getElementById('hero-search')?.value || '').toLowerCase().trim();
+    
+    // Track filter usage
+    if (areaFilter) trackFilterChange('area', areaFilter);
+    if (activityFilter) trackFilterChange('activity', activityFilter);
+    if (priceFilter) trackFilterChange('price', priceFilter);
+    if (searchQuery) trackSearchUsed(searchQuery);
     
     filteredTours = allTours.filter(tour => {
         // Area filter
@@ -222,6 +259,7 @@ function renderTours() {
 
 // Load more
 function loadMore() {
+    trackLoadMoreClick();
     const grid = document.getElementById('tours-grid');
     const loadMoreBtn = document.getElementById('load-more');
     
