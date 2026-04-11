@@ -78,6 +78,26 @@ function matchesActivity(tour, activity) {
     return keywords.some(kw => tags.includes(kw) || name.includes(kw) || desc.includes(kw));
 }
 
+// Format price
+function formatPrice(price) {
+    return Number.isFinite(price) ? `From $${price}` : 'Check live price';
+}
+
+// Clean location display
+function cleanLocation(location = '') {
+    return location
+        .replace(/^United States\/Florida\//, '')
+        .replace(/^Florida\//, '')
+        .trim() || 'Key West';
+}
+
+// Score label
+function scoreLabel(score) {
+    if (score >= 90) return 'Top Rated';
+    if (score >= 75) return 'Popular';
+    return '';
+}
+
 // Format duration
 function formatDuration(minutes) {
     if (!minutes) return '';
@@ -92,11 +112,14 @@ function formatDuration(minutes) {
 function createTourCard(tour) {
     const area = getArea(tour.location);
     const areaName = getAreaName(tour.location);
-    const priceHtml = tour.price ? `<div class="tour-price">From $${tour.price}</div>` : '';
+    const priceDisplay = formatPrice(tour.price);
+    const priceHtml = priceDisplay ? `<div class="tour-price">${priceDisplay}</div>` : '';
     const duration = formatDuration(tour.duration);
     
     const badges = [];
-    if (tour.qualityScore >= 95) badges.push('<span class="badge badge-top">⭐ Top Rated</span>');
+    const score = tour.qualityScore || 0;
+    const badge = scoreLabel(score);
+    if (badge) badges.push(`<span class="badge badge-quality">⭐ ${badge}</span>`);
     
     const ratingHtml = tour.rating ? 
         `<span class="tour-rating">★ ${tour.rating}${tour.reviewCount ? ` (${tour.reviewCount})` : ''}</span>` : '';
@@ -127,7 +150,7 @@ function createTourCard(tour) {
                    rel="noopener" 
                    class="tour-cta"
                    onclick="trackBookingClickEnhanced('${safeName}', '${tour.id}', '${area}')">
-                    Check Availability →
+                    Book Now →
                 </a>
             </div>
         </article>
