@@ -3,7 +3,27 @@
   Generated from tours-data_KWST.json (1,010 tours, 133 sandbar-specific)
   All prices sourced from live FareHarbor data.
   Paste this block before your </main> or inside your page content.
-  The <script> block belongs in <head> or before </body>.
+  The <script> block belongs in <head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8L9PW5W6XM"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-8L9PW5W6XM');
+</script> or before <script>
+document.addEventListener('DOMContentLoaded', function() {
+  document.querySelectorAll('a[href*="fareharbor.com"]').forEach(function(link) {
+    link.addEventListener('click', function() {
+      gtag('event', 'booking_click', {
+        'tour_name': this.dataset.tourName || this.textContent.trim(),
+        'outbound_url': this.href
+      });
+    });
+  });
+});
+</script>
+</body>.
 -->
 
 <!-- ═══════════════════════════════════════════════════════

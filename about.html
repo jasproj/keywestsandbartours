@@ -9,13 +9,13 @@
     <link rel="canonical" href="https://keywestsandbartours.com/about.html">
     
     <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-B6ER6JP7QV"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-B6ER6JP7QV');
-    </script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8L9PW5W6XM"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-8L9PW5W6XM');
+</script>
     
     <!-- Open Graph -->
     <meta property="og:type" content="website">
@@ -458,5 +458,17 @@
             });
         });
     </script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  document.querySelectorAll('a[href*="fareharbor.com"]').forEach(function(link) {
+    link.addEventListener('click', function() {
+      gtag('event', 'booking_click', {
+        'tour_name': this.dataset.tourName || this.textContent.trim(),
+        'outbound_url': this.href
+      });
+    });
+  });
+});
+</script>
 </body>
 </html>
