@@ -1592,6 +1592,11 @@ body {
     .ticker-wrap {
         display: none;
     }
+
+    /* Hide badge pill on mobile - saves ~37px, brings hero to ~111px visible */
+    .hero-badge {
+        display: none;
+    }
 }
 
 .blog-featured-image { width: 100%; max-width: 100%; border-radius: 8px; margin: 24px 0; object-fit: cover; }
