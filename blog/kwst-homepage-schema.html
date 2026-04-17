@@ -1,0 +1,260 @@
+<!--
+  KWST HOMEPAGE SCHEMA BLOCK
+  ===========================
+  Paste the ENTIRE contents of this file into your homepage <head>, just before </head>.
+
+  IMPORTANT — Before deploying, fill in the 4 placeholders marked with TODO:
+    1. TODO_LOGO_URL     — absolute URL to your logo image (e.g. https://keywestsandbartours.com/images/logo.png)
+    2. TODO_REVIEW_COUNT — your actual review count from TripAdvisor/Google (see note below)
+    3. TODO_RATING       — your actual average rating (e.g. 4.8)
+    4. TODO_SOCIAL_*     — your actual social profile URLs
+
+  NOTE ON REVIEW COUNT:
+  FareHarbor tour data for KWST does not embed review counts in the JSON feed
+  (ratings load client-side from TripAdvisor via qualityScore proxy).
+  To get the real number: check your Google Business Profile, TripAdvisor listing,
+  or FareHarbor dashboard. Only use a verified count here — Google validates
+  AggregateRating against visible on-page reviews. If you don't have a
+  verified count yet, omit the aggregateRating block entirely until you do.
+
+  WHAT THIS SCHEMA ADDS OVER COMPETITORS:
+  ✅ TravelAgency (more specific than LocalBusiness for tour operators)
+  ✅ AggregateRating (star display in search — ZERO competitors have this)
+  ✅ GeoCoordinates (local pack signal — only casualmondaycharters.com has this)
+  ✅ openingHoursSpecification (hours in local pack)
+  ✅ WebSite + SearchAction (sitelinks search box eligibility)
+  ✅ sameAs social links (entity recognition for AI systems)
+  ✅ priceRange with explicit range (pricing signal for AI citation)
+-->
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "TravelAgency",
+      "@id": "https://keywestsandbartours.com/#business",
+      "name": "Key West Sandbar Tours",
+      "alternateName": "KWST",
+      "description": "Key West sandbar tours and private charters — shared group tours from $110/person, private boats from $375. Experienced captains, backcountry sandbars, family-friendly. Serving Key West and the Florida Keys.",
+      "url": "https://keywestsandbartours.com",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "TODO_LOGO_URL",
+        "width": 400,
+        "height": 100
+      },
+      "image": "TODO_LOGO_URL",
+      "telephone": "+1-727-623-2652",
+      "email": "jason@floridateleprompter.com",
+      "priceRange": "$110–$980",
+      "currenciesAccepted": "USD",
+      "paymentAccepted": "Credit Card, Debit Card",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Key West",
+        "addressRegion": "FL",
+        "postalCode": "33040",
+        "addressCountry": "US"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 24.5551,
+        "longitude": -81.7800
+      },
+      "hasMap": "https://maps.google.com/?q=Key+West,+FL+33040",
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday",
+          "Sunday"
+        ],
+        "opens": "08:00",
+        "closes": "19:00"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "TODO_RATING",
+        "reviewCount": "TODO_REVIEW_COUNT",
+        "bestRating": "5",
+        "worstRating": "1"
+      },
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Key West",
+          "containedInPlace": {
+            "@type": "State",
+            "name": "Florida"
+          }
+        },
+        {
+          "@type": "Place",
+          "name": "Florida Keys"
+        }
+      ],
+      "serviceType": [
+        "Sandbar Tour",
+        "Private Boat Charter",
+        "Shared Group Tour",
+        "Sunset Cruise",
+        "Eco Tour",
+        "Dolphin Watch Tour",
+        "Snorkeling Tour"
+      ],
+      "sameAs": [
+        "TODO_SOCIAL_FACEBOOK",
+        "TODO_SOCIAL_INSTAGRAM",
+        "TODO_SOCIAL_TRIPADVISOR",
+        "TODO_SOCIAL_GOOGLE_BUSINESS"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://keywestsandbartours.com/#website",
+      "url": "https://keywestsandbartours.com",
+      "name": "Key West Sandbar Tours",
+      "description": "Find and book Key West sandbar tours, private charters, and eco adventures. 1,000+ tours from 200 operators.",
+      "publisher": {
+        "@id": "https://keywestsandbartours.com/#business"
+      },
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "https://keywestsandbartours.com/tours?q={search_term_string}"
+        },
+        "query-input": "required name=search_term_string"
+      }
+    }
+  ]
+}
+</script>
+
+<!--
+  OPTIONAL: Add this FAQPage block to your homepage too (separate <script> tag).
+  This is the same block from kwst-faq-section.html — only include it ONCE per page.
+  If the FAQ section is already on the homepage, this schema should also be there.
+
+  The block below adds 3 additional homepage-level Q&As that aren't in the FAQ section,
+  focused on the "what is KWST" and "how does the site work" questions AI systems ask.
+-->
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is Key West Sandbar Tours?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Key West Sandbar Tours is an affiliate booking network aggregating 1,000+ tours from 200+ Key West operators through FareHarbor. We list shared group sandbar tours ($85–$178/person), private charters ($375–$980/boat), eco adventures, sunset cruises, and snorkel combos. Booking links go directly to the tour operator with instant confirmation."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How much do Key West sandbar tours cost?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Shared group sandbar tours cost $85–$178 per person for 4-hour trips. Private half-day charters (4 hours, up to 6 guests) run $375–$650 for the boat. Private full-day charters cost $600–$980. Tiki boat sandbar trips are $375–$525 for the boat. The Sandbar & Kayak Eco Adventure is $130 per person for 5 hours. NYC-style premium tours don't apply here — these are Key West market rates."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Which Key West sandbar tour is best for a first-timer?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "For solo travelers or couples: the Shared Sandbar Trips ($125/person, 4 hrs) or the Sandbar & Dolphin Adventure ($130/person, 5 hrs) are the best value. For groups of 4+: the Private Key West Sandbar Trip on a Tiki Boat ($525/boat, 4 hrs) works out to $87.50/person and gives full schedule flexibility. For families: the Sandbar & Kayak Eco Adventure ($130/person) includes kayaks and is family-friendly."
+      }
+    }
+  ]
+}
+</script>
+
+<!--
+  OPTIONAL PRODUCT SCHEMA — Add one block per featured tour on your homepage.
+  Replace the placeholder values with real tour data.
+  Example for the Shared Sandbar Trips:
+-->
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "name": "Shared Key West Sandbar Trip",
+  "description": "4-hour shared group sandbar tour in Key West. Professional captain, backcountry sandbar, swimming and snorkeling. Up to 15 guests per departure.",
+  "url": "https://fareharbor.com/embeds/book/keywestcoastalcharters/items/476851/?asn=fhdn&asn-ref=walktheplankadventures",
+  "brand": {
+    "@type": "Brand",
+    "name": "Key West Sandbar Tours"
+  },
+  "offers": {
+    "@type": "Offer",
+    "price": "125.00",
+    "priceCurrency": "USD",
+    "availability": "https://schema.org/InStock",
+    "url": "https://fareharbor.com/embeds/book/keywestcoastalcharters/items/476851/?asn=fhdn&asn-ref=walktheplankadventures",
+    "seller": {
+      "@type": "Organization",
+      "name": "Key West Coastal Charters"
+    }
+  }
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "name": "Private Key West Sandbar Charter (Tiki Boat)",
+  "description": "4-hour private tiki boat sandbar charter in Key West. Up to 6 guests, BYOB, backcountry sandbar. Full boat rental with experienced captain.",
+  "url": "https://fareharbor.com/embeds/book/keywestpromotions/items/265953/?asn=fhdn&asn-ref=walktheplankadventures",
+  "brand": {
+    "@type": "Brand",
+    "name": "Key West Sandbar Tours"
+  },
+  "offers": {
+    "@type": "Offer",
+    "price": "525.00",
+    "priceCurrency": "USD",
+    "availability": "https://schema.org/InStock",
+    "url": "https://fareharbor.com/embeds/book/keywestpromotions/items/265953/?asn=fhdn&asn-ref=walktheplankadventures",
+    "seller": {
+      "@type": "Organization",
+      "name": "Key West Promotions"
+    }
+  }
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "name": "Sandbar & Kayak Eco Adventure Key West",
+  "description": "5-hour eco tour combining a guided kayak through Florida Marine Sanctuary mangroves with a secluded sandbar stop. Kayaks, paddleboards, and snorkel gear included.",
+  "url": "https://fareharbor.com/embeds/book/sunsetwatersportskeywest/items/367141/?asn=fhdn&asn-ref=walktheplankadventures",
+  "brand": {
+    "@type": "Brand",
+    "name": "Key West Sandbar Tours"
+  },
+  "offers": {
+    "@type": "Offer",
+    "price": "129.95",
+    "priceCurrency": "USD",
+    "availability": "https://schema.org/InStock",
+    "url": "https://fareharbor.com/embeds/book/sunsetwatersportskeywest/items/367141/?asn=fhdn&asn-ref=walktheplankadventures",
+    "seller": {
+      "@type": "Organization",
+      "name": "Sunset Watersports Key West"
+    }
+  }
+}
+</script>
