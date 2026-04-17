@@ -150,7 +150,7 @@ function createTourCard(tour) {
                    rel="noopener" 
                    class="tour-cta"
                    onclick="trackBookingClickEnhanced('${safeName}', '${tour.id}', '${area}')">
-                    Book Now →
+                    Check Availability →
                 </a>
             </div>
         </article>

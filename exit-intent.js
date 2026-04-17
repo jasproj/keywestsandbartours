@@ -40,10 +40,9 @@ function showExitPopup() {
     `;
     
     popup.innerHTML = `
-        <h2 style="margin: 0 0 10px 0; color: #0a4d68; font-size: 24px;">Wait! 🎉</h2>
+        <h2 style="margin: 0 0 10px 0; color: #0a4d68; font-size: 24px;">Before You Go 🌊</h2>
         <p style="margin: 0 0 20px 0; color: #666; font-size: 14px;">
-            Book your tour in the next 2 hours and get <strong>instant confirmation</strong> 
-            + <strong>free cancellation</strong>
+            Most tours offer <strong>free cancellation</strong> and <strong>instant confirmation</strong>. Check availability before your dates fill.
         </p>
         <div style="display: flex; gap: 10px; margin-bottom: 15px;">
             <button onclick="this.closest('.exit-popup-overlay').remove(); exitPopupShown=false;" 
@@ -54,7 +53,7 @@ function showExitPopup() {
             <button onclick="document.getElementById('tours-grid')?.scrollIntoView({behavior:'smooth'}); this.closest('.exit-popup-overlay').remove();"
                     style="flex: 1; padding: 12px; background: #0a4d68; color: white; 
                            border: none; border-radius: 6px; cursor: pointer; font-weight: 600;">
-                Book Now →
+                Check Availability →
             </button>
         </div>
         <p style="margin: 0; color: #999; font-size: 12px;">🔒 Secure booking, No spam</p>
