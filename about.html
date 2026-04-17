@@ -1,474 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us | Key West Sandbar Tours - Your Local Florida Keys Guide</title>
-    <meta name="description" content="Key West Sandbar Tours connects visitors with the best local tour operators in the Florida Keys. Committed to conservation, authentic experiences, and supporting the island community.">
-    <meta name="keywords" content="Key West tours, Florida Keys adventures, sandbar tours Key West, Key West boat tours, snorkeling Key West, eco-friendly tours, local tour operators, Key West travel guide">
-    <link rel="canonical" href="https://keywestsandbartours.com/about.html">
-    
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-8L9PW5W6XM"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-8L9PW5W6XM');
-</script>
-    
-    <!-- Open Graph -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://keywestsandbartours.com/about.html">
-    <meta property="og:title" content="About Key West Sandbar Tours | Your Local Florida Keys Guide">
-    <meta property="og:description" content="Connecting visitors with authentic Florida Keys experiences. Conservation-minded, locally focused.">
-    <meta property="og:image" content="https://images.unsplash.com/photo-1580799516449-b56c21b6eb72?w=1200">
-    <meta property="og:site_name" content="Key West Sandbar Tours">
-    
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="About Key West Sandbar Tours">
-    <meta name="twitter:description" content="Your guide to authentic Florida Keys adventures with local operators.">
-    
-    <!-- Schema.org structured data for AI and Search -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "TravelAgency",
-        "name": "Key West Sandbar Tours",
-        "description": "Key West Sandbar Tours is a tour discovery platform connecting visitors with verified local tour operators across the Florida Keys. We feature sandbar trips, snorkeling, sunset cruises, dolphin tours, fishing charters, and eco-tours.",
-        "url": "https://keywestsandbartours.com",
-        "logo": "https://keywestsandbartours.com/logo.png",
-        "image": "https://keywestsandbartours.com/logo.png",
-        "email": "walktheplankadventures@gmail.com",
-        "areaServed": {
-            "@type": "Place",
-            "name": "Florida Keys",
-            "address": {
-                "@type": "PostalAddress",
-                "addressLocality": "Key West",
-                "addressRegion": "FL",
-                "addressCountry": "US"
-            }
-        },
-        "geo": {
-            "@type": "GeoCoordinates",
-            "latitude": "24.5551",
-            "longitude": "-81.7800"
-        },
-        "priceRange": "$$",
-        "serviceType": ["Sandbar Tours", "Snorkeling Tours", "Sunset Cruises", "Dolphin Tours", "Fishing Charters", "Eco Tours", "Boat Rentals", "Parasailing", "Jet Ski Tours", "Kayak Tours"],
-        "slogan": "Your guide to the best Florida Keys adventures",
-        "knowsAbout": ["Key West tourism", "Florida Keys tours", "Sandbar excursions", "Snorkeling", "Marine wildlife", "Coral reef conservation"]
-    }
-    </script>
-    
-    <!-- Organization Schema -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "Organization",
-        "name": "Key West Sandbar Tours",
-        "url": "https://keywestsandbartours.com",
-        "logo": "https://keywestsandbartours.com/logo.png",
-        "contactPoint": {
-            "@type": "ContactPoint",
-            "email": "walktheplankadventures@gmail.com",
-            "contactType": "customer service"
-        },
-        "description": "Tour discovery platform featuring 476+ tours from verified local operators in Key West and the Florida Keys."
-    }
-    </script>
-    
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Outfit:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    
-    <link rel="stylesheet" href="styles.css">
-    <style>
-        .about-hero {
-            padding: 160px 0 80px;
-            background: linear-gradient(135deg, var(--ocean-deep), var(--ocean-mid));
-            color: var(--white);
-            text-align: center;
-        }
-        
-        .about-hero h1 {
-            font-family: var(--font-display);
-            font-size: 3rem;
-            font-weight: 700;
-            margin-bottom: var(--space-md);
-        }
-        
-        .about-hero p {
-            font-size: 1.25rem;
-            opacity: 0.9;
-            max-width: 600px;
-            margin: 0 auto;
-        }
-        
-        .about-content {
-            padding: var(--space-3xl) 0;
-        }
-        
-        .about-section {
-            max-width: 800px;
-            margin: 0 auto var(--space-3xl);
-        }
-        
-        .about-section h2 {
-            font-family: var(--font-display);
-            font-size: 1.75rem;
-            font-weight: 700;
-            color: var(--gray-900);
-            margin-bottom: var(--space-lg);
-        }
-        
-        .about-section p {
-            color: var(--gray-700);
-            line-height: 1.8;
-            margin-bottom: var(--space-md);
-        }
-        
-        .about-values {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: var(--space-lg);
-            margin-top: var(--space-xl);
-        }
-        
-        .value-card {
-            text-align: center;
-            padding: var(--space-xl);
-            background: var(--gray-100);
-            border-radius: var(--radius-lg);
-        }
-        
-        .value-icon {
-            font-size: 2.5rem;
-            margin-bottom: var(--space-md);
-        }
-        
-        .value-card h3 {
-            font-size: 1.1rem;
-            font-weight: 700;
-            color: var(--gray-900);
-            margin-bottom: var(--space-sm);
-        }
-        
-        .value-card p {
-            font-size: 0.95rem;
-            color: var(--gray-600);
-            margin-bottom: 0;
-        }
-        
-        .highlight-box {
-            background: linear-gradient(135deg, rgba(8, 145, 178, 0.1), rgba(6, 182, 212, 0.05));
-            border-left: 4px solid var(--ocean-mid);
-            padding: var(--space-lg);
-            border-radius: 0 var(--radius-lg) var(--radius-lg) 0;
-            margin: var(--space-xl) 0;
-        }
-        
-        .highlight-box p {
-            margin-bottom: 0;
-            font-style: italic;
-            color: var(--gray-800);
-        }
-        
-        .love-list {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: var(--space-md);
-            margin: var(--space-lg) 0;
-        }
-        
-        .love-item {
-            display: flex;
-            align-items: flex-start;
-            gap: var(--space-sm);
-        }
-        
-        .love-item span {
-            font-size: 1.25rem;
-        }
-        
-        .love-item p {
-            margin: 0;
-            color: var(--gray-700);
-        }
-        
-        .contact-form {
-            background: var(--gray-100);
-            padding: var(--space-xl);
-            border-radius: var(--radius-lg);
-            margin-top: var(--space-lg);
-        }
-        
-        .contact-form input,
-        .contact-form textarea {
-            width: 100%;
-            padding: var(--space-md);
-            border: 1px solid var(--gray-200);
-            border-radius: var(--radius-md);
-            margin-bottom: var(--space-md);
-            font-family: inherit;
-            font-size: 1rem;
-        }
-        
-        .contact-form textarea {
-            min-height: 120px;
-            resize: vertical;
-        }
-        
-        .contact-form button {
-            background: var(--coral);
-            color: white;
-            padding: var(--space-md) var(--space-xl);
-            border-radius: var(--radius-md);
-            font-weight: 600;
-            cursor: pointer;
-            transition: all var(--transition-fast);
-        }
-        
-        .contact-form button:hover {
-            background: #FF5252;
-            transform: translateY(-2px);
-        }
-        
-        @media (max-width: 768px) {
-            .about-hero h1 {
-                font-size: 2rem;
-            }
-            
-            .about-values {
-                grid-template-columns: 1fr;
-            }
-            
-            .love-list {
-                grid-template-columns: 1fr;
-            }
-        }
-    </style>
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6156669175458913" crossorigin="anonymous"></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About | Key West Sandbar Tours</title>
+<meta name="description" content="The Real Keys, On the Water. Learn about our mission, how we work, and why we connect travelers with local tour operators.">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#0a0a0c;color:#cdd9e5;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;font-size:17px;line-height:1.7}
+.wrap{max-width:900px;margin:0 auto;padding:0 20px 80px}
+a{color:#F5B84C}
+.btn{display:inline-block;background:#F5B84C;color:#0a0a0c;padding:14px 36px;text-decoration:none;font-weight:700;border-radius:6px;font-size:1rem}
+.btn-outline{display:inline-block;border:2px solid #F5B84C;color:#F5B84C;padding:12px 32px;text-decoration:none;font-weight:600;border-radius:6px;font-size:1rem}
+input,textarea{width:100%;padding:12px 16px;background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.15);border-radius:6px;color:#fff;font-size:1rem;font-family:inherit}
+input::placeholder,textarea::placeholder{color:rgba(255,255,255,0.4)}
+input:focus,textarea:focus{outline:none;border-color:#F5B84C}
+.divider{border:none;border-top:1px solid rgba(255,255,255,0.08);margin:48px 0}
+.grid3{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+@media(max-width:540px){.grid2{grid-template-columns:1fr}}
+</style>
 </head>
 <body>
-    <!-- HEADER -->
-    <header class="header">
-        <div class="header-container">
-            <div class="logo-group">
-                <a href="/" class="logo">
-                    <img src="logo.png" alt="Key West Sandbar Tours" class="logo-img">
-                </a>
-            </div>
-            <nav class="nav-desktop">
-                <a href="/#tours-section">Tours</a>
-                <a href="about.html">About</a>
-                <a href="/#faq">FAQs</a>
-            </nav>
-            <button class="mobile-menu-btn" aria-label="Menu">
-                <span></span><span></span><span></span>
-            </button>
-        </div>
-        <nav class="nav-mobile">
-            <a href="/#tours-section">Tours</a>
-            <a href="about.html">About</a>
-            <a href="/#faq">FAQs</a>
-        </nav>
-    </header>
 
-    <!-- HERO -->
-    <section class="about-hero">
-        <div class="container">
-            <h1>We Love These Islands</h1>
-            <p>And we're here to help you fall in love with them too.</p>
-        </div>
-    </section>
+<!-- NAV -->
+<nav style="background:#0a0a0c;padding:18px 20px;border-bottom:1px solid rgba(255,255,255,0.08);position:sticky;top:0;z-index:100">
+  <div style="max-width:900px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px">
+    <a href="/" style="color:#F5B84C;text-decoration:none;font-family:Arial,sans-serif;font-size:1.3rem;font-weight:800">Key West Sandbar Tours</a>
+    <div style="display:flex;gap:24px;align-items:center;flex-wrap:wrap">
+      <a href="/tours" style="color:#cdd9e5;text-decoration:none;font-size:0.95rem;opacity:0.8">Tours</a><a href="/blog/" style="color:#cdd9e5;text-decoration:none;font-size:0.95rem;opacity:0.8">Blog</a><a href="about.html" style="color:#cdd9e5;text-decoration:none;font-size:0.95rem;opacity:0.8">About</a><a href="mailto:walktheplankadventures@gmail.com" style="color:#cdd9e5;text-decoration:none;font-size:0.95rem;opacity:0.8">Contact</a>
+      <a href="/tours" class="btn" style="padding:10px 20px;font-size:0.9rem">Browse Tours</a>
+    </div>
+  </div>
+</nav>
 
-    <!-- CONTENT -->
-    <section class="about-content">
-        <div class="container">
-            <div class="about-section">
-                <h2>Why We Do This</h2>
-                <p>There's something magical about the Florida Keys. Maybe it's the way the afternoon light dances on the water at Snipes Point. Maybe it's watching a pod of dolphins race alongside your boat in the backcountry. Or maybe it's that moment when you're standing waist-deep on a sandbar, drink in hand, wondering why you ever thought life had to be so complicated.</p>
-                <p>We built Key West Sandbar Tours because we've felt that magic—and we wanted to make it easier for visitors to feel it too. Not the tourist-trap version. The real thing. The tours run by captains who've been navigating these waters for decades. The guides who know where the dolphins like to play and which sandbars have the best sunset views.</p>
-                
-                <div class="highlight-box">
-                    <p>"The sea, once it casts its spell, holds one in its net of wonder forever." — Jacques Cousteau</p>
-                </div>
-            </div>
-            
-            <div class="about-section">
-                <h2>Our Commitment to the Keys</h2>
-                <p>These islands have given us so much. Crystal-clear waters teeming with life. Sunsets that stop you in your tracks. A community of genuine, salt-of-the-earth people who've built their lives around this little slice of paradise.</p>
-                <p>We're committed to giving back. That means featuring operators who practice responsible tourism. Captains who respect marine life and keep their distance from wildlife. Tours that educate visitors about our fragile coral reef ecosystem—the only living coral barrier reef in the continental United States.</p>
-                <p>The Florida Keys National Marine Sanctuary protects 2,900 square nautical miles of waters surrounding the Keys. Every tour on our platform operates within these protected waters, and we're proud to work with operators who take that responsibility seriously.</p>
-            </div>
-            
-            <div class="about-section">
-                <h2>What We Love About Key West</h2>
-                <div class="love-list">
-                    <div class="love-item">
-                        <span>🌅</span>
-                        <p><strong>The sunsets.</strong> Mallory Square gets the fame, but watching the sun sink from a boat in the backcountry? Unbeatable.</p>
-                    </div>
-                    <div class="love-item">
-                        <span>🐬</span>
-                        <p><strong>The wildlife.</strong> Dolphins, sea turtles, manatees, nurse sharks, and countless tropical fish call these waters home.</p>
-                    </div>
-                    <div class="love-item">
-                        <span>🏝️</span>
-                        <p><strong>The sandbars.</strong> Snipes Point, Woman Key, Boca Grande—each one feels like your own private island.</p>
-                    </div>
-                    <div class="love-item">
-                        <span>🤿</span>
-                        <p><strong>The reef.</strong> Snorkeling at Sand Key or Eastern Dry Rocks is like swimming through a nature documentary.</p>
-                    </div>
-                    <div class="love-item">
-                        <span>🎣</span>
-                        <p><strong>The fishing.</strong> Tarpon, bonefish, permit, mahi-mahi—these waters are a sportfisher's dream.</p>
-                    </div>
-                    <div class="love-item">
-                        <span>👨‍👩‍👧‍👦</span>
-                        <p><strong>The people.</strong> The captains, guides, and locals who make this community so welcoming and unique.</p>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="about-section">
-                <h2>Supporting Local Operators</h2>
-                <p>We're not a tour company. We don't own boats or employ captains. What we do is connect you directly with the people who do—the local families and small businesses that have made the Keys their home.</p>
-                <p>When you book through our site, you're booking directly with these operators at their prices. No middleman markups. No corporate travel agency taking a cut. Your money goes straight to the people who actually take you out on the water and create those unforgettable experiences.</p>
-                <p>We've done the research so you don't have to. Every operator on our platform is verified, reviewed, and trusted by the community. With over 476 tours from dozens of local operators, you'll find exactly what you're looking for.</p>
-            </div>
-            
-            <div class="about-section">
-                <h2>Our Values</h2>
-                <div class="about-values">
-                    <div class="value-card">
-                        <div class="value-icon">🌴</div>
-                        <h3>Local First</h3>
-                        <p>Every tour is run by a Florida Keys local. Your money stays in this community and supports real families.</p>
-                    </div>
-                    <div class="value-card">
-                        <div class="value-icon">🐢</div>
-                        <h3>Conservation-Minded</h3>
-                        <p>We feature eco-conscious operators who respect marine life and protect our reef ecosystem.</p>
-                    </div>
-                    <div class="value-card">
-                        <div class="value-icon">🤝</div>
-                        <h3>Transparent Pricing</h3>
-                        <p>Book direct at operator prices. No hidden fees, no markups, no surprises.</p>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="about-section">
-                <h2>Your Adventure Awaits</h2>
-                <p>Whether you're chasing that perfect sandbar selfie, hoping to swim with dolphins, or just looking for a sunset cruise to remember, we're here to help you find it. Browse our tours, pick what speaks to you, and get ready for an experience you'll be talking about for years.</p>
-                <p>The Keys are calling. Let's get you on the water.</p>
-            </div>
-            
-            <div class="about-section">
-                <h2>Get in Touch</h2>
-                <p>Have questions about a tour? Want to suggest an operator? Just want to share your Key West story? We'd love to hear from you.</p>
-                <p>Email us anytime: <a href="mailto:walktheplankadventures@gmail.com" style="color: var(--ocean-mid); font-weight: 600;">walktheplankadventures@gmail.com</a></p>
-                
-                <form class="contact-form" action="https://formspree.io/f/maqwzvpy" method="POST">
-                    <input type="text" name="name" placeholder="Your Name" required>
-                    <input type="email" name="email" placeholder="Your Email" required>
-                    <textarea name="message" placeholder="Your Message" required></textarea>
-                    <button type="submit">Send Message</button>
-                </form>
-            </div>
-        </div>
-    </section>
+<!-- HERO -->
+<section style="padding:0 0 0 0;background:linear-gradient(180deg,rgba(255,255,255,0.04) 0%,transparent 100%)">
+  <div style="max-width:900px;margin:0 auto;padding:80px 20px 60px;text-align:center">
+    <!-- Hero image placeholder -->
+    <div style="background:rgba(255,255,255,0.05);border:2px dashed rgba(255,255,255,0.15);border-radius:12px;height:320px;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:12px;margin-bottom:48px">
+      <span style="font-size:3rem">🌊</span>
+      <span style="color:#cdd9e5;opacity:0.5;font-size:0.9rem">Hero image — replace with a high-quality photo (1200×400px recommended)</span>
+    </div>
+    <h1 style="font-size:clamp(2rem,6vw,3rem);color:#F5B84C;font-weight:800;margin:0 0 16px 0;font-family:Arial,sans-serif">The Real Keys, On the Water.</h1>
+    <p style="font-size:1.15rem;color:#cdd9e5;max-width:640px;margin:0 auto 32px;opacity:0.85;line-height:1.7">We connect visitors directly with 1,000+ tours from 200+ local Key West operators — no markups, no middlemen, no tourist traps. Your money goes straight to the captains and guides who actually take you out.</p>
+    <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap">
+      <a href="/tours" class="btn">Check Availability</a>
+      <a href="mailto:walktheplankadventures@gmail.com" class="btn-outline">Contact Us</a>
+    </div>
+  </div>
+</section>
 
-    <!-- FOOTER -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-brand">
-                    <a href="/" class="logo">
-                        <img src="logo.png" alt="Key West Sandbar Tours" class="footer-logo-img">
-                    </a>
-                    <p>Your guide to the best Florida Keys adventures. Verified local operators, instant booking.</p>
-                    <p class="footer-tagline">See you in paradise! 🌴</p>
-                </div>
-                
-                <div class="footer-links">
-                    <h4>Areas</h4>
-                    <ul>
-                        <li><a href="key-west.html">Key West (401)</a></li>
-                        <li><a href="stock-island.html">Stock Island (72)</a></li>
-                        <li><a href="/#tours-section">Big Pine Key (2)</a></li>
-                        <li><a href="/#tours-section">Lower Keys (1)</a></li>
-                    </ul>
-                </div>
-                
-                <div class="footer-links">
-                    <h4>Popular</h4>
-                    <ul>
-                        <li><a href="/?search=sandbar">Sandbar Trips</a></li>
-                        <li><a href="/?search=snorkel">Snorkeling</a></li>
-                        <li><a href="/?search=sunset">Sunset Cruises</a></li>
-                        <li><a href="/?search=dolphin">Dolphin Tours</a></li>
-                    </ul>
-                </div>
-                
-                <div class="footer-links">
-                    <h4>Company</h4>
-                    <ul>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="/#faq">FAQs</a></li>
-                        <li><a href="mailto:walktheplankadventures@gmail.com">Contact</a></li>
-                    </ul>
-                </div>
-            </div>
-            
-            <div class="footer-bottom">
-                <p>&copy; 2025 Key West Sandbar Tours. All rights reserved.</p>
-                <p class="affiliate-disclosure">We may earn a commission when you book through our links. This helps support our site at no cost to you.</p>
-            </div>
-        </div>
-    </footer>
+<div class="wrap">
 
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const menuBtn = document.querySelector('.mobile-menu-btn');
-            const mobileNav = document.querySelector('.nav-mobile');
-            
-            if (menuBtn && mobileNav) {
-                menuBtn.addEventListener('click', () => {
-                    mobileNav.classList.toggle('active');
-                });
-            }
-            
-            const header = document.querySelector('.header');
-            window.addEventListener('scroll', () => {
-                if (window.pageYOffset > 50) {
-                    header.classList.add('scrolled');
-                } else {
-                    header.classList.remove('scrolled');
-                }
-            });
-        });
-    </script>
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-  document.querySelectorAll('a[href*="fareharbor.com"]').forEach(function(link) {
-    link.addEventListener('click', function() {
-      gtag('event', 'booking_click', {
-        'tour_name': this.dataset.tourName || this.textContent.trim(),
-        'outbound_url': this.href
-      });
-    });
-  });
-});
-</script>
+<!-- STATS -->
+<hr class="divider">
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:0;background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:10px;overflow:hidden">
+  <div style="text-align:center;padding:20px">
+<p style="font-size:2.5rem;font-weight:800;color:#F5B84C;margin:0;font-family:Arial,sans-serif">1,000+</p>
+<p style="color:#cdd9e5;margin:8px 0 0 0;font-size:0.9rem;opacity:0.8">Tours Listed</p>
+</div><div style="text-align:center;padding:20px">
+<p style="font-size:2.5rem;font-weight:800;color:#F5B84C;margin:0;font-family:Arial,sans-serif">200+</p>
+<p style="color:#cdd9e5;margin:8px 0 0 0;font-size:0.9rem;opacity:0.8">Local Operators</p>
+</div><div style="text-align:center;padding:20px">
+<p style="font-size:2.5rem;font-weight:800;color:#F5B84C;margin:0;font-family:Arial,sans-serif">$110</p>
+<p style="color:#cdd9e5;margin:8px 0 0 0;font-size:0.9rem;opacity:0.8">Avg. Shared Tour</p>
+</div><div style="text-align:center;padding:20px">
+<p style="font-size:2.5rem;font-weight:800;color:#F5B84C;margin:0;font-family:Arial,sans-serif">0</p>
+<p style="color:#cdd9e5;margin:8px 0 0 0;font-size:0.9rem;opacity:0.8">Hidden Fees</p>
+</div>
+</div>
+
+<!-- PHOTOS -->
+<hr class="divider">
+<h2 style="font-size:1.5rem;color:#F5B84C;font-family:Arial,sans-serif;font-weight:700;margin-bottom:24px">On the Water</h2>
+<div class="grid2" style="grid-template-columns:repeat(auto-fit,minmax(260px,1fr))">
+  <!-- Photo 1 (wide) -->
+  <div style="background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.1);border-radius:8px;aspect-ratio:16/9;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:8px;grid-column:span 2">
+    <span style="font-size:2rem">📷</span>
+    <span style="color:#cdd9e5;font-size:0.85rem;opacity:0.6;text-align:center;padding:0 16px">Key West backcountry sandbar — turquoise water and white sand</span>
+  </div>
+  <!-- Photos 2 & 3 -->
+  div style="background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.1);border-radius:8px;aspect-ratio:4/3;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:8px">
+<span style="font-size:2rem">📷</span>
+<span style="color:#cdd9e5;font-size:0.85rem;opacity:0.6;text-align:center;padding:0 16px">Key West backcountry sandbar — turquoise water and white sand</span>
+</div><div style="background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.1);border-radius:8px;aspect-ratio:4/3;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:8px">
+<span style="font-size:2rem">📷</span>
+<span style="color:#cdd9e5;font-size:0.85rem;opacity:0.6;text-align:center;padding:0 16px">Sunset cruise from the Florida Keys</span>
+</div><div style="background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.1);border-radius:8px;aspect-ratio:4/3;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:8px">
+<span style="font-size:2rem">📷</span>
+<span style="color:#cdd9e5;font-size:0.85rem;opacity:0.6;text-align:center;padding:0 16px">Dolphins in the backcountry near Woman Key</span>
+</div>
+</div>
+
+<!-- VALUES -->
+<hr class="divider">
+<h2 style="font-size:1.5rem;color:#F5B84C;font-family:Arial,sans-serif;font-weight:700;text-align:center;margin-bottom:32px">What We Stand For</h2>
+<div class="grid3">
+  <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.1);border-radius:8px;padding:24px;text-align:center">
+<div style="font-size:2rem;margin-bottom:10px">🌴</div>
+<h3 style="color:#F5B84C;font-size:1rem;font-weight:700;margin:0 0 8px 0">Local First</h3>
+<p style="color:#cdd9e5;font-size:0.9rem;margin:0;line-height:1.6">Every tour is run by a Florida Keys local. Your money supports real families in this community.</p>
+</div><div style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.1);border-radius:8px;padding:24px;text-align:center">
+<div style="font-size:2rem;margin-bottom:10px">🐢</div>
+<h3 style="color:#F5B84C;font-size:1rem;font-weight:700;margin:0 0 8px 0">Conservation-Minded</h3>
+<p style="color:#cdd9e5;font-size:0.9rem;margin:0;line-height:1.6">We feature eco-conscious operators who respect marine life and the reef ecosystem.</p>
+</div><div style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.1);border-radius:8px;padding:24px;text-align:center">
+<div style="font-size:2rem;margin-bottom:10px">🤝</div>
+<h3 style="color:#F5B84C;font-size:1rem;font-weight:700;margin:0 0 8px 0">Transparent Pricing</h3>
+<p style="color:#cdd9e5;font-size:0.9rem;margin:0;line-height:1.6">Book direct at operator prices. No hidden fees, no markups, no surprises.</p>
+</div><div style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.1);border-radius:8px;padding:24px;text-align:center">
+<div style="font-size:2rem;margin-bottom:10px">🌅</div>
+<h3 style="color:#F5B84C;font-size:1rem;font-weight:700;margin:0 0 8px 0">Authentic Experiences</h3>
+<p style="color:#cdd9e5;font-size:0.9rem;margin:0;line-height:1.6">Not curated tourist packages — real backcountry access with captains who know these waters.</p>
+</div><div style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.1);border-radius:8px;padding:24px;text-align:center">
+<div style="font-size:2rem;margin-bottom:10px">🐬</div>
+<h3 style="color:#F5B84C;font-size:1rem;font-weight:700;margin:0 0 8px 0">Wildlife-Focused</h3>
+<p style="color:#cdd9e5;font-size:0.9rem;margin:0;line-height:1.6">Dolphins, sea turtles, manatees, nurse sharks. The Keys wildlife is spectacular — we help you find it.</p>
+</div><div style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.1);border-radius:8px;padding:24px;text-align:center">
+<div style="font-size:2rem;margin-bottom:10px">🏝️</div>
+<h3 style="color:#F5B84C;font-size:1rem;font-weight:700;margin:0 0 8px 0">The Best Sandbars</h3>
+<p style="color:#cdd9e5;font-size:0.9rem;margin:0;line-height:1.6">Snipes Point, Woman Key, Boca Grande — we know which tours visit which sandbars and when.</p>
+</div>
+</div>
+
+<!-- AFFILIATE DISCLOSURE -->
+<hr class="divider">
+<div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:8px;padding:24px">
+  <h3 style="color:#F5B84C;margin-bottom:12px;font-size:1rem;font-weight:700">Transparency &amp; Affiliate Disclosure</h3>
+  <p style="color:#cdd9e5;font-size:0.9rem;line-height:1.7;margin:0;opacity:0.8">We are a tour discovery platform, not a tour operator. When you click a booking link, you go directly to the operator's booking system at their prices. We earn a small referral commission from some bookings at no additional cost to you. This commission comes from the operator's existing marketing budget and never affects what you pay.</p>
+</div>
+
+<!-- EMAIL SIGNUP -->
+<hr class="divider">
+<div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.1);border-radius:12px;padding:40px 32px;text-align:center">
+  <h2 style="font-size:1.5rem;color:#F5B84C;font-family:Arial,sans-serif;font-weight:700;margin:0 0 8px 0">🌊 Get Key West Insider Tips</h2>
+  <p style="color:#cdd9e5;margin:0 0 28px 0;opacity:0.8">Get trip ideas, local tips, and occasional deals — no spam, unsubscribe any time.</p>
+  <form action="https://formspree.io/f/mbdjldrd" method="POST" style="max-width:480px;margin:0 auto;display:flex;flex-direction:column;gap:14px">
+    <input type="text" name="name" placeholder="Your name" required>
+    <input type="email" name="email" placeholder="Your email address" required>
+    <input type="hidden" name="_subject" value="New email signup — Key West Sandbar Tours">
+    <input type="hidden" name="_next" value="https://keywestsandbartours.com/thanks.html">
+    <button type="submit" style="background:#F5B84C;color:#0a0a0c;padding:14px;border:none;border-radius:6px;font-size:1rem;font-weight:700;cursor:pointer;font-family:inherit">Get Insider Tips</button>
+  </form>
+</div>
+
+<!-- CONTACT -->
+<hr class="divider">
+<div style="text-align:center">
+  <h2 style="font-size:1.5rem;color:#F5B84C;font-family:Arial,sans-serif;font-weight:700;margin-bottom:16px">Get in Touch</h2>
+  <p style="color:#cdd9e5;margin-bottom:20px;opacity:0.8">Questions about a tour? Want to suggest an operator? We'd love to hear from you.</p>
+  <a href="mailto:walktheplankadventures@gmail.com" style="color:#F5B84C;font-size:1.1rem;font-weight:600">walktheplankadventures@gmail.com</a>
+  <div style="margin-top:32px">
+    <a href="/tours" class="btn">Check Availability</a>
+  </div>
+</div>
+
+</div><!-- /wrap -->
+
+<!-- FOOTER -->
+<footer style="background:#0a0a0c;padding:32px 20px;border-top:1px solid rgba(255,255,255,0.08);text-align:center">
+  <p style="color:#F5B84C;font-weight:700;margin:0 0 8px 0">Key West Sandbar Tours</p>
+  <p style="color:#cdd9e5;font-size:0.85rem;opacity:0.5;margin:0">walktheplankadventures@gmail.com</p>
+</footer>
+
 </body>
 </html>
