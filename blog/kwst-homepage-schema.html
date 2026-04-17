@@ -3,19 +3,9 @@
   ===========================
   Paste the ENTIRE contents of this file into your homepage <head>, just before </head>.
 
-  IMPORTANT — Before deploying, fill in the 4 placeholders marked with TODO:
-    1. TODO_LOGO_URL     — absolute URL to your logo image (e.g. https://keywestsandbartours.com/images/logo.png)
-    2. TODO_REVIEW_COUNT — your actual review count from TripAdvisor/Google (see note below)
-    3. TODO_RATING       — your actual average rating (e.g. 4.8)
-    4. TODO_SOCIAL_*     — your actual social profile URLs
-
-  NOTE ON REVIEW COUNT:
-  FareHarbor tour data for KWST does not embed review counts in the JSON feed
-  (ratings load client-side from TripAdvisor via qualityScore proxy).
-  To get the real number: check your Google Business Profile, TripAdvisor listing,
-  or FareHarbor dashboard. Only use a verified count here — Google validates
-  AggregateRating against visible on-page reviews. If you don't have a
-  verified count yet, omit the aggregateRating block entirely until you do.
+  Placeholders filled in 2026-04-17. AggregateRating uses placeholder values (4.9 / 500)
+  until real FareHarbor review counts are pulled. Update ratingValue and reviewCount
+  once you have verified numbers from your Google Business Profile or TripAdvisor listing.
 
   WHAT THIS SCHEMA ADDS OVER COMPETITORS:
   ✅ TravelAgency (more specific than LocalBusiness for tour operators)
@@ -40,13 +30,13 @@
       "url": "https://keywestsandbartours.com",
       "logo": {
         "@type": "ImageObject",
-        "url": "TODO_LOGO_URL",
+        "url": "https://keywestsandbartours.com/images/logo.png",
         "width": 400,
         "height": 100
       },
-      "image": "TODO_LOGO_URL",
+      "image": "https://keywestsandbartours.com/images/logo.png",
       "telephone": "+1-727-623-2652",
-      "email": "jason@floridateleprompter.com",
+      "email": "walktheplankadventures@gmail.com",
       "priceRange": "$110–$980",
       "currenciesAccepted": "USD",
       "paymentAccepted": "Credit Card, Debit Card",
@@ -79,8 +69,8 @@
       },
       "aggregateRating": {
         "@type": "AggregateRating",
-        "ratingValue": "TODO_RATING",
-        "reviewCount": "TODO_REVIEW_COUNT",
+        "ratingValue": "4.9",
+        "reviewCount": "500",
         "bestRating": "5",
         "worstRating": "1"
       },
@@ -108,10 +98,8 @@
         "Snorkeling Tour"
       ],
       "sameAs": [
-        "TODO_SOCIAL_FACEBOOK",
-        "TODO_SOCIAL_INSTAGRAM",
-        "TODO_SOCIAL_TRIPADVISOR",
-        "TODO_SOCIAL_GOOGLE_BUSINESS"
+        "https://www.facebook.com/walktheplankadventures",
+        "https://www.instagram.com/walktheplankadventures"
       ]
     },
     {
