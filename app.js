@@ -78,9 +78,21 @@ function matchesActivity(tour, activity) {
     return keywords.some(kw => tags.includes(kw) || name.includes(kw) || desc.includes(kw));
 }
 
+function escapeHtml(str) {
+    if (str == null) return '';
+    return String(str)
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;')
+        .replace(/'/g, '&#39;');
+}
+
 // Format price
-function formatPrice(price) {
-    return Number.isFinite(price) ? `From $${price}` : 'Check live price';
+function formatPrice(price, confidence) {
+    if (!Number.isFinite(price)) return 'Check live price';
+    if (confidence === 'low') return 'Check availability';
+    return `From $${price}`;
 }
 
 // Clean location display
@@ -112,44 +124,56 @@ function formatDuration(minutes) {
 function createTourCard(tour) {
     const area = getArea(tour.location);
     const areaName = getAreaName(tour.location);
-    const priceDisplay = formatPrice(tour.price);
+    const priceDisplay = formatPrice(tour.price, tour.priceConfidence);
     const priceHtml = priceDisplay ? `<div class="tour-price">${priceDisplay}</div>` : '';
     const duration = formatDuration(tour.duration);
-    
+
     const badges = [];
     const score = tour.qualityScore || 0;
     const badge = scoreLabel(score);
-    if (badge) badges.push(`<span class="badge badge-quality">⭐ ${badge}</span>`);
-    
-    const ratingHtml = tour.rating ? 
-        `<span class="tour-rating">★ ${tour.rating}${tour.reviewCount ? ` (${tour.reviewCount})` : ''}</span>` : '';
-    
-    const desc = tour.description ? 
-        (tour.description.length > 120 ? tour.description.slice(0, 120) + '...' : tour.description) : '';
-    
-    const safeName = (tour.name || '').replace(/'/g, "\\'").replace(/"/g, '&quot;');
-    
+    if (badge) badges.push(`<span class="badge badge-quality">⭐ ${escapeHtml(badge)}</span>`);
+
+    const ratingHtml = tour.rating ?
+        `<span class="tour-rating">★ ${escapeHtml(String(tour.rating))}${tour.reviewCount ? ` (${escapeHtml(String(tour.reviewCount))})` : ''}</span>` : '';
+
+    const safeDescBase = (tour.description || '').replace(/\s+/g, ' ').trim();
+    const desc = safeDescBase.length > 120
+        ? safeDescBase.substring(0, safeDescBase.lastIndexOf(' ', 117)) + '…'
+        : safeDescBase;
+
+    // Inline-onclick safe escape: JS-escape backslash + apostrophe FIRST, then HTML-escape.
+    // Browser HTML-decodes the attribute value before passing to JS; JS-escape sequences (\\, \')
+    // survive HTML decoding, so the JS string literal stays well-formed.
+    const jsHtmlEscape = (s) => escapeHtml(String(s ?? '').replace(/\\/g, '\\\\').replace(/'/g, "\\'"));
+    const onclickName = jsHtmlEscape(tour.name);
+    const onclickId = jsHtmlEscape(tour.id);
+    const onclickArea = jsHtmlEscape(area);
+
+    const schema = generateTourSchema(tour);
+    const schemaJson = JSON.stringify(schema).replace(/<\/script/gi, '<\\/script');
+
     return `
-        <article class="tour-card">
+        <article class="tour-card" data-id="${escapeHtml(tour.id)}">
+            <script type="application/ld+json">${schemaJson}</script>
             <div class="tour-image">
-                <img src="${tour.image}" alt="${tour.name}" loading="lazy" width="400" height="300" onerror="this.src='https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=400'" style="width: 100%; height: auto; object-fit: cover;">
+                <img src="${tour.image}" alt="${escapeHtml(tour.name)}" loading="lazy" width="400" height="300" onerror="this.src='https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=400'" style="width: 100%; height: auto; object-fit: cover;">
                 ${priceHtml}
                 <div class="tour-badges">${badges.join('')}</div>
-                <div class="tour-location">📍 ${areaName}</div>
+                <div class="tour-location">📍 ${escapeHtml(areaName)}</div>
             </div>
             <div class="tour-content">
-                <div class="tour-company">${tour.company}</div>
-                <h3 class="tour-name">${tour.name}</h3>
+                <div class="tour-company">${escapeHtml(tour.company)}</div>
+                <h3 class="tour-name">${escapeHtml(tour.name)}</h3>
                 <div class="tour-meta">
-                    ${duration ? `<span>🕐 ${duration}</span>` : ''}
+                    ${duration ? `<span>🕐 ${escapeHtml(duration)}</span>` : ''}
                     ${ratingHtml}
                 </div>
-                ${desc ? `<p class="tour-desc">${desc}</p>` : ''}
-                <a href="${tour.bookingLink}" 
-                   target="_blank" 
-                   rel="noopener" 
+                ${desc ? `<p class="tour-desc">${escapeHtml(desc)}</p>` : ''}
+                <a href="${tour.bookingLink}"
+                   target="_blank"
+                   rel="noopener"
                    class="tour-cta"
-                   onclick="trackBookingClickEnhanced('${safeName}', '${tour.id}', '${area}')">
+                   onclick="trackBookingClickEnhanced('${onclickName}', '${onclickId}', '${onclickArea}')">
                     Check Availability →
                 </a>
             </div>
@@ -402,57 +426,27 @@ document.addEventListener('DOMContentLoaded', init);
 
 // ===== TOURISTTIP SCHEMA INJECTION =====
 function generateTourSchema(tour) {
+    const emitPrice = Number.isFinite(tour.price) && tour.priceConfidence !== 'low';
     return {
         "@context": "https://schema.org",
         "@type": "TouristTrip",
         "name": tour.name,
         "description": tour.description || "",
         "touristType": tour.tags ? tour.tags.join(", ") : "",
-        "offers": {
-            "@type": "Offer",
-            "price": tour.price || "",
-            "priceCurrency": "USD",
-            "url": tour.bookingLink,
-            "availability": "https://schema.org/InStock"
-        },
+        ...(emitPrice && {
+            "offers": {
+                "@type": "Offer",
+                "price": tour.price,
+                "priceCurrency": "USD",
+                "url": tour.bookingLink,
+                "availability": "https://schema.org/InStock"
+            }
+        }),
         "provider": {
             "@type": "LocalBusiness",
             "name": tour.company
         }
     };
-}
-
-function injectTourSchemas() {
-    document.querySelectorAll('.tour-card').forEach(card => {
-        const title = card.querySelector('.tour-name')?.textContent || '';
-        const company = card.querySelector('.tour-company')?.textContent || '';
-        const desc = card.querySelector('.tour-description')?.textContent || '';
-        const link = card.querySelector('.tour-cta')?.href || card.querySelector('a')?.href || '';
-        
-        if (title && link) {
-            const schema = {
-                "@context": "https://schema.org",
-                "@type": "TouristTrip",
-                "name": title,
-                "description": desc,
-                "offers": {
-                    "@type": "Offer",
-                    "priceCurrency": "USD",
-                    "url": link,
-                    "availability": "https://schema.org/InStock"
-                },
-                "provider": {
-                    "@type": "LocalBusiness",
-                    "name": company
-                }
-            };
-            
-            const script = document.createElement('script');
-            script.type = 'application/ld+json';
-            script.textContent = JSON.stringify(schema);
-            card.insertBefore(script, card.firstChild);
-        }
-    });
 }
 
 // ===== STICKY MOBILE CTA BAR =====
@@ -548,7 +542,4 @@ document.addEventListener('DOMContentLoaded', () => {
             heroScrolled = false;
         }
     });
-    
-    // Inject schemas after tours load
-    setTimeout(injectTourSchemas, 500);
 });
