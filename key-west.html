@@ -20,15 +20,6 @@
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
         gtag('config', 'G-B6ER6JP7QV');
-        
-        function trackBookingClick(tourName, tourId, area) {
-            gtag('event', 'booking_click', {
-                'event_category': 'conversion',
-                'event_label': tourName,
-                'tour_id': tourId,
-                'area': area || 'key-west'
-            });
-        }
     </script>
     
     <link rel="stylesheet" href="styles.css">

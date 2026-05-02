@@ -1589,4 +1589,23 @@ body {
     }
 }
 
+/* ===========================================
+   MOBILE FIRST-SCROLL — surface tours-section
+   immediately after the compact ~119px hero.
+   Decorative/informational sections above the
+   tour grid (stats-bar, trust-section, areas
+   nav) are hidden on mobile only. Desktop
+   layout is unchanged — all sections visible.
+   Areas nav stays accessible via the header
+   nav (#areas anchor) and via the #areas link
+   in nav-mobile.
+   =========================================== */
+@media (max-width: 767px) {
+    .stats-bar,
+    .trust-section,
+    .areas-section {
+        display: none;
+    }
+}
+
 .blog-featured-image { width: 100%; max-width: 100%; border-radius: 8px; margin: 24px 0; object-fit: cover; }

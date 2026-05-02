@@ -170,7 +170,7 @@
     <span class="hero-video__badge">Private Sandbar Charters</span>
     <h1 class="hero-video__title">Your Crew. Your Sandbar.<br>Your Key West.</h1>
     <p class="hero-video__subtitle">Private boat to a hidden sandbar. Champagne, swimming, sunset. Up to 12 guests.</p>
-    <a href="#tours" class="hero-video__cta" onclick="trackBookingClick('hero_cta')">Check Availability</a>
+    <a href="#tours" class="hero-video__cta">Check Availability</a>
   </div>
   
   <!-- Scroll indicator -->
@@ -183,12 +183,4 @@
 
 <!-- GA4 Click Tracking -->
 <script>
-function trackBookingClick(location) {
-  if (typeof gtag !== 'undefined') {
-    gtag('event', 'booking_click', {
-      'event_category': 'engagement',
-      'event_label': location
-    });
-  }
-}
 </script>
