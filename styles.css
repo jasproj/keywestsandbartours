@@ -1547,55 +1547,45 @@ body {
     display: none;
 }
 /* ===========================================
-   MOBILE HERO FIX - Add this at end of styles.css
-   Target: Hero ≤120px on mobile (was ~280px)
+   MOBILE HERO COMPACT
+   Target: total .hero CSS height ≤120px on mobile.
+   Header is position:fixed (~50px tall), so .hero
+   keeps padding-top: 50px to clear it. Remaining
+   ~70px holds a single-line h1 + a 44px search bar.
+   Logo, subtitle, badge, and ticker are hidden on
+   mobile so tour grid lands within first scroll.
    =========================================== */
 
 @media (max-width: 767px) {
-    /* Compact hero padding */
     .hero {
-        padding: 52px 15px 8px; /* Reduced from 65px 15px 15px */
+        padding: 50px 12px 6px;
     }
-    
-    /* Smaller logo */
-    .hero-logo {
-        height: 35px; /* Reduced from 80px */
-        margin-bottom: 4px;
-    }
-    
-    /* Tighter headline */
-    .hero h1 {
-        font-size: 1.1rem;
-        margin-bottom: 3px;
-    }
-    
-    /* Hide subtitle on mobile - not needed */
-    .hero p {
-        display: none;
-    }
-    
-    /* Compact search bar */
-    .hero-search {
-        max-width: 100%;
-    }
-    
-    .hero-search input {
-        padding: 10px 12px;
-    }
-    
-    .hero-search button {
-        padding: 10px 16px;
-        min-height: 44px;
-    }
-    
-    /* Hide ticker on mobile - saves ~30px */
+
+    .hero-logo,
+    .hero-badge,
+    .hero p,
     .ticker-wrap {
         display: none;
     }
 
-    /* Hide badge pill on mobile - saves ~37px, brings hero to ~111px visible */
-    .hero-badge {
-        display: none;
+    .hero h1 {
+        font-size: 0.95rem;
+        line-height: 1.1;
+        margin-bottom: 2px;
+    }
+
+    .hero-search {
+        max-width: 100%;
+    }
+
+    .hero-search input {
+        padding: 10px 12px;
+        min-height: 44px;
+    }
+
+    .hero-search button {
+        padding: 10px 16px;
+        min-height: 44px;
     }
 }
 

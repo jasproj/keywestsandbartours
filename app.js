@@ -90,7 +90,7 @@ function escapeHtml(str) {
 
 // Format price
 function formatPrice(price, confidence) {
-    if (!Number.isFinite(price)) return 'Check live price';
+    if (!Number.isFinite(price) || price <= 0) return 'Check availability';
     if (confidence === 'low') return 'Check availability';
     return `From $${price}`;
 }
@@ -136,10 +136,7 @@ function createTourCard(tour) {
     const ratingHtml = tour.rating ?
         `<span class="tour-rating">★ ${escapeHtml(String(tour.rating))}${tour.reviewCount ? ` (${escapeHtml(String(tour.reviewCount))})` : ''}</span>` : '';
 
-    const safeDescBase = (tour.description || '').replace(/\s+/g, ' ').trim();
-    const desc = safeDescBase.length > 120
-        ? safeDescBase.substring(0, safeDescBase.lastIndexOf(' ', 117)) + '…'
-        : safeDescBase;
+    const desc = (tour.description || '').replace(/\s+/g, ' ').trim();
 
     // Inline-onclick safe escape: JS-escape backslash + apostrophe FIRST, then HTML-escape.
     // Browser HTML-decodes the attribute value before passing to JS; JS-escape sequences (\\, \')
