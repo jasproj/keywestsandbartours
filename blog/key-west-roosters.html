@@ -61,6 +61,7 @@
   gtag('js', new Date());
   gtag('config', 'G-67D7X60CJF');
 </script>
+<script src="/tracking.js" defer></script>
 </head>
 <body>
     <header class="header">
@@ -236,17 +237,5 @@
             <p>&copy; 2025 Key West Sandbar Tours. All rights reserved.</p>
         </div>
     </footer>
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-  document.querySelectorAll('a[href*="fareharbor.com"]').forEach(function(link) {
-    link.addEventListener('click', function() {
-      gtag('event', 'booking_click', {
-        'tour_name': this.dataset.tourName || this.textContent.trim(),
-        'outbound_url': this.href
-      });
-    });
-  });
-});
-</script>
 </body>
 </html>

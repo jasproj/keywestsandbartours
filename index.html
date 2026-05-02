@@ -148,6 +148,7 @@
   ]
 }
 </script>
+<script src="/tracking.js" defer></script>
 </head>
 <body>
     <header class="header">
@@ -185,28 +186,6 @@
             <div class="hero-search">
                 <input type="text" id="hero-search" placeholder="Search tours..." aria-label="Search tours">
                 <button onclick="scrollToTours()">🔍</button>
-            </div>
-            <div class="ticker-wrap">
-                <div class="ticker">
-                    <span>🤿 Snorkeling</span>
-                    <span>🎣 Fishing</span>
-                    <span>🌅 Sunset Cruises</span>
-                    <span>🐬 Dolphin Tours</span>
-                    <span>🚤 Boat Tours</span>
-                    <span>🏝️ Sandbar Trips</span>
-                    <span>🛶 Kayaking</span>
-                    <span>🪂 Parasailing</span>
-                    <span>⛵ Sailing</span>
-                    <span>🦈 Shark Encounters</span>
-                    <span>🤿 Scuba Diving</span>
-                    <span>🚀 Jet Ski</span>
-                    <span>🤿 Snorkeling</span>
-                    <span>🎣 Fishing</span>
-                    <span>🌅 Sunset Cruises</span>
-                    <span>🐬 Dolphin Tours</span>
-                    <span>🚤 Boat Tours</span>
-                    <span>🏝️ Sandbar Trips</span>
-                </div>
             </div>
         </div>
     </section>
@@ -494,17 +473,5 @@
     <script src="app.js"></script>
     <script src="video-optimization.js"></script>
     <script src="image-optimization.js"></script>
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-  document.querySelectorAll('a[href*="fareharbor.com"]').forEach(function(link) {
-    link.addEventListener('click', function() {
-      gtag('event', 'booking_click', {
-        'tour_name': this.dataset.tourName || this.textContent.trim(),
-        'outbound_url': this.href
-      });
-    });
-  });
-});
-</script>
 </body>
 </html>

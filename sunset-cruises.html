@@ -139,6 +139,7 @@
   ]
 }
 </script>
+<script src="/tracking.js" defer></script>
 </head>
 <body>
     <!-- HEADER -->
@@ -412,17 +413,5 @@ Most sunset cruises operate May through October, departing 5-7 PM depending on s
             toggle.textContent = toggle.textContent === '+' ? '−' : '+';
         }
     </script>
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-  document.querySelectorAll('a[href*="fareharbor.com"]').forEach(function(link) {
-    link.addEventListener('click', function() {
-      gtag('event', 'booking_click', {
-        'tour_name': this.dataset.tourName || this.textContent.trim(),
-        'outbound_url': this.href
-      });
-    });
-  });
-});
-</script>
 </body>
 </html>
