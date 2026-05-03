@@ -21,6 +21,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png">
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="preload" as="image" href="logo.webp" type="image/webp" fetchpriority="high">
     
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-67D7X60CJF"></script>
     <script>
@@ -170,7 +171,10 @@
 
     <section class="hero">
         <div class="hero-content">
-            <img src="logo.png" alt="Key West Sandbar Tours" class="hero-logo">
+            <picture>
+                <source srcset="logo.webp" type="image/webp">
+                <img src="logo.png" alt="Key West Sandbar Tours" class="hero-logo" width="350" height="360" fetchpriority="high">
+            </picture>
             <h1>Florida Keys Tours & Activities</h1>
             <p>Book direct with local operators.<br class="mobile-break"> Key West to Key Largo.</p>
             <div class="hero-search">

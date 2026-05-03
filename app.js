@@ -6,6 +6,16 @@ let filteredTours = [];
 let displayedCount = 0;
 const TOURS_PER_PAGE = 24;
 
+// Fisher-Yates shuffle (non-mutating — returns a shuffled copy)
+function shuffleArray(arr) {
+  const a = [...arr];
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]];
+  }
+  return a;
+}
+
 // Area mapping
 function getArea(location) {
     const loc = (location || '').toLowerCase();
@@ -263,11 +273,8 @@ function applyFilters() {
             break;
         case 'shuffle':
         default:
-            // Re-shuffle for variety
-            for (let i = filteredTours.length - 1; i > 0; i--) {
-                const j = Math.floor(Math.random() * (i + 1));
-                [filteredTours[i], filteredTours[j]] = [filteredTours[j], filteredTours[i]];
-            }
+            // Re-shuffle for variety (per page load)
+            filteredTours = shuffleArray(filteredTours);
             break;
     }
     
@@ -322,12 +329,9 @@ function loadMore() {
     }
 }
 
-// Shuffle tours
+// Shuffle tours (manual button)
 function shuffleTours() {
-    for (let i = filteredTours.length - 1; i > 0; i--) {
-        const j = Math.floor(Math.random() * (i + 1));
-        [filteredTours[i], filteredTours[j]] = [filteredTours[j], filteredTours[i]];
-    }
+    filteredTours = shuffleArray(filteredTours);
     displayedCount = 0;
     renderTours();
 }
@@ -361,16 +365,13 @@ async function init() {
     try {
         const response = await fetch('tours-data.json');
         allTours = await response.json();
-        
-        // Shuffle initially for variety
-        for (let i = allTours.length - 1; i > 0; i--) {
-            const j = Math.floor(Math.random() * (i + 1));
-            [allTours[i], allTours[j]] = [allTours[j], allTours[i]];
-        }
-        
+
+        // Shuffle initially for variety (per page load)
+        allTours = shuffleArray(allTours);
+
         filteredTours = [...allTours];
         applyFilters();
-        
+
         // Event listeners for filters
         ['areaFilter', 'activityFilter', 'priceFilter', 'sortFilter'].forEach(id => {
             document.getElementById(id)?.addEventListener('change', applyFilters);
@@ -398,13 +399,10 @@ async function initAreaPage(areaSlug) {
         
         // Filter to this area only
         allTours = allTours.filter(tour => getArea(tour.location) === areaSlug);
-        
-        // Shuffle
-        for (let i = allTours.length - 1; i > 0; i--) {
-            const j = Math.floor(Math.random() * (i + 1));
-            [allTours[i], allTours[j]] = [allTours[j], allTours[i]];
-        }
-        
+
+        // Shuffle (per page load)
+        allTours = shuffleArray(allTours);
+
         filteredTours = [...allTours];
         applyFilters();
         
