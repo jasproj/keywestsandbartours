@@ -32,8 +32,6 @@
     </script>
     
     <link rel="stylesheet" href="styles.css">
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6156669175458913" crossorigin="anonymous"></script>
-
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -141,7 +139,9 @@
 }
 </script>
 <script src="/tracking.js" defer></script>
-</head>
+    <link rel="stylesheet" href="/sponsor-slot.css">
+    <script src="/sponsor-slot.js" defer></script>
+  </head>
 <body>
     <header class="header">
         <div class="header-container">
@@ -162,7 +162,9 @@
             <button class="nav-toggle" aria-label="Menu">☰</button>
         </div>
     </header>
-    
+
+    <div class="sponsor-slot" data-slot-id="hero-leaderboard" data-slot-type="leaderboard" data-slot-page="home"></div>
+
     <nav class="nav-mobile">
         <a href="#tours-section">Tours</a>
         <a href="blog/">Blog</a>
@@ -364,7 +366,9 @@
         <div id="tours-grid" class="tours-grid">
             <p class="loading">Loading adventures...</p>
         </div>
-        
+
+        <div class="sponsor-slot" data-slot-id="home-mrec-1" data-slot-type="mrec" data-slot-page="home"></div>
+
         <button id="load-more" class="load-more" onclick="loadMore()">Load More Adventures →</button>
     </section>
 
@@ -467,5 +471,7 @@
     <script src="app.js"></script>
     <script src="video-optimization.js"></script>
     <script src="image-optimization.js"></script>
+
+    <div class="sponsor-slot" data-slot-id="mobile-sticky" data-slot-type="mobile-banner" data-slot-page="home" data-sticky-bottom="true"></div>
 </body>
 </html>
