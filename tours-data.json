@@ -3393,28 +3393,6 @@
     "qualityScore": 85
   },
   {
-    "id": "609821",
-    "name": "5 Hour Tahoe Charter",
-    "company": "The Water Traveler: Lake Tahoe",
-    "island": "united states/florida/key west",
-    "location": "United States/Florida/Key West",
-    "tags": [
-      "Boat Tour"
-    ],
-    "image": "https://cdn.filestackcontent.com/6nGEHVO0SMyw81mJN4x2",
-    "bookingLink": "https://fareharbor.com/embeds/book/thewatertraveler-laketahoe/items/609821/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&bookable-only=yes&full-items=yes&marketplace=yes&flow=no",
-    "price": 499,
-    "description": "You'll be riding on a Cobalt 246 with your USCG Captained All-Inclusive Boat Charter for an unforgettable day on Lake Tahoe with you and up to 10 friends.",
-    "duration": 300,
-    "durationText": "Duration\n5 Hour",
-    "timeOfDay": "morning",
-    "freeCancellation": null,
-    "rating": null,
-    "reviewCount": null,
-    "ratingSource": "tripadvisor",
-    "qualityScore": 95
-  },
-  {
     "id": "654932",
     "name": "28' Yamaha Jetboat",
     "company": "Keys Sandbar Adventures",
