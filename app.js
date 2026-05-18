@@ -364,7 +364,8 @@ document.querySelector('.nav-toggle')?.addEventListener('click', () => {
 async function init() {
     try {
         const response = await fetch('tours-data.json');
-        allTours = await response.json();
+        const _raw = await response.json();
+        allTours = Array.isArray(_raw) ? _raw : _raw.tours;
 
         // Shuffle initially for variety (per page load)
         allTours = shuffleArray(allTours);
@@ -395,7 +396,8 @@ async function init() {
 async function initAreaPage(areaSlug) {
     try {
         const response = await fetch('tours-data.json');
-        allTours = await response.json();
+        const _raw = await response.json();
+        allTours = Array.isArray(_raw) ? _raw : _raw.tours;
         
         // Filter to this area only
         allTours = allTours.filter(tour => getArea(tour.location) === areaSlug);
