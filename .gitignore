@@ -1,3 +1,4 @@
 hero-images/
 scripts-staging/node_modules
 images/_backup/
+*.bak
