@@ -366,6 +366,7 @@ async function init() {
         const response = await fetch('tours-data.json');
         const _raw = await response.json();
         allTours = Array.isArray(_raw) ? _raw : _raw.tours;
+        allTours = allTours.filter(t => t.status !== 'inactive');
 
         // Shuffle initially for variety (per page load)
         allTours = shuffleArray(allTours);
@@ -398,6 +399,7 @@ async function initAreaPage(areaSlug) {
         const response = await fetch('tours-data.json');
         const _raw = await response.json();
         allTours = Array.isArray(_raw) ? _raw : _raw.tours;
+        allTours = allTours.filter(t => t.status !== 'inactive');
         
         // Filter to this area only
         allTours = allTours.filter(tour => getArea(tour.location) === areaSlug);
