@@ -176,7 +176,7 @@ function createTourCard(tour) {
                     ${ratingHtml}
                 </div>
                 ${desc ? `<p class="tour-desc">${escapeHtml(desc)}</p>` : ''}
-                <a href="${tour.bookingLink}"
+                <a href="${tour.bookingUrl}"
                    target="_blank"
                    rel="noopener"
                    class="tour-cta"
@@ -435,7 +435,7 @@ function generateTourSchema(tour) {
                 "@type": "Offer",
                 "price": tour.price,
                 "priceCurrency": "USD",
-                "url": tour.bookingLink,
+                "url": tour.bookingUrl,
                 "availability": "https://schema.org/InStock"
             }
         }),
