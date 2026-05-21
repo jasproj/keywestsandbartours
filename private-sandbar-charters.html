@@ -62,6 +62,39 @@
         ]
     }
     </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "TouristTrip",
+      "name": "Private Sandbar Charter — Key West",
+      "description": "Private sandbar charter in Key West, Florida. BYOB. Up to 6 passengers. Local captain.",
+      "touristType": ["Family", "Group", "Couple"],
+      "itinerary": {
+        "@type": "Place",
+        "name": "Key West Sandbar",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Key West",
+          "addressRegion": "FL",
+          "addressCountry": "US"
+        }
+      },
+      "provider": {
+        "@type": "TravelAgency",
+        "@id": "https://keywestsandbartours.com/#business",
+        "name": "Key West Sandbar Tours",
+        "telephone": "+1-407-476-6190",
+        "url": "https://keywestsandbartours.com/"
+      },
+      "offers": {
+        "@type": "Offer",
+        "priceCurrency": "USD",
+        "price": "799",
+        "availability": "https://schema.org/InStock",
+        "url": "https://keywestsandbartours.com/private-sandbar-charters.html"
+      }
+    }
+    </script>
     
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-67D7X60CJF"></script>
     <script>
@@ -992,6 +1025,38 @@
             .final-cta { padding: 32px 16px; }
             .final-cta h2 { font-size: 1.25rem; }
         }
+        .header-phone {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+            text-decoration: none;
+            color: inherit;
+            font-weight: 600;
+            margin-left: auto;
+        }
+        .header-phone:hover { text-decoration: underline; }
+        .hero-phone-cta {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            flex-wrap: wrap;
+            margin-top: 1rem;
+        }
+        .hero-phone-link {
+            background: #ffc107;
+            color: #000;
+            padding: 0.75rem 1.25rem;
+            border-radius: 6px;
+            text-decoration: none;
+            font-size: 1.1rem;
+        }
+        .hero-phone-link:hover { filter: brightness(0.95); }
+        .hero-phone-or { opacity: 0.8; }
+        .hero-phone-secondary { color: #fff; text-decoration: underline; }
+        @media (max-width: 600px) {
+            .hero-phone-cta { justify-content: center; }
+            .hero-phone-link { font-size: 1.25rem; padding: 0.85rem 1.4rem; }
+        }
     </style>
 <script src="/tracking.js" defer></script>
     <link rel="stylesheet" href="/sponsor-slot.css">
@@ -1003,6 +1068,10 @@
             <a href="/" class="logo">
                 <img src="favicon-32.png" alt="" class="logo-img">
                 Key West Sandbar Tours
+            </a>
+            <a href="tel:4074766190" class="header-phone" aria-label="Call us at (407) 476-6190">
+                <span aria-hidden="true">📞</span>
+                <span class="phone-number">(407) 476-6190</span>
             </a>
         </div>
     </header>
@@ -1021,6 +1090,13 @@
             <span class="hero-video__badge">Private Sandbar Charters</span>
             <h1 class="hero-video__title">Private Sandbar Charters<br>in Key West</h1>
             <p class="hero-video__subtitle">Cruise to hidden sandbars, anchor in shallow turquoise water, and spend the day swimming, floating, and relaxing — just your group, no crowds.</p>
+            <div class="hero-phone-cta">
+              <a href="tel:4074766190" class="hero-phone-link">
+                Call <strong>(407) 476-6190</strong>
+              </a>
+              <span class="hero-phone-or">or</span>
+              <a href="#top-picks" class="hero-phone-secondary">See Tours</a>
+            </div>
             <div class="hero-video__stats">
                 <div class="hero-video__stat">
                     <div class="hero-video__stat-number">From $799</div>
