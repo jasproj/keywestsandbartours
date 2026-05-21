@@ -802,7 +802,72 @@
                 text-align: center;
             }
         }
+        .header-phone {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+            text-decoration: none;
+            color: inherit;
+            font-weight: 600;
+            margin-left: auto;
+        }
+        .header-phone:hover { text-decoration: underline; }
+        .hero-phone-cta {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            flex-wrap: wrap;
+            margin-top: 1rem;
+        }
+        .hero-phone-link {
+            background: #ffc107;
+            color: #000;
+            padding: 0.75rem 1.25rem;
+            border-radius: 6px;
+            text-decoration: none;
+            font-size: 1.1rem;
+        }
+        .hero-phone-link:hover { filter: brightness(0.95); }
+        .hero-phone-or { opacity: 0.8; }
+        .hero-phone-secondary { color: #fff; text-decoration: underline; }
+        @media (max-width: 600px) {
+            .hero-phone-cta { justify-content: center; }
+            .hero-phone-link { font-size: 1.25rem; padding: 0.85rem 1.4rem; }
+        }
     </style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "TouristTrip",
+  "name": "Key West Bachelorette Party Boat Charter",
+  "description": "Private bachelorette party boat in Key West, Florida. Sandbar charters, tiki boats, bar crawls. BYOB. Up to 12 passengers. Free cancellation.",
+  "touristType": ["Group", "Bachelorette"],
+  "itinerary": {
+    "@type": "Place",
+    "name": "Key West Sandbar",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Key West",
+      "addressRegion": "FL",
+      "addressCountry": "US"
+    }
+  },
+  "provider": {
+    "@type": "TravelAgency",
+    "@id": "https://keywestsandbartours.com/#business",
+    "name": "Key West Sandbar Tours",
+    "telephone": "+1-407-476-6190",
+    "url": "https://keywestsandbartours.com/"
+  },
+  "offers": {
+    "@type": "Offer",
+    "priceCurrency": "USD",
+    "price": "525",
+    "availability": "https://schema.org/InStock",
+    "url": "https://keywestsandbartours.com/bachelorette-party-boats.html"
+  }
+}
+</script>
 <script src="/tracking.js" defer></script>
     <link rel="stylesheet" href="/sponsor-slot.css">
     <script src="/sponsor-slot.js" defer></script>
@@ -813,6 +878,10 @@
             <a href="/" class="logo">
                 <img src="favicon-32.png" alt="" class="logo-img">
                 Key West Sandbar Tours
+            </a>
+            <a href="tel:4074766190" class="header-phone" aria-label="Call us at (407) 476-6190">
+                <span aria-hidden="true">📞</span>
+                <span class="phone-number">(407) 476-6190</span>
             </a>
         </div>
     </header>
@@ -832,6 +901,13 @@
             <span class="hero-video__badge">Private Bachelorette Charters</span>
             <h1 class="hero-video__title">Bachelorette Party Boats<br>in Key West</h1>
             <p class="hero-video__subtitle">Private boats to the sandbar — champagne, music, swimming, and sunset moments your crew will remember.</p>
+            <div class="hero-phone-cta">
+              <a href="tel:4074766190" class="hero-phone-link">
+                Call <strong>(407) 476-6190</strong>
+              </a>
+              <span class="hero-phone-or">or</span>
+              <a href="#top-picks" class="hero-phone-secondary">See Top Picks</a>
+            </div>
             <div class="hero-video__stats">
                 <div class="hero-video__stat">
                     <div class="hero-video__stat-number">From $525</div>
