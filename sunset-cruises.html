@@ -112,6 +112,16 @@
             .tours-grid { grid-template-columns: 1fr; }
             .faq-q { padding: 14px; font-size: 0.95rem; }
         }
+        .header-phone {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+            text-decoration: none;
+            color: inherit;
+            font-weight: 600;
+            margin-left: auto;
+        }
+        .header-phone:hover { text-decoration: underline; }
     </style>
 <script type="application/ld+json">
 {
@@ -129,6 +139,39 @@
   ]
 }
 </script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "TouristTrip",
+  "name": "Key West Sunset Cruise",
+  "description": "Private sunset cruise in Key West, Florida. Romantic sails, proposals, dinner cruises. Perfect for couples and small groups.",
+  "touristType": ["Couple", "Family", "Group"],
+  "itinerary": {
+    "@type": "Place",
+    "name": "Key West Sunset Waters",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Key West",
+      "addressRegion": "FL",
+      "addressCountry": "US"
+    }
+  },
+  "provider": {
+    "@type": "TravelAgency",
+    "@id": "https://keywestsandbartours.com/#business",
+    "name": "Key West Sandbar Tours",
+    "telephone": "+1-407-476-6190",
+    "url": "https://keywestsandbartours.com/"
+  },
+  "offers": {
+    "@type": "Offer",
+    "priceCurrency": "USD",
+    "price": "80",
+    "availability": "https://schema.org/InStock",
+    "url": "https://keywestsandbartours.com/sunset-cruises.html"
+  }
+}
+</script>
 <script src="/tracking.js" defer></script>
     <link rel="stylesheet" href="/sponsor-slot.css">
     <script src="/sponsor-slot.js" defer></script>
@@ -140,6 +183,10 @@
             <a href="/" class="logo">
                 <img src="favicon-32.png" alt="" class="logo-img">
                 Key West Sandbar Tours
+            </a>
+            <a href="tel:4074766190" class="header-phone" aria-label="Call us at (407) 476-6190">
+                <span aria-hidden="true">📞</span>
+                <span class="phone-number">(407) 476-6190</span>
             </a>
         </div>
     </header>
