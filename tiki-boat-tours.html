@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tiki Boat Key West | Floating Tiki Bar Sandbar, Sunset & Party Tours</title>
+    <meta name="description" content="Book Key West tiki boat tours — sandbar tiki trips, sunset tiki cruises, bachelorette + private party tiki charters. Floating tiki-bar boats, BYOB, captain included. From $525.">
+    <link rel="canonical" href="https://keywestsandbartours.com/tiki-boat-tours.html">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://keywestsandbartours.com/tiki-boat-tours.html">
+    <meta property="og:title" content="Tiki Boat Key West | Sandbar, Sunset & Party Tiki Tours">
+    <meta property="og:description" content="Floating tiki-bar boats for sandbar trips, sunset cruises, and bachelorette parties — your private crew, BYOB, captain included. From $525.">
+    <meta property="og:image" content="https://keywestsandbartours.com/og-image.jpg">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+    <!-- Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://keywestsandbartours.com/"},
+            {"@type": "ListItem", "position": 2, "name": "Tiki Boat Tours Key West", "item": "https://keywestsandbartours.com/tiki-boat-tours.html"}
+        ]
+    }
+    </script>
+
+    <!-- GA4 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-67D7X60CJF"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-67D7X60CJF');
+    </script>
+
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        :root {
+            --sand: #F5E6D3;
+            --ocean-deep: #0A3D62;
+            --ocean-light: #1E90FF;
+            --white: #FFFFFF;
+            --off-white: #FAFAFA;
+            --text-dark: #1A1A2E;
+            --text-muted: #6B7280;
+            --accent: #F59E0B;
+        }
+
+        body { font-family: 'DM Sans', sans-serif; color: var(--text-dark); line-height: 1.6; }
+        .header { background: var(--white); padding: 16px 20px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+        .header-inner { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-size: 1.1rem; font-weight: 700; color: var(--ocean-deep); text-decoration: none; display: flex; align-items: center; gap: 8px; }
+        .logo-img { width: 24px; height: 24px; }
+
+        .hero { background: linear-gradient(135deg, var(--ocean-deep) 0%, var(--ocean-light) 100%); color: var(--white); padding: 48px 20px; text-align: center; }
+        .hero h1 { font-family: 'Playfair Display', serif; font-size: 2.5rem; margin-bottom: 16px; }
+        .hero p { font-size: 1.1rem; margin-bottom: 24px; opacity: 0.95; }
+        .hero-actions { display: inline-flex; gap: 14px; flex-wrap: wrap; justify-content: center; }
+        .hero-actions a { display: inline-block; padding: 14px 32px; border-radius: 50px; text-decoration: none; font-weight: 700; }
+        .hero-actions .hero-browse { background: var(--accent); color: var(--ocean-deep); }
+        .hero-actions .hero-call { background: var(--white); color: var(--ocean-deep); }
+        .hero-actions .hero-call:hover { filter: brightness(0.95); }
+
+        .intro { max-width: 1200px; margin: 0 auto; padding: 48px 20px; }
+        .intro h2 { font-family: 'Playfair Display', serif; font-size: 1.75rem; margin-bottom: 20px; }
+        .intro p { font-size: 1rem; line-height: 1.8; color: var(--text-muted); margin-bottom: 16px; }
+
+        .tours { background: var(--sand); padding: 48px 20px; }
+        .tours-inner { max-width: 1200px; margin: 0 auto; }
+        .section-label { display: inline-block; background: var(--accent); color: var(--ocean-deep); padding: 6px 14px; border-radius: 4px; font-size: 0.85rem; font-weight: 700; margin-bottom: 12px; }
+        .section-title { font-family: 'Playfair Display', serif; font-size: 1.75rem; margin-bottom: 32px; text-align: center; }
+
+        .tours-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 20px; }
+        .tour-card { background: var(--white); border-radius: 12px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.1); transition: transform 0.3s, box-shadow 0.3s; }
+        .tour-card:hover { transform: translateY(-8px); box-shadow: 0 8px 20px rgba(0,0,0,0.15); }
+        .tour-card-image { height: 200px; background-size: cover; background-position: center; position: relative; }
+        .tour-card-badge, .tour-card-price { position: absolute; padding: 8px 14px; border-radius: 6px; font-size: 0.85rem; font-weight: 700; }
+        .tour-card-badge { top: 12px; left: 12px; background: var(--accent); color: var(--ocean-deep); }
+        .tour-card-price { top: 12px; right: 12px; background: var(--ocean-deep); color: var(--white); }
+        .tour-card-content { padding: 20px; }
+        .tour-card-company { font-size: 0.75rem; color: var(--ocean-light); font-weight: 700; text-transform: uppercase; margin-bottom: 8px; }
+        .tour-card-content h3 { font-size: 1.1rem; color: var(--ocean-deep); margin-bottom: 8px; }
+        .tour-card-meta { display: flex; gap: 12px; margin-bottom: 12px; font-size: 0.85rem; color: var(--text-muted); }
+        .tour-card-description { font-size: 0.9rem; color: var(--text-muted); margin-bottom: 16px; }
+        .tour-card-cta { display: block; background: var(--accent); color: var(--ocean-deep); text-align: center; padding: 12px 16px; border-radius: 8px; text-decoration: none; font-weight: 700; }
+        .tour-card-cta:hover { background: #f3a500; }
+
+        .cta-box { background: var(--white); border-radius: 12px; padding: 32px 20px; text-align: center; margin: 32px 0; }
+        .cta-box h3 { font-size: 1.5rem; margin-bottom: 16px; }
+        .cta-box a { display: inline-block; background: var(--accent); color: var(--ocean-deep); padding: 14px 32px; border-radius: 50px; text-decoration: none; font-weight: 700; }
+
+        .faq { background: var(--off-white); padding: 48px 20px; }
+        .faq-inner { max-width: 1200px; margin: 0 auto; }
+        .faq h2 { font-family: 'Playfair Display', serif; font-size: 1.75rem; text-align: center; margin-bottom: 32px; }
+        .faq-item { background: var(--white); border-radius: 8px; margin-bottom: 12px; overflow: hidden; }
+        .faq-q { background: var(--sand); padding: 16px; border: none; cursor: pointer; display: flex; justify-content: space-between; align-items: center; width: 100%; font-size: 1rem; font-weight: 600; text-align: left; }
+        .faq-q:hover { background: #ede6d3; }
+        .faq-a { padding: 16px; background: var(--white); color: var(--text-muted); }
+        .faq-toggle { display: inline-block; width: 24px; text-align: center; }
+
+        .footer { background: var(--text-dark); color: var(--white); padding: 24px 20px; text-align: center; font-size: 0.9rem; }
+        .footer a { color: var(--accent); text-decoration: none; }
+
+        @media (max-width: 600px) {
+            .hero { padding: 8px 16px; }
+            .hero h1 { font-size: 1.1rem; }
+            .hero p { display: none; }
+            .tours-grid { grid-template-columns: 1fr; }
+            .faq-q { padding: 14px; font-size: 0.95rem; }
+        }
+        .header-phone {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+            text-decoration: none;
+            color: inherit;
+            font-weight: 600;
+            margin-left: auto;
+        }
+        .header-phone:hover { text-decoration: underline; }
+    </style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What's a tiki boat tour in Key West?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A tiki boat is a custom floating tiki-bar pontoon — covered seating, built-in bar, sound system. Tours run as private 2-6 hour charters to the sandbar, sunset cruises, or party packages. Up to 12 passengers; captain included; BYOB."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Are tiki boats good for bachelorette parties?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "They're one of the most popular bachelorette options in Key West. Private boat means your crew only, BYOB lets you control the bar, and the sandbar stop gives you shallow turquoise water for swimming, floating, and photos. Plan 2+ weeks ahead in peak season."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How much does a tiki boat tour cost?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sunset tiki tours (2 hours) start around $525 private. Full-day sandbar tiki trips (6 hours) typically $799-$949 for a private group up to 12. Per-person rates work out to $50-$80 with a full boat. Captain, fuel, and basic gear included."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What should we bring?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sunscreen (reef-safe preferred), towels, food, drinks (BYOB welcome on most tiki boats — confirm with your captain), Bluetooth playlist, swimsuits, waterproof phone case. Coolers, ice, and snorkel gear typically provided."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Ready to Book?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Browse our tiki boat tours above, or call (407) 476-6190 if you'd like help picking the right option for your group."
+      }
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "TouristTrip",
+  "name": "Tiki Boat Tours Key West",
+  "description": "Private tiki boat charters in Key West, Florida — floating tiki-bar boats for sandbar trips, sunset cruises, and bachelorette parties. BYOB. Up to 12 passengers. Local captain.",
+  "touristType": ["Group", "Bachelorette", "Couple", "Family"],
+  "itinerary": {
+    "@type": "Place",
+    "name": "Key West Sandbar",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Key West",
+      "addressRegion": "FL",
+      "addressCountry": "US"
+    }
+  },
+  "provider": {
+    "@type": "TravelAgency",
+    "@id": "https://keywestsandbartours.com/#business",
+    "name": "Key West Sandbar Tours",
+    "telephone": "+1-407-476-6190",
+    "url": "https://keywestsandbartours.com/"
+  },
+  "offers": {
+    "@type": "Offer",
+    "priceCurrency": "USD",
+    "price": "525",
+    "availability": "https://schema.org/InStock",
+    "url": "https://keywestsandbartours.com/tiki-boat-tours.html"
+  }
+}
+</script>
+<script src="/tracking.js" defer></script>
+    <link rel="stylesheet" href="/sponsor-slot.css">
+    <script src="/sponsor-slot.js" defer></script>
+  </head>
+<body>
+    <!-- HEADER -->
+    <header class="header">
+        <div class="header-inner">
+            <a href="/" class="logo">
+                <img src="favicon-32.png" alt="" class="logo-img">
+                Key West Sandbar Tours
+            </a>
+            <a href="tel:4074766190" class="header-phone" aria-label="Call us at (407) 476-6190">
+                <span aria-hidden="true">📞</span>
+                <span class="phone-number">(407) 476-6190</span>
+            </a>
+        </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero">
+        <h1>Tiki Boat Tours Key West</h1>
+        <p>Floating tiki-bar boats for sandbar trips, sunset cruises, and bachelorette parties — your private crew, BYOB, captain included. From $525.</p>
+        <div class="hero-actions">
+            <a class="hero-browse" href="#tours-grid">Browse Tiki Tours</a>
+            <a class="hero-call" href="tel:4074766190" aria-label="Call (407) 476-6190">📞 Call (407) 476-6190</a>
+        </div>
+    </section>
+
+    <!-- INTRO -->
+    <section class="intro">
+        <h2>Key West's Best Tiki Boat Experiences</h2>
+        <p>Tiki boats are the most-requested party charter in Key West — custom-built floating bars with covered seating, sound systems, and a captain who knows every hidden sandbar in the backcountry. Pick a 2-hour sunset tiki cruise for couples, a full-day sandbar tiki trip for your crew, or a private bachelorette package with BYOB and Bluetooth playlist.</p>
+        <p>Every charter on this page is bookable through FareHarbor — you'll see real-time availability, secure payment, and instant confirmation. Captains handle navigation, anchoring, and safety; you bring the cooler and the playlist.</p>
+        <p>Peak tiki season runs March–October. Bachelorette weekends in April–June often sell out 2–3 weeks ahead. If you have a date locked, book early — and if you need help matching your group size and vibe to the right boat, call <a href="tel:4074766190" style="color: var(--ocean-light); font-weight: 700;">(407) 476-6190</a>.</p>
+    </section>
+
+    <!-- TOURS -->
+    <section class="tours">
+        <div class="tours-inner">
+            <div class="section-label">Tiki Boat Charters</div>
+            <h2 class="section-title">Available Tiki Tours</h2>
+
+            <div id="tours-grid" class="tours-grid">
+                <!-- TOUR 1 — Keys Tikis Sandbar -->
+                <div class="tour-card">
+                    <div class="tour-card-image" style="background-image: url('https://cdn.filestackcontent.com/FmAUp2AWQdSq5Xqp41VV')">
+                        <span class="tour-card-badge">Sandbar Tiki</span>
+                    </div>
+                    <div class="tour-card-content">
+                        <div class="tour-card-company">Keys Tikis LLC</div>
+                        <h3>Anything Goes Tiki Boat — Key West Sandbar Trip</h3>
+                        <div class="tour-card-meta"><span>⏱ 6 Hour</span><span>👥 Private</span></div>
+                        <p class="tour-card-description">Full-day private tiki boat charter to hidden Key West sandbars. Floating tiki bar, captain, sound system, and BYOB. The party boat that put Keys Tikis on the map.</p>
+                        <a href="https://fareharbor.com/embeds/book/keystikis/items/550905/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&bookable-only=yes&full-items=yes&marketplace=yes&flow=no" target="_blank" class="tour-card-cta">Check Availability</a>
+                    </div>
+                </div>
+
+                <!-- TOUR 2 — Keys Tikis Sunset -->
+                <div class="tour-card">
+                    <div class="tour-card-image" style="background-image: url('https://cdn.filestackcontent.com/1Ob2N2FARvWv49KxXwtZ')">
+                        <span class="tour-card-badge">Sunset Tiki</span>
+                    </div>
+                    <div class="tour-card-content">
+                        <div class="tour-card-company">Keys Tikis LLC</div>
+                        <h3>Key West Tiki Boat Sunset Tour</h3>
+                        <div class="tour-card-meta"><span>⏱ 2 Hour</span><span>👥 Private</span></div>
+                        <p class="tour-card-description">Private 2-hour sunset cruise aboard a custom tiki bar boat. Toast Key West's legendary sunset with your crew, BYOB, and a captain who's seen 1,000 of them.</p>
+                        <a href="https://fareharbor.com/embeds/book/keystikis/items/550908/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&bookable-only=yes&full-items=yes&marketplace=yes&flow=no" target="_blank" class="tour-card-cta">Check Availability</a>
+                    </div>
+                </div>
+
+                <!-- TOUR 3 — Salty Bottom Tiki -->
+                <div class="tour-card">
+                    <div class="tour-card-image" style="background-image: url('https://cdn.filestackcontent.com/1M4bGUlRDakYbsBPUdwi')">
+                        <span class="tour-card-badge">Party Tiki</span>
+                        <span class="tour-card-price">$949</span>
+                    </div>
+                    <div class="tour-card-content">
+                        <div class="tour-card-company">Salty Bottom Boat Party</div>
+                        <h3>Salty Bottom Tiki Boat</h3>
+                        <div class="tour-card-meta"><span>⏱ 6 Hour</span><span>👥 Private</span></div>
+                        <p class="tour-card-description">Floating tiki bar meets sandbar trip. The most unique way to party on the water in Key West. BYOB, captain included, good vibes guaranteed.</p>
+                        <a href="https://fareharbor.com/embeds/book/saltybottomboats/items/598629/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&bookable-only=yes&full-items=yes&marketplace=yes&flow=no" target="_blank" class="tour-card-cta">Check Availability</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- USE-CASE SECTIONS -->
+    <section class="intro">
+        <h2>Pick Your Tiki Boat Experience</h2>
+        <p><strong>Sandbar tiki trip (full day, 6 hours).</strong> The flagship Key West tiki experience: cruise the backcountry, anchor at a knee-deep sandbar, float with a drink, swim, snorkel, and watch dolphins. Best for bachelorette weekends, birthdays, friend-group reunions, and any crew that wants the whole day on the water.</p>
+        <p><strong>Sunset tiki cruise (2 hours).</strong> Tightly-timed evening charter past Mallory Square and into the Gulf to catch the sunset from a tiki-bar boat. Best for couples, anniversaries, low-key date nights, or a sunset add-on to a longer Key West weekend.</p>
+        <p><strong>Bachelorette + private party tiki.</strong> Custom-curated private charters with extended hours, decorations, and playlist coordination. Operators like Salty Bottom and Keys Tikis run bachelorette-focused packages year-round; call us at <a href="tel:4074766190" style="color: var(--ocean-light); font-weight: 700;">(407) 476-6190</a> to match the right boat to your group size and vibe.</p>
+        <p><strong>Group + private bookings.</strong> Tiki boats are private-charter by design — up to 12 passengers. Per-person rates are best with a full boat ($50–$80/person); smaller groups still get the whole boat to themselves. Tip your captain.</p>
+    </section>
+
+    <!-- CTA -->
+    <div class="cta-box">
+        <h3>Ready to Book Your Tiki Boat?</h3>
+        <p>Browse the tiki tours above, or call <a href="tel:4074766190" style="color: var(--ocean-light); font-weight: 700;">(407) 476-6190</a> if you'd like help picking the right boat for your crew.</p>
+        <a href="#tours-grid">See Available Tiki Tours</a>
+    </div>
+
+    <div class="sponsor-slot" data-slot-id="landing-native" data-slot-type="native" data-slot-page="landing"></div>
+
+    <!-- FAQ -->
+    <section class="faq">
+        <div class="faq-inner">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-item">
+                <button class="faq-q" onclick="toggleFaq(event)">
+                    <span>What's a tiki boat tour in Key West?</span>
+                    <span class="faq-toggle">+</span>
+                </button>
+                <div class="faq-a" style="display: none;">
+                    A tiki boat is a custom floating tiki-bar pontoon — covered seating, built-in bar, sound system. Tours run as private 2–6 hour charters to the sandbar, sunset cruises, or party packages. Up to 12 passengers; captain included; BYOB.
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-q" onclick="toggleFaq(event)">
+                    <span>Are tiki boats good for bachelorette parties?</span>
+                    <span class="faq-toggle">+</span>
+                </button>
+                <div class="faq-a" style="display: none;">
+                    They're one of the most popular bachelorette options in Key West. Private boat means your crew only, BYOB lets you control the bar, and the sandbar stop gives you shallow turquoise water for swimming, floating, and photos. Plan 2+ weeks ahead in peak season (April–June).
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-q" onclick="toggleFaq(event)">
+                    <span>How much does a tiki boat tour cost?</span>
+                    <span class="faq-toggle">+</span>
+                </button>
+                <div class="faq-a" style="display: none;">
+                    Sunset tiki tours (2 hours) start around $525 private. Full-day sandbar tiki trips (6 hours) typically $799–$949 for a private group up to 12. Per-person rates work out to $50–$80 with a full boat. Captain, fuel, and basic gear included.
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-q" onclick="toggleFaq(event)">
+                    <span>What should we bring?</span>
+                    <span class="faq-toggle">+</span>
+                </button>
+                <div class="faq-a" style="display: none;">
+                    Sunscreen (reef-safe preferred), towels, food, drinks (BYOB welcome on most tiki boats — confirm with your captain), Bluetooth playlist, swimsuits, waterproof phone case. Coolers, ice, and snorkel gear typically provided.
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-q" onclick="toggleFaq(event)">
+                    <span>What if the weather is bad?</span>
+                    <span class="faq-toggle">+</span>
+                </button>
+                <div class="faq-a" style="display: none;">
+                    Most operators offer full refunds or rescheduling for weather cancellations. Your captain will contact you if conditions are unsafe. Light rain and moderate weather usually don't cancel a trip.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <p>&copy; 2026 Key West Sandbar Tours. All rights reserved. <a href="/">Home</a> | <a href="/about.html">About</a> | <a href="/faq.html">FAQs</a></p>
+    </footer>
+
+    <script>
+        function toggleFaq(event) {
+            const item = event.target.closest('.faq-item');
+            const answer = item.querySelector('.faq-a');
+            const toggle = item.querySelector('.faq-toggle');
+
+            answer.style.display = answer.style.display === 'none' ? 'block' : 'none';
+            toggle.textContent = toggle.textContent === '+' ? '−' : '+';
+        }
+    </script>
+</body>
+</html>
