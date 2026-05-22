@@ -19,9 +19,25 @@
      only set when no function is already defined, so existing per-page
      definitions keep winning. The delegated handler below fires gtag
      directly with the canonical 3-arg field shape.
+
+   utm_source tagging:
+   - On every FareHarbor link click, we append utm_source=keywestsandbartours
+     so GA4 can attribute the booking to KWST.
+   - appendUtmSource is a vendored copy of _tools/generators/source-tag.js
+     (_tools PR #84, 4e73885). Inlined here instead of loaded as a
+     separate <script> to avoid editing every page <head>.
 */
 
 (function () {
+    function appendUtmSource(url, slug) {
+        if (typeof url !== 'string' || !url) return url;
+        if (typeof slug !== 'string' || !slug) return url;
+        if (url.indexOf('fareharbor.com') === -1) return url;
+        if (/[?&]utm_source=/.test(url)) return url;
+        var sep = url.indexOf('?') === -1 ? '?' : '&';
+        return url + sep + 'utm_source=' + encodeURIComponent(slug);
+    }
+
     var CTA_CLASSES = [
         'book-btn',
         'book-btn-inline',
@@ -88,10 +104,17 @@
     document.addEventListener('click', function (e) {
         var link = e.target.closest && e.target.closest('a');
         if (!link) return;
-        var onclickAttr = link.getAttribute('onclick') || '';
-        if (onclickAttr.indexOf('trackBookingClick') !== -1) return;
         var href = link.getAttribute('href') || '';
         var isFareHarbor = href.indexOf('fareharbor.com') !== -1;
+        // utm_source rewrite runs BEFORE the onclick-skip below, because
+        // KWST's app.js renders FH anchors with onclick="trackBookingClickEnhanced(...)"
+        // and the substring-match skip would otherwise short-circuit the rewrite.
+        // The rewrite is orthogonal to gtag firing — tag the URL either way.
+        if (isFareHarbor) {
+            link.href = appendUtmSource(link.href, 'keywestsandbartours');
+        }
+        var onclickAttr = link.getAttribute('onclick') || '';
+        if (onclickAttr.indexOf('trackBookingClick') !== -1) return;
         if (!isFareHarbor && !hasCtaClass(link)) return;
         var ctx = readContext(link);
         if (typeof gtag === 'undefined') return;
