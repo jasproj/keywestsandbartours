@@ -2,6 +2,13 @@
 // Tour rendering, filtering, and click tracking
 
 let allTours = [];
+
+// Wire the homepage "Verified Tours" stat to the live (non-dead) catalog
+// size, replacing the hardcoded value. No-op on pages without the element.
+function updateVerifiedToursCount(n) {
+    const el = document.getElementById('verified-tours-count');
+    if (el) el.textContent = Number(n).toLocaleString();
+}
 let filteredTours = [];
 let displayedCount = 0;
 const TOURS_PER_PAGE = 24;
@@ -366,7 +373,9 @@ async function init() {
         const response = await fetch('tours-data.json');
         const _raw = await response.json();
         allTours = Array.isArray(_raw) ? _raw : _raw.tours;
-        allTours = allTours.filter(t => t.status !== 'inactive');
+        // Hide tours with a dead FareHarbor booking link (audit 2026-05-28).
+        allTours = allTours.filter(t => t.status !== 'inactive' && !t.bookingDead);
+        updateVerifiedToursCount(allTours.length);
 
         // Shuffle initially for variety (per page load)
         allTours = shuffleArray(allTours);
@@ -399,8 +408,8 @@ async function initAreaPage(areaSlug) {
         const response = await fetch('tours-data.json');
         const _raw = await response.json();
         allTours = Array.isArray(_raw) ? _raw : _raw.tours;
-        allTours = allTours.filter(t => t.status !== 'inactive');
-        
+        allTours = allTours.filter(t => t.status !== 'inactive' && !t.bookingDead);
+
         // Filter to this area only
         allTours = allTours.filter(tour => getArea(tour.location) === areaSlug);
 
