@@ -73,9 +73,10 @@
 
     function readContext(link) {
         var href = link.getAttribute('href') || '';
-        var name = link.dataset.tourName
-            || link.textContent.replace(/[→➤➔\s]+$/, '').trim()
-            || 'unknown';
+        // Never fall back to link.textContent: an unattributed CTA would report
+        // its button label ("Check Availability"), collapsing every unattributed
+        // click into one GA4 row. 'unknown' keeps the gap visible instead.
+        var name = link.dataset.tourName || 'unknown';
         var id = link.dataset.tourId || href || 'unknown';
         return { name: name, id: id, href: href };
     }

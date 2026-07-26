@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex,follow">
     <title>Find Your Perfect Sandbar Trip | Key West Sandbar Tours</title>
     <meta name="description" content="Answer 5 quick questions to find the perfect private sandbar charter in Key West for your group.">
     
@@ -561,9 +562,10 @@ function showMore() {
     gtag('event', 'quiz_show_more', {showing, quiz: 'sandbar'});
 }
 
-function trackClick(name, price) {
+function trackClick(name, price, id) {
     gtag('event', 'booking_click', {
         tour_name: name, 
+        tour_id: id || 'unknown', 
         tour_price: price, 
         source: 'sandbar_quiz',
         quiz_who: A.who,
