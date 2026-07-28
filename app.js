@@ -1,6 +1,11 @@
 // Key West Sandbar Tours - App.js
 // Tour rendering, filtering, and click tracking
 
+// Fallback for tour records with no image. Applied at render time, not just via
+// onerror: `src="undefined"` costs a real 404 before onerror can rescue it.
+// Local + ORIGINAL Capt. Dane photography, recorded in ATTRIBUTION.md.
+const FALLBACK_IMAGE = '/images/keys/dane_drone.webp';
+
 let allTours = [];
 
 // Wire the homepage "Verified Tours" stat to the live (non-dead) catalog
@@ -170,7 +175,7 @@ function createTourCard(tour) {
         <article class="tour-card" data-id="${escapeHtml(tour.id)}">
             <script type="application/ld+json">${schemaJson}</script>
             <div class="tour-image">
-                <img src="${tour.image}" alt="${escapeHtml(tour.name)}" loading="lazy" width="400" height="300" onerror="this.src='https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=400'" style="width: 100%; height: auto; object-fit: cover;">
+                <img src="${tour.image || FALLBACK_IMAGE}" alt="${escapeHtml(tour.name)}" loading="lazy" width="400" height="300" onerror="this.src='${FALLBACK_IMAGE}'" style="width: 100%; height: auto; object-fit: cover;">
                 ${priceHtml}
                 <div class="tour-badges">${badges.join('')}</div>
                 <div class="tour-location">📍 ${escapeHtml(areaName)}</div>

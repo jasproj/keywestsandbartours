@@ -28,22 +28,66 @@ removed in PR #73.
 
 ## ORIGINAL — confirmed by Jason
 
-Capt. Dane's own photography. Held in the `wtpa` repository; copying between `keywestsandbartours`
-and `wtpa` is intra-entity (both WTPA LLC) and permitted. **These must never be copied to a
-Claduta-owned site.**
+Capt. Dane's own photography, confirmed by Jason 2026-07-28. Copied from the `wtpa`
+repository; copying between `keywestsandbartours` and `wtpa` is intra-entity (both WTPA LLC)
+and permitted. **These must never be copied to a Claduta-owned site.**
 
-| File | Subject | Evidence |
+Renamed `.jpg` → `.webp` on copy: the source files were WebP carrying a `.jpg` extension.
+Fixed at the point of copy rather than inheriting a known defect.
+
+| File | Dimensions | Subject (verified by viewing) |
 |---|---|---|
-| `dane_drone.jpg` | Aerial: pontoon anchored on a shallow turquoise sandbar, one person wading | Confirmed by Jason; drone frame, consistent single shoot |
-| `sharks_drone.jpg` | Aerial: two nurse sharks over shallow flats, pontoon in background | Confirmed by Jason; same shoot |
-| `shark_drone_2.jpg` | Aerial: pontoon anchored, one nurse shark below | Confirmed by Jason; same shoot |
-| `Dane_Spear_3.jpg` | Capt. Dane, spearfishing | Confirmed by Jason; named subject |
+| `images/keys/dane_drone.webp` | 2000×1125 | Aerial: pontoon boat anchored on a shallow turquoise sandbar, one person wading |
+| `images/keys/sharks_drone.webp` | 2000×1125 | Aerial: two nurse sharks over shallow flats, pontoon in background |
+| `images/keys/shark_drone_2.webp` | 2000×1125 | Aerial: pontoon anchored, one nurse shark below |
 
-*(Arriving in this repo with the image-swap work; listed here so the category is defined.)*
+`Dane_Spear_3.jpg` (828×819, Capt. Dane spearfishing) is also confirmed ORIGINAL but is **not
+used**: the only page it fits — `blog/offshore-vs-backcountry-fishing.html` — carries its image
+in a full-bleed `div.blog-hero` measured at 1440×1281, which would upscale it ~1.7×. Card slots
+only. See the sourcing list below.
 
-## LICENSED / FREE
+## LICENSED / FREE — Pexels
 
-*(none recorded yet)*
+All sourced from [Pexels](https://www.pexels.com) under the [Pexels License](https://www.pexels.com/license/)
+on 2026-07-28. Accepted **only** where the photographer's own URL slug names a Florida Keys
+place — query relevance is not provenance, and Pexels `alt` text is auto-generated and was not
+trusted. Resized to 1600px wide, `cwebp -q 82`.
+
+| File | Photographer | Source slug | Original |
+|---|---|---|---|
+| `images/keys/a-house-with-palm-trees-on-the-front-in-key.webp` | Arian Fernandez | [`a-house-with-palm-trees-on-the-front-in-key-west-florida-usa-18326885`](https://www.pexels.com/photo/a-house-with-palm-trees-on-the-front-in-key-west-florida-usa-18326885/) | 6143x3632 |
+| `images/keys/a-seaplane-at-fort-jefferson-in-the-dry-tort.webp` | Colon Freld | [`a-seaplane-at-fort-jefferson-in-the-dry-tortugas-in-key-west-florida-united-states-12902831`](https://www.pexels.com/photo/a-seaplane-at-fort-jefferson-in-the-dry-tortugas-in-key-west-florida-united-states-12902831/) | 4016x3012 |
+| `images/keys/aerial-shot-of-the-key-west-lighthouse-in-fl.webp` | Mikhail Nilov | [`aerial-shot-of-the-key-west-lighthouse-in-florida-9400886`](https://www.pexels.com/photo/aerial-shot-of-the-key-west-lighthouse-in-florida-9400886/) | 5464x3640 |
+| `images/keys/aerial-view-of-the-seven-mile-bridge-above-t.webp` | Mikhail Nilov | [`aerial-view-of-the-seven-mile-bridge-above-the-sea-9400885`](https://www.pexels.com/photo/aerial-view-of-the-seven-mile-bridge-above-the-sea-9400885/) | 5464x3640 |
+| `images/keys/lonely-palm-tree-on-key-west-beach.webp` | DΛVΞ GΛRCIΛ | [`lonely-palm-tree-on-key-west-beach-35712229`](https://www.pexels.com/photo/lonely-palm-tree-on-key-west-beach-35712229/) | 6000x4000 |
+| `images/keys/solitary-palm-tree-on-key-west-beach.webp` | DΛVΞ GΛRCIΛ | [`solitary-palm-tree-on-key-west-beach-35712231`](https://www.pexels.com/photo/solitary-palm-tree-on-key-west-beach-35712231/) | 6000x4000 |
+| `images/keys/stunning-ocean-view-at-florida-keys-bridge.webp` | Dominik Gryzbon | [`stunning-ocean-view-at-florida-keys-bridge-31546925`](https://www.pexels.com/photo/stunning-ocean-view-at-florida-keys-bridge-31546925/) | 6016x4016 |
+| `images/keys/tropical-palm-sunset-in-key-west.webp` | Anatolii Grytsenko | [`tropical-palm-sunset-in-key-west-30912992`](https://www.pexels.com/photo/tropical-palm-sunset-in-key-west-30912992/) | 4315x5394 |
+| `images/keys/tropical-palm-trees-and-tiki-hut-in-islamora.webp` | Sheree Bagensie | [`tropical-palm-trees-and-tiki-hut-in-islamorada-36827874`](https://www.pexels.com/photo/tropical-palm-trees-and-tiki-hut-in-islamorada-36827874/) | 2825x3948 |
+| `images/keys/ancient-dry-tortugas-national-park-in-florid.webp` | Colon Freld | [`ancient-dry-tortugas-national-park-in-florida-12902484`](https://www.pexels.com/photo/ancient-dry-tortugas-national-park-in-florida-12902484/) | 3971x2978 |
+| `images/keys/building-of-key-west-shipwreck-museum.webp` | PeopleByOwen | [`building-of-key-west-shipwreck-museum-15822391`](https://www.pexels.com/photo/building-of-key-west-shipwreck-museum-15822391/) | 4345x6518 |
+| `images/keys/charming-historic-houses-in-key-west-florida.webp` | Dominik Gryzbon | [`charming-historic-houses-in-key-west-florida-31546926`](https://www.pexels.com/photo/charming-historic-houses-in-key-west-florida-31546926/) | 6016x4016 |
+| `images/keys/charming-key-west-shell-warehouse-exterior-d.webp` | Stanley  Louigene | [`charming-key-west-shell-warehouse-exterior-display-33664868`](https://www.pexels.com/photo/charming-key-west-shell-warehouse-exterior-display-33664868/) | 3024x4032 |
+| `images/keys/charming-key-west-street-with-festive-decora.webp` | Dominik Gryzbon | [`charming-key-west-street-with-festive-decorations-31546935`](https://www.pexels.com/photo/charming-key-west-street-with-festive-decorations-31546935/) | 5712x3747 |
+| `images/keys/colorful-signpost-in-florida-keys-cafe.webp` | Sarah O'Shea | [`colorful-signpost-in-florida-keys-cafe-33248591`](https://www.pexels.com/photo/colorful-signpost-in-florida-keys-cafe-33248591/) | 3024x4032 |
+| `images/keys/conch-tour-train-in-key-west-florida-usa.webp` | Arian Fernandez | [`conch-tour-train-in-key-west-florida-usa-18326933`](https://www.pexels.com/photo/conch-tour-train-in-key-west-florida-usa-18326933/) | 6240x3958 |
+| `images/keys/fort-jefferson-in-the-dry-tortugas-national.webp` | Charles Shepherd | [`fort-jefferson-in-the-dry-tortugas-national-park-florida-usa-14345243`](https://www.pexels.com/photo/fort-jefferson-in-the-dry-tortugas-national-park-florida-usa-14345243/) | 4000x3000 |
+| `images/keys/historic-trolley-in-key-west-florida.webp` | Stanley  Louigene | [`historic-trolley-in-key-west-florida-33664873`](https://www.pexels.com/photo/historic-trolley-in-key-west-florida-33664873/) | 3024x4032 |
+| `images/keys/iconic-mile-0-sign-in-key-west-florida.webp` | Matheus Bertelli | [`iconic-mile-0-sign-in-key-west-florida-37774962`](https://www.pexels.com/photo/iconic-mile-0-sign-in-key-west-florida-37774962/) | 4032x6048 |
+| `images/keys/key-west-directional-road-sign-on-sunny-day.webp` | Matheus Bertelli | [`key-west-directional-road-sign-on-sunny-day-37774954`](https://www.pexels.com/photo/key-west-directional-road-sign-on-sunny-day-37774954/) | 6048x4032 |
+| `images/keys/key-west-orange-trolley-on-a-rainy-day.webp` | Stanley  Louigene | [`key-west-orange-trolley-on-a-rainy-day-33664871`](https://www.pexels.com/photo/key-west-orange-trolley-on-a-rainy-day-33664871/) | 3024x4032 |
+| `images/keys/vacation-homes-of-parrot-key-hotel-and-villa.webp` | Mikhail Nilov | [`vacation-homes-of-parrot-key-hotel-and-villas-in-key-west-florida-9400887`](https://www.pexels.com/photo/vacation-homes-of-parrot-key-hotel-and-villas-in-key-west-florida-9400887/) | 5464x3640 |
+
+## ⚠️ Sourcing list — pages deliberately LEFT with a wrong image
+
+No verified asset fits these pages. A merely-plausible substitute is how a photo of Utah and a
+photo of Malaysia reached this network, so the wrong image is left in place and recorded here
+instead.
+
+| Page | Currently shows | What it needs |
+|---|---|---|
+| `blog/kayaking-key-west-mangroves.html` | a breaking ocean wave | a Keys kayak / mangrove-tunnel photograph — none exists in any pool |
+| `blog/offshore-vs-backcountry-fishing.html` | underwater scuba divers (full-bleed hero, 1440×1281) | a Keys fishing photograph at hero resolution; `Dane_Spear_3.jpg` is the right subject but only 828×819 |
 
 ## UNKNOWN — default for every file currently in this repository
 
