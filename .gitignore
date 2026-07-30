@@ -2,3 +2,10 @@ hero-images/
 scripts-staging/node_modules
 images/_backup/
 *.bak
+
+# additive-pipeline working artifacts (not committed)
+tours-data-new.json
+tours-data-merged.json
+fst-routing-candidates.json
+out-of-region-rejects.json
+scripts/__pycache__/
