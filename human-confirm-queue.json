@@ -1,0 +1,28 @@
+{
+  "generated": "2026-07-30",
+  "purpose": "Records held OUT of the merge pending a human decision. Nothing here is in tours-data-merged.json. Do not promote any entry without resolving 'blocker'.",
+  "entries": [
+    {
+      "pk": 447362,
+      "shortname": "namastekw",
+      "company": "Namaste Key West",
+      "name": "SIGNATURE SOUND DOLPHIN ADVENTURE",
+      "status": "HUMAN_CONFIRM_REQUIRED",
+      "reason": "departure point unresolvable from the API",
+      "evidence_for": [
+        "live and bookable: priced tier returned on all 17 swept dates",
+        "verified price $555, stable across the full 17-date window",
+        "product is a dolphin adventure — genuine Keys water-tour shape",
+        "operator is real and already carried: 25 existing records under this shortname"
+      ],
+      "evidence_against": [
+        "FareHarbor location string is 'Namaste Healing and Retreat Center' — truncates at exactly the point where the town would appear",
+        "same operator runs a confirmed Alabama centre; 13 of its records were discarded this run under 'Namaste Healing & Retreat Center in Anda…' (Andalusia, AL)",
+        "operator's other review-bucket products are wellness retreats, not water tours"
+      ],
+      "blocker": "Confirm the departure point is Key West and not Andalusia, Alabama. Not resolvable from /api/v1/companies/namastekw/items/447362/ — the location field is truncated at source.",
+      "if_confirmed_keys": "add shortname to REVIEW_ACCEPT in scripts/extract-fareharbor.py, or add the pk explicitly; re-run extraction and merge",
+      "if_confirmed_alabama": "no action — the existing out-of-state discard rule already covers it"
+    }
+  ]
+}
