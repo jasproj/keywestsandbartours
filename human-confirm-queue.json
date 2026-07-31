@@ -45,6 +45,32 @@
       "if_confirmed_unchanged": "set title, h1 and JSON-LD headline to '... 2026: Requirements, Costs & Fish Seasons Guide' as one unit, matching the pattern used in the stale-year pass",
       "if_fees_changed": "update the fee table FIRST, then the year; a correct year over stale fees is worse than a stale year over stale fees",
       "queued": "2026-07-31"
+    },
+    {
+      "pks": [
+        487934,
+        487926
+      ],
+      "shortname": "snubaofkeywest",
+      "company": "Snuba of Key West",
+      "name": "Key West Cocktail Cruise",
+      "kind": "DUPLICATE_PK_AND_UNRESOLVED_BASIS",
+      "status": "HUMAN_CONFIRM_REQUIRED",
+      "reason": "two pks return an identical breakdown, and the tiers are beverage packages rather than customer types",
+      "evidence_for": [
+        "both live: v1 200, not archived, not private, not unlisted",
+        "both bookable on all 18 dates sampled (14 consecutive + 30/60/90/120)",
+        "it is a genuine public boat cruise — the only per-person party-shaped boat left uncarded in Key West"
+      ],
+      "evidence_against": [
+        "487934 and 487926 return BYTE-IDENTICAL breakdowns: $80 'Craft Cocktails, Craft Beer & Wine Option', $65 'Craft Beer & Wine Option', $55 'Non-Alcoholic Beverage Option'",
+        "those are BEVERAGE PACKAGES, not customer types — so 'entry tier' is meaningless here; the $55 is a non-alcoholic option, not a cheaper seat",
+        "no duration is derivable from any tier name",
+        "carding either pk without resolving which is canonical risks publishing the same product twice"
+      ],
+      "blocker": "Decide (a) which pk is canonical, (b) whether the product is per-person at all, and (c) the trip length. Not resolvable from the price-preview breakdown — the tiers describe what you drink, not who you are.",
+      "if_resolved": "card the canonical pk at $80 with the package named explicitly in the copy, and soft-delete or alias the duplicate",
+      "queued": "2026-07-31"
     }
   ]
 }
