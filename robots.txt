@@ -1,4 +1,7 @@
 User-agent: *
 Allow: /
+# ?search= renders an identical homepage; no JS reads the query string.
+# Blocked so crawl budget is not spent on functionless duplicate URLs.
+Disallow: /*?search=
 
 Sitemap: https://keywestsandbartours.com/sitemap.xml
