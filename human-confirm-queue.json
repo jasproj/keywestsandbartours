@@ -23,6 +23,28 @@
       "blocker": "Confirm the departure point is Key West and not Andalusia, Alabama. Not resolvable from /api/v1/companies/namastekw/items/447362/ — the location field is truncated at source.",
       "if_confirmed_keys": "add shortname to REVIEW_ACCEPT in scripts/extract-fareharbor.py, or add the pk explicitly; re-run extraction and merge",
       "if_confirmed_alabama": "no action — the existing out-of-state discard rule already covers it"
+    },
+    {
+      "page": "florida-keys-fishing-license.html",
+      "kind": "TITLE_YEAR_HELD",
+      "status": "HUMAN_CONFIRM_REQUIRED",
+      "reason": "title year cannot be advanced without verifying the fee schedule",
+      "current_title": "Florida Keys Fishing License 2025: Requirements, Costs & Fish Seasons Guide",
+      "proposed_title": "Florida Keys Fishing License 2026: Requirements, Costs & Fish Seasons Guide",
+      "evidence_for": [
+        "every other stale-year title on the site was resolved in the same pass (47 dropped, 1 bumped)",
+        "the page is live and indexed-capable; 4 views / 30d",
+        "content is structurally current — no superseded dates in the body"
+      ],
+      "evidence_against": [
+        "the body is an unlabelled FWC fee schedule: $17.00 annual saltwater resident, $47.00 annual saltwater non-resident, $79.00, $100.00, plus $5.00/$10.00 line items",
+        "no year appears next to any fee, so nothing in the page states which schedule year these amounts belong to",
+        "advancing the title to 2026 asserts the fees were verified for 2026 — that verification has not been done"
+      ],
+      "blocker": "Verify the $17 / $47 / $79 / $100 fee schedule against the current FWC published rates. Not resolvable from the repo or from FareHarbor — it is a state regulatory source.",
+      "if_confirmed_unchanged": "set title, h1 and JSON-LD headline to '... 2026: Requirements, Costs & Fish Seasons Guide' as one unit, matching the pattern used in the stale-year pass",
+      "if_fees_changed": "update the fee table FIRST, then the year; a correct year over stale fees is worse than a stale year over stale fees",
+      "queued": "2026-07-31"
     }
   ]
 }
