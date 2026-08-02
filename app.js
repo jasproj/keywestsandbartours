@@ -325,7 +325,10 @@ function loadMore() {
     trackLoadMoreClick();
     const grid = document.getElementById('tours-grid');
     const loadMoreBtn = document.getElementById('load-more');
-    
+
+    // No grid on this page — this function was never meant to run here.
+    if (!grid) return;
+
     const nextTours = filteredTours.slice(displayedCount, displayedCount + TOURS_PER_PAGE);
     displayedCount += nextTours.length;
     
@@ -350,11 +353,14 @@ function shuffleTours() {
 
 // Clear filters
 function clearFilters() {
-    document.getElementById('areaFilter').value = '';
-    document.getElementById('activityFilter').value = '';
-    document.getElementById('priceFilter').value = '';
-    document.getElementById('sortFilter').value = 'quality';
-    document.getElementById('hero-search').value = '';
+    const DEFAULTS = { areaFilter: '', activityFilter: '', priceFilter: '', sortFilter: 'quality', 'hero-search': '' };
+    const ids = Object.keys(DEFAULTS);
+    const els = ids.map(id => document.getElementById(id));
+
+    // No filter controls on this page — this function was never meant to run here.
+    if (!els.some(Boolean)) return;
+
+    ids.forEach((id, i) => { if (els[i]) els[i].value = DEFAULTS[id]; });
     applyFilters();
 }
 
@@ -403,7 +409,11 @@ async function init() {
         
     } catch (error) {
         console.error('Error loading tours:', error);
-        document.getElementById('tours-grid').innerHTML = '<p class="loading">Error loading tours. Please refresh.</p>';
+        // Only surface the message where there is somewhere to put it. Without this
+        // check the handler itself threw on every page that loads app.js but has no
+        // #tours-grid, stacking a second uncaught exception on top of the first.
+        const grid = document.getElementById('tours-grid');
+        if (grid) grid.innerHTML = '<p class="loading">Error loading tours. Please refresh.</p>';
     }
 }
 
