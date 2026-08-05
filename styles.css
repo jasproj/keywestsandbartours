@@ -926,6 +926,8 @@ body {
     object-fit: cover;
 }
 
+.tour-card-blog { position: relative; }
+
 .tour-price {
     position: absolute;
     top: 10px;
