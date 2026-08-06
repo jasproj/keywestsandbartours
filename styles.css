@@ -926,6 +926,11 @@ body {
     object-fit: cover;
 }
 
+.related-card img {
+    max-width: 100%;
+    height: auto;
+}
+
 .tour-card-blog { position: relative; }
 
 .tour-price {
