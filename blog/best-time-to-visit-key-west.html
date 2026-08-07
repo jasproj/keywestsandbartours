@@ -8,6 +8,34 @@
     <link rel="canonical" href="https://keywestsandbartours.com/blog/best-time-to-visit-key-west.html">
 <link rel="stylesheet" href="../styles.css">
     <style>
+        :root {
+            --accent: #06B6D4;
+            --accent-text: var(--white);
+            --ocean-deep: #0A3D62;
+            --ocean-light: #1E90FF;
+            --text-muted: #6B7280;
+            --white: #FFFFFF;
+        }
+        .trust-marquee { background: var(--ocean-deep); padding: 16px 0; overflow: hidden; }
+        .trust-marquee-inner { display: flex; animation: trustMarqueeScroll 25s linear infinite; }
+        .trust-marquee-item { display: flex; align-items: center; gap: 8px; color: var(--white); font-size: 0.9rem; font-weight: 500; white-space: nowrap; padding: 0 24px; }
+        .trust-marquee-item svg { width: 20px; height: 20px; flex-shrink: 0; }
+        @keyframes trustMarqueeScroll { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
+        .faq { position: relative; padding: 56px 20px; overflow: hidden; background: var(--ocean-deep); }
+        .faq-inner { position: relative; z-index: 3; max-width: 800px; margin: 0 auto; }
+        .faq .section-label { background: var(--accent); }
+        .faq .section-title { color: var(--white); text-align: center; }
+        .faq-list { margin-top: 22px; display: flex; flex-direction: column; gap: 12px; }
+        .faq-item { background: rgba(255,255,255,0.96); padding: 20px 24px; border-radius: 12px; text-align: left; }
+        .faq-question { font-weight: 700; color: var(--ocean-deep); margin-bottom: 6px; font-size: 1rem; }
+        .faq-answer { color: var(--text-muted); font-size: 0.94rem; line-height: 1.6; }
+        .section-label { display: inline-block; background: var(--accent); color: var(--accent-text); font-size: 11px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; padding: 6px 14px; border-radius: 4px; margin-bottom: 12px; }
+        .section-title { font-family: 'Playfair Display', serif; font-size: 1.5rem; color: var(--ocean-deep); margin-bottom: 8px; }
+        .final-cta { background: linear-gradient(135deg, var(--ocean-deep) 0%, var(--ocean-light) 100%); padding: 48px 20px; text-align: center; }
+        .final-cta h2 { font-family: 'Playfair Display', serif; color: var(--white); font-size: clamp(1.5rem, 4vw, 2rem); margin-bottom: 10px; }
+        .final-cta p { color: rgba(255,255,255,0.85); margin-bottom: 20px; font-size: 0.95rem; }
+        .final-cta-link { display: inline-flex; align-items: center; gap: 8px; background: var(--accent); color: var(--accent-text); padding: 14px 28px; border-radius: 50px; text-decoration: none; font-weight: 700; min-height: 48px; }
+
         .blog-content { max-width: 800px; margin: 0 auto; padding: 120px 20px 60px; }
         .blog-content h1 { font-size: 2.5rem; color: #1B3A57; margin-bottom: 20px; }
         .blog-meta { color: #666; margin-bottom: 30px; font-size: 0.9rem; }
@@ -237,7 +265,52 @@
                 <a href="../#tours-section">Explore All Tours →</a>
             </div>
         </article>
+
+    <section class="faq" id="faq">
+            <div class="faq-inner">
+                <div class="section-label">FAQ</div>
+                <h2 class="section-title">Key West Timing Questions</h2>
+                <div class="faq-list">
+                    <div class="faq-item">
+                        <div class="faq-question">What is the best time for a Key West sandbar trip?</div>
+                        <p class="faq-answer">Sandbar trips are best in the calmer, settled months when the flats stay flat and clear. Winter cold fronts can chop the water up for a day or two, and summer is hot but usually flat. Trips run year-round.</p>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">Do Key West sandbar and tiki boat tours run year-round?</div>
+                        <p class="faq-answer">Yes, both run year-round. Sandbar water is calmest in settled weather, and hurricane season from June through November brings the lowest prices and fewest crowds.</p>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">When is the best time to visit Key West?</div>
+                        <p class="faq-answer">March through May offers the best overall conditions, with warm weather, calm seas, and thinner crowds after spring break. December through February is peak season and the most expensive.</p>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">How much is a Key West sandbar trip?</div>
+                        <p class="faq-answer">A sandbar and dolphin adventure runs about $129.95 per adult and $89.95 for youth, charged per person.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
+
+    <div class="trust-marquee">
+        <div class="trust-marquee-inner">
+            <div class="trust-marquee-item"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>Secure Checkout</div>
+            <div class="trust-marquee-item"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>Verified Local Captains</div>
+            <div class="trust-marquee-item"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>Same-Day Booking</div>
+            <div class="trust-marquee-item"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z"/></svg>No Hidden Fees</div>
+            <div class="trust-marquee-item"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>Free Cancellation on Most Trips</div>
+            <div class="trust-marquee-item"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>Secure Checkout</div>
+            <div class="trust-marquee-item"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>Verified Local Captains</div>
+            <div class="trust-marquee-item"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>Same-Day Booking</div>
+            <div class="trust-marquee-item"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z"/></svg>No Hidden Fees</div>
+            <div class="trust-marquee-item"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>Free Cancellation on Most Trips</div>
+        </div>
+    </div>
+    <section class="final-cta">
+        <h2>Still deciding?</h2>
+        <p>Every trip on this page is booked with the operator directly, at the operator&rsquo;s own price. Free cancellation on most trips.</p>
+        <a href="../#tours-section" class="final-cta-link">Browse all Key West tours <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" width="20" height="20"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg></a>
+    </section>
 
     <footer class="footer">
         <div class="container">
