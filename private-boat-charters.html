@@ -677,25 +677,18 @@
         .faq .section-label,
         .faq .section-title { color: var(--white); }
         
-        .faq-slideshow {
-            position: relative;
-            min-height: 160px;
+        .faq-list {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            margin-top: 22px;
         }
         
         .faq-item {
             background: rgba(255, 255, 255, 0.95);
             padding: 24px 28px;
             border-radius: 12px;
-            position: absolute;
-            width: 100%;
-            opacity: 0;
-            transition: opacity 0.6s ease-in-out;
             text-align: left;
-        }
-        
-        .faq-item.active {
-            opacity: 1;
-            position: relative;
         }
         
         .faq-question {
@@ -710,24 +703,6 @@
             font-size: 0.95rem;
             line-height: 1.6;
         }
-        
-        .faq-dots {
-            display: flex;
-            justify-content: center;
-            gap: 8px;
-            margin-top: 20px;
-        }
-        
-        .faq-dot {
-            width: 10px;
-            height: 10px;
-            border-radius: 50%;
-            background: rgba(255, 255, 255, 0.4);
-            cursor: pointer;
-            transition: background 0.3s;
-        }
-        
-        .faq-dot.active { background: var(--white); }
         
         .branding {
             text-align: center;
@@ -1259,8 +1234,8 @@
         <div class="faq-inner">
             <div class="section-label">FAQ</div>
             <h2 class="section-title">Private Custom Charter Questions</h2>
-            <div class="faq-slideshow" id="faqSlideshow">
-                <div class="faq-item active">
+            <div class="faq-list">
+                <div class="faq-item">
                     <div class="faq-question">What's included in a private custom charter?</div>
                     <p class="faq-answer">Most include captain, fuel, safety equipment, and basic amenities. Premium vessels often include snorkel gear, paddleboards, floats, and water toys. Food/drinks are typically BYOB unless specified. Routing is customizable — sandbar stops, snorkel sites, sunset position, and timing are all up to your group.</p>
                 </div>
@@ -1276,12 +1251,6 @@
                     <div class="faq-question">How far in advance should I book?</div>
                     <p class="faq-answer">For private custom charters, 2-4 weeks ahead is recommended, especially during peak season (Dec-Apr). Larger groups (12+) should book earlier. Last-minute availability sometimes exists.</p>
                 </div>
-            </div>
-            <div class="faq-dots">
-                <span class="faq-dot active" data-index="0"></span>
-                <span class="faq-dot" data-index="1"></span>
-                <span class="faq-dot" data-index="2"></span>
-                <span class="faq-dot" data-index="3"></span>
             </div>
         </div>
     </section>
@@ -1314,20 +1283,6 @@
                 stickyCta.classList.remove('visible');
             }
         });
-        
-        // FAQ Slideshow
-        const faqItems = document.querySelectorAll('.faq-item');
-        const faqDots = document.querySelectorAll('.faq-dot');
-        let currentFaq = 0;
-        
-        function showFaq(index) {
-            faqItems.forEach((item, i) => item.classList.toggle('active', i === index));
-            faqDots.forEach((dot, i) => dot.classList.toggle('active', i === index));
-            currentFaq = index;
-        }
-        
-        setInterval(() => showFaq((currentFaq + 1) % faqItems.length), 5000);
-        faqDots.forEach(dot => dot.addEventListener('click', () => showFaq(parseInt(dot.dataset.index))));
         
         // FAQ Video Slowdown (50% speed)
         const faqVideo = document.getElementById('faqVideo');
