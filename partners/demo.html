@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Partner Demo | Tour Widget for Hotels & Lodging | Key West Sandbar Tours</title>
-    <meta name="description" content="Free embeddable tour widget for Key West hotels and lodging. Give your guests access to 900+ local tours. No markup, no fees.">
+    <meta name="description" content="Free embeddable tour widget for Key West hotels and lodging. Give your guests access to 900+ local tours they can book straight from your page.">
     <meta name="robots" content="noindex, nofollow">
     
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
@@ -17,6 +17,8 @@
             background: linear-gradient(135deg, #0a4d68 0%, #088395 100%);
             color: white;
             padding: 60px 20px;
+            /* clear the fixed .header (70px here, 86px at >=768px) */
+            padding-top: 80px;
             text-align: center;
         }
         .demo-hero h1 {
@@ -162,6 +164,12 @@
             margin-bottom: 15px;
             padding-left: 10px;
         }
+
+        @media (min-width: 768px) {
+            .demo-hero {
+                padding-top: 96px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -195,7 +203,7 @@
 
     <div class="demo-hero">
         <h1>Free Tour Widget for Your Property</h1>
-        <p>Give your guests instant access to 900+ Key West tours. Direct booking, no markup, no fees to you.</p>
+        <p>Give your guests instant access to 900+ Key West tours, bookable straight from your own page.</p>
     </div>
 
     <div class="demo-section">
@@ -213,8 +221,8 @@
         <div class="benefits">
             <div class="benefit">
                 <div class="benefit-icon">💰</div>
-                <h3>Zero Cost</h3>
-                <p>No fees, no setup cost, no monthly charges. We only earn when guests complete a booking.</p>
+                <h3>Free Widget</h3>
+                <p>We supply the widget and the code. We earn a commission when a guest completes a booking.</p>
             </div>
             <div class="benefit">
                 <div class="benefit-icon">⭐</div>
@@ -223,8 +231,8 @@
             </div>
             <div class="benefit">
                 <div class="benefit-icon">🎯</div>
-                <h3>No Markup</h3>
-                <p>Same price as booking direct. Your guests trust you're not upselling them.</p>
+                <h3>Direct Booking</h3>
+                <p>Your guests reserve with the operator itself, through your page.</p>
             </div>
             <div class="benefit">
                 <div class="benefit-icon">⚡</div>
