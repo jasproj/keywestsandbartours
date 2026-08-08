@@ -545,7 +545,7 @@ function renderTours() {
                 <div class="tour-meta">${t.company}</div>
                 <div class="tour-match">✓ ${t.match}</div>
                 <a href="${t.link}" target="_blank" class="tour-cta" 
-                   onclick="trackClick('${t.name.replace(/'/g,"\\'")}',${t.price})">
+                   onclick="trackBookingClickQuiz('${t.name.replace(/'/g,"\\'")}',${t.price})">
                     Check Availability →
                 </a>
             </div>
@@ -562,7 +562,7 @@ function showMore() {
     gtag('event', 'quiz_show_more', {showing, quiz: 'sandbar'});
 }
 
-function trackClick(name, price, id) {
+function trackBookingClickQuiz(name, price, id) {
     gtag('event', 'booking_click', {
         tour_name: name, 
         tour_id: id || 'unknown', 
