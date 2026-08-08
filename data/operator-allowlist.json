@@ -1,0 +1,6 @@
+{
+  "_comment": "Operators whose products are inherently inquiry-only (custom quotes, wedding/portrait packages, multi-day charters). These will always show a null nextAvailableDate on FareHarbor's next-bookable-availability endpoint regardless of how active the business is, because they never populate a self-serve calendar by design. Exempt from any future automated hide/retirement logic keyed on nextAvailableDate. Confirmed by manual review of live item flags (is_bookable_ever_by_phone, sold_out_text) during the 2026-08-08 availability-sweep recon.",
+  "operators": {
+    "conchconciergeweddings": "Wedding/event vendor — portrait sessions, engagement shoots, custom ceremony charters. All 4 sampled products returned next_available_date: null with sold_out_text directing customers to text/call to inquire; none are self-serve bookable by design."
+  }
+}
