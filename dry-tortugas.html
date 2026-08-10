@@ -615,7 +615,11 @@
             }
             
             .logo {
-                font-size: clamp(0.5rem, 4.57vw - 0.41rem, 0.7rem);
+                font-size: 1.1rem;
+            }
+
+            .logo-text {
+                display: none;
             }
             
             .header-cta {
@@ -761,9 +765,9 @@
     <!-- Header -->
     <header class="header">
         <div class="header-inner">
-            <a href="/" class="logo">
+            <a href="/" class="logo" aria-label="Key West Sandbar Tours">
                 <img src="logo-108.png" alt="" width="108" height="111" class="logo-img">
-                Key West Sandbar Tours
+                <span class="logo-text">Key West Sandbar Tours</span>
             </a>
             <a href="#options" class="header-cta">Compare the options below →</a>
         </div>
