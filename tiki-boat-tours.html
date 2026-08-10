@@ -57,8 +57,13 @@
         body { font-family: 'DM Sans', sans-serif; color: var(--text-dark); line-height: 1.6; }
         .header { background: var(--white); padding: 16px 20px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
         .header-inner { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
-        .logo { font-size: 1.1rem; font-weight: 700; color: var(--ocean-deep); text-decoration: none; display: flex; align-items: center; gap: 8px; }
+        .logo { font-size: 1.1rem; font-weight: 700; color: var(--ocean-deep); text-decoration: none; display: flex; align-items: center; gap: 8px; white-space: nowrap; }
         .logo-img { width: 24px; height: 24px; }
+        .nav-toggle { width: 48px; height: 48px; }
+        @media (max-width: 599px) {
+            .logo-text { display: none; }
+            .header-phone .phone-number { display: none; }
+        }
 
         .hero { background: linear-gradient(135deg, var(--ocean-deep) 0%, var(--ocean-light) 100%); color: var(--white); padding: 48px 20px; text-align: center; }
         .hero h1 { font-family: 'Playfair Display', serif; font-size: 2.5rem; margin-bottom: 16px; }
@@ -110,7 +115,7 @@
         .footer a { color: var(--accent); text-decoration: none; }
 
         @media (max-width: 600px) {
-            .hero { padding: 8px 16px; }
+            .hero { padding: 84px 16px 8px; }
             .hero h1 { font-size: 1.1rem; }
             .hero p { display: none; }
             .tours-grid { grid-template-columns: 1fr; }
@@ -218,14 +223,27 @@
         <div class="header-inner">
             <a href="/" class="logo">
                 <img src="logo-108.png" alt="" width="108" height="111" class="logo-img">
-                Key West Sandbar Tours
+                <span class="logo-text">Key West Sandbar Tours</span>
             </a>
+            <nav class="nav-desktop">
+                <a href="/#tours-section">Tours</a>
+                <a href="/#areas">Areas</a>
+                <a href="blog/">Blog</a>
+                <a href="about.html">About</a>
+            </nav>
             <a href="tel:4074766190" class="header-phone" aria-label="Call us at (407) 476-6190">
                 <span aria-hidden="true">📞</span>
                 <span class="phone-number">(407) 476-6190</span>
             </a>
+            <button class="nav-toggle" aria-label="Menu">☰</button>
         </div>
     </header>
+
+    <nav class="nav-mobile">
+        <a href="/#tours-section">Tours</a>
+        <a href="blog/">Blog</a>
+        <a href="about.html">About</a>
+    </nav>
 
     <!-- HERO -->
     <section class="hero">
@@ -397,6 +415,10 @@
             answer.style.display = answer.style.display === 'none' ? 'block' : 'none';
             toggle.textContent = toggle.textContent === '+' ? '−' : '+';
         }
+
+        document.querySelector('.nav-toggle')?.addEventListener('click', () => {
+            document.querySelector('.nav-mobile')?.classList.toggle('active');
+        });
     </script>
 </body>
 </html>
