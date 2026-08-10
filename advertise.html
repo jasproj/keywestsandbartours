@@ -229,15 +229,17 @@
             .advertise-hero h1 {
                 font-size: 32px;
             }
-            
+
             .advertise-hero p {
                 font-size: 16px;
             }
-            
+
             .advertise-options h2 {
                 font-size: 28px;
             }
         }
+
+        .nav-toggle { width: 48px; height: 48px; }
     </style>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-67D7X60CJF"></script>
@@ -253,23 +255,26 @@
   </head>
 <body>
     <header class="header">
-        <div class="container">
-            <div class="header-content">
-                <a href="/" class="logo">
-                    <img src="logo.png" alt="Key West Sandbar Tours" class="logo-img">
-                </a>
-                <nav class="nav">
-                    <ul>
-                        <li><a href="/">Home</a></li>
-                        <li><a href="/#tours-section">Tours</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="blog/">Blog</a></li>
-                    </ul>
-                </nav>
-                <button class="menu-toggle" onclick="toggleMenu()">☰</button>
-            </div>
+        <div class="header-container">
+            <a href="/" class="logo">
+                <img src="logo.png" alt="Key West Sandbar Tours" class="logo-img">
+            </a>
+            <nav class="nav-desktop">
+                <a href="/">Home</a>
+                <a href="/#tours-section">Tours</a>
+                <a href="about.html">About</a>
+                <a href="blog/">Blog</a>
+            </nav>
+            <button class="nav-toggle" aria-label="Menu">☰</button>
         </div>
     </header>
+
+    <nav class="nav-mobile">
+        <a href="/">Home</a>
+        <a href="/#tours-section">Tours</a>
+        <a href="about.html">About</a>
+        <a href="blog/">Blog</a>
+    </nav>
 
     <section class="advertise-hero">
         <div class="container">
