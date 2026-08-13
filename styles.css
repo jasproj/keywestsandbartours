@@ -930,7 +930,7 @@ body {
    In-body text links inside .blog-content had no styling at all (browser
    default blue/underline) -- same defect class as the related-card links
    below, just inside the article body instead of below it. */
-.blog-content p a {
+main.blog-content p a, div.blog-content p a {
     color: #E87B4A;
     text-decoration: underline;
     font-weight: 600;
