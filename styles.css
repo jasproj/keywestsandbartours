@@ -981,6 +981,12 @@ main.blog-content p a, div.blog-content p a {
 
 .tour-card-blog { position: relative; }
 
+/* .tour-price is shared with .tour-card > .tour-image > .tour-price (JS-rendered
+   thumbnail badge, where position:absolute below is correct). On .tour-card-blog,
+   the badge has no image wrapper to anchor into and lands on the h3 title instead --
+   this rule is scoped to that shape only and cannot reach the .tour-image shape. */
+.tour-card-blog .tour-price { position: static; }
+
 .tour-price {
     position: absolute;
     top: 10px;
