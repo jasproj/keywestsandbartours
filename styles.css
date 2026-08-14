@@ -1164,7 +1164,10 @@ main.blog-content p a, div.blog-content p a {
     font-weight: 600;
     font-size: 0.9rem;
     transition: background 0.3s;
-    min-height: 44px;
+    /* 48px is the touch-target floor. box-sizing: border-box is global, so this
+       value IS the measured height — at 44px the box rendered 47.0px (content +
+       12px padding) and the declared minimum never became binding. */
+    min-height: 48px;
     display: flex;
     align-items: center;
     justify-content: center;
