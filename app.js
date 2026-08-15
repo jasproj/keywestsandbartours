@@ -473,7 +473,23 @@ function generateTourSchema(tour) {
 }
 
 // ===== STICKY MOBILE CTA BAR =====
+
+// No page that loads app.js has an element with id="tours" — the two pages that
+// define one (private-boat-charters, bachelorette-party-boats) do not load this
+// file. The bar's own markup varies by page type, so resolve against what is
+// actually present: the tours section, then its grid, then a booking anchor.
+function resolveBookingTarget() {
+    return document.getElementById('tours-section')
+        || document.getElementById('tours-grid')
+        || document.getElementById('tours')
+        || document.querySelector('a[href*="fareharbor.com"]');
+}
+
 document.addEventListener('DOMContentLoaded', () => {
+    // A bar with nothing to scroll to is a CTA that does nothing; 16 of the 33
+    // pages loading this file have no target at all. Ship it only where it works.
+    if (!resolveBookingTarget()) return;
+
     // Create sticky CTA bar
     const stickyBar = document.createElement('div');
     stickyBar.id = 'sticky-cta-bar';
@@ -486,7 +502,8 @@ document.addEventListener('DOMContentLoaded', () => {
         height: 48px;
         background: #1a472a;
         border-top: 1px solid rgba(26, 71, 42, 0.2);
-        z-index: 999;
+        /* Below .mobile-cta (100) so it never covers that working control. */
+        z-index: 90;
         padding: 0 1rem;
         align-items: center;
         justify-content: center;
@@ -511,9 +528,11 @@ document.addEventListener('DOMContentLoaded', () => {
     `;
     
     button.addEventListener('click', () => {
-        const toursGrid = document.getElementById('tours');
-        if (toursGrid) {
-            toursGrid.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        // Re-resolve on click: the grid is rendered asynchronously, so the target
+        // present at DOMContentLoaded may not be the best one by the time it fires.
+        const target = resolveBookingTarget();
+        if (target) {
+            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
         }
     });
     
