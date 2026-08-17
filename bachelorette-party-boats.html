@@ -861,7 +861,7 @@
         </div>
     </header>
     
-    <div class="sticky-cta" id="stickyCta">
+    <div class="sticky-cta visible" id="stickyCta">
         <div class="sticky-cta-text">Party boats from <span>$525</span></div>
         <a href="#top-picks" class="sticky-cta-btn">See Top Picks</a>
     </div>
@@ -1208,13 +1208,16 @@
     </footer>
     
     <script>
-        // Sticky CTA
+        // Sticky CTA — visible from the top, hide once into the tours grid.
+        // The markup ships with .visible because this listener only fires on
+        // scroll: gating on scrollY > 400 left the bar translated fully off
+        // screen for the whole first screen, 0px visible at 664 and 844 alike.
         const stickyCta = document.getElementById('stickyCta');
         const toursSection = document.getElementById('tours');
         window.addEventListener('scroll', () => {
             const scrollY = window.scrollY;
             const toursTop = toursSection.offsetTop;
-            if (scrollY > 400 && scrollY < toursTop - 200) {
+            if (scrollY >= 0 && scrollY < toursTop - 200) {
                 stickyCta.classList.add('visible');
             } else {
                 stickyCta.classList.remove('visible');
