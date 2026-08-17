@@ -496,7 +496,7 @@
         </div>
     </header>
 
-    <div class="sticky-cta" id="stickyCta">
+    <div class="sticky-cta visible" id="stickyCta">
         <div class="sticky-cta-text">Sandbar seats from <span>$125/person</span></div>
         <a href="#shared" class="sticky-cta-btn">See Trips</a>
     </div>
@@ -779,13 +779,16 @@
     </footer>
 
     <script>
-        // Sticky bottom CTA — show after some scroll, hide once into the tiers
+        // Sticky bottom CTA — visible from the top, hide once into the tiers.
+        // The markup ships with .visible because this listener only fires on
+        // scroll: gating on scrollY > 350 left the bar at bottom:-90px for the
+        // whole first screen, 4px tall in a 664 and an 844 viewport alike.
         const stickyCta = document.getElementById('stickyCta');
         const sharedSection = document.getElementById('shared');
         window.addEventListener('scroll', () => {
             const scrollY = window.scrollY;
             const sharedTop = sharedSection ? sharedSection.offsetTop : Infinity;
-            if (scrollY > 350 && scrollY < sharedTop - 200) {
+            if (scrollY >= 0 && scrollY < sharedTop - 200) {
                 stickyCta.classList.add('visible');
             } else {
                 stickyCta.classList.remove('visible');
