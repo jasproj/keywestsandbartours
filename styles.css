@@ -1885,3 +1885,10 @@ main.blog-content p a, div.blog-content p a {
    the page-level .pro-tips (0,1,0) block on specificity, which is compared before
    source order. Collapses all .pro-tips to one darkened navy->teal. */
 div.pro-tips { background: linear-gradient(135deg, #1B3A57, #287E86); }
+
+/* CTA-box contrast: rgba(255,255,255,0.9) body copy failed WCAG AA over the light
+   end of the gradient (2.59-2.77:1). Scoped to .blog-content because the 7 standalone
+   .cta-box are white-backgrounded and already pass at 17.06 -- a bare .cta-box rule
+   would repaint them into failures. (0,2,0) beats the page-level .cta-box at (0,1,0).
+   Same darkened stop as div.pro-tips, keeping one teal token site-wide. */
+.blog-content .cta-box { background: linear-gradient(135deg, #1B3A57, #287E86); }
