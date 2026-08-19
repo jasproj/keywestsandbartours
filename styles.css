@@ -1879,3 +1879,9 @@ main.blog-content p a, div.blog-content p a {
 .footer-email { margin-top: 12px; font-size: 0.9rem; }
 .footer-email a { color: #FDF8F0; text-decoration: none; opacity: 0.85; }
 .footer-email a:hover { text-decoration: underline; opacity: 1; }
+
+/* Pro-tips contrast: white body copy failed WCAG AA over the light end of the
+   per-page gradients (worst 1.81:1). Element-qualified so this (0,1,1) rule beats
+   the page-level .pro-tips (0,1,0) block on specificity, which is compared before
+   source order. Collapses all .pro-tips to one darkened navy->teal. */
+div.pro-tips { background: linear-gradient(135deg, #1B3A57, #287E86); }
