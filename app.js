@@ -406,12 +406,14 @@ async function init() {
         allTours = Array.isArray(_raw) ? _raw : _raw.tours;
         // Hide tours with a dead FareHarbor booking link (audit 2026-05-28).
         allTours = allTours.filter(t => t.status !== 'inactive' && !t.bookingDead);
-        // Counts the live catalogue, NOT the draw pool — this call stays above the
-        // price filter on purpose so the stat keeps meaning "tours we carry".
-        updateVerifiedToursCount(allTours.length);
 
         // Only priced inventory is eligible for the draw (see hasUsablePrice).
         allTours = allTours.filter(hasUsablePrice);
+
+        // Count what the grid can actually draw, not the raw active count. This
+        // call sat ABOVE the filter and advertised 1,279 while the grid drew from
+        // 551. "Verified" cannot mean "we never checked what it costs".
+        updateVerifiedToursCount(allTours.length);
 
         // Shuffle initially for variety (per page load)
         allTours = shuffleArray(allTours);
