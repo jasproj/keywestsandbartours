@@ -421,9 +421,9 @@
       "category": "",
       "location": "United States/Florida/Key West",
       "island": "united states/florida/key west",
-      "price": null,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "price": 159.95,
+      "priceLabel": "Jet Ski Rental",
+      "priceConfidence": "high",
       "qualityScore": 0,
       "currency": "USD",
       "duration": "",
@@ -451,7 +451,11 @@
       "statusFirstSeen": null,
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
-      "_unknownFields": {},
+      "_unknownFields": {
+        "priceSource": "fh-price-preview-v2-2026-08-20",
+        "priceCustomerType": "Jet Ski Rental",
+        "priceTierCount": 1
+      },
       "needsEnrichment": true,
       "nextAvailableDate": "2026-08-08",
       "nullConsecutiveSweeps": 0
@@ -663,9 +667,9 @@
       "category": "",
       "location": "United States/Florida/Key West",
       "island": "united states/florida/key west",
-      "price": null,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "price": 60.0,
+      "priceLabel": "Adult - Single Kayak",
+      "priceConfidence": "medium",
       "qualityScore": 85,
       "currency": "USD",
       "duration": "120 minutes",
@@ -700,7 +704,10 @@
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
       "_unknownFields": {
-        "durationMinutes": 120
+        "durationMinutes": 120,
+        "priceSource": "fh-price-preview-v2-2026-08-20",
+        "priceCustomerType": "Adult - Single Kayak",
+        "priceTierCount": 6
       },
       "nextAvailableDate": "2026-08-08",
       "nullConsecutiveSweeps": 0
@@ -714,9 +721,9 @@
       "category": "",
       "location": "United States/Florida/Key West",
       "island": "united states/florida/key west",
-      "price": null,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "price": 40.0,
+      "priceLabel": "Single Kayak",
+      "priceConfidence": "medium",
       "qualityScore": 85,
       "currency": "USD",
       "duration": "120 minutes",
@@ -751,7 +758,10 @@
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
       "_unknownFields": {
-        "durationMinutes": 120
+        "durationMinutes": 120,
+        "priceSource": "fh-price-preview-v2-2026-08-20",
+        "priceCustomerType": "Single Kayak",
+        "priceTierCount": 4
       },
       "nextAvailableDate": "2026-08-08",
       "nullConsecutiveSweeps": 0
@@ -765,9 +775,9 @@
       "category": "",
       "location": "United States/Florida/Key West",
       "island": "united states/florida/key west",
-      "price": null,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "price": 79.95,
+      "priceLabel": "Single Clear Kayak",
+      "priceConfidence": "medium",
       "qualityScore": 85,
       "currency": "USD",
       "duration": "90 minutes",
@@ -802,7 +812,10 @@
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
       "_unknownFields": {
-        "durationMinutes": 90
+        "durationMinutes": 90,
+        "priceSource": "fh-price-preview-v2-2026-08-20",
+        "priceCustomerType": "Single Clear Kayak",
+        "priceTierCount": 2
       },
       "nextAvailableDate": "2026-08-08",
       "nullConsecutiveSweeps": 0
@@ -816,9 +829,9 @@
       "category": "",
       "location": "United States/Florida/Key West",
       "island": "united states/florida/key west",
-      "price": null,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "price": 60.0,
+      "priceLabel": "Adult - Paddleboard",
+      "priceConfidence": "medium",
       "qualityScore": 85,
       "currency": "USD",
       "duration": "120 minutes",
@@ -849,7 +862,10 @@
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
       "_unknownFields": {
-        "durationMinutes": 120
+        "durationMinutes": 120,
+        "priceSource": "fh-price-preview-v2-2026-08-20",
+        "priceCustomerType": "Adult - Paddleboard",
+        "priceTierCount": 2
       },
       "nextAvailableDate": "2026-08-08",
       "nullConsecutiveSweeps": 0
@@ -863,9 +879,9 @@
       "category": "",
       "location": "United States/Florida/Key West",
       "island": "united states/florida/key west",
-      "price": null,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "price": 39.95,
+      "priceLabel": "Paddleboard",
+      "priceConfidence": "high",
       "qualityScore": 85,
       "currency": "USD",
       "duration": "120 minutes",
@@ -894,7 +910,10 @@
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
       "_unknownFields": {
-        "durationMinutes": 120
+        "durationMinutes": 120,
+        "priceSource": "fh-price-preview-v2-2026-08-20",
+        "priceCustomerType": "Paddleboard",
+        "priceTierCount": 1
       },
       "nextAvailableDate": "2026-08-08",
       "nullConsecutiveSweeps": 0
@@ -2285,9 +2304,9 @@
       "category": "",
       "location": "United States/Florida/Key West",
       "island": "united states/florida/key west",
-      "price": null,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "price": 139.0,
+      "priceLabel": "Adult",
+      "priceConfidence": "medium",
       "qualityScore": 0,
       "currency": "USD",
       "duration": "",
@@ -2316,7 +2335,11 @@
       "statusFirstSeen": null,
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
-      "_unknownFields": {},
+      "_unknownFields": {
+        "priceSource": "fh-price-preview-v2-2026-08-20",
+        "priceCustomerType": "Adult",
+        "priceTierCount": 2
+      },
       "needsEnrichment": true,
       "nextAvailableDate": "2026-08-08",
       "nullConsecutiveSweeps": 0
@@ -2330,9 +2353,9 @@
       "category": "",
       "location": "United States/Florida/Key West",
       "island": "united states/florida/key west",
-      "price": null,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "price": 125.0,
+      "priceLabel": "Adult",
+      "priceConfidence": "high",
       "qualityScore": 0,
       "currency": "USD",
       "duration": "",
@@ -2364,7 +2387,11 @@
       "statusFirstSeen": null,
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
-      "_unknownFields": {},
+      "_unknownFields": {
+        "priceSource": "fh-price-preview-v2-2026-08-20",
+        "priceCustomerType": "Adult",
+        "priceTierCount": 1
+      },
       "needsEnrichment": true,
       "nextAvailableDate": "2026-08-08",
       "nullConsecutiveSweeps": 0
@@ -3563,9 +3590,9 @@
       "category": "",
       "location": "United States/Florida/Key West",
       "island": "united states/florida/key west",
-      "price": null,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "price": 44.99,
+      "priceLabel": "Adult",
+      "priceConfidence": "medium",
       "qualityScore": 0,
       "currency": "USD",
       "duration": "",
@@ -3589,7 +3616,11 @@
       "statusFirstSeen": null,
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
-      "_unknownFields": {},
+      "_unknownFields": {
+        "priceSource": "fh-price-preview-v2-2026-08-20",
+        "priceCustomerType": "Adult",
+        "priceTierCount": 2
+      },
       "needsEnrichment": true,
       "nextAvailableDate": "2026-08-09",
       "nullConsecutiveSweeps": 0
@@ -5004,9 +5035,9 @@
       "category": "",
       "location": "United States/Florida/Key West",
       "island": "united states/florida/key west",
-      "price": null,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "price": 495.0,
+      "priceLabel": "3 Hour Boat Bar Crawl",
+      "priceConfidence": "medium",
       "qualityScore": 0,
       "currency": "USD",
       "duration": "",
@@ -5033,7 +5064,11 @@
       "statusFirstSeen": null,
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
-      "_unknownFields": {},
+      "_unknownFields": {
+        "priceSource": "fh-price-preview-v2-2026-08-20",
+        "priceCustomerType": "3 Hour Boat Bar Crawl",
+        "priceTierCount": 1
+      },
       "needsEnrichment": true,
       "nextAvailableDate": "2026-08-08",
       "nullConsecutiveSweeps": 0
@@ -5495,9 +5530,9 @@
       "category": "",
       "location": "United States/Florida/Key West",
       "island": "united states/florida/key west",
-      "price": null,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "price": 134.99,
+      "priceLabel": "Adult 18+",
+      "priceConfidence": "high",
       "qualityScore": 90,
       "currency": "USD",
       "duration": "240 minutes",
@@ -5530,7 +5565,10 @@
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
       "_unknownFields": {
-        "durationMinutes": 240
+        "durationMinutes": 240,
+        "priceSource": "fh-price-preview-v2-2026-08-20",
+        "priceCustomerType": "Adult 18+",
+        "priceTierCount": 1
       },
       "nextAvailableDate": "2026-08-09",
       "nullConsecutiveSweeps": 0
@@ -5544,9 +5582,9 @@
       "category": "",
       "location": "United States/Florida/Key West",
       "island": "united states/florida/key west",
-      "price": null,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "price": 129.99,
+      "priceLabel": "Adult",
+      "priceConfidence": "medium",
       "qualityScore": 0,
       "currency": "USD",
       "duration": "",
@@ -5577,7 +5615,11 @@
       "statusFirstSeen": null,
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
-      "_unknownFields": {},
+      "_unknownFields": {
+        "priceSource": "fh-price-preview-v2-2026-08-20",
+        "priceCustomerType": "Adult",
+        "priceTierCount": 2
+      },
       "needsEnrichment": true,
       "nextAvailableDate": "2026-08-08",
       "nullConsecutiveSweeps": 0
@@ -5591,9 +5633,9 @@
       "category": "",
       "location": "United States/Florida/Key West",
       "island": "united states/florida/key west",
-      "price": null,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "price": 124.99,
+      "priceLabel": "Adult",
+      "priceConfidence": "medium",
       "qualityScore": 90,
       "currency": "USD",
       "duration": "240 minutes",
@@ -5625,7 +5667,10 @@
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
       "_unknownFields": {
-        "durationMinutes": 240
+        "durationMinutes": 240,
+        "priceSource": "fh-price-preview-v2-2026-08-20",
+        "priceCustomerType": "Adult",
+        "priceTierCount": 3
       },
       "nextAvailableDate": "2026-08-08",
       "nullConsecutiveSweeps": 0
@@ -7238,9 +7283,9 @@
       "category": "",
       "location": "United States/Florida/Islamorada",
       "island": "united states/florida/islamorada",
-      "price": null,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "price": 79.0,
+      "priceLabel": "Kayaker",
+      "priceConfidence": "high",
       "qualityScore": 0,
       "currency": "USD",
       "duration": "",
@@ -7266,7 +7311,11 @@
       "statusFirstSeen": null,
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
-      "_unknownFields": {},
+      "_unknownFields": {
+        "priceSource": "fh-price-preview-v2-2026-08-20",
+        "priceCustomerType": "Kayaker",
+        "priceTierCount": 1
+      },
       "needsEnrichment": true,
       "nextAvailableDate": "2026-08-09",
       "nullConsecutiveSweeps": 0
@@ -7593,9 +7642,9 @@
       "category": "",
       "location": "United States/Florida/Key West",
       "island": "united states/florida/key west",
-      "price": null,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "price": 260.0,
+      "priceLabel": "6 PASS - FULL DAY RENTAL",
+      "priceConfidence": "medium",
       "qualityScore": 0,
       "currency": "USD",
       "duration": "",
@@ -7626,7 +7675,11 @@
       "statusFirstSeen": null,
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
-      "_unknownFields": {},
+      "_unknownFields": {
+        "priceSource": "fh-price-preview-v2-2026-08-20",
+        "priceCustomerType": "6 PASS - FULL DAY RENTAL",
+        "priceTierCount": 7
+      },
       "needsEnrichment": true,
       "nextAvailableDate": "2026-08-08",
       "nullConsecutiveSweeps": 0
@@ -7640,9 +7693,9 @@
       "category": "",
       "location": "United States/Florida/Key West",
       "island": "united states/florida/key west",
-      "price": null,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "price": 300.0,
+      "priceLabel": "8 PASS - FULL DAY RENTAL",
+      "priceConfidence": "medium",
       "qualityScore": 0,
       "currency": "USD",
       "duration": "",
@@ -7671,7 +7724,11 @@
       "statusFirstSeen": null,
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
-      "_unknownFields": {},
+      "_unknownFields": {
+        "priceSource": "fh-price-preview-v2-2026-08-20",
+        "priceCustomerType": "8 PASS - FULL DAY RENTAL",
+        "priceTierCount": 7
+      },
       "needsEnrichment": true,
       "nextAvailableDate": "2026-08-08",
       "nullConsecutiveSweeps": 0
@@ -9730,9 +9787,9 @@
       "category": "",
       "location": "United States/Florida/Key West",
       "island": "united states/florida/key west",
-      "price": null,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "price": 200.0,
+      "priceLabel": "Bachelorette Package",
+      "priceConfidence": "medium",
       "qualityScore": 0,
       "currency": "USD",
       "duration": "",
@@ -9758,7 +9815,11 @@
       "statusFirstSeen": null,
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
-      "_unknownFields": {},
+      "_unknownFields": {
+        "priceSource": "fh-price-preview-v2-2026-08-20",
+        "priceCustomerType": "Bachelorette Package",
+        "priceTierCount": 1
+      },
       "needsEnrichment": true,
       "nextAvailableDate": "2026-08-09",
       "nullConsecutiveSweeps": 0
@@ -10471,9 +10532,9 @@
       "category": "",
       "location": "United States/Florida/Key West",
       "island": "united states/florida/key west",
-      "price": null,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "price": 110.0,
+      "priceLabel": "Person",
+      "priceConfidence": "medium",
       "qualityScore": 0,
       "currency": "USD",
       "duration": "",
@@ -10503,7 +10564,11 @@
       "statusFirstSeen": null,
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
-      "_unknownFields": {},
+      "_unknownFields": {
+        "priceSource": "fh-price-preview-v2-2026-08-20",
+        "priceCustomerType": "Person",
+        "priceTierCount": 2
+      },
       "needsEnrichment": true,
       "nextAvailableDate": "2026-12-12",
       "nullConsecutiveSweeps": 0
@@ -10517,9 +10582,9 @@
       "category": "",
       "location": "United States/Florida/Key West",
       "island": "united states/florida/key west",
-      "price": null,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "price": 110.0,
+      "priceLabel": "Person",
+      "priceConfidence": "medium",
       "qualityScore": 0,
       "currency": "USD",
       "duration": "",
@@ -10549,7 +10614,11 @@
       "statusFirstSeen": null,
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
-      "_unknownFields": {},
+      "_unknownFields": {
+        "priceSource": "fh-price-preview-v2-2026-08-20",
+        "priceCustomerType": "Person",
+        "priceTierCount": 2
+      },
       "needsEnrichment": true,
       "nextAvailableDate": "2026-12-12",
       "nullConsecutiveSweeps": 0
@@ -10824,9 +10893,9 @@
       "category": "",
       "location": "United States/Florida/Key West",
       "island": "united states/florida/key west",
-      "price": null,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "price": 110.0,
+      "priceLabel": "Person",
+      "priceConfidence": "medium",
       "qualityScore": 0,
       "currency": "USD",
       "duration": "",
@@ -10857,7 +10926,11 @@
       "statusFirstSeen": null,
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
-      "_unknownFields": {},
+      "_unknownFields": {
+        "priceSource": "fh-price-preview-v2-2026-08-20",
+        "priceCustomerType": "Person",
+        "priceTierCount": 2
+      },
       "needsEnrichment": true,
       "nextAvailableDate": "2026-09-05",
       "nullConsecutiveSweeps": 0
@@ -11199,9 +11272,9 @@
       "category": "",
       "location": "United States/Florida/Key West",
       "island": "united states/florida/key west",
-      "price": null,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "price": 115.0,
+      "priceLabel": "Adult",
+      "priceConfidence": "medium",
       "qualityScore": 0,
       "currency": "USD",
       "duration": "",
@@ -11238,7 +11311,11 @@
       "statusFirstSeen": null,
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
-      "_unknownFields": {},
+      "_unknownFields": {
+        "priceSource": "fh-price-preview-v2-2026-08-20",
+        "priceCustomerType": "Adult",
+        "priceTierCount": 2
+      },
       "needsEnrichment": true,
       "nextAvailableDate": "2026-08-08",
       "nullConsecutiveSweeps": 0
@@ -12367,9 +12444,9 @@
       "category": "",
       "location": "United States/Florida/Marathon",
       "island": "united states/florida/marathon",
-      "price": null,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "price": 115.0,
+      "priceLabel": "Passengers",
+      "priceConfidence": "high",
       "qualityScore": 85,
       "currency": "USD",
       "duration": "210 minutes",
@@ -12400,7 +12477,10 @@
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
       "_unknownFields": {
-        "durationMinutes": 210
+        "durationMinutes": 210,
+        "priceSource": "fh-price-preview-v2-2026-08-20",
+        "priceCustomerType": "Passengers",
+        "priceTierCount": 1
       },
       "nextAvailableDate": "2026-08-09",
       "nullConsecutiveSweeps": 0
@@ -12414,9 +12494,9 @@
       "category": "",
       "location": "United States/Florida/Marathon",
       "island": "united states/florida/marathon",
-      "price": null,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "price": 79.0,
+      "priceLabel": "Passengers",
+      "priceConfidence": "medium",
       "qualityScore": 0,
       "currency": "USD",
       "duration": "",
@@ -12442,7 +12522,11 @@
       "statusFirstSeen": null,
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
-      "_unknownFields": {},
+      "_unknownFields": {
+        "priceSource": "fh-price-preview-v2-2026-08-20",
+        "priceCustomerType": "Passengers",
+        "priceTierCount": 2
+      },
       "needsEnrichment": true,
       "nextAvailableDate": "2026-08-08",
       "nullConsecutiveSweeps": 0
@@ -13052,9 +13136,9 @@
       "category": "",
       "location": "United States/Florida/Key West",
       "island": "united states/florida/key west",
-      "price": null,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "price": 79.0,
+      "priceLabel": "Adult",
+      "priceConfidence": "medium",
       "qualityScore": 0,
       "currency": "USD",
       "duration": "",
@@ -13091,7 +13175,11 @@
       "statusFirstSeen": null,
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
-      "_unknownFields": {},
+      "_unknownFields": {
+        "priceSource": "fh-price-preview-v2-2026-08-20",
+        "priceCustomerType": "Adult",
+        "priceTierCount": 2
+      },
       "needsEnrichment": true,
       "nextAvailableDate": "2026-08-08",
       "nullConsecutiveSweeps": 0
@@ -13105,9 +13193,9 @@
       "category": "",
       "location": "United States/Florida/Key West",
       "island": "united states/florida/key west",
-      "price": null,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "price": 69.0,
+      "priceLabel": "Adult",
+      "priceConfidence": "medium",
       "qualityScore": 0,
       "currency": "USD",
       "duration": "",
@@ -13137,7 +13225,11 @@
       "statusFirstSeen": null,
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
-      "_unknownFields": {},
+      "_unknownFields": {
+        "priceSource": "fh-price-preview-v2-2026-08-20",
+        "priceCustomerType": "Adult",
+        "priceTierCount": 2
+      },
       "needsEnrichment": true,
       "nextAvailableDate": "2026-08-08",
       "nullConsecutiveSweeps": 0
@@ -13328,9 +13420,9 @@
       "category": "",
       "location": "United States/Florida/Key West",
       "island": "united states/florida/key west",
-      "price": null,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "price": 275.0,
+      "priceLabel": "Person",
+      "priceConfidence": "high",
       "qualityScore": 0,
       "currency": "USD",
       "duration": "",
@@ -13356,7 +13448,11 @@
       "statusFirstSeen": null,
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
-      "_unknownFields": {},
+      "_unknownFields": {
+        "priceSource": "fh-price-preview-v2-2026-08-20",
+        "priceCustomerType": "Person",
+        "priceTierCount": 1
+      },
       "needsEnrichment": true,
       "nextAvailableDate": "2026-08-11",
       "nullConsecutiveSweeps": 0
@@ -14055,9 +14151,9 @@
       "category": "",
       "location": "United States/Florida/Islamorada",
       "island": "united states/florida/islamorada",
-      "price": null,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "price": 129.0,
+      "priceLabel": "Ticket",
+      "priceConfidence": "high",
       "qualityScore": 0,
       "currency": "USD",
       "duration": "",
@@ -14090,7 +14186,11 @@
       "statusFirstSeen": null,
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
-      "_unknownFields": {},
+      "_unknownFields": {
+        "priceSource": "fh-price-preview-v2-2026-08-20",
+        "priceCustomerType": "Ticket",
+        "priceTierCount": 1
+      },
       "needsEnrichment": true,
       "nextAvailableDate": "2026-08-12",
       "nullConsecutiveSweeps": 0
@@ -15207,9 +15307,9 @@
       "category": "",
       "location": "United States/Florida/Key West",
       "island": "united states/florida/key west",
-      "price": null,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "price": 56.99,
+      "priceLabel": "Adult",
+      "priceConfidence": "medium",
       "qualityScore": 0,
       "currency": "USD",
       "duration": "",
@@ -15235,7 +15335,11 @@
       "statusFirstSeen": null,
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
-      "_unknownFields": {},
+      "_unknownFields": {
+        "priceSource": "fh-price-preview-v2-2026-08-20",
+        "priceCustomerType": "Adult",
+        "priceTierCount": 2
+      },
       "needsEnrichment": true,
       "nextAvailableDate": "2026-08-08",
       "nullConsecutiveSweeps": 0
@@ -15402,9 +15506,9 @@
       "category": "",
       "location": "United States/Florida/Key West",
       "island": "united states/florida/key west",
-      "price": null,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "price": 125.0,
+      "priceLabel": "4 Hour Rental Must Be Returned By 5pm, latest start time 1pm",
+      "priceConfidence": "medium",
       "qualityScore": 0,
       "currency": "USD",
       "duration": "",
@@ -15437,7 +15541,11 @@
       "statusFirstSeen": null,
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
-      "_unknownFields": {},
+      "_unknownFields": {
+        "priceSource": "fh-price-preview-v2-2026-08-20",
+        "priceCustomerType": "4 Hour Rental Must Be Returned By 5pm, latest start time 1pm",
+        "priceTierCount": 9
+      },
       "needsEnrichment": true,
       "nextAvailableDate": "2026-08-08",
       "nullConsecutiveSweeps": 0
@@ -15451,9 +15559,9 @@
       "category": "",
       "location": "United States/Florida/Key West",
       "island": "united states/florida/key west",
-      "price": null,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "price": 149.0,
+      "priceLabel": "4 Hour Rental Must Be Returned By 5pm, latest start time 1pm",
+      "priceConfidence": "medium",
       "qualityScore": 0,
       "currency": "USD",
       "duration": "",
@@ -15492,7 +15600,11 @@
       "statusFirstSeen": null,
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
-      "_unknownFields": {},
+      "_unknownFields": {
+        "priceSource": "fh-price-preview-v2-2026-08-20",
+        "priceCustomerType": "4 Hour Rental Must Be Returned By 5pm, latest start time 1pm",
+        "priceTierCount": 9
+      },
       "needsEnrichment": true,
       "nextAvailableDate": "2026-08-08",
       "nullConsecutiveSweeps": 0
@@ -15506,9 +15618,9 @@
       "category": "",
       "location": "United States/Florida/Key West",
       "island": "united states/florida/key west",
-      "price": null,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "price": 15.0,
+      "priceLabel": "All Day Rental DUE BACK BY 5PM/ Pickup anytime after 9:30 am",
+      "priceConfidence": "high",
       "qualityScore": 0,
       "currency": "USD",
       "duration": "",
@@ -15544,7 +15656,11 @@
       "statusFirstSeen": null,
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
-      "_unknownFields": {},
+      "_unknownFields": {
+        "priceSource": "fh-price-preview-v2-2026-08-20",
+        "priceCustomerType": "All Day Rental DUE BACK BY 5PM/ Pickup anytime after 9:30 am",
+        "priceTierCount": 1
+      },
       "needsEnrichment": true,
       "nextAvailableDate": "2026-08-08",
       "nullConsecutiveSweeps": 0
@@ -15610,9 +15726,9 @@
       "category": "",
       "location": "United States/Florida/Summerland Key",
       "island": "united states/florida/summerland key",
-      "price": null,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "price": 69.0,
+      "priceLabel": "Adult",
+      "priceConfidence": "medium",
       "qualityScore": 90,
       "currency": "USD",
       "duration": "120 minutes",
@@ -15654,7 +15770,10 @@
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
       "_unknownFields": {
-        "durationMinutes": 120
+        "durationMinutes": 120,
+        "priceSource": "fh-price-preview-v2-2026-08-20",
+        "priceCustomerType": "Adult",
+        "priceTierCount": 2
       },
       "nextAvailableDate": "2026-08-10",
       "nullConsecutiveSweeps": 0
@@ -16155,9 +16274,9 @@
       "category": "",
       "location": "United States/Florida/Key West",
       "island": "united states/florida/key west",
-      "price": null,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "price": 149.0,
+      "priceLabel": "Four Hour Rental Must be Returned By 5pm",
+      "priceConfidence": "medium",
       "qualityScore": 85,
       "currency": "USD",
       "duration": "1440 minutes",
@@ -16198,7 +16317,10 @@
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
       "_unknownFields": {
-        "durationMinutes": 1440
+        "durationMinutes": 1440,
+        "priceSource": "fh-price-preview-v2-2026-08-20",
+        "priceCustomerType": "Four Hour Rental Must be Returned By 5pm",
+        "priceTierCount": 9
       },
       "nextAvailableDate": "2026-08-08",
       "nullConsecutiveSweeps": 0
@@ -16330,9 +16452,9 @@
       "category": "",
       "location": "United States/Florida/Key West",
       "island": "united states/florida/key west",
-      "price": null,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "price": 49.0,
+      "priceLabel": "4 Hour GPS E-Bike Tour",
+      "priceConfidence": "medium",
       "qualityScore": 0,
       "currency": "USD",
       "duration": "",
@@ -16364,7 +16486,11 @@
       "statusFirstSeen": null,
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
-      "_unknownFields": {},
+      "_unknownFields": {
+        "priceSource": "fh-price-preview-v2-2026-08-20",
+        "priceCustomerType": "4 Hour GPS E-Bike Tour",
+        "priceTierCount": 2
+      },
       "needsEnrichment": true,
       "nextAvailableDate": "2026-08-08",
       "nullConsecutiveSweeps": 0
@@ -16687,9 +16813,9 @@
       "category": "",
       "location": "United States/Florida/Key West",
       "island": "united states/florida/key west",
-      "price": null,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "price": 45.95,
+      "priceLabel": "Rider not Fishing",
+      "priceConfidence": "medium",
       "qualityScore": 0,
       "currency": "USD",
       "duration": "",
@@ -16721,7 +16847,11 @@
       "statusFirstSeen": null,
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
-      "_unknownFields": {},
+      "_unknownFields": {
+        "priceSource": "fh-price-preview-v2-2026-08-20",
+        "priceCustomerType": "Rider not Fishing",
+        "priceTierCount": 4
+      },
       "needsEnrichment": true,
       "nextAvailableDate": "2026-08-15",
       "nullConsecutiveSweeps": 0
@@ -18299,9 +18429,9 @@
       "category": "",
       "location": "United States/Florida/Marathon",
       "island": "united states/florida/marathon",
-      "price": null,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "price": 350.0,
+      "priceLabel": "Half Day Rental",
+      "priceConfidence": "high",
       "qualityScore": 0,
       "currency": "USD",
       "duration": "",
@@ -18329,7 +18459,11 @@
       "statusFirstSeen": null,
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
-      "_unknownFields": {},
+      "_unknownFields": {
+        "priceSource": "fh-price-preview-v2-2026-08-20",
+        "priceCustomerType": "Half Day Rental",
+        "priceTierCount": 1
+      },
       "needsEnrichment": true,
       "nextAvailableDate": "2026-08-08",
       "nullConsecutiveSweeps": 0
@@ -18343,9 +18477,9 @@
       "category": "",
       "location": "United States/Florida/Marathon",
       "island": "united states/florida/marathon",
-      "price": null,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "price": 300.0,
+      "priceLabel": "Half Day Rental",
+      "priceConfidence": "high",
       "qualityScore": 0,
       "currency": "USD",
       "duration": "",
@@ -18371,7 +18505,11 @@
       "statusFirstSeen": null,
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
-      "_unknownFields": {},
+      "_unknownFields": {
+        "priceSource": "fh-price-preview-v2-2026-08-20",
+        "priceCustomerType": "Half Day Rental",
+        "priceTierCount": 1
+      },
       "needsEnrichment": true,
       "nextAvailableDate": "2026-08-11",
       "nullConsecutiveSweeps": 0
@@ -18385,9 +18523,9 @@
       "category": "",
       "location": "United States/Florida/Marathon",
       "island": "united states/florida/marathon",
-      "price": null,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "price": 350.0,
+      "priceLabel": "Half Day Rental",
+      "priceConfidence": "high",
       "qualityScore": 0,
       "currency": "USD",
       "duration": "",
@@ -18416,7 +18554,11 @@
       "statusFirstSeen": null,
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
-      "_unknownFields": {},
+      "_unknownFields": {
+        "priceSource": "fh-price-preview-v2-2026-08-20",
+        "priceCustomerType": "Half Day Rental",
+        "priceTierCount": 1
+      },
       "needsEnrichment": true,
       "nextAvailableDate": "2026-08-10",
       "nullConsecutiveSweeps": 0
@@ -18835,9 +18977,9 @@
       "category": "",
       "location": "United States/Florida/Key Largo",
       "island": "united states/florida/key largo",
-      "price": null,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "price": 100.0,
+      "priceLabel": "Person",
+      "priceConfidence": "medium",
       "qualityScore": 0,
       "currency": "USD",
       "duration": "",
@@ -18865,7 +19007,11 @@
       "statusFirstSeen": null,
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
-      "_unknownFields": {},
+      "_unknownFields": {
+        "priceSource": "fh-price-preview-v2-2026-08-20",
+        "priceCustomerType": "Person",
+        "priceTierCount": 2
+      },
       "needsEnrichment": true,
       "nextAvailableDate": "2026-08-09",
       "nullConsecutiveSweeps": 0
@@ -19114,9 +19260,9 @@
       "category": "",
       "location": "United States/Florida/Islamorada",
       "island": "united states/florida/islamorada",
-      "price": null,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "price": 350.0,
+      "priceLabel": "Dinner for 2",
+      "priceConfidence": "medium",
       "qualityScore": 0,
       "currency": "USD",
       "duration": "",
@@ -19142,7 +19288,11 @@
       "statusFirstSeen": null,
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
-      "_unknownFields": {},
+      "_unknownFields": {
+        "priceSource": "fh-price-preview-v2-2026-08-20",
+        "priceCustomerType": "Dinner for 2",
+        "priceTierCount": 1
+      },
       "needsEnrichment": true,
       "nextAvailableDate": "2026-08-09",
       "nullConsecutiveSweeps": 0
@@ -19240,9 +19390,9 @@
       "category": "",
       "location": "United States/Florida/Marathon",
       "island": "united states/florida/marathon",
-      "price": null,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "price": 80.0,
+      "priceLabel": "Adult",
+      "priceConfidence": "medium",
       "qualityScore": 0,
       "currency": "USD",
       "duration": "",
@@ -19277,7 +19427,11 @@
       "statusFirstSeen": null,
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
-      "_unknownFields": {},
+      "_unknownFields": {
+        "priceSource": "fh-price-preview-v2-2026-08-20",
+        "priceCustomerType": "Adult",
+        "priceTierCount": 3
+      },
       "needsEnrichment": true,
       "nextAvailableDate": "2026-08-09",
       "nullConsecutiveSweeps": 0
@@ -19437,9 +19591,9 @@
       "category": "",
       "location": "United States/Florida/Key West",
       "island": "united states/florida/key west",
-      "price": null,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "price": 119.0,
+      "priceLabel": "Four Hour Rental",
+      "priceConfidence": "medium",
       "qualityScore": 0,
       "currency": "USD",
       "duration": "",
@@ -19465,7 +19619,11 @@
       "statusFirstSeen": null,
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
-      "_unknownFields": {},
+      "_unknownFields": {
+        "priceSource": "fh-price-preview-v2-2026-08-20",
+        "priceCustomerType": "Four Hour Rental",
+        "priceTierCount": 10
+      },
       "needsEnrichment": true,
       "nextAvailableDate": "2026-08-08",
       "nullConsecutiveSweeps": 0
@@ -19749,9 +19907,9 @@
       "category": "",
       "location": "United States/Florida/Key West",
       "island": "united states/florida/key west",
-      "price": null,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "price": 29.0,
+      "priceLabel": "Eight Hour Rental",
+      "priceConfidence": "medium",
       "qualityScore": 0,
       "currency": "USD",
       "duration": "",
@@ -19777,7 +19935,11 @@
       "statusFirstSeen": null,
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
-      "_unknownFields": {},
+      "_unknownFields": {
+        "priceSource": "fh-price-preview-v2-2026-08-20",
+        "priceCustomerType": "Eight Hour Rental",
+        "priceTierCount": 9
+      },
       "needsEnrichment": true,
       "nextAvailableDate": "2026-08-08",
       "nullConsecutiveSweeps": 0
@@ -20150,9 +20312,9 @@
       "category": "",
       "location": "United States/Florida/Islamorada",
       "island": "united states/florida/islamorada",
-      "price": null,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "price": 5000.0,
+      "priceLabel": "2 nights / 3 Days",
+      "priceConfidence": "medium",
       "qualityScore": 75,
       "currency": "USD",
       "duration": null,
@@ -20181,7 +20343,12 @@
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
       "nextAvailableDate": "2026-08-09",
-      "nullConsecutiveSweeps": 0
+      "nullConsecutiveSweeps": 0,
+      "_unknownFields": {
+        "priceSource": "fh-price-preview-v2-2026-08-20",
+        "priceCustomerType": "2 nights / 3 Days",
+        "priceTierCount": 1
+      }
     },
     {
       "id": "605862",
@@ -20419,9 +20586,9 @@
       "category": "",
       "location": "United States/Florida/Islamorada",
       "island": "united states/florida/islamorada",
-      "price": null,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "price": 900.0,
+      "priceLabel": "Shark & Tarpon Trip",
+      "priceConfidence": "medium",
       "qualityScore": 0,
       "currency": "USD",
       "duration": "",
@@ -20447,7 +20614,11 @@
       "statusFirstSeen": null,
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
-      "_unknownFields": {},
+      "_unknownFields": {
+        "priceSource": "fh-price-preview-v2-2026-08-20",
+        "priceCustomerType": "Shark & Tarpon Trip",
+        "priceTierCount": 1
+      },
       "needsEnrichment": true,
       "nextAvailableDate": "2026-08-08",
       "nullConsecutiveSweeps": 0
@@ -20552,9 +20723,9 @@
       "category": "",
       "location": "United States/Florida/Key West",
       "island": "united states/florida/key west",
-      "price": null,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "price": 300.0,
+      "priceLabel": "DIGITAL SELFIE STAND",
+      "priceConfidence": "medium",
       "qualityScore": 0,
       "currency": "USD",
       "duration": "",
@@ -20580,7 +20751,11 @@
       "statusFirstSeen": null,
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
-      "_unknownFields": {},
+      "_unknownFields": {
+        "priceSource": "fh-price-preview-v2-2026-08-20",
+        "priceCustomerType": "DIGITAL SELFIE STAND",
+        "priceTierCount": 1
+      },
       "needsEnrichment": true,
       "nextAvailableDate": "2026-08-09",
       "nullConsecutiveSweeps": 0
@@ -21783,9 +21958,9 @@
       "category": "",
       "location": "United States/Florida/Key West",
       "island": "united states/florida/key west",
-      "price": null,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "price": 85.0,
+      "priceLabel": "One Day Rental",
+      "priceConfidence": "medium",
       "qualityScore": 0,
       "currency": "USD",
       "duration": "",
@@ -21816,7 +21991,11 @@
       "statusFirstSeen": null,
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
-      "_unknownFields": {},
+      "_unknownFields": {
+        "priceSource": "fh-price-preview-v2-2026-08-20",
+        "priceCustomerType": "One Day Rental",
+        "priceTierCount": 7
+      },
       "needsEnrichment": true,
       "nextAvailableDate": "2026-08-08",
       "nullConsecutiveSweeps": 0
@@ -21830,9 +22009,9 @@
       "category": "",
       "location": "United States/Florida/Key West",
       "island": "united states/florida/key west",
-      "price": null,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "price": 95.0,
+      "priceLabel": "One Day Rental",
+      "priceConfidence": "medium",
       "qualityScore": 0,
       "currency": "USD",
       "duration": "",
@@ -21860,7 +22039,11 @@
       "statusFirstSeen": null,
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
-      "_unknownFields": {},
+      "_unknownFields": {
+        "priceSource": "fh-price-preview-v2-2026-08-20",
+        "priceCustomerType": "One Day Rental",
+        "priceTierCount": 7
+      },
       "needsEnrichment": true,
       "nextAvailableDate": "2026-08-08",
       "nullConsecutiveSweeps": 0
@@ -22092,9 +22275,9 @@
       "category": "",
       "location": "United States/Florida/Key West",
       "island": "united states/florida/key west",
-      "price": null,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "price": 510.75,
+      "priceLabel": "One Night Rental",
+      "priceConfidence": "medium",
       "qualityScore": 75,
       "currency": "USD",
       "duration": null,
@@ -22123,7 +22306,12 @@
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
       "nextAvailableDate": "2026-08-08",
-      "nullConsecutiveSweeps": 0
+      "nullConsecutiveSweeps": 0,
+      "_unknownFields": {
+        "priceSource": "fh-price-preview-v2-2026-08-20",
+        "priceCustomerType": "One Night Rental",
+        "priceTierCount": 7
+      }
     },
     {
       "id": "651672",
@@ -22176,9 +22364,9 @@
       "category": "",
       "location": "United States/Florida/Key West",
       "island": "united states/florida/key west",
-      "price": null,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "price": 170.25,
+      "priceLabel": "One Night Rental",
+      "priceConfidence": "medium",
       "qualityScore": 75,
       "currency": "USD",
       "duration": null,
@@ -22207,7 +22395,12 @@
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
       "nextAvailableDate": "2027-01-01",
-      "nullConsecutiveSweeps": 0
+      "nullConsecutiveSweeps": 0,
+      "_unknownFields": {
+        "priceSource": "fh-price-preview-v2-2026-08-20",
+        "priceCustomerType": "One Night Rental",
+        "priceTierCount": 7
+      }
     },
     {
       "id": "651663",
@@ -22218,9 +22411,9 @@
       "category": "",
       "location": "United States/Florida/Key West",
       "island": "united states/florida/key west",
-      "price": null,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "price": 1362.0,
+      "priceLabel": "Reef Trip",
+      "priceConfidence": "medium",
       "qualityScore": 85,
       "currency": "USD",
       "duration": "600 minutes",
@@ -22249,7 +22442,10 @@
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
       "_unknownFields": {
-        "durationMinutes": 600
+        "durationMinutes": 600,
+        "priceSource": "fh-price-preview-v2-2026-08-20",
+        "priceCustomerType": "Reef Trip",
+        "priceTierCount": 1
       },
       "nextAvailableDate": "2026-08-10",
       "nullConsecutiveSweeps": 0
@@ -22303,9 +22499,9 @@
       "category": "",
       "location": "United States/Florida/Key West",
       "island": "united states/florida/key west",
-      "price": null,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "price": 1702.5,
+      "priceLabel": "Reef Trip",
+      "priceConfidence": "medium",
       "qualityScore": 0,
       "currency": "USD",
       "duration": "",
@@ -22331,7 +22527,11 @@
       "statusFirstSeen": null,
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
-      "_unknownFields": {},
+      "_unknownFields": {
+        "priceSource": "fh-price-preview-v2-2026-08-20",
+        "priceCustomerType": "Reef Trip",
+        "priceTierCount": 1
+      },
       "needsEnrichment": true,
       "nextAvailableDate": "2026-08-10",
       "nullConsecutiveSweeps": 0
@@ -23428,9 +23628,9 @@
       "category": "",
       "location": "United States/Florida/Key West",
       "island": "united states/florida/key west",
-      "price": null,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "price": 37.5,
+      "priceLabel": "Adult",
+      "priceConfidence": "medium",
       "qualityScore": 0,
       "currency": "USD",
       "duration": "",
@@ -23461,7 +23661,11 @@
       "statusFirstSeen": null,
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
-      "_unknownFields": {},
+      "_unknownFields": {
+        "priceSource": "fh-price-preview-v2-2026-08-20",
+        "priceCustomerType": "Adult",
+        "priceTierCount": 2
+      },
       "needsEnrichment": true,
       "nextAvailableDate": "2026-08-08",
       "nullConsecutiveSweeps": 0
@@ -23475,9 +23679,9 @@
       "category": "",
       "location": "United States/Florida/Key West",
       "island": "united states/florida/key west",
-      "price": null,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "price": 25.0,
+      "priceLabel": "Person",
+      "priceConfidence": "medium",
       "qualityScore": 0,
       "currency": "USD",
       "duration": "",
@@ -23503,7 +23707,11 @@
       "statusFirstSeen": null,
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
-      "_unknownFields": {},
+      "_unknownFields": {
+        "priceSource": "fh-price-preview-v2-2026-08-20",
+        "priceCustomerType": "Person",
+        "priceTierCount": 2
+      },
       "needsEnrichment": true,
       "nextAvailableDate": "2026-08-08",
       "nullConsecutiveSweeps": 0
@@ -23517,9 +23725,9 @@
       "category": "",
       "location": "United States/Florida/Key West",
       "island": "united states/florida/key west",
-      "price": null,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "price": 25.0,
+      "priceLabel": "Adult",
+      "priceConfidence": "medium",
       "qualityScore": 0,
       "currency": "USD",
       "duration": "",
@@ -23556,7 +23764,11 @@
       "statusFirstSeen": null,
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
-      "_unknownFields": {},
+      "_unknownFields": {
+        "priceSource": "fh-price-preview-v2-2026-08-20",
+        "priceCustomerType": "Adult",
+        "priceTierCount": 2
+      },
       "needsEnrichment": true,
       "nextAvailableDate": "2026-08-08",
       "nullConsecutiveSweeps": 0
@@ -25252,9 +25464,9 @@
       "category": "",
       "location": "United States/Florida/Key West",
       "island": "united states/florida/key west",
-      "price": null,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "price": 1000.0,
+      "priceLabel": "Sunset Cruise",
+      "priceConfidence": "medium",
       "qualityScore": 0,
       "currency": "USD",
       "duration": "",
@@ -25280,7 +25492,11 @@
       "statusFirstSeen": null,
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
-      "_unknownFields": {},
+      "_unknownFields": {
+        "priceSource": "fh-price-preview-v2-2026-08-20",
+        "priceCustomerType": "Sunset Cruise",
+        "priceTierCount": 1
+      },
       "needsEnrichment": true,
       "nextAvailableDate": "2026-08-08",
       "nullConsecutiveSweeps": 0
@@ -27512,9 +27728,9 @@
       "category": "",
       "location": "United States/Florida/Key West",
       "island": "united states/florida/key west",
-      "price": null,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "price": 500.0,
+      "priceLabel": "Sightseeing, Swimming and Dolphin Watching",
+      "priceConfidence": "medium",
       "qualityScore": 70,
       "currency": "USD",
       "duration": "120 minutes",
@@ -27548,7 +27764,10 @@
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
       "_unknownFields": {
-        "durationMinutes": 120
+        "durationMinutes": 120,
+        "priceSource": "fh-price-preview-v2-2026-08-20",
+        "priceCustomerType": "Sightseeing, Swimming and Dolphin Watching",
+        "priceTierCount": 1
       },
       "nextAvailableDate": "2026-08-09",
       "nullConsecutiveSweeps": 0
@@ -27699,9 +27918,9 @@
       "category": "",
       "location": "United States/Florida/Key West",
       "island": "united states/florida/key west",
-      "price": null,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "price": 170.0,
+      "priceLabel": "Four Hour Rental",
+      "priceConfidence": "medium",
       "qualityScore": 0,
       "currency": "USD",
       "duration": "",
@@ -27727,7 +27946,11 @@
       "statusFirstSeen": null,
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
-      "_unknownFields": {},
+      "_unknownFields": {
+        "priceSource": "fh-price-preview-v2-2026-08-20",
+        "priceCustomerType": "Four Hour Rental",
+        "priceTierCount": 11
+      },
       "needsEnrichment": true,
       "nextAvailableDate": "2026-08-08",
       "nullConsecutiveSweeps": 0
@@ -27923,9 +28146,9 @@
       "category": "",
       "location": "United States/Florida/Key Largo",
       "island": "united states/florida/key largo",
-      "price": null,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "price": 195.0,
+      "priceLabel": "Person",
+      "priceConfidence": "high",
       "qualityScore": 0,
       "currency": "USD",
       "duration": "",
@@ -27951,7 +28174,11 @@
       "statusFirstSeen": null,
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
-      "_unknownFields": {},
+      "_unknownFields": {
+        "priceSource": "fh-price-preview-v2-2026-08-20",
+        "priceCustomerType": "Person",
+        "priceTierCount": 1
+      },
       "needsEnrichment": true,
       "nextAvailableDate": "2026-08-08",
       "nullConsecutiveSweeps": 0
@@ -30577,9 +30804,9 @@
       "category": "",
       "location": "United States/Florida/Key West",
       "island": "united states/florida/key west",
-      "price": null,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "price": 35.0,
+      "priceLabel": "General Admission",
+      "priceConfidence": "medium",
       "qualityScore": 85,
       "currency": "USD",
       "duration": "120 minutes",
@@ -30612,7 +30839,10 @@
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
       "_unknownFields": {
-        "durationMinutes": 120
+        "durationMinutes": 120,
+        "priceSource": "fh-price-preview-v2-2026-08-20",
+        "priceCustomerType": "General Admission",
+        "priceTierCount": 9
       },
       "nextAvailableDate": "2026-08-14",
       "nullConsecutiveSweeps": 0
@@ -31011,9 +31241,9 @@
       "category": "",
       "location": "United States/Florida/Key West",
       "island": "united states/florida/key west",
-      "price": null,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "price": 500.0,
+      "priceLabel": "Person",
+      "priceConfidence": "high",
       "qualityScore": 0,
       "currency": "USD",
       "duration": "",
@@ -31039,7 +31269,11 @@
       "statusFirstSeen": null,
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
-      "_unknownFields": {},
+      "_unknownFields": {
+        "priceSource": "fh-price-preview-v2-2026-08-20",
+        "priceCustomerType": "Person",
+        "priceTierCount": 1
+      },
       "needsEnrichment": true,
       "nextAvailableDate": "2026-08-08",
       "nullConsecutiveSweeps": 0
@@ -31232,9 +31466,9 @@
       "category": "",
       "location": "United States/Florida/Marathon",
       "island": "united states/florida/marathon",
-      "price": null,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "price": 900.0,
+      "priceLabel": "Four Hour Seasonal Tarpon Trip",
+      "priceConfidence": "medium",
       "qualityScore": 85,
       "currency": "USD",
       "duration": "240 minutes",
@@ -31263,7 +31497,10 @@
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
       "_unknownFields": {
-        "durationMinutes": 240
+        "durationMinutes": 240,
+        "priceSource": "fh-price-preview-v2-2026-08-20",
+        "priceCustomerType": "Four Hour Seasonal Tarpon Trip",
+        "priceTierCount": 1
       },
       "nextAvailableDate": "2026-08-08",
       "nullConsecutiveSweeps": 0
@@ -31981,9 +32218,9 @@
       "category": "",
       "location": "United States/Florida/Key Largo",
       "island": "united states/florida/key largo",
-      "price": null,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "price": 95.0,
+      "priceLabel": "Student",
+      "priceConfidence": "high",
       "qualityScore": 75,
       "currency": "USD",
       "duration": null,
@@ -32012,7 +32249,12 @@
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
       "nextAvailableDate": "2026-08-09",
-      "nullConsecutiveSweeps": 0
+      "nullConsecutiveSweeps": 0,
+      "_unknownFields": {
+        "priceSource": "fh-price-preview-v2-2026-08-20",
+        "priceCustomerType": "Student",
+        "priceTierCount": 1
+      }
     },
     {
       "id": "460374",
@@ -32935,9 +33177,9 @@
       "category": "",
       "location": "United States/Florida/Key West",
       "island": "united states/florida/key west",
-      "price": null,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "price": 179.0,
+      "priceLabel": "Adult",
+      "priceConfidence": "medium",
       "qualityScore": 0,
       "currency": "USD",
       "duration": "",
@@ -32963,7 +33205,11 @@
       "statusFirstSeen": null,
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
-      "_unknownFields": {},
+      "_unknownFields": {
+        "priceSource": "fh-price-preview-v2-2026-08-20",
+        "priceCustomerType": "Adult",
+        "priceTierCount": 2
+      },
       "needsEnrichment": true,
       "nextAvailableDate": "2026-08-11",
       "nullConsecutiveSweeps": 0
@@ -32977,9 +33223,9 @@
       "category": "",
       "location": "United States/Florida/Key West",
       "island": "united states/florida/key west",
-      "price": null,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "price": 134.0,
+      "priceLabel": "Adult",
+      "priceConfidence": "medium",
       "qualityScore": 0,
       "currency": "USD",
       "duration": "",
@@ -33005,7 +33251,11 @@
       "statusFirstSeen": null,
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
-      "_unknownFields": {},
+      "_unknownFields": {
+        "priceSource": "fh-price-preview-v2-2026-08-20",
+        "priceCustomerType": "Adult",
+        "priceTierCount": 2
+      },
       "needsEnrichment": true,
       "nextAvailableDate": "2026-08-08",
       "nullConsecutiveSweeps": 0
@@ -33477,9 +33727,9 @@
       "category": "",
       "location": "United States/Florida/Marathon",
       "island": "united states/florida/marathon",
-      "price": null,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "price": 29.0,
+      "priceLabel": "One Hour Rental",
+      "priceConfidence": "high",
       "qualityScore": 0,
       "currency": "USD",
       "duration": "",
@@ -33505,7 +33755,11 @@
       "statusFirstSeen": null,
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
-      "_unknownFields": {},
+      "_unknownFields": {
+        "priceSource": "fh-price-preview-v2-2026-08-20",
+        "priceCustomerType": "One Hour Rental",
+        "priceTierCount": 1
+      },
       "needsEnrichment": true,
       "nextAvailableDate": "2026-08-08",
       "nullConsecutiveSweeps": 0
@@ -33519,9 +33773,9 @@
       "category": "",
       "location": "United States/Florida/Marathon",
       "island": "united states/florida/marathon",
-      "price": null,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "price": 50.0,
+      "priceLabel": "One Hour Rental",
+      "priceConfidence": "high",
       "qualityScore": 0,
       "currency": "USD",
       "duration": "",
@@ -33547,7 +33801,11 @@
       "statusFirstSeen": null,
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
-      "_unknownFields": {},
+      "_unknownFields": {
+        "priceSource": "fh-price-preview-v2-2026-08-20",
+        "priceCustomerType": "One Hour Rental",
+        "priceTierCount": 1
+      },
       "needsEnrichment": true,
       "nextAvailableDate": "2026-08-08",
       "nullConsecutiveSweeps": 0
@@ -33561,9 +33819,9 @@
       "category": "",
       "location": "United States/Florida/Marathon",
       "island": "united states/florida/marathon",
-      "price": null,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "price": 65.0,
+      "priceLabel": "Daily Rental",
+      "priceConfidence": "high",
       "qualityScore": 0,
       "currency": "USD",
       "duration": "",
@@ -33589,7 +33847,11 @@
       "statusFirstSeen": null,
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
-      "_unknownFields": {},
+      "_unknownFields": {
+        "priceSource": "fh-price-preview-v2-2026-08-20",
+        "priceCustomerType": "Daily Rental",
+        "priceTierCount": 1
+      },
       "needsEnrichment": true,
       "nextAvailableDate": "2026-08-08",
       "nullConsecutiveSweeps": 0
@@ -33603,9 +33865,9 @@
       "category": "",
       "location": "United States/Florida/Marathon",
       "island": "united states/florida/marathon",
-      "price": null,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "price": 39.0,
+      "priceLabel": "Daily Rental",
+      "priceConfidence": "high",
       "qualityScore": 0,
       "currency": "USD",
       "duration": "",
@@ -33629,7 +33891,11 @@
       "statusFirstSeen": null,
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
-      "_unknownFields": {},
+      "_unknownFields": {
+        "priceSource": "fh-price-preview-v2-2026-08-20",
+        "priceCustomerType": "Daily Rental",
+        "priceTierCount": 1
+      },
       "needsEnrichment": true,
       "nextAvailableDate": "2026-08-08",
       "nullConsecutiveSweeps": 0
@@ -33643,9 +33909,9 @@
       "category": "",
       "location": "United States/Florida/Marathon",
       "island": "united states/florida/marathon",
-      "price": null,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "price": 300.0,
+      "priceLabel": "Daily Rental",
+      "priceConfidence": "medium",
       "qualityScore": 0,
       "currency": "USD",
       "duration": "",
@@ -33671,7 +33937,11 @@
       "statusFirstSeen": null,
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
-      "_unknownFields": {},
+      "_unknownFields": {
+        "priceSource": "fh-price-preview-v2-2026-08-20",
+        "priceCustomerType": "Daily Rental",
+        "priceTierCount": 10
+      },
       "needsEnrichment": true,
       "nextAvailableDate": "2026-08-08",
       "nullConsecutiveSweeps": 0
@@ -33685,9 +33955,9 @@
       "category": "",
       "location": "United States/Florida/Marathon",
       "island": "united states/florida/marathon",
-      "price": null,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "price": 375.0,
+      "priceLabel": "Daily Rental",
+      "priceConfidence": "medium",
       "qualityScore": 0,
       "currency": "USD",
       "duration": "",
@@ -33713,7 +33983,11 @@
       "statusFirstSeen": null,
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
-      "_unknownFields": {},
+      "_unknownFields": {
+        "priceSource": "fh-price-preview-v2-2026-08-20",
+        "priceCustomerType": "Daily Rental",
+        "priceTierCount": 10
+      },
       "needsEnrichment": true,
       "nextAvailableDate": "2026-08-08",
       "nullConsecutiveSweeps": 0
@@ -33727,9 +34001,9 @@
       "category": "",
       "location": "United States/Florida/Marathon",
       "island": "united states/florida/marathon",
-      "price": null,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "price": 325.0,
+      "priceLabel": "Daily Rental",
+      "priceConfidence": "medium",
       "qualityScore": 0,
       "currency": "USD",
       "duration": "",
@@ -33755,7 +34029,11 @@
       "statusFirstSeen": null,
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
-      "_unknownFields": {},
+      "_unknownFields": {
+        "priceSource": "fh-price-preview-v2-2026-08-20",
+        "priceCustomerType": "Daily Rental",
+        "priceTierCount": 10
+      },
       "needsEnrichment": true,
       "nextAvailableDate": "2026-08-16",
       "nullConsecutiveSweeps": 0
@@ -33769,9 +34047,9 @@
       "category": "",
       "location": "United States/Florida/Marathon",
       "island": "united states/florida/marathon",
-      "price": null,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "price": 350.0,
+      "priceLabel": "Daily Rental",
+      "priceConfidence": "medium",
       "qualityScore": 0,
       "currency": "USD",
       "duration": "",
@@ -33797,7 +34075,11 @@
       "statusFirstSeen": null,
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
-      "_unknownFields": {},
+      "_unknownFields": {
+        "priceSource": "fh-price-preview-v2-2026-08-20",
+        "priceCustomerType": "Daily Rental",
+        "priceTierCount": 10
+      },
       "needsEnrichment": true,
       "nextAvailableDate": "2026-08-09",
       "nullConsecutiveSweeps": 0
@@ -33811,9 +34093,9 @@
       "category": "",
       "location": "United States/Florida/Marathon",
       "island": "united states/florida/marathon",
-      "price": null,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "price": 425.0,
+      "priceLabel": "Daily Rental",
+      "priceConfidence": "medium",
       "qualityScore": 0,
       "currency": "USD",
       "duration": "",
@@ -33839,7 +34121,11 @@
       "statusFirstSeen": null,
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
-      "_unknownFields": {},
+      "_unknownFields": {
+        "priceSource": "fh-price-preview-v2-2026-08-20",
+        "priceCustomerType": "Daily Rental",
+        "priceTierCount": 10
+      },
       "needsEnrichment": true,
       "nextAvailableDate": "2026-08-14",
       "nullConsecutiveSweeps": 0
@@ -33853,9 +34139,9 @@
       "category": "",
       "location": "United States/Florida/Marathon",
       "island": "united states/florida/marathon",
-      "price": null,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "price": 450.0,
+      "priceLabel": "Daily Rental",
+      "priceConfidence": "medium",
       "qualityScore": 0,
       "currency": "USD",
       "duration": "",
@@ -33881,7 +34167,11 @@
       "statusFirstSeen": null,
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
-      "_unknownFields": {},
+      "_unknownFields": {
+        "priceSource": "fh-price-preview-v2-2026-08-20",
+        "priceCustomerType": "Daily Rental",
+        "priceTierCount": 10
+      },
       "needsEnrichment": true,
       "nextAvailableDate": "2026-08-15",
       "nullConsecutiveSweeps": 0
@@ -33895,9 +34185,9 @@
       "category": "",
       "location": "United States/Florida/Marathon",
       "island": "united states/florida/marathon",
-      "price": null,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "price": 500.0,
+      "priceLabel": "Daily Rental",
+      "priceConfidence": "medium",
       "qualityScore": 0,
       "currency": "USD",
       "duration": "",
@@ -33923,7 +34213,11 @@
       "statusFirstSeen": null,
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
-      "_unknownFields": {},
+      "_unknownFields": {
+        "priceSource": "fh-price-preview-v2-2026-08-20",
+        "priceCustomerType": "Daily Rental",
+        "priceTierCount": 10
+      },
       "needsEnrichment": true,
       "nextAvailableDate": "2026-08-08",
       "nullConsecutiveSweeps": 0
@@ -33937,9 +34231,9 @@
       "category": "",
       "location": "United States/Florida/Marathon",
       "island": "united states/florida/marathon",
-      "price": null,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "price": 385.0,
+      "priceLabel": "Daily Rental",
+      "priceConfidence": "medium",
       "qualityScore": 0,
       "currency": "USD",
       "duration": "",
@@ -33963,7 +34257,11 @@
       "statusFirstSeen": null,
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
-      "_unknownFields": {},
+      "_unknownFields": {
+        "priceSource": "fh-price-preview-v2-2026-08-20",
+        "priceCustomerType": "Daily Rental",
+        "priceTierCount": 10
+      },
       "needsEnrichment": true,
       "nextAvailableDate": "2026-08-10",
       "nullConsecutiveSweeps": 0
@@ -33977,9 +34275,9 @@
       "category": "",
       "location": "United States/Florida/Big Pine Key",
       "island": "united states/florida/big pine key",
-      "price": null,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "price": 650.0,
+      "priceLabel": "Student",
+      "priceConfidence": "high",
       "qualityScore": 0,
       "currency": "USD",
       "duration": "",
@@ -34005,7 +34303,11 @@
       "statusFirstSeen": null,
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
-      "_unknownFields": {},
+      "_unknownFields": {
+        "priceSource": "fh-price-preview-v2-2026-08-20",
+        "priceCustomerType": "Student",
+        "priceTierCount": 1
+      },
       "needsEnrichment": true,
       "nextAvailableDate": "2026-08-09",
       "nullConsecutiveSweeps": 0
@@ -34019,9 +34321,9 @@
       "category": "",
       "location": "United States/Florida/Big Pine Key",
       "island": "united states/florida/big pine key",
-      "price": null,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "price": 150.0,
+      "priceLabel": "Student",
+      "priceConfidence": "high",
       "qualityScore": 0,
       "currency": "USD",
       "duration": "",
@@ -34047,7 +34349,11 @@
       "statusFirstSeen": null,
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
-      "_unknownFields": {},
+      "_unknownFields": {
+        "priceSource": "fh-price-preview-v2-2026-08-20",
+        "priceCustomerType": "Student",
+        "priceTierCount": 1
+      },
       "needsEnrichment": true,
       "nextAvailableDate": "2026-08-09",
       "nullConsecutiveSweeps": 0
@@ -34061,9 +34367,9 @@
       "category": "",
       "location": "United States/Florida/Big Pine Key",
       "island": "united states/florida/big pine key",
-      "price": null,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "price": 250.0,
+      "priceLabel": "Student",
+      "priceConfidence": "high",
       "qualityScore": 0,
       "currency": "USD",
       "duration": "",
@@ -34089,7 +34395,11 @@
       "statusFirstSeen": null,
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
-      "_unknownFields": {},
+      "_unknownFields": {
+        "priceSource": "fh-price-preview-v2-2026-08-20",
+        "priceCustomerType": "Student",
+        "priceTierCount": 1
+      },
       "needsEnrichment": true,
       "nextAvailableDate": "2026-08-09",
       "nullConsecutiveSweeps": 0
@@ -34103,9 +34413,9 @@
       "category": "",
       "location": "United States/Florida/Big Pine Key",
       "island": "united states/florida/big pine key",
-      "price": null,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "price": 350.0,
+      "priceLabel": "Student",
+      "priceConfidence": "high",
       "qualityScore": 0,
       "currency": "USD",
       "duration": "",
@@ -34131,7 +34441,11 @@
       "statusFirstSeen": null,
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
-      "_unknownFields": {},
+      "_unknownFields": {
+        "priceSource": "fh-price-preview-v2-2026-08-20",
+        "priceCustomerType": "Student",
+        "priceTierCount": 1
+      },
       "needsEnrichment": true,
       "nextAvailableDate": "2026-08-09",
       "nullConsecutiveSweeps": 0
@@ -34145,9 +34459,9 @@
       "category": "",
       "location": "United States/Florida/Big Pine Key",
       "island": "united states/florida/big pine key",
-      "price": null,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "price": 250.0,
+      "priceLabel": "Student",
+      "priceConfidence": "high",
       "qualityScore": 0,
       "currency": "USD",
       "duration": "",
@@ -34173,7 +34487,11 @@
       "statusFirstSeen": null,
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
-      "_unknownFields": {},
+      "_unknownFields": {
+        "priceSource": "fh-price-preview-v2-2026-08-20",
+        "priceCustomerType": "Student",
+        "priceTierCount": 1
+      },
       "needsEnrichment": true,
       "nextAvailableDate": "2026-08-09",
       "nullConsecutiveSweeps": 0
@@ -34187,9 +34505,9 @@
       "category": "",
       "location": "United States/Florida/Big Pine Key",
       "island": "united states/florida/big pine key",
-      "price": null,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "price": 350.0,
+      "priceLabel": "Student",
+      "priceConfidence": "high",
       "qualityScore": 0,
       "currency": "USD",
       "duration": "",
@@ -34215,7 +34533,11 @@
       "statusFirstSeen": null,
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
-      "_unknownFields": {},
+      "_unknownFields": {
+        "priceSource": "fh-price-preview-v2-2026-08-20",
+        "priceCustomerType": "Student",
+        "priceTierCount": 1
+      },
       "needsEnrichment": true,
       "nextAvailableDate": "2026-08-09",
       "nullConsecutiveSweeps": 0
@@ -34229,9 +34551,9 @@
       "category": "",
       "location": "United States/Florida/Big Pine Key",
       "island": "united states/florida/big pine key",
-      "price": null,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "price": 450.0,
+      "priceLabel": "Student",
+      "priceConfidence": "high",
       "qualityScore": 0,
       "currency": "USD",
       "duration": "",
@@ -34257,7 +34579,11 @@
       "statusFirstSeen": null,
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
-      "_unknownFields": {},
+      "_unknownFields": {
+        "priceSource": "fh-price-preview-v2-2026-08-20",
+        "priceCustomerType": "Student",
+        "priceTierCount": 1
+      },
       "needsEnrichment": true,
       "nextAvailableDate": "2026-08-09",
       "nullConsecutiveSweeps": 0
@@ -34271,9 +34597,9 @@
       "category": "",
       "location": "United States/Florida/Big Pine Key",
       "island": "united states/florida/big pine key",
-      "price": null,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "price": 400.0,
+      "priceLabel": "Student",
+      "priceConfidence": "high",
       "qualityScore": 0,
       "currency": "USD",
       "duration": "",
@@ -34299,7 +34625,11 @@
       "statusFirstSeen": null,
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
-      "_unknownFields": {},
+      "_unknownFields": {
+        "priceSource": "fh-price-preview-v2-2026-08-20",
+        "priceCustomerType": "Student",
+        "priceTierCount": 1
+      },
       "needsEnrichment": true,
       "nextAvailableDate": "2026-08-09",
       "nullConsecutiveSweeps": 0
@@ -34313,9 +34643,9 @@
       "category": "",
       "location": "United States/Florida/Big Pine Key",
       "island": "united states/florida/big pine key",
-      "price": null,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "price": 500.0,
+      "priceLabel": "Student",
+      "priceConfidence": "high",
       "qualityScore": 0,
       "currency": "USD",
       "duration": "",
@@ -34341,7 +34671,11 @@
       "statusFirstSeen": null,
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
-      "_unknownFields": {},
+      "_unknownFields": {
+        "priceSource": "fh-price-preview-v2-2026-08-20",
+        "priceCustomerType": "Student",
+        "priceTierCount": 1
+      },
       "needsEnrichment": true,
       "nextAvailableDate": "2026-08-09",
       "nullConsecutiveSweeps": 0
@@ -34355,9 +34689,9 @@
       "category": "",
       "location": "United States/Florida/Big Pine Key",
       "island": "united states/florida/big pine key",
-      "price": null,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "price": 1200.0,
+      "priceLabel": "Student",
+      "priceConfidence": "high",
       "qualityScore": 0,
       "currency": "USD",
       "duration": "",
@@ -34383,7 +34717,11 @@
       "statusFirstSeen": null,
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
-      "_unknownFields": {},
+      "_unknownFields": {
+        "priceSource": "fh-price-preview-v2-2026-08-20",
+        "priceCustomerType": "Student",
+        "priceTierCount": 1
+      },
       "needsEnrichment": true,
       "nextAvailableDate": "2026-08-09",
       "nullConsecutiveSweeps": 0
@@ -34397,9 +34735,9 @@
       "category": "",
       "location": "United States/Florida/Big Pine Key",
       "island": "united states/florida/big pine key",
-      "price": null,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "price": 450.0,
+      "priceLabel": "Student",
+      "priceConfidence": "high",
       "qualityScore": 0,
       "currency": "USD",
       "duration": "",
@@ -34425,7 +34763,11 @@
       "statusFirstSeen": null,
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
-      "_unknownFields": {},
+      "_unknownFields": {
+        "priceSource": "fh-price-preview-v2-2026-08-20",
+        "priceCustomerType": "Student",
+        "priceTierCount": 1
+      },
       "needsEnrichment": true,
       "nextAvailableDate": "2026-08-09",
       "nullConsecutiveSweeps": 0
@@ -34481,9 +34823,9 @@
       "category": "",
       "location": "United States/Florida/Big Pine Key",
       "island": "united states/florida/big pine key",
-      "price": null,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "price": 400.0,
+      "priceLabel": "Student",
+      "priceConfidence": "high",
       "qualityScore": 0,
       "currency": "USD",
       "duration": "",
@@ -34509,7 +34851,11 @@
       "statusFirstSeen": null,
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
-      "_unknownFields": {},
+      "_unknownFields": {
+        "priceSource": "fh-price-preview-v2-2026-08-20",
+        "priceCustomerType": "Student",
+        "priceTierCount": 1
+      },
       "needsEnrichment": true,
       "nextAvailableDate": "2026-08-09",
       "nullConsecutiveSweeps": 0
@@ -34523,9 +34869,9 @@
       "category": "",
       "location": "United States/Florida/Big Pine Key",
       "island": "united states/florida/big pine key",
-      "price": null,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "price": 450.0,
+      "priceLabel": "Student",
+      "priceConfidence": "high",
       "qualityScore": 0,
       "currency": "USD",
       "duration": "",
@@ -34551,7 +34897,11 @@
       "statusFirstSeen": null,
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
-      "_unknownFields": {},
+      "_unknownFields": {
+        "priceSource": "fh-price-preview-v2-2026-08-20",
+        "priceCustomerType": "Student",
+        "priceTierCount": 1
+      },
       "needsEnrichment": true,
       "nextAvailableDate": "2026-08-09",
       "nullConsecutiveSweeps": 0
@@ -34565,9 +34915,9 @@
       "category": "",
       "location": "United States/Florida/Big Pine Key",
       "island": "united states/florida/big pine key",
-      "price": null,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "price": 400.0,
+      "priceLabel": "Student",
+      "priceConfidence": "high",
       "qualityScore": 0,
       "currency": "USD",
       "duration": "",
@@ -34593,7 +34943,11 @@
       "statusFirstSeen": null,
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
-      "_unknownFields": {},
+      "_unknownFields": {
+        "priceSource": "fh-price-preview-v2-2026-08-20",
+        "priceCustomerType": "Student",
+        "priceTierCount": 1
+      },
       "needsEnrichment": true,
       "nextAvailableDate": "2026-08-09",
       "nullConsecutiveSweeps": 0
@@ -34607,9 +34961,9 @@
       "category": "",
       "location": "United States/Florida/Big Pine Key",
       "island": "united states/florida/big pine key",
-      "price": null,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "price": 450.0,
+      "priceLabel": "Student",
+      "priceConfidence": "high",
       "qualityScore": 0,
       "currency": "USD",
       "duration": "",
@@ -34635,7 +34989,11 @@
       "statusFirstSeen": null,
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
-      "_unknownFields": {},
+      "_unknownFields": {
+        "priceSource": "fh-price-preview-v2-2026-08-20",
+        "priceCustomerType": "Student",
+        "priceTierCount": 1
+      },
       "needsEnrichment": true,
       "nextAvailableDate": "2026-08-09",
       "nullConsecutiveSweeps": 0
@@ -34649,9 +35007,9 @@
       "category": "",
       "location": "United States/Florida/Big Pine Key",
       "island": "united states/florida/big pine key",
-      "price": null,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "price": 350.0,
+      "priceLabel": "Student",
+      "priceConfidence": "high",
       "qualityScore": 0,
       "currency": "USD",
       "duration": "",
@@ -34677,7 +35035,11 @@
       "statusFirstSeen": null,
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
-      "_unknownFields": {},
+      "_unknownFields": {
+        "priceSource": "fh-price-preview-v2-2026-08-20",
+        "priceCustomerType": "Student",
+        "priceTierCount": 1
+      },
       "needsEnrichment": true,
       "nextAvailableDate": "2026-08-09",
       "nullConsecutiveSweeps": 0
@@ -34691,9 +35053,9 @@
       "category": "",
       "location": "United States/Florida/Big Pine Key",
       "island": "united states/florida/big pine key",
-      "price": null,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "price": 800.0,
+      "priceLabel": "Student",
+      "priceConfidence": "high",
       "qualityScore": 0,
       "currency": "USD",
       "duration": "",
@@ -34719,7 +35081,11 @@
       "statusFirstSeen": null,
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
-      "_unknownFields": {},
+      "_unknownFields": {
+        "priceSource": "fh-price-preview-v2-2026-08-20",
+        "priceCustomerType": "Student",
+        "priceTierCount": 1
+      },
       "needsEnrichment": true,
       "nextAvailableDate": "2026-08-09",
       "nullConsecutiveSweeps": 0
@@ -34733,9 +35099,9 @@
       "category": "",
       "location": "United States/Florida/Big Pine Key",
       "island": "united states/florida/big pine key",
-      "price": null,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "price": 600.0,
+      "priceLabel": "Student",
+      "priceConfidence": "high",
       "qualityScore": 0,
       "currency": "USD",
       "duration": "",
@@ -34761,7 +35127,11 @@
       "statusFirstSeen": null,
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
-      "_unknownFields": {},
+      "_unknownFields": {
+        "priceSource": "fh-price-preview-v2-2026-08-20",
+        "priceCustomerType": "Student",
+        "priceTierCount": 1
+      },
       "needsEnrichment": true,
       "nextAvailableDate": "2026-08-09",
       "nullConsecutiveSweeps": 0
@@ -34775,9 +35145,9 @@
       "category": "",
       "location": "United States/Florida/Big Pine Key",
       "island": "united states/florida/big pine key",
-      "price": null,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "price": 550.0,
+      "priceLabel": "Student",
+      "priceConfidence": "high",
       "qualityScore": 0,
       "currency": "USD",
       "duration": "",
@@ -34803,7 +35173,11 @@
       "statusFirstSeen": null,
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
-      "_unknownFields": {},
+      "_unknownFields": {
+        "priceSource": "fh-price-preview-v2-2026-08-20",
+        "priceCustomerType": "Student",
+        "priceTierCount": 1
+      },
       "needsEnrichment": true,
       "nextAvailableDate": "2026-08-09",
       "nullConsecutiveSweeps": 0
@@ -34817,9 +35191,9 @@
       "category": "",
       "location": "United States/Florida/Big Pine Key",
       "island": "united states/florida/big pine key",
-      "price": null,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "price": 1500.0,
+      "priceLabel": "Student",
+      "priceConfidence": "high",
       "qualityScore": 0,
       "currency": "USD",
       "duration": "",
@@ -34845,7 +35219,11 @@
       "statusFirstSeen": null,
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
-      "_unknownFields": {},
+      "_unknownFields": {
+        "priceSource": "fh-price-preview-v2-2026-08-20",
+        "priceCustomerType": "Student",
+        "priceTierCount": 1
+      },
       "needsEnrichment": true,
       "nextAvailableDate": "2026-08-09",
       "nullConsecutiveSweeps": 0
@@ -34859,9 +35237,9 @@
       "category": "",
       "location": "United States/Florida/Big Pine Key",
       "island": "united states/florida/big pine key",
-      "price": null,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "price": 750.0,
+      "priceLabel": "Student",
+      "priceConfidence": "high",
       "qualityScore": 0,
       "currency": "USD",
       "duration": "",
@@ -34887,7 +35265,11 @@
       "statusFirstSeen": null,
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
-      "_unknownFields": {},
+      "_unknownFields": {
+        "priceSource": "fh-price-preview-v2-2026-08-20",
+        "priceCustomerType": "Student",
+        "priceTierCount": 1
+      },
       "needsEnrichment": true,
       "nextAvailableDate": "2026-08-09",
       "nullConsecutiveSweeps": 0
@@ -34901,9 +35283,9 @@
       "category": "",
       "location": "United States/Florida/Big Pine Key",
       "island": "united states/florida/big pine key",
-      "price": null,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "price": 1500.0,
+      "priceLabel": "Student",
+      "priceConfidence": "high",
       "qualityScore": 0,
       "currency": "USD",
       "duration": "",
@@ -34929,7 +35311,11 @@
       "statusFirstSeen": null,
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
-      "_unknownFields": {},
+      "_unknownFields": {
+        "priceSource": "fh-price-preview-v2-2026-08-20",
+        "priceCustomerType": "Student",
+        "priceTierCount": 1
+      },
       "needsEnrichment": true,
       "nextAvailableDate": "2026-08-09",
       "nullConsecutiveSweeps": 0
@@ -34943,9 +35329,9 @@
       "category": "",
       "location": "United States/Florida/Big Pine Key",
       "island": "united states/florida/big pine key",
-      "price": null,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "price": 1000.0,
+      "priceLabel": "Student",
+      "priceConfidence": "high",
       "qualityScore": 0,
       "currency": "USD",
       "duration": "",
@@ -34971,7 +35357,11 @@
       "statusFirstSeen": null,
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
-      "_unknownFields": {},
+      "_unknownFields": {
+        "priceSource": "fh-price-preview-v2-2026-08-20",
+        "priceCustomerType": "Student",
+        "priceTierCount": 1
+      },
       "needsEnrichment": true,
       "nextAvailableDate": "2026-08-09",
       "nullConsecutiveSweeps": 0
@@ -36158,9 +36548,9 @@
       "category": "",
       "location": "United States/Florida/Key West",
       "island": "united states/florida/key west",
-      "price": null,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "price": 2499.0,
+      "priceLabel": "Dry Tortugas",
+      "priceConfidence": "medium",
       "qualityScore": 0,
       "currency": "USD",
       "duration": "",
@@ -36191,7 +36581,11 @@
       "statusFirstSeen": null,
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
-      "_unknownFields": {},
+      "_unknownFields": {
+        "priceSource": "fh-price-preview-v2-2026-08-20",
+        "priceCustomerType": "Dry Tortugas",
+        "priceTierCount": 1
+      },
       "needsEnrichment": true,
       "nextAvailableDate": "2026-08-09",
       "nullConsecutiveSweeps": 0
@@ -36289,9 +36683,9 @@
       "category": "",
       "location": "United States/Florida/Key West",
       "island": "united states/florida/key west",
-      "price": null,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "price": 699.0,
+      "priceLabel": "Passenger",
+      "priceConfidence": "high",
       "qualityScore": 0,
       "currency": "USD",
       "duration": "",
@@ -36320,7 +36714,11 @@
       "statusFirstSeen": null,
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
-      "_unknownFields": {},
+      "_unknownFields": {
+        "priceSource": "fh-price-preview-v2-2026-08-20",
+        "priceCustomerType": "Passenger",
+        "priceTierCount": 1
+      },
       "needsEnrichment": true,
       "nextAvailableDate": "2026-08-10",
       "nullConsecutiveSweeps": 0
@@ -36334,9 +36732,9 @@
       "category": "",
       "location": "United States/Florida/Key West",
       "island": "united states/florida/key west",
-      "price": null,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "price": 249.99,
+      "priceLabel": "Passenger",
+      "priceConfidence": "high",
       "qualityScore": 0,
       "currency": "USD",
       "duration": "",
@@ -36367,7 +36765,11 @@
       "statusFirstSeen": null,
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
-      "_unknownFields": {},
+      "_unknownFields": {
+        "priceSource": "fh-price-preview-v2-2026-08-20",
+        "priceCustomerType": "Passenger",
+        "priceTierCount": 1
+      },
       "needsEnrichment": true,
       "nextAvailableDate": "2026-08-09",
       "nullConsecutiveSweeps": 0
@@ -37979,9 +38381,9 @@
       "category": "",
       "location": "United States/Florida/Key West",
       "island": "united states/florida/key west",
-      "price": null,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "price": 39.0,
+      "priceLabel": "General Admission",
+      "priceConfidence": "medium",
       "qualityScore": 90,
       "currency": "USD",
       "duration": "1440 minutes",
@@ -38016,7 +38418,10 @@
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
       "_unknownFields": {
-        "durationMinutes": 1440
+        "durationMinutes": 1440,
+        "priceSource": "fh-price-preview-v2-2026-08-20",
+        "priceCustomerType": "General Admission",
+        "priceTierCount": 3
       },
       "nextAvailableDate": "2026-08-08",
       "nullConsecutiveSweeps": 0
@@ -38030,9 +38435,9 @@
       "category": "",
       "location": "United States/Florida/Islamorada",
       "island": "united states/florida/islamorada",
-      "price": null,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "price": 200.0,
+      "priceLabel": "Two Hour Rental",
+      "priceConfidence": "medium",
       "qualityScore": 85,
       "currency": "USD",
       "duration": "240 minutes",
@@ -38061,7 +38466,10 @@
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
       "_unknownFields": {
-        "durationMinutes": 240
+        "durationMinutes": 240,
+        "priceSource": "fh-price-preview-v2-2026-08-20",
+        "priceCustomerType": "Two Hour Rental",
+        "priceTierCount": 9
       },
       "nextAvailableDate": "2026-08-08",
       "nullConsecutiveSweeps": 0
@@ -38075,9 +38483,9 @@
       "category": "",
       "location": "United States/Florida/Islamorada",
       "island": "united states/florida/islamorada",
-      "price": null,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "price": 200.0,
+      "priceLabel": "Two Hour Rental",
+      "priceConfidence": "medium",
       "qualityScore": 85,
       "currency": "USD",
       "duration": "240 minutes",
@@ -38106,7 +38514,10 @@
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
       "_unknownFields": {
-        "durationMinutes": 240
+        "durationMinutes": 240,
+        "priceSource": "fh-price-preview-v2-2026-08-20",
+        "priceCustomerType": "Two Hour Rental",
+        "priceTierCount": 9
       },
       "nextAvailableDate": "2026-08-08",
       "nullConsecutiveSweeps": 0
@@ -38120,9 +38531,9 @@
       "category": "",
       "location": "United States/Florida/Islamorada",
       "island": "united states/florida/islamorada",
-      "price": null,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "price": 250.0,
+      "priceLabel": "Two Hour Rental",
+      "priceConfidence": "medium",
       "qualityScore": 85,
       "currency": "USD",
       "duration": "240 minutes",
@@ -38151,7 +38562,10 @@
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
       "_unknownFields": {
-        "durationMinutes": 240
+        "durationMinutes": 240,
+        "priceSource": "fh-price-preview-v2-2026-08-20",
+        "priceCustomerType": "Two Hour Rental",
+        "priceTierCount": 9
       },
       "nextAvailableDate": "2026-08-08",
       "nullConsecutiveSweeps": 0
@@ -38165,9 +38579,9 @@
       "category": "",
       "location": "United States/Florida/Islamorada",
       "island": "united states/florida/islamorada",
-      "price": null,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "price": 250.0,
+      "priceLabel": "Two Hour Rental",
+      "priceConfidence": "medium",
       "qualityScore": 85,
       "currency": "USD",
       "duration": "240 minutes",
@@ -38196,7 +38610,10 @@
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
       "_unknownFields": {
-        "durationMinutes": 240
+        "durationMinutes": 240,
+        "priceSource": "fh-price-preview-v2-2026-08-20",
+        "priceCustomerType": "Two Hour Rental",
+        "priceTierCount": 9
       },
       "nextAvailableDate": "2026-08-08",
       "nullConsecutiveSweeps": 0
@@ -38210,9 +38627,9 @@
       "category": "",
       "location": "United States/Florida/Islamorada",
       "island": "united states/florida/islamorada",
-      "price": null,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "price": 270.0,
+      "priceLabel": "Two Hour Rental",
+      "priceConfidence": "medium",
       "qualityScore": 85,
       "currency": "USD",
       "duration": "240 minutes",
@@ -38241,7 +38658,10 @@
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
       "_unknownFields": {
-        "durationMinutes": 240
+        "durationMinutes": 240,
+        "priceSource": "fh-price-preview-v2-2026-08-20",
+        "priceCustomerType": "Two Hour Rental",
+        "priceTierCount": 9
       },
       "nextAvailableDate": "2026-08-08",
       "nullConsecutiveSweeps": 0
@@ -38255,9 +38675,9 @@
       "category": "",
       "location": "United States/Florida/Islamorada",
       "island": "united states/florida/islamorada",
-      "price": null,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "price": 200.0,
+      "priceLabel": "Two Hour Rental",
+      "priceConfidence": "medium",
       "qualityScore": 85,
       "currency": "USD",
       "duration": "240 minutes",
@@ -38286,7 +38706,10 @@
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
       "_unknownFields": {
-        "durationMinutes": 240
+        "durationMinutes": 240,
+        "priceSource": "fh-price-preview-v2-2026-08-20",
+        "priceCustomerType": "Two Hour Rental",
+        "priceTierCount": 9
       },
       "nextAvailableDate": "2026-08-08",
       "nullConsecutiveSweeps": 0
@@ -38300,9 +38723,9 @@
       "category": "",
       "location": "United States/Florida/Islamorada",
       "island": "united states/florida/islamorada",
-      "price": null,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "price": 420.0,
+      "priceLabel": "Two Hour Rental",
+      "priceConfidence": "medium",
       "qualityScore": 85,
       "currency": "USD",
       "duration": "240 minutes",
@@ -38331,7 +38754,10 @@
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
       "_unknownFields": {
-        "durationMinutes": 240
+        "durationMinutes": 240,
+        "priceSource": "fh-price-preview-v2-2026-08-20",
+        "priceCustomerType": "Two Hour Rental",
+        "priceTierCount": 9
       },
       "nextAvailableDate": "2026-08-08",
       "nullConsecutiveSweeps": 0
@@ -38345,9 +38771,9 @@
       "category": "",
       "location": "United States/Florida/Islamorada",
       "island": "united states/florida/islamorada",
-      "price": null,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "price": 420.0,
+      "priceLabel": "Two Hour Rental",
+      "priceConfidence": "medium",
       "qualityScore": 85,
       "currency": "USD",
       "duration": "240 minutes",
@@ -38376,7 +38802,10 @@
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
       "_unknownFields": {
-        "durationMinutes": 240
+        "durationMinutes": 240,
+        "priceSource": "fh-price-preview-v2-2026-08-20",
+        "priceCustomerType": "Two Hour Rental",
+        "priceTierCount": 9
       },
       "nextAvailableDate": "2026-08-08",
       "nullConsecutiveSweeps": 0
@@ -38390,9 +38819,9 @@
       "category": "",
       "location": "United States/Florida/Islamorada",
       "island": "united states/florida/islamorada",
-      "price": null,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "price": 200.0,
+      "priceLabel": "Two Hour Rental",
+      "priceConfidence": "medium",
       "qualityScore": 85,
       "currency": "USD",
       "duration": "240 minutes",
@@ -38421,7 +38850,10 @@
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
       "_unknownFields": {
-        "durationMinutes": 240
+        "durationMinutes": 240,
+        "priceSource": "fh-price-preview-v2-2026-08-20",
+        "priceCustomerType": "Two Hour Rental",
+        "priceTierCount": 9
       },
       "nextAvailableDate": "2026-08-08",
       "nullConsecutiveSweeps": 0
@@ -38435,9 +38867,9 @@
       "category": "",
       "location": "United States/Florida/Islamorada",
       "island": "united states/florida/islamorada",
-      "price": null,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "price": 200.0,
+      "priceLabel": "Two Hour Rental",
+      "priceConfidence": "medium",
       "qualityScore": 85,
       "currency": "USD",
       "duration": "240 minutes",
@@ -38466,7 +38898,10 @@
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
       "_unknownFields": {
-        "durationMinutes": 240
+        "durationMinutes": 240,
+        "priceSource": "fh-price-preview-v2-2026-08-20",
+        "priceCustomerType": "Two Hour Rental",
+        "priceTierCount": 9
       },
       "nextAvailableDate": "2026-08-08",
       "nullConsecutiveSweeps": 0
@@ -38480,9 +38915,9 @@
       "category": "",
       "location": "United States/Florida/Key West",
       "island": "united states/florida/key west",
-      "price": null,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "price": 68.0,
+      "priceLabel": "American Cruise Lines",
+      "priceConfidence": "medium",
       "qualityScore": 0,
       "currency": "USD",
       "duration": "",
@@ -38506,7 +38941,11 @@
       "statusFirstSeen": null,
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
-      "_unknownFields": {},
+      "_unknownFields": {
+        "priceSource": "fh-price-preview-v2-2026-08-20",
+        "priceCustomerType": "American Cruise Lines",
+        "priceTierCount": 1
+      },
       "needsEnrichment": true,
       "nextAvailableDate": "2026-10-30",
       "nullConsecutiveSweeps": 0
@@ -39477,9 +39916,9 @@
       "category": "",
       "location": "United States/Florida/Key West",
       "island": "united states/florida/key west",
-      "price": null,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "price": 72.0,
+      "priceLabel": "General Admission",
+      "priceConfidence": "high",
       "qualityScore": 90,
       "currency": "USD",
       "duration": "90 minutes",
@@ -39513,7 +39952,10 @@
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
       "_unknownFields": {
-        "durationMinutes": 90
+        "durationMinutes": 90,
+        "priceSource": "fh-price-preview-v2-2026-08-20",
+        "priceCustomerType": "General Admission",
+        "priceTierCount": 1
       },
       "nextAvailableDate": "2026-12-21",
       "nullConsecutiveSweeps": 0
@@ -41540,9 +41982,9 @@
       "category": "",
       "location": "United States/Florida/Key West",
       "island": "united states/florida/key west",
-      "price": null,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "price": 129.0,
+      "priceLabel": "Adult",
+      "priceConfidence": "medium",
       "qualityScore": 0,
       "currency": "USD",
       "duration": "",
@@ -41569,7 +42011,11 @@
       "statusFirstSeen": null,
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
-      "_unknownFields": {},
+      "_unknownFields": {
+        "priceSource": "fh-price-preview-v2-2026-08-20",
+        "priceCustomerType": "Adult",
+        "priceTierCount": 2
+      },
       "needsEnrichment": true,
       "nextAvailableDate": "2026-08-11",
       "nullConsecutiveSweeps": 0
@@ -42089,9 +42535,9 @@
       "category": "",
       "location": "United States/Florida/Key West",
       "island": "united states/florida/key west",
-      "price": null,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "price": 129.0,
+      "priceLabel": "Adult",
+      "priceConfidence": "high",
       "qualityScore": 0,
       "currency": "USD",
       "duration": "",
@@ -42117,7 +42563,11 @@
       "statusFirstSeen": null,
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
-      "_unknownFields": {},
+      "_unknownFields": {
+        "priceSource": "fh-price-preview-v2-2026-08-20",
+        "priceCustomerType": "Adult",
+        "priceTierCount": 1
+      },
       "needsEnrichment": true,
       "nextAvailableDate": "2026-09-04",
       "nullConsecutiveSweeps": 0
@@ -42262,9 +42712,9 @@
       "category": "",
       "location": "United States/Florida/Key West",
       "island": "united states/florida/key west",
-      "price": null,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "price": 90.1,
+      "priceLabel": "Provincetown Passenger",
+      "priceConfidence": "medium",
       "qualityScore": 0,
       "currency": "USD",
       "duration": "",
@@ -42295,7 +42745,11 @@
       "statusFirstSeen": null,
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
-      "_unknownFields": {},
+      "_unknownFields": {
+        "priceSource": "fh-price-preview-v2-2026-08-20",
+        "priceCustomerType": "Provincetown Passenger",
+        "priceTierCount": 1
+      },
       "needsEnrichment": true,
       "nextAvailableDate": "2026-08-08",
       "nullConsecutiveSweeps": 0
@@ -42404,9 +42858,9 @@
       "category": "",
       "location": "United States/Florida/Key West",
       "island": "united states/florida/key west",
-      "price": null,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "price": 90.1,
+      "priceLabel": "Provincetown Passenger",
+      "priceConfidence": "medium",
       "qualityScore": 0,
       "currency": "USD",
       "duration": "",
@@ -42437,7 +42891,11 @@
       "statusFirstSeen": null,
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
-      "_unknownFields": {},
+      "_unknownFields": {
+        "priceSource": "fh-price-preview-v2-2026-08-20",
+        "priceCustomerType": "Provincetown Passenger",
+        "priceTierCount": 1
+      },
       "needsEnrichment": true,
       "nextAvailableDate": "2026-08-09",
       "nullConsecutiveSweeps": 0
@@ -42498,9 +42956,9 @@
       "category": "",
       "location": "United States/Florida/Key West",
       "island": "united states/florida/key west",
-      "price": null,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "price": 111.3,
+      "priceLabel": "Provincetown Passenger",
+      "priceConfidence": "medium",
       "qualityScore": 0,
       "currency": "USD",
       "duration": "",
@@ -42526,7 +42984,11 @@
       "statusFirstSeen": null,
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
-      "_unknownFields": {},
+      "_unknownFields": {
+        "priceSource": "fh-price-preview-v2-2026-08-20",
+        "priceCustomerType": "Provincetown Passenger",
+        "priceTierCount": 1
+      },
       "needsEnrichment": true,
       "nextAvailableDate": "2026-09-03",
       "nullConsecutiveSweeps": 0
@@ -42629,9 +43091,9 @@
       "category": "",
       "location": "United States/Florida/Key West",
       "island": "united states/florida/key west",
-      "price": null,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "price": 90.1,
+      "priceLabel": "Provincetown Passenger",
+      "priceConfidence": "medium",
       "qualityScore": 0,
       "currency": "USD",
       "duration": "",
@@ -42657,7 +43119,11 @@
       "statusFirstSeen": null,
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
-      "_unknownFields": {},
+      "_unknownFields": {
+        "priceSource": "fh-price-preview-v2-2026-08-20",
+        "priceCustomerType": "Provincetown Passenger",
+        "priceTierCount": 1
+      },
       "needsEnrichment": true,
       "nextAvailableDate": "2026-08-28",
       "nullConsecutiveSweeps": 0
@@ -42671,9 +43137,9 @@
       "category": "",
       "location": "United States/Florida/Key West",
       "island": "united states/florida/key west",
-      "price": null,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "price": 212.0,
+      "priceLabel": "Provincetown Passenger",
+      "priceConfidence": "medium",
       "qualityScore": 0,
       "currency": "USD",
       "duration": "",
@@ -42703,7 +43169,11 @@
       "statusFirstSeen": null,
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
-      "_unknownFields": {},
+      "_unknownFields": {
+        "priceSource": "fh-price-preview-v2-2026-08-20",
+        "priceCustomerType": "Provincetown Passenger",
+        "priceTierCount": 1
+      },
       "needsEnrichment": true,
       "nextAvailableDate": "2026-09-22",
       "nullConsecutiveSweeps": 0
@@ -42717,9 +43187,9 @@
       "category": "",
       "location": "United States/Florida/Key West",
       "island": "united states/florida/key west",
-      "price": null,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "price": 90.1,
+      "priceLabel": "Provincetown Passenger",
+      "priceConfidence": "medium",
       "qualityScore": 0,
       "currency": "USD",
       "duration": "",
@@ -42745,7 +43215,11 @@
       "statusFirstSeen": null,
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
-      "_unknownFields": {},
+      "_unknownFields": {
+        "priceSource": "fh-price-preview-v2-2026-08-20",
+        "priceCustomerType": "Provincetown Passenger",
+        "priceTierCount": 1
+      },
       "needsEnrichment": true,
       "nextAvailableDate": "2026-09-26",
       "nullConsecutiveSweeps": 0
@@ -43027,9 +43501,9 @@
       "category": "",
       "location": "United States/Florida/Key West",
       "island": "united states/florida/key west",
-      "price": null,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "price": 775.0,
+      "priceLabel": "Five Hour Sandbar",
+      "priceConfidence": "medium",
       "qualityScore": 0,
       "currency": "USD",
       "duration": "",
@@ -43057,7 +43531,11 @@
       "statusFirstSeen": null,
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
-      "_unknownFields": {},
+      "_unknownFields": {
+        "priceSource": "fh-price-preview-v2-2026-08-20",
+        "priceCustomerType": "Five Hour Sandbar",
+        "priceTierCount": 1
+      },
       "needsEnrichment": true,
       "nextAvailableDate": "2026-08-08",
       "nullConsecutiveSweeps": 0
@@ -43163,9 +43641,9 @@
       "category": "",
       "location": "United States/Florida/Key West",
       "island": "united states/florida/key west",
-      "price": null,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "price": 699.0,
+      "priceLabel": "Sandbar And Grill",
+      "priceConfidence": "medium",
       "qualityScore": 0,
       "currency": "USD",
       "duration": "",
@@ -43194,7 +43672,11 @@
       "statusFirstSeen": null,
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
-      "_unknownFields": {},
+      "_unknownFields": {
+        "priceSource": "fh-price-preview-v2-2026-08-20",
+        "priceCustomerType": "Sandbar And Grill",
+        "priceTierCount": 1
+      },
       "needsEnrichment": true,
       "nextAvailableDate": "2026-08-11",
       "nullConsecutiveSweeps": 0
@@ -43253,9 +43735,9 @@
       "category": "",
       "location": "United States/Florida/Key West",
       "island": "united states/florida/key west",
-      "price": null,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "price": 425.0,
+      "priceLabel": "Sandbar Express",
+      "priceConfidence": "medium",
       "qualityScore": 0,
       "currency": "USD",
       "duration": "",
@@ -43283,7 +43765,11 @@
       "statusFirstSeen": null,
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
-      "_unknownFields": {},
+      "_unknownFields": {
+        "priceSource": "fh-price-preview-v2-2026-08-20",
+        "priceCustomerType": "Sandbar Express",
+        "priceTierCount": 1
+      },
       "needsEnrichment": true,
       "nextAvailableDate": "2026-08-08",
       "nullConsecutiveSweeps": 0
@@ -45533,9 +46019,9 @@
       "category": "",
       "location": "United States/Florida/Marathon",
       "island": "united states/florida/marathon",
-      "price": null,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "price": 55.0,
+      "priceLabel": "Adult",
+      "priceConfidence": "medium",
       "qualityScore": 0,
       "currency": "USD",
       "duration": "",
@@ -45561,7 +46047,11 @@
       "statusFirstSeen": null,
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
-      "_unknownFields": {},
+      "_unknownFields": {
+        "priceSource": "fh-price-preview-v2-2026-08-20",
+        "priceCustomerType": "Adult",
+        "priceTierCount": 2
+      },
       "needsEnrichment": true,
       "nextAvailableDate": "2026-08-08",
       "nullConsecutiveSweeps": 0
@@ -45622,9 +46112,9 @@
       "category": "",
       "location": "United States/Florida/Marathon",
       "island": "united states/florida/marathon",
-      "price": null,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "price": 130.0,
+      "priceLabel": "Adult",
+      "priceConfidence": "medium",
       "qualityScore": 0,
       "currency": "USD",
       "duration": "",
@@ -45652,7 +46142,11 @@
       "statusFirstSeen": null,
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
-      "_unknownFields": {},
+      "_unknownFields": {
+        "priceSource": "fh-price-preview-v2-2026-08-20",
+        "priceCustomerType": "Adult",
+        "priceTierCount": 2
+      },
       "needsEnrichment": true,
       "nextAvailableDate": "2026-08-09",
       "nullConsecutiveSweeps": 0
@@ -45666,9 +46160,9 @@
       "category": "",
       "location": "United States/Florida/Marathon",
       "island": "united states/florida/marathon",
-      "price": null,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "price": 80.0,
+      "priceLabel": "Adult",
+      "priceConfidence": "medium",
       "qualityScore": 0,
       "currency": "USD",
       "duration": "",
@@ -45700,7 +46194,11 @@
       "statusFirstSeen": null,
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
-      "_unknownFields": {},
+      "_unknownFields": {
+        "priceSource": "fh-price-preview-v2-2026-08-20",
+        "priceCustomerType": "Adult",
+        "priceTierCount": 2
+      },
       "needsEnrichment": true,
       "nextAvailableDate": "2026-08-08",
       "nullConsecutiveSweeps": 0
@@ -45762,9 +46260,9 @@
       "category": "",
       "location": "United States/Florida/Marathon",
       "island": "united states/florida/marathon",
-      "price": null,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "price": 30.0,
+      "priceLabel": "Kayak 2 hours or less",
+      "priceConfidence": "medium",
       "qualityScore": 0,
       "currency": "USD",
       "duration": "",
@@ -45793,7 +46291,11 @@
       "statusFirstSeen": null,
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
-      "_unknownFields": {},
+      "_unknownFields": {
+        "priceSource": "fh-price-preview-v2-2026-08-20",
+        "priceCustomerType": "Kayak 2 hours or less",
+        "priceTierCount": 2
+      },
       "needsEnrichment": true,
       "nextAvailableDate": "2026-08-08",
       "nullConsecutiveSweeps": 0
@@ -45807,9 +46309,9 @@
       "category": "",
       "location": "United States/Florida/Marathon",
       "island": "united states/florida/marathon",
-      "price": null,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "price": 20.0,
+      "priceLabel": "Paddle Board up to 2 hours",
+      "priceConfidence": "medium",
       "qualityScore": 0,
       "currency": "USD",
       "duration": "",
@@ -45838,7 +46340,11 @@
       "statusFirstSeen": null,
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
-      "_unknownFields": {},
+      "_unknownFields": {
+        "priceSource": "fh-price-preview-v2-2026-08-20",
+        "priceCustomerType": "Paddle Board up to 2 hours",
+        "priceTierCount": 2
+      },
       "needsEnrichment": true,
       "nextAvailableDate": "2026-08-08",
       "nullConsecutiveSweeps": 0
@@ -46313,9 +46819,9 @@
       "category": "",
       "location": "United States/Florida/Islamorada",
       "island": "united states/florida/islamorada",
-      "price": null,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "price": 165.36,
+      "priceLabel": "Per Person Scuba Diving Include 2-Tanks and Weights",
+      "priceConfidence": "medium",
       "qualityScore": 0,
       "currency": "USD",
       "duration": "",
@@ -46351,7 +46857,11 @@
       "statusFirstSeen": null,
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
-      "_unknownFields": {},
+      "_unknownFields": {
+        "priceSource": "fh-price-preview-v2-2026-08-20",
+        "priceCustomerType": "Per Person Scuba Diving Include 2-Tanks and Weights",
+        "priceTierCount": 1
+      },
       "needsEnrichment": true,
       "nextAvailableDate": "2026-08-09",
       "nullConsecutiveSweeps": 0
@@ -46407,9 +46917,9 @@
       "category": "",
       "location": "United States/Florida/Islamorada",
       "island": "united states/florida/islamorada",
-      "price": null,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "price": 991.06,
+      "priceLabel": "Any Persons",
+      "priceConfidence": "medium",
       "qualityScore": 0,
       "currency": "USD",
       "duration": "",
@@ -46435,7 +46945,11 @@
       "statusFirstSeen": null,
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
-      "_unknownFields": {},
+      "_unknownFields": {
+        "priceSource": "fh-price-preview-v2-2026-08-20",
+        "priceCustomerType": "Any Persons",
+        "priceTierCount": 1
+      },
       "needsEnrichment": true,
       "nextAvailableDate": "2026-08-09",
       "nullConsecutiveSweeps": 0
@@ -46449,9 +46963,9 @@
       "category": "",
       "location": "United States/Florida/Islamorada",
       "island": "united states/florida/islamorada",
-      "price": null,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "price": 275.6,
+      "priceLabel": "Any Persons",
+      "priceConfidence": "medium",
       "qualityScore": 0,
       "currency": "USD",
       "duration": "",
@@ -46477,7 +46991,11 @@
       "statusFirstSeen": null,
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
-      "_unknownFields": {},
+      "_unknownFields": {
+        "priceSource": "fh-price-preview-v2-2026-08-20",
+        "priceCustomerType": "Any Persons",
+        "priceTierCount": 1
+      },
       "needsEnrichment": true,
       "nextAvailableDate": "2026-08-09",
       "nullConsecutiveSweeps": 0
@@ -46491,9 +47009,9 @@
       "category": "",
       "location": "United States/Florida/Islamorada",
       "island": "united states/florida/islamorada",
-      "price": null,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "price": 329.62,
+      "priceLabel": "Any Persons",
+      "priceConfidence": "medium",
       "qualityScore": 0,
       "currency": "USD",
       "duration": "",
@@ -46520,7 +47038,11 @@
       "statusFirstSeen": null,
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
-      "_unknownFields": {},
+      "_unknownFields": {
+        "priceSource": "fh-price-preview-v2-2026-08-20",
+        "priceCustomerType": "Any Persons",
+        "priceTierCount": 1
+      },
       "needsEnrichment": true,
       "nextAvailableDate": "2026-08-09",
       "nullConsecutiveSweeps": 0
@@ -47545,9 +48067,9 @@
       "category": "",
       "location": "United States/Florida/Key West",
       "island": "united states/florida/key west",
-      "price": null,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "price": 189.0,
+      "priceLabel": "Driver",
+      "priceConfidence": "medium",
       "qualityScore": 0,
       "currency": "USD",
       "duration": "",
@@ -47577,7 +48099,11 @@
       "statusFirstSeen": null,
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
-      "_unknownFields": {},
+      "_unknownFields": {
+        "priceSource": "fh-price-preview-v2-2026-08-20",
+        "priceCustomerType": "Driver",
+        "priceTierCount": 1
+      },
       "needsEnrichment": true,
       "nextAvailableDate": "2026-08-08",
       "nullConsecutiveSweeps": 0
@@ -48683,9 +49209,9 @@
       "category": "",
       "location": "United States/Florida/Key West",
       "island": "united states/florida/key west",
-      "price": null,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "price": 120.0,
+      "priceLabel": "Adult Snuba Divers",
+      "priceConfidence": "medium",
       "qualityScore": 0,
       "currency": "USD",
       "duration": "",
@@ -48711,7 +49237,11 @@
       "statusFirstSeen": null,
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
-      "_unknownFields": {},
+      "_unknownFields": {
+        "priceSource": "fh-price-preview-v2-2026-08-20",
+        "priceCustomerType": "Adult Snuba Divers",
+        "priceTierCount": 4
+      },
       "needsEnrichment": true,
       "nextAvailableDate": "2026-08-08",
       "nullConsecutiveSweeps": 0
@@ -48725,9 +49255,9 @@
       "category": "",
       "location": "United States/Florida/Key West",
       "island": "united states/florida/key west",
-      "price": null,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "price": 100.0,
+      "priceLabel": "Craft Cocktails, Craft Beer & Wine Option",
+      "priceConfidence": "medium",
       "qualityScore": 0,
       "currency": "USD",
       "duration": "",
@@ -48753,7 +49283,11 @@
       "statusFirstSeen": null,
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
-      "_unknownFields": {},
+      "_unknownFields": {
+        "priceSource": "fh-price-preview-v2-2026-08-20",
+        "priceCustomerType": "Craft Cocktails, Craft Beer & Wine Option",
+        "priceTierCount": 1
+      },
       "needsEnrichment": true,
       "nextAvailableDate": "2026-10-19",
       "nullConsecutiveSweeps": 0
@@ -49119,9 +49653,9 @@
       "category": "",
       "location": "United States/Florida/Key West",
       "island": "united states/florida/key west",
-      "price": null,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "price": 40.0,
+      "priceLabel": "Half-Day Rental",
+      "priceConfidence": "medium",
       "qualityScore": 0,
       "currency": "USD",
       "duration": "",
@@ -49148,7 +49682,11 @@
       "statusFirstSeen": null,
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
-      "_unknownFields": {},
+      "_unknownFields": {
+        "priceSource": "fh-price-preview-v2-2026-08-20",
+        "priceCustomerType": "Half-Day Rental",
+        "priceTierCount": 8
+      },
       "needsEnrichment": true,
       "nextAvailableDate": "2026-08-08",
       "nullConsecutiveSweeps": 0
@@ -49308,9 +49846,9 @@
       "category": "",
       "location": "United States/Florida/Key West",
       "island": "united states/florida/key west",
-      "price": null,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "price": 55.0,
+      "priceLabel": "Half-Day Rental",
+      "priceConfidence": "medium",
       "qualityScore": 0,
       "currency": "USD",
       "duration": "",
@@ -49339,7 +49877,11 @@
       "statusFirstSeen": null,
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
-      "_unknownFields": {},
+      "_unknownFields": {
+        "priceSource": "fh-price-preview-v2-2026-08-20",
+        "priceCustomerType": "Half-Day Rental",
+        "priceTierCount": 8
+      },
       "needsEnrichment": true,
       "nextAvailableDate": "2026-08-08",
       "nullConsecutiveSweeps": 0
@@ -49353,9 +49895,9 @@
       "category": "",
       "location": "United States/Florida/Key West",
       "island": "united states/florida/key west",
-      "price": null,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "price": 20.0,
+      "priceLabel": "Half-Day Rental",
+      "priceConfidence": "medium",
       "qualityScore": 0,
       "currency": "USD",
       "duration": "",
@@ -49381,7 +49923,11 @@
       "statusFirstSeen": null,
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
-      "_unknownFields": {},
+      "_unknownFields": {
+        "priceSource": "fh-price-preview-v2-2026-08-20",
+        "priceCustomerType": "Half-Day Rental",
+        "priceTierCount": 8
+      },
       "needsEnrichment": true,
       "nextAvailableDate": "2026-08-08",
       "nullConsecutiveSweeps": 0
@@ -50064,9 +50610,9 @@
       "category": "",
       "location": "United States/Florida/Key West",
       "island": "united states/florida/key west",
-      "price": null,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "price": 549.0,
+      "priceLabel": "Open Water (e-learning NOT included)",
+      "priceConfidence": "medium",
       "qualityScore": 85,
       "currency": "USD",
       "duration": "4320 minutes",
@@ -50099,7 +50645,10 @@
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
       "_unknownFields": {
-        "durationMinutes": 4320
+        "durationMinutes": 4320,
+        "priceSource": "fh-price-preview-v2-2026-08-20",
+        "priceCustomerType": "Open Water (e-learning NOT included)",
+        "priceTierCount": 1
       },
       "nextAvailableDate": "2026-08-10",
       "nullConsecutiveSweeps": 0
@@ -50685,9 +51234,9 @@
       "category": "",
       "location": "United States/Florida/Key Largo",
       "island": "united states/florida/key largo",
-      "price": null,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "price": 425.0,
+      "priceLabel": "Diver",
+      "priceConfidence": "high",
       "qualityScore": 0,
       "currency": "USD",
       "duration": "",
@@ -50713,7 +51262,11 @@
       "statusFirstSeen": null,
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
-      "_unknownFields": {},
+      "_unknownFields": {
+        "priceSource": "fh-price-preview-v2-2026-08-20",
+        "priceCustomerType": "Diver",
+        "priceTierCount": 1
+      },
       "needsEnrichment": true,
       "nextAvailableDate": "2026-08-14",
       "nullConsecutiveSweeps": 0
@@ -50727,9 +51280,9 @@
       "category": "",
       "location": "United States/Florida/Key Largo",
       "island": "united states/florida/key largo",
-      "price": null,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "price": 485.0,
+      "priceLabel": "Diver",
+      "priceConfidence": "high",
       "qualityScore": 0,
       "currency": "USD",
       "duration": "",
@@ -50755,7 +51308,11 @@
       "statusFirstSeen": null,
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
-      "_unknownFields": {},
+      "_unknownFields": {
+        "priceSource": "fh-price-preview-v2-2026-08-20",
+        "priceCustomerType": "Diver",
+        "priceTierCount": 1
+      },
       "needsEnrichment": true,
       "nextAvailableDate": "2026-12-11",
       "nullConsecutiveSweeps": 0
@@ -50769,9 +51326,9 @@
       "category": "",
       "location": "United States/Florida/Key Largo",
       "island": "united states/florida/key largo",
-      "price": null,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "price": 185.0,
+      "priceLabel": "Diver",
+      "priceConfidence": "medium",
       "qualityScore": 0,
       "currency": "USD",
       "duration": "",
@@ -50797,7 +51354,11 @@
       "statusFirstSeen": null,
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
-      "_unknownFields": {},
+      "_unknownFields": {
+        "priceSource": "fh-price-preview-v2-2026-08-20",
+        "priceCustomerType": "Diver",
+        "priceTierCount": 7
+      },
       "needsEnrichment": true,
       "nextAvailableDate": "2026-08-09",
       "nullConsecutiveSweeps": 0
@@ -50811,9 +51372,9 @@
       "category": "",
       "location": "United States/Florida/Key Largo",
       "island": "united states/florida/key largo",
-      "price": null,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "price": 165.0,
+      "priceLabel": "Diver",
+      "priceConfidence": "medium",
       "qualityScore": 0,
       "currency": "USD",
       "duration": "",
@@ -50839,7 +51400,11 @@
       "statusFirstSeen": null,
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
-      "_unknownFields": {},
+      "_unknownFields": {
+        "priceSource": "fh-price-preview-v2-2026-08-20",
+        "priceCustomerType": "Diver",
+        "priceTierCount": 6
+      },
       "needsEnrichment": true,
       "nextAvailableDate": "2026-08-09",
       "nullConsecutiveSweeps": 0
@@ -50940,9 +51505,9 @@
       "category": "",
       "location": "United States/Florida/Key Largo",
       "island": "united states/florida/key largo",
-      "price": null,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "price": 200.0,
+      "priceLabel": "Diver",
+      "priceConfidence": "high",
       "qualityScore": 0,
       "currency": "USD",
       "duration": "",
@@ -50968,7 +51533,11 @@
       "statusFirstSeen": null,
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
-      "_unknownFields": {},
+      "_unknownFields": {
+        "priceSource": "fh-price-preview-v2-2026-08-20",
+        "priceCustomerType": "Diver",
+        "priceTierCount": 1
+      },
       "needsEnrichment": true,
       "nextAvailableDate": "2026-08-09",
       "nullConsecutiveSweeps": 0
@@ -50982,9 +51551,9 @@
       "category": "",
       "location": "United States/Florida/Islamorada",
       "island": "united states/florida/islamorada",
-      "price": null,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "price": 55.0,
+      "priceLabel": "Rider",
+      "priceConfidence": "medium",
       "qualityScore": 0,
       "currency": "USD",
       "duration": "",
@@ -51011,7 +51580,11 @@
       "statusFirstSeen": null,
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
-      "_unknownFields": {},
+      "_unknownFields": {
+        "priceSource": "fh-price-preview-v2-2026-08-20",
+        "priceCustomerType": "Rider",
+        "priceTierCount": 3
+      },
       "needsEnrichment": true,
       "nextAvailableDate": "2026-08-09",
       "nullConsecutiveSweeps": 0
@@ -51025,9 +51598,9 @@
       "category": "",
       "location": "United States/Florida/Islamorada",
       "island": "united states/florida/islamorada",
-      "price": null,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "price": 49.0,
+      "priceLabel": "Adult",
+      "priceConfidence": "medium",
       "qualityScore": 0,
       "currency": "USD",
       "duration": "",
@@ -51055,7 +51628,11 @@
       "statusFirstSeen": null,
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
-      "_unknownFields": {},
+      "_unknownFields": {
+        "priceSource": "fh-price-preview-v2-2026-08-20",
+        "priceCustomerType": "Adult",
+        "priceTierCount": 2
+      },
       "needsEnrichment": true,
       "nextAvailableDate": "2026-08-08",
       "nullConsecutiveSweeps": 0
@@ -51069,9 +51646,9 @@
       "category": "",
       "location": "United States/Florida/Islamorada",
       "island": "united states/florida/islamorada",
-      "price": null,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "price": 155.0,
+      "priceLabel": "SNUBA",
+      "priceConfidence": "medium",
       "qualityScore": 0,
       "currency": "USD",
       "duration": "",
@@ -51097,7 +51674,11 @@
       "statusFirstSeen": null,
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
-      "_unknownFields": {},
+      "_unknownFields": {
+        "priceSource": "fh-price-preview-v2-2026-08-20",
+        "priceCustomerType": "SNUBA",
+        "priceTierCount": 1
+      },
       "needsEnrichment": true,
       "nextAvailableDate": "2026-08-09",
       "nullConsecutiveSweeps": 0
@@ -51376,9 +51957,9 @@
       "category": "",
       "location": "United States/Florida/Key West",
       "island": "united states/florida/key west",
-      "price": null,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "price": 117.18,
+      "priceLabel": "Adult",
+      "priceConfidence": "medium",
       "qualityScore": 0,
       "currency": "USD",
       "duration": "",
@@ -51411,7 +51992,11 @@
       "statusFirstSeen": null,
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
-      "_unknownFields": {},
+      "_unknownFields": {
+        "priceSource": "fh-price-preview-v2-2026-08-20",
+        "priceCustomerType": "Adult",
+        "priceTierCount": 2
+      },
       "needsEnrichment": true,
       "nextAvailableDate": "2027-01-01",
       "nullConsecutiveSweeps": 0
@@ -51478,9 +52063,9 @@
       "category": "",
       "location": "United States/Florida/Stock Island",
       "island": "united states/florida/stock island",
-      "price": null,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "price": 84.92,
+      "priceLabel": "Adult",
+      "priceConfidence": "medium",
       "qualityScore": 0,
       "currency": "USD",
       "duration": "",
@@ -51510,7 +52095,11 @@
       "statusFirstSeen": null,
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
-      "_unknownFields": {},
+      "_unknownFields": {
+        "priceSource": "fh-price-preview-v2-2026-08-20",
+        "priceCustomerType": "Adult",
+        "priceTierCount": 3
+      },
       "needsEnrichment": true,
       "nextAvailableDate": "2027-01-01",
       "nullConsecutiveSweeps": 0
@@ -52195,9 +52784,9 @@
       "category": "",
       "location": "United States/Florida/Key West",
       "island": "united states/florida/key west",
-      "price": null,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "price": 69.95,
+      "priceLabel": "Adult",
+      "priceConfidence": "medium",
       "qualityScore": 0,
       "currency": "USD",
       "duration": "",
@@ -52228,7 +52817,11 @@
       "statusFirstSeen": null,
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
-      "_unknownFields": {},
+      "_unknownFields": {
+        "priceSource": "fh-price-preview-v2-2026-08-20",
+        "priceCustomerType": "Adult",
+        "priceTierCount": 2
+      },
       "needsEnrichment": true,
       "nextAvailableDate": "2026-12-29",
       "nullConsecutiveSweeps": 0
@@ -52385,9 +52978,9 @@
       "category": "",
       "location": "United States/Florida/Key West",
       "island": "united states/florida/key west",
-      "price": null,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "price": 134.95,
+      "priceLabel": "Adult",
+      "priceConfidence": "medium",
       "qualityScore": 0,
       "currency": "USD",
       "duration": "",
@@ -52418,7 +53011,11 @@
       "statusFirstSeen": null,
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
-      "_unknownFields": {},
+      "_unknownFields": {
+        "priceSource": "fh-price-preview-v2-2026-08-20",
+        "priceCustomerType": "Adult",
+        "priceTierCount": 2
+      },
       "needsEnrichment": true,
       "nextAvailableDate": "2026-08-09",
       "nullConsecutiveSweeps": 0
@@ -52483,9 +53080,9 @@
       "category": "",
       "location": "United States/Florida/Key West",
       "island": "united states/florida/key west",
-      "price": null,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "price": 129.95,
+      "priceLabel": "Adult",
+      "priceConfidence": "medium",
       "qualityScore": 0,
       "currency": "USD",
       "duration": "",
@@ -52515,7 +53112,11 @@
       "statusFirstSeen": null,
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
-      "_unknownFields": {},
+      "_unknownFields": {
+        "priceSource": "fh-price-preview-v2-2026-08-20",
+        "priceCustomerType": "Adult",
+        "priceTierCount": 2
+      },
       "needsEnrichment": true,
       "nextAvailableDate": "2026-08-08",
       "nullConsecutiveSweeps": 0
@@ -53207,9 +53808,9 @@
       "category": "",
       "location": "United States/Florida/Key West",
       "island": "united states/florida/key west",
-      "price": null,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "price": 179.99,
+      "priceLabel": "Jetski Tour - Driver",
+      "priceConfidence": "medium",
       "qualityScore": 0,
       "currency": "USD",
       "duration": "",
@@ -53236,7 +53837,11 @@
       "statusFirstSeen": null,
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
-      "_unknownFields": {},
+      "_unknownFields": {
+        "priceSource": "fh-price-preview-v2-2026-08-20",
+        "priceCustomerType": "Jetski Tour - Driver",
+        "priceTierCount": 2
+      },
       "needsEnrichment": true,
       "nextAvailableDate": "2026-08-08",
       "nullConsecutiveSweeps": 0
@@ -53782,9 +54387,9 @@
       "category": "",
       "location": "United States/Florida/Key West",
       "island": "united states/florida/key west",
-      "price": null,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "price": 100.0,
+      "priceLabel": "3 Hour Rental",
+      "priceConfidence": "medium",
       "qualityScore": 75,
       "currency": "USD",
       "duration": null,
@@ -53817,7 +54422,12 @@
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 1
+      "nullConsecutiveSweeps": 1,
+      "_unknownFields": {
+        "priceSource": "fh-price-preview-v2-2026-08-20",
+        "priceCustomerType": "3 Hour Rental",
+        "priceTierCount": 10
+      }
     },
     {
       "id": "547619",
@@ -53828,9 +54438,9 @@
       "category": "",
       "location": "United States/Florida/Key West",
       "island": "united states/florida/key west",
-      "price": null,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "price": 180.0,
+      "priceLabel": "3 Hour Rental",
+      "priceConfidence": "medium",
       "qualityScore": 80,
       "currency": "USD",
       "duration": null,
@@ -53861,7 +54471,12 @@
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 1
+      "nullConsecutiveSweeps": 1,
+      "_unknownFields": {
+        "priceSource": "fh-price-preview-v2-2026-08-20",
+        "priceCustomerType": "3 Hour Rental",
+        "priceTierCount": 10
+      }
     },
     {
       "id": "705752",
@@ -53872,9 +54487,9 @@
       "category": "",
       "location": "United States/Florida/Key West",
       "island": "united states/florida/key west",
-      "price": null,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "price": 52.46,
+      "priceLabel": "Adult",
+      "priceConfidence": "medium",
       "qualityScore": 0,
       "currency": "USD",
       "duration": "",
@@ -53900,7 +54515,11 @@
       "statusFirstSeen": null,
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
-      "_unknownFields": {},
+      "_unknownFields": {
+        "priceSource": "fh-price-preview-v2-2026-08-20",
+        "priceCustomerType": "Adult",
+        "priceTierCount": 2
+      },
       "needsEnrichment": true,
       "nextAvailableDate": "2026-08-08",
       "nullConsecutiveSweeps": 0
@@ -53914,9 +54533,9 @@
       "category": "",
       "location": "United States/Florida/Key West",
       "island": "united states/florida/key west",
-      "price": null,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "price": 67.46,
+      "priceLabel": "Adult",
+      "priceConfidence": "medium",
       "qualityScore": 0,
       "currency": "USD",
       "duration": "",
@@ -53942,7 +54561,11 @@
       "statusFirstSeen": null,
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
-      "_unknownFields": {},
+      "_unknownFields": {
+        "priceSource": "fh-price-preview-v2-2026-08-20",
+        "priceCustomerType": "Adult",
+        "priceTierCount": 2
+      },
       "needsEnrichment": true,
       "nextAvailableDate": "2026-08-08",
       "nullConsecutiveSweeps": 0
@@ -53956,9 +54579,9 @@
       "category": "",
       "location": "United States/Florida/Key West",
       "island": "united states/florida/key west",
-      "price": null,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "price": 44.96,
+      "priceLabel": "Adult",
+      "priceConfidence": "medium",
       "qualityScore": 0,
       "currency": "USD",
       "duration": "",
@@ -53984,7 +54607,11 @@
       "statusFirstSeen": null,
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
-      "_unknownFields": {},
+      "_unknownFields": {
+        "priceSource": "fh-price-preview-v2-2026-08-20",
+        "priceCustomerType": "Adult",
+        "priceTierCount": 2
+      },
       "needsEnrichment": true,
       "nextAvailableDate": "2026-08-08",
       "nullConsecutiveSweeps": 0
@@ -54125,9 +54752,9 @@
       "category": "",
       "location": "United States/Florida/Key West",
       "island": "united states/florida/key west",
-      "price": null,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "price": 20.0,
+      "priceLabel": "Lily Pad Hourly Rental",
+      "priceConfidence": "medium",
       "qualityScore": 0,
       "currency": "USD",
       "duration": "",
@@ -54157,7 +54784,11 @@
       "statusFirstSeen": null,
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
-      "_unknownFields": {},
+      "_unknownFields": {
+        "priceSource": "fh-price-preview-v2-2026-08-20",
+        "priceCustomerType": "Lily Pad Hourly Rental",
+        "priceTierCount": 6
+      },
       "needsEnrichment": true,
       "nextAvailableDate": "2026-08-08",
       "nullConsecutiveSweeps": 0
@@ -54213,9 +54844,9 @@
       "category": "",
       "location": "United States/Florida/Key West",
       "island": "united states/florida/key west",
-      "price": null,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "price": 30.0,
+      "priceLabel": "1 Hour Rental",
+      "priceConfidence": "medium",
       "qualityScore": 0,
       "currency": "USD",
       "duration": "",
@@ -54239,7 +54870,11 @@
       "statusFirstSeen": null,
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
-      "_unknownFields": {},
+      "_unknownFields": {
+        "priceSource": "fh-price-preview-v2-2026-08-20",
+        "priceCustomerType": "1 Hour Rental",
+        "priceTierCount": 8
+      },
       "needsEnrichment": true,
       "nextAvailableDate": "2026-08-08",
       "nullConsecutiveSweeps": 0
@@ -54253,9 +54888,9 @@
       "category": "",
       "location": "United States/Florida/Key West",
       "island": "united states/florida/key west",
-      "price": null,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "price": 30.0,
+      "priceLabel": "1 Hour Rental",
+      "priceConfidence": "medium",
       "qualityScore": 0,
       "currency": "USD",
       "duration": "",
@@ -54279,7 +54914,11 @@
       "statusFirstSeen": null,
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
-      "_unknownFields": {},
+      "_unknownFields": {
+        "priceSource": "fh-price-preview-v2-2026-08-20",
+        "priceCustomerType": "1 Hour Rental",
+        "priceTierCount": 8
+      },
       "needsEnrichment": true,
       "nextAvailableDate": "2026-08-08",
       "nullConsecutiveSweeps": 0
@@ -54293,9 +54932,9 @@
       "category": "",
       "location": "United States/Florida/Tavernier",
       "island": "united states/florida/tavernier",
-      "price": null,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "price": 5995.0,
+      "priceLabel": "Three Day",
+      "priceConfidence": "medium",
       "qualityScore": 75,
       "currency": "USD",
       "duration": null,
@@ -54324,7 +54963,12 @@
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
       "nextAvailableDate": "2026-09-07",
-      "nullConsecutiveSweeps": 0
+      "nullConsecutiveSweeps": 0,
+      "_unknownFields": {
+        "priceSource": "fh-price-preview-v2-2026-08-20",
+        "priceCustomerType": "Three Day",
+        "priceTierCount": 1
+      }
     },
     {
       "id": "640652",
@@ -54469,9 +55113,9 @@
       "category": "",
       "location": "United States/Florida/Tavernier",
       "island": "united states/florida/tavernier",
-      "price": null,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "price": 5995.0,
+      "priceLabel": "Person",
+      "priceConfidence": "high",
       "qualityScore": 75,
       "currency": "USD",
       "duration": null,
@@ -54500,7 +55144,12 @@
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
       "nextAvailableDate": "2026-09-07",
-      "nullConsecutiveSweeps": 0
+      "nullConsecutiveSweeps": 0,
+      "_unknownFields": {
+        "priceSource": "fh-price-preview-v2-2026-08-20",
+        "priceCustomerType": "Person",
+        "priceTierCount": 1
+      }
     },
     {
       "id": "640672",
@@ -54553,9 +55202,9 @@
       "category": "",
       "location": "United States/Florida/Tavernier",
       "island": "united states/florida/tavernier",
-      "price": null,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "price": 5995.0,
+      "priceLabel": "Five Day",
+      "priceConfidence": "medium",
       "qualityScore": 75,
       "currency": "USD",
       "duration": null,
@@ -54584,7 +55233,12 @@
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
       "nextAvailableDate": "2026-09-07",
-      "nullConsecutiveSweeps": 0
+      "nullConsecutiveSweeps": 0,
+      "_unknownFields": {
+        "priceSource": "fh-price-preview-v2-2026-08-20",
+        "priceCustomerType": "Five Day",
+        "priceTierCount": 1
+      }
     },
     {
       "id": "643073",
@@ -55154,9 +55808,9 @@
       "category": "",
       "location": "United States/Florida/Key West",
       "island": "united states/florida/key west",
-      "price": null,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "price": 65.0,
+      "priceLabel": "Adult",
+      "priceConfidence": "medium",
       "qualityScore": 0,
       "currency": "USD",
       "duration": "",
@@ -55187,7 +55841,11 @@
       "statusFirstSeen": null,
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
-      "_unknownFields": {},
+      "_unknownFields": {
+        "priceSource": "fh-price-preview-v2-2026-08-20",
+        "priceCustomerType": "Adult",
+        "priceTierCount": 3
+      },
       "needsEnrichment": true,
       "nextAvailableDate": "2026-08-09",
       "nullConsecutiveSweeps": 0
@@ -55671,9 +56329,9 @@
       "category": "",
       "location": "United States/Florida/Key West",
       "island": "united states/florida/key west",
-      "price": null,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "price": 550.0,
+      "priceLabel": "Half-Day Rental",
+      "priceConfidence": "medium",
       "qualityScore": 0,
       "currency": "USD",
       "duration": "",
@@ -55703,7 +56361,11 @@
       "statusFirstSeen": null,
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
-      "_unknownFields": {},
+      "_unknownFields": {
+        "priceSource": "fh-price-preview-v2-2026-08-20",
+        "priceCustomerType": "Half-Day Rental",
+        "priceTierCount": 8
+      },
       "needsEnrichment": true,
       "nextAvailableDate": null,
       "nullConsecutiveSweeps": 1
@@ -55717,9 +56379,9 @@
       "category": "",
       "location": "United States/Florida/Key West",
       "island": "united states/florida/key west",
-      "price": null,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "price": 700.0,
+      "priceLabel": "Half-Day Rental",
+      "priceConfidence": "medium",
       "qualityScore": 0,
       "currency": "USD",
       "duration": "",
@@ -55745,7 +56407,11 @@
       "statusFirstSeen": null,
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
-      "_unknownFields": {},
+      "_unknownFields": {
+        "priceSource": "fh-price-preview-v2-2026-08-20",
+        "priceCustomerType": "Half-Day Rental",
+        "priceTierCount": 13
+      },
       "needsEnrichment": true,
       "nextAvailableDate": "2026-08-09",
       "nullConsecutiveSweeps": 0
@@ -55848,9 +56514,9 @@
       "category": "",
       "location": "United States/Florida/Stock Island",
       "island": "united states/florida/stock island",
-      "price": null,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "price": 2250.0,
+      "priceLabel": "Three-Day Rental",
+      "priceConfidence": "medium",
       "qualityScore": 75,
       "currency": "USD",
       "duration": null,
@@ -55879,7 +56545,12 @@
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
       "nextAvailableDate": "2026-08-09",
-      "nullConsecutiveSweeps": 0
+      "nullConsecutiveSweeps": 0,
+      "_unknownFields": {
+        "priceSource": "fh-price-preview-v2-2026-08-20",
+        "priceCustomerType": "Three-Day Rental",
+        "priceTierCount": 8
+      }
     },
     {
       "id": "522394",
@@ -56785,9 +57456,9 @@
       "category": "",
       "location": "United States/Florida/Key West",
       "island": "united states/florida/key west",
-      "price": null,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "price": 150.0,
+      "priceLabel": "Half Day Rental",
+      "priceConfidence": "medium",
       "qualityScore": 0,
       "currency": "USD",
       "duration": "",
@@ -56814,7 +57485,11 @@
       "statusFirstSeen": null,
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
-      "_unknownFields": {},
+      "_unknownFields": {
+        "priceSource": "fh-price-preview-v2-2026-08-20",
+        "priceCustomerType": "Half Day Rental",
+        "priceTierCount": 8
+      },
       "needsEnrichment": true,
       "nextAvailableDate": "2026-08-08",
       "nullConsecutiveSweeps": 0
@@ -56960,9 +57635,9 @@
       "category": "",
       "location": "United States/Florida/Stock Island",
       "island": "united states/florida/stock island",
-      "price": null,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "price": 299.0,
+      "priceLabel": "Person",
+      "priceConfidence": "high",
       "qualityScore": 85,
       "currency": "USD",
       "duration": "120 minutes",
@@ -56991,7 +57666,10 @@
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
       "_unknownFields": {
-        "durationMinutes": 120
+        "durationMinutes": 120,
+        "priceSource": "fh-price-preview-v2-2026-08-20",
+        "priceCustomerType": "Person",
+        "priceTierCount": 1
       },
       "nextAvailableDate": "2026-08-08",
       "nullConsecutiveSweeps": 0
@@ -57005,9 +57683,9 @@
       "category": "",
       "location": "United States/Florida/Stock Island",
       "island": "united states/florida/stock island",
-      "price": null,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "price": 399.0,
+      "priceLabel": "Person",
+      "priceConfidence": "high",
       "qualityScore": 85,
       "currency": "USD",
       "duration": "240 minutes",
@@ -57036,7 +57714,10 @@
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
       "_unknownFields": {
-        "durationMinutes": 240
+        "durationMinutes": 240,
+        "priceSource": "fh-price-preview-v2-2026-08-20",
+        "priceCustomerType": "Person",
+        "priceTierCount": 1
       },
       "nextAvailableDate": "2026-08-08",
       "nullConsecutiveSweeps": 0
@@ -57050,9 +57731,9 @@
       "category": "",
       "location": "United States/Florida/Stock Island",
       "island": "united states/florida/stock island",
-      "price": null,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "price": 499.0,
+      "priceLabel": "Person",
+      "priceConfidence": "high",
       "qualityScore": 85,
       "currency": "USD",
       "duration": "360 minutes",
@@ -57081,7 +57762,10 @@
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
       "_unknownFields": {
-        "durationMinutes": 360
+        "durationMinutes": 360,
+        "priceSource": "fh-price-preview-v2-2026-08-20",
+        "priceCustomerType": "Person",
+        "priceTierCount": 1
       },
       "nextAvailableDate": "2026-08-09",
       "nullConsecutiveSweeps": 0
@@ -57095,9 +57779,9 @@
       "category": "",
       "location": "United States/Florida/Stock Island",
       "island": "united states/florida/stock island",
-      "price": null,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "price": 449.0,
+      "priceLabel": "Person",
+      "priceConfidence": "high",
       "qualityScore": 85,
       "currency": "USD",
       "duration": "240 minutes",
@@ -57126,7 +57810,10 @@
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
       "_unknownFields": {
-        "durationMinutes": 240
+        "durationMinutes": 240,
+        "priceSource": "fh-price-preview-v2-2026-08-20",
+        "priceCustomerType": "Person",
+        "priceTierCount": 1
       },
       "nextAvailableDate": "2026-08-08",
       "nullConsecutiveSweeps": 0
@@ -57140,9 +57827,9 @@
       "category": "",
       "location": "United States/Florida/Stock Island",
       "island": "united states/florida/stock island",
-      "price": null,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "price": 699.0,
+      "priceLabel": "Person",
+      "priceConfidence": "high",
       "qualityScore": 85,
       "currency": "USD",
       "duration": "240 minutes",
@@ -57171,7 +57858,10 @@
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
       "_unknownFields": {
-        "durationMinutes": 240
+        "durationMinutes": 240,
+        "priceSource": "fh-price-preview-v2-2026-08-20",
+        "priceCustomerType": "Person",
+        "priceTierCount": 1
       },
       "nextAvailableDate": "2026-08-08",
       "nullConsecutiveSweeps": 0
@@ -57185,9 +57875,9 @@
       "category": "",
       "location": "United States/Florida/Stock Island",
       "island": "united states/florida/stock island",
-      "price": null,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "price": 299.0,
+      "priceLabel": "Person",
+      "priceConfidence": "high",
       "qualityScore": 85,
       "currency": "USD",
       "duration": "120 minutes",
@@ -57216,7 +57906,10 @@
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
       "_unknownFields": {
-        "durationMinutes": 120
+        "durationMinutes": 120,
+        "priceSource": "fh-price-preview-v2-2026-08-20",
+        "priceCustomerType": "Person",
+        "priceTierCount": 1
       },
       "nextAvailableDate": "2026-08-08",
       "nullConsecutiveSweeps": 0
@@ -57230,9 +57923,9 @@
       "category": "",
       "location": "United States/Florida/Stock Island",
       "island": "united states/florida/stock island",
-      "price": null,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "price": 299.0,
+      "priceLabel": "Person",
+      "priceConfidence": "high",
       "qualityScore": 85,
       "currency": "USD",
       "duration": "120 minutes",
@@ -57261,7 +57954,10 @@
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
       "_unknownFields": {
-        "durationMinutes": 120
+        "durationMinutes": 120,
+        "priceSource": "fh-price-preview-v2-2026-08-20",
+        "priceCustomerType": "Person",
+        "priceTierCount": 1
       },
       "nextAvailableDate": "2026-08-08",
       "nullConsecutiveSweeps": 0
@@ -57275,9 +57971,9 @@
       "category": "",
       "location": "United States/Florida/Stock Island",
       "island": "united states/florida/stock island",
-      "price": null,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "price": 199.0,
+      "priceLabel": "Person",
+      "priceConfidence": "high",
       "qualityScore": 85,
       "currency": "USD",
       "duration": "120 minutes",
@@ -57306,7 +58002,10 @@
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
       "_unknownFields": {
-        "durationMinutes": 120
+        "durationMinutes": 120,
+        "priceSource": "fh-price-preview-v2-2026-08-20",
+        "priceCustomerType": "Person",
+        "priceTierCount": 1
       },
       "nextAvailableDate": "2026-08-08",
       "nullConsecutiveSweeps": 0
@@ -57320,9 +58019,9 @@
       "category": "",
       "location": "United States/Florida/Stock Island",
       "island": "united states/florida/stock island",
-      "price": null,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "price": 249.0,
+      "priceLabel": "Person",
+      "priceConfidence": "high",
       "qualityScore": 85,
       "currency": "USD",
       "duration": "240 minutes",
@@ -57351,7 +58050,10 @@
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
       "_unknownFields": {
-        "durationMinutes": 240
+        "durationMinutes": 240,
+        "priceSource": "fh-price-preview-v2-2026-08-20",
+        "priceCustomerType": "Person",
+        "priceTierCount": 1
       },
       "nextAvailableDate": "2026-08-08",
       "nullConsecutiveSweeps": 0
@@ -57365,9 +58067,9 @@
       "category": "",
       "location": "United States/Florida/Stock Island",
       "island": "united states/florida/stock island",
-      "price": null,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "price": 349.0,
+      "priceLabel": "Person",
+      "priceConfidence": "high",
       "qualityScore": 85,
       "currency": "USD",
       "duration": "360 minutes",
@@ -57396,7 +58098,10 @@
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
       "_unknownFields": {
-        "durationMinutes": 360
+        "durationMinutes": 360,
+        "priceSource": "fh-price-preview-v2-2026-08-20",
+        "priceCustomerType": "Person",
+        "priceTierCount": 1
       },
       "nextAvailableDate": "2026-08-09",
       "nullConsecutiveSweeps": 0
@@ -57410,9 +58115,9 @@
       "category": "",
       "location": "United States/Florida/Stock Island",
       "island": "united states/florida/stock island",
-      "price": null,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "price": 299.0,
+      "priceLabel": "Person",
+      "priceConfidence": "high",
       "qualityScore": 85,
       "currency": "USD",
       "duration": "240 minutes",
@@ -57441,7 +58146,10 @@
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
       "_unknownFields": {
-        "durationMinutes": 240
+        "durationMinutes": 240,
+        "priceSource": "fh-price-preview-v2-2026-08-20",
+        "priceCustomerType": "Person",
+        "priceTierCount": 1
       },
       "nextAvailableDate": "2026-08-08",
       "nullConsecutiveSweeps": 0
@@ -57455,9 +58163,9 @@
       "category": "",
       "location": "United States/Florida/Stock Island",
       "island": "united states/florida/stock island",
-      "price": null,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "price": 499.0,
+      "priceLabel": "Person",
+      "priceConfidence": "high",
       "qualityScore": 85,
       "currency": "USD",
       "duration": "240 minutes",
@@ -57486,7 +58194,10 @@
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
       "_unknownFields": {
-        "durationMinutes": 240
+        "durationMinutes": 240,
+        "priceSource": "fh-price-preview-v2-2026-08-20",
+        "priceCustomerType": "Person",
+        "priceTierCount": 1
       },
       "nextAvailableDate": "2026-08-08",
       "nullConsecutiveSweeps": 0
@@ -57500,9 +58211,9 @@
       "category": "",
       "location": "United States/Florida/Stock Island",
       "island": "united states/florida/stock island",
-      "price": null,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "price": 199.0,
+      "priceLabel": "Person",
+      "priceConfidence": "high",
       "qualityScore": 85,
       "currency": "USD",
       "duration": "120 minutes",
@@ -57531,7 +58242,10 @@
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
       "_unknownFields": {
-        "durationMinutes": 120
+        "durationMinutes": 120,
+        "priceSource": "fh-price-preview-v2-2026-08-20",
+        "priceCustomerType": "Person",
+        "priceTierCount": 1
       },
       "nextAvailableDate": "2026-08-08",
       "nullConsecutiveSweeps": 0
@@ -57545,9 +58259,9 @@
       "category": "",
       "location": "United States/Florida/Stock Island",
       "island": "united states/florida/stock island",
-      "price": null,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "price": 199.0,
+      "priceLabel": "Person",
+      "priceConfidence": "high",
       "qualityScore": 85,
       "currency": "USD",
       "duration": "120 minutes",
@@ -57576,7 +58290,10 @@
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
       "_unknownFields": {
-        "durationMinutes": 120
+        "durationMinutes": 120,
+        "priceSource": "fh-price-preview-v2-2026-08-20",
+        "priceCustomerType": "Person",
+        "priceTierCount": 1
       },
       "nextAvailableDate": "2026-08-08",
       "nullConsecutiveSweeps": 0
@@ -57999,9 +58716,9 @@
       "category": "",
       "location": "United States/Florida/Little Torch Key",
       "island": "united states/florida/little torch key",
-      "price": null,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "price": 1100.0,
+      "priceLabel": "3/4 Day Session",
+      "priceConfidence": "medium",
       "qualityScore": 85,
       "currency": "USD",
       "duration": "360 minutes",
@@ -58033,7 +58750,10 @@
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
       "_unknownFields": {
-        "durationMinutes": 360
+        "durationMinutes": 360,
+        "priceSource": "fh-price-preview-v2-2026-08-20",
+        "priceCustomerType": "3/4 Day Session",
+        "priceTierCount": 1
       },
       "nextAvailableDate": "2026-08-19",
       "nullConsecutiveSweeps": 0
@@ -58047,9 +58767,9 @@
       "category": "",
       "location": "United States/Florida/Little Torch Key",
       "island": "united states/florida/little torch key",
-      "price": null,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "price": 1249.0,
+      "priceLabel": "Full Day Sandbar",
+      "priceConfidence": "medium",
       "qualityScore": 85,
       "currency": "USD",
       "duration": "480 minutes",
@@ -58081,7 +58801,10 @@
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
       "_unknownFields": {
-        "durationMinutes": 480
+        "durationMinutes": 480,
+        "priceSource": "fh-price-preview-v2-2026-08-20",
+        "priceCustomerType": "Full Day Sandbar",
+        "priceTierCount": 1
       },
       "nextAvailableDate": "2026-08-10",
       "nullConsecutiveSweeps": 0
@@ -58237,9 +58960,9 @@
       "category": "",
       "location": "United States/Florida/Little Torch Key",
       "island": "united states/florida/little torch key",
-      "price": null,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "price": 699.0,
+      "priceLabel": "Excursion",
+      "priceConfidence": "medium",
       "qualityScore": 0,
       "currency": "USD",
       "duration": "",
@@ -58268,7 +58991,11 @@
       "statusFirstSeen": null,
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
-      "_unknownFields": {},
+      "_unknownFields": {
+        "priceSource": "fh-price-preview-v2-2026-08-20",
+        "priceCustomerType": "Excursion",
+        "priceTierCount": 1
+      },
       "needsEnrichment": true,
       "nextAvailableDate": "2026-08-17",
       "nullConsecutiveSweeps": 0
@@ -58282,9 +59009,9 @@
       "category": "",
       "location": "United States/Florida/Little Torch Key",
       "island": "united states/florida/little torch key",
-      "price": null,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "price": 849.0,
+      "priceLabel": "Excursion",
+      "priceConfidence": "medium",
       "qualityScore": 0,
       "currency": "USD",
       "duration": "",
@@ -58312,7 +59039,11 @@
       "statusFirstSeen": null,
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
-      "_unknownFields": {},
+      "_unknownFields": {
+        "priceSource": "fh-price-preview-v2-2026-08-20",
+        "priceCustomerType": "Excursion",
+        "priceTierCount": 1
+      },
       "needsEnrichment": true,
       "nextAvailableDate": "2026-08-19",
       "nullConsecutiveSweeps": 0
@@ -58374,9 +59105,9 @@
       "category": "",
       "location": "United States/Florida/Little Torch Key",
       "island": "united states/florida/little torch key",
-      "price": null,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "price": 949.0,
+      "priceLabel": "Excursion",
+      "priceConfidence": "medium",
       "qualityScore": 0,
       "currency": "USD",
       "duration": "",
@@ -58407,7 +59138,11 @@
       "statusFirstSeen": null,
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
-      "_unknownFields": {},
+      "_unknownFields": {
+        "priceSource": "fh-price-preview-v2-2026-08-20",
+        "priceCustomerType": "Excursion",
+        "priceTierCount": 1
+      },
       "needsEnrichment": true,
       "nextAvailableDate": "2026-08-19",
       "nullConsecutiveSweeps": 0
@@ -58756,9 +59491,9 @@
       "category": "",
       "location": "United States/Florida/Marathon",
       "island": "united states/florida/marathon",
-      "price": null,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "price": 85.0,
+      "priceLabel": "Person",
+      "priceConfidence": "high",
       "qualityScore": 0,
       "currency": "USD",
       "duration": "",
@@ -58788,7 +59523,11 @@
       "statusFirstSeen": null,
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
-      "_unknownFields": {},
+      "_unknownFields": {
+        "priceSource": "fh-price-preview-v2-2026-08-20",
+        "priceCustomerType": "Person",
+        "priceTierCount": 1
+      },
       "needsEnrichment": true,
       "nextAvailableDate": "2026-08-12",
       "nullConsecutiveSweeps": 0
@@ -59182,9 +59921,9 @@
       "category": "",
       "location": "United States/Florida/Key Largo",
       "island": "united states/florida/key largo",
-      "price": null,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "price": 40.0,
+      "priceLabel": "One Hour Rental",
+      "priceConfidence": "medium",
       "qualityScore": 90,
       "currency": "USD",
       "duration": "1440 minutes",
@@ -59213,7 +59952,10 @@
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
       "_unknownFields": {
-        "durationMinutes": 1440
+        "durationMinutes": 1440,
+        "priceSource": "fh-price-preview-v2-2026-08-20",
+        "priceCustomerType": "One Hour Rental",
+        "priceTierCount": 3
       },
       "nextAvailableDate": "2026-08-09",
       "nullConsecutiveSweeps": 0
@@ -60210,9 +60952,9 @@
       "category": "",
       "location": "United States/Florida/Key West",
       "island": "united states/florida/key west",
-      "price": null,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "price": 159.0,
+      "priceLabel": "Grimal Grove Adult",
+      "priceConfidence": "medium",
       "qualityScore": 85,
       "currency": "USD",
       "duration": "240 minutes",
@@ -60248,7 +60990,10 @@
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
       "_unknownFields": {
-        "durationMinutes": 240
+        "durationMinutes": 240,
+        "priceSource": "fh-price-preview-v2-2026-08-20",
+        "priceCustomerType": "Grimal Grove Adult",
+        "priceTierCount": 1
       },
       "nextAvailableDate": "2026-08-09",
       "nullConsecutiveSweeps": 0
@@ -61076,9 +61821,9 @@
       "category": "",
       "location": "United States/Florida/Marathon",
       "island": "united states/florida/marathon",
-      "price": null,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "price": 2500.0,
+      "priceLabel": "22' Pontoon Rental",
+      "priceConfidence": "high",
       "qualityScore": 75,
       "currency": "USD",
       "duration": null,
@@ -61107,7 +61852,12 @@
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
       "nextAvailableDate": "2026-08-09",
-      "nullConsecutiveSweeps": 0
+      "nullConsecutiveSweeps": 0,
+      "_unknownFields": {
+        "priceSource": "fh-price-preview-v2-2026-08-20",
+        "priceCustomerType": "22' Pontoon Rental",
+        "priceTierCount": 1
+      }
     },
     {
       "id": "672083",
@@ -61118,9 +61868,9 @@
       "category": "",
       "location": "United States/Florida/Duck Key",
       "island": "united states/florida/duck key",
-      "price": null,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "price": 2500.0,
+      "priceLabel": "22' Pontoon Rental",
+      "priceConfidence": "high",
       "qualityScore": 75,
       "currency": "USD",
       "duration": null,
@@ -61151,7 +61901,12 @@
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
       "nextAvailableDate": "2026-08-09",
-      "nullConsecutiveSweeps": 0
+      "nullConsecutiveSweeps": 0,
+      "_unknownFields": {
+        "priceSource": "fh-price-preview-v2-2026-08-20",
+        "priceCustomerType": "22' Pontoon Rental",
+        "priceTierCount": 1
+      }
     },
     {
       "id": "672019",
@@ -64821,9 +65576,9 @@
       "category": "",
       "location": "United States/Florida/Key West",
       "island": "united states/florida/key west",
-      "price": null,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "price": 7.5,
+      "priceLabel": "General Admission",
+      "priceConfidence": "medium",
       "qualityScore": 75,
       "currency": "USD",
       "duration": null,
@@ -64850,7 +65605,12 @@
       "statusConsecutiveRuns": null,
       "lastUpdated": "",
       "nextAvailableDate": "2027-01-02",
-      "nullConsecutiveSweeps": 0
+      "nullConsecutiveSweeps": 0,
+      "_unknownFields": {
+        "priceSource": "fh-price-preview-v2-2026-08-20",
+        "priceCustomerType": "General Admission",
+        "priceTierCount": 2
+      }
     },
     {
       "id": "116393",
