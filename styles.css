@@ -1890,5 +1890,7 @@ div.pro-tips { background: linear-gradient(135deg, #1B3A57, #287E86); }
    end of the gradient (2.59-2.77:1). Scoped to .blog-content because the 7 standalone
    .cta-box are white-backgrounded and already pass at 17.06 -- a bare .cta-box rule
    would repaint them into failures. (0,2,0) beats the page-level .cta-box at (0,1,0).
-   Same darkened stop as div.pro-tips, keeping one teal token site-wide. */
-.blog-content .cta-box { background: linear-gradient(135deg, #1B3A57, #287E86); }
+   Stop solved for this element's rgba(255,255,255,0.9): that alpha costs contrast, so
+   #287E86 (the div.pro-tips token) gives only 4.66:1 here. #25747A gives 5.24:1.
+   div.pro-tips keeps #287E86 -- two teals, chosen for the margin. */
+.blog-content .cta-box { background: linear-gradient(135deg, #1B3A57, #25747A); }
