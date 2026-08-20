@@ -117,6 +117,26 @@ function formatPrice(price, confidence) {
     return `From $${price}`;
 }
 
+// Is this row's price good enough to put in front of a visitor?
+//
+// Measured 2026-08-20 on the rendered DOM: 728 of the 1,279 active rows (56.9%)
+// fail this test, so the shuffled 24-card grid was spending an average of 13.83
+// of its 24 slots on cards reading "Price on request" (12 homepage loads, min 11,
+// max 18) against 2.50 slots in the $40-197 band that has produced every booking
+// this network has made.
+//
+// Deliberately mirrors formatPrice() above — anything that renders as
+// "Price on request" must not be drawn — plus a $1 floor. Two rows publish a
+// literal $1 placeholder and render "From $1": pk 455365 (Hound Dawg Charters)
+// and pk 544282 (Sunset Watersports). Excluded by the rule, not by pk, so a
+// third $1 row lands on the same side of it. The rule catches exactly those two
+// today; no active row sits at 0 or between 1 and 10.
+function hasUsablePrice(tour) {
+    if (!Number.isFinite(tour.price) || tour.price <= 1) return false;
+    if (tour.priceConfidence === 'low') return false;
+    return true;
+}
+
 // Clean location display
 function cleanLocation(location = '') {
     return location
@@ -386,7 +406,12 @@ async function init() {
         allTours = Array.isArray(_raw) ? _raw : _raw.tours;
         // Hide tours with a dead FareHarbor booking link (audit 2026-05-28).
         allTours = allTours.filter(t => t.status !== 'inactive' && !t.bookingDead);
+        // Counts the live catalogue, NOT the draw pool — this call stays above the
+        // price filter on purpose so the stat keeps meaning "tours we carry".
         updateVerifiedToursCount(allTours.length);
+
+        // Only priced inventory is eligible for the draw (see hasUsablePrice).
+        allTours = allTours.filter(hasUsablePrice);
 
         // Shuffle initially for variety (per page load)
         allTours = shuffleArray(allTours);
@@ -424,6 +449,13 @@ async function initAreaPage(areaSlug) {
         const _raw = await response.json();
         allTours = Array.isArray(_raw) ? _raw : _raw.tours;
         allTours = allTours.filter(t => t.status !== 'inactive' && !t.bookingDead);
+
+        // Only priced inventory is eligible for the draw (see hasUsablePrice).
+        // islamorada is left with 23 eligible rows against TOURS_PER_PAGE = 24 and
+        // renders 23 cards. Accepted: that page was showing an expected 18.1 cards
+        // reading "Price on request" out of 24, so it trades one slot for 17.1
+        // usable ones. Do not special-case it.
+        allTours = allTours.filter(hasUsablePrice);
 
         // Filter to this area only
         allTours = allTours.filter(tour => getArea(tour.location) === areaSlug);
