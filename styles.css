@@ -1,5 +1,7 @@
 /* Key West Sandbar Tours - Mobile-First Styles */
-/* Colors: Sand #FDF8F0, Navy #1B3A57, Coral #E87B4A, Teal #3BB8C3 */
+/* Colors: Sand #FDF8F0, Navy #1B3A57, Coral #E87B4A, Teal #3BB8C3
+   Text on Coral: #0D1B2A (6.10:1). White is 2.85:1 and fails AA; navy
+   #1B3A57 is the intuitive pick and also fails at 4.11:1. Set 2026-08-21. */
 
 * {
     margin: 0;
@@ -986,6 +988,42 @@ main.blog-content p a, div.blog-content p a {
    the badge has no image wrapper to anchor into and lands on the h3 title instead --
    this rule is scoped to that shape only and cannot reach the .tour-image shape. */
 .tour-card-blog .tour-price { position: static; }
+
+/* ---------------------------------------------------------------------------
+   TEXT ON BRAND CORAL — WCAG AA
+   Measured 2026-08-21 from rendered pixels across all 119 pages: 812 elements
+   paint text on brand coral and every one failed. White is 2.85:1, #333 is
+   4.43:1, navy #1B3A57 is 4.11:1. #0D1B2A is 6.10:1 on coral, 16.45:1 on sand.
+   Brand coral is UNCHANGED — this fixes the text, not the colour.
+
+   Every selector doubles its class rather than adding a tag qualifier. The
+   doubled class buys one specificity level without asserting anything about the
+   element's tag, and a first pass that guessed tags missed 47 elements because
+   .btn-primary is also a <button> and .tour-card-blog links sit deeper than the
+   guessed shape. The binding contender is `.tour-card-blog .tour-price` at
+   (0,2,0) in a page-local <style> block, which wins on specificity AND source
+   order, so beating it needs (0,3,0) from here. No escalation flags.
+   --------------------------------------------------------------------------- */
+.tour-card-blog.tour-card-blog .tour-price,   /* (0,3,0) over .tour-card-blog .tour-price (0,2,0) inline */
+.tour-card-blog.tour-card-blog a,             /* (0,2,1) over .tour-card-blog a (0,1,1) inline */
+.tour-price.tour-price,                       /* (0,2,0) over .tour-price (0,1,0) this file */
+.blog-card-tag.blog-card-tag,                 /* (0,2,0) over .blog-card-tag (0,1,0) inline */
+.cta-section.cta-section a,                   /* (0,2,1) over .cta-section a (0,1,1) inline */
+.btn-primary.btn-primary,                     /* (0,2,0) over .page-content a (0,1,1) this file */
+.cta-box.cta-box a,                           /* (0,2,1) over .cta-box a (0,1,1) inline */
+.blog-cta.blog-cta a,                         /* (0,2,1) over .blog-cta a (0,1,1) inline */
+.faq-cta.faq-cta a,                           /* (0,2,1) over .faq-cta a (0,1,1) inline */
+.subscribe-form.subscribe-form button,        /* (0,2,1) over .subscribe-form button (0,1,1) inline */
+.hero-search.hero-search button,              /* (0,2,1) over .hero-search button (0,1,1) this file */
+.guide-form.guide-form button,                /* (0,2,1) over .guide-form button (0,1,1) this file */
+.load-more.load-more,                         /* (0,2,0) over .load-more (0,1,0) this file */
+.hero-cta.hero-cta,                           /* (0,2,0) over .hero-cta (0,1,0) inline */
+.offer-cta.offer-cta,                         /* (0,2,0) over .offer-cta (0,1,0) inline */
+.hero-badge.hero-badge,                       /* (0,2,0) over .hero-badge (0,1,0) inline */
+.final-cta-btn.final-cta-btn,                 /* (0,2,0) over .final-cta-btn (0,1,0) inline */
+.cta.cta {                                    /* (0,2,0) over .cta (0,1,0) inline */
+    color: #0D1B2A;
+}
 
 /* Unit qualifier inside the JS-rendered price badge. Emitted only when the row
    carries _unknownFields.priceUnit. Verified across all 119 pages: 0 elements
