@@ -154,6 +154,46 @@ function cleanLocation(location = '') {
         .trim() || 'Key West';
 }
 
+// Duration is sourced from _unknownFields.durationMinutes, an integer.
+//
+// tour.duration is a DISPLAY STRING ("480 minutes"), never a number. Passing it
+// to arithmetic yields NaN, so every row that carried one rendered a card
+// reading "NaNm". No row in tours-data.json has ever been numeric, which means
+// the arithmetic below had never once run on real data until this change.
+//
+// The numeric field is present on exactly the rows that carry the string and
+// agrees with it on 840 of 841; it also matches the live FareHarbor
+// availability window (end_at - start_at) on 12 of 12 non-degenerate probes.
+// FareHarbor exposes no duration field of its own -- the only figure it carries
+// is inside free-text headline copy -- so the local integer is the best source
+// available, and parsing the string would be a hand-maintained rule that fails
+// silently the first time a row arrives shaped differently.
+function tourDurationMinutes(tour) {
+    const m = (tour._unknownFields || {}).durationMinutes;
+    return Number.isFinite(m) && m > 0 ? m : null;
+}
+
+function hasDurationText(tour) {
+    return typeof tour.duration === 'string' && tour.duration.trim() !== '';
+}
+
+// Presence guard, run at load. The numeric field must be present exactly where
+// the display string is. A future row that keeps the string but loses the number
+// renders NO duration rather than a wrong one -- falsy to '' is the safe
+// direction and it stays the failure mode. Reported once with a count so a
+// regression is visible without flooding the console per row.
+function auditDurationFields(tours) {
+    const orphanText = tours.filter(t => hasDurationText(t) && tourDurationMinutes(t) === null).length;
+    const orphanNum = tours.filter(t => !hasDurationText(t) && tourDurationMinutes(t) !== null).length;
+    if (orphanText) {
+        console.warn(`[duration] ${orphanText} of ${tours.length} tours carry a duration string with no usable durationMinutes; those cards render no duration.`);
+    }
+    if (orphanNum) {
+        console.warn(`[duration] ${orphanNum} of ${tours.length} tours carry durationMinutes with no duration string.`);
+    }
+    return tours;
+}
+
 // Format duration
 function formatDuration(minutes) {
     if (!minutes) return '';
@@ -172,7 +212,7 @@ function createTourCard(tour) {
     const unit = priceUnit(tour);
     const unitHtml = unit ? `<small>${escapeHtml(unit)}</small>` : '';
     const priceHtml = priceDisplay ? `<div class="tour-price">${priceDisplay}${unitHtml}</div>` : '';
-    const duration = formatDuration(tour.duration);
+    const duration = formatDuration(tourDurationMinutes(tour));
 
     // No quality badge. A removed helper turned qualityScore into a starred
     // superlative at >= 90 and >= 75 — 598 of the 748 draw-pool rows, an expected
@@ -412,6 +452,7 @@ async function init() {
         const response = await fetch('tours-data.json');
         const _raw = await response.json();
         allTours = Array.isArray(_raw) ? _raw : _raw.tours;
+        auditDurationFields(allTours);
         // Hide tours with a dead FareHarbor booking link (audit 2026-05-28).
         allTours = allTours.filter(t => t.status !== 'inactive' && !t.bookingDead);
 
@@ -458,6 +499,7 @@ async function initAreaPage(areaSlug) {
         const response = await fetch('tours-data.json');
         const _raw = await response.json();
         allTours = Array.isArray(_raw) ? _raw : _raw.tours;
+        auditDurationFields(allTours);
         allTours = allTours.filter(t => t.status !== 'inactive' && !t.bookingDead);
 
         // Only priced inventory is eligible for the draw (see hasUsablePrice).
