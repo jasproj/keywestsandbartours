@@ -987,6 +987,19 @@ main.blog-content p a, div.blog-content p a {
    this rule is scoped to that shape only and cannot reach the .tour-image shape. */
 .tour-card-blog .tour-price { position: static; }
 
+/* Unit qualifier inside the JS-rendered price badge. Emitted only when the row
+   carries _unknownFields.priceUnit. Verified across all 119 pages: 0 elements
+   matched `.tour-price small` before this rule existed, so it cannot restyle
+   anything already shipped. Shape follows key-west-pub-crawls.html. */
+.tour-price small {
+    display: block;
+    font-size: 0.62rem;
+    font-weight: 600;
+    line-height: 1.15;
+    letter-spacing: 0.3px;
+    text-transform: uppercase;
+}
+
 .tour-price {
     position: absolute;
     top: 10px;
