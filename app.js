@@ -154,13 +154,6 @@ function cleanLocation(location = '') {
         .trim() || 'Key West';
 }
 
-// Score label
-function scoreLabel(score) {
-    if (score >= 90) return 'Top Rated';
-    if (score >= 75) return 'Popular';
-    return '';
-}
-
 // Format duration
 function formatDuration(minutes) {
     if (!minutes) return '';
@@ -181,10 +174,14 @@ function createTourCard(tour) {
     const priceHtml = priceDisplay ? `<div class="tour-price">${priceDisplay}${unitHtml}</div>` : '';
     const duration = formatDuration(tour.duration);
 
+    // No quality badge. A removed helper turned qualityScore into a starred
+    // superlative at >= 90 and >= 75 — 598 of the 748 draw-pool rows, an expected
+    // 19.2 of every 24 cards. qualityScore is a real FareHarbor field but it measures
+    // LISTING COMPLETENESS, not sentiment: it moves with image count and
+    // availability, not with anything a customer said. A star glyph beside it is a
+    // claim about customers that no data on this property supports — rating is
+    // null on all 1,459 rows. qualityScore stays as the sort key in applyFilters().
     const badges = [];
-    const score = tour.qualityScore || 0;
-    const badge = scoreLabel(score);
-    if (badge) badges.push(`<span class="badge badge-quality">⭐ ${escapeHtml(badge)}</span>`);
 
     const ratingHtml = tour.rating ?
         `<span class="tour-rating">★ ${escapeHtml(String(tour.rating))}${tour.reviewCount ? ` (${escapeHtml(String(tour.reviewCount))})` : ''}</span>` : '';
