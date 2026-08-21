@@ -5067,7 +5067,8 @@
       "_unknownFields": {
         "priceSource": "fh-price-preview-v2-2026-08-20",
         "priceCustomerType": "3 Hour Boat Bar Crawl",
-        "priceTierCount": 1
+        "priceTierCount": 1,
+        "priceUnit": "whole boat"
       },
       "needsEnrichment": true,
       "nextAvailableDate": "2026-08-08",
@@ -9818,7 +9819,8 @@
       "_unknownFields": {
         "priceSource": "fh-price-preview-v2-2026-08-20",
         "priceCustomerType": "Bachelorette Package",
-        "priceTierCount": 1
+        "priceTierCount": 1,
+        "priceUnit": "per package"
       },
       "needsEnrichment": true,
       "nextAvailableDate": "2026-08-09",
@@ -19291,7 +19293,8 @@
       "_unknownFields": {
         "priceSource": "fh-price-preview-v2-2026-08-20",
         "priceCustomerType": "Dinner for 2",
-        "priceTierCount": 1
+        "priceTierCount": 1,
+        "priceUnit": "for 2"
       },
       "needsEnrichment": true,
       "nextAvailableDate": "2026-08-09",
@@ -20347,7 +20350,8 @@
       "_unknownFields": {
         "priceSource": "fh-price-preview-v2-2026-08-20",
         "priceCustomerType": "2 nights / 3 Days",
-        "priceTierCount": 1
+        "priceTierCount": 1,
+        "priceUnit": "whole boat"
       }
     },
     {
@@ -20617,7 +20621,8 @@
       "_unknownFields": {
         "priceSource": "fh-price-preview-v2-2026-08-20",
         "priceCustomerType": "Shark & Tarpon Trip",
-        "priceTierCount": 1
+        "priceTierCount": 1,
+        "priceUnit": "whole boat"
       },
       "needsEnrichment": true,
       "nextAvailableDate": "2026-08-08",
@@ -20754,7 +20759,8 @@
       "_unknownFields": {
         "priceSource": "fh-price-preview-v2-2026-08-20",
         "priceCustomerType": "DIGITAL SELFIE STAND",
-        "priceTierCount": 1
+        "priceTierCount": 1,
+        "priceUnit": "add-on"
       },
       "needsEnrichment": true,
       "nextAvailableDate": "2026-08-09",
@@ -22445,7 +22451,8 @@
         "durationMinutes": 600,
         "priceSource": "fh-price-preview-v2-2026-08-20",
         "priceCustomerType": "Reef Trip",
-        "priceTierCount": 1
+        "priceTierCount": 1,
+        "priceUnit": "whole boat \u00b7 Up to 6 People"
       },
       "nextAvailableDate": "2026-08-10",
       "nullConsecutiveSweeps": 0
@@ -22530,7 +22537,8 @@
       "_unknownFields": {
         "priceSource": "fh-price-preview-v2-2026-08-20",
         "priceCustomerType": "Reef Trip",
-        "priceTierCount": 1
+        "priceTierCount": 1,
+        "priceUnit": "whole boat \u00b7 Up to 6 People"
       },
       "needsEnrichment": true,
       "nextAvailableDate": "2026-08-10",
@@ -25495,7 +25503,8 @@
       "_unknownFields": {
         "priceSource": "fh-price-preview-v2-2026-08-20",
         "priceCustomerType": "Sunset Cruise",
-        "priceTierCount": 1
+        "priceTierCount": 1,
+        "priceUnit": "whole boat"
       },
       "needsEnrichment": true,
       "nextAvailableDate": "2026-08-08",
@@ -27767,7 +27776,8 @@
         "durationMinutes": 120,
         "priceSource": "fh-price-preview-v2-2026-08-20",
         "priceCustomerType": "Sightseeing, Swimming and Dolphin Watching",
-        "priceTierCount": 1
+        "priceTierCount": 1,
+        "priceUnit": "whole boat \u00b7 Up to 6 people"
       },
       "nextAvailableDate": "2026-08-09",
       "nullConsecutiveSweeps": 0
@@ -31500,7 +31510,8 @@
         "durationMinutes": 240,
         "priceSource": "fh-price-preview-v2-2026-08-20",
         "priceCustomerType": "Four Hour Seasonal Tarpon Trip",
-        "priceTierCount": 1
+        "priceTierCount": 1,
+        "priceUnit": "whole boat \u00b7 Up to 6 People"
       },
       "nextAvailableDate": "2026-08-08",
       "nullConsecutiveSweeps": 0
@@ -43534,7 +43545,8 @@
       "_unknownFields": {
         "priceSource": "fh-price-preview-v2-2026-08-20",
         "priceCustomerType": "Five Hour Sandbar",
-        "priceTierCount": 1
+        "priceTierCount": 1,
+        "priceUnit": "whole boat \u00b7 Up to 6 Guests"
       },
       "needsEnrichment": true,
       "nextAvailableDate": "2026-08-08",
@@ -43675,7 +43687,8 @@
       "_unknownFields": {
         "priceSource": "fh-price-preview-v2-2026-08-20",
         "priceCustomerType": "Sandbar And Grill",
-        "priceTierCount": 1
+        "priceTierCount": 1,
+        "priceUnit": "whole boat \u00b7 Up to 6 People"
       },
       "needsEnrichment": true,
       "nextAvailableDate": "2026-08-11",
@@ -43768,7 +43781,8 @@
       "_unknownFields": {
         "priceSource": "fh-price-preview-v2-2026-08-20",
         "priceCustomerType": "Sandbar Express",
-        "priceTierCount": 1
+        "priceTierCount": 1,
+        "priceUnit": "whole boat \u00b7 Up to 6 guests"
       },
       "needsEnrichment": true,
       "nextAvailableDate": "2026-08-08",
@@ -54967,7 +54981,8 @@
       "_unknownFields": {
         "priceSource": "fh-price-preview-v2-2026-08-20",
         "priceCustomerType": "Three Day",
-        "priceTierCount": 1
+        "priceTierCount": 1,
+        "priceUnit": "per couple"
       }
     },
     {
@@ -55237,7 +55252,8 @@
       "_unknownFields": {
         "priceSource": "fh-price-preview-v2-2026-08-20",
         "priceCustomerType": "Five Day",
-        "priceTierCount": 1
+        "priceTierCount": 1,
+        "priceUnit": "per couple"
       }
     },
     {
@@ -58753,7 +58769,8 @@
         "durationMinutes": 360,
         "priceSource": "fh-price-preview-v2-2026-08-20",
         "priceCustomerType": "3/4 Day Session",
-        "priceTierCount": 1
+        "priceTierCount": 1,
+        "priceUnit": "whole boat \u00b7 Up to 6 people"
       },
       "nextAvailableDate": "2026-08-19",
       "nullConsecutiveSweeps": 0
@@ -58804,7 +58821,8 @@
         "durationMinutes": 480,
         "priceSource": "fh-price-preview-v2-2026-08-20",
         "priceCustomerType": "Full Day Sandbar",
-        "priceTierCount": 1
+        "priceTierCount": 1,
+        "priceUnit": "whole boat \u00b7 Up to 6 people"
       },
       "nextAvailableDate": "2026-08-10",
       "nullConsecutiveSweeps": 0
@@ -58994,7 +59012,8 @@
       "_unknownFields": {
         "priceSource": "fh-price-preview-v2-2026-08-20",
         "priceCustomerType": "Excursion",
-        "priceTierCount": 1
+        "priceTierCount": 1,
+        "priceUnit": "whole boat \u00b7 Up to 6 people"
       },
       "needsEnrichment": true,
       "nextAvailableDate": "2026-08-17",
@@ -59042,7 +59061,8 @@
       "_unknownFields": {
         "priceSource": "fh-price-preview-v2-2026-08-20",
         "priceCustomerType": "Excursion",
-        "priceTierCount": 1
+        "priceTierCount": 1,
+        "priceUnit": "whole boat \u00b7 Up to 6 people"
       },
       "needsEnrichment": true,
       "nextAvailableDate": "2026-08-19",
@@ -59141,7 +59161,8 @@
       "_unknownFields": {
         "priceSource": "fh-price-preview-v2-2026-08-20",
         "priceCustomerType": "Excursion",
-        "priceTierCount": 1
+        "priceTierCount": 1,
+        "priceUnit": "whole boat \u00b7 Up to 6 people"
       },
       "needsEnrichment": true,
       "nextAvailableDate": "2026-08-19",

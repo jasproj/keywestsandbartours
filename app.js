@@ -110,6 +110,15 @@ function escapeHtml(str) {
         .replace(/'/g, '&#39;');
 }
 
+// Pricing unit for the card badge — "whole boat · Up to 6 people", "per couple".
+// Empty for every row that does not carry one, so those cards render exactly as
+// they did before this existed. formatPrice() is left alone: it answers "what is
+// the number", this answers "what does the number buy".
+function priceUnit(tour) {
+    const u = (tour._unknownFields || {}).priceUnit;
+    return (typeof u === 'string' && u.trim()) ? u.trim() : '';
+}
+
 // Format price
 function formatPrice(price, confidence) {
     if (!Number.isFinite(price) || price <= 0) return 'Price on request';
@@ -167,7 +176,9 @@ function createTourCard(tour) {
     const area = getArea(tour.location);
     const areaName = getAreaName(tour.location);
     const priceDisplay = formatPrice(tour.price, tour.priceConfidence);
-    const priceHtml = priceDisplay ? `<div class="tour-price">${priceDisplay}</div>` : '';
+    const unit = priceUnit(tour);
+    const unitHtml = unit ? `<small>${escapeHtml(unit)}</small>` : '';
+    const priceHtml = priceDisplay ? `<div class="tour-price">${priceDisplay}${unitHtml}</div>` : '';
     const duration = formatDuration(tour.duration);
 
     const badges = [];
