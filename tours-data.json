@@ -18020,9 +18020,9 @@
       "category": "",
       "location": "United States/Florida/Islamorada",
       "island": "united states/florida/islamorada",
-      "price": 1,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "price": 2000,
+      "priceLabel": "Full Day Private Charter",
+      "priceConfidence": "high",
       "qualityScore": 95,
       "currency": "USD",
       "duration": "480 minutes",
@@ -18051,7 +18051,12 @@
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
       "_unknownFields": {
-        "durationMinutes": 480
+        "durationMinutes": 480,
+        "priceSource": "fh-price-preview-v2-2026-08-22",
+        "priceCustomerType": "Full Day Private Charter",
+        "priceTierCount": 3,
+        "priceUnit": "whole boat",
+        "priceTierExclusion": "Half Day Private Charter (4 Hours, $1400) and 3/4 Day Private Charter (6 Hours, $1700) excluded by duration: durationMinutes 480 matches Full Day Private Charter (8 Hours). All three tiers are min_party_size 1 and labelled Private Charter, so the unit is the boat, not a fare."
       },
       "nextAvailableDate": "2026-08-09",
       "nullConsecutiveSweeps": 0
@@ -19166,9 +19171,9 @@
       "category": "",
       "location": "United States/Florida/Islamorada",
       "island": "united states/florida/islamorada",
-      "price": 550,
-      "priceLabel": "",
-      "priceConfidence": "low",
+      "price": 200,
+      "priceLabel": "from $200 weekday (Full Day); observed to $250 weekend",
+      "priceConfidence": "medium",
       "qualityScore": 95,
       "currency": "USD",
       "duration": "480 minutes",
@@ -19199,7 +19204,15 @@
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
       "_unknownFields": {
-        "durationMinutes": 480
+        "durationMinutes": 480,
+        "priceSource": "fh-price-preview-v2-2026-08-22",
+        "priceCustomerType": "Full Day",
+        "priceTierCount": 2,
+        "priceUnit": "per cabana, includes 2 people",
+        "observedPriceRange": [
+          200.0,
+          250.0
+        ]
       },
       "nextAvailableDate": "2026-08-10",
       "nullConsecutiveSweeps": 0
@@ -54724,9 +54737,9 @@
       "category": "",
       "location": "United States/Florida/Key West",
       "island": "united states/florida/key west",
-      "price": 1,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "price": 1399,
+      "priceLabel": "5 O'clock Somewhere",
+      "priceConfidence": "high",
       "qualityScore": 85,
       "currency": "USD",
       "duration": null,
@@ -54755,7 +54768,14 @@
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
       "nextAvailableDate": "2026-08-09",
-      "nullConsecutiveSweeps": 0
+      "nullConsecutiveSweeps": 0,
+      "_unknownFields": {
+        "priceSource": "fh-price-preview-v2-2026-08-22",
+        "priceCustomerType": "5 O'clock Somewhere",
+        "priceTierCount": 1,
+        "priceUnit": "whole package",
+        "contentMismatch": "Description is a wedding ceremony package (Smathers Beach ceremony location, officiant, marriage licence filing, bridal bouquet) while the name and the Rentals tag read as a boat. Flagged only: row is not retagged and not unpublished."
+      }
     },
     {
       "id": "640662",
