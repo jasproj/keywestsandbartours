@@ -25,7 +25,13 @@ import re, sys, glob, os
 
 # ---------------------------------------------------------------- constants
 SITE_NAME  = "Key West Sandbar Tours"
-SITE_EMAIL = "info@keywestsandbartours.com"   # one line to change the address
+SITE_EMAIL = "walktheplankadventures@gmail.com"   # one line to change the address
+# Addresses this site has published before. Any of these found in a page is
+# rewritten to SITE_EMAIL, so retiring an address is adding it to this list.
+# NOTE: an address goes here only once it is confirmed to RECEIVE mail.
+# info@keywestsandbartours.com was published across 119 pages by #227 and
+# does not exist -- no mail service is configured on the domain.
+LEGACY_EMAILS = ["info@keywestsandbartours.com"]
 SITE_PHONE_TEL  = "4074766190"
 SITE_PHONE_TEXT = "(407) 476-6190"
 SITE_LOGO = "/logo.png"
@@ -133,7 +139,8 @@ def transform(t):
     if JS_SRC not in t:
         t = t.replace('</body>', f'  <script src="{JS_SRC}" defer></script>\n</body>', 1)
     # one contact address, everywhere it is used as THIS SITE's address
-    t = t.replace("walktheplankadventures@gmail.com", SITE_EMAIL)
+    for legacy in LEGACY_EMAILS:
+        t = t.replace(legacy, SITE_EMAIL)
     return t
 
 def pages():
