@@ -1,0 +1,33 @@
+/* ---------------------------------------------------------------------------
+   SHARED SITE CHROME — generated into every page by tools/build-chrome.py.
+   Scoped entirely under .site-header / .site-footer so it cannot restyle any
+   page body. 17 of 119 pages do not link styles.css, which is why the chrome
+   carries its own stylesheet rather than depending on the site theme.
+   --------------------------------------------------------------------------- */
+.site-header{background:#1B3A57;position:relative;z-index:50}
+.site-header-inner{max-width:1200px;margin:0 auto;padding:12px 20px;display:flex;align-items:center;gap:20px}
+.site-logo{display:flex;align-items:center;gap:10px;text-decoration:none;color:#fff;font-weight:700;font-size:1rem;flex:0 0 auto}
+.site-logo img{display:block;width:40px;height:40px;object-fit:contain}
+.site-nav{display:flex;gap:22px;margin-left:auto}
+.site-nav a{color:#fff;text-decoration:none;font-weight:600;font-size:.95rem;padding:6px 0}
+.site-nav a:hover{color:#3BB8C3}
+.site-phone{display:flex;align-items:center;gap:6px;color:#fff;text-decoration:none;font-weight:700;white-space:nowrap}
+.site-phone:hover{color:#3BB8C3}
+.site-nav-toggle{display:none;background:none;border:0;color:#fff;font-size:1.5rem;line-height:1;cursor:pointer;padding:4px 8px}
+.site-nav-mobile{display:none;flex-direction:column;background:#14293D;padding:8px 20px}
+.site-nav-mobile a{color:#fff;text-decoration:none;font-weight:600;padding:12px 0;border-bottom:1px solid rgba(255,255,255,.12)}
+.site-nav-mobile.is-open{display:flex}
+@media (max-width:860px){
+  .site-nav{display:none}
+  .site-nav-toggle{display:block;margin-left:auto}
+  .site-logo-text{display:none}
+}
+.site-footer{background:#132B42;color:#fff;margin-top:48px}
+.site-footer-inner{max-width:1200px;margin:0 auto;padding:44px 20px 24px;display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:32px}
+.site-footer-col h4{color:#3BB8C3;font-size:.8rem;letter-spacing:.09em;text-transform:uppercase;margin:0 0 14px}
+.site-footer-col ul{list-style:none;margin:0;padding:0}
+.site-footer-col li{margin-bottom:9px}
+.site-footer-col a{color:#fff;opacity:.82;text-decoration:none;font-size:.92rem}
+.site-footer-col a:hover{opacity:1;color:#3BB8C3}
+.site-footer-legal{max-width:1200px;margin:0 auto;padding:16px 20px 30px;border-top:1px solid rgba(255,255,255,.14)}
+.site-footer-legal p{margin:0;font-size:.85rem;color:#fff;opacity:.75}
