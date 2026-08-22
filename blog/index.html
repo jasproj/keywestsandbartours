@@ -353,18 +353,34 @@
 <script src="/tracking.js" defer></script>
     <link rel="stylesheet" href="/sponsor-slot.css">
     <script src="/sponsor-slot.js" defer></script>
-  </head>
+    <link rel="stylesheet" href="/chrome.css">
+</head>
 <body>
-    <header class="header">
-        <div class="header-container">
-            <a href="../" class="logo"><img src="../logo.png" alt="Key West Sandbar Tours" class="logo-img"></a>
-            <nav class="nav-desktop">
-                <a href="../#tours-section">Tours</a>
-                <a href="../about.html">About</a>
-                <a href="./">Blog</a>
-            </nav>
-        </div>
-    </header>
+    <header class="site-header">
+    <div class="site-header-inner">
+      <a href="/" class="site-logo">
+        <img src="/logo.png" alt="Key West Sandbar Tours" width="40" height="40">
+        <span class="site-logo-text">Key West Sandbar Tours</span>
+      </a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="/#tours-section">Tours</a>
+        <a href="/#areas">Areas</a>
+        <a href="/blog/">Blog</a>
+        <a href="/about.html">About</a>
+      </nav>
+      <a class="site-phone" href="tel:4074766190">
+        <span class="site-phone-icon" aria-hidden="true">&#128222;</span>
+        <span class="site-phone-number">(407) 476-6190</span>
+      </a>
+      <button class="site-nav-toggle" type="button" aria-label="Menu" aria-expanded="false" aria-controls="site-nav-mobile">&#9776;</button>
+    </div>
+    <nav class="site-nav-mobile" id="site-nav-mobile" aria-label="Mobile navigation">
+      <a href="/#tours-section">Tours</a>
+      <a href="/#areas">Areas</a>
+      <a href="/blog/">Blog</a>
+      <a href="/about.html">About</a>
+    </nav>
+  </header>
 
     <section class="blog-header">
         <h1>Key West Travel Guide</h1>
@@ -1232,50 +1248,45 @@
         </div>
     </section>
 
-    <footer class="footer">
-        <div class="footer-grid">
-            <div class="footer-brand">
-                <p>Your trusted guide to the best Florida Keys tours and adventures. We connect you with top-rated local operators for experiences.</p>
-            </div>
-            <div class="footer-links">
-                <h4>Popular Tours</h4>
-                <ul>
-                    <li><a href="../#tours-section">Snorkeling</a></li>
-                    <li><a href="../#tours-section">Sunset Cruises</a></li>
-                    <li><a href="../#tours-section">Fishing Charters</a></li>
-                    <li><a href="../#tours-section">Sandbar Trips</a></li>
-                    <li><a href="../#tours-section">Dolphin Tours</a></li>
-                </ul>
-            </div>
-            <div class="footer-links">
-                <h4>Travel Guides</h4>
-                <ul>
-                    <li><a href="best-snorkeling-key-west.html">Snorkeling Guide</a></li>
-                    <li><a href="key-west-sunset-cruises.html">Sunset Cruises</a></li>
-                    <li><a href="key-west-fishing-charters.html">Fishing Guide</a></li>
-                    <li><a href="/sandbar-tours.html">Sandbar Tours</a></li>
-                    <li><a href="dry-tortugas-day-trip.html">Dry Tortugas</a></li>
-                </ul>
-            </div>
-            <div class="footer-links">
-                <h4>Company</h4>
-                <ul>
-                    <li><a href="../about.html">About Us</a></li>
-                    <li><a href="./">Blog</a></li>
-                    <li><a href="../#tours-section">All Tours</a></li>
-                    <li><a href="mailto:info@keywestsandbartours.com">Contact</a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <p>© 2026 Key West Sandbar Tours. All rights reserved.</p>
-            <div class="footer-social">
-                <a href="#" aria-label="Facebook">📘</a>
-                <a href="#" aria-label="Instagram">📷</a>
-                <a href="#" aria-label="Twitter">🐦</a>
-            </div>
-        </div>
-    </footer>
+    <footer class="site-footer">
+    <div class="site-footer-inner">
+      <div class="site-footer-col">
+        <h4>Areas</h4>
+        <ul>
+        <li><a href="/key-west.html">Key West</a></li>
+        <li><a href="/marathon.html">Marathon</a></li>
+        <li><a href="/key-largo.html">Key Largo</a></li>
+        <li><a href="/islamorada.html">Islamorada</a></li>
+        <li><a href="/stock-island.html">Stock Island</a></li>
+        <li><a href="/lower-keys.html">Lower Keys</a></li>
+        </ul>
+      </div>
+      <div class="site-footer-col">
+        <h4>Popular</h4>
+        <ul>
+        <li><a href="/sandbar-tours.html">Sandbar Tours</a></li>
+        <li><a href="/sunset-cruises.html">Sunset Cruises</a></li>
+        <li><a href="/snorkeling-tours.html">Snorkeling Tours</a></li>
+        <li><a href="/dolphin-tours.html">Dolphin Tours</a></li>
+        <li><a href="/private-charters.html">Private Charters</a></li>
+        <li><a href="/tiki-boats-key-west.html">Tiki Boats</a></li>
+        </ul>
+      </div>
+      <div class="site-footer-col">
+        <h4>Company</h4>
+        <ul>
+        <li><a href="/about.html">About</a></li>
+        <li><a href="/faq.html">FAQs</a></li>
+        <li><a href="/contact.html">Contact</a></li>
+        <li><a href="/advertise.html">Advertise</a></li>
+          <li><a href="mailto:info@keywestsandbartours.com">info@keywestsandbartours.com</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="site-footer-legal">
+      <p>&copy; 2026 Key West Sandbar Tours. Book direct with local operators.</p>
+    </div>
+  </footer>
 
     <script>
         // Fetch weather data from Open-Meteo (free, no API key)
@@ -1318,5 +1329,6 @@
         // Refresh every 10 minutes
         setInterval(fetchWeather, 600000);
     </script>
+  <script src="/chrome.js" defer></script>
 </body>
 </html>
