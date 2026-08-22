@@ -52,7 +52,7 @@ FOOTER_AREAS = [("/key-west.html","Key West"), ("/marathon.html","Marathon"),
                 ("/key-largo.html","Key Largo"), ("/islamorada.html","Islamorada"),
                 ("/stock-island.html","Stock Island"), ("/lower-keys.html","Lower Keys")]
 FOOTER_POPULAR = [("/sandbar-tours.html","Sandbar Tours"), ("/sunset-cruises.html","Sunset Cruises"),
-                  ("/snorkeling-tours.html","Snorkeling Tours"), ("/dolphin-tours.html","Dolphin Tours"),
+                  ("/snorkeling.html","Snorkeling Tours"), ("/dolphin-tours.html","Dolphin Tours"),
                   ("/private-charters.html","Private Charters"), ("/tiki-boats-key-west.html","Tiki Boats")]
 FOOTER_COMPANY = [("/about.html","About"), ("/faq.html","FAQs"),
                   ("/contact.html","Contact"), ("/advertise.html","Advertise")]
