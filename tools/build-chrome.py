@@ -17,9 +17,19 @@ afterwards that no page has drifted from it.
     python3 tools/build-chrome.py --apply    # rewrite every page's chrome
     python3 tools/build-chrome.py --check    # exit 1 if ANY page differs
 
---check is the drift test. It re-renders the canonical chrome from the constants
-below and compares it to what each page actually carries. Two pages cannot
-diverge unless this file changes, because any divergence fails --check.
+--check runs two independent tests and fails if either fails:
+
+  1. DRIFT -- it re-renders the canonical chrome from the constants below and
+     compares it to what each page actually carries. Two pages cannot diverge
+     unless this file changes, because any divergence fails --check.
+  2. LINK TARGETS -- every site-absolute href in the canonical nav and footer
+     must resolve to a file that exists.
+
+Test 2 exists because test 1 structurally cannot catch a bad canonical link:
+the canon is the thing every page is compared against, so a link to a file that
+has never existed matches on all 119 pages and passes clean. #227 shipped
+exactly that -- a footer link to /snorkeling-tours.html, a path with no blob on
+any ref -- and it 404'd on every page until #233 repointed it at /snorkeling.html.
 """
 import re, sys, glob, os
 
@@ -59,6 +69,41 @@ FOOTER_COMPANY = [("/about.html","About"), ("/faq.html","FAQs"),
 
 CSS_HREF = "/chrome.css"
 JS_SRC   = "/chrome.js"
+
+# ------------------------------------------------------------ link targets
+# The canonical link sets whose "/..." hrefs must point at real files.
+LINK_SETS = [("NAV", NAV), ("FOOTER_AREAS", FOOTER_AREAS),
+             ("FOOTER_POPULAR", FOOTER_POPULAR), ("FOOTER_COMPANY", FOOTER_COMPANY)]
+
+def resolve_target(href):
+    """Map a site-absolute href to the repo file it serves, or None if missing.
+
+    Mirrors how GitHub Pages serves this site: "/" and "/dir/" serve index.html,
+    and an extensionless path may be served by "<path>.html". Fragments and
+    query strings are not part of the file lookup.
+    """
+    path = href.split("#", 1)[0].split("?", 1)[0]
+    if not path.startswith("/"):
+        return None
+    rel = path.lstrip("/")
+    if rel == "" or rel.endswith("/"):
+        rel += "index.html"
+    for cand in (rel, rel + ".html", os.path.join(rel, "index.html")):
+        if os.path.isfile(cand):
+            return cand
+    return None
+
+def missing_targets():
+    """Every canonical nav/footer href that resolves to nothing in the tree."""
+    out = []
+    for name, items in LINK_SETS:
+        for href, label in items:
+            if href.startswith("/") and resolve_target(href) is None:
+                out.append((name, href, label))
+    return out
+
+def canonical_hrefs():
+    return [h for _, items in LINK_SETS for h, _ in items if h.startswith("/")]
 
 # ---------------------------------------------------------------- rendering
 def _links(items, cls=""):
@@ -162,13 +207,23 @@ def main():
     if mode == '--apply':
         print(f"applied canonical chrome to {len(pages())} pages")
         return 0
+    rc = 0
     if drift:
         print(f"CHROME DRIFT: {len(drift)} page(s) differ from the single definition")
         for p in drift[:20]:
             print("   ", p)
-        return 1
-    print(f"chrome OK: {len(pages())} pages match the single definition")
-    return 0
+        rc = 1
+    else:
+        print(f"chrome OK: {len(pages())} pages match the single definition")
+    missing = missing_targets()
+    if missing:
+        print(f"DEAD CANONICAL LINK: {len(missing)} nav/footer target(s) do not exist")
+        for name, href, label in missing:
+            print(f"    {name}: {href}  ({label}) -> no file in tree")
+        rc = 1
+    else:
+        print(f"link targets OK: {len(canonical_hrefs())} nav/footer hrefs resolve")
+    return rc
 
 if __name__ == '__main__':
     sys.exit(main())
