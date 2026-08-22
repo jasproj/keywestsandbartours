@@ -10,9 +10,34 @@ let allTours = [];
 
 // Wire the homepage "Verified Tours" stat to the live (non-dead) catalog
 // size, replacing the hardcoded value. No-op on pages without the element.
-function updateVerifiedToursCount(n) {
-    const el = document.getElementById('verified-tours-count');
-    if (el) el.textContent = Number(n).toLocaleString();
+//
+// Every published count on this site is written through here. Per D-478, a
+// number that cannot self-correct does not get published: the markup ships the
+// slot EMPTY and this fills it from tours-data.json, so a count can never drift
+// from the pool the grid actually draws. The optional second argument lets the
+// same writer fill the per-area slots below instead of the homepage stat.
+function updateVerifiedToursCount(n, el) {
+    const target = el || document.getElementById('verified-tours-count');
+    if (target) target.textContent = Number(n).toLocaleString();
+}
+
+// Fill every [data-area-count] slot from the same eligible pool the grid draws
+// from. The attribute value is an area slug; an EMPTY value means "all areas",
+// matching the "" = All Areas convention of the #areaFilter select.
+// Callers pass the post-hasUsablePrice pool, so these counts and the cards
+// agree by construction.
+function updateAreaCounts(tours) {
+    const slots = document.querySelectorAll('[data-area-count]');
+    if (!slots.length) return;
+    const byArea = {};
+    for (const t of tours) {
+        const a = getArea(t.location);
+        byArea[a] = (byArea[a] || 0) + 1;
+    }
+    slots.forEach(el => {
+        const slug = el.getAttribute('data-area-count');
+        updateVerifiedToursCount(slug ? (byArea[slug] || 0) : tours.length, el);
+    });
 }
 let filteredTours = [];
 let displayedCount = 0;
@@ -463,6 +488,7 @@ async function init() {
         // call sat ABOVE the filter and advertised 1,279 while the grid drew from
         // 551. "Verified" cannot mean "we never checked what it costs".
         updateVerifiedToursCount(allTours.length);
+        updateAreaCounts(allTours);
 
         // Shuffle initially for variety (per page load)
         allTours = shuffleArray(allTours);
@@ -508,6 +534,10 @@ async function initAreaPage(areaSlug) {
         // reading "Price on request" out of 24, so it trades one slot for 17.1
         // usable ones. Do not special-case it.
         allTours = allTours.filter(hasUsablePrice);
+
+        // Fill the hero count slot before narrowing: updateAreaCounts() buckets
+        // the whole pool by slug and each page's slot names its own area.
+        updateAreaCounts(allTours);
 
         // Filter to this area only
         allTours = allTours.filter(tour => getArea(tour.location) === areaSlug);
