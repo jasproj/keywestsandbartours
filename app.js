@@ -59,9 +59,14 @@ function getArea(location) {
     if (loc.includes('key west')) return 'key-west';
     if (loc.includes('stock island')) return 'stock-island';
     if (loc.includes('marathon') || loc.includes('key colony')) return 'marathon';
-    if (loc.includes('key largo')) return 'key-largo';
+    // Tavernier sits on the island of Key Largo at MM 92-93 and routes to the
+    // Key Largo page: getArea() returned a 'tavernier' slug that no page served,
+    // so 36 priced rows could only ever surface in the homepage shuffle. This
+    // only extends existing precedence -- 'key largo' was already tested first,
+    // so any row naming both already routed here. getAreaName() is untouched, so
+    // those cards still display "Tavernier".
+    if (loc.includes('key largo') || loc.includes('tavernier')) return 'key-largo';
     if (loc.includes('islamorada')) return 'islamorada';
-    if (loc.includes('tavernier')) return 'tavernier';
     // Lower Keys: Big Pine, Little Torch, Summerland, Big Coppitt, Duck Key
     return 'lower-keys';
 }
