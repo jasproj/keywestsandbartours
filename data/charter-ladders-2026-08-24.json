@@ -1,0 +1,1206 @@
+{
+ "probedOn": "2026-08-24",
+ "anchor": "2026-08-24",
+ "dates": [
+  "2026-08-24",
+  "2026-08-25",
+  "2026-08-26",
+  "2026-08-27",
+  "2026-08-28",
+  "2026-08-29",
+  "2026-08-30",
+  "2026-08-31",
+  "2026-09-01",
+  "2026-09-02",
+  "2026-09-03",
+  "2026-09-04",
+  "2026-09-05",
+  "2026-09-06",
+  "2026-09-23",
+  "2026-10-23",
+  "2026-11-22"
+ ],
+ "minValidReadings": 3,
+ "control": {
+  "shortname": "definitely-not-a-real-fh-shortname-zzz",
+  "code": 400,
+  "falsifiable": true
+ },
+ "dateValidityRule": "a reading counts only when availability.start_at[0:10] == the requested date; every other echo is a FALLBACK and is discarded",
+ "zeroTierRule": "D-575: a /bin/zsh customer type is not a fare; excluded from floor and ceiling, never averaged",
+ "productKey": "(customer_type.id, singular, note, min_party_size) \u2014 tier id alone is NOT a key; Six Fins reuses 973441/973442/973443 across three items at three different prices",
+ "items": {
+  "602178": {
+   "pk": 602178,
+   "shortname": "abovethecutcharters",
+   "name": "Full Day Charter",
+   "storedPrice": 1200,
+   "durationText": "Duration\n8 Hour",
+   "validReadings": 10,
+   "fallbackReadings": 7,
+   "unsampledReadings": 0,
+   "tiers": [
+    {
+     "tierId": 1063797,
+     "singular": "Full Day Fishing Charter",
+     "note": "Eight hour charter. Up to four anglers.",
+     "minPartySize": 1,
+     "priceMin": 1200.0,
+     "priceMax": 1200.0,
+     "datesQuoting": 10
+    }
+   ],
+   "zeroTiers": []
+  },
+  "591540": {
+   "pk": 591540,
+   "shortname": "bensportfishingcharters-lobsterbully",
+   "name": "Half Day Charter",
+   "storedPrice": 1100,
+   "durationText": "Duration\n4 Hour",
+   "validReadings": 0,
+   "fallbackReadings": 0,
+   "unsampledReadings": 17,
+   "tiers": [],
+   "zeroTiers": []
+  },
+  "591547": {
+   "pk": 591547,
+   "shortname": "bensportfishingcharters-lobsterbully",
+   "name": "Full Day Charter",
+   "storedPrice": 1900,
+   "durationText": "Duration\n7 Hour",
+   "validReadings": 0,
+   "fallbackReadings": 0,
+   "unsampledReadings": 17,
+   "tiers": [],
+   "zeroTiers": []
+  },
+  "564958": {
+   "pk": 564958,
+   "shortname": "blackspearlsportfishingcharter",
+   "name": "Wreck Fishing",
+   "storedPrice": 1050,
+   "durationText": "6 Hour",
+   "validReadings": 15,
+   "fallbackReadings": 2,
+   "unsampledReadings": 0,
+   "tiers": [
+    {
+     "tierId": 1001586,
+     "singular": "Six Hour Charter",
+     "note": "Up to 6 people",
+     "minPartySize": 1,
+     "priceMin": 1050.0,
+     "priceMax": 1050.0,
+     "datesQuoting": 15
+    }
+   ],
+   "zeroTiers": []
+  },
+  "564959": {
+   "pk": 564959,
+   "shortname": "blackspearlsportfishingcharter",
+   "name": "Offshore Fishing",
+   "storedPrice": 1250,
+   "durationText": "6 Hour",
+   "validReadings": 15,
+   "fallbackReadings": 2,
+   "unsampledReadings": 0,
+   "tiers": [
+    {
+     "tierId": 1001586,
+     "singular": "Six Hour Charter",
+     "note": "Up to 6 people",
+     "minPartySize": 1,
+     "priceMin": 1250.0,
+     "priceMax": 1250.0,
+     "datesQuoting": 15
+    }
+   ],
+   "zeroTiers": []
+  },
+  "564961": {
+   "pk": 564961,
+   "shortname": "blackspearlsportfishingcharter",
+   "name": "Full Day Fishing",
+   "storedPrice": 1500,
+   "durationText": "8 Hour",
+   "validReadings": 15,
+   "fallbackReadings": 2,
+   "unsampledReadings": 0,
+   "tiers": [
+    {
+     "tierId": 1001588,
+     "singular": "Eight Hour Charter",
+     "note": "Up to 6 people",
+     "minPartySize": 1,
+     "priceMin": 1500.0,
+     "priceMax": 1500.0,
+     "datesQuoting": 15
+    }
+   ],
+   "zeroTiers": []
+  },
+  "71356": {
+   "pk": 71356,
+   "shortname": "dirtyboatislamorada",
+   "name": "Full Day Fishing Charter - 42' Liberty",
+   "storedPrice": 2200,
+   "durationText": "8 Hours",
+   "validReadings": 0,
+   "fallbackReadings": 0,
+   "unsampledReadings": 17,
+   "tiers": [],
+   "zeroTiers": []
+  },
+  "71357": {
+   "pk": 71357,
+   "shortname": "dirtyboatislamorada",
+   "name": "\u00be Day Fishing Charter - 42' Liberty",
+   "storedPrice": 1800,
+   "durationText": "Duration\n\n6 Hour",
+   "validReadings": 0,
+   "fallbackReadings": 0,
+   "unsampledReadings": 17,
+   "tiers": [],
+   "zeroTiers": []
+  },
+  "71359": {
+   "pk": 71359,
+   "shortname": "dirtyboatislamorada",
+   "name": "Half Day Fishing Charter - 42' Liberty",
+   "storedPrice": 1200,
+   "durationText": "Duration\n\n4 Hour",
+   "validReadings": 0,
+   "fallbackReadings": 0,
+   "unsampledReadings": 17,
+   "tiers": [],
+   "zeroTiers": []
+  },
+  "98231": {
+   "pk": 98231,
+   "shortname": "dirtyboatislamorada",
+   "name": "Full Day Offshore Charter - Mahi-mahi, Tuna, Wahoo - 42' Liberty",
+   "storedPrice": 2200,
+   "durationText": "Duration\n\n8 Hour",
+   "validReadings": 0,
+   "fallbackReadings": 0,
+   "unsampledReadings": 17,
+   "tiers": [],
+   "zeroTiers": []
+  },
+  "101827": {
+   "pk": 101827,
+   "shortname": "dirtyboatislamorada",
+   "name": "Swordfish Charter - 42' Liberty",
+   "storedPrice": 2700,
+   "durationText": "10 Hours",
+   "validReadings": 0,
+   "fallbackReadings": 0,
+   "unsampledReadings": 17,
+   "tiers": [],
+   "zeroTiers": []
+  },
+  "101828": {
+   "pk": 101828,
+   "shortname": "dirtyboatislamorada",
+   "name": "Deep-Dropping Charters - 42' Liberty",
+   "storedPrice": 2200,
+   "durationText": "Duration\n\n8 hour",
+   "validReadings": 0,
+   "fallbackReadings": 0,
+   "unsampledReadings": 17,
+   "tiers": [],
+   "zeroTiers": []
+  },
+  "614980": {
+   "pk": 614980,
+   "shortname": "eazygoings",
+   "name": "Full Day Charter",
+   "storedPrice": 1189,
+   "durationText": "Duration\n8 Hour",
+   "validReadings": 0,
+   "fallbackReadings": 17,
+   "unsampledReadings": 0,
+   "tiers": [],
+   "zeroTiers": []
+  },
+  "605865": {
+   "pk": 605865,
+   "shortname": "justcuzfishing",
+   "name": "Full Day Charter",
+   "storedPrice": 2000,
+   "durationText": "Duration\n8 hour",
+   "validReadings": 15,
+   "fallbackReadings": 2,
+   "unsampledReadings": 0,
+   "tiers": [
+    {
+     "tierId": 1069750,
+     "singular": "Full Day Charter",
+     "note": "6:15am Departure (Please arrive by 6am)",
+     "minPartySize": 1,
+     "priceMin": 2000.0,
+     "priceMax": 2000.0,
+     "datesQuoting": 13
+    }
+   ],
+   "zeroTiers": [
+    {
+     "tierId": 1069750,
+     "singular": "Full Day Charter",
+     "note": "6:15am Departure (Please arrive by 6am)"
+    }
+   ]
+  },
+  "605871": {
+   "pk": 605871,
+   "shortname": "justcuzfishing",
+   "name": "Half-Day Charter",
+   "storedPrice": 1400,
+   "durationText": "Duration\n4 hour",
+   "validReadings": 16,
+   "fallbackReadings": 1,
+   "unsampledReadings": 0,
+   "tiers": [
+    {
+     "tierId": 1069748,
+     "singular": "Half Day Charter",
+     "note": "",
+     "minPartySize": 1,
+     "priceMin": 1400.0,
+     "priceMax": 1400.0,
+     "datesQuoting": 14
+    }
+   ],
+   "zeroTiers": [
+    {
+     "tierId": 1069748,
+     "singular": "Half Day Charter",
+     "note": ""
+    }
+   ]
+  },
+  "104492": {
+   "pk": 104492,
+   "shortname": "keywestfishing-charters",
+   "name": "Cowgirl 45 Foot Hatteras",
+   "storedPrice": 1950,
+   "durationText": "10 Hour Charter",
+   "validReadings": 15,
+   "fallbackReadings": 2,
+   "unsampledReadings": 0,
+   "tiers": [
+    {
+     "tierId": 221008,
+     "singular": "Half Day Private Charter",
+     "note": "4 Hours | Price Includes up to 6 People | All Ages",
+     "minPartySize": 1,
+     "priceMin": 1050.0,
+     "priceMax": 1050.0,
+     "datesQuoting": 15
+    },
+    {
+     "tierId": 221009,
+     "singular": "3/4 Day Private Charter",
+     "note": "6 Hours | Price Includes up to 6 People | All Ages",
+     "minPartySize": 1,
+     "priceMin": 1350.0,
+     "priceMax": 1350.0,
+     "datesQuoting": 15
+    },
+    {
+     "tierId": 221010,
+     "singular": "Full Day Private Charter",
+     "note": "8 Hours | Price Includes up to 6 People | All Ages",
+     "minPartySize": 1,
+     "priceMin": 1550.0,
+     "priceMax": 1550.0,
+     "datesQuoting": 15
+    },
+    {
+     "tierId": 259730,
+     "singular": "10 Hour Charter",
+     "note": "10 Hours | Price Includes up to 6 People | All Ages",
+     "minPartySize": 1,
+     "priceMin": 1750.0,
+     "priceMax": 1750.0,
+     "datesQuoting": 15
+    },
+    {
+     "tierId": 259731,
+     "singular": "12 Hour Charter",
+     "note": "12 Hours | Price Includes up to 6 People | All Ages",
+     "minPartySize": 1,
+     "priceMin": 1950.0,
+     "priceMax": 1950.0,
+     "datesQuoting": 15
+    }
+   ],
+   "zeroTiers": []
+  },
+  "635625": {
+   "pk": 635625,
+   "shortname": "lillyhammer-florida-keys",
+   "name": "Private Charter",
+   "storedPrice": 1270,
+   "durationText": "6 Hour charter",
+   "validReadings": 8,
+   "fallbackReadings": 9,
+   "unsampledReadings": 0,
+   "tiers": [
+    {
+     "tierId": 1117335,
+     "singular": "Two Hour",
+     "note": "Fuel charge will be calculated at the end of the charter",
+     "minPartySize": 1,
+     "priceMin": 405.0,
+     "priceMax": 405.0,
+     "datesQuoting": 8
+    },
+    {
+     "tierId": 1117336,
+     "singular": "Four Hour",
+     "note": "Fuel charge will be calculated at the end of the charter",
+     "minPartySize": 1,
+     "priceMin": 760.0,
+     "priceMax": 760.0,
+     "datesQuoting": 8
+    },
+    {
+     "tierId": 1117337,
+     "singular": "Six Hour",
+     "note": "Fuel charge will be calculated at the end of the charter",
+     "minPartySize": 1,
+     "priceMin": 1040.0,
+     "priceMax": 1040.0,
+     "datesQuoting": 8
+    },
+    {
+     "tierId": 1237494,
+     "singular": "Eight Hour",
+     "note": "Fuel charge will be calculated at the end of the charter",
+     "minPartySize": 1,
+     "priceMin": 1270.0,
+     "priceMax": 1270.0,
+     "datesQuoting": 8
+    }
+   ],
+   "zeroTiers": []
+  },
+  "278565": {
+   "pk": 278565,
+   "shortname": "lowtidecharter",
+   "name": "8 Hour Sandbar Trip",
+   "storedPrice": 1200,
+   "durationText": "Duration\n\n8 Hour",
+   "validReadings": 6,
+   "fallbackReadings": 11,
+   "unsampledReadings": 0,
+   "tiers": [
+    {
+     "tierId": 415944,
+     "singular": "Private Charter",
+     "note": "Up to 6 Passengers",
+     "minPartySize": 1,
+     "priceMin": 1200.0,
+     "priceMax": 1200.0,
+     "datesQuoting": 6
+    }
+   ],
+   "zeroTiers": []
+  },
+  "586666": {
+   "pk": 586666,
+   "shortname": "noreastersportfishing",
+   "name": "23\u2019 Bay Boat",
+   "storedPrice": 950,
+   "durationText": "8 Hours",
+   "validReadings": 17,
+   "fallbackReadings": 0,
+   "unsampledReadings": 0,
+   "tiers": [
+    {
+     "tierId": 1037578,
+     "singular": "1/2 day (4 Hours)",
+     "note": "Private Charter for up to 3 People",
+     "minPartySize": 1,
+     "priceMin": 650.0,
+     "priceMax": 650.0,
+     "datesQuoting": 17
+    },
+    {
+     "tierId": 1037579,
+     "singular": "3/4 day (6 Hours)",
+     "note": "Private Charter for up to 3 People",
+     "minPartySize": 1,
+     "priceMin": 800.0,
+     "priceMax": 800.0,
+     "datesQuoting": 17
+    },
+    {
+     "tierId": 1037580,
+     "singular": "Full Day (8 Hours)",
+     "note": "Private Charter for up to 3 People",
+     "minPartySize": 1,
+     "priceMin": 950.0,
+     "priceMax": 950.0,
+     "datesQuoting": 16
+    }
+   ],
+   "zeroTiers": []
+  },
+  "586679": {
+   "pk": 586679,
+   "shortname": "noreastersportfishing",
+   "name": "35' Noreaster",
+   "storedPrice": 1500,
+   "durationText": "8 Hours",
+   "validReadings": 17,
+   "fallbackReadings": 0,
+   "unsampledReadings": 0,
+   "tiers": [
+    {
+     "tierId": 1037578,
+     "singular": "1/2 day (4 Hours)",
+     "note": "Private Charter for up to 6 people",
+     "minPartySize": 1,
+     "priceMin": 900.0,
+     "priceMax": 900.0,
+     "datesQuoting": 17
+    },
+    {
+     "tierId": 1037579,
+     "singular": "3/4 day (6 Hours)",
+     "note": "Private Charter for up to 6 people",
+     "minPartySize": 1,
+     "priceMin": 1200.0,
+     "priceMax": 1200.0,
+     "datesQuoting": 17
+    },
+    {
+     "tierId": 1037580,
+     "singular": "Full Day (8 Hours)",
+     "note": "Private Charter for up to 6 people",
+     "minPartySize": 1,
+     "priceMin": 1500.0,
+     "priceMax": 1500.0,
+     "datesQuoting": 16
+    }
+   ],
+   "zeroTiers": []
+  },
+  "586697": {
+   "pk": 586697,
+   "shortname": "noreastersportfishing",
+   "name": "23' Bay Boat Seasonal Tarpon Trips",
+   "storedPrice": 650,
+   "durationText": "Duration\n4 Hour",
+   "validReadings": 17,
+   "fallbackReadings": 0,
+   "unsampledReadings": 0,
+   "tiers": [
+    {
+     "tierId": 1037581,
+     "singular": "Four Hour Seasonal Tarpon Trip",
+     "note": "Private Charter for up to 3 People",
+     "minPartySize": 1,
+     "priceMin": 650.0,
+     "priceMax": 650.0,
+     "datesQuoting": 17
+    }
+   ],
+   "zeroTiers": []
+  },
+  "562284": {
+   "pk": 562284,
+   "shortname": "nudecharters",
+   "name": "4-Hour Private Charter aboard 42' Sailing Catamaran with Full Bathroom & kitchen",
+   "storedPrice": 1597,
+   "durationText": "Duration\n\n4 Hour",
+   "validReadings": 16,
+   "fallbackReadings": 0,
+   "unsampledReadings": 1,
+   "tiers": [
+    {
+     "tierId": 996823,
+     "singular": "Four Hour Charter",
+     "note": "",
+     "minPartySize": 1,
+     "priceMin": 1597.0,
+     "priceMax": 1597.0,
+     "datesQuoting": 16
+    }
+   ],
+   "zeroTiers": []
+  },
+  "562285": {
+   "pk": 562285,
+   "shortname": "nudecharters",
+   "name": "6-Hour Private Charter aboard 42' Sailing Catamaran",
+   "storedPrice": 1897,
+   "durationText": "Duration\n\n6 Hour",
+   "validReadings": 16,
+   "fallbackReadings": 0,
+   "unsampledReadings": 1,
+   "tiers": [
+    {
+     "tierId": 996824,
+     "singular": "Six Hour Charter",
+     "note": "",
+     "minPartySize": 1,
+     "priceMin": 1897.0,
+     "priceMax": 1897.0,
+     "datesQuoting": 16
+    }
+   ],
+   "zeroTiers": []
+  },
+  "562288": {
+   "pk": 562288,
+   "shortname": "nudecharters",
+   "name": "8-Hour Private Charter aboard 42' Sailing catamaran",
+   "storedPrice": 2297,
+   "durationText": "Duration\n\n8 Hour",
+   "validReadings": 16,
+   "fallbackReadings": 0,
+   "unsampledReadings": 1,
+   "tiers": [
+    {
+     "tierId": 996825,
+     "singular": "Eight Hour Charter",
+     "note": "",
+     "minPartySize": 1,
+     "priceMin": 2297.0,
+     "priceMax": 2297.0,
+     "datesQuoting": 16
+    }
+   ],
+   "zeroTiers": []
+  },
+  "105610": {
+   "pk": 105610,
+   "shortname": "restlessnative",
+   "name": "Half Day Sail",
+   "storedPrice": 2400,
+   "durationText": "4 hours",
+   "validReadings": 16,
+   "fallbackReadings": 1,
+   "unsampledReadings": 0,
+   "tiers": [
+    {
+     "tierId": 223203,
+     "singular": "Private Charter - ARIA",
+     "note": "42 ft Catamaran \u00b7 4 Hour Sail, Max 6 People",
+     "minPartySize": 1,
+     "priceMin": 1400.0,
+     "priceMax": 1400.0,
+     "datesQuoting": 16
+    },
+    {
+     "tierId": 508590,
+     "singular": "Private Charter - ZODIAC",
+     "note": "60ft Fountaine Pajot Catamaran \u00b7 4 Hour Sail, Max 6 People",
+     "minPartySize": 1,
+     "priceMin": 2400.0,
+     "priceMax": 2400.0,
+     "datesQuoting": 16
+    }
+   ],
+   "zeroTiers": []
+  },
+  "105623": {
+   "pk": 105623,
+   "shortname": "restlessnative",
+   "name": "Sunset Sail",
+   "storedPrice": 2200,
+   "durationText": "3 Hour Charter",
+   "validReadings": 17,
+   "fallbackReadings": 0,
+   "unsampledReadings": 0,
+   "tiers": [
+    {
+     "tierId": 223203,
+     "singular": "Private Charter - ARIA",
+     "note": "42 ft Catamaran | 3 Hour Charter, Max 6 people",
+     "minPartySize": 1,
+     "priceMin": 1200.0,
+     "priceMax": 1200.0,
+     "datesQuoting": 17
+    },
+    {
+     "tierId": 508590,
+     "singular": "Private Charter - ZODIAC",
+     "note": "60ft Fountaine Pajot Catamaran | 3 Hour Charter, Max 6 people",
+     "minPartySize": 1,
+     "priceMin": 2200.0,
+     "priceMax": 2200.0,
+     "datesQuoting": 17
+    }
+   ],
+   "zeroTiers": []
+  },
+  "105631": {
+   "pk": 105631,
+   "shortname": "restlessnative",
+   "name": "Wedding",
+   "storedPrice": 6200,
+   "durationText": "",
+   "validReadings": 16,
+   "fallbackReadings": 1,
+   "unsampledReadings": 0,
+   "tiers": [
+    {
+     "tierId": 223203,
+     "singular": "Private Charter - ARIA",
+     "note": "42 ft Catamaran | All Inclusive Wedding",
+     "minPartySize": 1,
+     "priceMin": 5200.0,
+     "priceMax": 5200.0,
+     "datesQuoting": 16
+    },
+    {
+     "tierId": 508590,
+     "singular": "Private Charter - ZODIAC",
+     "note": "60ft Fountaine Pajot Catamaran | All Inclusive Wedding",
+     "minPartySize": 1,
+     "priceMin": 6200.0,
+     "priceMax": 6200.0,
+     "datesQuoting": 16
+    }
+   ],
+   "zeroTiers": []
+  },
+  "105635": {
+   "pk": 105635,
+   "shortname": "restlessnative",
+   "name": "Memorial",
+   "storedPrice": 6200,
+   "durationText": "",
+   "validReadings": 16,
+   "fallbackReadings": 1,
+   "unsampledReadings": 0,
+   "tiers": [
+    {
+     "tierId": 223203,
+     "singular": "Private Charter - ARIA",
+     "note": "42 ft Catamaran \u00b7 Special Memorial",
+     "minPartySize": 1,
+     "priceMin": 5200.0,
+     "priceMax": 5200.0,
+     "datesQuoting": 16
+    },
+    {
+     "tierId": 508590,
+     "singular": "Private Charter - ZODIAC",
+     "note": "60ft Fountaine Pajot Catamaran \u00b7 Special Memorial",
+     "minPartySize": 1,
+     "priceMin": 6200.0,
+     "priceMax": 6200.0,
+     "datesQuoting": 16
+    }
+   ],
+   "zeroTiers": []
+  },
+  "105639": {
+   "pk": 105639,
+   "shortname": "restlessnative",
+   "name": "Custom Sailing Adventure",
+   "storedPrice": 6200,
+   "durationText": "",
+   "validReadings": 17,
+   "fallbackReadings": 0,
+   "unsampledReadings": 0,
+   "tiers": [
+    {
+     "tierId": 223203,
+     "singular": "Private Charter - ARIA",
+     "note": "42 ft Catamaran",
+     "minPartySize": 1,
+     "priceMin": 5200.0,
+     "priceMax": 5200.0,
+     "datesQuoting": 17
+    },
+    {
+     "tierId": 508590,
+     "singular": "Private Charter - ZODIAC",
+     "note": "60ft Fountaine Pajot Catamaran",
+     "minPartySize": 1,
+     "priceMin": 6200.0,
+     "priceMax": 6200.0,
+     "datesQuoting": 17
+    }
+   ],
+   "zeroTiers": []
+  },
+  "113331": {
+   "pk": 113331,
+   "shortname": "restlessnative",
+   "name": "Full Day Sail",
+   "storedPrice": 2800,
+   "durationText": "Duration\n\n8 Hour",
+   "validReadings": 16,
+   "fallbackReadings": 1,
+   "unsampledReadings": 0,
+   "tiers": [
+    {
+     "tierId": 223203,
+     "singular": "Private Charter - ARIA",
+     "note": "42 ft Catamaran \u00b7 8 Hours \u00b7 Max 6 People",
+     "minPartySize": 1,
+     "priceMin": 1800.0,
+     "priceMax": 1800.0,
+     "datesQuoting": 16
+    },
+    {
+     "tierId": 508590,
+     "singular": "Private Charter - ZODIAC",
+     "note": "60ft Fountaine Pajot Catamaran \u00b7 8 Hours \u00b7 Max 6 People",
+     "minPartySize": 1,
+     "priceMin": 2800.0,
+     "priceMax": 2800.0,
+     "datesQuoting": 16
+    }
+   ],
+   "zeroTiers": []
+  },
+  "115709": {
+   "pk": 115709,
+   "shortname": "restlessnative",
+   "name": "Overnight Expedition",
+   "storedPrice": 3700,
+   "durationText": "full day",
+   "validReadings": 4,
+   "fallbackReadings": 13,
+   "unsampledReadings": 0,
+   "tiers": [
+    {
+     "tierId": 508590,
+     "singular": "Private Charter - ZODIAC",
+     "note": "60ft Fountaine Pajot Catamaran \u00b7 Overnight \u00b7 Max 6 people",
+     "minPartySize": 1,
+     "priceMin": 3700.0,
+     "priceMax": 3700.0,
+     "datesQuoting": 4
+    }
+   ],
+   "zeroTiers": []
+  },
+  "591627": {
+   "pk": 591627,
+   "shortname": "sailschoonerhindu",
+   "name": "Hindu \u2022 Private Charter in Key West",
+   "storedPrice": 2551,
+   "durationText": "4 Hours",
+   "validReadings": 0,
+   "fallbackReadings": 0,
+   "unsampledReadings": 17,
+   "tiers": [],
+   "zeroTiers": []
+  },
+  "532140": {
+   "pk": 532140,
+   "shortname": "sixfinscharter",
+   "name": "Private Custom Activities Combo Charter",
+   "storedPrice": 2195,
+   "durationText": "6 Hour",
+   "validReadings": 14,
+   "fallbackReadings": 3,
+   "unsampledReadings": 0,
+   "tiers": [
+    {
+     "tierId": 973441,
+     "singular": "6 Hour Private Charter",
+     "note": "",
+     "minPartySize": 1,
+     "priceMin": 1395.0,
+     "priceMax": 1395.0,
+     "datesQuoting": 14
+    },
+    {
+     "tierId": 973442,
+     "singular": "8 Hour Private Charter",
+     "note": "",
+     "minPartySize": 1,
+     "priceMin": 1795.0,
+     "priceMax": 1795.0,
+     "datesQuoting": 14
+    },
+    {
+     "tierId": 973443,
+     "singular": "10 Hour Private Charter",
+     "note": "",
+     "minPartySize": 1,
+     "priceMin": 2195.0,
+     "priceMax": 2195.0,
+     "datesQuoting": 14
+    }
+   ],
+   "zeroTiers": []
+  },
+  "532164": {
+   "pk": 532164,
+   "shortname": "sixfinscharter",
+   "name": "Tiki Bar Crawl by Water",
+   "storedPrice": 1295,
+   "durationText": "Duration\n4 Hour",
+   "validReadings": 16,
+   "fallbackReadings": 1,
+   "unsampledReadings": 0,
+   "tiers": [
+    {
+     "tierId": 946200,
+     "singular": "Private Charter",
+     "note": "Up to 8 People.",
+     "minPartySize": 1,
+     "priceMin": 1295.0,
+     "priceMax": 1295.0,
+     "datesQuoting": 16
+    }
+   ],
+   "zeroTiers": []
+  },
+  "532224": {
+   "pk": 532224,
+   "shortname": "sixfinscharter",
+   "name": "Private Snorkel Adventure",
+   "storedPrice": 1195,
+   "durationText": "Duration\n4 Hour",
+   "validReadings": 16,
+   "fallbackReadings": 1,
+   "unsampledReadings": 0,
+   "tiers": [
+    {
+     "tierId": 946200,
+     "singular": "Private Charter",
+     "note": "Up to 8 People.",
+     "minPartySize": 1,
+     "priceMin": 1195.0,
+     "priceMax": 1195.0,
+     "datesQuoting": 16
+    }
+   ],
+   "zeroTiers": []
+  },
+  "532226": {
+   "pk": 532226,
+   "shortname": "sixfinscharter",
+   "name": "Private Secret Local Sandbars Escape",
+   "storedPrice": 1195,
+   "durationText": "Duration\n4 Hour",
+   "validReadings": 16,
+   "fallbackReadings": 1,
+   "unsampledReadings": 0,
+   "tiers": [
+    {
+     "tierId": 946200,
+     "singular": "Private Charter",
+     "note": "Up to 8 People.",
+     "minPartySize": 1,
+     "priceMin": 1195.0,
+     "priceMax": 1195.0,
+     "datesQuoting": 16
+    }
+   ],
+   "zeroTiers": []
+  },
+  "541394": {
+   "pk": 541394,
+   "shortname": "sixfinscharter",
+   "name": "Private Patch Reef Fishing",
+   "storedPrice": 1795,
+   "durationText": "4 hours",
+   "validReadings": 16,
+   "fallbackReadings": 1,
+   "unsampledReadings": 0,
+   "tiers": [
+    {
+     "tierId": 961265,
+     "singular": "Half-Day Charter",
+     "note": "4 hours | Max of 6 Passenger",
+     "minPartySize": 1,
+     "priceMin": 1395.0,
+     "priceMax": 1395.0,
+     "datesQuoting": 16
+    },
+    {
+     "tierId": 961266,
+     "singular": "3/4 - Day Charter",
+     "note": "6 hours | Max of 6 Passenger",
+     "minPartySize": 1,
+     "priceMin": 1595.0,
+     "priceMax": 1595.0,
+     "datesQuoting": 15
+    },
+    {
+     "tierId": 961267,
+     "singular": "Full-Day Charter",
+     "note": "8 hours | Max of 6 Passenger",
+     "minPartySize": 1,
+     "priceMin": 1795.0,
+     "priceMax": 1795.0,
+     "datesQuoting": 15
+    }
+   ],
+   "zeroTiers": []
+  },
+  "550475": {
+   "pk": 550475,
+   "shortname": "sixfinscharter",
+   "name": "Discover the Marquesas Keys",
+   "storedPrice": 2605,
+   "durationText": "8 Hour",
+   "validReadings": 14,
+   "fallbackReadings": 3,
+   "unsampledReadings": 0,
+   "tiers": [
+    {
+     "tierId": 973442,
+     "singular": "8 Hour Private Charter",
+     "note": "",
+     "minPartySize": 1,
+     "priceMin": 2605.0,
+     "priceMax": 2605.0,
+     "datesQuoting": 14
+    },
+    {
+     "tierId": 973443,
+     "singular": "10 Hour Private Charter",
+     "note": "",
+     "minPartySize": 1,
+     "priceMin": 3065.0,
+     "priceMax": 3065.0,
+     "datesQuoting": 14
+    }
+   ],
+   "zeroTiers": []
+  },
+  "554262": {
+   "pk": 554262,
+   "shortname": "sixfinscharter",
+   "name": "Private Bachelor and Bachelorette Parties",
+   "storedPrice": 1895,
+   "durationText": "Duration\n6 Hour",
+   "validReadings": 16,
+   "fallbackReadings": 1,
+   "unsampledReadings": 0,
+   "tiers": [
+    {
+     "tierId": 973441,
+     "singular": "6 Hour Private Charter",
+     "note": "",
+     "minPartySize": 1,
+     "priceMin": 1395.0,
+     "priceMax": 1395.0,
+     "datesQuoting": 16
+    },
+    {
+     "tierId": 973442,
+     "singular": "8 Hour Private Charter",
+     "note": "",
+     "minPartySize": 1,
+     "priceMin": 1595.0,
+     "priceMax": 1595.0,
+     "datesQuoting": 16
+    },
+    {
+     "tierId": 973443,
+     "singular": "10 Hour Private Charter",
+     "note": "",
+     "minPartySize": 1,
+     "priceMin": 1895.0,
+     "priceMax": 1895.0,
+     "datesQuoting": 16
+    }
+   ],
+   "zeroTiers": []
+  },
+  "563185": {
+   "pk": 563185,
+   "shortname": "sixfinscharter",
+   "name": "Private Clothing optional Charter",
+   "storedPrice": 1670,
+   "durationText": "Duration\n6 Hour",
+   "validReadings": 16,
+   "fallbackReadings": 1,
+   "unsampledReadings": 0,
+   "tiers": [
+    {
+     "tierId": 973441,
+     "singular": "6 Hour Private Charter",
+     "note": "",
+     "minPartySize": 1,
+     "priceMin": 1295.0,
+     "priceMax": 1295.0,
+     "datesQuoting": 16
+    },
+    {
+     "tierId": 973442,
+     "singular": "8 Hour Private Charter",
+     "note": "",
+     "minPartySize": 1,
+     "priceMin": 1445.0,
+     "priceMax": 1445.0,
+     "datesQuoting": 16
+    },
+    {
+     "tierId": 973443,
+     "singular": "10 Hour Private Charter",
+     "note": "",
+     "minPartySize": 1,
+     "priceMin": 1670.0,
+     "priceMax": 1670.0,
+     "datesQuoting": 16
+    }
+   ],
+   "zeroTiers": []
+  },
+  "122905": {
+   "pk": 122905,
+   "shortname": "sunsetsailkeywest",
+   "name": "Private Day sail on When And If",
+   "storedPrice": 1273.88,
+   "durationText": "Duration\n\n2 hour",
+   "validReadings": 2,
+   "fallbackReadings": 15,
+   "unsampledReadings": 0,
+   "tiers": [
+    {
+     "tierId": 3554,
+     "singular": "Private Charter",
+     "note": "Price includes up to 12 Guests",
+     "minPartySize": 1,
+     "priceMin": 1273.88,
+     "priceMax": 1273.88,
+     "datesQuoting": 2
+    }
+   ],
+   "zeroTiers": []
+  },
+  "122961": {
+   "pk": 122961,
+   "shortname": "sunsetsailkeywest",
+   "name": "Private Sunset Sail When And If",
+   "storedPrice": 2343,
+   "durationText": "Duration\n\n2 hour",
+   "validReadings": 0,
+   "fallbackReadings": 17,
+   "unsampledReadings": 0,
+   "tiers": [],
+   "zeroTiers": []
+  },
+  "538879": {
+   "pk": 538879,
+   "shortname": "sunsetsailkeywest",
+   "name": "Private Sunset Sail on Malabar X",
+   "storedPrice": 1757.62,
+   "durationText": "Duration\n\n2 hour",
+   "validReadings": 0,
+   "fallbackReadings": 17,
+   "unsampledReadings": 0,
+   "tiers": [],
+   "zeroTiers": []
+  },
+  "642821": {
+   "pk": 642821,
+   "shortname": "sweetvelocity",
+   "name": "Sandbar & Pirate Treasure Hunt Adventure",
+   "storedPrice": 495,
+   "durationText": "8 hours",
+   "validReadings": 0,
+   "fallbackReadings": 0,
+   "unsampledReadings": 17,
+   "tiers": [],
+   "zeroTiers": []
+  },
+  "672481": {
+   "pk": 672481,
+   "shortname": "thatswhatseasaid",
+   "name": "6 Hour Private Charter - Andiamo",
+   "storedPrice": 1870,
+   "durationText": "Duration\n6 Hour",
+   "validReadings": 15,
+   "fallbackReadings": 2,
+   "unsampledReadings": 0,
+   "tiers": [
+    {
+     "tierId": 1176951,
+     "singular": "Private Charter",
+     "note": "Includes up to 12 people",
+     "minPartySize": 1,
+     "priceMin": 1870.0,
+     "priceMax": 2200.0,
+     "datesQuoting": 15
+    }
+   ],
+   "zeroTiers": []
+  },
+  "672491": {
+   "pk": 672491,
+   "shortname": "thatswhatseasaid",
+   "name": "8 Hour Private Charter - Andiamo",
+   "storedPrice": 2018,
+   "durationText": "Duration\n8 Hour",
+   "validReadings": 15,
+   "fallbackReadings": 2,
+   "unsampledReadings": 0,
+   "tiers": [
+    {
+     "tierId": 1176951,
+     "singular": "Private Charter",
+     "note": "Includes up to 12 people",
+     "minPartySize": 1,
+     "priceMin": 2018.0,
+     "priceMax": 2375.0,
+     "datesQuoting": 15
+    }
+   ],
+   "zeroTiers": []
+  },
+  "672508": {
+   "pk": 672508,
+   "shortname": "thatswhatseasaid",
+   "name": "10 Hour Private Charter - Andiamo",
+   "storedPrice": 2350,
+   "durationText": "Duration\n10 Hour",
+   "validReadings": 15,
+   "fallbackReadings": 2,
+   "unsampledReadings": 0,
+   "tiers": [
+    {
+     "tierId": 1176951,
+     "singular": "Private Charter",
+     "note": "Includes up to 12 people",
+     "minPartySize": 1,
+     "priceMin": 2350.0,
+     "priceMax": 2800.0,
+     "datesQuoting": 15
+    }
+   ],
+   "zeroTiers": []
+  },
+  "206233": {
+   "pk": 206233,
+   "shortname": "ultragrandslam",
+   "name": "Full Day Charter",
+   "storedPrice": 1500,
+   "durationText": "8 Hours",
+   "validReadings": 4,
+   "fallbackReadings": 13,
+   "unsampledReadings": 0,
+   "tiers": [
+    {
+     "tierId": 395083,
+     "singular": "Full Day Charter",
+     "note": "Private 6 PAX Charter \u2022 All Ages",
+     "minPartySize": 1,
+     "priceMin": 1500.0,
+     "priceMax": 1500.0,
+     "datesQuoting": 4
+    }
+   ],
+   "zeroTiers": []
+  }
+ }
+}
