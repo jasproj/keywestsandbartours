@@ -35,3 +35,18 @@ Shipped in 9e1cb71 (#225, 3 rows) and e28b100 (#226, 130 rows); neither
 commit included a script, and a full sweep of /private/tmp for the literal
 stamp, the `fh-price-preview-v2` prefix, and any `priceSource` assignment
 found no writer. Not reconstructed from memory — recorded here as lost.
+
+## classified2.json (runtime input for write_backfill.py)
+
+Rescued 2026-08-24 (s44, follow-up to #241) — the generated input the writer
+reads; without it the script above is a record, not a re-run.
+
+- sha256: `763fcc870acdc20b19bc6ab9db10df95706be6e32fa5bed8c0dc37cbec554580`
+- original path: `/private/tmp/claude-501/-Users-jasondudney-repos-keywestsandbartours/d33ebf2f-0774-41a0-a9fa-faff89978da0/scratchpad/bf/classified2.json`
+- size: 382,279 bytes
+- mtime: 2026-08-20T18:42:29 (local) — 38 s before write_backfill.py's mtime
+- role: runtime input for `write_backfill.py` / stamp `fh-price-preview-v2-2026-08-20`
+- rows accounted for: 198 — 724 entries, buckets a=105, b=93, c=145, e=334,
+  f=47; the writer applies only a+b = 198 distinct pks, and those 198 pks are
+  exactly the 198 rows in tours-data.json carrying the stamp (0 either side).
+- copied with `cp -p`, `cmp` byte-identical, sha256 re-verified post-copy.
