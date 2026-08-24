@@ -52672,9 +52672,9 @@
       "category": "",
       "location": "United States/Florida/Key West",
       "island": "united states/florida/key west",
-      "price": 2343,
+      "price": 2343.5,
       "priceLabel": "charter",
-      "priceConfidence": "medium",
+      "priceConfidence": "high",
       "qualityScore": 85,
       "currency": "USD",
       "duration": "120 minutes",
@@ -52711,7 +52711,12 @@
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
       "_unknownFields": {
-        "durationMinutes": 120
+        "durationMinutes": 120,
+        "priceSource": "fh-price-preview-charter-2026-08-24",
+        "priceCustomerType": "Private Charter",
+        "priceTierCount": 1,
+        "excludedTiers": [],
+        "priceBasis": "stale-single-tier ruling (s44): live ladder has exactly one purchasable tier 'Private Charter' (Price includes up to 12 Guests) at $2,343.50, 16/17 date-valid readings at re-anchored window 2027-01-01..2027-04-01 (today-anchored window was 17/17 FALLBACK to 2027-01-02); stored $2,343 was a stale rounding, not a ceiling pick, so D-597/D-601 do not apply. Evidence: scripts-staging/s44-reprobe/obs_jan.json"
       },
       "nextAvailableDate": "2027-01-02",
       "nullConsecutiveSweeps": 0

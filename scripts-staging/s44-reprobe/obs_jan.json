@@ -1,0 +1,1319 @@
+{
+ "dates": [
+  "2027-01-01",
+  "2027-01-02",
+  "2027-01-03",
+  "2027-01-04",
+  "2027-01-05",
+  "2027-01-06",
+  "2027-01-07",
+  "2027-01-08",
+  "2027-01-09",
+  "2027-01-10",
+  "2027-01-11",
+  "2027-01-12",
+  "2027-01-13",
+  "2027-01-14",
+  "2027-01-31",
+  "2027-03-02",
+  "2027-04-01"
+ ],
+ "anchor": "2027-01-01",
+ "min_valid": 3,
+ "control": {
+  "shortname": "definitely-not-a-real-fh-shortname-zzz",
+  "code": 400,
+  "falsifiable": true
+ },
+ "obs": {
+  "122905": {
+   "2027-01-01": {
+    "status": "OK",
+    "start_at": "2027-01-01T14:00:00",
+    "requested": "2027-01-01",
+    "date_valid": true,
+    "tiers": [
+     {
+      "key": [
+       3554,
+       "Private Charter",
+       "Price includes up to 12 Guests",
+       1
+      ],
+      "singular": "Private Charter",
+      "note": "Price includes up to 12 Guests",
+      "min_party_size": 1,
+      "tier_id": 3554,
+      "dollars": 1273.88
+     }
+    ],
+    "zero_tiers": [],
+    "low": 127388,
+    "high": null
+   },
+   "2027-01-02": {
+    "status": "OK",
+    "start_at": "2027-01-02T14:00:00",
+    "requested": "2027-01-02",
+    "date_valid": true,
+    "tiers": [
+     {
+      "key": [
+       3554,
+       "Private Charter",
+       "Price includes up to 12 Guests",
+       1
+      ],
+      "singular": "Private Charter",
+      "note": "Price includes up to 12 Guests",
+      "min_party_size": 1,
+      "tier_id": 3554,
+      "dollars": 1273.88
+     }
+    ],
+    "zero_tiers": [],
+    "low": 127388,
+    "high": null
+   },
+   "2027-01-03": {
+    "status": "OK",
+    "start_at": "2027-01-03T14:00:00",
+    "requested": "2027-01-03",
+    "date_valid": true,
+    "tiers": [
+     {
+      "key": [
+       3554,
+       "Private Charter",
+       "Price includes up to 12 Guests",
+       1
+      ],
+      "singular": "Private Charter",
+      "note": "Price includes up to 12 Guests",
+      "min_party_size": 1,
+      "tier_id": 3554,
+      "dollars": 1273.88
+     }
+    ],
+    "zero_tiers": [],
+    "low": 127388,
+    "high": null
+   },
+   "2027-01-04": {
+    "status": "OK",
+    "start_at": "2027-01-04T14:00:00",
+    "requested": "2027-01-04",
+    "date_valid": true,
+    "tiers": [
+     {
+      "key": [
+       3554,
+       "Private Charter",
+       "Price includes up to 12 Guests",
+       1
+      ],
+      "singular": "Private Charter",
+      "note": "Price includes up to 12 Guests",
+      "min_party_size": 1,
+      "tier_id": 3554,
+      "dollars": 1273.88
+     }
+    ],
+    "zero_tiers": [],
+    "low": 127388,
+    "high": null
+   },
+   "2027-01-05": {
+    "status": "OK",
+    "start_at": "2027-01-05T14:00:00",
+    "requested": "2027-01-05",
+    "date_valid": true,
+    "tiers": [
+     {
+      "key": [
+       3554,
+       "Private Charter",
+       "Price includes up to 12 Guests",
+       1
+      ],
+      "singular": "Private Charter",
+      "note": "Price includes up to 12 Guests",
+      "min_party_size": 1,
+      "tier_id": 3554,
+      "dollars": 1273.88
+     }
+    ],
+    "zero_tiers": [],
+    "low": 127388,
+    "high": null
+   },
+   "2027-01-06": {
+    "status": "OK",
+    "start_at": "2027-01-06T14:00:00",
+    "requested": "2027-01-06",
+    "date_valid": true,
+    "tiers": [
+     {
+      "key": [
+       3554,
+       "Private Charter",
+       "Price includes up to 12 Guests",
+       1
+      ],
+      "singular": "Private Charter",
+      "note": "Price includes up to 12 Guests",
+      "min_party_size": 1,
+      "tier_id": 3554,
+      "dollars": 1273.88
+     }
+    ],
+    "zero_tiers": [],
+    "low": 127388,
+    "high": null
+   },
+   "2027-01-07": {
+    "status": "OK",
+    "start_at": "2027-01-07T14:00:00",
+    "requested": "2027-01-07",
+    "date_valid": true,
+    "tiers": [
+     {
+      "key": [
+       3554,
+       "Private Charter",
+       "Price includes up to 12 Guests",
+       1
+      ],
+      "singular": "Private Charter",
+      "note": "Price includes up to 12 Guests",
+      "min_party_size": 1,
+      "tier_id": 3554,
+      "dollars": 1273.88
+     }
+    ],
+    "zero_tiers": [],
+    "low": 127388,
+    "high": null
+   },
+   "2027-01-08": {
+    "status": "OK",
+    "start_at": "2027-01-08T14:00:00",
+    "requested": "2027-01-08",
+    "date_valid": true,
+    "tiers": [
+     {
+      "key": [
+       3554,
+       "Private Charter",
+       "Price includes up to 12 Guests",
+       1
+      ],
+      "singular": "Private Charter",
+      "note": "Price includes up to 12 Guests",
+      "min_party_size": 1,
+      "tier_id": 3554,
+      "dollars": 1273.88
+     }
+    ],
+    "zero_tiers": [],
+    "low": 127388,
+    "high": null
+   },
+   "2027-01-09": {
+    "status": "OK",
+    "start_at": "2027-01-09T14:00:00",
+    "requested": "2027-01-09",
+    "date_valid": true,
+    "tiers": [
+     {
+      "key": [
+       3554,
+       "Private Charter",
+       "Price includes up to 12 Guests",
+       1
+      ],
+      "singular": "Private Charter",
+      "note": "Price includes up to 12 Guests",
+      "min_party_size": 1,
+      "tier_id": 3554,
+      "dollars": 1273.88
+     }
+    ],
+    "zero_tiers": [],
+    "low": 127388,
+    "high": null
+   },
+   "2027-01-10": {
+    "status": "OK",
+    "start_at": "2027-01-10T14:00:00",
+    "requested": "2027-01-10",
+    "date_valid": true,
+    "tiers": [
+     {
+      "key": [
+       3554,
+       "Private Charter",
+       "Price includes up to 12 Guests",
+       1
+      ],
+      "singular": "Private Charter",
+      "note": "Price includes up to 12 Guests",
+      "min_party_size": 1,
+      "tier_id": 3554,
+      "dollars": 1273.88
+     }
+    ],
+    "zero_tiers": [],
+    "low": 127388,
+    "high": null
+   },
+   "2027-01-11": {
+    "status": "OK",
+    "start_at": "2027-01-11T14:00:00",
+    "requested": "2027-01-11",
+    "date_valid": true,
+    "tiers": [
+     {
+      "key": [
+       3554,
+       "Private Charter",
+       "Price includes up to 12 Guests",
+       1
+      ],
+      "singular": "Private Charter",
+      "note": "Price includes up to 12 Guests",
+      "min_party_size": 1,
+      "tier_id": 3554,
+      "dollars": 1273.88
+     }
+    ],
+    "zero_tiers": [],
+    "low": 127388,
+    "high": null
+   },
+   "2027-01-12": {
+    "status": "OK",
+    "start_at": "2027-01-12T14:00:00",
+    "requested": "2027-01-12",
+    "date_valid": true,
+    "tiers": [
+     {
+      "key": [
+       3554,
+       "Private Charter",
+       "Price includes up to 12 Guests",
+       1
+      ],
+      "singular": "Private Charter",
+      "note": "Price includes up to 12 Guests",
+      "min_party_size": 1,
+      "tier_id": 3554,
+      "dollars": 1273.88
+     }
+    ],
+    "zero_tiers": [],
+    "low": 127388,
+    "high": null
+   },
+   "2027-01-13": {
+    "status": "OK",
+    "start_at": "2027-01-13T14:00:00",
+    "requested": "2027-01-13",
+    "date_valid": true,
+    "tiers": [
+     {
+      "key": [
+       3554,
+       "Private Charter",
+       "Price includes up to 12 Guests",
+       1
+      ],
+      "singular": "Private Charter",
+      "note": "Price includes up to 12 Guests",
+      "min_party_size": 1,
+      "tier_id": 3554,
+      "dollars": 1273.88
+     }
+    ],
+    "zero_tiers": [],
+    "low": 127388,
+    "high": null
+   },
+   "2027-01-14": {
+    "status": "OK",
+    "start_at": "2027-01-14T14:00:00",
+    "requested": "2027-01-14",
+    "date_valid": true,
+    "tiers": [
+     {
+      "key": [
+       3554,
+       "Private Charter",
+       "Price includes up to 12 Guests",
+       1
+      ],
+      "singular": "Private Charter",
+      "note": "Price includes up to 12 Guests",
+      "min_party_size": 1,
+      "tier_id": 3554,
+      "dollars": 1273.88
+     }
+    ],
+    "zero_tiers": [],
+    "low": 127388,
+    "high": null
+   },
+   "2027-01-31": {
+    "status": "OK",
+    "start_at": "2027-01-31T14:00:00",
+    "requested": "2027-01-31",
+    "date_valid": true,
+    "tiers": [
+     {
+      "key": [
+       3554,
+       "Private Charter",
+       "Price includes up to 12 Guests",
+       1
+      ],
+      "singular": "Private Charter",
+      "note": "Price includes up to 12 Guests",
+      "min_party_size": 1,
+      "tier_id": 3554,
+      "dollars": 1273.88
+     }
+    ],
+    "zero_tiers": [],
+    "low": 127388,
+    "high": null
+   },
+   "2027-03-02": {
+    "status": "OK",
+    "start_at": "2027-03-02T14:00:00",
+    "requested": "2027-03-02",
+    "date_valid": true,
+    "tiers": [
+     {
+      "key": [
+       3554,
+       "Private Charter",
+       "Price includes up to 12 Guests",
+       1
+      ],
+      "singular": "Private Charter",
+      "note": "Price includes up to 12 Guests",
+      "min_party_size": 1,
+      "tier_id": 3554,
+      "dollars": 1273.88
+     }
+    ],
+    "zero_tiers": [],
+    "low": 127388,
+    "high": null
+   },
+   "2027-04-01": {
+    "status": "OK",
+    "start_at": "2027-04-01T14:00:00",
+    "requested": "2027-04-01",
+    "date_valid": true,
+    "tiers": [
+     {
+      "key": [
+       3554,
+       "Private Charter",
+       "Price includes up to 12 Guests",
+       1
+      ],
+      "singular": "Private Charter",
+      "note": "Price includes up to 12 Guests",
+      "min_party_size": 1,
+      "tier_id": 3554,
+      "dollars": 1273.88
+     }
+    ],
+    "zero_tiers": [],
+    "low": 127388,
+    "high": null
+   }
+  },
+  "122961": {
+   "2027-01-01": {
+    "status": "FALLBACK",
+    "start_at": "2027-01-02T16:30:00",
+    "requested": "2027-01-01",
+    "date_valid": false,
+    "tiers": [
+     {
+      "key": [
+       3554,
+       "Private Charter",
+       "Price includes up to 12 Guests",
+       1
+      ],
+      "singular": "Private Charter",
+      "note": "Price includes up to 12 Guests",
+      "min_party_size": 1,
+      "tier_id": 3554,
+      "dollars": 2343.5
+     }
+    ],
+    "zero_tiers": [],
+    "low": 234350,
+    "high": null
+   },
+   "2027-01-02": {
+    "status": "OK",
+    "start_at": "2027-01-02T16:30:00",
+    "requested": "2027-01-02",
+    "date_valid": true,
+    "tiers": [
+     {
+      "key": [
+       3554,
+       "Private Charter",
+       "Price includes up to 12 Guests",
+       1
+      ],
+      "singular": "Private Charter",
+      "note": "Price includes up to 12 Guests",
+      "min_party_size": 1,
+      "tier_id": 3554,
+      "dollars": 2343.5
+     }
+    ],
+    "zero_tiers": [],
+    "low": 234350,
+    "high": null
+   },
+   "2027-01-03": {
+    "status": "OK",
+    "start_at": "2027-01-03T16:30:00",
+    "requested": "2027-01-03",
+    "date_valid": true,
+    "tiers": [
+     {
+      "key": [
+       3554,
+       "Private Charter",
+       "Price includes up to 12 Guests",
+       1
+      ],
+      "singular": "Private Charter",
+      "note": "Price includes up to 12 Guests",
+      "min_party_size": 1,
+      "tier_id": 3554,
+      "dollars": 2343.5
+     }
+    ],
+    "zero_tiers": [],
+    "low": 234350,
+    "high": null
+   },
+   "2027-01-04": {
+    "status": "OK",
+    "start_at": "2027-01-04T16:30:00",
+    "requested": "2027-01-04",
+    "date_valid": true,
+    "tiers": [
+     {
+      "key": [
+       3554,
+       "Private Charter",
+       "Price includes up to 12 Guests",
+       1
+      ],
+      "singular": "Private Charter",
+      "note": "Price includes up to 12 Guests",
+      "min_party_size": 1,
+      "tier_id": 3554,
+      "dollars": 2343.5
+     }
+    ],
+    "zero_tiers": [],
+    "low": 234350,
+    "high": null
+   },
+   "2027-01-05": {
+    "status": "OK",
+    "start_at": "2027-01-05T16:30:00",
+    "requested": "2027-01-05",
+    "date_valid": true,
+    "tiers": [
+     {
+      "key": [
+       3554,
+       "Private Charter",
+       "Price includes up to 12 Guests",
+       1
+      ],
+      "singular": "Private Charter",
+      "note": "Price includes up to 12 Guests",
+      "min_party_size": 1,
+      "tier_id": 3554,
+      "dollars": 2343.5
+     }
+    ],
+    "zero_tiers": [],
+    "low": 234350,
+    "high": null
+   },
+   "2027-01-06": {
+    "status": "OK",
+    "start_at": "2027-01-06T16:30:00",
+    "requested": "2027-01-06",
+    "date_valid": true,
+    "tiers": [
+     {
+      "key": [
+       3554,
+       "Private Charter",
+       "Price includes up to 12 Guests",
+       1
+      ],
+      "singular": "Private Charter",
+      "note": "Price includes up to 12 Guests",
+      "min_party_size": 1,
+      "tier_id": 3554,
+      "dollars": 2343.5
+     }
+    ],
+    "zero_tiers": [],
+    "low": 234350,
+    "high": null
+   },
+   "2027-01-07": {
+    "status": "OK",
+    "start_at": "2027-01-07T16:30:00",
+    "requested": "2027-01-07",
+    "date_valid": true,
+    "tiers": [
+     {
+      "key": [
+       3554,
+       "Private Charter",
+       "Price includes up to 12 Guests",
+       1
+      ],
+      "singular": "Private Charter",
+      "note": "Price includes up to 12 Guests",
+      "min_party_size": 1,
+      "tier_id": 3554,
+      "dollars": 2343.5
+     }
+    ],
+    "zero_tiers": [],
+    "low": 234350,
+    "high": null
+   },
+   "2027-01-08": {
+    "status": "OK",
+    "start_at": "2027-01-08T16:30:00",
+    "requested": "2027-01-08",
+    "date_valid": true,
+    "tiers": [
+     {
+      "key": [
+       3554,
+       "Private Charter",
+       "Price includes up to 12 Guests",
+       1
+      ],
+      "singular": "Private Charter",
+      "note": "Price includes up to 12 Guests",
+      "min_party_size": 1,
+      "tier_id": 3554,
+      "dollars": 2343.5
+     }
+    ],
+    "zero_tiers": [],
+    "low": 234350,
+    "high": null
+   },
+   "2027-01-09": {
+    "status": "OK",
+    "start_at": "2027-01-09T16:30:00",
+    "requested": "2027-01-09",
+    "date_valid": true,
+    "tiers": [
+     {
+      "key": [
+       3554,
+       "Private Charter",
+       "Price includes up to 12 Guests",
+       1
+      ],
+      "singular": "Private Charter",
+      "note": "Price includes up to 12 Guests",
+      "min_party_size": 1,
+      "tier_id": 3554,
+      "dollars": 2343.5
+     }
+    ],
+    "zero_tiers": [],
+    "low": 234350,
+    "high": null
+   },
+   "2027-01-10": {
+    "status": "OK",
+    "start_at": "2027-01-10T16:30:00",
+    "requested": "2027-01-10",
+    "date_valid": true,
+    "tiers": [
+     {
+      "key": [
+       3554,
+       "Private Charter",
+       "Price includes up to 12 Guests",
+       1
+      ],
+      "singular": "Private Charter",
+      "note": "Price includes up to 12 Guests",
+      "min_party_size": 1,
+      "tier_id": 3554,
+      "dollars": 2343.5
+     }
+    ],
+    "zero_tiers": [],
+    "low": 234350,
+    "high": null
+   },
+   "2027-01-11": {
+    "status": "OK",
+    "start_at": "2027-01-11T16:30:00",
+    "requested": "2027-01-11",
+    "date_valid": true,
+    "tiers": [
+     {
+      "key": [
+       3554,
+       "Private Charter",
+       "Price includes up to 12 Guests",
+       1
+      ],
+      "singular": "Private Charter",
+      "note": "Price includes up to 12 Guests",
+      "min_party_size": 1,
+      "tier_id": 3554,
+      "dollars": 2343.5
+     }
+    ],
+    "zero_tiers": [],
+    "low": 234350,
+    "high": null
+   },
+   "2027-01-12": {
+    "status": "OK",
+    "start_at": "2027-01-12T16:30:00",
+    "requested": "2027-01-12",
+    "date_valid": true,
+    "tiers": [
+     {
+      "key": [
+       3554,
+       "Private Charter",
+       "Price includes up to 12 Guests",
+       1
+      ],
+      "singular": "Private Charter",
+      "note": "Price includes up to 12 Guests",
+      "min_party_size": 1,
+      "tier_id": 3554,
+      "dollars": 2343.5
+     }
+    ],
+    "zero_tiers": [],
+    "low": 234350,
+    "high": null
+   },
+   "2027-01-13": {
+    "status": "OK",
+    "start_at": "2027-01-13T16:30:00",
+    "requested": "2027-01-13",
+    "date_valid": true,
+    "tiers": [
+     {
+      "key": [
+       3554,
+       "Private Charter",
+       "Price includes up to 12 Guests",
+       1
+      ],
+      "singular": "Private Charter",
+      "note": "Price includes up to 12 Guests",
+      "min_party_size": 1,
+      "tier_id": 3554,
+      "dollars": 2343.5
+     }
+    ],
+    "zero_tiers": [],
+    "low": 234350,
+    "high": null
+   },
+   "2027-01-14": {
+    "status": "OK",
+    "start_at": "2027-01-14T16:30:00",
+    "requested": "2027-01-14",
+    "date_valid": true,
+    "tiers": [
+     {
+      "key": [
+       3554,
+       "Private Charter",
+       "Price includes up to 12 Guests",
+       1
+      ],
+      "singular": "Private Charter",
+      "note": "Price includes up to 12 Guests",
+      "min_party_size": 1,
+      "tier_id": 3554,
+      "dollars": 2343.5
+     }
+    ],
+    "zero_tiers": [],
+    "low": 234350,
+    "high": null
+   },
+   "2027-01-31": {
+    "status": "OK",
+    "start_at": "2027-01-31T16:45:00",
+    "requested": "2027-01-31",
+    "date_valid": true,
+    "tiers": [
+     {
+      "key": [
+       3554,
+       "Private Charter",
+       "Price includes up to 12 Guests",
+       1
+      ],
+      "singular": "Private Charter",
+      "note": "Price includes up to 12 Guests",
+      "min_party_size": 1,
+      "tier_id": 3554,
+      "dollars": 2343.5
+     }
+    ],
+    "zero_tiers": [],
+    "low": 234350,
+    "high": null
+   },
+   "2027-03-02": {
+    "status": "OK",
+    "start_at": "2027-03-02T17:00:00",
+    "requested": "2027-03-02",
+    "date_valid": true,
+    "tiers": [
+     {
+      "key": [
+       3554,
+       "Private Charter",
+       "Price includes up to 12 Guests",
+       1
+      ],
+      "singular": "Private Charter",
+      "note": "Price includes up to 12 Guests",
+      "min_party_size": 1,
+      "tier_id": 3554,
+      "dollars": 2343.5
+     }
+    ],
+    "zero_tiers": [],
+    "low": 234350,
+    "high": null
+   },
+   "2027-04-01": {
+    "status": "OK",
+    "start_at": "2027-04-01T18:15:00",
+    "requested": "2027-04-01",
+    "date_valid": true,
+    "tiers": [
+     {
+      "key": [
+       3554,
+       "Private Charter",
+       "Price includes up to 12 Guests",
+       1
+      ],
+      "singular": "Private Charter",
+      "note": "Price includes up to 12 Guests",
+      "min_party_size": 1,
+      "tier_id": 3554,
+      "dollars": 2343.5
+     }
+    ],
+    "zero_tiers": [],
+    "low": 234350,
+    "high": null
+   }
+  },
+  "538879": {
+   "2027-01-01": {
+    "status": "OK",
+    "start_at": "2027-01-01T16:30:00",
+    "requested": "2027-01-01",
+    "date_valid": true,
+    "tiers": [
+     {
+      "key": [
+       957110,
+       "Private Sunset Sail on Malabar X",
+       "",
+       1
+      ],
+      "singular": "Private Sunset Sail on Malabar X",
+      "note": "",
+      "min_party_size": 1,
+      "tier_id": 957110,
+      "dollars": 1757.62
+     }
+    ],
+    "zero_tiers": [],
+    "low": 175762,
+    "high": null
+   },
+   "2027-01-02": {
+    "status": "OK",
+    "start_at": "2027-01-02T16:30:00",
+    "requested": "2027-01-02",
+    "date_valid": true,
+    "tiers": [
+     {
+      "key": [
+       957110,
+       "Private Sunset Sail on Malabar X",
+       "",
+       1
+      ],
+      "singular": "Private Sunset Sail on Malabar X",
+      "note": "",
+      "min_party_size": 1,
+      "tier_id": 957110,
+      "dollars": 1757.62
+     }
+    ],
+    "zero_tiers": [],
+    "low": 175762,
+    "high": null
+   },
+   "2027-01-03": {
+    "status": "OK",
+    "start_at": "2027-01-03T16:30:00",
+    "requested": "2027-01-03",
+    "date_valid": true,
+    "tiers": [
+     {
+      "key": [
+       957110,
+       "Private Sunset Sail on Malabar X",
+       "",
+       1
+      ],
+      "singular": "Private Sunset Sail on Malabar X",
+      "note": "",
+      "min_party_size": 1,
+      "tier_id": 957110,
+      "dollars": 1757.62
+     }
+    ],
+    "zero_tiers": [],
+    "low": 175762,
+    "high": null
+   },
+   "2027-01-04": {
+    "status": "OK",
+    "start_at": "2027-01-04T16:30:00",
+    "requested": "2027-01-04",
+    "date_valid": true,
+    "tiers": [
+     {
+      "key": [
+       957110,
+       "Private Sunset Sail on Malabar X",
+       "",
+       1
+      ],
+      "singular": "Private Sunset Sail on Malabar X",
+      "note": "",
+      "min_party_size": 1,
+      "tier_id": 957110,
+      "dollars": 1757.62
+     }
+    ],
+    "zero_tiers": [],
+    "low": 175762,
+    "high": null
+   },
+   "2027-01-05": {
+    "status": "OK",
+    "start_at": "2027-01-05T16:30:00",
+    "requested": "2027-01-05",
+    "date_valid": true,
+    "tiers": [
+     {
+      "key": [
+       957110,
+       "Private Sunset Sail on Malabar X",
+       "",
+       1
+      ],
+      "singular": "Private Sunset Sail on Malabar X",
+      "note": "",
+      "min_party_size": 1,
+      "tier_id": 957110,
+      "dollars": 1757.62
+     }
+    ],
+    "zero_tiers": [],
+    "low": 175762,
+    "high": null
+   },
+   "2027-01-06": {
+    "status": "OK",
+    "start_at": "2027-01-06T16:30:00",
+    "requested": "2027-01-06",
+    "date_valid": true,
+    "tiers": [
+     {
+      "key": [
+       957110,
+       "Private Sunset Sail on Malabar X",
+       "",
+       1
+      ],
+      "singular": "Private Sunset Sail on Malabar X",
+      "note": "",
+      "min_party_size": 1,
+      "tier_id": 957110,
+      "dollars": 1757.62
+     }
+    ],
+    "zero_tiers": [],
+    "low": 175762,
+    "high": null
+   },
+   "2027-01-07": {
+    "status": "OK",
+    "start_at": "2027-01-07T16:30:00",
+    "requested": "2027-01-07",
+    "date_valid": true,
+    "tiers": [
+     {
+      "key": [
+       957110,
+       "Private Sunset Sail on Malabar X",
+       "",
+       1
+      ],
+      "singular": "Private Sunset Sail on Malabar X",
+      "note": "",
+      "min_party_size": 1,
+      "tier_id": 957110,
+      "dollars": 1757.62
+     }
+    ],
+    "zero_tiers": [],
+    "low": 175762,
+    "high": null
+   },
+   "2027-01-08": {
+    "status": "OK",
+    "start_at": "2027-01-08T16:30:00",
+    "requested": "2027-01-08",
+    "date_valid": true,
+    "tiers": [
+     {
+      "key": [
+       957110,
+       "Private Sunset Sail on Malabar X",
+       "",
+       1
+      ],
+      "singular": "Private Sunset Sail on Malabar X",
+      "note": "",
+      "min_party_size": 1,
+      "tier_id": 957110,
+      "dollars": 1757.62
+     }
+    ],
+    "zero_tiers": [],
+    "low": 175762,
+    "high": null
+   },
+   "2027-01-09": {
+    "status": "OK",
+    "start_at": "2027-01-09T16:30:00",
+    "requested": "2027-01-09",
+    "date_valid": true,
+    "tiers": [
+     {
+      "key": [
+       957110,
+       "Private Sunset Sail on Malabar X",
+       "",
+       1
+      ],
+      "singular": "Private Sunset Sail on Malabar X",
+      "note": "",
+      "min_party_size": 1,
+      "tier_id": 957110,
+      "dollars": 1757.62
+     }
+    ],
+    "zero_tiers": [],
+    "low": 175762,
+    "high": null
+   },
+   "2027-01-10": {
+    "status": "OK",
+    "start_at": "2027-01-10T16:30:00",
+    "requested": "2027-01-10",
+    "date_valid": true,
+    "tiers": [
+     {
+      "key": [
+       957110,
+       "Private Sunset Sail on Malabar X",
+       "",
+       1
+      ],
+      "singular": "Private Sunset Sail on Malabar X",
+      "note": "",
+      "min_party_size": 1,
+      "tier_id": 957110,
+      "dollars": 1757.62
+     }
+    ],
+    "zero_tiers": [],
+    "low": 175762,
+    "high": null
+   },
+   "2027-01-11": {
+    "status": "OK",
+    "start_at": "2027-01-11T16:30:00",
+    "requested": "2027-01-11",
+    "date_valid": true,
+    "tiers": [
+     {
+      "key": [
+       957110,
+       "Private Sunset Sail on Malabar X",
+       "",
+       1
+      ],
+      "singular": "Private Sunset Sail on Malabar X",
+      "note": "",
+      "min_party_size": 1,
+      "tier_id": 957110,
+      "dollars": 1757.62
+     }
+    ],
+    "zero_tiers": [],
+    "low": 175762,
+    "high": null
+   },
+   "2027-01-12": {
+    "status": "OK",
+    "start_at": "2027-01-12T16:30:00",
+    "requested": "2027-01-12",
+    "date_valid": true,
+    "tiers": [
+     {
+      "key": [
+       957110,
+       "Private Sunset Sail on Malabar X",
+       "",
+       1
+      ],
+      "singular": "Private Sunset Sail on Malabar X",
+      "note": "",
+      "min_party_size": 1,
+      "tier_id": 957110,
+      "dollars": 1757.62
+     }
+    ],
+    "zero_tiers": [],
+    "low": 175762,
+    "high": null
+   },
+   "2027-01-13": {
+    "status": "OK",
+    "start_at": "2027-01-13T16:30:00",
+    "requested": "2027-01-13",
+    "date_valid": true,
+    "tiers": [
+     {
+      "key": [
+       957110,
+       "Private Sunset Sail on Malabar X",
+       "",
+       1
+      ],
+      "singular": "Private Sunset Sail on Malabar X",
+      "note": "",
+      "min_party_size": 1,
+      "tier_id": 957110,
+      "dollars": 1757.62
+     }
+    ],
+    "zero_tiers": [],
+    "low": 175762,
+    "high": null
+   },
+   "2027-01-14": {
+    "status": "OK",
+    "start_at": "2027-01-14T16:30:00",
+    "requested": "2027-01-14",
+    "date_valid": true,
+    "tiers": [
+     {
+      "key": [
+       957110,
+       "Private Sunset Sail on Malabar X",
+       "",
+       1
+      ],
+      "singular": "Private Sunset Sail on Malabar X",
+      "note": "",
+      "min_party_size": 1,
+      "tier_id": 957110,
+      "dollars": 1757.62
+     }
+    ],
+    "zero_tiers": [],
+    "low": 175762,
+    "high": null
+   },
+   "2027-01-31": {
+    "status": "OK",
+    "start_at": "2027-01-31T16:45:00",
+    "requested": "2027-01-31",
+    "date_valid": true,
+    "tiers": [
+     {
+      "key": [
+       957110,
+       "Private Sunset Sail on Malabar X",
+       "",
+       1
+      ],
+      "singular": "Private Sunset Sail on Malabar X",
+      "note": "",
+      "min_party_size": 1,
+      "tier_id": 957110,
+      "dollars": 1757.62
+     }
+    ],
+    "zero_tiers": [],
+    "low": 175762,
+    "high": null
+   },
+   "2027-03-02": {
+    "status": "OK",
+    "start_at": "2027-03-02T17:00:00",
+    "requested": "2027-03-02",
+    "date_valid": true,
+    "tiers": [
+     {
+      "key": [
+       957110,
+       "Private Sunset Sail on Malabar X",
+       "",
+       1
+      ],
+      "singular": "Private Sunset Sail on Malabar X",
+      "note": "",
+      "min_party_size": 1,
+      "tier_id": 957110,
+      "dollars": 1757.62
+     }
+    ],
+    "zero_tiers": [],
+    "low": 175762,
+    "high": null
+   },
+   "2027-04-01": {
+    "status": "OK",
+    "start_at": "2027-04-01T18:15:00",
+    "requested": "2027-04-01",
+    "date_valid": true,
+    "tiers": [
+     {
+      "key": [
+       957110,
+       "Private Sunset Sail on Malabar X",
+       "",
+       1
+      ],
+      "singular": "Private Sunset Sail on Malabar X",
+      "note": "",
+      "min_party_size": 1,
+      "tier_id": 957110,
+      "dollars": 1757.62
+     }
+    ],
+    "zero_tiers": [],
+    "low": 175762,
+    "high": null
+   }
+  }
+ },
+ "http": {
+  "122905": {
+   "2027-01-01": 200,
+   "2027-01-02": 200,
+   "2027-01-03": 200,
+   "2027-01-04": 200,
+   "2027-01-05": 200,
+   "2027-01-06": 200,
+   "2027-01-07": 200,
+   "2027-01-08": 200,
+   "2027-01-09": 200,
+   "2027-01-10": 200,
+   "2027-01-11": 200,
+   "2027-01-12": 200,
+   "2027-01-13": 200,
+   "2027-01-14": 200,
+   "2027-01-31": 200,
+   "2027-03-02": 200,
+   "2027-04-01": 200
+  },
+  "122961": {
+   "2027-01-01": 200,
+   "2027-01-02": 200,
+   "2027-01-03": 200,
+   "2027-01-04": 200,
+   "2027-01-05": 200,
+   "2027-01-06": 200,
+   "2027-01-07": 200,
+   "2027-01-08": 200,
+   "2027-01-09": 200,
+   "2027-01-10": 200,
+   "2027-01-11": 200,
+   "2027-01-12": 200,
+   "2027-01-13": 200,
+   "2027-01-14": 200,
+   "2027-01-31": 200,
+   "2027-03-02": 200,
+   "2027-04-01": 200
+  },
+  "538879": {
+   "2027-01-01": 200,
+   "2027-01-02": 200,
+   "2027-01-03": 200,
+   "2027-01-04": 200,
+   "2027-01-05": 200,
+   "2027-01-06": 200,
+   "2027-01-07": 200,
+   "2027-01-08": 200,
+   "2027-01-09": 200,
+   "2027-01-10": 200,
+   "2027-01-11": 200,
+   "2027-01-12": 200,
+   "2027-01-13": 200,
+   "2027-01-14": 200,
+   "2027-01-31": 200,
+   "2027-03-02": 200,
+   "2027-04-01": 200
+  }
+ }
+}
