@@ -1,0 +1,461 @@
+{
+ "dates": [
+  "2026-10-02",
+  "2026-10-03",
+  "2026-10-04",
+  "2026-10-05",
+  "2026-10-06",
+  "2026-10-07",
+  "2026-10-08",
+  "2026-10-09",
+  "2026-10-10",
+  "2026-10-11",
+  "2026-10-12",
+  "2026-10-13",
+  "2026-10-14",
+  "2026-10-15",
+  "2026-11-01",
+  "2026-12-01",
+  "2026-12-31"
+ ],
+ "anchor": "2026-10-02",
+ "min_valid": 3,
+ "control": {
+  "shortname": "definitely-not-a-real-fh-shortname-zzz",
+  "code": 400,
+  "falsifiable": true
+ },
+ "obs": {
+  "122905": {
+   "2026-10-02": {
+    "status": "OK",
+    "start_at": "2026-10-02T14:00:00",
+    "requested": "2026-10-02",
+    "date_valid": true,
+    "tiers": [
+     {
+      "key": [
+       3554,
+       "Private Charter",
+       "Price includes up to 12 Guests",
+       1
+      ],
+      "singular": "Private Charter",
+      "note": "Price includes up to 12 Guests",
+      "min_party_size": 1,
+      "tier_id": 3554,
+      "dollars": 1273.88
+     }
+    ],
+    "zero_tiers": [],
+    "low": 127388,
+    "high": null
+   },
+   "2026-10-03": {
+    "status": "OK",
+    "start_at": "2026-10-03T14:00:00",
+    "requested": "2026-10-03",
+    "date_valid": true,
+    "tiers": [
+     {
+      "key": [
+       3554,
+       "Private Charter",
+       "Price includes up to 12 Guests",
+       1
+      ],
+      "singular": "Private Charter",
+      "note": "Price includes up to 12 Guests",
+      "min_party_size": 1,
+      "tier_id": 3554,
+      "dollars": 1273.88
+     }
+    ],
+    "zero_tiers": [],
+    "low": 127388,
+    "high": null
+   },
+   "2026-10-04": {
+    "status": "OK",
+    "start_at": "2026-10-04T14:00:00",
+    "requested": "2026-10-04",
+    "date_valid": true,
+    "tiers": [
+     {
+      "key": [
+       3554,
+       "Private Charter",
+       "Price includes up to 12 Guests",
+       1
+      ],
+      "singular": "Private Charter",
+      "note": "Price includes up to 12 Guests",
+      "min_party_size": 1,
+      "tier_id": 3554,
+      "dollars": 1273.88
+     }
+    ],
+    "zero_tiers": [],
+    "low": 127388,
+    "high": null
+   },
+   "2026-10-05": {
+    "status": "OK",
+    "start_at": "2026-10-05T14:00:00",
+    "requested": "2026-10-05",
+    "date_valid": true,
+    "tiers": [
+     {
+      "key": [
+       3554,
+       "Private Charter",
+       "Price includes up to 12 Guests",
+       1
+      ],
+      "singular": "Private Charter",
+      "note": "Price includes up to 12 Guests",
+      "min_party_size": 1,
+      "tier_id": 3554,
+      "dollars": 1273.88
+     }
+    ],
+    "zero_tiers": [],
+    "low": 127388,
+    "high": null
+   },
+   "2026-10-06": {
+    "status": "OK",
+    "start_at": "2026-10-06T14:00:00",
+    "requested": "2026-10-06",
+    "date_valid": true,
+    "tiers": [
+     {
+      "key": [
+       3554,
+       "Private Charter",
+       "Price includes up to 12 Guests",
+       1
+      ],
+      "singular": "Private Charter",
+      "note": "Price includes up to 12 Guests",
+      "min_party_size": 1,
+      "tier_id": 3554,
+      "dollars": 1273.88
+     }
+    ],
+    "zero_tiers": [],
+    "low": 127388,
+    "high": null
+   },
+   "2026-10-07": {
+    "status": "OK",
+    "start_at": "2026-10-07T14:00:00",
+    "requested": "2026-10-07",
+    "date_valid": true,
+    "tiers": [
+     {
+      "key": [
+       3554,
+       "Private Charter",
+       "Price includes up to 12 Guests",
+       1
+      ],
+      "singular": "Private Charter",
+      "note": "Price includes up to 12 Guests",
+      "min_party_size": 1,
+      "tier_id": 3554,
+      "dollars": 1273.88
+     }
+    ],
+    "zero_tiers": [],
+    "low": 127388,
+    "high": null
+   },
+   "2026-10-08": {
+    "status": "OK",
+    "start_at": "2026-10-08T14:00:00",
+    "requested": "2026-10-08",
+    "date_valid": true,
+    "tiers": [
+     {
+      "key": [
+       3554,
+       "Private Charter",
+       "Price includes up to 12 Guests",
+       1
+      ],
+      "singular": "Private Charter",
+      "note": "Price includes up to 12 Guests",
+      "min_party_size": 1,
+      "tier_id": 3554,
+      "dollars": 1273.88
+     }
+    ],
+    "zero_tiers": [],
+    "low": 127388,
+    "high": null
+   },
+   "2026-10-09": {
+    "status": "OK",
+    "start_at": "2026-10-09T14:00:00",
+    "requested": "2026-10-09",
+    "date_valid": true,
+    "tiers": [
+     {
+      "key": [
+       3554,
+       "Private Charter",
+       "Price includes up to 12 Guests",
+       1
+      ],
+      "singular": "Private Charter",
+      "note": "Price includes up to 12 Guests",
+      "min_party_size": 1,
+      "tier_id": 3554,
+      "dollars": 1273.88
+     }
+    ],
+    "zero_tiers": [],
+    "low": 127388,
+    "high": null
+   },
+   "2026-10-10": {
+    "status": "OK",
+    "start_at": "2026-10-10T14:00:00",
+    "requested": "2026-10-10",
+    "date_valid": true,
+    "tiers": [
+     {
+      "key": [
+       3554,
+       "Private Charter",
+       "Price includes up to 12 Guests",
+       1
+      ],
+      "singular": "Private Charter",
+      "note": "Price includes up to 12 Guests",
+      "min_party_size": 1,
+      "tier_id": 3554,
+      "dollars": 1273.88
+     }
+    ],
+    "zero_tiers": [],
+    "low": 127388,
+    "high": null
+   },
+   "2026-10-11": {
+    "status": "OK",
+    "start_at": "2026-10-11T14:00:00",
+    "requested": "2026-10-11",
+    "date_valid": true,
+    "tiers": [
+     {
+      "key": [
+       3554,
+       "Private Charter",
+       "Price includes up to 12 Guests",
+       1
+      ],
+      "singular": "Private Charter",
+      "note": "Price includes up to 12 Guests",
+      "min_party_size": 1,
+      "tier_id": 3554,
+      "dollars": 1273.88
+     }
+    ],
+    "zero_tiers": [],
+    "low": 127388,
+    "high": null
+   },
+   "2026-10-12": {
+    "status": "OK",
+    "start_at": "2026-10-12T14:00:00",
+    "requested": "2026-10-12",
+    "date_valid": true,
+    "tiers": [
+     {
+      "key": [
+       3554,
+       "Private Charter",
+       "Price includes up to 12 Guests",
+       1
+      ],
+      "singular": "Private Charter",
+      "note": "Price includes up to 12 Guests",
+      "min_party_size": 1,
+      "tier_id": 3554,
+      "dollars": 1273.88
+     }
+    ],
+    "zero_tiers": [],
+    "low": 127388,
+    "high": null
+   },
+   "2026-10-13": {
+    "status": "OK",
+    "start_at": "2026-10-13T14:00:00",
+    "requested": "2026-10-13",
+    "date_valid": true,
+    "tiers": [
+     {
+      "key": [
+       3554,
+       "Private Charter",
+       "Price includes up to 12 Guests",
+       1
+      ],
+      "singular": "Private Charter",
+      "note": "Price includes up to 12 Guests",
+      "min_party_size": 1,
+      "tier_id": 3554,
+      "dollars": 1273.88
+     }
+    ],
+    "zero_tiers": [],
+    "low": 127388,
+    "high": null
+   },
+   "2026-10-14": {
+    "status": "OK",
+    "start_at": "2026-10-14T14:00:00",
+    "requested": "2026-10-14",
+    "date_valid": true,
+    "tiers": [
+     {
+      "key": [
+       3554,
+       "Private Charter",
+       "Price includes up to 12 Guests",
+       1
+      ],
+      "singular": "Private Charter",
+      "note": "Price includes up to 12 Guests",
+      "min_party_size": 1,
+      "tier_id": 3554,
+      "dollars": 1273.88
+     }
+    ],
+    "zero_tiers": [],
+    "low": 127388,
+    "high": null
+   },
+   "2026-10-15": {
+    "status": "OK",
+    "start_at": "2026-10-15T14:00:00",
+    "requested": "2026-10-15",
+    "date_valid": true,
+    "tiers": [
+     {
+      "key": [
+       3554,
+       "Private Charter",
+       "Price includes up to 12 Guests",
+       1
+      ],
+      "singular": "Private Charter",
+      "note": "Price includes up to 12 Guests",
+      "min_party_size": 1,
+      "tier_id": 3554,
+      "dollars": 1273.88
+     }
+    ],
+    "zero_tiers": [],
+    "low": 127388,
+    "high": null
+   },
+   "2026-11-01": {
+    "status": "OK",
+    "start_at": "2026-11-01T14:00:00",
+    "requested": "2026-11-01",
+    "date_valid": true,
+    "tiers": [
+     {
+      "key": [
+       3554,
+       "Private Charter",
+       "Price includes up to 12 Guests",
+       1
+      ],
+      "singular": "Private Charter",
+      "note": "Price includes up to 12 Guests",
+      "min_party_size": 1,
+      "tier_id": 3554,
+      "dollars": 1273.88
+     }
+    ],
+    "zero_tiers": [],
+    "low": 127388,
+    "high": null
+   },
+   "2026-12-01": {
+    "status": "OK",
+    "start_at": "2026-12-01T14:00:00",
+    "requested": "2026-12-01",
+    "date_valid": true,
+    "tiers": [
+     {
+      "key": [
+       3554,
+       "Private Charter",
+       "Price includes up to 12 Guests",
+       1
+      ],
+      "singular": "Private Charter",
+      "note": "Price includes up to 12 Guests",
+      "min_party_size": 1,
+      "tier_id": 3554,
+      "dollars": 1273.88
+     }
+    ],
+    "zero_tiers": [],
+    "low": 127388,
+    "high": null
+   },
+   "2026-12-31": {
+    "status": "OK",
+    "start_at": "2026-12-31T14:00:00",
+    "requested": "2026-12-31",
+    "date_valid": true,
+    "tiers": [
+     {
+      "key": [
+       3554,
+       "Private Charter",
+       "Price includes up to 12 Guests",
+       1
+      ],
+      "singular": "Private Charter",
+      "note": "Price includes up to 12 Guests",
+      "min_party_size": 1,
+      "tier_id": 3554,
+      "dollars": 1273.88
+     }
+    ],
+    "zero_tiers": [],
+    "low": 127388,
+    "high": null
+   }
+  }
+ },
+ "http": {
+  "122905": {
+   "2026-10-02": 200,
+   "2026-10-03": 200,
+   "2026-10-04": 200,
+   "2026-10-05": 200,
+   "2026-10-06": 200,
+   "2026-10-07": 200,
+   "2026-10-08": 200,
+   "2026-10-09": 200,
+   "2026-10-10": 200,
+   "2026-10-11": 200,
+   "2026-10-12": 200,
+   "2026-10-13": 200,
+   "2026-10-14": 200,
+   "2026-10-15": 200,
+   "2026-11-01": 200,
+   "2026-12-01": 200,
+   "2026-12-31": 200
+  }
+ }
+}

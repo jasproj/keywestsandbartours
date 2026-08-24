@@ -1,0 +1,447 @@
+{
+ "dates": [
+  "2027-07-03",
+  "2027-07-04",
+  "2027-07-05",
+  "2027-07-06",
+  "2027-07-07",
+  "2027-07-08",
+  "2027-07-09",
+  "2027-07-10",
+  "2027-07-11",
+  "2027-07-12",
+  "2027-07-13",
+  "2027-07-14",
+  "2027-07-15",
+  "2027-07-16",
+  "2027-08-02",
+  "2027-09-01",
+  "2027-10-01"
+ ],
+ "anchor": "2027-07-03",
+ "min_valid": 3,
+ "control": {
+  "shortname": "definitely-not-a-real-fh-shortname-zzz",
+  "code": 400,
+  "falsifiable": true
+ },
+ "obs": {
+  "614980": {
+   "2027-07-03": {
+    "status": "OK",
+    "start_at": "2027-07-03T00:00:00",
+    "requested": "2027-07-03",
+    "date_valid": true,
+    "tiers": [
+     {
+      "key": [
+       1082768,
+       "Full-day Charter",
+       "",
+       1
+      ],
+      "singular": "Full-day Charter",
+      "note": "",
+      "min_party_size": 1,
+      "tier_id": 1082768,
+      "dollars": 1189.0
+     }
+    ],
+    "zero_tiers": [],
+    "low": 118900,
+    "high": 118900
+   },
+   "2027-07-04": {
+    "status": "OK",
+    "start_at": "2027-07-04T00:00:00",
+    "requested": "2027-07-04",
+    "date_valid": true,
+    "tiers": [
+     {
+      "key": [
+       1082768,
+       "Full-day Charter",
+       "",
+       1
+      ],
+      "singular": "Full-day Charter",
+      "note": "",
+      "min_party_size": 1,
+      "tier_id": 1082768,
+      "dollars": 1189.0
+     }
+    ],
+    "zero_tiers": [],
+    "low": 118900,
+    "high": 118900
+   },
+   "2027-07-05": {
+    "status": "OK",
+    "start_at": "2027-07-05T00:00:00",
+    "requested": "2027-07-05",
+    "date_valid": true,
+    "tiers": [
+     {
+      "key": [
+       1082768,
+       "Full-day Charter",
+       "",
+       1
+      ],
+      "singular": "Full-day Charter",
+      "note": "",
+      "min_party_size": 1,
+      "tier_id": 1082768,
+      "dollars": 1189.0
+     }
+    ],
+    "zero_tiers": [],
+    "low": 118900,
+    "high": 118900
+   },
+   "2027-07-06": {
+    "status": "FALLBACK",
+    "start_at": "2027-07-10T00:00:00",
+    "requested": "2027-07-06",
+    "date_valid": false,
+    "tiers": [
+     {
+      "key": [
+       1082768,
+       "Full-day Charter",
+       "",
+       1
+      ],
+      "singular": "Full-day Charter",
+      "note": "",
+      "min_party_size": 1,
+      "tier_id": 1082768,
+      "dollars": 1189.0
+     }
+    ],
+    "zero_tiers": [],
+    "low": 118900,
+    "high": 118900
+   },
+   "2027-07-07": {
+    "status": "FALLBACK",
+    "start_at": "2027-07-10T00:00:00",
+    "requested": "2027-07-07",
+    "date_valid": false,
+    "tiers": [
+     {
+      "key": [
+       1082768,
+       "Full-day Charter",
+       "",
+       1
+      ],
+      "singular": "Full-day Charter",
+      "note": "",
+      "min_party_size": 1,
+      "tier_id": 1082768,
+      "dollars": 1189.0
+     }
+    ],
+    "zero_tiers": [],
+    "low": 118900,
+    "high": 118900
+   },
+   "2027-07-08": {
+    "status": "FALLBACK",
+    "start_at": "2027-07-10T00:00:00",
+    "requested": "2027-07-08",
+    "date_valid": false,
+    "tiers": [
+     {
+      "key": [
+       1082768,
+       "Full-day Charter",
+       "",
+       1
+      ],
+      "singular": "Full-day Charter",
+      "note": "",
+      "min_party_size": 1,
+      "tier_id": 1082768,
+      "dollars": 1189.0
+     }
+    ],
+    "zero_tiers": [],
+    "low": 118900,
+    "high": 118900
+   },
+   "2027-07-09": {
+    "status": "FALLBACK",
+    "start_at": "2027-07-10T00:00:00",
+    "requested": "2027-07-09",
+    "date_valid": false,
+    "tiers": [
+     {
+      "key": [
+       1082768,
+       "Full-day Charter",
+       "",
+       1
+      ],
+      "singular": "Full-day Charter",
+      "note": "",
+      "min_party_size": 1,
+      "tier_id": 1082768,
+      "dollars": 1189.0
+     }
+    ],
+    "zero_tiers": [],
+    "low": 118900,
+    "high": 118900
+   },
+   "2027-07-10": {
+    "status": "OK",
+    "start_at": "2027-07-10T00:00:00",
+    "requested": "2027-07-10",
+    "date_valid": true,
+    "tiers": [
+     {
+      "key": [
+       1082768,
+       "Full-day Charter",
+       "",
+       1
+      ],
+      "singular": "Full-day Charter",
+      "note": "",
+      "min_party_size": 1,
+      "tier_id": 1082768,
+      "dollars": 1189.0
+     }
+    ],
+    "zero_tiers": [],
+    "low": 118900,
+    "high": 118900
+   },
+   "2027-07-11": {
+    "status": "OK",
+    "start_at": "2027-07-11T00:00:00",
+    "requested": "2027-07-11",
+    "date_valid": true,
+    "tiers": [
+     {
+      "key": [
+       1082768,
+       "Full-day Charter",
+       "",
+       1
+      ],
+      "singular": "Full-day Charter",
+      "note": "",
+      "min_party_size": 1,
+      "tier_id": 1082768,
+      "dollars": 1189.0
+     }
+    ],
+    "zero_tiers": [],
+    "low": 118900,
+    "high": 118900
+   },
+   "2027-07-12": {
+    "status": "OK",
+    "start_at": "2027-07-12T00:00:00",
+    "requested": "2027-07-12",
+    "date_valid": true,
+    "tiers": [
+     {
+      "key": [
+       1082768,
+       "Full-day Charter",
+       "",
+       1
+      ],
+      "singular": "Full-day Charter",
+      "note": "",
+      "min_party_size": 1,
+      "tier_id": 1082768,
+      "dollars": 1189.0
+     }
+    ],
+    "zero_tiers": [],
+    "low": 118900,
+    "high": 118900
+   },
+   "2027-07-13": {
+    "status": "FALLBACK",
+    "start_at": "2027-07-17T00:00:00",
+    "requested": "2027-07-13",
+    "date_valid": false,
+    "tiers": [
+     {
+      "key": [
+       1082768,
+       "Full-day Charter",
+       "",
+       1
+      ],
+      "singular": "Full-day Charter",
+      "note": "",
+      "min_party_size": 1,
+      "tier_id": 1082768,
+      "dollars": 1189.0
+     }
+    ],
+    "zero_tiers": [],
+    "low": 118900,
+    "high": 118900
+   },
+   "2027-07-14": {
+    "status": "FALLBACK",
+    "start_at": "2027-07-17T00:00:00",
+    "requested": "2027-07-14",
+    "date_valid": false,
+    "tiers": [
+     {
+      "key": [
+       1082768,
+       "Full-day Charter",
+       "",
+       1
+      ],
+      "singular": "Full-day Charter",
+      "note": "",
+      "min_party_size": 1,
+      "tier_id": 1082768,
+      "dollars": 1189.0
+     }
+    ],
+    "zero_tiers": [],
+    "low": 118900,
+    "high": 118900
+   },
+   "2027-07-15": {
+    "status": "FALLBACK",
+    "start_at": "2027-07-17T00:00:00",
+    "requested": "2027-07-15",
+    "date_valid": false,
+    "tiers": [
+     {
+      "key": [
+       1082768,
+       "Full-day Charter",
+       "",
+       1
+      ],
+      "singular": "Full-day Charter",
+      "note": "",
+      "min_party_size": 1,
+      "tier_id": 1082768,
+      "dollars": 1189.0
+     }
+    ],
+    "zero_tiers": [],
+    "low": 118900,
+    "high": 118900
+   },
+   "2027-07-16": {
+    "status": "FALLBACK",
+    "start_at": "2027-07-17T00:00:00",
+    "requested": "2027-07-16",
+    "date_valid": false,
+    "tiers": [
+     {
+      "key": [
+       1082768,
+       "Full-day Charter",
+       "",
+       1
+      ],
+      "singular": "Full-day Charter",
+      "note": "",
+      "min_party_size": 1,
+      "tier_id": 1082768,
+      "dollars": 1189.0
+     }
+    ],
+    "zero_tiers": [],
+    "low": 118900,
+    "high": 118900
+   },
+   "2027-08-02": {
+    "status": "OK",
+    "start_at": "2027-08-02T00:00:00",
+    "requested": "2027-08-02",
+    "date_valid": true,
+    "tiers": [
+     {
+      "key": [
+       1082768,
+       "Full-day Charter",
+       "",
+       1
+      ],
+      "singular": "Full-day Charter",
+      "note": "",
+      "min_party_size": 1,
+      "tier_id": 1082768,
+      "dollars": 1189.0
+     }
+    ],
+    "zero_tiers": [],
+    "low": 118900,
+    "high": 118900
+   },
+   "2027-09-01": {
+    "status": "FALLBACK",
+    "start_at": "2027-09-04T00:00:00",
+    "requested": "2027-09-01",
+    "date_valid": false,
+    "tiers": [],
+    "zero_tiers": [
+     [
+      1082768,
+      "Full-day Charter",
+      "",
+      1
+     ]
+    ],
+    "low": 0,
+    "high": 0
+   },
+   "2027-10-01": {
+    "status": "FALLBACK",
+    "start_at": "2027-10-02T00:00:00",
+    "requested": "2027-10-01",
+    "date_valid": false,
+    "tiers": [],
+    "zero_tiers": [
+     [
+      1082768,
+      "Full-day Charter",
+      "",
+      1
+     ]
+    ],
+    "low": 0,
+    "high": 0
+   }
+  }
+ },
+ "http": {
+  "614980": {
+   "2027-07-03": 200,
+   "2027-07-04": 200,
+   "2027-07-05": 200,
+   "2027-07-06": 200,
+   "2027-07-07": 200,
+   "2027-07-08": 200,
+   "2027-07-09": 200,
+   "2027-07-10": 200,
+   "2027-07-11": 200,
+   "2027-07-12": 200,
+   "2027-07-13": 200,
+   "2027-07-14": 200,
+   "2027-07-15": 200,
+   "2027-07-16": 200,
+   "2027-08-02": 200,
+   "2027-09-01": 200,
+   "2027-10-01": 200
+  }
+ }
+}
