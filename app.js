@@ -484,7 +484,10 @@ async function init() {
         allTours = Array.isArray(_raw) ? _raw : _raw.tours;
         auditDurationFields(allTours);
         // Hide tours with a dead FareHarbor booking link (audit 2026-05-28).
-        allTours = allTours.filter(t => t.status !== 'inactive' && !t.bookingDead);
+        // hidden:true is the human-ruled availability hide (s51, 2026-08-26): the row
+        // stays in the file with hiddenReason/hiddenAt, leaves cards AND the draw pool,
+        // and scripts/sweep-availability.py clears it the moment a bookable date returns.
+        allTours = allTours.filter(t => t.status !== 'inactive' && !t.bookingDead && !t.hidden);
 
         // Only priced inventory is eligible for the draw (see hasUsablePrice).
         allTours = allTours.filter(hasUsablePrice);
@@ -531,7 +534,10 @@ async function initAreaPage(areaSlug) {
         const _raw = await response.json();
         allTours = Array.isArray(_raw) ? _raw : _raw.tours;
         auditDurationFields(allTours);
-        allTours = allTours.filter(t => t.status !== 'inactive' && !t.bookingDead);
+        // hidden:true is the human-ruled availability hide (s51, 2026-08-26): the row
+        // stays in the file with hiddenReason/hiddenAt, leaves cards AND the draw pool,
+        // and scripts/sweep-availability.py clears it the moment a bookable date returns.
+        allTours = allTours.filter(t => t.status !== 'inactive' && !t.bookingDead && !t.hidden);
 
         // Only priced inventory is eligible for the draw (see hasUsablePrice).
         // islamorada is left with 23 eligible rows against TOURS_PER_PAGE = 24 and

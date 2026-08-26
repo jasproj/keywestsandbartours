@@ -2,6 +2,10 @@
 """sweep-availability.py — per-tour live-availability sweep for tours-data.json.
 
 DATA COLLECTION ONLY. This script does not hide, filter, or retire any tour.
+(It does UN-hide: a row carrying the human-ruled `hidden: true` — see
+scripts/s51-kwst-hide-apply.py — is cleared to hidden: false the moment the
+endpoint returns a bookable date for it. Hiding stays human-ruled; only the
+reversal is automatic, because the date is the evidence the hide rested on.)
 It persists two new fields per active record so a future hide/retire pass has
 real per-item data to work from, instead of guessing from name/description
 keywords — a keyword sweep during recon false-positived on generic marketing
@@ -153,11 +157,12 @@ def sweep(tours, limit=None):
     return active, results, skipped_no_shortname, today
 
 
-def apply_results(tours, results):
+def apply_results(tours, results, date_used):
     """Mutates active records in place with the new fields. Returns stats."""
     got_date = 0
     null_count = 0
     error_count = 0
+    unhidden = 0
     null_by_operator = Counter()
 
     for t in tours:
@@ -179,11 +184,19 @@ def apply_results(tours, results):
             t["nextAvailableDate"] = next_date
             t["nullConsecutiveSweeps"] = 0
             got_date += 1
+            if t.get("hidden"):
+                # Reversal path for the human-ruled hide (s51): a bookable date is the
+                # evidence the hide was keyed on, so its return clears the hide. The
+                # reason stamp is kept for the audit trail, prefixed with the reversal.
+                t["hidden"] = False
+                t["hiddenReason"] = f"UNHIDDEN by sweep {date_used}: next_available_date={next_date}. Was: " + str(t.get("hiddenReason") or "")
+                unhidden += 1
 
     return {
         "got_date": got_date,
         "null_count": null_count,
         "error_count": error_count,
+        "unhidden": unhidden,
         "null_by_operator": null_by_operator,
     }
 
@@ -192,6 +205,7 @@ def print_sweep_report(stats, swept_count, skipped_no_shortname, date_used):
     print()
     print("=== SWEEP REPORT ===")
     print(f"Date probed: {date_used}")
+    print(f"Un-hidden (hidden:true rows whose bookable date returned): {stats.get('unhidden', 0)}")
     print(f"Active records considered: {swept_count}")
     if skipped_no_shortname:
         print(f"Skipped (unparseable bookingUrl): {skipped_no_shortname}")
@@ -209,7 +223,7 @@ def cmd_sweep(args):
     envelope = load_tours()
     tours = envelope["tours"]
     active, results, skipped_no_shortname, date_used = sweep(tours, limit=args.limit)
-    stats = apply_results(tours, results)
+    stats = apply_results(tours, results, date_used)
     print_sweep_report(stats, len(active), skipped_no_shortname, date_used)
 
     if args.live:
@@ -234,6 +248,8 @@ def cmd_report(args):
             continue
         if (t.get("nullConsecutiveSweeps") or 0) < NULL_HIDE_THRESHOLD:
             continue
+        if t.get("hidden"):
+            continue  # already hidden by a human ruling; not a candidate again
         sn = shortname_of(t.get("bookingUrl"))
         if sn in allowlist:
             continue
