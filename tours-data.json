@@ -3066,9 +3066,9 @@
       "category": "",
       "location": "United States/Florida/Marathon",
       "island": "united states/florida/marathon",
-      "price": null,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "price": 1595.0,
+      "priceLabel": "3/4 Day Trip",
+      "priceConfidence": "high",
       "qualityScore": 85,
       "currency": "USD",
       "duration": "360 minutes",
@@ -3098,7 +3098,7 @@
       "lastUpdated": "2026-07-30T18:54:17Z",
       "_unknownFields": {
         "durationMinutes": 360,
-        "priceSource": "s51-kwst-backfill",
+        "priceSource": "s51-kwst-backfill-2",
         "priceVerifiedAt": "2026-08-26",
         "probeDates": [
           "2026-08-29",
@@ -3108,13 +3108,21 @@
         ],
         "probeSampled": 4,
         "probeDateValid": 4,
-        "priceHold": "variant_only",
-        "priceBasis": "HELD for ruling: every priced tier is an unnamed duration/variant tier (3/4 Day Trip $1,595 [variant] / Full Day Trip $1,895 [variant] / Ten Hour Trip $2,295 [variant]) and neither label, note, sibling nor an age-concession tier says per-person or whole-unit; not guessed; 4/4 dated readings 2026-08-26 (4/4 date-valid), 1 ladder shape(s), include_breakdown=yes, probe.json sha256 186bcb42971b",
+        "priceBasis": "s51-kwst-backfill-2 (2026-08-26): class (a) ruling \u2014 \"3/4 Day Trip\" $1,595 (note \"6 Hours\"), unit \"3/4 day trip\" (tier label: '3/4 Day Trip' (note '6 Hours')); per-day ladder (3/4 Day 6h / Full Day 8h / Ten Hour 10h); no headcount or per-person wording in label, description or product name; not anchoring: Full Day Trip $1,895 (8 Hours), Ten Hour Trip $2,295 (10 Hours); 4/4 dated readings 2026-08-26 (4 date-valid), include_breakdown=yes, probe.json sha256 186bcb42971b; supersedes s51-kwst-backfill hold",
         "priceTiers": [
           "3/4 Day Trip $1,595 (6 Hours)",
           "Full Day Trip $1,895 (8 Hours)",
           "Ten Hour Trip $2,295 (10 Hours)"
-        ]
+        ],
+        "priceCustomerType": "3/4 Day Trip",
+        "priceTierCount": 3,
+        "excludedTiers": [
+          "Full Day Trip $1,895 (8 Hours)",
+          "Ten Hour Trip $2,295 (10 Hours)"
+        ],
+        "priceMinPartySize": 1,
+        "priceUnit": "3/4 day trip",
+        "unitEvidence": "tier label: '3/4 Day Trip' (note '6 Hours')"
       },
       "nextAvailableDate": "2026-08-27",
       "nullConsecutiveSweeps": 0
@@ -3128,9 +3136,9 @@
       "category": "",
       "location": "United States/Florida/Marathon",
       "island": "united states/florida/marathon",
-      "price": null,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "price": 1595.0,
+      "priceLabel": "3/4 Day Trip",
+      "priceConfidence": "high",
       "qualityScore": 85,
       "currency": "USD",
       "duration": "360 minutes",
@@ -3160,7 +3168,7 @@
       "lastUpdated": "2026-07-30T18:54:17Z",
       "_unknownFields": {
         "durationMinutes": 360,
-        "priceSource": "s51-kwst-backfill",
+        "priceSource": "s51-kwst-backfill-2",
         "priceVerifiedAt": "2026-08-26",
         "probeDates": [
           "2026-08-29",
@@ -3170,13 +3178,21 @@
         ],
         "probeSampled": 4,
         "probeDateValid": 4,
-        "priceHold": "variant_only",
-        "priceBasis": "HELD for ruling: every priced tier is an unnamed duration/variant tier (3/4 Day Trip $1,595 [variant] / Full Day Trip $1,895 [variant] / Ten Hour Trip $2,295 [variant]) and neither label, note, sibling nor an age-concession tier says per-person or whole-unit; not guessed; 4/4 dated readings 2026-08-26 (4/4 date-valid), 1 ladder shape(s), include_breakdown=yes, probe.json sha256 186bcb42971b",
+        "priceBasis": "s51-kwst-backfill-2 (2026-08-26): class (a) ruling \u2014 \"3/4 Day Trip\" $1,595 (note \"6 Hours\"), unit \"3/4 day trip\" (tier label: '3/4 Day Trip' (note '6 Hours')); per-day ladder (3/4 Day 6h / Full Day 8h / Ten Hour 10h); no headcount or per-person wording in label, description or product name; not anchoring: Full Day Trip $1,895 (8 Hours), Ten Hour Trip $2,295 (10 Hours); 4/4 dated readings 2026-08-26 (4 date-valid), include_breakdown=yes, probe.json sha256 186bcb42971b; supersedes s51-kwst-backfill hold",
         "priceTiers": [
           "3/4 Day Trip $1,595 (6 Hours)",
           "Full Day Trip $1,895 (8 Hours)",
           "Ten Hour Trip $2,295 (10 Hours)"
-        ]
+        ],
+        "priceCustomerType": "3/4 Day Trip",
+        "priceTierCount": 3,
+        "excludedTiers": [
+          "Full Day Trip $1,895 (8 Hours)",
+          "Ten Hour Trip $2,295 (10 Hours)"
+        ],
+        "priceMinPartySize": 1,
+        "priceUnit": "3/4 day trip",
+        "unitEvidence": "tier label: '3/4 Day Trip' (note '6 Hours')"
       },
       "nextAvailableDate": "2026-08-27",
       "nullConsecutiveSweeps": 0
@@ -3551,9 +3567,9 @@
       "category": "",
       "location": "United States/Florida/Marathon",
       "island": "united states/florida/marathon",
-      "price": null,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "price": 150.0,
+      "priceLabel": "2-Hour Sunset Cruise",
+      "priceConfidence": "high",
       "qualityScore": 0,
       "currency": "USD",
       "duration": "",
@@ -3580,7 +3596,7 @@
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
       "_unknownFields": {
-        "priceSource": "s51-kwst-backfill",
+        "priceSource": "s51-kwst-backfill-2",
         "priceVerifiedAt": "2026-08-26",
         "probeDates": [
           "2026-08-29",
@@ -3590,8 +3606,7 @@
         ],
         "probeSampled": 4,
         "probeDateValid": 4,
-        "priceHold": "variant_only",
-        "priceBasis": "HELD for ruling: every priced tier is an unnamed duration/variant tier (4-Hour Reef, Wreck and Bay $1,200 [variant] / 6-Hour Reef, Wreck and Bay $1,500 [variant] / 4-Hour Offshore $1,400 [variant] / 6-Hour Offshore $1,800 [variant] / 8-Hour Offshore $2,150 [variant] / 10-Hour Extended Day $2,400 [variant] / Deep Drop / Swordfish $3,000 [variant] / 2-Hour Sunset Cruise $150 [variant] / 4-Hour Eco Tour - Swimming, Sandbar, Island Hopping $850 [variant] / 6-Hour Eco Tour - Swimming, Sandbar, Island Hopping $1,300 [variant] / 8-Hour Eco Tour - Swimming, Sandbar, Island Hopping $1,600 [variant]) and neither label, note, sibling nor an age-concession tier says per-person or whole-unit; not guessed; 4/4 dated readings 2026-08-26 (4/4 date-valid), 1 ladder shape(s), include_breakdown=yes, probe.json sha256 186bcb42971b",
+        "priceBasis": "s51-kwst-backfill-2 (2026-08-26): class (a) ruling \u2014 \"2-Hour Sunset Cruise\" $150, unit \"2-hour sunset cruise\" (tier label: '2-Hour Sunset Cruise'); per-hour ladder of 11 duration/activity tiers ($150 2-Hour Sunset Cruise .. $3,000 Deep Drop); floor tier anchors; description empty; product name \"45' Hatteras Express\" carries no unit; not anchoring: 4-Hour Reef, Wreck and Bay $1,200, 6-Hour Reef, Wreck and Bay $1,500, 4-Hour Offshore $1,400, 6-Hour Offshore $1,800, 8-Hour Offshore $2,150, 10-Hour Extended Day $2,400, Deep Drop / Swordfish $3,000, 4-Hour Eco Tour - Swimming, Sandbar, Island Hopping $850, 6-Hour Eco Tour - Swimming, Sandbar, Island Hopping $1,300, 8-Hour Eco Tour - Swimming, Sandbar, Island Hopping $1,600; 4/4 dated readings 2026-08-26 (4 date-valid), include_breakdown=yes, probe.json sha256 186bcb42971b; supersedes s51-kwst-backfill hold",
         "priceTiers": [
           "4-Hour Reef, Wreck and Bay $1,200",
           "6-Hour Reef, Wreck and Bay $1,500",
@@ -3604,7 +3619,24 @@
           "4-Hour Eco Tour - Swimming, Sandbar, Island Hopping $850",
           "6-Hour Eco Tour - Swimming, Sandbar, Island Hopping $1,300",
           "8-Hour Eco Tour - Swimming, Sandbar, Island Hopping $1,600"
-        ]
+        ],
+        "priceCustomerType": "2-Hour Sunset Cruise",
+        "priceTierCount": 11,
+        "excludedTiers": [
+          "4-Hour Reef, Wreck and Bay $1,200",
+          "6-Hour Reef, Wreck and Bay $1,500",
+          "4-Hour Offshore $1,400",
+          "6-Hour Offshore $1,800",
+          "8-Hour Offshore $2,150",
+          "10-Hour Extended Day $2,400",
+          "Deep Drop / Swordfish $3,000",
+          "4-Hour Eco Tour - Swimming, Sandbar, Island Hopping $850",
+          "6-Hour Eco Tour - Swimming, Sandbar, Island Hopping $1,300",
+          "8-Hour Eco Tour - Swimming, Sandbar, Island Hopping $1,600"
+        ],
+        "priceMinPartySize": 1,
+        "priceUnit": "2-hour sunset cruise",
+        "unitEvidence": "tier label: '2-Hour Sunset Cruise'"
       },
       "needsEnrichment": true,
       "nextAvailableDate": "2026-08-26",
@@ -15032,7 +15064,7 @@
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
       "_unknownFields": {
-        "priceSource": "s51-kwst-backfill",
+        "priceSource": "s51-kwst-backfill-2",
         "priceVerifiedAt": "2026-08-26",
         "probeDates": [
           "2026-08-29",
@@ -15043,7 +15075,7 @@
         "probeSampled": 4,
         "probeDateValid": 0,
         "priceHold": "shared_named_charter",
-        "priceBasis": "HELD for ruling: product name says \"Shared\" but the anchor tier \"Four Hour Charter\" $135 is group-shaped; per-seat vs whole-boat undecidable from the ladder; Four Hour Charter $135 [group]; 4/4 dated readings 2026-08-26 (evidence from next-departure echo, 0 date-valid on probe dates (D-638)), 1 ladder shape(s), include_breakdown=yes, probe.json sha256 186bcb42971b",
+        "priceBasis": "s51-kwst-backfill-2 (2026-08-26): stays HELD (class c, escalated): the only live tier is the charter-shaped \"Four Hour Charter\" $135; no shared per-person tier exists in the ladder, and a charter tier never anchors on a \"Shared\" listing. Description: \"Starting at $135 \u2022 Up to 6 People \u2022 4 Hour Shared Option & 4 or 6 Hour Private Tour Options\". Prior: HELD for ruling: product name says \"Shared\" but the anchor tier \"Four Hour Charter\" $135 is group-shaped; per-seat vs whole-boat undecidable from the ladder; Four Hour Charter $135 [group]; 4/4 dated readings 2026-08-26 (evidence from next-departure echo, 0 date-valid on probe dates (D-638)), 1 ladder shape(s), include_breakdown=yes, probe.json sha256 186bcb42971b",
         "priceTiers": [
           "Four Hour Charter $135"
         ]
@@ -15908,9 +15940,9 @@
       "category": "",
       "location": "United States/Florida/Key West",
       "island": "united states/florida/key west",
-      "price": null,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "price": 699.0,
+      "priceLabel": "Four Hours",
+      "priceConfidence": "high",
       "qualityScore": 0,
       "currency": "USD",
       "duration": "",
@@ -15940,7 +15972,7 @@
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
       "_unknownFields": {
-        "priceSource": "s51-kwst-backfill",
+        "priceSource": "s51-kwst-backfill-2",
         "priceVerifiedAt": "2026-08-26",
         "probeDates": [
           "2026-08-29",
@@ -15950,12 +15982,19 @@
         ],
         "probeSampled": 4,
         "probeDateValid": 4,
-        "priceHold": "variant_only",
-        "priceBasis": "HELD for ruling: every priced tier is an unnamed duration/variant tier (Four Hours $699 [variant] / Eight Hours $999 [variant]) and neither label, note, sibling nor an age-concession tier says per-person or whole-unit; not guessed; 4/4 dated readings 2026-08-26 (4/4 date-valid), 1 ladder shape(s), include_breakdown=yes, probe.json sha256 186bcb42971b",
+        "priceBasis": "s51-kwst-backfill-2 (2026-08-26): class (a) ruling \u2014 \"Four Hours\" $699, unit \"whole boat \u00b7 up to 4 passengers\" (description: 'Up to 4 Passengers'); per-duration ladder (Four/Eight Hours); description \"Starting at $699 \u2022 Up to 4 Passengers \u2022 4-8 Hours\"; not anchoring: Eight Hours $999; 4/4 dated readings 2026-08-26 (4 date-valid), include_breakdown=yes, probe.json sha256 186bcb42971b; supersedes s51-kwst-backfill hold",
         "priceTiers": [
           "Four Hours $699",
           "Eight Hours $999"
-        ]
+        ],
+        "priceCustomerType": "Four Hours",
+        "priceTierCount": 2,
+        "excludedTiers": [
+          "Eight Hours $999"
+        ],
+        "priceMinPartySize": 1,
+        "priceUnit": "whole boat \u00b7 up to 4 passengers",
+        "unitEvidence": "description: 'Up to 4 Passengers'"
       },
       "needsEnrichment": true,
       "nextAvailableDate": "2026-08-26",
@@ -15970,9 +16009,9 @@
       "category": "",
       "location": "United States/Florida/Key West",
       "island": "united states/florida/key west",
-      "price": null,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "price": 1000.0,
+      "priceLabel": "Six Hours",
+      "priceConfidence": "high",
       "qualityScore": 0,
       "currency": "USD",
       "duration": "",
@@ -16003,7 +16042,7 @@
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
       "_unknownFields": {
-        "priceSource": "s51-kwst-backfill",
+        "priceSource": "s51-kwst-backfill-2",
         "priceVerifiedAt": "2026-08-26",
         "probeDates": [
           "2026-08-29",
@@ -16013,12 +16052,19 @@
         ],
         "probeSampled": 4,
         "probeDateValid": 4,
-        "priceHold": "variant_only",
-        "priceBasis": "HELD for ruling: every priced tier is an unnamed duration/variant tier (Six Hours $1,000 [variant] / Eight Hours $1,200 [variant]) and neither label, note, sibling nor an age-concession tier says per-person or whole-unit; not guessed; 4/4 dated readings 2026-08-26 (4/4 date-valid), 1 ladder shape(s), include_breakdown=yes, probe.json sha256 186bcb42971b",
+        "priceBasis": "s51-kwst-backfill-2 (2026-08-26): class (a) ruling \u2014 \"Six Hours\" $1,000, unit \"whole boat \u00b7 up to 6 passengers\" (description: 'Up to 6 Passengers'); per-duration ladder (Six/Eight Hours); description \"Up to 6 Passengers \u2022 6-8 Hours\"; not anchoring: Eight Hours $1,200; 4/4 dated readings 2026-08-26 (4 date-valid), include_breakdown=yes, probe.json sha256 186bcb42971b; supersedes s51-kwst-backfill hold",
         "priceTiers": [
           "Six Hours $1,000",
           "Eight Hours $1,200"
-        ]
+        ],
+        "priceCustomerType": "Six Hours",
+        "priceTierCount": 2,
+        "excludedTiers": [
+          "Eight Hours $1,200"
+        ],
+        "priceMinPartySize": 1,
+        "priceUnit": "whole boat \u00b7 up to 6 passengers",
+        "unitEvidence": "description: 'Up to 6 Passengers'"
       },
       "needsEnrichment": true,
       "nextAvailableDate": "2026-08-26",
@@ -16033,9 +16079,9 @@
       "category": "",
       "location": "United States/Florida/Key West",
       "island": "united states/florida/key west",
-      "price": null,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "price": 650.0,
+      "priceLabel": "Four Hours",
+      "priceConfidence": "high",
       "qualityScore": 0,
       "currency": "USD",
       "duration": "",
@@ -16065,7 +16111,7 @@
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
       "_unknownFields": {
-        "priceSource": "s51-kwst-backfill",
+        "priceSource": "s51-kwst-backfill-2",
         "priceVerifiedAt": "2026-08-26",
         "probeDates": [
           "2026-08-29",
@@ -16075,13 +16121,21 @@
         ],
         "probeSampled": 4,
         "probeDateValid": 4,
-        "priceHold": "variant_only",
-        "priceBasis": "HELD for ruling: every priced tier is an unnamed duration/variant tier (Four Hours $650 [variant] / Six Hours $800 [variant] / Eight Hours $950 [variant]) and neither label, note, sibling nor an age-concession tier says per-person or whole-unit; not guessed; 4/4 dated readings 2026-08-26 (4/4 date-valid), 1 ladder shape(s), include_breakdown=yes, probe.json sha256 186bcb42971b",
+        "priceBasis": "s51-kwst-backfill-2 (2026-08-26): class (a) ruling \u2014 \"Four Hours\" $650 (note \"Four Hours\"), unit \"whole boat \u00b7 up to 6 passengers\" (description: 'Up to 6 Passengers'); per-duration ladder (Four/Six/Eight Hours); description \"Up to 6 Passengers \u2022 4-8 Hours\"; not anchoring: Six Hours $800, Eight Hours $950; 4/4 dated readings 2026-08-26 (4 date-valid), include_breakdown=yes, probe.json sha256 186bcb42971b; supersedes s51-kwst-backfill hold",
         "priceTiers": [
           "Four Hours $650 (Four Hours)",
           "Six Hours $800",
           "Eight Hours $950"
-        ]
+        ],
+        "priceCustomerType": "Four Hours",
+        "priceTierCount": 3,
+        "excludedTiers": [
+          "Six Hours $800",
+          "Eight Hours $950"
+        ],
+        "priceMinPartySize": 1,
+        "priceUnit": "whole boat \u00b7 up to 6 passengers",
+        "unitEvidence": "description: 'Up to 6 Passengers'"
       },
       "needsEnrichment": true,
       "nextAvailableDate": "2026-08-26",
@@ -16169,9 +16223,9 @@
       "category": "",
       "location": "United States/Florida/Key West",
       "island": "united states/florida/key west",
-      "price": null,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "price": 650.0,
+      "priceLabel": "Four Hours",
+      "priceConfidence": "high",
       "qualityScore": 0,
       "currency": "USD",
       "duration": "",
@@ -16201,7 +16255,7 @@
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
       "_unknownFields": {
-        "priceSource": "s51-kwst-backfill",
+        "priceSource": "s51-kwst-backfill-2",
         "priceVerifiedAt": "2026-08-26",
         "probeDates": [
           "2026-08-29",
@@ -16211,13 +16265,21 @@
         ],
         "probeSampled": 4,
         "probeDateValid": 4,
-        "priceHold": "variant_only",
-        "priceBasis": "HELD for ruling: every priced tier is an unnamed duration/variant tier (Four Hours $650 [variant] / Six Hours $800 [variant] / Eight Hours $950 [variant]) and neither label, note, sibling nor an age-concession tier says per-person or whole-unit; not guessed; 4/4 dated readings 2026-08-26 (4/4 date-valid), 1 ladder shape(s), include_breakdown=yes, probe.json sha256 186bcb42971b",
+        "priceBasis": "s51-kwst-backfill-2 (2026-08-26): class (a) ruling \u2014 \"Four Hours\" $650, unit \"whole boat \u00b7 up to 6 passengers\" (description: 'Up to 6 Passengers'); per-duration ladder (Four/Six/Eight Hours); description \"Up to 6 Passengers \u2022 4-8 Hours\"; not anchoring: Six Hours $800, Eight Hours $950; 4/4 dated readings 2026-08-26 (4 date-valid), include_breakdown=yes, probe.json sha256 186bcb42971b; supersedes s51-kwst-backfill hold",
         "priceTiers": [
           "Four Hours $650",
           "Six Hours $800",
           "Eight Hours $950"
-        ]
+        ],
+        "priceCustomerType": "Four Hours",
+        "priceTierCount": 3,
+        "excludedTiers": [
+          "Six Hours $800",
+          "Eight Hours $950"
+        ],
+        "priceMinPartySize": 1,
+        "priceUnit": "whole boat \u00b7 up to 6 passengers",
+        "unitEvidence": "description: 'Up to 6 Passengers'"
       },
       "needsEnrichment": true,
       "nextAvailableDate": "2026-08-26",
@@ -20594,7 +20656,7 @@
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
       "_unknownFields": {
-        "priceSource": "s51-kwst-backfill",
+        "priceSource": "s51-kwst-backfill-2",
         "priceVerifiedAt": "2026-08-26",
         "probeDates": [
           "2026-08-29",
@@ -20605,7 +20667,7 @@
         "probeSampled": 4,
         "probeDateValid": 4,
         "priceHold": "headcount_conflict",
-        "priceBasis": "HELD for ruling: anchor label \"Dinner Cruise 6 People\" names 6 people while note/description says \"Up to 12 People\" \u2014 conflicting headcounts (D-649 flag); Dinner Cruise 6 People $3,600 [group]; 4/4 dated readings 2026-08-26 (4/4 date-valid), 1 ladder shape(s), include_breakdown=yes, probe.json sha256 186bcb42971b",
+        "priceBasis": "s51-kwst-backfill-2 (2026-08-26): stays HELD (class d, named gap): label \"Dinner Cruise 6 People\" vs note/description \"Up to 12 People\" \u2014 conflicting headcounts. Prior: HELD for ruling: anchor label \"Dinner Cruise 6 People\" names 6 people while note/description says \"Up to 12 People\" \u2014 conflicting headcounts (D-649 flag); Dinner Cruise 6 People $3,600 [group]; 4/4 dated readings 2026-08-26 (4/4 date-valid), 1 ladder shape(s), include_breakdown=yes, probe.json sha256 186bcb42971b",
         "priceTiers": [
           "Dinner Cruise 6 People $3,600 (Up to 12 People)"
         ]
@@ -27383,9 +27445,9 @@
       "category": "",
       "location": "United States/Florida/Key West",
       "island": "united states/florida/key west",
-      "price": null,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "price": 300.0,
+      "priceLabel": "Bachelor/ette or Birthday Group",
+      "priceConfidence": "high",
       "qualityScore": 0,
       "currency": "USD",
       "duration": "",
@@ -27412,7 +27474,7 @@
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
       "_unknownFields": {
-        "priceSource": "s51-kwst-backfill",
+        "priceSource": "s51-kwst-backfill-2",
         "priceVerifiedAt": "2026-08-26",
         "probeDates": [
           "2026-08-29",
@@ -27422,12 +27484,19 @@
         ],
         "probeSampled": 4,
         "probeDateValid": 4,
-        "priceHold": "unit_plus_increment",
-        "priceBasis": "HELD for ruling (unit+increment ladder is ambiguous \u2014 memory reference_fareharbor_unit_plus_increment_is_ambiguous): anchor \"Bachelor/ette or Birthday Group\" $300 (note \"Flat rate for up to 10 people\") with increment tier(s) Additional Participant $25 (11 or more people); ladder Bachelor/ette or Birthday Group $300 [group] / Additional Participant $25 [never]; 4/4 dated readings 2026-08-26 (4/4 date-valid), 1 ladder shape(s), include_breakdown=yes, probe.json sha256 186bcb42971b",
+        "priceBasis": "s51-kwst-backfill-2 (2026-08-26): class (b) ruling \u2014 \"Bachelor/ette or Birthday Group\" $300 (note \"Flat rate for up to 10 people\"), unit \"flat rate for up to 10 people\" (tier note: 'Flat rate for up to 10 people'); increment tier \"Additional Participant\" $25 (11 or more people) never anchors; description says \"Starting at $250\" \u2014 live base $300 (D-649 conflict flagged, live wins); not anchoring: Additional Participant $25 (11 or more people); 4/4 dated readings 2026-08-26 (4 date-valid), include_breakdown=yes, probe.json sha256 186bcb42971b; supersedes s51-kwst-backfill hold",
         "priceTiers": [
           "Bachelor/ette or Birthday Group $300 (Flat rate for up to 10 people)",
           "Additional Participant $25 (11 or more people)"
-        ]
+        ],
+        "priceCustomerType": "Bachelor/ette or Birthday Group",
+        "priceTierCount": 2,
+        "excludedTiers": [
+          "Additional Participant $25 (11 or more people)"
+        ],
+        "priceMinPartySize": 1,
+        "priceUnit": "flat rate for up to 10 people",
+        "unitEvidence": "tier note: 'Flat rate for up to 10 people'"
       },
       "needsEnrichment": true,
       "nextAvailableDate": "2026-08-26",
@@ -27442,9 +27511,9 @@
       "category": "",
       "location": "United States/Florida/Key West",
       "island": "united states/florida/key west",
-      "price": null,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "price": 400.0,
+      "priceLabel": "Bachelor/ette or Birthday Group",
+      "priceConfidence": "high",
       "qualityScore": 0,
       "currency": "USD",
       "duration": "",
@@ -27471,7 +27540,7 @@
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
       "_unknownFields": {
-        "priceSource": "s51-kwst-backfill",
+        "priceSource": "s51-kwst-backfill-2",
         "priceVerifiedAt": "2026-08-26",
         "probeDates": [
           "2026-08-29",
@@ -27481,12 +27550,19 @@
         ],
         "probeSampled": 4,
         "probeDateValid": 4,
-        "priceHold": "unit_plus_increment",
-        "priceBasis": "HELD for ruling (unit+increment ladder is ambiguous \u2014 memory reference_fareharbor_unit_plus_increment_is_ambiguous): anchor \"Bachelor/ette or Birthday Group\" $400 (note \"Flat rate for up to 10 people\") with increment tier(s) Additional Participant $37.50 (11 or more people); ladder Bachelor/ette or Birthday Group $400 [group] / Additional Participant $37.50 [never]; 4/4 dated readings 2026-08-26 (4/4 date-valid), 1 ladder shape(s), include_breakdown=yes, probe.json sha256 186bcb42971b",
+        "priceBasis": "s51-kwst-backfill-2 (2026-08-26): class (b) ruling \u2014 \"Bachelor/ette or Birthday Group\" $400 (note \"Flat rate for up to 10 people\"), unit \"flat rate for up to 10 people\" (tier note: 'Flat rate for up to 10 people'); increment tier \"Additional Participant\" $37.50 never anchors; description says \"Starting at $375\" \u2014 live base $400 (D-649 conflict flagged, live wins); not anchoring: Additional Participant $37.50 (11 or more people); 4/4 dated readings 2026-08-26 (4 date-valid), include_breakdown=yes, probe.json sha256 186bcb42971b; supersedes s51-kwst-backfill hold",
         "priceTiers": [
           "Bachelor/ette or Birthday Group $400 (Flat rate for up to 10 people)",
           "Additional Participant $37.50 (11 or more people)"
-        ]
+        ],
+        "priceCustomerType": "Bachelor/ette or Birthday Group",
+        "priceTierCount": 2,
+        "excludedTiers": [
+          "Additional Participant $37.50 (11 or more people)"
+        ],
+        "priceMinPartySize": 1,
+        "priceUnit": "flat rate for up to 10 people",
+        "unitEvidence": "tier note: 'Flat rate for up to 10 people'"
       },
       "needsEnrichment": true,
       "nextAvailableDate": "2026-08-26",
@@ -27557,9 +27633,9 @@
       "category": "",
       "location": "United States/Florida/Key West",
       "island": "united states/florida/key west",
-      "price": null,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "price": 400.0,
+      "priceLabel": "Bachelor/ette or Birthday Group",
+      "priceConfidence": "high",
       "qualityScore": 0,
       "currency": "USD",
       "duration": "",
@@ -27586,7 +27662,7 @@
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
       "_unknownFields": {
-        "priceSource": "s51-kwst-backfill",
+        "priceSource": "s51-kwst-backfill-2",
         "priceVerifiedAt": "2026-08-26",
         "probeDates": [
           "2026-08-29",
@@ -27596,12 +27672,19 @@
         ],
         "probeSampled": 4,
         "probeDateValid": 4,
-        "priceHold": "unit_plus_increment",
-        "priceBasis": "HELD for ruling (unit+increment ladder is ambiguous \u2014 memory reference_fareharbor_unit_plus_increment_is_ambiguous): anchor \"Bachelor/ette or Birthday Group\" $400 (note \"Flat rate for up to 10 people\") with increment tier(s) Additional Participant $37.50 (11 or more people); ladder Bachelor/ette or Birthday Group $400 [group] / Additional Participant $37.50 [never]; 4/4 dated readings 2026-08-26 (4/4 date-valid), 1 ladder shape(s), include_breakdown=yes, probe.json sha256 186bcb42971b",
+        "priceBasis": "s51-kwst-backfill-2 (2026-08-26): class (b) ruling \u2014 \"Bachelor/ette or Birthday Group\" $400 (note \"Flat rate for up to 10 people\"), unit \"flat rate for up to 10 people\" (tier note: 'Flat rate for up to 10 people'); increment tier \"Additional Participant\" $37.50 never anchors; description says \"Starting at $375\" \u2014 live base $400 (D-649 conflict flagged, live wins); not anchoring: Additional Participant $37.50 (11 or more people); 4/4 dated readings 2026-08-26 (4 date-valid), include_breakdown=yes, probe.json sha256 186bcb42971b; supersedes s51-kwst-backfill hold",
         "priceTiers": [
           "Bachelor/ette or Birthday Group $400 (Flat rate for up to 10 people)",
           "Additional Participant $37.50 (11 or more people)"
-        ]
+        ],
+        "priceCustomerType": "Bachelor/ette or Birthday Group",
+        "priceTierCount": 2,
+        "excludedTiers": [
+          "Additional Participant $37.50 (11 or more people)"
+        ],
+        "priceMinPartySize": 1,
+        "priceUnit": "flat rate for up to 10 people",
+        "unitEvidence": "tier note: 'Flat rate for up to 10 people'"
       },
       "needsEnrichment": true,
       "nextAvailableDate": "2026-08-26",
@@ -27616,9 +27699,9 @@
       "category": "",
       "location": "United States/Florida/Key West",
       "island": "united states/florida/key west",
-      "price": null,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "price": 300.0,
+      "priceLabel": "Bachelor/ette or Birthday Group",
+      "priceConfidence": "high",
       "qualityScore": 0,
       "currency": "USD",
       "duration": "",
@@ -27645,7 +27728,7 @@
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
       "_unknownFields": {
-        "priceSource": "s51-kwst-backfill",
+        "priceSource": "s51-kwst-backfill-2",
         "priceVerifiedAt": "2026-08-26",
         "probeDates": [
           "2026-08-29",
@@ -27655,12 +27738,19 @@
         ],
         "probeSampled": 4,
         "probeDateValid": 4,
-        "priceHold": "unit_plus_increment",
-        "priceBasis": "HELD for ruling (unit+increment ladder is ambiguous \u2014 memory reference_fareharbor_unit_plus_increment_is_ambiguous): anchor \"Bachelor/ette or Birthday Group\" $300 (note \"Flat rate for up to 10 people\") with increment tier(s) Additional Participant $25 (11 or more people); ladder Bachelor/ette or Birthday Group $300 [group] / Additional Participant $25 [never]; 4/4 dated readings 2026-08-26 (4/4 date-valid), 1 ladder shape(s), include_breakdown=yes, probe.json sha256 186bcb42971b",
+        "priceBasis": "s51-kwst-backfill-2 (2026-08-26): class (b) ruling \u2014 \"Bachelor/ette or Birthday Group\" $300 (note \"Flat rate for up to 10 people\"), unit \"flat rate for up to 10 people\" (tier note: 'Flat rate for up to 10 people'); increment tier \"Additional Participant\" $25 never anchors; description says \"Starting at $250\" \u2014 live base $300 (D-649 conflict flagged, live wins); not anchoring: Additional Participant $25 (11 or more people); 4/4 dated readings 2026-08-26 (4 date-valid), include_breakdown=yes, probe.json sha256 186bcb42971b; supersedes s51-kwst-backfill hold",
         "priceTiers": [
           "Bachelor/ette or Birthday Group $300 (Flat rate for up to 10 people)",
           "Additional Participant $25 (11 or more people)"
-        ]
+        ],
+        "priceCustomerType": "Bachelor/ette or Birthday Group",
+        "priceTierCount": 2,
+        "excludedTiers": [
+          "Additional Participant $25 (11 or more people)"
+        ],
+        "priceMinPartySize": 1,
+        "priceUnit": "flat rate for up to 10 people",
+        "unitEvidence": "tier note: 'Flat rate for up to 10 people'"
       },
       "needsEnrichment": true,
       "nextAvailableDate": "2026-08-26",
@@ -37273,9 +37363,9 @@
       "category": "",
       "location": "United States/Florida/Marathon",
       "island": "united states/florida/marathon",
-      "price": null,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "price": 1500.0,
+      "priceLabel": "3/4 Day",
+      "priceConfidence": "high",
       "qualityScore": 0,
       "currency": "USD",
       "duration": "",
@@ -37309,7 +37399,7 @@
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
       "_unknownFields": {
-        "priceSource": "s51-kwst-backfill",
+        "priceSource": "s51-kwst-backfill-2",
         "priceVerifiedAt": "2026-08-26",
         "probeDates": [
           "2026-08-29",
@@ -37319,12 +37409,19 @@
         ],
         "probeSampled": 4,
         "probeDateValid": 4,
-        "priceHold": "variant_only",
-        "priceBasis": "HELD for ruling: every priced tier is an unnamed duration/variant tier (3/4 Day $1,500 [variant] / Full Day $1,750 [variant]) and neither label, note, sibling nor an age-concession tier says per-person or whole-unit; not guessed; 4/4 dated readings 2026-08-26 (4/4 date-valid), 1 ladder shape(s), include_breakdown=yes, probe.json sha256 186bcb42971b",
+        "priceBasis": "s51-kwst-backfill-2 (2026-08-26): class (a) ruling \u2014 \"3/4 Day\" $1,500 (note \"6 Hours\"), unit \"whole boat \u00b7 up to 6 passengers\" (description: 'Up to 6 Passengers'); per-duration ladder (3/4 Day 6 Hours / Full Day 8 Hours); description \"For all ages! \u2022 6-8 hours \u2022 Up to 6 Passengers\"; not anchoring: Full Day $1,750 (8 Hours); 4/4 dated readings 2026-08-26 (4 date-valid), include_breakdown=yes, probe.json sha256 186bcb42971b; supersedes s51-kwst-backfill hold",
         "priceTiers": [
           "3/4 Day $1,500 (6 Hours)",
           "Full Day $1,750 (8 Hours)"
-        ]
+        ],
+        "priceCustomerType": "3/4 Day",
+        "priceTierCount": 2,
+        "excludedTiers": [
+          "Full Day $1,750 (8 Hours)"
+        ],
+        "priceMinPartySize": 1,
+        "priceUnit": "whole boat \u00b7 up to 6 passengers",
+        "unitEvidence": "description: 'Up to 6 Passengers'"
       },
       "needsEnrichment": true,
       "nextAvailableDate": "2026-08-27",
@@ -37339,9 +37436,9 @@
       "category": "",
       "location": "United States/Florida/Marathon",
       "island": "united states/florida/marathon",
-      "price": null,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "price": 950.0,
+      "priceLabel": "Half Day Reef",
+      "priceConfidence": "high",
       "qualityScore": 0,
       "currency": "USD",
       "duration": "",
@@ -37374,7 +37471,7 @@
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
       "_unknownFields": {
-        "priceSource": "s51-kwst-backfill",
+        "priceSource": "s51-kwst-backfill-2",
         "priceVerifiedAt": "2026-08-26",
         "probeDates": [
           "2026-08-29",
@@ -37384,13 +37481,21 @@
         ],
         "probeSampled": 4,
         "probeDateValid": 4,
-        "priceHold": "variant_only",
-        "priceBasis": "HELD for ruling: every priced tier is an unnamed duration/variant tier (Half Day Reef $950 [variant] / 3/4 Day Reef and Wreck $1,200 [variant] / Full Day Reef and Wreck $1,500 [variant]) and neither label, note, sibling nor an age-concession tier says per-person or whole-unit; not guessed; 4/4 dated readings 2026-08-26 (4/4 date-valid), 1 ladder shape(s), include_breakdown=yes, probe.json sha256 186bcb42971b",
+        "priceBasis": "s51-kwst-backfill-2 (2026-08-26): class (a) ruling \u2014 \"Half Day Reef\" $950 (note \"4 Hours\"), unit \"whole boat \u00b7 up to 6 passengers\" (description: 'Up to 6 Passengers'); per-duration ladder (Half Day 4h / 3/4 Day 6h / Full Day 8h); description \"For all ages! \u2022 4-8 hours \u2022 Up to 6 Passengers\"; not anchoring: 3/4 Day Reef and Wreck $1,200 (6 Hours), Full Day Reef and Wreck $1,500 (8 Hours); 4/4 dated readings 2026-08-26 (4 date-valid), include_breakdown=yes, probe.json sha256 186bcb42971b; supersedes s51-kwst-backfill hold",
         "priceTiers": [
           "Half Day Reef $950 (4 Hours)",
           "3/4 Day Reef and Wreck $1,200 (6 Hours)",
           "Full Day Reef and Wreck $1,500 (8 Hours)"
-        ]
+        ],
+        "priceCustomerType": "Half Day Reef",
+        "priceTierCount": 3,
+        "excludedTiers": [
+          "3/4 Day Reef and Wreck $1,200 (6 Hours)",
+          "Full Day Reef and Wreck $1,500 (8 Hours)"
+        ],
+        "priceMinPartySize": 1,
+        "priceUnit": "whole boat \u00b7 up to 6 passengers",
+        "unitEvidence": "description: 'Up to 6 Passengers'"
       },
       "needsEnrichment": true,
       "nextAvailableDate": "2026-08-26",
@@ -37477,7 +37582,7 @@
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
       "_unknownFields": {
-        "priceSource": "s51-kwst-backfill",
+        "priceSource": "s51-kwst-backfill-2",
         "priceVerifiedAt": "2026-08-26",
         "probeDates": [
           "2026-08-29",
@@ -37488,7 +37593,7 @@
         "probeSampled": 4,
         "probeDateValid": 4,
         "priceHold": "unit_underivable",
-        "priceBasis": "HELD for ruling (D-630): whole-unit anchor \"Private Trip \u2022 One to Two People\" $700 under D-614/D-635 whole-unit / party-size ladder: floor total anchors (never divided by headcount) but no vessel / vehicle / rental word in tier label, note or product name; ladder Private Trip \u2022 One to Two People $700 [group] / Private Trip \u2022 Three People $750 [group] / Private Trip \u2022 Four People $800 [group]; 4/4 dated readings 2026-08-26 (4/4 date-valid), 1 ladder shape(s), include_breakdown=yes, probe.json sha256 186bcb42971b",
+        "priceBasis": "s51-kwst-backfill-2 (2026-08-26): stays HELD (class d, named gap): \"Private Trip \u2022 One to Two People\" $700 ladder has no vessel/vehicle word in label, description (\"For all ages! \u2022 4 hours \u2022 Up to 4 People\") or product name. Prior: HELD for ruling (D-630): whole-unit anchor \"Private Trip \u2022 One to Two People\" $700 under D-614/D-635 whole-unit / party-size ladder: floor total anchors (never divided by headcount) but no vessel / vehicle / rental word in tier label, note or product name; ladder Private Trip \u2022 One to Two People $700 [group] / Private Trip \u2022 Three People $750 [group] / Private Trip \u2022 Four People $800 [group]; 4/4 dated readings 2026-08-26 (4/4 date-valid), 1 ladder shape(s), include_breakdown=yes, probe.json sha256 186bcb42971b",
         "priceTiers": [
           "Private Trip \u2022 One to Two People $700",
           "Private Trip \u2022 Three People $750",
@@ -43979,7 +44084,7 @@
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
       "_unknownFields": {
-        "priceSource": "s51-kwst-backfill",
+        "priceSource": "s51-kwst-backfill-2",
         "priceVerifiedAt": "2026-08-26",
         "probeDates": [
           "2026-08-29",
@@ -43990,7 +44095,7 @@
         "probeSampled": 4,
         "probeDateValid": 4,
         "priceHold": "variant_only",
-        "priceBasis": "HELD for ruling: every priced tier is an unnamed duration/variant tier (One Session $45 [variant] / Two Session $55 [variant]) and neither label, note, sibling nor an age-concession tier says per-person or whole-unit; not guessed; 4/4 dated readings 2026-08-26 (4/4 date-valid), 2 ladder shape(s), include_breakdown=yes, probe.json sha256 186bcb42971b",
+        "priceBasis": "s51-kwst-backfill-2 (2026-08-26): stays HELD (class a): \"One Session\" $45 / \"Two Session\" $55 \u2014 no unit in tier label, no description, product name \"Aquabana 1HR\" names no unit; per-session is not a per-hour/per-day rental shape; not guessed. Prior: HELD for ruling: every priced tier is an unnamed duration/variant tier (One Session $45 [variant] / Two Session $55 [variant]) and neither label, note, sibling nor an age-concession tier says per-person or whole-unit; not guessed; 4/4 dated readings 2026-08-26 (4/4 date-valid), 2 ladder shape(s), include_breakdown=yes, probe.json sha256 186bcb42971b",
         "priceTiers": [
           "One Session $45",
           "Two Session $55"
@@ -49877,9 +49982,9 @@
       "category": "",
       "location": "United States/Florida/Key West",
       "island": "united states/florida/key west",
-      "price": null,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "price": 1299.0,
+      "priceLabel": "Four Hours",
+      "priceConfidence": "high",
       "qualityScore": 0,
       "currency": "USD",
       "duration": "",
@@ -49909,7 +50014,7 @@
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
       "_unknownFields": {
-        "priceSource": "s51-kwst-backfill",
+        "priceSource": "s51-kwst-backfill-2",
         "priceVerifiedAt": "2026-08-26",
         "probeDates": [
           "2026-08-29",
@@ -49919,12 +50024,19 @@
         ],
         "probeSampled": 4,
         "probeDateValid": 3,
-        "priceHold": "unit_plus_increment",
-        "priceBasis": "HELD for ruling (unit+increment ladder is ambiguous \u2014 memory reference_fareharbor_unit_plus_increment_is_ambiguous): anchor \"Four Hours\" $1,299 (note \"Base rate for 8 People | If more than 8 people attending, please advise in the drop-down\") with increment tier(s) Six Hours $1,699 (Base rate for 8 People | If more than 8 people attending, please advise in the drop-down), Four Hours $1,299 (Base rate for 8 People | If more than 8 people attending, please advise in the drop-down); ladder Four Hours $1,299 [group] / Six Hours $1,699 [group]; 4/4 dated readings 2026-08-26 (3/4 date-valid), 2 ladder shape(s), include_breakdown=yes, probe.json sha256 186bcb42971b",
+        "priceBasis": "s51-kwst-backfill-2 (2026-08-26): class (b) ruling \u2014 \"Four Hours\" $1,299 (note \"Base rate for 8 People | If more than 8 people attending, please advise in the drop-down\"), unit \"whole boat \u00b7 base rate for 8 people\" (product name: 'Salty Bottom Party Boat'; tier note: 'Base rate for 8 People'); increment is note-only (\"If more than 8 people attending, please advise in the drop-down\"), no purchasable increment tier; base rate anchors; not anchoring: Six Hours $1,699 (Base rate for 8 People | If more than 8 people attending, please advise in the drop-down); 4/4 dated readings 2026-08-26 (3 date-valid), include_breakdown=yes, probe.json sha256 186bcb42971b; supersedes s51-kwst-backfill hold",
         "priceTiers": [
           "Four Hours $1,299 (Base rate for 8 People | If more than 8 people attending, please advise in the drop-down)",
           "Six Hours $1,699 (Base rate for 8 People | If more than 8 people attending, please advise in the drop-down)"
-        ]
+        ],
+        "priceCustomerType": "Four Hours",
+        "priceTierCount": 2,
+        "excludedTiers": [
+          "Six Hours $1,699 (Base rate for 8 People | If more than 8 people attending, please advise in the drop-down)"
+        ],
+        "priceMinPartySize": 1,
+        "priceUnit": "whole boat \u00b7 base rate for 8 people",
+        "unitEvidence": "product name: 'Salty Bottom Party Boat'; tier note: 'Base rate for 8 People'"
       },
       "needsEnrichment": true,
       "nextAvailableDate": "2026-08-26",
@@ -49987,9 +50099,9 @@
       "category": "",
       "location": "United States/Florida/Key West",
       "island": "united states/florida/key west",
-      "price": null,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "price": 425.0,
+      "priceLabel": "Two Hour Sunset",
+      "priceConfidence": "high",
       "qualityScore": 0,
       "currency": "USD",
       "duration": "",
@@ -50016,7 +50128,7 @@
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
       "_unknownFields": {
-        "priceSource": "s51-kwst-backfill",
+        "priceSource": "s51-kwst-backfill-2",
         "priceVerifiedAt": "2026-08-26",
         "probeDates": [
           "2026-08-29",
@@ -50026,14 +50138,23 @@
         ],
         "probeSampled": 4,
         "probeDateValid": 4,
-        "priceHold": "unit_plus_increment",
-        "priceBasis": "HELD for ruling (unit+increment ladder is ambiguous \u2014 memory reference_fareharbor_unit_plus_increment_is_ambiguous): anchor \"Two Hour Sunset\" $425 (note \"\") with increment tier(s) Four Hours $729 (Base rate for 8 People | If more than 8 people attending, please advise in the drop-down), Six Hours $929 (Base rate for 8 People | If more than 8 people attending, please advise in the drop-down); ladder Two Hour Sunset $425 [group] / Three Hours $599 [group] / Four Hours $729 [group] / Six Hours $929 [group]; 4/4 dated readings 2026-08-26 (4/4 date-valid), 1 ladder shape(s), include_breakdown=yes, probe.json sha256 186bcb42971b",
+        "priceBasis": "s51-kwst-backfill-2 (2026-08-26): class (b) ruling \u2014 \"Two Hour Sunset\" $425, unit \"whole boat \u00b7 up to 6 passengers\" (product name: 'Salty Max Center Console (up to 6 Passengers)'); floor tier \"Two Hour Sunset\" carries no note; the Four/Six Hours tiers say \"Base rate for 8 People\" on a product named \"up to 6 Passengers\" (D-649 conflict flagged, product name quoted as the unit source); not anchoring: Three Hours $599, Four Hours $729 (Base rate for 8 People | If more than 8 people attending, please advise in the drop-down), Six Hours $929 (Base rate for 8 People | If more than 8 people attending, please advise in the drop-down); 4/4 dated readings 2026-08-26 (4 date-valid), include_breakdown=yes, probe.json sha256 186bcb42971b; supersedes s51-kwst-backfill hold",
         "priceTiers": [
           "Two Hour Sunset $425",
           "Three Hours $599",
           "Four Hours $729 (Base rate for 8 People | If more than 8 people attending, please advise in the drop-down)",
           "Six Hours $929 (Base rate for 8 People | If more than 8 people attending, please advise in the drop-down)"
-        ]
+        ],
+        "priceCustomerType": "Two Hour Sunset",
+        "priceTierCount": 4,
+        "excludedTiers": [
+          "Three Hours $599",
+          "Four Hours $729 (Base rate for 8 People | If more than 8 people attending, please advise in the drop-down)",
+          "Six Hours $929 (Base rate for 8 People | If more than 8 people attending, please advise in the drop-down)"
+        ],
+        "priceMinPartySize": 1,
+        "priceUnit": "whole boat \u00b7 up to 6 passengers",
+        "unitEvidence": "product name: 'Salty Max Center Console (up to 6 Passengers)'"
       },
       "needsEnrichment": true,
       "nextAvailableDate": "2026-08-26",
@@ -53900,9 +54021,9 @@
       "category": "",
       "location": "United States/Florida/Islamorada",
       "island": "united states/florida/islamorada",
-      "price": null,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "price": 98.11,
+      "priceLabel": "Shared Snorkeling Tour for 1-6 Persons Minimum 3 Persons 89.00",
+      "priceConfidence": "high",
       "qualityScore": 0,
       "currency": "USD",
       "duration": "",
@@ -53929,7 +54050,7 @@
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
       "_unknownFields": {
-        "priceSource": "s51-kwst-backfill",
+        "priceSource": "s51-kwst-backfill-2",
         "priceVerifiedAt": "2026-08-26",
         "probeDates": [
           "2026-08-29",
@@ -53939,11 +54060,16 @@
         ],
         "probeSampled": 4,
         "probeDateValid": 4,
-        "priceHold": "shared_named_charter",
-        "priceBasis": "HELD for ruling: product name says \"Shared\" but the anchor tier \"Shared Snorkeling Tour for 1-6 Persons Minimum 3 Persons 89.00\" $98.11 is group-shaped; per-seat vs whole-boat undecidable from the ladder; Shared Snorkeling Tour for 1-6 Persons Minimum 3 Persons 89.00 $98.11 [group]; 4/4 dated readings 2026-08-26 (4/4 date-valid), 1 ladder shape(s), include_breakdown=yes, probe.json sha256 186bcb42971b",
+        "priceBasis": "s51-kwst-backfill-2 (2026-08-26): class (c) ruling \u2014 \"Shared Snorkeling Tour for 1-6 Persons Minimum 3 Persons 89.00\" $98.11 (note \"$89.00 per person 1-6 persons 3 person minimum\"), unit \"per person\" (tier note: '$89.00 per person 1-6 persons 3 person minimum'); shared per-person tier is the only tier; live price $98.11 vs \"$89.00\" in label/note (D-649 conflict flagged, live wins); min party 3; 4/4 dated readings 2026-08-26 (4 date-valid), include_breakdown=yes, probe.json sha256 186bcb42971b; supersedes s51-kwst-backfill hold",
         "priceTiers": [
-          "Shared Snorkeling Tour for 1-6 Persons Minimum 3 Persons 89.00 $98.11 ($89.00 per person 1-6 persons 3 person minimum, min 3)"
-        ]
+          "Shared Snorkeling Tour for 1-6 Persons Minimum 3 Persons 89.00 $98.11 ($89.00 per person 1-6 persons 3 person minimum) (min 3)"
+        ],
+        "priceCustomerType": "Shared Snorkeling Tour for 1-6 Persons Minimum 3 Persons 89.00",
+        "priceTierCount": 1,
+        "excludedTiers": [],
+        "priceMinPartySize": 3,
+        "priceUnit": "per person",
+        "unitEvidence": "tier note: '$89.00 per person 1-6 persons 3 person minimum'"
       },
       "needsEnrichment": true,
       "nextAvailableDate": "2026-08-27",
@@ -68984,9 +69110,9 @@
       "category": "",
       "location": "United States/Florida/Key West",
       "island": "united states/florida/key west",
-      "price": null,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "price": 275.0,
+      "priceLabel": "Private Tour up to 4 People for 1.5 Hours",
+      "priceConfidence": "high",
       "qualityScore": 85,
       "currency": "USD",
       "duration": "120 minutes",
@@ -69017,7 +69143,7 @@
       "lastUpdated": "2026-07-30T18:54:17Z",
       "_unknownFields": {
         "durationMinutes": 120,
-        "priceSource": "s51-kwst-backfill",
+        "priceSource": "s51-kwst-backfill-2",
         "priceVerifiedAt": "2026-08-26",
         "probeDates": [
           "2026-08-29",
@@ -69027,12 +69153,19 @@
         ],
         "probeSampled": 4,
         "probeDateValid": 3,
-        "priceHold": "unit_plus_increment",
-        "priceBasis": "HELD for ruling (unit+increment ladder is ambiguous \u2014 memory reference_fareharbor_unit_plus_increment_is_ambiguous): anchor \"Private Tour up to 4 People for 1.5 Hours\" $275 (note \"Add additional people below.\") with increment tier(s) Additional Person $39, Private Tour up to 4 People for 1.5 Hours $275 (Add additional people below.); ladder Additional Person $39 [never] / Private Tour up to 4 People for 1.5 Hours $275 [group]; 4/4 dated readings 2026-08-26 (3/4 date-valid), 1 ladder shape(s), include_breakdown=yes, probe.json sha256 186bcb42971b",
+        "priceBasis": "s51-kwst-backfill-2 (2026-08-26): class (b) ruling \u2014 \"Private Tour up to 4 People for 1.5 Hours\" $275 (note \"Add additional people below.\"), unit \"private tour \u00b7 up to 4 people\" (tier label: 'Private Tour up to 4 People for 1.5 Hours'); increment tier \"Additional Person\" $39 never anchors; walking tour, not a vessel; not anchoring: Additional Person $39; 4/4 dated readings 2026-08-26 (3 date-valid), include_breakdown=yes, probe.json sha256 186bcb42971b; supersedes s51-kwst-backfill hold",
         "priceTiers": [
           "Additional Person $39",
           "Private Tour up to 4 People for 1.5 Hours $275 (Add additional people below.)"
-        ]
+        ],
+        "priceCustomerType": "Private Tour up to 4 People for 1.5 Hours",
+        "priceTierCount": 2,
+        "excludedTiers": [
+          "Additional Person $39"
+        ],
+        "priceMinPartySize": 1,
+        "priceUnit": "private tour \u00b7 up to 4 people",
+        "unitEvidence": "tier label: 'Private Tour up to 4 People for 1.5 Hours'"
       },
       "nextAvailableDate": "2026-08-26",
       "nullConsecutiveSweeps": 0
@@ -69094,9 +69227,9 @@
       "category": "",
       "location": "United States/Florida/Key Largo",
       "island": "united states/florida/key largo",
-      "price": null,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "price": 879.0,
+      "priceLabel": "Private Tour For Up to 6 people",
+      "priceConfidence": "high",
       "qualityScore": 0,
       "currency": "USD",
       "duration": "",
@@ -69128,7 +69261,7 @@
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
       "_unknownFields": {
-        "priceSource": "s51-kwst-backfill",
+        "priceSource": "s51-kwst-backfill-2",
         "priceVerifiedAt": "2026-08-26",
         "probeDates": [
           "2026-08-29",
@@ -69138,12 +69271,19 @@
         ],
         "probeSampled": 4,
         "probeDateValid": 2,
-        "priceHold": "unit_plus_increment",
-        "priceBasis": "HELD for ruling (unit+increment ladder is ambiguous \u2014 memory reference_fareharbor_unit_plus_increment_is_ambiguous): anchor \"Private Tour For Up to 6 people\" $879 (note \"See below to add additional people.\") with increment tier(s) Additional Person $49, Private Tour For Up to 6 people $879 (See below to add additional people.); ladder Private Tour For Up to 6 people $879 [group] / Additional Person $49 [never]; 4/4 dated readings 2026-08-26 (2/4 date-valid), 1 ladder shape(s), include_breakdown=yes, probe.json sha256 186bcb42971b",
+        "priceBasis": "s51-kwst-backfill-2 (2026-08-26): class (b) ruling \u2014 \"Private Tour For Up to 6 people\" $879 (note \"See below to add additional people.\"), unit \"private tour \u00b7 up to 6 people\" (tier label: 'Private Tour For Up to 6 people'); increment tier \"Additional Person\" $49 never anchors; road tour, not a vessel; not anchoring: Additional Person $49; 4/4 dated readings 2026-08-26 (2 date-valid), include_breakdown=yes, probe.json sha256 186bcb42971b; supersedes s51-kwst-backfill hold",
         "priceTiers": [
           "Private Tour For Up to 6 people $879 (See below to add additional people.)",
           "Additional Person $49"
-        ]
+        ],
+        "priceCustomerType": "Private Tour For Up to 6 people",
+        "priceTierCount": 2,
+        "excludedTiers": [
+          "Additional Person $49"
+        ],
+        "priceMinPartySize": 1,
+        "priceUnit": "private tour \u00b7 up to 6 people",
+        "unitEvidence": "tier label: 'Private Tour For Up to 6 people'"
       },
       "needsEnrichment": true,
       "nextAvailableDate": "2026-08-27",
