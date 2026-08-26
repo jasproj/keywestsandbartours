@@ -21667,9 +21667,9 @@
       "category": "",
       "location": "United States/Florida/Key West",
       "island": "united states/florida/key west",
-      "price": 45,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "price": 55.0,
+      "priceLabel": "Person",
+      "priceConfidence": "high",
       "qualityScore": 85,
       "currency": "USD",
       "duration": null,
@@ -21702,7 +21702,19 @@
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
       "nextAvailableDate": "2026-08-08",
-      "nullConsecutiveSweeps": 0
+      "nullConsecutiveSweeps": 0,
+      "_unknownFields": {
+        "priceSource": "s50-kwst-rowfix",
+        "priceCustomerType": "Person",
+        "priceTierCount": 1,
+        "priceTiers": [
+          "Person $55.00 (Ages 8+, min 2)"
+        ],
+        "excludedTiers": [],
+        "priceMinPartySize": 2,
+        "priceVerifiedAt": "2026-08-25",
+        "priceBasis": "s50 rowfix (2026-08-25): stale row $45 matched no live tier; single purchasable tier 'Person' $55.00 (Ages 8+, min 2), 10:00-12:30 daily. D-624 base anchor. Static instance blog/key-west-roosters.html already read $55 (no HTML change). Live readings 16/16 date-valid (14/14 in the 14-day sweep). Evidence: probe_rowfix.json sha256 6747733b5130, spec dates 2026-08-29/09-05/09-19/10-10 all date-valid, include_breakdown=yes."
+      }
     },
     {
       "id": "502330",
@@ -60375,9 +60387,9 @@
       "category": "",
       "location": "United States/Florida/Key West",
       "island": "united states/florida/key west",
-      "price": 119,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "price": 109.0,
+      "priceLabel": "Adult",
+      "priceConfidence": "high",
       "qualityScore": 95,
       "currency": "USD",
       "duration": "240 minutes",
@@ -60410,7 +60422,22 @@
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
       "_unknownFields": {
-        "durationMinutes": 240
+        "durationMinutes": 240,
+        "priceSource": "s50-kwst-rowfix",
+        "priceCustomerType": "Adult",
+        "priceTierCount": 3,
+        "priceTiers": [
+          "Adult $109.00 (Ages 13+, min 2)",
+          "Private Tour For Up to 4 People $395.00 (Add additional people below., min 2)",
+          "Child $35.00 ((ages 12 and under), min 2)"
+        ],
+        "excludedTiers": [
+          "Private Tour For Up to 4 People $395.00 (Add additional people below., min 2)",
+          "Child $35.00 ((ages 12 and under), min 2)"
+        ],
+        "priceMinPartySize": 2,
+        "priceVerifiedAt": "2026-08-25",
+        "priceBasis": "s50 rowfix (2026-08-25): stale row $119 matched no live tier; D-624 adult anchor 'Adult' $109.00 (Ages 13+, min 2); excluded Child $35 (ages 12 and under) and 'Private Tour For Up to 4 People' $395 (whole-unit tier). No static HTML instances. Live readings 15/16 date-valid (13/14 in the 14-day sweep). Evidence: probe_rowfix.json sha256 6747733b5130, spec dates 2026-08-29/09-05/09-19/10-10 all date-valid, include_breakdown=yes."
       },
       "nextAvailableDate": "2026-08-08",
       "nullConsecutiveSweeps": 0
@@ -60663,9 +60690,9 @@
       "category": "",
       "location": "United States/Florida/Key West",
       "island": "united states/florida/key west",
-      "price": 65,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "price": 159.0,
+      "priceLabel": "Adult",
+      "priceConfidence": "high",
       "qualityScore": 95,
       "currency": "USD",
       "duration": "420 minutes",
@@ -60699,7 +60726,20 @@
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
       "_unknownFields": {
-        "durationMinutes": 420
+        "durationMinutes": 420,
+        "priceSource": "s50-kwst-rowfix",
+        "priceCustomerType": "Adult",
+        "priceTierCount": 2,
+        "priceTiers": [
+          "Child $35.00 ((ages 12 and under), min 2)",
+          "Adult $159.00 (API, min 2)"
+        ],
+        "excludedTiers": [
+          "Child $35.00 ((ages 12 and under), min 2)"
+        ],
+        "priceMinPartySize": 2,
+        "priceVerifiedAt": "2026-08-25",
+        "priceBasis": "s50 rowfix (2026-08-25): stale row $65 matched no live tier (child/rider-tier trap \u2014 the only sub-$100 tier is Child $35); D-624 adult anchor 'Adult' $159.00 (min 2); excluded Child $35 (ages 12 and under). No static HTML instances. Live readings 14/16 date-valid (12/14 in the 14-day sweep). Evidence: probe_rowfix.json sha256 6747733b5130, spec dates 2026-08-29/09-05/09-19/10-10 all date-valid, include_breakdown=yes."
       },
       "nextAvailableDate": "2026-08-09",
       "nullConsecutiveSweeps": 0
@@ -67979,7 +68019,7 @@
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-08-22T00:00:00Z",
       "_unknownFields": {
-        "priceSource": "fh-price-preview-v2-2026-08-22",
+        "priceSource": "s50-kwst-rowfix",
         "priceCustomerType": "Adult",
         "priceTierCount": 2,
         "priceUnit": "per bicycle",
@@ -67989,10 +68029,16 @@
         "stockedFrom": "monroe-county-stocking-2026-08-22",
         "trueMinimumSpend": 138.0,
         "excludedTiers": [
-          "Child $59.00 (child)"
-        ]
+          "Child $59.00 (Ages 12 and under, min 2)"
+        ],
+        "priceTiers": [
+          "Adult $69.00 (Ages 12 and up, min 2)",
+          "Child $59.00 (Ages 12 and under, min 2)"
+        ],
+        "priceVerifiedAt": "2026-08-25",
+        "priceBasis": "s50 rowfix (2026-08-25): price re-verified unchanged at 'Adult' $69.00 (Ages 12 and up, min 2), Child $59 excluded; supersedes priceSource fh-price-preview-v2-2026-08-22 with a dated s50 stamp. Availability: row nextAvailableDate was null against 16/16 date-valid departures 09:30-12:30 daily; sweep instrument (next-bookable-availability/v1, date=2026-08-25, sweep UA) returned next_available_date=2026-08-26 -> written; nullConsecutiveSweeps stays 0. Live readings 16/16 date-valid (14/14 in the 14-day sweep). Evidence: probe_rowfix.json sha256 6747733b5130, spec dates 2026-08-29/09-05/09-19/10-10 all date-valid, include_breakdown=yes."
       },
-      "nextAvailableDate": null,
+      "nextAvailableDate": "2026-08-26",
       "nullConsecutiveSweeps": 0
     },
     {
