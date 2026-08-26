@@ -1272,7 +1272,10 @@
       },
       "needsEnrichment": true,
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 2,
+      "hidden": true,
+      "hiddenAt": "2026-08-26",
+      "hiddenReason": "s51 would-hide ruling 2026-08-26 (bucket A: dated/seasonal event listing); nextAvailableDate null on sweeps 2026-08-08 (#169) and 2026-08-26 (#249), nullConsecutiveSweeps=2; price-preview absent 4/4 dates 2026-08-26 where probed. Reversible: scripts/sweep-availability.py clears hidden when a bookable date returns."
     },
     {
       "id": "650888",
@@ -1330,7 +1333,10 @@
         "priceTiers": []
       },
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 2,
+      "hidden": true,
+      "hiddenAt": "2026-08-26",
+      "hiddenReason": "s51 would-hide ruling 2026-08-26 (bucket A: dated/seasonal event listing); nextAvailableDate null on sweeps 2026-08-08 (#169) and 2026-08-26 (#249), nullConsecutiveSweeps=2; price-preview absent 4/4 dates 2026-08-26 where probed. Reversible: scripts/sweep-availability.py clears hidden when a bookable date returns."
     },
     {
       "id": "655130",
@@ -1386,7 +1392,10 @@
       },
       "needsEnrichment": true,
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 2,
+      "hidden": true,
+      "hiddenAt": "2026-08-26",
+      "hiddenReason": "s51 would-hide ruling 2026-08-26 (bucket A: dated/seasonal event listing); nextAvailableDate null on sweeps 2026-08-08 (#169) and 2026-08-26 (#249), nullConsecutiveSweeps=2; price-preview absent 4/4 dates 2026-08-26 where probed. Reversible: scripts/sweep-availability.py clears hidden when a bookable date returns."
     },
     {
       "id": "655179",
@@ -1668,7 +1677,10 @@
         "priceHold": "UNSAMPLED",
         "priceBasis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b",
         "priceTiers": []
-      }
+      },
+      "hidden": true,
+      "hiddenAt": "2026-08-26",
+      "hiddenReason": "s51 would-hide ruling 2026-08-26 (bucket D junk: \"Free Ride\" \u2014 not a product); nextAvailableDate null on sweeps 2026-08-08 (#169) and 2026-08-26 (#249), nullConsecutiveSweeps=2; price-preview absent 4/4 dates 2026-08-26 where probed. Reversible: scripts/sweep-availability.py clears hidden when a bookable date returns."
     },
     {
       "id": "580531",
@@ -2509,7 +2521,10 @@
         "priceHold": "UNSAMPLED",
         "priceBasis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b",
         "priceTiers": []
-      }
+      },
+      "hidden": true,
+      "hiddenAt": "2026-08-26",
+      "hiddenReason": "s51 would-hide ruling 2026-08-26 (bucket A: dated/seasonal event listing); nextAvailableDate null on sweeps 2026-08-08 (#169) and 2026-08-26 (#249), nullConsecutiveSweeps=2; price-preview absent 4/4 dates 2026-08-26 where probed. Reversible: scripts/sweep-availability.py clears hidden when a bookable date returns."
     },
     {
       "id": "97469",
@@ -3928,7 +3943,10 @@
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 2,
+      "hidden": true,
+      "hiddenAt": "2026-08-26",
+      "hiddenReason": "s51 would-hide ruling 2026-08-26 (bucket A: dated/seasonal event listing); nextAvailableDate null on sweeps 2026-08-08 (#169) and 2026-08-26 (#249), nullConsecutiveSweeps=2; price-preview absent 4/4 dates 2026-08-26 where probed. Reversible: scripts/sweep-availability.py clears hidden when a bookable date returns."
     },
     {
       "id": "273062",
@@ -4075,7 +4093,10 @@
       },
       "needsEnrichment": true,
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 2,
+      "hidden": true,
+      "hiddenAt": "2026-08-26",
+      "hiddenReason": "s51 would-hide ruling 2026-08-26 (bucket A: dated/seasonal event listing); nextAvailableDate null on sweeps 2026-08-08 (#169) and 2026-08-26 (#249), nullConsecutiveSweeps=2; price-preview absent 4/4 dates 2026-08-26 where probed. Reversible: scripts/sweep-availability.py clears hidden when a bookable date returns."
     },
     {
       "id": "698591",
@@ -6278,7 +6299,10 @@
         "priceTiers": []
       },
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 2,
+      "hidden": true,
+      "hiddenAt": "2026-08-26",
+      "hiddenReason": "s51 would-hide ruling 2026-08-26 (bucket A: dated/seasonal event listing); nextAvailableDate null on sweeps 2026-08-08 (#169) and 2026-08-26 (#249), nullConsecutiveSweeps=2; price-preview absent 4/4 dates 2026-08-26 where probed. Reversible: scripts/sweep-availability.py clears hidden when a bookable date returns."
     },
     {
       "id": "534214",
@@ -6663,7 +6687,10 @@
       },
       "needsEnrichment": true,
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 2,
+      "hidden": true,
+      "hiddenAt": "2026-08-26",
+      "hiddenReason": "s51 would-hide ruling 2026-08-26 (bucket A: dated/seasonal event listing); nextAvailableDate null on sweeps 2026-08-08 (#169) and 2026-08-26 (#249), nullConsecutiveSweeps=2; price-preview absent 4/4 dates 2026-08-26 where probed. Reversible: scripts/sweep-availability.py clears hidden when a bookable date returns."
     },
     {
       "id": "669641",
@@ -6914,7 +6941,10 @@
       },
       "needsEnrichment": true,
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 2,
+      "hidden": true,
+      "hiddenAt": "2026-08-26",
+      "hiddenReason": "s51 would-hide ruling 2026-08-26 (bucket A: dated/seasonal event listing); nextAvailableDate null on sweeps 2026-08-08 (#169) and 2026-08-26 (#249), nullConsecutiveSweeps=2; price-preview absent 4/4 dates 2026-08-26 where probed. Reversible: scripts/sweep-availability.py clears hidden when a bookable date returns."
     },
     {
       "id": "494351",
@@ -12146,7 +12176,10 @@
       },
       "needsEnrichment": true,
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 2,
+      "hidden": true,
+      "hiddenAt": "2026-08-26",
+      "hiddenReason": "s51 would-hide ruling 2026-08-26 (bucket A: dated/seasonal event listing); nextAvailableDate null on sweeps 2026-08-08 (#169) and 2026-08-26 (#249), nullConsecutiveSweeps=2; price-preview absent 4/4 dates 2026-08-26 where probed. Reversible: scripts/sweep-availability.py clears hidden when a bookable date returns."
     },
     {
       "id": "238251",
@@ -12204,7 +12237,10 @@
       },
       "needsEnrichment": true,
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 2,
+      "hidden": true,
+      "hiddenAt": "2026-08-26",
+      "hiddenReason": "s51 would-hide ruling 2026-08-26 (bucket A: dated/seasonal event listing); nextAvailableDate null on sweeps 2026-08-08 (#169) and 2026-08-26 (#249), nullConsecutiveSweeps=2; price-preview absent 4/4 dates 2026-08-26 where probed. Reversible: scripts/sweep-availability.py clears hidden when a bookable date returns."
     },
     {
       "id": "238249",
@@ -12261,7 +12297,10 @@
       },
       "needsEnrichment": true,
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 2,
+      "hidden": true,
+      "hiddenAt": "2026-08-26",
+      "hiddenReason": "s51 would-hide ruling 2026-08-26 (bucket A: dated/seasonal event listing); nextAvailableDate null on sweeps 2026-08-08 (#169) and 2026-08-26 (#249), nullConsecutiveSweeps=2; price-preview absent 4/4 dates 2026-08-26 where probed. Reversible: scripts/sweep-availability.py clears hidden when a bookable date returns."
     },
     {
       "id": "131757",
@@ -12317,7 +12356,10 @@
       },
       "needsEnrichment": true,
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 2,
+      "hidden": true,
+      "hiddenAt": "2026-08-26",
+      "hiddenReason": "s51 would-hide ruling 2026-08-26 (bucket A: dated/seasonal event listing); nextAvailableDate null on sweeps 2026-08-08 (#169) and 2026-08-26 (#249), nullConsecutiveSweeps=2; price-preview absent 4/4 dates 2026-08-26 where probed. Reversible: scripts/sweep-availability.py clears hidden when a bookable date returns."
     },
     {
       "id": "145177",
@@ -12606,7 +12648,10 @@
       },
       "needsEnrichment": true,
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 2,
+      "hidden": true,
+      "hiddenAt": "2026-08-26",
+      "hiddenReason": "s51 would-hide ruling 2026-08-26 (bucket A: dated/seasonal event listing); nextAvailableDate null on sweeps 2026-08-08 (#169) and 2026-08-26 (#249), nullConsecutiveSweeps=2; price-preview absent 4/4 dates 2026-08-26 where probed. Reversible: scripts/sweep-availability.py clears hidden when a bookable date returns."
     },
     {
       "id": "3995",
@@ -13291,7 +13336,10 @@
         "priceTiers": []
       },
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 2,
+      "hidden": true,
+      "hiddenAt": "2026-08-26",
+      "hiddenReason": "s51 would-hide ruling 2026-08-26 (bucket A: dated/seasonal event listing); nextAvailableDate null on sweeps 2026-08-08 (#169) and 2026-08-26 (#249), nullConsecutiveSweeps=2; price-preview absent 4/4 dates 2026-08-26 where probed. Reversible: scripts/sweep-availability.py clears hidden when a bookable date returns."
     },
     {
       "id": "359857",
@@ -13349,7 +13397,10 @@
         "priceTiers": []
       },
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 2,
+      "hidden": true,
+      "hiddenAt": "2026-08-26",
+      "hiddenReason": "s51 would-hide ruling 2026-08-26 (bucket A: dated/seasonal event listing); nextAvailableDate null on sweeps 2026-08-08 (#169) and 2026-08-26 (#249), nullConsecutiveSweeps=2; price-preview absent 4/4 dates 2026-08-26 where probed. Reversible: scripts/sweep-availability.py clears hidden when a bookable date returns."
     },
     {
       "id": "363616",
@@ -13406,7 +13457,10 @@
         "priceHold": "UNSAMPLED",
         "priceBasis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b",
         "priceTiers": []
-      }
+      },
+      "hidden": true,
+      "hiddenAt": "2026-08-26",
+      "hiddenReason": "s51 would-hide ruling 2026-08-26 (bucket A: dated/seasonal event listing); nextAvailableDate null on sweeps 2026-08-08 (#169) and 2026-08-26 (#249), nullConsecutiveSweeps=2; price-preview absent 4/4 dates 2026-08-26 where probed. Reversible: scripts/sweep-availability.py clears hidden when a bookable date returns."
     },
     {
       "id": "3999",
@@ -13510,7 +13564,10 @@
         "priceTiers": []
       },
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 2,
+      "hidden": true,
+      "hiddenAt": "2026-08-26",
+      "hiddenReason": "s51 would-hide ruling 2026-08-26 (bucket A: dated/seasonal event listing); nextAvailableDate null on sweeps 2026-08-08 (#169) and 2026-08-26 (#249), nullConsecutiveSweeps=2; price-preview absent 4/4 dates 2026-08-26 where probed. Reversible: scripts/sweep-availability.py clears hidden when a bookable date returns."
     },
     {
       "id": "360007",
@@ -13661,7 +13718,10 @@
       },
       "needsEnrichment": true,
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 2,
+      "hidden": true,
+      "hiddenAt": "2026-08-26",
+      "hiddenReason": "s51 would-hide ruling 2026-08-26 (bucket A: dated/seasonal event listing); nextAvailableDate null on sweeps 2026-08-08 (#169) and 2026-08-26 (#249), nullConsecutiveSweeps=2; price-preview absent 4/4 dates 2026-08-26 where probed. Reversible: scripts/sweep-availability.py clears hidden when a bookable date returns."
     },
     {
       "id": "11946",
@@ -13718,7 +13778,10 @@
       },
       "needsEnrichment": true,
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 2,
+      "hidden": true,
+      "hiddenAt": "2026-08-26",
+      "hiddenReason": "s51 would-hide ruling 2026-08-26 (bucket A: dated/seasonal event listing); nextAvailableDate null on sweeps 2026-08-08 (#169) and 2026-08-26 (#249), nullConsecutiveSweeps=2; price-preview absent 4/4 dates 2026-08-26 where probed. Reversible: scripts/sweep-availability.py clears hidden when a bookable date returns."
     },
     {
       "id": "376243",
@@ -13891,7 +13954,10 @@
       },
       "needsEnrichment": true,
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 2,
+      "hidden": true,
+      "hiddenAt": "2026-08-26",
+      "hiddenReason": "s51 would-hide ruling 2026-08-26 (bucket A: dated/seasonal event listing); nextAvailableDate null on sweeps 2026-08-08 (#169) and 2026-08-26 (#249), nullConsecutiveSweeps=2; price-preview absent 4/4 dates 2026-08-26 where probed. Reversible: scripts/sweep-availability.py clears hidden when a bookable date returns."
     },
     {
       "id": "515246",
@@ -13945,7 +14011,10 @@
       },
       "needsEnrichment": true,
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 2,
+      "hidden": true,
+      "hiddenAt": "2026-08-26",
+      "hiddenReason": "s51 would-hide ruling 2026-08-26 (bucket A: dated/seasonal event listing); nextAvailableDate null on sweeps 2026-08-08 (#169) and 2026-08-26 (#249), nullConsecutiveSweeps=2; price-preview absent 4/4 dates 2026-08-26 where probed. Reversible: scripts/sweep-availability.py clears hidden when a bookable date returns."
     },
     {
       "id": "670042",
@@ -14002,7 +14071,10 @@
       },
       "needsEnrichment": true,
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 2,
+      "hidden": true,
+      "hiddenAt": "2026-08-26",
+      "hiddenReason": "s51 would-hide ruling 2026-08-26 (bucket A: dated/seasonal event listing); nextAvailableDate null on sweeps 2026-08-08 (#169) and 2026-08-26 (#249), nullConsecutiveSweeps=2; price-preview absent 4/4 dates 2026-08-26 where probed. Reversible: scripts/sweep-availability.py clears hidden when a bookable date returns."
     },
     {
       "id": "672511",
@@ -16804,7 +16876,10 @@
       },
       "needsEnrichment": true,
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 2,
+      "hidden": true,
+      "hiddenAt": "2026-08-26",
+      "hiddenReason": "s51 would-hide ruling 2026-08-26 (bucket A: dated/seasonal event listing); nextAvailableDate null on sweeps 2026-08-08 (#169) and 2026-08-26 (#249), nullConsecutiveSweeps=2; price-preview absent 4/4 dates 2026-08-26 where probed. Reversible: scripts/sweep-availability.py clears hidden when a bookable date returns."
     },
     {
       "id": "708526",
@@ -18467,7 +18542,10 @@
         "priceTiers": []
       },
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 2,
+      "hidden": true,
+      "hiddenAt": "2026-08-26",
+      "hiddenReason": "s51 would-hide ruling 2026-08-26 (bucket A: dated/seasonal event listing); nextAvailableDate null on sweeps 2026-08-08 (#169) and 2026-08-26 (#249), nullConsecutiveSweeps=2; price-preview absent 4/4 dates 2026-08-26 where probed. Reversible: scripts/sweep-availability.py clears hidden when a bookable date returns."
     },
     {
       "id": "488807",
@@ -18523,7 +18601,10 @@
       },
       "needsEnrichment": true,
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 2,
+      "hidden": true,
+      "hiddenAt": "2026-08-26",
+      "hiddenReason": "s51 would-hide ruling 2026-08-26 (bucket A: dated/seasonal event listing); nextAvailableDate null on sweeps 2026-08-08 (#169) and 2026-08-26 (#249), nullConsecutiveSweeps=2; price-preview absent 4/4 dates 2026-08-26 where probed. Reversible: scripts/sweep-availability.py clears hidden when a bookable date returns."
     },
     {
       "id": "490784",
@@ -18749,7 +18830,10 @@
       },
       "needsEnrichment": true,
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 2,
+      "hidden": true,
+      "hiddenAt": "2026-08-26",
+      "hiddenReason": "s51 would-hide ruling 2026-08-26 (bucket D junk: placeholder listing \"No Trips - Stay Tuned for Updates!!\"); nextAvailableDate null on sweeps 2026-08-08 (#169) and 2026-08-26 (#249), nullConsecutiveSweeps=2; price-preview absent 4/4 dates 2026-08-26 where probed. Reversible: scripts/sweep-availability.py clears hidden when a bookable date returns."
     },
     {
       "id": "537927",
@@ -19842,7 +19926,10 @@
         "priceTiers": []
       },
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 2,
+      "hidden": true,
+      "hiddenAt": "2026-08-26",
+      "hiddenReason": "s51 would-hide ruling 2026-08-26 (bucket A: dated/seasonal event listing); nextAvailableDate null on sweeps 2026-08-08 (#169) and 2026-08-26 (#249), nullConsecutiveSweeps=2; price-preview absent 4/4 dates 2026-08-26 where probed. Reversible: scripts/sweep-availability.py clears hidden when a bookable date returns."
     },
     {
       "id": "458085",
@@ -22482,7 +22569,10 @@
       },
       "needsEnrichment": true,
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 2,
+      "hidden": true,
+      "hiddenAt": "2026-08-26",
+      "hiddenReason": "s51 would-hide ruling 2026-08-26 (bucket A: dated/seasonal event listing); nextAvailableDate null on sweeps 2026-08-08 (#169) and 2026-08-26 (#249), nullConsecutiveSweeps=2; price-preview absent 4/4 dates 2026-08-26 where probed. Reversible: scripts/sweep-availability.py clears hidden when a bookable date returns."
     },
     {
       "id": "748863",
@@ -28209,7 +28299,10 @@
         "durationMinutes": 240
       },
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 2,
+      "hidden": true,
+      "hiddenAt": "2026-08-26",
+      "hiddenReason": "s51 would-hide ruling 2026-08-26 (bucket A: dated/seasonal event listing); nextAvailableDate null on sweeps 2026-08-08 (#169) and 2026-08-26 (#249), nullConsecutiveSweeps=2; price-preview absent 4/4 dates 2026-08-26 where probed. Reversible: scripts/sweep-availability.py clears hidden when a bookable date returns."
     },
     {
       "id": "343967",
@@ -28266,7 +28359,10 @@
         "priceHold": "UNSAMPLED",
         "priceBasis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b",
         "priceTiers": []
-      }
+      },
+      "hidden": true,
+      "hiddenAt": "2026-08-26",
+      "hiddenReason": "s51 would-hide ruling 2026-08-26 (bucket A: dated/seasonal event listing); nextAvailableDate null on sweeps 2026-08-08 (#169) and 2026-08-26 (#249), nullConsecutiveSweeps=2; price-preview absent 4/4 dates 2026-08-26 where probed. Reversible: scripts/sweep-availability.py clears hidden when a bookable date returns."
     },
     {
       "id": "646436",
@@ -34506,7 +34602,10 @@
       },
       "needsEnrichment": true,
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 2,
+      "hidden": true,
+      "hiddenAt": "2026-08-26",
+      "hiddenReason": "s51 would-hide ruling 2026-08-26 (bucket A: dated/seasonal event listing); nextAvailableDate null on sweeps 2026-08-08 (#169) and 2026-08-26 (#249), nullConsecutiveSweeps=2; price-preview absent 4/4 dates 2026-08-26 where probed. Reversible: scripts/sweep-availability.py clears hidden when a bookable date returns."
     },
     {
       "id": "326154",
@@ -34954,7 +35053,10 @@
         "priceTiers": []
       },
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 2,
+      "hidden": true,
+      "hiddenAt": "2026-08-26",
+      "hiddenReason": "s51 would-hide ruling 2026-08-26 (bucket A: dated/seasonal event listing); nextAvailableDate null on sweeps 2026-08-08 (#169) and 2026-08-26 (#249), nullConsecutiveSweeps=2; price-preview absent 4/4 dates 2026-08-26 where probed. Reversible: scripts/sweep-availability.py clears hidden when a bookable date returns."
     },
     {
       "id": "204565",
@@ -35018,7 +35120,10 @@
         "priceTiers": []
       },
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 2,
+      "hidden": true,
+      "hiddenAt": "2026-08-26",
+      "hiddenReason": "s51 would-hide ruling 2026-08-26 (bucket A: dated/seasonal event listing); nextAvailableDate null on sweeps 2026-08-08 (#169) and 2026-08-26 (#249), nullConsecutiveSweeps=2; price-preview absent 4/4 dates 2026-08-26 where probed. Reversible: scripts/sweep-availability.py clears hidden when a bookable date returns."
     },
     {
       "id": "605165",
@@ -35508,7 +35613,10 @@
         "priceHold": "UNSAMPLED",
         "priceBasis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b",
         "priceTiers": []
-      }
+      },
+      "hidden": true,
+      "hiddenAt": "2026-08-26",
+      "hiddenReason": "s51 would-hide ruling 2026-08-26 (bucket A: dated/seasonal event listing); nextAvailableDate null on sweeps 2026-08-08 (#169) and 2026-08-26 (#249), nullConsecutiveSweeps=2; price-preview absent 4/4 dates 2026-08-26 where probed. Reversible: scripts/sweep-availability.py clears hidden when a bookable date returns."
     },
     {
       "id": "614104",
@@ -45672,7 +45780,10 @@
       },
       "needsEnrichment": true,
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 2,
+      "hidden": true,
+      "hiddenAt": "2026-08-26",
+      "hiddenReason": "s51 would-hide ruling 2026-08-26 (bucket A: dated/seasonal event listing); nextAvailableDate null on sweeps 2026-08-08 (#169) and 2026-08-26 (#249), nullConsecutiveSweeps=2; price-preview absent 4/4 dates 2026-08-26 where probed. Reversible: scripts/sweep-availability.py clears hidden when a bookable date returns."
     },
     {
       "id": "526630",
@@ -46292,7 +46403,10 @@
       },
       "needsEnrichment": true,
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 2,
+      "hidden": true,
+      "hiddenAt": "2026-08-26",
+      "hiddenReason": "s51 would-hide ruling 2026-08-26 (bucket D junk: operator-internal SKU \"Retail ***STAFF USE ONLY***\"); nextAvailableDate null on sweeps 2026-08-08 (#169) and 2026-08-26 (#249), nullConsecutiveSweeps=2; price-preview absent 4/4 dates 2026-08-26 where probed. Reversible: scripts/sweep-availability.py clears hidden when a bookable date returns."
     },
     {
       "id": "550433",
@@ -46857,7 +46971,10 @@
         "durationMinutes": 150
       },
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 2,
+      "hidden": true,
+      "hiddenAt": "2026-08-26",
+      "hiddenReason": "s51 would-hide ruling 2026-08-26 (bucket A: dated/seasonal event listing); nextAvailableDate null on sweeps 2026-08-08 (#169) and 2026-08-26 (#249), nullConsecutiveSweeps=2; price-preview absent 4/4 dates 2026-08-26 where probed. Reversible: scripts/sweep-availability.py clears hidden when a bookable date returns."
     },
     {
       "id": "587427",
@@ -46915,7 +47032,10 @@
       },
       "needsEnrichment": true,
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 2,
+      "hidden": true,
+      "hiddenAt": "2026-08-26",
+      "hiddenReason": "s51 would-hide ruling 2026-08-26 (bucket A: dated/seasonal event listing); nextAvailableDate null on sweeps 2026-08-08 (#169) and 2026-08-26 (#249), nullConsecutiveSweeps=2; price-preview absent 4/4 dates 2026-08-26 where probed. Reversible: scripts/sweep-availability.py clears hidden when a bookable date returns."
     },
     {
       "id": "583690",
@@ -47164,7 +47284,10 @@
       },
       "needsEnrichment": true,
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 2,
+      "hidden": true,
+      "hiddenAt": "2026-08-26",
+      "hiddenReason": "s51 would-hide ruling 2026-08-26 (bucket A: dated/seasonal event listing); nextAvailableDate null on sweeps 2026-08-08 (#169) and 2026-08-26 (#249), nullConsecutiveSweeps=2; price-preview absent 4/4 dates 2026-08-26 where probed. Reversible: scripts/sweep-availability.py clears hidden when a bookable date returns."
     },
     {
       "id": "584515",
@@ -47291,7 +47414,10 @@
       },
       "needsEnrichment": true,
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 2,
+      "hidden": true,
+      "hiddenAt": "2026-08-26",
+      "hiddenReason": "s51 would-hide ruling 2026-08-26 (bucket A: dated/seasonal event listing); nextAvailableDate null on sweeps 2026-08-08 (#169) and 2026-08-26 (#249), nullConsecutiveSweeps=2; price-preview absent 4/4 dates 2026-08-26 where probed. Reversible: scripts/sweep-availability.py clears hidden when a bookable date returns."
     },
     {
       "id": "625334",
@@ -47605,7 +47731,10 @@
       },
       "needsEnrichment": true,
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 2,
+      "hidden": true,
+      "hiddenAt": "2026-08-26",
+      "hiddenReason": "s51 would-hide ruling 2026-08-26 (bucket A: dated/seasonal event listing); nextAvailableDate null on sweeps 2026-08-08 (#169) and 2026-08-26 (#249), nullConsecutiveSweeps=2; price-preview absent 4/4 dates 2026-08-26 where probed. Reversible: scripts/sweep-availability.py clears hidden when a bookable date returns."
     },
     {
       "id": "621712",
@@ -47752,7 +47881,10 @@
       },
       "needsEnrichment": true,
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 2,
+      "hidden": true,
+      "hiddenAt": "2026-08-26",
+      "hiddenReason": "s51 would-hide ruling 2026-08-26 (bucket A: dated/seasonal event listing); nextAvailableDate null on sweeps 2026-08-08 (#169) and 2026-08-26 (#249), nullConsecutiveSweeps=2; price-preview absent 4/4 dates 2026-08-26 where probed. Reversible: scripts/sweep-availability.py clears hidden when a bookable date returns."
     },
     {
       "id": "707753",
@@ -48872,7 +49004,10 @@
       },
       "needsEnrichment": true,
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 2,
+      "hidden": true,
+      "hiddenAt": "2026-08-26",
+      "hiddenReason": "s51 would-hide ruling 2026-08-26 (bucket A: dated/seasonal event listing); nextAvailableDate null on sweeps 2026-08-08 (#169) and 2026-08-26 (#249), nullConsecutiveSweeps=2; price-preview absent 4/4 dates 2026-08-26 where probed. Reversible: scripts/sweep-availability.py clears hidden when a bookable date returns."
     },
     {
       "id": "479310",
@@ -49067,7 +49202,10 @@
       },
       "needsEnrichment": true,
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 2,
+      "hidden": true,
+      "hiddenAt": "2026-08-26",
+      "hiddenReason": "s51 would-hide ruling 2026-08-26 (bucket A: dated/seasonal event listing); nextAvailableDate null on sweeps 2026-08-08 (#169) and 2026-08-26 (#249), nullConsecutiveSweeps=2; price-preview absent 4/4 dates 2026-08-26 where probed. Reversible: scripts/sweep-availability.py clears hidden when a bookable date returns."
     },
     {
       "id": "561894",
@@ -49976,7 +50114,10 @@
       },
       "needsEnrichment": true,
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 2,
+      "hidden": true,
+      "hiddenAt": "2026-08-26",
+      "hiddenReason": "s51 would-hide ruling 2026-08-26 (bucket A: dated/seasonal event listing); nextAvailableDate null on sweeps 2026-08-08 (#169) and 2026-08-26 (#249), nullConsecutiveSweeps=2; price-preview absent 4/4 dates 2026-08-26 where probed. Reversible: scripts/sweep-availability.py clears hidden when a bookable date returns."
     },
     {
       "id": "232507",
@@ -56957,7 +57098,10 @@
       },
       "needsEnrichment": true,
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 2,
+      "hidden": true,
+      "hiddenAt": "2026-08-26",
+      "hiddenReason": "s51 would-hide ruling 2026-08-26 (bucket A: dated/seasonal event listing); nextAvailableDate null on sweeps 2026-08-08 (#169) and 2026-08-26 (#249), nullConsecutiveSweeps=2; price-preview absent 4/4 dates 2026-08-26 where probed. Reversible: scripts/sweep-availability.py clears hidden when a bookable date returns."
     },
     {
       "id": "652977",
@@ -61250,7 +61394,10 @@
         "priceTiers": []
       },
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 2,
+      "hidden": true,
+      "hiddenAt": "2026-08-26",
+      "hiddenReason": "s51 would-hide ruling 2026-08-26 (bucket A: dated/seasonal event listing); nextAvailableDate null on sweeps 2026-08-08 (#169) and 2026-08-26 (#249), nullConsecutiveSweeps=2; price-preview absent 4/4 dates 2026-08-26 where probed. Reversible: scripts/sweep-availability.py clears hidden when a bookable date returns."
     },
     {
       "id": "271041",
@@ -61308,7 +61455,10 @@
         "priceTiers": []
       },
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 2,
+      "hidden": true,
+      "hiddenAt": "2026-08-26",
+      "hiddenReason": "s51 would-hide ruling 2026-08-26 (bucket A: dated/seasonal event listing); nextAvailableDate null on sweeps 2026-08-08 (#169) and 2026-08-26 (#249), nullConsecutiveSweeps=2; price-preview absent 4/4 dates 2026-08-26 where probed. Reversible: scripts/sweep-availability.py clears hidden when a bookable date returns."
     },
     {
       "id": "263702",
