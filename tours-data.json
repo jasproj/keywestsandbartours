@@ -328,7 +328,7 @@
       },
       "needsEnrichment": true,
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 3
     },
     {
       "id": "340679",
@@ -570,7 +570,7 @@
       "_unknownFields": {
         "durationMinutes": 360
       },
-      "nextAvailableDate": "2026-08-26",
+      "nextAvailableDate": "2026-08-27",
       "nullConsecutiveSweeps": 0
     },
     {
@@ -723,7 +723,7 @@
         "priceCustomerType": "Adult - Single Kayak",
         "priceTierCount": 6
       },
-      "nextAvailableDate": "2026-08-26",
+      "nextAvailableDate": "2026-08-27",
       "nullConsecutiveSweeps": 0
     },
     {
@@ -1272,7 +1272,7 @@
       },
       "needsEnrichment": true,
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2,
+      "nullConsecutiveSweeps": 3,
       "hidden": true,
       "hiddenAt": "2026-08-26",
       "hiddenReason": "s51 would-hide ruling 2026-08-26 (bucket A: dated/seasonal event listing); nextAvailableDate null on sweeps 2026-08-08 (#169) and 2026-08-26 (#249), nullConsecutiveSweeps=2; price-preview absent 4/4 dates 2026-08-26 where probed. Reversible: scripts/sweep-availability.py clears hidden when a bookable date returns."
@@ -1333,7 +1333,7 @@
         "priceTiers": []
       },
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2,
+      "nullConsecutiveSweeps": 3,
       "hidden": true,
       "hiddenAt": "2026-08-26",
       "hiddenReason": "s51 would-hide ruling 2026-08-26 (bucket A: dated/seasonal event listing); nextAvailableDate null on sweeps 2026-08-08 (#169) and 2026-08-26 (#249), nullConsecutiveSweeps=2; price-preview absent 4/4 dates 2026-08-26 where probed. Reversible: scripts/sweep-availability.py clears hidden when a bookable date returns."
@@ -1392,7 +1392,7 @@
       },
       "needsEnrichment": true,
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2,
+      "nullConsecutiveSweeps": 3,
       "hidden": true,
       "hiddenAt": "2026-08-26",
       "hiddenReason": "s51 would-hide ruling 2026-08-26 (bucket A: dated/seasonal event listing); nextAvailableDate null on sweeps 2026-08-08 (#169) and 2026-08-26 (#249), nullConsecutiveSweeps=2; price-preview absent 4/4 dates 2026-08-26 where probed. Reversible: scripts/sweep-availability.py clears hidden when a bookable date returns."
@@ -1451,7 +1451,7 @@
       },
       "needsEnrichment": true,
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 3
     },
     {
       "id": "655214",
@@ -1507,7 +1507,7 @@
       },
       "needsEnrichment": true,
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 3
     },
     {
       "id": "655242",
@@ -1563,7 +1563,7 @@
       },
       "needsEnrichment": true,
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 3
     },
     {
       "id": "673184",
@@ -1620,7 +1620,7 @@
       },
       "needsEnrichment": true,
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 3
     },
     {
       "id": "561410",
@@ -1662,7 +1662,7 @@
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2,
+      "nullConsecutiveSweeps": 3,
       "_unknownFields": {
         "priceSource": "s51-kwst-backfill",
         "priceVerifiedAt": "2026-08-26",
@@ -1987,7 +1987,7 @@
       },
       "needsEnrichment": true,
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 1
+      "nullConsecutiveSweeps": 2
     },
     {
       "id": "645758",
@@ -2461,7 +2461,7 @@
         "priceTiers": []
       },
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 3
     },
     {
       "id": "39948",
@@ -2506,7 +2506,7 @@
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2,
+      "nullConsecutiveSweeps": 3,
       "_unknownFields": {
         "priceSource": "s51-kwst-backfill",
         "priceVerifiedAt": "2026-08-26",
@@ -2582,7 +2582,7 @@
         "priceTiers": []
       },
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 3
     },
     {
       "id": "97475",
@@ -2640,7 +2640,7 @@
         "priceTiers": []
       },
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 3
     },
     {
       "id": "97480",
@@ -3943,7 +3943,7 @@
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2,
+      "nullConsecutiveSweeps": 3,
       "hidden": true,
       "hiddenAt": "2026-08-26",
       "hiddenReason": "s51 would-hide ruling 2026-08-26 (bucket A: dated/seasonal event listing); nextAvailableDate null on sweeps 2026-08-08 (#169) and 2026-08-26 (#249), nullConsecutiveSweeps=2; price-preview absent 4/4 dates 2026-08-26 where probed. Reversible: scripts/sweep-availability.py clears hidden when a bookable date returns."
@@ -4093,7 +4093,7 @@
       },
       "needsEnrichment": true,
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2,
+      "nullConsecutiveSweeps": 3,
       "hidden": true,
       "hiddenAt": "2026-08-26",
       "hiddenReason": "s51 would-hide ruling 2026-08-26 (bucket A: dated/seasonal event listing); nextAvailableDate null on sweeps 2026-08-08 (#169) and 2026-08-26 (#249), nullConsecutiveSweeps=2; price-preview absent 4/4 dates 2026-08-26 where probed. Reversible: scripts/sweep-availability.py clears hidden when a bookable date returns."
@@ -4807,7 +4807,7 @@
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2,
+      "nullConsecutiveSweeps": 3,
       "_unknownFields": {
         "priceSource": "s51-kwst-backfill",
         "priceVerifiedAt": "2026-08-26",
@@ -4864,7 +4864,7 @@
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2,
+      "nullConsecutiveSweeps": 3,
       "_unknownFields": {
         "priceSource": "s51-kwst-backfill",
         "priceVerifiedAt": "2026-08-26",
@@ -4937,7 +4937,7 @@
         "priceTiers": []
       },
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 3
     },
     {
       "id": "404702",
@@ -4979,7 +4979,7 @@
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2,
+      "nullConsecutiveSweeps": 3,
       "_unknownFields": {
         "priceSource": "s51-kwst-backfill",
         "priceVerifiedAt": "2026-08-26",
@@ -5036,7 +5036,7 @@
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2,
+      "nullConsecutiveSweeps": 3,
       "_unknownFields": {
         "priceSource": "s51-kwst-backfill",
         "priceVerifiedAt": "2026-08-26",
@@ -5577,7 +5577,7 @@
       },
       "needsEnrichment": true,
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 3
     },
     {
       "id": "201622",
@@ -5617,7 +5617,7 @@
       "statusConsecutiveRuns": null,
       "lastUpdated": "",
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2,
+      "nullConsecutiveSweeps": 3,
       "_unknownFields": {
         "priceSource": "s51-kwst-backfill",
         "priceVerifiedAt": "2026-08-26",
@@ -6299,7 +6299,7 @@
         "priceTiers": []
       },
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2,
+      "nullConsecutiveSweeps": 3,
       "hidden": true,
       "hiddenAt": "2026-08-26",
       "hiddenReason": "s51 would-hide ruling 2026-08-26 (bucket A: dated/seasonal event listing); nextAvailableDate null on sweeps 2026-08-08 (#169) and 2026-08-26 (#249), nullConsecutiveSweeps=2; price-preview absent 4/4 dates 2026-08-26 where probed. Reversible: scripts/sweep-availability.py clears hidden when a bookable date returns."
@@ -6687,7 +6687,7 @@
       },
       "needsEnrichment": true,
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2,
+      "nullConsecutiveSweeps": 3,
       "hidden": true,
       "hiddenAt": "2026-08-26",
       "hiddenReason": "s51 would-hide ruling 2026-08-26 (bucket A: dated/seasonal event listing); nextAvailableDate null on sweeps 2026-08-08 (#169) and 2026-08-26 (#249), nullConsecutiveSweeps=2; price-preview absent 4/4 dates 2026-08-26 where probed. Reversible: scripts/sweep-availability.py clears hidden when a bookable date returns."
@@ -6746,7 +6746,7 @@
       },
       "needsEnrichment": true,
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 3
     },
     {
       "id": "543722",
@@ -6803,7 +6803,7 @@
       },
       "needsEnrichment": true,
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 3
     },
     {
       "id": "616655",
@@ -6941,7 +6941,7 @@
       },
       "needsEnrichment": true,
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2,
+      "nullConsecutiveSweeps": 3,
       "hidden": true,
       "hiddenAt": "2026-08-26",
       "hiddenReason": "s51 would-hide ruling 2026-08-26 (bucket A: dated/seasonal event listing); nextAvailableDate null on sweeps 2026-08-08 (#169) and 2026-08-26 (#249), nullConsecutiveSweeps=2; price-preview absent 4/4 dates 2026-08-26 where probed. Reversible: scripts/sweep-availability.py clears hidden when a bookable date returns."
@@ -8443,7 +8443,7 @@
         "priceTierCount": 1
       },
       "needsEnrichment": true,
-      "nextAvailableDate": "2026-08-26",
+      "nextAvailableDate": "2026-08-27",
       "nullConsecutiveSweeps": 0
     },
     {
@@ -8544,7 +8544,7 @@
       },
       "needsEnrichment": true,
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 3
     },
     {
       "id": "565580",
@@ -8588,7 +8588,7 @@
       "_unknownFields": {
         "durationMinutes": 240
       },
-      "nextAvailableDate": "2026-08-26",
+      "nextAvailableDate": "2026-10-01",
       "nullConsecutiveSweeps": 0
     },
     {
@@ -8633,7 +8633,7 @@
       "_unknownFields": {
         "durationMinutes": 240
       },
-      "nextAvailableDate": "2026-08-26",
+      "nextAvailableDate": "2026-10-01",
       "nullConsecutiveSweeps": 0
     },
     {
@@ -8995,7 +8995,7 @@
         "priceTiers": []
       },
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 3
     },
     {
       "id": "534625",
@@ -9055,7 +9055,7 @@
         "priceTiers": []
       },
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 3
     },
     {
       "id": "534676",
@@ -9127,7 +9127,7 @@
         "priceTiers": []
       },
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 3
     },
     {
       "id": "534642",
@@ -9197,7 +9197,7 @@
         "priceTiers": []
       },
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 3
     },
     {
       "id": "528906",
@@ -9276,7 +9276,7 @@
         "priceTiers": []
       },
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 3
     },
     {
       "id": "528884",
@@ -9350,7 +9350,7 @@
         "priceTiers": []
       },
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 3
     },
     {
       "id": "534680",
@@ -9413,7 +9413,7 @@
         "priceTiers": []
       },
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 3
     },
     {
       "id": "534681",
@@ -9473,7 +9473,7 @@
         "priceTiers": []
       },
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 3
     },
     {
       "id": "534861",
@@ -9531,7 +9531,7 @@
         "priceTiers": []
       },
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 3
     },
     {
       "id": "528841",
@@ -9619,7 +9619,7 @@
         "priceTiers": []
       },
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 3
     },
     {
       "id": "534819",
@@ -9677,7 +9677,7 @@
         "priceTiers": []
       },
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 3
     },
     {
       "id": "534823",
@@ -9738,7 +9738,7 @@
         "priceTiers": []
       },
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 3
     },
     {
       "id": "534832",
@@ -9796,7 +9796,7 @@
         "priceTiers": []
       },
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 3
     },
     {
       "id": "528848",
@@ -9867,7 +9867,7 @@
         "priceTiers": []
       },
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 3
     },
     {
       "id": "528937",
@@ -9941,7 +9941,7 @@
         "priceTiers": []
       },
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 3
     },
     {
       "id": "528943",
@@ -10005,7 +10005,7 @@
         "priceTiers": []
       },
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 3
     },
     {
       "id": "534702",
@@ -10074,7 +10074,7 @@
         "priceTiers": []
       },
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 3
     },
     {
       "id": "534709",
@@ -10135,7 +10135,7 @@
         "priceTiers": []
       },
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 3
     },
     {
       "id": "534867",
@@ -10193,7 +10193,7 @@
         "priceTiers": []
       },
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 3
     },
     {
       "id": "556731",
@@ -10896,7 +10896,7 @@
         "priceTiers": []
       },
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 3
     },
     {
       "id": "400724",
@@ -11442,7 +11442,7 @@
       "_unknownFields": {
         "durationMinutes": 480
       },
-      "nextAvailableDate": "2026-08-26",
+      "nextAvailableDate": "2026-08-27",
       "nullConsecutiveSweeps": 0
     },
     {
@@ -12176,7 +12176,7 @@
       },
       "needsEnrichment": true,
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2,
+      "nullConsecutiveSweeps": 3,
       "hidden": true,
       "hiddenAt": "2026-08-26",
       "hiddenReason": "s51 would-hide ruling 2026-08-26 (bucket A: dated/seasonal event listing); nextAvailableDate null on sweeps 2026-08-08 (#169) and 2026-08-26 (#249), nullConsecutiveSweeps=2; price-preview absent 4/4 dates 2026-08-26 where probed. Reversible: scripts/sweep-availability.py clears hidden when a bookable date returns."
@@ -12237,7 +12237,7 @@
       },
       "needsEnrichment": true,
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2,
+      "nullConsecutiveSweeps": 3,
       "hidden": true,
       "hiddenAt": "2026-08-26",
       "hiddenReason": "s51 would-hide ruling 2026-08-26 (bucket A: dated/seasonal event listing); nextAvailableDate null on sweeps 2026-08-08 (#169) and 2026-08-26 (#249), nullConsecutiveSweeps=2; price-preview absent 4/4 dates 2026-08-26 where probed. Reversible: scripts/sweep-availability.py clears hidden when a bookable date returns."
@@ -12297,7 +12297,7 @@
       },
       "needsEnrichment": true,
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2,
+      "nullConsecutiveSweeps": 3,
       "hidden": true,
       "hiddenAt": "2026-08-26",
       "hiddenReason": "s51 would-hide ruling 2026-08-26 (bucket A: dated/seasonal event listing); nextAvailableDate null on sweeps 2026-08-08 (#169) and 2026-08-26 (#249), nullConsecutiveSweeps=2; price-preview absent 4/4 dates 2026-08-26 where probed. Reversible: scripts/sweep-availability.py clears hidden when a bookable date returns."
@@ -12356,7 +12356,7 @@
       },
       "needsEnrichment": true,
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2,
+      "nullConsecutiveSweeps": 3,
       "hidden": true,
       "hiddenAt": "2026-08-26",
       "hiddenReason": "s51 would-hide ruling 2026-08-26 (bucket A: dated/seasonal event listing); nextAvailableDate null on sweeps 2026-08-08 (#169) and 2026-08-26 (#249), nullConsecutiveSweeps=2; price-preview absent 4/4 dates 2026-08-26 where probed. Reversible: scripts/sweep-availability.py clears hidden when a bookable date returns."
@@ -12419,7 +12419,7 @@
       },
       "needsEnrichment": true,
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 3
     },
     {
       "id": "104303",
@@ -12475,7 +12475,7 @@
       },
       "needsEnrichment": true,
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 3
     },
     {
       "id": "568893",
@@ -12588,7 +12588,7 @@
       },
       "needsEnrichment": true,
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 3
     },
     {
       "id": "686249",
@@ -12648,7 +12648,7 @@
       },
       "needsEnrichment": true,
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2,
+      "nullConsecutiveSweeps": 3,
       "hidden": true,
       "hiddenAt": "2026-08-26",
       "hiddenReason": "s51 would-hide ruling 2026-08-26 (bucket A: dated/seasonal event listing); nextAvailableDate null on sweeps 2026-08-08 (#169) and 2026-08-26 (#249), nullConsecutiveSweeps=2; price-preview absent 4/4 dates 2026-08-26 where probed. Reversible: scripts/sweep-availability.py clears hidden when a bookable date returns."
@@ -13336,7 +13336,7 @@
         "priceTiers": []
       },
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2,
+      "nullConsecutiveSweeps": 3,
       "hidden": true,
       "hiddenAt": "2026-08-26",
       "hiddenReason": "s51 would-hide ruling 2026-08-26 (bucket A: dated/seasonal event listing); nextAvailableDate null on sweeps 2026-08-08 (#169) and 2026-08-26 (#249), nullConsecutiveSweeps=2; price-preview absent 4/4 dates 2026-08-26 where probed. Reversible: scripts/sweep-availability.py clears hidden when a bookable date returns."
@@ -13397,7 +13397,7 @@
         "priceTiers": []
       },
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2,
+      "nullConsecutiveSweeps": 3,
       "hidden": true,
       "hiddenAt": "2026-08-26",
       "hiddenReason": "s51 would-hide ruling 2026-08-26 (bucket A: dated/seasonal event listing); nextAvailableDate null on sweeps 2026-08-08 (#169) and 2026-08-26 (#249), nullConsecutiveSweeps=2; price-preview absent 4/4 dates 2026-08-26 where probed. Reversible: scripts/sweep-availability.py clears hidden when a bookable date returns."
@@ -13442,7 +13442,7 @@
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2,
+      "nullConsecutiveSweeps": 3,
       "_unknownFields": {
         "priceSource": "s51-kwst-backfill",
         "priceVerifiedAt": "2026-08-26",
@@ -13564,7 +13564,7 @@
         "priceTiers": []
       },
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2,
+      "nullConsecutiveSweeps": 3,
       "hidden": true,
       "hiddenAt": "2026-08-26",
       "hiddenReason": "s51 would-hide ruling 2026-08-26 (bucket A: dated/seasonal event listing); nextAvailableDate null on sweeps 2026-08-08 (#169) and 2026-08-26 (#249), nullConsecutiveSweeps=2; price-preview absent 4/4 dates 2026-08-26 where probed. Reversible: scripts/sweep-availability.py clears hidden when a bookable date returns."
@@ -13718,7 +13718,7 @@
       },
       "needsEnrichment": true,
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2,
+      "nullConsecutiveSweeps": 3,
       "hidden": true,
       "hiddenAt": "2026-08-26",
       "hiddenReason": "s51 would-hide ruling 2026-08-26 (bucket A: dated/seasonal event listing); nextAvailableDate null on sweeps 2026-08-08 (#169) and 2026-08-26 (#249), nullConsecutiveSweeps=2; price-preview absent 4/4 dates 2026-08-26 where probed. Reversible: scripts/sweep-availability.py clears hidden when a bookable date returns."
@@ -13778,7 +13778,7 @@
       },
       "needsEnrichment": true,
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2,
+      "nullConsecutiveSweeps": 3,
       "hidden": true,
       "hiddenAt": "2026-08-26",
       "hiddenReason": "s51 would-hide ruling 2026-08-26 (bucket A: dated/seasonal event listing); nextAvailableDate null on sweeps 2026-08-08 (#169) and 2026-08-26 (#249), nullConsecutiveSweeps=2; price-preview absent 4/4 dates 2026-08-26 where probed. Reversible: scripts/sweep-availability.py clears hidden when a bookable date returns."
@@ -13840,7 +13840,7 @@
         "priceTiers": []
       },
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 3
     },
     {
       "id": "471375",
@@ -13883,7 +13883,7 @@
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2,
+      "nullConsecutiveSweeps": 3,
       "_unknownFields": {
         "priceSource": "s51-kwst-backfill",
         "priceVerifiedAt": "2026-08-26",
@@ -13954,7 +13954,7 @@
       },
       "needsEnrichment": true,
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2,
+      "nullConsecutiveSweeps": 3,
       "hidden": true,
       "hiddenAt": "2026-08-26",
       "hiddenReason": "s51 would-hide ruling 2026-08-26 (bucket A: dated/seasonal event listing); nextAvailableDate null on sweeps 2026-08-08 (#169) and 2026-08-26 (#249), nullConsecutiveSweeps=2; price-preview absent 4/4 dates 2026-08-26 where probed. Reversible: scripts/sweep-availability.py clears hidden when a bookable date returns."
@@ -14011,7 +14011,7 @@
       },
       "needsEnrichment": true,
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2,
+      "nullConsecutiveSweeps": 3,
       "hidden": true,
       "hiddenAt": "2026-08-26",
       "hiddenReason": "s51 would-hide ruling 2026-08-26 (bucket A: dated/seasonal event listing); nextAvailableDate null on sweeps 2026-08-08 (#169) and 2026-08-26 (#249), nullConsecutiveSweeps=2; price-preview absent 4/4 dates 2026-08-26 where probed. Reversible: scripts/sweep-availability.py clears hidden when a bookable date returns."
@@ -14071,7 +14071,7 @@
       },
       "needsEnrichment": true,
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2,
+      "nullConsecutiveSweeps": 3,
       "hidden": true,
       "hiddenAt": "2026-08-26",
       "hiddenReason": "s51 would-hide ruling 2026-08-26 (bucket A: dated/seasonal event listing); nextAvailableDate null on sweeps 2026-08-08 (#169) and 2026-08-26 (#249), nullConsecutiveSweeps=2; price-preview absent 4/4 dates 2026-08-26 where probed. Reversible: scripts/sweep-availability.py clears hidden when a bookable date returns."
@@ -14172,7 +14172,7 @@
         "priceTiers": []
       },
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 3
     },
     {
       "id": "562642",
@@ -14230,7 +14230,7 @@
         "priceTiers": []
       },
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 3
     },
     {
       "id": "562645",
@@ -14288,7 +14288,7 @@
         "priceTiers": []
       },
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 3
     },
     {
       "id": "649266",
@@ -14344,7 +14344,7 @@
       },
       "needsEnrichment": true,
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 3
     },
     {
       "id": "357898",
@@ -14543,7 +14543,7 @@
       },
       "needsEnrichment": true,
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 3
     },
     {
       "id": "620800",
@@ -15026,7 +15026,7 @@
       },
       "needsEnrichment": true,
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 3
     },
     {
       "id": "611554",
@@ -16144,7 +16144,7 @@
         "unitEvidence": "description: 'Up to 6 Passengers'"
       },
       "needsEnrichment": true,
-      "nextAvailableDate": "2026-08-26",
+      "nextAvailableDate": "2026-08-27",
       "nullConsecutiveSweeps": 0
     },
     {
@@ -16820,7 +16820,7 @@
       },
       "needsEnrichment": true,
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 3
     },
     {
       "id": "679443",
@@ -16876,7 +16876,7 @@
       },
       "needsEnrichment": true,
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2,
+      "nullConsecutiveSweeps": 3,
       "hidden": true,
       "hiddenAt": "2026-08-26",
       "hiddenReason": "s51 would-hide ruling 2026-08-26 (bucket A: dated/seasonal event listing); nextAvailableDate null on sweeps 2026-08-08 (#169) and 2026-08-26 (#249), nullConsecutiveSweeps=2; price-preview absent 4/4 dates 2026-08-26 where probed. Reversible: scripts/sweep-availability.py clears hidden when a bookable date returns."
@@ -16981,7 +16981,7 @@
         "priceTiers": []
       },
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 3
     },
     {
       "id": "451280",
@@ -17037,7 +17037,7 @@
       },
       "needsEnrichment": true,
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 3
     },
     {
       "id": "451281",
@@ -17093,7 +17093,7 @@
       },
       "needsEnrichment": true,
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 3
     },
     {
       "id": "451282",
@@ -17135,7 +17135,7 @@
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2,
+      "nullConsecutiveSweeps": 3,
       "_unknownFields": {
         "priceSource": "s51-kwst-backfill",
         "priceVerifiedAt": "2026-08-26",
@@ -17192,7 +17192,7 @@
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2,
+      "nullConsecutiveSweeps": 3,
       "_unknownFields": {
         "priceSource": "s51-kwst-backfill",
         "priceVerifiedAt": "2026-08-26",
@@ -17249,7 +17249,7 @@
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2,
+      "nullConsecutiveSweeps": 3,
       "_unknownFields": {
         "priceSource": "s51-kwst-backfill",
         "priceVerifiedAt": "2026-08-26",
@@ -17849,7 +17849,7 @@
         "priceTiers": []
       },
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 3
     },
     {
       "id": "527382",
@@ -18542,7 +18542,7 @@
         "priceTiers": []
       },
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2,
+      "nullConsecutiveSweeps": 3,
       "hidden": true,
       "hiddenAt": "2026-08-26",
       "hiddenReason": "s51 would-hide ruling 2026-08-26 (bucket A: dated/seasonal event listing); nextAvailableDate null on sweeps 2026-08-08 (#169) and 2026-08-26 (#249), nullConsecutiveSweeps=2; price-preview absent 4/4 dates 2026-08-26 where probed. Reversible: scripts/sweep-availability.py clears hidden when a bookable date returns."
@@ -18601,7 +18601,7 @@
       },
       "needsEnrichment": true,
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2,
+      "nullConsecutiveSweeps": 3,
       "hidden": true,
       "hiddenAt": "2026-08-26",
       "hiddenReason": "s51 would-hide ruling 2026-08-26 (bucket A: dated/seasonal event listing); nextAvailableDate null on sweeps 2026-08-08 (#169) and 2026-08-26 (#249), nullConsecutiveSweeps=2; price-preview absent 4/4 dates 2026-08-26 where probed. Reversible: scripts/sweep-availability.py clears hidden when a bookable date returns."
@@ -18660,7 +18660,7 @@
       },
       "needsEnrichment": true,
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 3
     },
     {
       "id": "490885",
@@ -18716,7 +18716,7 @@
       },
       "needsEnrichment": true,
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 3
     },
     {
       "id": "498828",
@@ -18774,7 +18774,7 @@
         "priceTiers": []
       },
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 3
     },
     {
       "id": "517674",
@@ -18830,7 +18830,7 @@
       },
       "needsEnrichment": true,
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2,
+      "nullConsecutiveSweeps": 3,
       "hidden": true,
       "hiddenAt": "2026-08-26",
       "hiddenReason": "s51 would-hide ruling 2026-08-26 (bucket D junk: placeholder listing \"No Trips - Stay Tuned for Updates!!\"); nextAvailableDate null on sweeps 2026-08-08 (#169) and 2026-08-26 (#249), nullConsecutiveSweeps=2; price-preview absent 4/4 dates 2026-08-26 where probed. Reversible: scripts/sweep-availability.py clears hidden when a bookable date returns."
@@ -18931,7 +18931,7 @@
       },
       "needsEnrichment": true,
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 3
     },
     {
       "id": "116411",
@@ -19277,7 +19277,7 @@
         "priceTiers": []
       },
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 3
     },
     {
       "id": "425658",
@@ -19341,7 +19341,7 @@
         "priceTiers": []
       },
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 3
     },
     {
       "id": "465124",
@@ -19444,7 +19444,7 @@
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2,
+      "nullConsecutiveSweeps": 3,
       "_unknownFields": {
         "priceSource": "s51-kwst-backfill",
         "priceVerifiedAt": "2026-08-26",
@@ -19523,7 +19523,7 @@
         "priceTiers": []
       },
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 3
     },
     {
       "id": "486776",
@@ -19687,7 +19687,7 @@
       },
       "needsEnrichment": true,
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 1
+      "nullConsecutiveSweeps": 2
     },
     {
       "id": "36384",
@@ -19863,7 +19863,7 @@
       },
       "needsEnrichment": true,
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 3
     },
     {
       "id": "194193",
@@ -19926,7 +19926,7 @@
         "priceTiers": []
       },
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2,
+      "nullConsecutiveSweeps": 3,
       "hidden": true,
       "hiddenAt": "2026-08-26",
       "hiddenReason": "s51 would-hide ruling 2026-08-26 (bucket A: dated/seasonal event listing); nextAvailableDate null on sweeps 2026-08-08 (#169) and 2026-08-26 (#249), nullConsecutiveSweeps=2; price-preview absent 4/4 dates 2026-08-26 where probed. Reversible: scripts/sweep-availability.py clears hidden when a bookable date returns."
@@ -20306,7 +20306,7 @@
       },
       "needsEnrichment": true,
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 3
     },
     {
       "id": "458153",
@@ -20425,7 +20425,7 @@
       },
       "needsEnrichment": true,
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 3
     },
     {
       "id": "458157",
@@ -20649,7 +20649,7 @@
       },
       "needsEnrichment": true,
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 3
     },
     {
       "id": "574511",
@@ -20708,7 +20708,7 @@
       },
       "needsEnrichment": true,
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 3
     },
     {
       "id": "574540",
@@ -20831,7 +20831,7 @@
         "unitEvidence": "tier label: 'Private Charter'; tier note: 'Up to 6 People'",
         "priceBasis": "s51-kwst-backfill (2026-08-26): D-640/D-646 single-tier product anchors on its sole tier: \"Private Charter\" $3,850 (note \"Up to 6 People\"), unit \"whole boat \u00b7 up to 6 people\" (tier label: 'Private Charter'; tier note: 'Up to 6 People'); 4/4 dated readings 2026-08-26 (4/4 date-valid), 1 ladder shape(s), include_breakdown=yes, probe.json sha256 186bcb42971b"
       },
-      "nextAvailableDate": "2026-08-26",
+      "nextAvailableDate": "2026-08-27",
       "nullConsecutiveSweeps": 0
     },
     {
@@ -21036,7 +21036,7 @@
         "priceTiers": []
       },
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 3
     },
     {
       "id": "353758",
@@ -21092,7 +21092,7 @@
         "priceTiers": []
       },
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 3
     },
     {
       "id": "646155",
@@ -21146,7 +21146,7 @@
       },
       "needsEnrichment": true,
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 3
     },
     {
       "id": "455365",
@@ -21958,7 +21958,7 @@
         "priceTiers": []
       },
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 3
     },
     {
       "id": "595854",
@@ -22268,7 +22268,7 @@
         "priceTiers": []
       },
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 3
     },
     {
       "id": "597809",
@@ -22569,7 +22569,7 @@
       },
       "needsEnrichment": true,
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2,
+      "nullConsecutiveSweeps": 3,
       "hidden": true,
       "hiddenAt": "2026-08-26",
       "hiddenReason": "s51 would-hide ruling 2026-08-26 (bucket A: dated/seasonal event listing); nextAvailableDate null on sweeps 2026-08-08 (#169) and 2026-08-26 (#249), nullConsecutiveSweeps=2; price-preview absent 4/4 dates 2026-08-26 where probed. Reversible: scripts/sweep-availability.py clears hidden when a bookable date returns."
@@ -23944,7 +23944,7 @@
         "priceSource": "v52-dominant-gate",
         "durationMinutes": 360
       },
-      "nextAvailableDate": "2026-08-26",
+      "nextAvailableDate": "2026-08-27",
       "nullConsecutiveSweeps": 0
     },
     {
@@ -24003,7 +24003,7 @@
         "priceTiers": []
       },
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 3
     },
     {
       "id": "600725",
@@ -24157,7 +24157,7 @@
       "_unknownFields": {
         "durationMinutes": 360
       },
-      "nextAvailableDate": "2026-08-26",
+      "nextAvailableDate": "2026-08-27",
       "nullConsecutiveSweeps": 0
     },
     {
@@ -24282,7 +24282,7 @@
       },
       "needsEnrichment": true,
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 3
     },
     {
       "id": "191677",
@@ -24336,7 +24336,7 @@
       },
       "needsEnrichment": true,
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 3
     },
     {
       "id": "324618",
@@ -24509,7 +24509,7 @@
         ]
       },
       "needsEnrichment": true,
-      "nextAvailableDate": "2026-08-26",
+      "nextAvailableDate": "2026-08-27",
       "nullConsecutiveSweeps": 0
     },
     {
@@ -24674,7 +24674,7 @@
       },
       "needsEnrichment": true,
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 3
     },
     {
       "id": "349822",
@@ -25163,7 +25163,7 @@
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2,
+      "nullConsecutiveSweeps": 3,
       "_unknownFields": {
         "priceSource": "s51-kwst-backfill",
         "priceVerifiedAt": "2026-08-26",
@@ -25223,7 +25223,7 @@
       "statusFirstSeen": null,
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
-      "nextAvailableDate": "2026-08-26",
+      "nextAvailableDate": "2026-08-27",
       "nullConsecutiveSweeps": 0,
       "_unknownFields": {
         "priceSource": "s50-kwst-rowfix",
@@ -25341,7 +25341,7 @@
       },
       "needsEnrichment": true,
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 3
     },
     {
       "id": "605482",
@@ -25697,7 +25697,7 @@
       },
       "needsEnrichment": true,
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 3
     },
     {
       "id": "741629",
@@ -25755,7 +25755,7 @@
       },
       "needsEnrichment": true,
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 3
     },
     {
       "id": "654932",
@@ -27127,7 +27127,7 @@
       "_unknownFields": {
         "durationMinutes": 180
       },
-      "nextAvailableDate": "2026-08-26",
+      "nextAvailableDate": "2026-08-31",
       "nullConsecutiveSweeps": 0
     },
     {
@@ -27717,7 +27717,7 @@
       },
       "needsEnrichment": true,
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 3
     },
     {
       "id": "395018",
@@ -28098,7 +28098,7 @@
         "durationMinutes": 240
       },
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 3
     },
     {
       "id": "263983",
@@ -28299,7 +28299,7 @@
         "durationMinutes": 240
       },
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2,
+      "nullConsecutiveSweeps": 3,
       "hidden": true,
       "hiddenAt": "2026-08-26",
       "hiddenReason": "s51 would-hide ruling 2026-08-26 (bucket A: dated/seasonal event listing); nextAvailableDate null on sweeps 2026-08-08 (#169) and 2026-08-26 (#249), nullConsecutiveSweeps=2; price-preview absent 4/4 dates 2026-08-26 where probed. Reversible: scripts/sweep-availability.py clears hidden when a bookable date returns."
@@ -28344,7 +28344,7 @@
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2,
+      "nullConsecutiveSweeps": 3,
       "_unknownFields": {
         "priceSource": "s51-kwst-backfill",
         "priceVerifiedAt": "2026-08-26",
@@ -28457,7 +28457,7 @@
       "_unknownFields": {
         "durationMinutes": 120
       },
-      "nextAvailableDate": "2026-08-26",
+      "nextAvailableDate": "2026-08-27",
       "nullConsecutiveSweeps": 0
     },
     {
@@ -28504,7 +28504,7 @@
       "_unknownFields": {
         "durationMinutes": 180
       },
-      "nextAvailableDate": "2026-08-26",
+      "nextAvailableDate": "2026-08-27",
       "nullConsecutiveSweeps": 0
     },
     {
@@ -28992,7 +28992,7 @@
         "priceTiers": []
       },
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 3
     },
     {
       "id": "737748",
@@ -29629,7 +29629,7 @@
         "priceTiers": []
       },
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 3
     },
     {
       "id": "3876",
@@ -30057,7 +30057,7 @@
         "priceSource": "v52-dominant-gate",
         "durationMinutes": 600
       },
-      "nextAvailableDate": "2026-08-26",
+      "nextAvailableDate": "2026-08-27",
       "nullConsecutiveSweeps": 0
     },
     {
@@ -30220,7 +30220,7 @@
         "priceTiers": []
       },
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 3
     },
     {
       "id": "217110",
@@ -30409,7 +30409,7 @@
         "durationMinutes": 480
       },
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 1
+      "nullConsecutiveSweeps": 2
     },
     {
       "id": "527596",
@@ -30469,7 +30469,7 @@
         "priceTiers": []
       },
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 3
     },
     {
       "id": "527597",
@@ -30529,7 +30529,7 @@
         "priceTiers": []
       },
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 3
     },
     {
       "id": "632155",
@@ -30814,7 +30814,7 @@
         "priceSource": "v52-dominant-gate"
       },
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 3
     },
     {
       "id": "290499",
@@ -32496,7 +32496,7 @@
       },
       "needsEnrichment": true,
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 3
     },
     {
       "id": "52568",
@@ -32560,7 +32560,7 @@
       },
       "needsEnrichment": true,
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 3
     },
     {
       "id": "681742",
@@ -32616,7 +32616,7 @@
       },
       "needsEnrichment": true,
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 3
     },
     {
       "id": "50711",
@@ -32856,7 +32856,7 @@
       },
       "needsEnrichment": true,
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 1
+      "nullConsecutiveSweeps": 2
     },
     {
       "id": "50703",
@@ -33141,7 +33141,7 @@
       },
       "needsEnrichment": true,
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 1
+      "nullConsecutiveSweeps": 2
     },
     {
       "id": "565241",
@@ -33238,7 +33238,7 @@
       },
       "needsEnrichment": true,
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 3
     },
     {
       "id": "706307",
@@ -33542,7 +33542,7 @@
         "priceTiers": []
       },
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 3
     },
     {
       "id": "454319",
@@ -33606,7 +33606,7 @@
         "priceTiers": []
       },
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 3
     },
     {
       "id": "591972",
@@ -33671,7 +33671,7 @@
       },
       "needsEnrichment": true,
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 3
     },
     {
       "id": "591222",
@@ -33731,7 +33731,7 @@
       },
       "needsEnrichment": true,
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 3
     },
     {
       "id": "182898",
@@ -33773,7 +33773,7 @@
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2,
+      "nullConsecutiveSweeps": 3,
       "_unknownFields": {
         "priceSource": "s51-kwst-backfill",
         "priceVerifiedAt": "2026-08-26",
@@ -33848,7 +33848,7 @@
       },
       "needsEnrichment": true,
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 3
     },
     {
       "id": "592629",
@@ -33909,7 +33909,7 @@
       },
       "needsEnrichment": true,
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 3
     },
     {
       "id": "592632",
@@ -33970,7 +33970,7 @@
       },
       "needsEnrichment": true,
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 3
     },
     {
       "id": "187320",
@@ -34030,7 +34030,7 @@
         "priceTiers": []
       },
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 3
     },
     {
       "id": "205980",
@@ -34090,7 +34090,7 @@
         "priceTiers": []
       },
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 3
     },
     {
       "id": "552193",
@@ -34154,7 +34154,7 @@
         "priceTiers": []
       },
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 3
     },
     {
       "id": "554271",
@@ -34222,7 +34222,7 @@
         "priceTiers": []
       },
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 3
     },
     {
       "id": "407219",
@@ -34283,7 +34283,7 @@
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2,
+      "nullConsecutiveSweeps": 3,
       "_unknownFields": {
         "priceSource": "s51-kwst-backfill",
         "priceVerifiedAt": "2026-08-26",
@@ -34368,7 +34368,7 @@
         "priceTiers": []
       },
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 3
     },
     {
       "id": "391992",
@@ -34454,7 +34454,7 @@
         "priceTiers": []
       },
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 3
     },
     {
       "id": "393131",
@@ -34531,7 +34531,7 @@
         "priceTiers": []
       },
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 3
     },
     {
       "id": "555403",
@@ -34602,7 +34602,7 @@
       },
       "needsEnrichment": true,
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2,
+      "nullConsecutiveSweeps": 3,
       "hidden": true,
       "hiddenAt": "2026-08-26",
       "hiddenReason": "s51 would-hide ruling 2026-08-26 (bucket A: dated/seasonal event listing); nextAvailableDate null on sweeps 2026-08-08 (#169) and 2026-08-26 (#249), nullConsecutiveSweeps=2; price-preview absent 4/4 dates 2026-08-26 where probed. Reversible: scripts/sweep-availability.py clears hidden when a bookable date returns."
@@ -34665,7 +34665,7 @@
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2,
+      "nullConsecutiveSweeps": 3,
       "_unknownFields": {
         "priceSource": "s51-kwst-backfill",
         "priceVerifiedAt": "2026-08-26",
@@ -34740,7 +34740,7 @@
         "priceTiers": []
       },
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 3
     },
     {
       "id": "343951",
@@ -34784,7 +34784,7 @@
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2,
+      "nullConsecutiveSweeps": 3,
       "_unknownFields": {
         "priceSource": "s51-kwst-backfill",
         "priceVerifiedAt": "2026-08-26",
@@ -34863,7 +34863,7 @@
         "priceTiers": []
       },
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 3
     },
     {
       "id": "187480",
@@ -34921,7 +34921,7 @@
         "priceTiers": []
       },
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 3
     },
     {
       "id": "466672",
@@ -34995,7 +34995,7 @@
       },
       "needsEnrichment": true,
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 3
     },
     {
       "id": "350981",
@@ -35053,7 +35053,7 @@
         "priceTiers": []
       },
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2,
+      "nullConsecutiveSweeps": 3,
       "hidden": true,
       "hiddenAt": "2026-08-26",
       "hiddenReason": "s51 would-hide ruling 2026-08-26 (bucket A: dated/seasonal event listing); nextAvailableDate null on sweeps 2026-08-08 (#169) and 2026-08-26 (#249), nullConsecutiveSweeps=2; price-preview absent 4/4 dates 2026-08-26 where probed. Reversible: scripts/sweep-availability.py clears hidden when a bookable date returns."
@@ -35120,7 +35120,7 @@
         "priceTiers": []
       },
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2,
+      "nullConsecutiveSweeps": 3,
       "hidden": true,
       "hiddenAt": "2026-08-26",
       "hiddenReason": "s51 would-hide ruling 2026-08-26 (bucket A: dated/seasonal event listing); nextAvailableDate null on sweeps 2026-08-08 (#169) and 2026-08-26 (#249), nullConsecutiveSweeps=2; price-preview absent 4/4 dates 2026-08-26 where probed. Reversible: scripts/sweep-availability.py clears hidden when a bookable date returns."
@@ -35177,7 +35177,7 @@
       },
       "needsEnrichment": true,
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 3
     },
     {
       "id": "406827",
@@ -35233,7 +35233,7 @@
       },
       "needsEnrichment": true,
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 3
     },
     {
       "id": "406838",
@@ -35289,7 +35289,7 @@
       },
       "needsEnrichment": true,
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 3
     },
     {
       "id": "413021",
@@ -35385,7 +35385,7 @@
       },
       "needsEnrichment": true,
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 3
     },
     {
       "id": "568368",
@@ -35441,7 +35441,7 @@
       },
       "needsEnrichment": true,
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 3
     },
     {
       "id": "568370",
@@ -35497,7 +35497,7 @@
       },
       "needsEnrichment": true,
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 3
     },
     {
       "id": "571494",
@@ -35541,7 +35541,7 @@
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2,
+      "nullConsecutiveSweeps": 3,
       "_unknownFields": {
         "priceSource": "s51-kwst-backfill",
         "priceVerifiedAt": "2026-08-26",
@@ -35598,7 +35598,7 @@
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2,
+      "nullConsecutiveSweeps": 3,
       "_unknownFields": {
         "priceSource": "s51-kwst-backfill",
         "priceVerifiedAt": "2026-08-26",
@@ -37060,7 +37060,7 @@
           "Overnight Charter $0"
         ]
       },
-      "nextAvailableDate": "2026-08-26",
+      "nextAvailableDate": "2026-08-27",
       "nullConsecutiveSweeps": 0
     },
     {
@@ -37833,7 +37833,7 @@
         "priceTiers": []
       },
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 3
     },
     {
       "id": "628673",
@@ -37893,7 +37893,7 @@
         "priceTiers": []
       },
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 3
     },
     {
       "id": "64394",
@@ -38484,7 +38484,7 @@
       "_unknownFields": {
         "durationMinutes": 240
       },
-      "nextAvailableDate": "2026-08-26",
+      "nextAvailableDate": "2026-08-29",
       "nullConsecutiveSweeps": 0
     },
     {
@@ -41035,7 +41035,7 @@
       },
       "needsEnrichment": true,
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 3
     },
     {
       "id": "573481",
@@ -41091,7 +41091,7 @@
       },
       "needsEnrichment": true,
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 3
     },
     {
       "id": "657968",
@@ -41147,7 +41147,7 @@
       },
       "needsEnrichment": true,
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 3
     },
     {
       "id": "597094",
@@ -42427,7 +42427,7 @@
       },
       "needsEnrichment": true,
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 3
     },
     {
       "id": "704019",
@@ -42583,7 +42583,7 @@
       },
       "needsEnrichment": true,
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 3
     },
     {
       "id": "620601",
@@ -42639,7 +42639,7 @@
       },
       "needsEnrichment": true,
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 3
     },
     {
       "id": "620604",
@@ -42695,7 +42695,7 @@
       },
       "needsEnrichment": true,
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 3
     },
     {
       "id": "620606",
@@ -42831,7 +42831,7 @@
       },
       "needsEnrichment": true,
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 3
     },
     {
       "id": "620837",
@@ -42929,7 +42929,7 @@
         "priceTiers": []
       },
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 3
     },
     {
       "id": "105610",
@@ -42980,7 +42980,7 @@
           "Private Charter - ZODIAC $2400.00 (60ft Fountaine Pajot Catamaran \u00b7 4 Hour Sail, Max 6 People)"
         ]
       },
-      "nextAvailableDate": "2026-08-26",
+      "nextAvailableDate": "2026-08-27",
       "nullConsecutiveSweeps": 0
     },
     {
@@ -44426,7 +44426,7 @@
         "priceTiers": []
       },
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 3
     },
     {
       "id": "256633",
@@ -45064,7 +45064,7 @@
         "priceTiers": []
       },
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 3
     },
     {
       "id": "26519",
@@ -45674,7 +45674,7 @@
       },
       "needsEnrichment": true,
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 3
     },
     {
       "id": "66699",
@@ -45780,7 +45780,7 @@
       },
       "needsEnrichment": true,
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2,
+      "nullConsecutiveSweeps": 3,
       "hidden": true,
       "hiddenAt": "2026-08-26",
       "hiddenReason": "s51 would-hide ruling 2026-08-26 (bucket A: dated/seasonal event listing); nextAvailableDate null on sweeps 2026-08-08 (#169) and 2026-08-26 (#249), nullConsecutiveSweeps=2; price-preview absent 4/4 dates 2026-08-26 where probed. Reversible: scripts/sweep-availability.py clears hidden when a bookable date returns."
@@ -45837,7 +45837,7 @@
       },
       "needsEnrichment": true,
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 3
     },
     {
       "id": "610253",
@@ -45894,7 +45894,7 @@
       },
       "needsEnrichment": true,
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 3
     },
     {
       "id": "621179",
@@ -45953,7 +45953,7 @@
       },
       "needsEnrichment": true,
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 3
     },
     {
       "id": "615448",
@@ -46014,7 +46014,7 @@
       },
       "needsEnrichment": true,
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 3
     },
     {
       "id": "26529",
@@ -46403,7 +46403,7 @@
       },
       "needsEnrichment": true,
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2,
+      "nullConsecutiveSweeps": 3,
       "hidden": true,
       "hiddenAt": "2026-08-26",
       "hiddenReason": "s51 would-hide ruling 2026-08-26 (bucket D junk: operator-internal SKU \"Retail ***STAFF USE ONLY***\"); nextAvailableDate null on sweeps 2026-08-08 (#169) and 2026-08-26 (#249), nullConsecutiveSweeps=2; price-preview absent 4/4 dates 2026-08-26 where probed. Reversible: scripts/sweep-availability.py clears hidden when a bookable date returns."
@@ -46971,7 +46971,7 @@
         "durationMinutes": 150
       },
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2,
+      "nullConsecutiveSweeps": 3,
       "hidden": true,
       "hiddenAt": "2026-08-26",
       "hiddenReason": "s51 would-hide ruling 2026-08-26 (bucket A: dated/seasonal event listing); nextAvailableDate null on sweeps 2026-08-08 (#169) and 2026-08-26 (#249), nullConsecutiveSweeps=2; price-preview absent 4/4 dates 2026-08-26 where probed. Reversible: scripts/sweep-availability.py clears hidden when a bookable date returns."
@@ -47032,7 +47032,7 @@
       },
       "needsEnrichment": true,
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2,
+      "nullConsecutiveSweeps": 3,
       "hidden": true,
       "hiddenAt": "2026-08-26",
       "hiddenReason": "s51 would-hide ruling 2026-08-26 (bucket A: dated/seasonal event listing); nextAvailableDate null on sweeps 2026-08-08 (#169) and 2026-08-26 (#249), nullConsecutiveSweeps=2; price-preview absent 4/4 dates 2026-08-26 where probed. Reversible: scripts/sweep-availability.py clears hidden when a bookable date returns."
@@ -47284,7 +47284,7 @@
       },
       "needsEnrichment": true,
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2,
+      "nullConsecutiveSweeps": 3,
       "hidden": true,
       "hiddenAt": "2026-08-26",
       "hiddenReason": "s51 would-hide ruling 2026-08-26 (bucket A: dated/seasonal event listing); nextAvailableDate null on sweeps 2026-08-08 (#169) and 2026-08-26 (#249), nullConsecutiveSweeps=2; price-preview absent 4/4 dates 2026-08-26 where probed. Reversible: scripts/sweep-availability.py clears hidden when a bookable date returns."
@@ -47414,7 +47414,7 @@
       },
       "needsEnrichment": true,
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2,
+      "nullConsecutiveSweeps": 3,
       "hidden": true,
       "hiddenAt": "2026-08-26",
       "hiddenReason": "s51 would-hide ruling 2026-08-26 (bucket A: dated/seasonal event listing); nextAvailableDate null on sweeps 2026-08-08 (#169) and 2026-08-26 (#249), nullConsecutiveSweeps=2; price-preview absent 4/4 dates 2026-08-26 where probed. Reversible: scripts/sweep-availability.py clears hidden when a bookable date returns."
@@ -47477,7 +47477,7 @@
       },
       "needsEnrichment": true,
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 3
     },
     {
       "id": "562766",
@@ -47536,7 +47536,7 @@
       },
       "needsEnrichment": true,
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 3
     },
     {
       "id": "561446",
@@ -47731,7 +47731,7 @@
       },
       "needsEnrichment": true,
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2,
+      "nullConsecutiveSweeps": 3,
       "hidden": true,
       "hiddenAt": "2026-08-26",
       "hiddenReason": "s51 would-hide ruling 2026-08-26 (bucket A: dated/seasonal event listing); nextAvailableDate null on sweeps 2026-08-08 (#169) and 2026-08-26 (#249), nullConsecutiveSweeps=2; price-preview absent 4/4 dates 2026-08-26 where probed. Reversible: scripts/sweep-availability.py clears hidden when a bookable date returns."
@@ -47881,7 +47881,7 @@
       },
       "needsEnrichment": true,
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2,
+      "nullConsecutiveSweeps": 3,
       "hidden": true,
       "hiddenAt": "2026-08-26",
       "hiddenReason": "s51 would-hide ruling 2026-08-26 (bucket A: dated/seasonal event listing); nextAvailableDate null on sweeps 2026-08-08 (#169) and 2026-08-26 (#249), nullConsecutiveSweeps=2; price-preview absent 4/4 dates 2026-08-26 where probed. Reversible: scripts/sweep-availability.py clears hidden when a bookable date returns."
@@ -47942,7 +47942,7 @@
       },
       "needsEnrichment": true,
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 3
     },
     {
       "id": "334835",
@@ -48033,7 +48033,7 @@
       "_unknownFields": {
         "durationMinutes": 360
       },
-      "nextAvailableDate": "2026-08-26",
+      "nextAvailableDate": "2026-08-27",
       "nullConsecutiveSweeps": 0
     },
     {
@@ -48314,7 +48314,7 @@
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2,
+      "nullConsecutiveSweeps": 3,
       "_unknownFields": {
         "priceSource": "s51-kwst-backfill",
         "priceVerifiedAt": "2026-08-26",
@@ -48427,7 +48427,7 @@
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2,
+      "nullConsecutiveSweeps": 3,
       "_unknownFields": {
         "priceSource": "s51-kwst-backfill",
         "priceVerifiedAt": "2026-08-26",
@@ -48501,7 +48501,7 @@
       },
       "needsEnrichment": true,
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 3
     },
     {
       "id": "528406",
@@ -48684,7 +48684,7 @@
       },
       "needsEnrichment": true,
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 3
     },
     {
       "id": "668498",
@@ -48742,7 +48742,7 @@
       },
       "needsEnrichment": true,
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 3
     },
     {
       "id": "727863",
@@ -48798,7 +48798,7 @@
       },
       "needsEnrichment": true,
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 3
     },
     {
       "id": "727883",
@@ -49004,7 +49004,7 @@
       },
       "needsEnrichment": true,
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2,
+      "nullConsecutiveSweeps": 3,
       "hidden": true,
       "hiddenAt": "2026-08-26",
       "hiddenReason": "s51 would-hide ruling 2026-08-26 (bucket A: dated/seasonal event listing); nextAvailableDate null on sweeps 2026-08-08 (#169) and 2026-08-26 (#249), nullConsecutiveSweeps=2; price-preview absent 4/4 dates 2026-08-26 where probed. Reversible: scripts/sweep-availability.py clears hidden when a bookable date returns."
@@ -49104,7 +49104,7 @@
       },
       "needsEnrichment": true,
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 3
     },
     {
       "id": "536506",
@@ -49202,7 +49202,7 @@
       },
       "needsEnrichment": true,
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2,
+      "nullConsecutiveSweeps": 3,
       "hidden": true,
       "hiddenAt": "2026-08-26",
       "hiddenReason": "s51 would-hide ruling 2026-08-26 (bucket A: dated/seasonal event listing); nextAvailableDate null on sweeps 2026-08-08 (#169) and 2026-08-26 (#249), nullConsecutiveSweeps=2; price-preview absent 4/4 dates 2026-08-26 where probed. Reversible: scripts/sweep-availability.py clears hidden when a bookable date returns."
@@ -49307,7 +49307,7 @@
       },
       "needsEnrichment": true,
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 3
     },
     {
       "id": "570038",
@@ -49363,7 +49363,7 @@
       },
       "needsEnrichment": true,
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 3
     },
     {
       "id": "604938",
@@ -49854,7 +49854,7 @@
       },
       "needsEnrichment": true,
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 3
     },
     {
       "id": "654488",
@@ -49915,7 +49915,7 @@
       },
       "needsEnrichment": true,
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 1
+      "nullConsecutiveSweeps": 2
     },
     {
       "id": "635272",
@@ -50114,7 +50114,7 @@
       },
       "needsEnrichment": true,
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2,
+      "nullConsecutiveSweeps": 3,
       "hidden": true,
       "hiddenAt": "2026-08-26",
       "hiddenReason": "s51 would-hide ruling 2026-08-26 (bucket A: dated/seasonal event listing); nextAvailableDate null on sweeps 2026-08-08 (#169) and 2026-08-26 (#249), nullConsecutiveSweeps=2; price-preview absent 4/4 dates 2026-08-26 where probed. Reversible: scripts/sweep-availability.py clears hidden when a bookable date returns."
@@ -51706,7 +51706,7 @@
       },
       "needsEnrichment": true,
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 3
     },
     {
       "id": "385034",
@@ -51848,7 +51848,7 @@
       },
       "needsEnrichment": true,
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 3
     },
     {
       "id": "464456",
@@ -52123,7 +52123,7 @@
         "priceTiers": []
       },
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 3
     },
     {
       "id": "570714",
@@ -52221,7 +52221,7 @@
         "priceTiers": []
       },
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 3
     },
     {
       "id": "570718",
@@ -52454,7 +52454,7 @@
         "priceTiers": []
       },
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 3
     },
     {
       "id": "568996",
@@ -52512,7 +52512,7 @@
         "priceTiers": []
       },
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 3
     },
     {
       "id": "569000",
@@ -52570,7 +52570,7 @@
         "priceTiers": []
       },
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 3
     },
     {
       "id": "569010",
@@ -52628,7 +52628,7 @@
         "priceTiers": []
       },
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 3
     },
     {
       "id": "569017",
@@ -52686,7 +52686,7 @@
         "priceTiers": []
       },
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 3
     },
     {
       "id": "569020",
@@ -52743,7 +52743,7 @@
       },
       "needsEnrichment": true,
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 3
     },
     {
       "id": "569022",
@@ -52801,7 +52801,7 @@
         "priceTiers": []
       },
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 3
     },
     {
       "id": "37879",
@@ -53227,7 +53227,7 @@
       },
       "needsEnrichment": true,
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 3
     },
     {
       "id": "628493",
@@ -53537,7 +53537,7 @@
         "priceTierCount": 2
       },
       "needsEnrichment": true,
-      "nextAvailableDate": "2026-08-26",
+      "nextAvailableDate": "2026-08-27",
       "nullConsecutiveSweeps": 0
     },
     {
@@ -53651,7 +53651,7 @@
         "priceTiers": []
       },
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 3
     },
     {
       "id": "711285",
@@ -53807,7 +53807,7 @@
         "priceTiers": []
       },
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 3
     },
     {
       "id": "617823",
@@ -53865,7 +53865,7 @@
         "priceTiers": []
       },
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 3
     },
     {
       "id": "617826",
@@ -53923,7 +53923,7 @@
         "priceTiers": []
       },
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 3
     },
     {
       "id": "284623",
@@ -54667,7 +54667,7 @@
       },
       "needsEnrichment": true,
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 3
     },
     {
       "id": "682854",
@@ -54727,7 +54727,7 @@
       },
       "needsEnrichment": true,
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 3
     },
     {
       "id": "564026",
@@ -54792,7 +54792,7 @@
         "priceTiers": []
       },
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 3
     },
     {
       "id": "657500",
@@ -54942,7 +54942,7 @@
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2,
+      "nullConsecutiveSweeps": 3,
       "_unknownFields": {
         "priceSource": "s51-kwst-backfill",
         "priceVerifiedAt": "2026-08-26",
@@ -54999,7 +54999,7 @@
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2,
+      "nullConsecutiveSweeps": 3,
       "_unknownFields": {
         "priceSource": "s51-kwst-backfill",
         "priceVerifiedAt": "2026-08-26",
@@ -56903,7 +56903,7 @@
         "priceTiers": []
       },
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 3
     },
     {
       "id": "487896",
@@ -57098,7 +57098,7 @@
       },
       "needsEnrichment": true,
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2,
+      "nullConsecutiveSweeps": 3,
       "hidden": true,
       "hiddenAt": "2026-08-26",
       "hiddenReason": "s51 would-hide ruling 2026-08-26 (bucket A: dated/seasonal event listing); nextAvailableDate null on sweeps 2026-08-08 (#169) and 2026-08-26 (#249), nullConsecutiveSweeps=2; price-preview absent 4/4 dates 2026-08-26 where probed. Reversible: scripts/sweep-availability.py clears hidden when a bookable date returns."
@@ -58289,7 +58289,7 @@
           "Person $0"
         ]
       },
-      "nextAvailableDate": "2026-08-26",
+      "nextAvailableDate": "2026-08-27",
       "nullConsecutiveSweeps": 0
     },
     {
@@ -58655,7 +58655,7 @@
       },
       "needsEnrichment": true,
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 3
     },
     {
       "id": "268827",
@@ -58702,7 +58702,7 @@
         "priceSource": "v52-dominant-gate"
       },
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 1
+      "nullConsecutiveSweeps": 2
     },
     {
       "id": "273745",
@@ -58760,7 +58760,7 @@
       },
       "needsEnrichment": true,
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 3
     },
     {
       "id": "535576",
@@ -58919,7 +58919,7 @@
       },
       "needsEnrichment": true,
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 3
     },
     {
       "id": "629988",
@@ -59246,7 +59246,7 @@
       },
       "needsEnrichment": true,
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 3
     },
     {
       "id": "500175",
@@ -59531,7 +59531,7 @@
       },
       "needsEnrichment": true,
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 3
     },
     {
       "id": "532802",
@@ -59812,7 +59812,7 @@
       },
       "needsEnrichment": true,
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 3
     },
     {
       "id": "645330",
@@ -59870,7 +59870,7 @@
         "priceTiers": []
       },
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 3
     },
     {
       "id": "646455",
@@ -60830,7 +60830,7 @@
       },
       "needsEnrichment": true,
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 3
     },
     {
       "id": "716573",
@@ -60891,7 +60891,7 @@
       },
       "needsEnrichment": true,
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 3
     },
     {
       "id": "513990",
@@ -61084,7 +61084,7 @@
       "_unknownFields": {
         "durationMinutes": 300
       },
-      "nextAvailableDate": "2026-08-26",
+      "nextAvailableDate": "2026-08-27",
       "nullConsecutiveSweeps": 0
     },
     {
@@ -61135,7 +61135,7 @@
         "priceTierCount": 2
       },
       "needsEnrichment": true,
-      "nextAvailableDate": "2026-08-26",
+      "nextAvailableDate": "2026-08-27",
       "nullConsecutiveSweeps": 0
     },
     {
@@ -61186,7 +61186,7 @@
       "_unknownFields": {
         "durationMinutes": 300
       },
-      "nextAvailableDate": "2026-08-26",
+      "nextAvailableDate": "2026-08-27",
       "nullConsecutiveSweeps": 0
     },
     {
@@ -61394,7 +61394,7 @@
         "priceTiers": []
       },
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2,
+      "nullConsecutiveSweeps": 3,
       "hidden": true,
       "hiddenAt": "2026-08-26",
       "hiddenReason": "s51 would-hide ruling 2026-08-26 (bucket A: dated/seasonal event listing); nextAvailableDate null on sweeps 2026-08-08 (#169) and 2026-08-26 (#249), nullConsecutiveSweeps=2; price-preview absent 4/4 dates 2026-08-26 where probed. Reversible: scripts/sweep-availability.py clears hidden when a bookable date returns."
@@ -61455,7 +61455,7 @@
         "priceTiers": []
       },
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2,
+      "nullConsecutiveSweeps": 3,
       "hidden": true,
       "hiddenAt": "2026-08-26",
       "hiddenReason": "s51 would-hide ruling 2026-08-26 (bucket A: dated/seasonal event listing); nextAvailableDate null on sweeps 2026-08-08 (#169) and 2026-08-26 (#249), nullConsecutiveSweeps=2; price-preview absent 4/4 dates 2026-08-26 where probed. Reversible: scripts/sweep-availability.py clears hidden when a bookable date returns."
@@ -61666,7 +61666,7 @@
       },
       "needsEnrichment": true,
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 3
     },
     {
       "id": "263709",
@@ -61861,7 +61861,7 @@
       "_unknownFields": {
         "durationMinutes": 180
       },
-      "nextAvailableDate": "2026-08-26",
+      "nextAvailableDate": "2026-08-27",
       "nullConsecutiveSweeps": 0
     },
     {
@@ -63548,7 +63548,7 @@
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2,
+      "nullConsecutiveSweeps": 3,
       "_unknownFields": {
         "priceSource": "s51-kwst-backfill",
         "priceVerifiedAt": "2026-08-26",
@@ -63653,7 +63653,7 @@
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2,
+      "nullConsecutiveSweeps": 3,
       "_unknownFields": {
         "priceSource": "s51-kwst-backfill",
         "priceVerifiedAt": "2026-08-26",
@@ -63724,7 +63724,7 @@
       },
       "needsEnrichment": true,
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 3
     },
     {
       "id": "315929",
@@ -64690,7 +64690,7 @@
       "_unknownFields": {
         "durationMinutes": 480
       },
-      "nextAvailableDate": "2026-08-27",
+      "nextAvailableDate": "2026-08-28",
       "nullConsecutiveSweeps": 0
     },
     {
@@ -65245,7 +65245,7 @@
         "priceTiers": []
       },
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 3
     },
     {
       "id": "522413",
@@ -65309,7 +65309,7 @@
         "priceTiers": []
       },
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 3
     },
     {
       "id": "522423",
@@ -65367,7 +65367,7 @@
         "priceTiers": []
       },
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 3
     },
     {
       "id": "522430",
@@ -65425,7 +65425,7 @@
         "priceTiers": []
       },
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 3
     },
     {
       "id": "522436",
@@ -65526,7 +65526,7 @@
         "priceTiers": []
       },
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 3
     },
     {
       "id": "522447",
@@ -65596,7 +65596,7 @@
         "priceTiers": []
       },
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 3
     },
     {
       "id": "522455",
@@ -65660,7 +65660,7 @@
         "priceTiers": []
       },
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 3
     },
     {
       "id": "522458",
@@ -65722,7 +65722,7 @@
         "priceTiers": []
       },
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 3
     },
     {
       "id": "522464",
@@ -65780,7 +65780,7 @@
         "priceTiers": []
       },
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 3
     },
     {
       "id": "522466",
@@ -65838,7 +65838,7 @@
         "priceTiers": []
       },
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 3
     },
     {
       "id": "522467",
@@ -65896,7 +65896,7 @@
         "priceTiers": []
       },
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 3
     },
     {
       "id": "522468",
@@ -65958,7 +65958,7 @@
         "priceTiers": []
       },
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 3
     },
     {
       "id": "528420",
@@ -66019,7 +66019,7 @@
         "priceTiers": []
       },
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 3
     },
     {
       "id": "643117",
@@ -68413,7 +68413,7 @@
       },
       "needsEnrichment": true,
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 3
     },
     {
       "id": "670429",
@@ -68467,7 +68467,7 @@
       },
       "needsEnrichment": true,
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 3
     },
     {
       "id": "670433",
@@ -68524,7 +68524,7 @@
       },
       "needsEnrichment": true,
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 3
     },
     {
       "id": "670434",
@@ -68621,7 +68621,7 @@
       },
       "needsEnrichment": true,
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 3
     },
     {
       "id": "672138",
@@ -68677,7 +68677,7 @@
       },
       "needsEnrichment": true,
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 3
     },
     {
       "id": "672139",
@@ -68734,7 +68734,7 @@
       },
       "needsEnrichment": true,
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 3
     },
     {
       "id": "735985",
@@ -68871,7 +68871,7 @@
         "priceTierCount": 3
       },
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 1
+      "nullConsecutiveSweeps": 2
     },
     {
       "id": "312035",
@@ -69370,7 +69370,7 @@
       "_unknownFields": {
         "durationMinutes": 480
       },
-      "nextAvailableDate": "2026-08-26",
+      "nextAvailableDate": "2026-08-27",
       "nullConsecutiveSweeps": 0
     },
     {
@@ -69658,7 +69658,7 @@
       },
       "needsEnrichment": true,
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 1
+      "nullConsecutiveSweeps": 2
     },
     {
       "id": "109118",
@@ -69768,7 +69768,7 @@
       },
       "needsEnrichment": true,
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 3
     },
     {
       "id": "113769",
@@ -69817,7 +69817,7 @@
         "durationMinutes": 480
       },
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 1
+      "nullConsecutiveSweeps": 2
     },
     {
       "id": "65587",
@@ -69991,7 +69991,7 @@
         "priceTiers": []
       },
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 3
     },
     {
       "id": "537343",
@@ -70149,7 +70149,7 @@
         "priceTiers": []
       },
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 3
     },
     {
       "id": "647697",
@@ -70206,7 +70206,7 @@
       },
       "needsEnrichment": true,
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 1
+      "nullConsecutiveSweeps": 2
     },
     {
       "id": "671762",
@@ -70520,7 +70520,7 @@
       "_unknownFields": {
         "durationMinutes": 360
       },
-      "nextAvailableDate": "2026-08-26",
+      "nextAvailableDate": "2026-08-27",
       "nullConsecutiveSweeps": 0
     },
     {
@@ -70565,7 +70565,7 @@
       "_unknownFields": {
         "durationMinutes": 360
       },
-      "nextAvailableDate": "2026-08-26",
+      "nextAvailableDate": "2026-08-27",
       "nullConsecutiveSweeps": 0
     },
     {
@@ -70610,7 +70610,7 @@
       "_unknownFields": {
         "durationMinutes": 360
       },
-      "nextAvailableDate": "2026-08-26",
+      "nextAvailableDate": "2026-08-27",
       "nullConsecutiveSweeps": 0
     },
     {
@@ -71029,7 +71029,7 @@
       "_unknownFields": {
         "durationMinutes": 480
       },
-      "nextAvailableDate": "2026-08-26",
+      "nextAvailableDate": "2026-08-27",
       "nullConsecutiveSweeps": 0
     },
     {
@@ -71076,7 +71076,7 @@
       "_unknownFields": {
         "durationMinutes": 480
       },
-      "nextAvailableDate": "2026-08-26",
+      "nextAvailableDate": "2026-08-27",
       "nullConsecutiveSweeps": 0
     },
     {
@@ -71418,7 +71418,7 @@
         "priceTiers": []
       },
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 3
     },
     {
       "id": "287441",
@@ -71477,7 +71477,7 @@
         "priceTiers": []
       },
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 3
     },
     {
       "id": "261913",
@@ -71538,7 +71538,7 @@
       },
       "needsEnrichment": true,
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 3
     },
     {
       "id": "671081",
@@ -72423,7 +72423,7 @@
       },
       "needsEnrichment": true,
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 1
+      "nullConsecutiveSweeps": 2
     },
     {
       "id": "599117",
@@ -74483,7 +74483,7 @@
       "statusConsecutiveRuns": null,
       "lastUpdated": "",
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 3
     },
     {
       "id": "88828",
@@ -75039,7 +75039,7 @@
         "priceTiers": []
       },
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 3
     },
     {
       "id": "282162",
@@ -75095,7 +75095,7 @@
         "priceTiers": []
       },
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 3
     },
     {
       "id": "268820",
@@ -75135,7 +75135,7 @@
       "statusConsecutiveRuns": null,
       "lastUpdated": "",
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2,
+      "nullConsecutiveSweeps": 3,
       "_unknownFields": {
         "priceSource": "s51-kwst-backfill",
         "priceVerifiedAt": "2026-08-26",
@@ -75206,7 +75206,7 @@
         "priceTiers": []
       },
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 2
+      "nullConsecutiveSweeps": 3
     },
     {
       "id": "639665",
@@ -78000,7 +78000,7 @@
           "Rider $55.00 (non-participant / ride-along)"
         ]
       },
-      "nextAvailableDate": "2026-08-26",
+      "nextAvailableDate": "2026-08-27",
       "nullConsecutiveSweeps": 0
     },
     {
@@ -79984,7 +79984,7 @@
         "datedSampleDates": 8,
         "stockedFrom": "monroe-county-stocking-2026-08-22"
       },
-      "nextAvailableDate": "2026-08-26",
+      "nextAvailableDate": "2026-08-27",
       "nullConsecutiveSweeps": 0
     },
     {
@@ -80037,7 +80037,7 @@
           "Passenger Spot $65.00 (non-participant / ride-along)"
         ]
       },
-      "nextAvailableDate": "2026-08-26",
+      "nextAvailableDate": "2026-08-27",
       "nullConsecutiveSweeps": 0
     },
     {
@@ -80451,7 +80451,7 @@
         "datedSampleDates": 8,
         "stockedFrom": "monroe-county-stocking-2026-08-22"
       },
-      "nextAvailableDate": "2026-08-26",
+      "nextAvailableDate": "2026-08-27",
       "nullConsecutiveSweeps": 0
     },
     {
@@ -82010,7 +82010,7 @@
         "stockedFrom": "monroe-county-stocking-2026-08-22"
       },
       "nextAvailableDate": null,
-      "nullConsecutiveSweeps": 1
+      "nullConsecutiveSweeps": 2
     },
     {
       "id": "695139",
@@ -82788,7 +82788,7 @@
         "datedSampleDates": 8,
         "stockedFrom": "monroe-county-stocking-2026-08-22"
       },
-      "nextAvailableDate": "2026-08-26",
+      "nextAvailableDate": "2026-08-27",
       "nullConsecutiveSweeps": 0
     },
     {
