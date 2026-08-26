@@ -15035,9 +15035,9 @@
       "category": "",
       "location": "United States/Florida/Summerland Key",
       "island": "united states/florida/summerland key",
-      "price": null,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "price": 135.0,
+      "priceLabel": "Four Hour Charter",
+      "priceConfidence": "high",
       "qualityScore": 0,
       "currency": "USD",
       "duration": "",
@@ -15064,7 +15064,7 @@
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
       "_unknownFields": {
-        "priceSource": "s51-kwst-backfill-2",
+        "priceSource": "s51-kwst-611751",
         "priceVerifiedAt": "2026-08-26",
         "probeDates": [
           "2026-08-29",
@@ -15074,11 +15074,16 @@
         ],
         "probeSampled": 4,
         "probeDateValid": 0,
-        "priceHold": "shared_named_charter",
-        "priceBasis": "s51-kwst-backfill-2 (2026-08-26): stays HELD (class c, escalated): the only live tier is the charter-shaped \"Four Hour Charter\" $135; no shared per-person tier exists in the ladder, and a charter tier never anchors on a \"Shared\" listing. Description: \"Starting at $135 \u2022 Up to 6 People \u2022 4 Hour Shared Option & 4 or 6 Hour Private Tour Options\". Prior: HELD for ruling: product name says \"Shared\" but the anchor tier \"Four Hour Charter\" $135 is group-shaped; per-seat vs whole-boat undecidable from the ladder; Four Hour Charter $135 [group]; 4/4 dated readings 2026-08-26 (evidence from next-departure echo, 0 date-valid on probe dates (D-638)), 1 ladder shape(s), include_breakdown=yes, probe.json sha256 186bcb42971b",
+        "priceBasis": "s51-kwst-611751 (2026-08-26): Jason ruling 2026-08-26 \u2014 sole-tier rule (D-640 lineage): the only live tier \"Four Hour Charter\" $135 anchors; unit from the tier label verbatim. Description conflict quoted, not resolved: \"Starting at $135 \u2022 Up to 6 People \u2022 4 Hour Shared Option & 4 or 6 Hour Private Tour Options\" (multiple products named, one purchasable tier; product name says \"Shared\", tier label says \"Charter\"). 4/4 dated readings 2026-08-26 (0 date-valid), include_breakdown=yes, probe.json sha256 186bcb42971b; supersedes s51-kwst-backfill-2 hold shared_named_charter.",
         "priceTiers": [
           "Four Hour Charter $135"
-        ]
+        ],
+        "priceCustomerType": "Four Hour Charter",
+        "priceTierCount": 1,
+        "excludedTiers": [],
+        "priceMinPartySize": 1,
+        "priceUnit": "four hour charter",
+        "unitEvidence": "tier label: 'Four Hour Charter'"
       },
       "needsEnrichment": true,
       "nextAvailableDate": "2026-11-27",
