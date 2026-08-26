@@ -1,0 +1,198 @@
+{
+ "stampedOn": "2026-08-26",
+ "rowsChanged": 22,
+ "priced": 18,
+ "held": 4,
+ "summary": [
+  {
+   "pk": 499277,
+   "class": "a",
+   "name": "Eco Tour W/Clear Kayaks",
+   "price": 699.0,
+   "label": "Four Hours",
+   "unit": "whole boat \u00b7 up to 4 passengers",
+   "disposition": "priced"
+  },
+  {
+   "pk": 499289,
+   "class": "a",
+   "name": "Family Fun Day",
+   "price": 1000.0,
+   "label": "Six Hours",
+   "unit": "whole boat \u00b7 up to 6 passengers",
+   "disposition": "priced"
+  },
+  {
+   "pk": 499297,
+   "class": "a",
+   "name": "Lobstering",
+   "price": 650.0,
+   "label": "Four Hours",
+   "unit": "whole boat \u00b7 up to 6 passengers",
+   "disposition": "priced"
+  },
+  {
+   "pk": 499303,
+   "class": "a",
+   "name": "Private Snorkeling",
+   "price": 650.0,
+   "label": "Four Hours",
+   "unit": "whole boat \u00b7 up to 6 passengers",
+   "disposition": "priced"
+  },
+  {
+   "pk": 460374,
+   "class": "a",
+   "name": "Offshore Fishing",
+   "price": 1500.0,
+   "label": "3/4 Day",
+   "unit": "whole boat \u00b7 up to 6 passengers",
+   "disposition": "priced"
+  },
+  {
+   "pk": 460378,
+   "class": "a",
+   "name": "Reef and Wreck Fishing",
+   "price": 950.0,
+   "label": "Half Day Reef",
+   "unit": "whole boat \u00b7 up to 6 passengers",
+   "disposition": "priced"
+  },
+  {
+   "pk": 659695,
+   "class": "a",
+   "name": "The Marathon Humps Express",
+   "price": 1595.0,
+   "label": "3/4 Day Trip",
+   "unit": "3/4 day trip",
+   "disposition": "priced"
+  },
+  {
+   "pk": 659699,
+   "class": "a",
+   "name": "Marathon Deep Dropping Trip",
+   "price": 1595.0,
+   "label": "3/4 Day Trip",
+   "unit": "3/4 day trip",
+   "disposition": "priced"
+  },
+  {
+   "pk": 692953,
+   "class": "a",
+   "name": "45' Hatteras Express",
+   "price": 150.0,
+   "label": "2-Hour Sunset Cruise",
+   "unit": "2-hour sunset cruise",
+   "disposition": "priced"
+  },
+  {
+   "pk": 167087,
+   "class": "b",
+   "name": "Bachelor/ette Private Hunt",
+   "price": 300.0,
+   "label": "Bachelor/ette or Birthday Group",
+   "unit": "flat rate for up to 10 people",
+   "disposition": "priced"
+  },
+  {
+   "pk": 167094,
+   "class": "b",
+   "name": "Bachelor/ette Photo Themed Private Hunt",
+   "price": 400.0,
+   "label": "Bachelor/ette or Birthday Group",
+   "unit": "flat rate for up to 10 people",
+   "disposition": "priced"
+  },
+  {
+   "pk": 395018,
+   "class": "b",
+   "name": "Birthday Photo Themed Private Hunt",
+   "price": 400.0,
+   "label": "Bachelor/ette or Birthday Group",
+   "unit": "flat rate for up to 10 people",
+   "disposition": "priced"
+  },
+  {
+   "pk": 395019,
+   "class": "b",
+   "name": "Birthday Private Hunt",
+   "price": 300.0,
+   "label": "Bachelor/ette or Birthday Group",
+   "unit": "flat rate for up to 10 people",
+   "disposition": "priced"
+  },
+  {
+   "pk": 232507,
+   "class": "b",
+   "name": "Salty Bottom Party Boat (Up to 36 passnegers)",
+   "price": 1299.0,
+   "label": "Four Hours",
+   "unit": "whole boat \u00b7 base rate for 8 people",
+   "disposition": "priced"
+  },
+  {
+   "pk": 698002,
+   "class": "b",
+   "name": "Salty Max Center Console (up to 6 Passengers)",
+   "price": 425.0,
+   "label": "Two Hour Sunset",
+   "unit": "whole boat \u00b7 up to 6 passengers",
+   "disposition": "priced"
+  },
+  {
+   "pk": 279365,
+   "class": "b",
+   "name": "PRIVATE Haunted History Walking Tour",
+   "price": 275.0,
+   "label": "Private Tour up to 4 People for 1.5 Hours",
+   "unit": "private tour \u00b7 up to 4 people",
+   "disposition": "priced"
+  },
+  {
+   "pk": 639774,
+   "class": "b",
+   "name": "Miami to Key West Private Day Tour",
+   "price": 879.0,
+   "label": "Private Tour For Up to 6 people",
+   "unit": "private tour \u00b7 up to 6 people",
+   "disposition": "priced"
+  },
+  {
+   "pk": 587954,
+   "class": "c",
+   "name": "2 Hr. Shared Snorkeling Tour for 1-6 $89.00 per person 1-6 persons - 3 person minimum",
+   "price": 98.11,
+   "label": "Shared Snorkeling Tour for 1-6 Persons Minimum 3 Persons 89.00",
+   "unit": "per person",
+   "disposition": "priced"
+  },
+  {
+   "pk": 742608,
+   "class": "a",
+   "name": "Aquabana 1HR",
+   "price": null,
+   "disposition": "HELD"
+  },
+  {
+   "pk": 611751,
+   "class": "c",
+   "name": "Keewaydin Island Shared Shelling Tours",
+   "price": null,
+   "disposition": "HELD"
+  },
+  {
+   "pk": 574540,
+   "class": "d",
+   "name": "Havana Moon Sunset Dinner Cruise",
+   "price": null,
+   "disposition": "HELD"
+  },
+  {
+   "pk": 481847,
+   "class": "d",
+   "name": "Lobster Bullynetting",
+   "price": null,
+   "disposition": "HELD"
+  }
+ ]
+}
