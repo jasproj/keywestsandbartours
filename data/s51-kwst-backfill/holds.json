@@ -1,0 +1,3155 @@
+[
+ {
+  "pk": 608906,
+  "sn": "abovethecutcharters",
+  "name": "Sunrise Tarpon Charter",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 588464,
+  "sn": "adventuresonwater",
+  "name": "Key West CraigCat Tour",
+  "tiers": [
+   {
+    "singular": "Craig Cat Rental",
+    "note": "Up to 2 People \u2022 All Ages",
+    "price": 0.0,
+    "min": 1,
+    "cls": "zero"
+   }
+  ],
+  "disposition": "zero_price",
+  "basis": "zero_price (2026-08-26): every live tier is $0 on the majority reading (Craig Cat Rental $0 (Up to 2 People \u2022 All Ages)); price stays null (D-575); 4/4 dated readings 2026-08-26 (4/4 date-valid), 1 ladder shape(s), include_breakdown=yes, probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 445535,
+  "sn": "afterhourskeywest",
+  "name": "Key West Air Show",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 650888,
+  "sn": "afterhourskeywest",
+  "name": "Hemingway Days at Sea",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 655130,
+  "sn": "afterhourskeywest",
+  "name": "Lobsterfest Surf & Turf Cruise",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 655179,
+  "sn": "afterhourskeywest",
+  "name": "Tropical Heat Charter: All-Male, Clothing-Optional Cruises",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 655214,
+  "sn": "afterhourskeywest",
+  "name": "Brewfest on Board",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 655242,
+  "sn": "afterhourskeywest",
+  "name": "Just a Few Friends: A Jimmy Buffett Celebration at Sea",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 673184,
+  "sn": "afterhourskeywest",
+  "name": "Key West Power Speed Boat Race Hosted by Race World Offshore",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 561410,
+  "sn": "alligatorreefjetskis",
+  "name": "Free Ride",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 711897,
+  "sn": "aquaboatrentals",
+  "name": "19' Key West",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 36922,
+  "sn": "askmekw",
+  "name": "Tall & Crawl",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 39948,
+  "sn": "askmekw",
+  "name": "Civil War Sea Battle Gala",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 97469,
+  "sn": "askmekw",
+  "name": "Afternoon Delights",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 97475,
+  "sn": "askmekw",
+  "name": "ConchTales & Dreams",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 582008,
+  "sn": "askmekw",
+  "name": "Hire A Captain",
+  "tiers": [
+   {
+    "singular": "Private charter",
+    "note": "minimum 2 hours",
+    "price": 0.0,
+    "min": 1,
+    "cls": "zero"
+   }
+  ],
+  "disposition": "zero_price",
+  "basis": "zero_price (2026-08-26): every live tier is $0 on the majority reading (Private charter $0 (minimum 2 hours)); price stays null (D-575); 4/4 dated readings 2026-08-26 (4/4 date-valid), 1 ladder shape(s), include_breakdown=yes, probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 659695,
+  "sn": "atlanticgulffishingcharters",
+  "name": "The Marathon Humps Express",
+  "tiers": [
+   {
+    "singular": "3/4 Day Trip",
+    "note": "6 Hours",
+    "price": 1595.0,
+    "min": 1,
+    "cls": "variant"
+   },
+   {
+    "singular": "Full Day Trip",
+    "note": "8 Hours",
+    "price": 1895.0,
+    "min": 1,
+    "cls": "variant"
+   },
+   {
+    "singular": "Ten Hour Trip",
+    "note": "10 Hours",
+    "price": 2295.0,
+    "min": 1,
+    "cls": "variant"
+   }
+  ],
+  "disposition": "variant_only",
+  "basis": "HELD for ruling: every priced tier is an unnamed duration/variant tier (3/4 Day Trip $1,595 [variant] / Full Day Trip $1,895 [variant] / Ten Hour Trip $2,295 [variant]) and neither label, note, sibling nor an age-concession tier says per-person or whole-unit; not guessed; 4/4 dated readings 2026-08-26 (4/4 date-valid), 1 ladder shape(s), include_breakdown=yes, probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 659699,
+  "sn": "atlanticgulffishingcharters",
+  "name": "Marathon Deep Dropping Trip",
+  "tiers": [
+   {
+    "singular": "3/4 Day Trip",
+    "note": "6 Hours",
+    "price": 1595.0,
+    "min": 1,
+    "cls": "variant"
+   },
+   {
+    "singular": "Full Day Trip",
+    "note": "8 Hours",
+    "price": 1895.0,
+    "min": 1,
+    "cls": "variant"
+   },
+   {
+    "singular": "Ten Hour Trip",
+    "note": "10 Hours",
+    "price": 2295.0,
+    "min": 1,
+    "cls": "variant"
+   }
+  ],
+  "disposition": "variant_only",
+  "basis": "HELD for ruling: every priced tier is an unnamed duration/variant tier (3/4 Day Trip $1,595 [variant] / Full Day Trip $1,895 [variant] / Ten Hour Trip $2,295 [variant]) and neither label, note, sibling nor an age-concession tier says per-person or whole-unit; not guessed; 4/4 dated readings 2026-08-26 (4/4 date-valid), 1 ladder shape(s), include_breakdown=yes, probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 692953,
+  "sn": "atlanticgulffishingcharters",
+  "name": "45' Hatteras Express",
+  "tiers": [
+   {
+    "singular": "4-Hour Reef, Wreck and Bay",
+    "note": "",
+    "price": 1200.0,
+    "min": 1,
+    "cls": "variant"
+   },
+   {
+    "singular": "6-Hour Reef, Wreck and Bay",
+    "note": "",
+    "price": 1500.0,
+    "min": 1,
+    "cls": "variant"
+   },
+   {
+    "singular": "4-Hour Offshore",
+    "note": "",
+    "price": 1400.0,
+    "min": 1,
+    "cls": "variant"
+   },
+   {
+    "singular": "6-Hour Offshore",
+    "note": "",
+    "price": 1800.0,
+    "min": 1,
+    "cls": "variant"
+   },
+   {
+    "singular": "8-Hour Offshore",
+    "note": "",
+    "price": 2150.0,
+    "min": 1,
+    "cls": "variant"
+   },
+   {
+    "singular": "10-Hour Extended Day",
+    "note": "",
+    "price": 2400.0,
+    "min": 1,
+    "cls": "variant"
+   },
+   {
+    "singular": "Deep Drop / Swordfish",
+    "note": "",
+    "price": 3000.0,
+    "min": 1,
+    "cls": "variant"
+   },
+   {
+    "singular": "2-Hour Sunset Cruise",
+    "note": "",
+    "price": 150.0,
+    "min": 1,
+    "cls": "variant"
+   },
+   {
+    "singular": "4-Hour Eco Tour - Swimming, Sandbar, Island Hopping",
+    "note": "",
+    "price": 850.0,
+    "min": 1,
+    "cls": "variant"
+   },
+   {
+    "singular": "6-Hour Eco Tour - Swimming, Sandbar, Island Hopping",
+    "note": "",
+    "price": 1300.0,
+    "min": 1,
+    "cls": "variant"
+   },
+   {
+    "singular": "8-Hour Eco Tour - Swimming, Sandbar, Island Hopping",
+    "note": "",
+    "price": 1600.0,
+    "min": 1,
+    "cls": "variant"
+   }
+  ],
+  "disposition": "variant_only",
+  "basis": "HELD for ruling: every priced tier is an unnamed duration/variant tier (4-Hour Reef, Wreck and Bay $1,200 [variant] / 6-Hour Reef, Wreck and Bay $1,500 [variant] / 4-Hour Offshore $1,400 [variant] / 6-Hour Offshore $1,800 [variant] / 8-Hour Offshore $2,150 [variant] / 10-Hour Extended Day $2,400 [variant] / Deep Drop / Swordfish $3,000 [variant] / 2-Hour Sunset Cruise $150 [variant] / 4-Hour Eco Tour - Swimming, Sandbar, Island Hopping $850 [variant] / 6-Hour Eco Tour - Swimming, Sandbar, Island Hopping $1,300 [variant] / 8-Hour Eco Tour - Swimming, Sandbar, Island Hopping $1,600 [variant]) and neither label, note, sibling nor an age-concession tier says per-person or whole-unit; not guessed; 4/4 dated readings 2026-08-26 (4/4 date-valid), 1 ladder shape(s), include_breakdown=yes, probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 607486,
+  "sn": "barefootbillyskw",
+  "name": "Valentine\u2019s Sushi & Sunset Cruise",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 404687,
+  "sn": "blackwaterfishingcharters",
+  "name": "Fishing Trips - Skeeter",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 404696,
+  "sn": "blackwaterfishingcharters",
+  "name": "Seasonal Tarpon / Shark Trip - Skeeter",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 404698,
+  "sn": "blackwaterfishingcharters",
+  "name": "Fishing Trips - Hewes Redfisher",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 404702,
+  "sn": "blackwaterfishingcharters",
+  "name": "Seasonal Tarpon / Shark Trip - Hewes",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 479468,
+  "sn": "blackwaterfishingcharters",
+  "name": "Fishing Trip 24ft Pro-line",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 183193,
+  "sn": "bluemoonkayakkeywest",
+  "name": "Full Moon Tours",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 201622,
+  "sn": "bluemoonkayakkeywest",
+  "name": "Polar Paddle Plunge",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 448725,
+  "sn": "boatrentalsinkeywest",
+  "name": "6 Passenger Max Split Charter Boat",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 549352,
+  "sn": "brightwild-adventures",
+  "name": "4th of July Sunset Cruise!",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 443637,
+  "sn": "brightwild-adventures",
+  "name": "Private Charter",
+  "tiers": [
+   {
+    "singular": "4 Hour Private Charter",
+    "note": "",
+    "price": 0.0,
+    "min": 1,
+    "cls": "zero"
+   },
+   {
+    "singular": "6 Hour Private Charter",
+    "note": "",
+    "price": 0.0,
+    "min": 1,
+    "cls": "zero"
+   },
+   {
+    "singular": "8 Hour Private Charter",
+    "note": "",
+    "price": 0.0,
+    "min": 1,
+    "cls": "zero"
+   }
+  ],
+  "disposition": "zero_price",
+  "basis": "zero_price (2026-08-26): every live tier is $0 on the majority reading (4 Hour Private Charter $0 / 6 Hour Private Charter $0 / 8 Hour Private Charter $0); price stays null (D-575); 4/4 dated readings 2026-08-26 (1/4 date-valid), 1 ladder shape(s), include_breakdown=yes, probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 685945,
+  "sn": "brightwild-adventures",
+  "name": "Key West Lighted Boat Parade",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 669641,
+  "sn": "brightwild-adventures",
+  "name": "Key West Power Boat Races",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 543722,
+  "sn": "brightwild-adventures",
+  "name": "Sunset Cruise with Songwriters",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 620075,
+  "sn": "brightwild-adventures",
+  "name": "Blue Angels Air Show & Sandbar Adventure",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 560558,
+  "sn": "clearkayaking",
+  "name": "Custom Tour",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 528949,
+  "sn": "conchconciergeweddings",
+  "name": "Key West Smathers Beach Sunset Experience",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 534625,
+  "sn": "conchconciergeweddings",
+  "name": "Elopement Photos",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 534676,
+  "sn": "conchconciergeweddings",
+  "name": "Couples Portraits",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 534642,
+  "sn": "conchconciergeweddings",
+  "name": "Surprise Proposal Photos",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 528906,
+  "sn": "conchconciergeweddings",
+  "name": "The Key West Butterfly and Nature Conservatory Experience",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 528884,
+  "sn": "conchconciergeweddings",
+  "name": "Fort Zachary Taylor Park, Shipping Channel Experience",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 534680,
+  "sn": "conchconciergeweddings",
+  "name": "Family Portraits",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 534681,
+  "sn": "conchconciergeweddings",
+  "name": "Engagement Portraits",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 534861,
+  "sn": "conchconciergeweddings",
+  "name": "Truman Butterfly Garden Experience",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 528841,
+  "sn": "conchconciergeweddings",
+  "name": "Key West Smathers Beach, Midday Experience",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 534819,
+  "sn": "conchconciergeweddings",
+  "name": "Key West Higgs Beach, Experience",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 534823,
+  "sn": "conchconciergeweddings",
+  "name": "Key West Higgs Beach, Midday Experience",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 534832,
+  "sn": "conchconciergeweddings",
+  "name": "Key West Higgs Beach Sunset Experience",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 528848,
+  "sn": "conchconciergeweddings",
+  "name": "Key West Dog Beach Experience",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 528937,
+  "sn": "conchconciergeweddings",
+  "name": "The Key West Historic Seaport Experience",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 528943,
+  "sn": "conchconciergeweddings",
+  "name": "Key West Harbor Tiki Experience",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 534702,
+  "sn": "conchconciergeweddings",
+  "name": "Maternity Portraits",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 534709,
+  "sn": "conchconciergeweddings",
+  "name": "Boudoir Photography",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 534867,
+  "sn": "conchconciergeweddings",
+  "name": "Baby Portraits",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 669756,
+  "sn": "conchqueencharters",
+  "name": "Lobster Dinner Adventure",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 554032,
+  "sn": "cruisintikiskeylargo",
+  "name": "New Year's Eve Fireworks Cruise",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 238240,
+  "sn": "cruisintikiskeywest",
+  "name": "Fourth of July Sunset/Fireworks Cruise - Mac's Place Dock",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 238251,
+  "sn": "cruisintikiskeywest",
+  "name": "Fourth of July Sunset/Fireworks Cruise - Schooner Wharf Dock",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 238249,
+  "sn": "cruisintikiskeywest",
+  "name": "Fourth of July Sunset/Fireworks Cruise - Hurricane Hole Marina",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 131757,
+  "sn": "cruisintikiskeywest",
+  "name": "Blue Angels NAS Air Show Viewing Tiki",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 145177,
+  "sn": "cruisintikiskeywest",
+  "name": "Conch Republic- Bloody Battle - Parade/Battle Viewing/Sunset",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 104303,
+  "sn": "cruisintikiskeywest",
+  "name": "PowerBoat Races",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 587233,
+  "sn": "cruisintikiskeywest",
+  "name": "Mile0 Fest",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 686249,
+  "sn": "cruisintikiskeywest",
+  "name": "New Year\u2019s Eve Party Dockside @ Schooner Wharf Bar",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 129095,
+  "sn": "dangercharters",
+  "name": "Blue Angels Snorkel and Viewing",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 359857,
+  "sn": "dangercharters",
+  "name": "St. Patrick's Day Happy Hour Sail",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 363616,
+  "sn": "dangercharters",
+  "name": "Easter Weekend Hoppy Hour Sail",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 360003,
+  "sn": "dangercharters",
+  "name": "4th of July Snorkel and Fireworks Combo",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 35191,
+  "sn": "dangercharters",
+  "name": "Lighted Boat Parade ( Parade Boat )",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 11946,
+  "sn": "dangercharters",
+  "name": "Lighted Boat Parade (Viewing Boat)",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 376243,
+  "sn": "dangercharters",
+  "name": "Cinco de Mayo Sail",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 471375,
+  "sn": "dangercharters",
+  "name": "Private Sail & Snorkel",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 509589,
+  "sn": "dangercharters",
+  "name": "New Years Sunset Sail",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 515246,
+  "sn": "dangercharters",
+  "name": "Valentine's Day Wind & Wine Sunset Sail",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 670042,
+  "sn": "dangercharters",
+  "name": "Seas the Day! Your Charter, Your Way Sandbar and Fireworks Trip",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 562641,
+  "sn": "dilligaffcharters",
+  "name": "Sandbar Excursion",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 562642,
+  "sn": "dilligaffcharters",
+  "name": "Sunset Cruise",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 562645,
+  "sn": "dilligaffcharters",
+  "name": "Spearfishing Trip",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 649266,
+  "sn": "dilligaffcharters",
+  "name": "Lobster Diving",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 651619,
+  "sn": "duckkeywatersports",
+  "name": "Sandbar Float and Fun",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 539911,
+  "sn": "everwatercharters",
+  "name": "Florida Keys SHARED Shelling & Snorkeling Tour",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 611751,
+  "sn": "everwatercharters",
+  "name": "Keewaydin Island Shared Shelling Tours",
+  "tiers": [
+   {
+    "singular": "Four Hour Charter",
+    "note": "",
+    "price": 135.0,
+    "min": 1,
+    "cls": "group"
+   }
+  ],
+  "disposition": "shared_named_charter",
+  "basis": "HELD for ruling: product name says \"Shared\" but the anchor tier \"Four Hour Charter\" $135 is group-shaped; per-seat vs whole-boat undecidable from the ladder; Four Hour Charter $135 [group]; 4/4 dated readings 2026-08-26 (evidence from next-departure echo, 0 date-valid on probe dates (D-638)), 1 ladder shape(s), include_breakdown=yes, probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 499277,
+  "sn": "fishmonstermax",
+  "name": "Eco Tour W/Clear Kayaks",
+  "tiers": [
+   {
+    "singular": "Four Hours",
+    "note": "",
+    "price": 699.0,
+    "min": 1,
+    "cls": "variant"
+   },
+   {
+    "singular": "Eight Hours",
+    "note": "",
+    "price": 999.0,
+    "min": 1,
+    "cls": "variant"
+   }
+  ],
+  "disposition": "variant_only",
+  "basis": "HELD for ruling: every priced tier is an unnamed duration/variant tier (Four Hours $699 [variant] / Eight Hours $999 [variant]) and neither label, note, sibling nor an age-concession tier says per-person or whole-unit; not guessed; 4/4 dated readings 2026-08-26 (4/4 date-valid), 1 ladder shape(s), include_breakdown=yes, probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 499289,
+  "sn": "fishmonstermax",
+  "name": "Family Fun Day",
+  "tiers": [
+   {
+    "singular": "Six Hours",
+    "note": "",
+    "price": 1000.0,
+    "min": 1,
+    "cls": "variant"
+   },
+   {
+    "singular": "Eight Hours",
+    "note": "",
+    "price": 1200.0,
+    "min": 1,
+    "cls": "variant"
+   }
+  ],
+  "disposition": "variant_only",
+  "basis": "HELD for ruling: every priced tier is an unnamed duration/variant tier (Six Hours $1,000 [variant] / Eight Hours $1,200 [variant]) and neither label, note, sibling nor an age-concession tier says per-person or whole-unit; not guessed; 4/4 dated readings 2026-08-26 (4/4 date-valid), 1 ladder shape(s), include_breakdown=yes, probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 499297,
+  "sn": "fishmonstermax",
+  "name": "Lobstering",
+  "tiers": [
+   {
+    "singular": "Four Hours",
+    "note": "Four Hours",
+    "price": 650.0,
+    "min": 1,
+    "cls": "variant"
+   },
+   {
+    "singular": "Six Hours",
+    "note": "",
+    "price": 800.0,
+    "min": 1,
+    "cls": "variant"
+   },
+   {
+    "singular": "Eight Hours",
+    "note": "",
+    "price": 950.0,
+    "min": 1,
+    "cls": "variant"
+   }
+  ],
+  "disposition": "variant_only",
+  "basis": "HELD for ruling: every priced tier is an unnamed duration/variant tier (Four Hours $650 [variant] / Six Hours $800 [variant] / Eight Hours $950 [variant]) and neither label, note, sibling nor an age-concession tier says per-person or whole-unit; not guessed; 4/4 dated readings 2026-08-26 (4/4 date-valid), 1 ladder shape(s), include_breakdown=yes, probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 499303,
+  "sn": "fishmonstermax",
+  "name": "Private Snorkeling",
+  "tiers": [
+   {
+    "singular": "Four Hours",
+    "note": "",
+    "price": 650.0,
+    "min": 1,
+    "cls": "variant"
+   },
+   {
+    "singular": "Six Hours",
+    "note": "",
+    "price": 800.0,
+    "min": 1,
+    "cls": "variant"
+   },
+   {
+    "singular": "Eight Hours",
+    "note": "",
+    "price": 950.0,
+    "min": 1,
+    "cls": "variant"
+   }
+  ],
+  "disposition": "variant_only",
+  "basis": "HELD for ruling: every priced tier is an unnamed duration/variant tier (Four Hours $650 [variant] / Six Hours $800 [variant] / Eight Hours $950 [variant]) and neither label, note, sibling nor an age-concession tier says per-person or whole-unit; not guessed; 4/4 dated readings 2026-08-26 (4/4 date-valid), 1 ladder shape(s), include_breakdown=yes, probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 607530,
+  "sn": "flkeysfoodtour",
+  "name": "Key Largo Food Tour",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 679443,
+  "sn": "flkeysfoodtour",
+  "name": "Islamorada Holiday Shopping Golf Cart Food Tour",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 451341,
+  "sn": "flkeysshuttle",
+  "name": "Private Transportation & Tour Services",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 451280,
+  "sn": "flkeysshuttle",
+  "name": "Transportation From Orlando to South Florida",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 451281,
+  "sn": "flkeysshuttle",
+  "name": "Key West Round Trip Transportation",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 451282,
+  "sn": "flkeysshuttle",
+  "name": "Airport Transportation to and from Miami International",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 451336,
+  "sn": "flkeysshuttle",
+  "name": "Airport Transportation to and from Fort Lauderdale International",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 378024,
+  "sn": "flkeysshuttle",
+  "name": "Florida Keys Shuttle",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 196883,
+  "sn": "floridakeysventures",
+  "name": "Private Key West History And Culture Southernmost Walking Tour",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 700519,
+  "sn": "floridakeyswildbirdcenter",
+  "name": "Self-Guided Sanctuary Tour",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 477729,
+  "sn": "glassbottomboatsofislamorada",
+  "name": "Glass Bottom Boat 2.5 Hour Reef & Fireworks Tour!",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 488807,
+  "sn": "glassbottomboatsofislamorada",
+  "name": "Blue Supermoon Night Tour",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 490784,
+  "sn": "glassbottomboatsofislamorada",
+  "name": "Annual Swim for Alligator Light",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 490885,
+  "sn": "glassbottomboatsofislamorada",
+  "name": "Bayside Cruise - Sea Grass Meadows",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 498828,
+  "sn": "glassbottomboatsofislamorada",
+  "name": "History of Lower Islamorada Bayside Tour",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 517674,
+  "sn": "glassbottomboatsofislamorada",
+  "name": "No Trips - Stay Tuned for Updates!!",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 577355,
+  "sn": "glassbottomboatsofislamorada",
+  "name": "Coral Spawn Observation",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 425654,
+  "sn": "gorillaboats",
+  "name": "Valhalla Tour",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 425658,
+  "sn": "gorillaboats",
+  "name": "Excursion Tour",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 465319,
+  "sn": "gorillaboats",
+  "name": "Daily & Weekly Rentals",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 561229,
+  "sn": "gorillaboats",
+  "name": "Light Up Tour",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 34009,
+  "sn": "gulfstreamkeywest",
+  "name": "Summer Night Fishing - 7 P.M.",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 34012,
+  "sn": "gulfstreamkeywest",
+  "name": "Private Charter",
+  "tiers": [
+   {
+    "singular": "Private Charter",
+    "note": "",
+    "price": 0.0,
+    "min": 1,
+    "cls": "zero"
+   }
+  ],
+  "disposition": "zero_price",
+  "basis": "zero_price (2026-08-26): every live tier is $0 on the majority reading (Private Charter $0); price stays null (D-575); 4/4 dated readings 2026-08-26 (1/4 date-valid), 1 ladder shape(s), include_breakdown=yes, probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 583742,
+  "sn": "gulfstreamkeywest",
+  "name": "Say I Do, with an Ocean View",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 194193,
+  "sn": "gulfstreamkeywest",
+  "name": "Holiday 5pm Fishing trip",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 458144,
+  "sn": "havanafleet",
+  "name": "Weekend at The Marquesas",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 458155,
+  "sn": "havanafleet",
+  "name": "Havana Time Dock & Dine",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 458187,
+  "sn": "havanafleet",
+  "name": "Havana Time Island Adventure",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 574511,
+  "sn": "havanafleet",
+  "name": "Havana Sky Spa Excursion",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 574540,
+  "sn": "havanafleet",
+  "name": "Havana Moon Sunset Dinner Cruise",
+  "tiers": [
+   {
+    "singular": "Dinner Cruise 6 People",
+    "note": "Up to 12 People",
+    "price": 3600.0,
+    "min": 1,
+    "cls": "group"
+   }
+  ],
+  "disposition": "headcount_conflict",
+  "basis": "HELD for ruling: anchor label \"Dinner Cruise 6 People\" names 6 people while note/description says \"Up to 12 People\" \u2014 conflicting headcounts (D-649 flag); Dinner Cruise 6 People $3,600 [group]; 4/4 dated readings 2026-08-26 (4/4 date-valid), 1 ladder shape(s), include_breakdown=yes, probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 320502,
+  "sn": "hemingwayinkeywesttours",
+  "name": "Private Hemingway Food and Walking Tour",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 353758,
+  "sn": "hemingwayinkeywesttours",
+  "name": "Jimmy Buffett Tour (P)",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 646155,
+  "sn": "hemingwayinkeywesttours",
+  "name": "Hemingway Tour (P)",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 455368,
+  "sn": "hounddawgcharters",
+  "name": "Shark Trip",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 595852,
+  "sn": "islamoradafishingguidesandcharters",
+  "name": "Sunset Evening Tarpon Fishing",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 600209,
+  "sn": "islamoradafishingguidesandcharters",
+  "name": "Full Day Offshore",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 600222,
+  "sn": "islamoradafishingguidesandcharters",
+  "name": "Half Day Offshore",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 212505,
+  "sn": "islanddolphincare",
+  "name": "Shavasana Float",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 743742,
+  "sn": "islanderfloridakeys",
+  "name": "Islander's Fourth of July Celebration.",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 564167,
+  "sn": "keyhaw",
+  "name": "PRIVATE SUNSET 360 EXPERIENCE",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 110302,
+  "sn": "keylargoadventures",
+  "name": "Part-Day Multi-Activity Private Boat",
+  "tiers": [
+   {
+    "singular": "Half Day Charter",
+    "note": "Enter \"1\" here",
+    "price": 0.0,
+    "min": 1,
+    "cls": "zero"
+   }
+  ],
+  "disposition": "zero_price",
+  "basis": "zero_price (2026-08-26): every live tier is $0 on the majority reading (Half Day Charter $0 (Enter \"1\" here)); price stays null (D-575); 4/4 dated readings 2026-08-26 (4/4 date-valid), 1 ladder shape(s), include_breakdown=yes, probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 88416,
+  "sn": "keylargoadventures",
+  "name": "Large-Groups & Customized Charters",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 191677,
+  "sn": "keylargoadventures",
+  "name": "\"Ultimate Day\" Private All-Inclusive Charter",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 324618,
+  "sn": "keylargoadventures",
+  "name": "Boat Offline - Booked/Maintenance/NoCaptain",
+  "tiers": [
+   {
+    "singular": "Full Day Charter",
+    "note": "How Many Boats?",
+    "price": 0.0,
+    "min": 1,
+    "cls": "zero"
+   }
+  ],
+  "disposition": "zero_price",
+  "basis": "zero_price (2026-08-26): every live tier is $0 on the majority reading (Full Day Charter $0 (How Many Boats?)); price stays null (D-575); 4/4 dated readings 2026-08-26 (4/4 date-valid), 1 ladder shape(s), include_breakdown=yes, probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 326949,
+  "sn": "keylargoadventures",
+  "name": "Part-Day Private Sandbar Boat",
+  "tiers": [
+   {
+    "singular": "Half Day Charter",
+    "note": "Enter \"1\" here",
+    "price": 0.0,
+    "min": 1,
+    "cls": "zero"
+   }
+  ],
+  "disposition": "zero_price",
+  "basis": "zero_price (2026-08-26): every live tier is $0 on the majority reading (Half Day Charter $0 (Enter \"1\" here)); price stays null (D-575); 4/4 dated readings 2026-08-26 (4/4 date-valid), 1 ladder shape(s), include_breakdown=yes, probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 362229,
+  "sn": "keylargoadventures",
+  "name": "Full Day Private Sandbar Trip",
+  "tiers": [
+   {
+    "singular": "Full Day Charter",
+    "note": "6+ hours. Lunch Options. Select number of passengers below.",
+    "price": 0.0,
+    "min": 1,
+    "cls": "zero"
+   }
+  ],
+  "disposition": "zero_price",
+  "basis": "zero_price (2026-08-26): every live tier is $0 on the majority reading (Full Day Charter $0 (6+ hours. Lunch Options. Select number of passengers below.)); price stays null (D-575); 4/4 dated readings 2026-08-26 (4/4 date-valid), 1 ladder shape(s), include_breakdown=yes, probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 523262,
+  "sn": "keylargoadventures",
+  "name": "NEW Luxury Pontoon Boat - Sandbar, Snorkel, or Sightsee",
+  "tiers": [
+   {
+    "singular": "Half Day Charter",
+    "note": "4 hours. Does not include BBQ.  Price includes up to 6 people. Select additional passengers below.",
+    "price": 0.0,
+    "min": 1,
+    "cls": "zero"
+   }
+  ],
+  "disposition": "zero_price",
+  "basis": "zero_price (2026-08-26): every live tier is $0 on the majority reading (Half Day Charter $0 (4 hours. Does not include BBQ.  Price includes up to 6 people. Select additional passengers below.)); price stays null (D-575); 4/4 dated readings 2026-08-26 (4/4 date-valid), 1 ladder shape(s), include_breakdown=yes, probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 567318,
+  "sn": "keylargodivecenter",
+  "name": "Discover Scuba Diving Pool Session",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 349812,
+  "sn": "keylargodivecenter",
+  "name": "PADI ReActivate Scuba Refresher Course",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 349845,
+  "sn": "keylargodivecenter",
+  "name": "PADI Advanced Open Water Diver Course",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 349924,
+  "sn": "keylargodivecenter",
+  "name": "PADI Enriched Air Diver Course",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 350047,
+  "sn": "keylargodivecenter",
+  "name": "PADI Rescue Diver Course",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 655558,
+  "sn": "keylargodivecenter",
+  "name": "PADI Reef Renewal USA Level 1 Diver Course",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 26238,
+  "sn": "keylargoprincess",
+  "name": "Private Charter on the Key Largo Princess",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 551228,
+  "sn": "keylimebiketours",
+  "name": "Key Lime Festival Tour",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 605482,
+  "sn": "keylimebiketours",
+  "name": "Half Day Rental",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 605483,
+  "sn": "keylimebiketours",
+  "name": "Hourly Rental",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 741622,
+  "sn": "keyskartz",
+  "name": "Marathon and Middle Keys 4 Seater Golf Cart Rental",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 741629,
+  "sn": "keyskartz",
+  "name": "Marathon Key and Middle Keys 6 Seater Golf Cart Rental",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 167087,
+  "sn": "keywesthunt",
+  "name": "Bachelor/ette Private Hunt",
+  "tiers": [
+   {
+    "singular": "Bachelor/ette or Birthday Group",
+    "note": "Flat rate for up to 10 people",
+    "price": 300.0,
+    "min": 1,
+    "cls": "group"
+   },
+   {
+    "singular": "Additional Participant",
+    "note": "11 or more people",
+    "price": 25.0,
+    "min": 1,
+    "cls": "never"
+   }
+  ],
+  "disposition": "unit_plus_increment",
+  "basis": "HELD for ruling (unit+increment ladder is ambiguous \u2014 memory reference_fareharbor_unit_plus_increment_is_ambiguous): anchor \"Bachelor/ette or Birthday Group\" $300 (note \"Flat rate for up to 10 people\") with increment tier(s) Additional Participant $25 (11 or more people); ladder Bachelor/ette or Birthday Group $300 [group] / Additional Participant $25 [never]; 4/4 dated readings 2026-08-26 (4/4 date-valid), 1 ladder shape(s), include_breakdown=yes, probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 167094,
+  "sn": "keywesthunt",
+  "name": "Bachelor/ette Photo Themed Private Hunt",
+  "tiers": [
+   {
+    "singular": "Bachelor/ette or Birthday Group",
+    "note": "Flat rate for up to 10 people",
+    "price": 400.0,
+    "min": 1,
+    "cls": "group"
+   },
+   {
+    "singular": "Additional Participant",
+    "note": "11 or more people",
+    "price": 37.5,
+    "min": 1,
+    "cls": "never"
+   }
+  ],
+  "disposition": "unit_plus_increment",
+  "basis": "HELD for ruling (unit+increment ladder is ambiguous \u2014 memory reference_fareharbor_unit_plus_increment_is_ambiguous): anchor \"Bachelor/ette or Birthday Group\" $400 (note \"Flat rate for up to 10 people\") with increment tier(s) Additional Participant $37.50 (11 or more people); ladder Bachelor/ette or Birthday Group $400 [group] / Additional Participant $37.50 [never]; 4/4 dated readings 2026-08-26 (4/4 date-valid), 1 ladder shape(s), include_breakdown=yes, probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 167099,
+  "sn": "keywesthunt",
+  "name": "Corporate and Team Building Event",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 395018,
+  "sn": "keywesthunt",
+  "name": "Birthday Photo Themed Private Hunt",
+  "tiers": [
+   {
+    "singular": "Bachelor/ette or Birthday Group",
+    "note": "Flat rate for up to 10 people",
+    "price": 400.0,
+    "min": 1,
+    "cls": "group"
+   },
+   {
+    "singular": "Additional Participant",
+    "note": "11 or more people",
+    "price": 37.5,
+    "min": 1,
+    "cls": "never"
+   }
+  ],
+  "disposition": "unit_plus_increment",
+  "basis": "HELD for ruling (unit+increment ladder is ambiguous \u2014 memory reference_fareharbor_unit_plus_increment_is_ambiguous): anchor \"Bachelor/ette or Birthday Group\" $400 (note \"Flat rate for up to 10 people\") with increment tier(s) Additional Participant $37.50 (11 or more people); ladder Bachelor/ette or Birthday Group $400 [group] / Additional Participant $37.50 [never]; 4/4 dated readings 2026-08-26 (4/4 date-valid), 1 ladder shape(s), include_breakdown=yes, probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 395019,
+  "sn": "keywesthunt",
+  "name": "Birthday Private Hunt",
+  "tiers": [
+   {
+    "singular": "Bachelor/ette or Birthday Group",
+    "note": "Flat rate for up to 10 people",
+    "price": 300.0,
+    "min": 1,
+    "cls": "group"
+   },
+   {
+    "singular": "Additional Participant",
+    "note": "11 or more people",
+    "price": 25.0,
+    "min": 1,
+    "cls": "never"
+   }
+  ],
+  "disposition": "unit_plus_increment",
+  "basis": "HELD for ruling (unit+increment ladder is ambiguous \u2014 memory reference_fareharbor_unit_plus_increment_is_ambiguous): anchor \"Bachelor/ette or Birthday Group\" $300 (note \"Flat rate for up to 10 people\") with increment tier(s) Additional Participant $25 (11 or more people); ladder Bachelor/ette or Birthday Group $300 [group] / Additional Participant $25 [never]; 4/4 dated readings 2026-08-26 (4/4 date-valid), 1 ladder shape(s), include_breakdown=yes, probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 343967,
+  "sn": "keywestpromotions",
+  "name": "Lighted Boat Parade",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 255288,
+  "sn": "laidbackkeywest",
+  "name": "Lobster Mini Season",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 3877,
+  "sn": "lazydog",
+  "name": "PaddleFit Class",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 591474,
+  "sn": "learntosailkeywest",
+  "name": "Private Lesson",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 257602,
+  "sn": "lowtidecharter",
+  "name": "4 Hour Sandbar Sunset Trip",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 527596,
+  "sn": "lowtidecharter",
+  "name": "2 hour sunset trip",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 527597,
+  "sn": "lowtidecharter",
+  "name": "6 hour Light tackle fishing",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 632173,
+  "sn": "makingmemoriescharters",
+  "name": "Custom Sunset Cruise - Luxury on the Water",
+  "tiers": [
+   {
+    "singular": "Private Charter",
+    "note": "",
+    "price": 0.0,
+    "min": 1,
+    "cls": "zero"
+   }
+  ],
+  "disposition": "zero_price",
+  "basis": "zero_price (2026-08-26): every live tier is $0 on the majority reading (Private Charter $0); price stays null (D-575); 2/4 dated readings 2026-08-26 (1/2 date-valid), 1 ladder shape(s), include_breakdown=yes, probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 662908,
+  "sn": "marinelabunderseapark",
+  "name": "Jules' Aquanaut Adventure",
+  "tiers": [
+   {
+    "singular": "Ticket",
+    "note": "",
+    "price": 0.0,
+    "min": 1,
+    "cls": "zero"
+   }
+  ],
+  "disposition": "zero_price",
+  "basis": "zero_price (2026-08-26): every live tier is $0 on the majority reading (Ticket $0); price stays null (D-575); 4/4 dated readings 2026-08-26 (evidence from next-departure echo, 0 date-valid on probe dates (D-638)), 1 ladder shape(s), include_breakdown=yes, probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 662915,
+  "sn": "marinelabunderseapark",
+  "name": "Lagoon Student Admission",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 53028,
+  "sn": "morningstarcharters",
+  "name": "Refresher Sailing Class",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 52568,
+  "sn": "morningstarcharters",
+  "name": "Sailing School | Beginner - Advanced",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 681742,
+  "sn": "morningstarcharters",
+  "name": "ASA 101 Instructor Course Challenge",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 50710,
+  "sn": "morningstarcharters",
+  "name": "Private Sailing Catamaran + Guided Kayak Eco Tour",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 50703,
+  "sn": "morningstarcharters",
+  "name": "Full Day Catalina 22' Sailboat Rental",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 536237,
+  "sn": "morningstarcharters",
+  "name": "Full Day Catalina 25' Sailboat Rental",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 50697,
+  "sn": "morningstarcharters",
+  "name": "Multi-Day Sailing/Power Catamaran Bareboat Rental",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 699858,
+  "sn": "morningstarcharters",
+  "name": "ASA 105/106 Traditional Course",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 182889,
+  "sn": "namastekw",
+  "name": "CHAKRA HEALING SOUND BATH",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 454319,
+  "sn": "namastekw",
+  "name": "SYNERGY ROOM ENERGY CIRCUIT",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 591972,
+  "sn": "namastekw",
+  "name": "UNPLUG & AWAKEN RETREAT for TWO",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 591222,
+  "sn": "namastekw",
+  "name": "SOUND MASSAGE SESSION",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 182898,
+  "sn": "namastekw",
+  "name": "PRIVATE Chakra Healing Sound Bath",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 592634,
+  "sn": "namastekw",
+  "name": "DETOX & DE-STRESS RETREAT",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 592629,
+  "sn": "namastekw",
+  "name": "REST & RENEW RETREAT",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 592632,
+  "sn": "namastekw",
+  "name": "RECHARGE & RESET RETREAT",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 187320,
+  "sn": "namastekw",
+  "name": "TUNING FORK SESSION - 60 MIN BODY BALANCING",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 205980,
+  "sn": "namastekw",
+  "name": "TUNING FORK SESSION - 90 MIN BODY BALANCING",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 552193,
+  "sn": "namastekw",
+  "name": "HEALING TEMPLE RETREAT - BASIC",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 554271,
+  "sn": "namastekw",
+  "name": "HEALING TEMPLE RETREAT - DELUXE",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 407219,
+  "sn": "namastekw",
+  "name": "ELEVATE Private Retreat",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 211493,
+  "sn": "namastekw",
+  "name": "RE-WIRE ME RETREAT (solo)",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 391992,
+  "sn": "namastekw",
+  "name": "REST + RESET Private Retreat for TWO",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 393131,
+  "sn": "namastekw",
+  "name": "REST + RESET Private Retreat for ONE (solo)",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 555403,
+  "sn": "namastekw",
+  "name": "AWAKEN SOUND HEALER 3 DAY TRAINING - 2024 & beyond",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 326154,
+  "sn": "namastekw",
+  "name": "ZEN PADDLE",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 187465,
+  "sn": "namastekw",
+  "name": "BIOFIELD CLEARING + ALIGNMENT",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 343951,
+  "sn": "namastekw",
+  "name": "BIO-WELL EXPRESS ENERGY ASSESSMENT",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 182887,
+  "sn": "namastekw",
+  "name": "SACRED SOUND SUP SPA",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 187480,
+  "sn": "namastekw",
+  "name": "IONIC DETOX FOOTBATH",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 466672,
+  "sn": "namastekw",
+  "name": "SOUND HEALING + DOLPHIN SWIM at Dolphin Research Center",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 350981,
+  "sn": "namastekw",
+  "name": "VIRTUAL NEW YEAR'S EVE INTENTION SETTING SOUND BATH",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 204565,
+  "sn": "namastekw",
+  "name": "IN-PERSON NEW YEAR'S EVE INTENTION SETTING SOUND BATH",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 605165,
+  "sn": "namastekw",
+  "name": "EE SYSTEM RECHARGE Session",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 406827,
+  "sn": "nauti-charters",
+  "name": "Overnight Island Escape",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 406838,
+  "sn": "nauti-charters",
+  "name": "Daytime Sailing Adventures",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 568353,
+  "sn": "nauti-charters",
+  "name": "4 Hour Boat Charter",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 568368,
+  "sn": "nauti-charters",
+  "name": "6 Hour Boat Charter",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 568370,
+  "sn": "nauti-charters",
+  "name": "8 Hour Boat Charter",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 571494,
+  "sn": "nauti-charters",
+  "name": "The Deep Dive Retreat",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 572478,
+  "sn": "nauti-charters",
+  "name": "Labor Day Luxury Catamaran Sunset Cruise",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 562289,
+  "sn": "nudecharters",
+  "name": "Overnight Charter",
+  "tiers": [
+   {
+    "singular": "Overnight Charter",
+    "note": "",
+    "price": 0.0,
+    "min": 1,
+    "cls": "zero"
+   }
+  ],
+  "disposition": "zero_price",
+  "basis": "zero_price (2026-08-26): every live tier is $0 on the majority reading (Overnight Charter $0); price stays null (D-575); 4/4 dated readings 2026-08-26 (4/4 date-valid), 1 ladder shape(s), include_breakdown=yes, probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 562290,
+  "sn": "nudecharters",
+  "name": "Multi-Day Charter",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 460374,
+  "sn": "outboundcharters",
+  "name": "Offshore Fishing",
+  "tiers": [
+   {
+    "singular": "3/4 Day",
+    "note": "6 Hours",
+    "price": 1500.0,
+    "min": 1,
+    "cls": "variant"
+   },
+   {
+    "singular": "Full Day",
+    "note": "8 Hours",
+    "price": 1750.0,
+    "min": 1,
+    "cls": "variant"
+   }
+  ],
+  "disposition": "variant_only",
+  "basis": "HELD for ruling: every priced tier is an unnamed duration/variant tier (3/4 Day $1,500 [variant] / Full Day $1,750 [variant]) and neither label, note, sibling nor an age-concession tier says per-person or whole-unit; not guessed; 4/4 dated readings 2026-08-26 (4/4 date-valid), 1 ladder shape(s), include_breakdown=yes, probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 460378,
+  "sn": "outboundcharters",
+  "name": "Reef and Wreck Fishing",
+  "tiers": [
+   {
+    "singular": "Half Day Reef",
+    "note": "4 Hours",
+    "price": 950.0,
+    "min": 1,
+    "cls": "variant"
+   },
+   {
+    "singular": "3/4 Day Reef and Wreck",
+    "note": "6 Hours",
+    "price": 1200.0,
+    "min": 1,
+    "cls": "variant"
+   },
+   {
+    "singular": "Full Day Reef and Wreck",
+    "note": "8 Hours",
+    "price": 1500.0,
+    "min": 1,
+    "cls": "variant"
+   }
+  ],
+  "disposition": "variant_only",
+  "basis": "HELD for ruling: every priced tier is an unnamed duration/variant tier (Half Day Reef $950 [variant] / 3/4 Day Reef and Wreck $1,200 [variant] / Full Day Reef and Wreck $1,500 [variant]) and neither label, note, sibling nor an age-concession tier says per-person or whole-unit; not guessed; 4/4 dated readings 2026-08-26 (4/4 date-valid), 1 ladder shape(s), include_breakdown=yes, probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 481847,
+  "sn": "outboundcharters",
+  "name": "Lobster Bullynetting",
+  "tiers": [
+   {
+    "singular": "Private Trip \u2022 One to Two People",
+    "note": "",
+    "price": 700.0,
+    "min": 1,
+    "cls": "group"
+   },
+   {
+    "singular": "Private Trip \u2022 Three People",
+    "note": "",
+    "price": 750.0,
+    "min": 1,
+    "cls": "group"
+   },
+   {
+    "singular": "Private Trip \u2022 Four People",
+    "note": "",
+    "price": 800.0,
+    "min": 1,
+    "cls": "group"
+   }
+  ],
+  "disposition": "unit_underivable",
+  "basis": "HELD for ruling (D-630): whole-unit anchor \"Private Trip \u2022 One to Two People\" $700 under D-614/D-635 whole-unit / party-size ladder: floor total anchors (never divided by headcount) but no vessel / vehicle / rental word in tier label, note or product name; ladder Private Trip \u2022 One to Two People $700 [group] / Private Trip \u2022 Three People $750 [group] / Private Trip \u2022 Four People $800 [group]; 4/4 dated readings 2026-08-26 (4/4 date-valid), 1 ladder shape(s), include_breakdown=yes, probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 526263,
+  "sn": "outboundcharters",
+  "name": "Backcountry / Tarpon Trips",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 628668,
+  "sn": "outboundcharters",
+  "name": "Tarpon Creek Marina Offshore Fishing",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 628673,
+  "sn": "outboundcharters",
+  "name": "Tarpon Creek Marina Reef Fishing",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 566997,
+  "sn": "paragondiving",
+  "name": "Night & Limited Visibility",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 566217,
+  "sn": "paragondiving",
+  "name": "Divemaster",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 566864,
+  "sn": "paragondiving",
+  "name": "Assistant Instructor",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 566865,
+  "sn": "paragondiving",
+  "name": "Open Water Instructor",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 567534,
+  "sn": "paragondiving",
+  "name": "Specialty Instructor (Single)",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 567539,
+  "sn": "paragondiving",
+  "name": "Specialty Instructor (Bundle)",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 567546,
+  "sn": "paragondiving",
+  "name": "SSI Professional Crossover (DM)",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 573481,
+  "sn": "paragondiving",
+  "name": "SSI Professional Crossover (AI)",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 657968,
+  "sn": "paragondiving",
+  "name": "SSI Professional Crossover (OWI)",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 650694,
+  "sn": "reelparadisecharters",
+  "name": "Boat Delivery Services",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 620593,
+  "sn": "reelsharpsportfishing",
+  "name": "Inshore Fishing Charter",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 620601,
+  "sn": "reelsharpsportfishing",
+  "name": "Nearshore Fishing Charters",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 620604,
+  "sn": "reelsharpsportfishing",
+  "name": "Tarpon Fishing Charters",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 620609,
+  "sn": "reelsharpsportfishing",
+  "name": "Cayo Costa Shelling & Nature Trips",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 620841,
+  "sn": "reelsharpsportfishing",
+  "name": "Islamorada Fishing Charter",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 394219,
+  "sn": "ridethelagoon",
+  "name": "Private Advanced Cable Reservation",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 382495,
+  "sn": "ridethelagoon",
+  "name": "Intro to Kite Flying",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 382499,
+  "sn": "ridethelagoon",
+  "name": "Advanced Kiteboard Lesson",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 382743,
+  "sn": "ridethelagoon",
+  "name": "Basic Sailing Lessons",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 382717,
+  "sn": "ridethelagoon",
+  "name": "Guided Downwinder",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 742608,
+  "sn": "ridethelagoon",
+  "name": "Aquabana 1HR",
+  "tiers": [
+   {
+    "singular": "One Session",
+    "note": "",
+    "price": 45.0,
+    "min": 1,
+    "cls": "variant"
+   },
+   {
+    "singular": "Two Session",
+    "note": "",
+    "price": 55.0,
+    "min": 1,
+    "cls": "variant"
+   }
+  ],
+  "disposition": "variant_only",
+  "basis": "HELD for ruling: every priced tier is an unnamed duration/variant tier (One Session $45 [variant] / Two Session $55 [variant]) and neither label, note, sibling nor an age-concession tier says per-person or whole-unit; not guessed; 4/4 dated readings 2026-08-26 (4/4 date-valid), 2 ladder shape(s), include_breakdown=yes, probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 259070,
+  "sn": "robertthedollexperience",
+  "name": "Sloan's Trifecta of Terror",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 207664,
+  "sn": "sail-keywest",
+  "name": "PRIVATE CHARTER--Key West Morning or Afternoon",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 522626,
+  "sn": "sail-keywest",
+  "name": "Astronomer Guided Stargazing Cruise Aboard Schooner America 2.0",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 629507,
+  "sn": "sail-keywest",
+  "name": "Mother's Day Brunch Sail on Schooner America 2.0",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 526630,
+  "sn": "sail-keywest",
+  "name": "Key West Stargazing Cruise Aboard Schooner America 2.0",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 610253,
+  "sn": "sail-keywest",
+  "name": "Haunted Seas: Nautical Superstitions and Ghost Stories on Schooner America 2.0",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 621179,
+  "sn": "sail-keywest",
+  "name": "Follow the Mermaid...",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 615448,
+  "sn": "sail-keywest",
+  "name": "Live Jazz Night Sail Aboard Schooner America 2.0",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 39898,
+  "sn": "sail-keywest",
+  "name": "Retail ***STAFF USE ONLY***",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 631181,
+  "sn": "sailargonavis",
+  "name": "Sunset to Stage: Wheeland Brothers Dockside Party",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 725817,
+  "sn": "sailargonavis",
+  "name": "A Sailor's Sun: Sunset Sail",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 587427,
+  "sn": "sailargonavis",
+  "name": "St. Pawtrick's Day \u2618\ufe0f \ud83d\udc3e Bow Wow Brunch",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 621612,
+  "sn": "sailargonavis",
+  "name": "Mother's Day Brunch Sail",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 596326,
+  "sn": "sailargonavis",
+  "name": "New Year's Day Brunch",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 625334,
+  "sn": "sailargonavis",
+  "name": "Conch Republic Great Sea Battle Reenactment",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 562766,
+  "sn": "sailargonavis",
+  "name": "Private Charter Inquiry",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 620549,
+  "sn": "sailargonavis",
+  "name": "Easter Brunch Sail",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 635844,
+  "sn": "sailargonavis",
+  "name": "\"The Mango Murders\"  Brunch Sail",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 707753,
+  "sn": "sailargonavis",
+  "name": "Sips Ahoy!  Afternoon Tasting Cruise for Reef Relief",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 346344,
+  "sn": "sailawaykeywest",
+  "name": "After Parr T - Marquis 72 Motor Yacht - Multi Day Private Charter",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 356847,
+  "sn": "sailawaykeywest",
+  "name": "Parr T On: Sea Ray 60: Multi-Day Private Charter",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 502723,
+  "sn": "sailawaykeywest",
+  "name": "Seawind 1160 \"Sea Wanderer\" Multi-Day Private Charter",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 678497,
+  "sn": "sailbluq",
+  "name": "Open to All Boat Race Trip",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 668498,
+  "sn": "sailbluq",
+  "name": "\u26f5\ufe0f All Male Day Trip \ud83c\udff3\ufe0f\u200d\ud83c\udf08 Aboard SQUID",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 727863,
+  "sn": "sailbluq",
+  "name": "Open to all Kayak + Guided Snorkel & Morning Sail Aboard Java Cat",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 674556,
+  "sn": "sailbluq",
+  "name": "Open to All ADULTS Clothing Optional during FANTASY FEST",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 532283,
+  "sn": "sailbluq",
+  "name": "The Sailor Songwriters",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 555056,
+  "sn": "sailbluq",
+  "name": "Sunset Sail + Fireworks 4TH OF JULY EVENT!!!",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 570035,
+  "sn": "sailbluq",
+  "name": "Tropical Heat",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 570038,
+  "sn": "sailbluq",
+  "name": "Bare It All Weekend",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 635028,
+  "sn": "sailschoonerhindu",
+  "name": "Full Buck Moon on the Schooner Hindu",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 654488,
+  "sn": "sailschoonerhindu",
+  "name": "SAYA hosts: The Hooligan Navy Sail",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 743149,
+  "sn": "sailschoonerhindu",
+  "name": "Schooner Appledore IV Independence Day Fireworks Sail",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 232507,
+  "sn": "saltybottomboats",
+  "name": "Salty Bottom Party Boat (Up to 36 passnegers)",
+  "tiers": [
+   {
+    "singular": "Four Hours",
+    "note": "Base rate for 8 People | If more than 8 people attending, please advise in the drop-down",
+    "price": 1299.0,
+    "min": 1,
+    "cls": "group"
+   },
+   {
+    "singular": "Six Hours",
+    "note": "Base rate for 8 People | If more than 8 people attending, please advise in the drop-down",
+    "price": 1699.0,
+    "min": 1,
+    "cls": "group"
+   }
+  ],
+  "disposition": "unit_plus_increment",
+  "basis": "HELD for ruling (unit+increment ladder is ambiguous \u2014 memory reference_fareharbor_unit_plus_increment_is_ambiguous): anchor \"Four Hours\" $1,299 (note \"Base rate for 8 People | If more than 8 people attending, please advise in the drop-down\") with increment tier(s) Six Hours $1,699 (Base rate for 8 People | If more than 8 people attending, please advise in the drop-down), Four Hours $1,299 (Base rate for 8 People | If more than 8 people attending, please advise in the drop-down); ladder Four Hours $1,299 [group] / Six Hours $1,699 [group]; 4/4 dated readings 2026-08-26 (3/4 date-valid), 2 ladder shape(s), include_breakdown=yes, probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 698002,
+  "sn": "saltybottomboats",
+  "name": "Salty Max Center Console (up to 6 Passengers)",
+  "tiers": [
+   {
+    "singular": "Two Hour Sunset",
+    "note": "",
+    "price": 425.0,
+    "min": 1,
+    "cls": "group"
+   },
+   {
+    "singular": "Three Hours",
+    "note": "",
+    "price": 599.0,
+    "min": 1,
+    "cls": "group"
+   },
+   {
+    "singular": "Four Hours",
+    "note": "Base rate for 8 People | If more than 8 people attending, please advise in the drop-down",
+    "price": 729.0,
+    "min": 1,
+    "cls": "group"
+   },
+   {
+    "singular": "Six Hours",
+    "note": "Base rate for 8 People | If more than 8 people attending, please advise in the drop-down",
+    "price": 929.0,
+    "min": 1,
+    "cls": "group"
+   }
+  ],
+  "disposition": "unit_plus_increment",
+  "basis": "HELD for ruling (unit+increment ladder is ambiguous \u2014 memory reference_fareharbor_unit_plus_increment_is_ambiguous): anchor \"Two Hour Sunset\" $425 (note \"\") with increment tier(s) Four Hours $729 (Base rate for 8 People | If more than 8 people attending, please advise in the drop-down), Six Hours $929 (Base rate for 8 People | If more than 8 people attending, please advise in the drop-down); ladder Two Hour Sunset $425 [group] / Three Hours $599 [group] / Four Hours $729 [group] / Six Hours $929 [group]; 4/4 dated readings 2026-08-26 (4/4 date-valid), 1 ladder shape(s), include_breakdown=yes, probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 570578,
+  "sn": "sandandseakeywestcharters",
+  "name": "Private Scuba Diving Charter",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 658092,
+  "sn": "sanddollarboatrentalskeylargo",
+  "name": "#4  Blue Hurricane deck boat 23.7 ft seats 12",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 658090,
+  "sn": "sanddollarboatrentalskeylargo",
+  "name": "#7 Tan hurricane deck boat 23.7 feet seats 12",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 570713,
+  "sn": "schell-me",
+  "name": "Ride the Sombrero at Sombrero",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 570716,
+  "sn": "schell-me",
+  "name": "Private Tubing",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 568993,
+  "sn": "seaboundcharters",
+  "name": "Sunset Cruise",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 568996,
+  "sn": "seaboundcharters",
+  "name": "Sandbar Adventure",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 569000,
+  "sn": "seaboundcharters",
+  "name": "Wreck & Reef Fishing",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 569010,
+  "sn": "seaboundcharters",
+  "name": "Offshore Fishing",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 569017,
+  "sn": "seaboundcharters",
+  "name": "Swordfishing",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 569020,
+  "sn": "seaboundcharters",
+  "name": "Deep Dropping Fishing",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 569022,
+  "sn": "seaboundcharters",
+  "name": "Lobstering",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 459867,
+  "sn": "seadwellers",
+  "name": "4 Hour Private Snorkel/Dive Charters",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 285436,
+  "sn": "seadwellers",
+  "name": "SSI ITC",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 606311,
+  "sn": "seahorsewateradventures",
+  "name": "Scuba Diving",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 617819,
+  "sn": "sealabcharters",
+  "name": "Full Day Charter",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 617823,
+  "sn": "sealabcharters",
+  "name": "Half Day Charter",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 617826,
+  "sn": "sealabcharters",
+  "name": "Sunset Cruise",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 517340,
+  "sn": "seamonkeydivers",
+  "name": "2 Hr. Private Charter Trip / Snorkel / Sandbar / Sunset Cruise or Eco-Tour - Pick One! 1-3 Persons $400 or 4-6 Persons $455",
+  "tiers": [
+   {
+    "singular": "2 Hr. Private Snorkel/Sandbar/Sunset Cruise/Eco-Tour 1-3 pass.",
+    "note": "Private Tour Up to 6 passengers",
+    "price": 0.0,
+    "min": 1,
+    "cls": "zero"
+   }
+  ],
+  "disposition": "zero_price",
+  "basis": "zero_price (2026-08-26): every live tier is $0 on the majority reading (2 Hr. Private Snorkel/Sandbar/Sunset Cruise/Eco-Tour 1-3 pass. $0 (Private Tour Up to 6 passengers)); price stays null (D-575); 4/4 dated readings 2026-08-26 (4/4 date-valid), 1 ladder shape(s), include_breakdown=yes, probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 587954,
+  "sn": "seamonkeydivers",
+  "name": "2 Hr. Shared Snorkeling Tour for 1-6 $89.00 per person 1-6 persons - 3 person minimum",
+  "tiers": [
+   {
+    "singular": "Shared Snorkeling Tour for 1-6 Persons Minimum 3 Persons 89.00",
+    "note": "$89.00 per person 1-6 persons 3 person minimum",
+    "price": 98.11,
+    "min": 3,
+    "cls": "group"
+   }
+  ],
+  "disposition": "shared_named_charter",
+  "basis": "HELD for ruling: product name says \"Shared\" but the anchor tier \"Shared Snorkeling Tour for 1-6 Persons Minimum 3 Persons 89.00\" $98.11 is group-shaped; per-seat vs whole-boat undecidable from the ladder; Shared Snorkeling Tour for 1-6 Persons Minimum 3 Persons 89.00 $98.11 [group]; 4/4 dated readings 2026-08-26 (4/4 date-valid), 1 ladder shape(s), include_breakdown=yes, probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 517334,
+  "sn": "seamonkeydivers",
+  "name": "PADI Courses Call for Availability and Pricing",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 682854,
+  "sn": "seamonkeydivers",
+  "name": "PADI 2 Day Open Water Referral Dives - Must Call to Book",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 564026,
+  "sn": "seamonkeydivers",
+  "name": "Fishing Trips - Reef or Trolling",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 644946,
+  "sn": "seastays",
+  "name": "Normandee 40ft Beneteau Sailboat",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 644977,
+  "sn": "seastays",
+  "name": "Sparhawk",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 681453,
+  "sn": "snorkelthekeys",
+  "name": "3.5 Hour Private Sailing Tours",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 487877,
+  "sn": "snuba-keywest",
+  "name": "Private Scuba Charter - up to 6 Divers, 2 Tank Dive",
+  "tiers": [
+   {
+    "singular": "Certified Diver",
+    "note": "",
+    "price": 0.0,
+    "min": 1,
+    "cls": "zero"
+   },
+   {
+    "singular": "Adult Snorkeler",
+    "note": "Includes Gear",
+    "price": 0.0,
+    "min": 1,
+    "cls": "zero"
+   },
+   {
+    "singular": "Child Snorkeler",
+    "note": "Includes Gear",
+    "price": 0.0,
+    "min": 1,
+    "cls": "zero"
+   },
+   {
+    "singular": "Rider",
+    "note": "",
+    "price": 0.0,
+    "min": 1,
+    "cls": "zero"
+   }
+  ],
+  "disposition": "zero_price",
+  "basis": "zero_price (2026-08-26): every live tier is $0 on the majority reading (Certified Diver $0 / Adult Snorkeler $0 (Includes Gear) / Child Snorkeler $0 (Includes Gear) / Rider $0); price stays null (D-575); 4/4 dated readings 2026-08-26 (4/4 date-valid), 1 ladder shape(s), include_breakdown=yes, probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 487893,
+  "sn": "snuba-keywest",
+  "name": "SNUBA Key West's PADI Divemaster Program",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 731081,
+  "sn": "snuba-keywest",
+  "name": "Key West Cocktail Cruise 4th of July - Fireworks Sunset - Craft Cocktails, Craft Beer and Wine , Public Charter",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 653005,
+  "sn": "sofloeco",
+  "name": "Snorkeling Tour",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 653007,
+  "sn": "sofloeco",
+  "name": "Historic Island & Ghost Town Tour",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 653013,
+  "sn": "sofloeco",
+  "name": "Illuminated Night Tour",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 603454,
+  "sn": "southernmostparknplay",
+  "name": "Child Trailer/Stroller fo Pedal Bikes",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 606292,
+  "sn": "southernmostparknplay",
+  "name": "Standard Adult Tricycle",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 439802,
+  "sn": "southpointdiverskw",
+  "name": "Try Scuba Diving",
+  "tiers": [
+   {
+    "singular": "Person",
+    "note": "",
+    "price": 0.0,
+    "min": 1,
+    "cls": "zero"
+   }
+  ],
+  "disposition": "zero_price",
+  "basis": "zero_price (2026-08-26): every live tier is $0 on the majority reading (Person $0); price stays null (D-575); 4/4 dated readings 2026-08-26 (4/4 date-valid), 1 ladder shape(s), include_breakdown=yes, probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 89918,
+  "sn": "southpointdiverskw",
+  "name": "Morning Reef Dive",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 273745,
+  "sn": "southpointdiverskw",
+  "name": "First Responder",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 535576,
+  "sn": "southpointdiverskw",
+  "name": "Debris Cleanup",
+  "tiers": [
+   {
+    "singular": "Certified Diver with Gear Package",
+    "note": "Tanks, weights, BCD & regulator (wetsuit if need)",
+    "price": 0.0,
+    "min": 1,
+    "cls": "zero"
+   }
+  ],
+  "disposition": "zero_price",
+  "basis": "zero_price (2026-08-26): every live tier is $0 on the majority reading (Certified Diver with Gear Package $0 (Tanks, weights, BCD & regulator (wetsuit if need))); price stays null (D-575); 3/4 dated readings 2026-08-26 (1/3 date-valid), 1 ladder shape(s), include_breakdown=yes, probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 590476,
+  "sn": "southpointdiverskw",
+  "name": "Coral Health Experience",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 500176,
+  "sn": "springadventures",
+  "name": "Key Largo - 2 Day Open Water Cert Course - Call for Booking",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 497881,
+  "sn": "springadventures",
+  "name": "SDI or PADI 2 Day - Rescue Diver Certification Course",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 585921,
+  "sn": "sundancewatersports",
+  "name": "Bayside Booze Bash",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 645330,
+  "sn": "sundancewatersports",
+  "name": "Happy Cat Sandbar",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 702755,
+  "sn": "sunsetsailkeywest",
+  "name": "Conch Republic Bloody Battle on When And If",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 716573,
+  "sn": "sunsetsailkeywest",
+  "name": "Conch Republic Bloody Battle on Liberty Clipper",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 271043,
+  "sn": "sunsetwatersportskeywest",
+  "name": "Key West Lighted Boat Parade",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 271041,
+  "sn": "sunsetwatersportskeywest",
+  "name": "Stock Island Lighted Boat Parade",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 434577,
+  "sn": "sunsetwatersportskeywest",
+  "name": "Spring Break Booze Cruise",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 682597,
+  "sn": "sunsetwatersportskeywest",
+  "name": "Private Sandbar Charter Inquiry",
+  "tiers": [
+   {
+    "singular": "Questionnaire",
+    "note": "",
+    "price": 0.0,
+    "min": 1,
+    "cls": "zero"
+   }
+  ],
+  "disposition": "zero_price",
+  "basis": "zero_price (2026-08-26): every live tier is $0 on the majority reading (Questionnaire $0); price stays null (D-575); 4/4 dated readings 2026-08-26 (4/4 date-valid), 1 ladder shape(s), include_breakdown=yes, probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 640672,
+  "sn": "sunshinecoastadventures",
+  "name": "Women Only Sailing Class",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 643073,
+  "sn": "sunshinecoastadventures",
+  "name": "ASA 114 - Cruising Catamaran contact us for availabilities info@sunshinesailing.com",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 699985,
+  "sn": "sunshinecoastadventures",
+  "name": "ASA challenge ASA101-104 certifications",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 608734,
+  "sn": "thebeachweekendkeywest",
+  "name": "Scuba & Snorkel Gear Rentals",
+  "tiers": [
+   {
+    "singular": "Tank Rental",
+    "note": "",
+    "price": 0.0,
+    "min": 1,
+    "cls": "zero"
+   },
+   {
+    "singular": "Wetsuit Rental",
+    "note": "",
+    "price": 0.0,
+    "min": 1,
+    "cls": "zero"
+   },
+   {
+    "singular": "Mask & Fins Rental",
+    "note": "",
+    "price": 0.0,
+    "min": 1,
+    "cls": "zero"
+   },
+   {
+    "singular": "BCD W/Computer & Regulator Rental",
+    "note": "",
+    "price": 0.0,
+    "min": 1,
+    "cls": "zero"
+   },
+   {
+    "singular": "Weight Belt Rental",
+    "note": "",
+    "price": 0.0,
+    "min": 1,
+    "cls": "zero"
+   },
+   {
+    "singular": "Full Package Rental",
+    "note": "Includes: Tank, Wetsuit, Mask&Fins, BCD W/Comp&Regulator, Weight Belt",
+    "price": 0.0,
+    "min": 1,
+    "cls": "zero"
+   }
+  ],
+  "disposition": "zero_price",
+  "basis": "zero_price (2026-08-26): every live tier is $0 on the majority reading (Tank Rental $0 / Wetsuit Rental $0 / Mask & Fins Rental $0 / BCD W/Computer & Regulator Rental $0 / Weight Belt Rental $0 / Full Package Rental $0 (Includes: Tank, Wetsuit, Mask&Fins, BCD W/Comp&Regulator, Weight Belt)); price stays null (D-575); 4/4 dated readings 2026-08-26 (4/4 date-valid), 1 ladder shape(s), include_breakdown=yes, probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 522394,
+  "sn": "thebordencompany",
+  "name": "Reef and Wreck Fishing (snapper, Grouper, Mackerel, Cobia, Permit)",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 522413,
+  "sn": "thebordencompany",
+  "name": "Marathon Family Fun day",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 522423,
+  "sn": "thebordencompany",
+  "name": "Evening Tarpon Fishing Trip",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 522430,
+  "sn": "thebordencompany",
+  "name": "Captain on Call",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 522439,
+  "sn": "thebordencompany",
+  "name": "Offshore Fishing, Tuna, Mahi, Wahoo, Marlin Gulf Stream",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 522447,
+  "sn": "thebordencompany",
+  "name": "Marathon Sand Bar and Snorkeling Adventure",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 522455,
+  "sn": "thebordencompany",
+  "name": "Sand Bar and Snorkeling Adventure - Groups of 7-12)",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 522458,
+  "sn": "thebordencompany",
+  "name": "Sand Bar and Snorkeling Adventure - Groups of 13-18",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 522464,
+  "sn": "thebordencompany",
+  "name": "Large Group Island Hopper Adventure - Groups of 7-12",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 522466,
+  "sn": "thebordencompany",
+  "name": "Large Group Island Hopper Adventure - Groups of 13-18",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 522467,
+  "sn": "thebordencompany",
+  "name": "Large Group Reef and Wreck Fishing -  Groups of 7-12",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 522468,
+  "sn": "thebordencompany",
+  "name": "Large Group Reef and Wreck Fishing - Groups of 13-18",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 528420,
+  "sn": "thebordencompany",
+  "name": "Looe Key Snorkeling and Wreck Trolling Adventure",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 670428,
+  "sn": "tropicalepoxy",
+  "name": "Private \u2022 TURTLE \"SPIN IT OUT\" ACRYLIC PAINT POUR---WOOD 16\" x 14\"",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 670429,
+  "sn": "tropicalepoxy",
+  "name": "Private \u2022 \"PETAL PULSE\" 11\" x 14\" WOOD PANEL FLOWER ACRYLIC PAINT POUR",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 670433,
+  "sn": "tropicalepoxy",
+  "name": "7\" x 14\" RESIN CUTTING/CHARCUTERIE BOARD OCEAN WAVES",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 670435,
+  "sn": "tropicalepoxy",
+  "name": "Private \u2022 11.5\" x 4\"  RESIN OCEAN WAVE OVAL TRINKET TRAY",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 672138,
+  "sn": "tropicalepoxy",
+  "name": "Private \u2022 7\" x 14\" ACRYLIC PAINT POURING ON CHARCUTERIE BOARD",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 672139,
+  "sn": "tropicalepoxy",
+  "name": "12\" x 15.5\" RESIN SERVING TRAY-OCEAN WAVES",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 279365,
+  "sn": "upthekeys",
+  "name": "PRIVATE Haunted History Walking Tour",
+  "tiers": [
+   {
+    "singular": "Additional Person",
+    "note": "",
+    "price": 39.0,
+    "min": 1,
+    "cls": "never"
+   },
+   {
+    "singular": "Private Tour up to 4 People for 1.5 Hours",
+    "note": "Add additional people below.",
+    "price": 275.0,
+    "min": 1,
+    "cls": "group"
+   }
+  ],
+  "disposition": "unit_plus_increment",
+  "basis": "HELD for ruling (unit+increment ladder is ambiguous \u2014 memory reference_fareharbor_unit_plus_increment_is_ambiguous): anchor \"Private Tour up to 4 People for 1.5 Hours\" $275 (note \"Add additional people below.\") with increment tier(s) Additional Person $39, Private Tour up to 4 People for 1.5 Hours $275 (Add additional people below.); ladder Additional Person $39 [never] / Private Tour up to 4 People for 1.5 Hours $275 [group]; 4/4 dated readings 2026-08-26 (3/4 date-valid), 1 ladder shape(s), include_breakdown=yes, probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 639774,
+  "sn": "upthekeys",
+  "name": "Miami to Key West Private Day Tour",
+  "tiers": [
+   {
+    "singular": "Private Tour For Up to 6 people",
+    "note": "See below to add additional people.",
+    "price": 879.0,
+    "min": 1,
+    "cls": "group"
+   },
+   {
+    "singular": "Additional Person",
+    "note": "",
+    "price": 49.0,
+    "min": 1,
+    "cls": "never"
+   }
+  ],
+  "disposition": "unit_plus_increment",
+  "basis": "HELD for ruling (unit+increment ladder is ambiguous \u2014 memory reference_fareharbor_unit_plus_increment_is_ambiguous): anchor \"Private Tour For Up to 6 people\" $879 (note \"See below to add additional people.\") with increment tier(s) Additional Person $49, Private Tour For Up to 6 people $879 (See below to add additional people.); ladder Private Tour For Up to 6 people $879 [group] / Additional Person $49 [never]; 4/4 dated readings 2026-08-26 (2/4 date-valid), 1 ladder shape(s), include_breakdown=yes, probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 601409,
+  "sn": "upthekeys",
+  "name": "Turtle Hospital Day Tour",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 34088,
+  "sn": "upthekeys",
+  "name": "History of Stock Island Tour",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 145776,
+  "sn": "upthekeys",
+  "name": "Private Tour: 7 Mile Bridge, Beach & Key Deer",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 541401,
+  "sn": "upthekeys",
+  "name": "Upper Keys Road Trip & Bike Ride",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 647697,
+  "sn": "upthekeys",
+  "name": "Paddles and Deer",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 261916,
+  "sn": "walktheplankadventures",
+  "name": "Half Day Sandbar Cruise",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 287441,
+  "sn": "walktheplankadventures",
+  "name": "Boat Rental Full Day",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 261913,
+  "sn": "walktheplankadventures",
+  "name": "Full Day Island Hop Cruise",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 598913,
+  "sn": "walltowallfishingcharters",
+  "name": "Sunrise Tarpon Fishing",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 599116,
+  "sn": "walltowallfishingcharters",
+  "name": "Sunset Tarpon Fishing:  4 hours",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 259994,
+  "sn": "namastekw",
+  "name": "ONLINE COURSE - SOUND HEALING with TUNING FORKS",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 282162,
+  "sn": "namastekw",
+  "name": "PRIVATE RETREAT",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 268820,
+  "sn": "namastekw",
+  "name": "TONG REN DISTANCE HEALING",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ },
+ {
+  "pk": 543315,
+  "sn": "namastekw",
+  "name": "PRIVATE SOUND MASSAGE PARTY",
+  "disposition": "UNSAMPLED",
+  "basis": "UNSAMPLED (2026-08-26): absent from price-preview items[] on 4/4 dated probes (2026-08-29, 2026-09-05, 2026-09-19, 2026-10-10); price stays null \u2014 unsampled is never published. Evidence: probe.json sha256 186bcb42971b"
+ }
+]

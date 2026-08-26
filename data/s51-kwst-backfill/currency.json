@@ -1,0 +1,786 @@
+{
+ "abovethecutcharters": {
+  "http": 200,
+  "currency": "USD",
+  "includeFees": false,
+  "includeTaxes": false,
+  "err": null
+ },
+ "adventuresonwater": {
+  "http": 200,
+  "currency": "USD",
+  "includeFees": false,
+  "includeTaxes": false,
+  "err": null
+ },
+ "afterhourskeywest": {
+  "http": 200,
+  "currency": "USD",
+  "includeFees": false,
+  "includeTaxes": false,
+  "err": null
+ },
+ "alligatorreefjetskis": {
+  "http": 200,
+  "currency": "USD",
+  "includeFees": false,
+  "includeTaxes": false,
+  "err": null
+ },
+ "aquaboatrentals": {
+  "http": 200,
+  "currency": "USD",
+  "includeFees": false,
+  "includeTaxes": false,
+  "err": null
+ },
+ "aqualifecharters": {
+  "http": 200,
+  "currency": "USD",
+  "includeFees": false,
+  "includeTaxes": false,
+  "err": null
+ },
+ "askmekw": {
+  "http": 200,
+  "currency": "USD",
+  "includeFees": false,
+  "includeTaxes": false,
+  "err": null
+ },
+ "atlanticgulffishingcharters": {
+  "http": 200,
+  "currency": "USD",
+  "includeFees": false,
+  "includeTaxes": false,
+  "err": null
+ },
+ "barefootbillyskw": {
+  "http": 200,
+  "currency": "USD",
+  "includeFees": false,
+  "includeTaxes": false,
+  "err": null
+ },
+ "bensportfishingcharters-lobsterbully": {
+  "http": 200,
+  "currency": "USD",
+  "includeFees": false,
+  "includeTaxes": false,
+  "err": null
+ },
+ "blackwaterfishingcharters": {
+  "http": 200,
+  "currency": "USD",
+  "includeFees": false,
+  "includeTaxes": false,
+  "err": null
+ },
+ "bluemoonkayakkeywest": {
+  "http": 200,
+  "currency": "USD",
+  "includeFees": false,
+  "includeTaxes": false,
+  "err": null
+ },
+ "boatrentalsinkeywest": {
+  "http": 200,
+  "currency": "USD",
+  "includeFees": false,
+  "includeTaxes": false,
+  "err": null
+ },
+ "brightwild-adventures": {
+  "http": 200,
+  "currency": "USD",
+  "includeFees": false,
+  "includeTaxes": false,
+  "err": null
+ },
+ "bteboatcharters": {
+  "http": 200,
+  "currency": "USD",
+  "includeFees": false,
+  "includeTaxes": false,
+  "err": null
+ },
+ "casualmondaycharters": {
+  "http": 200,
+  "currency": "USD",
+  "includeFees": false,
+  "includeTaxes": false,
+  "err": null
+ },
+ "clearkayaking": {
+  "http": 200,
+  "currency": "USD",
+  "includeFees": false,
+  "includeTaxes": false,
+  "err": null
+ },
+ "conchconciergeweddings": {
+  "http": 200,
+  "currency": "USD",
+  "includeFees": false,
+  "includeTaxes": false,
+  "err": null
+ },
+ "conchqueencharters": {
+  "http": 200,
+  "currency": "USD",
+  "includeFees": true,
+  "includeTaxes": true,
+  "err": null
+ },
+ "corsair2sportfishing": {
+  "http": 200,
+  "currency": "USD",
+  "includeFees": false,
+  "includeTaxes": false,
+  "err": null
+ },
+ "cruisintikiskeylargo": {
+  "http": 200,
+  "currency": "USD",
+  "includeFees": false,
+  "includeTaxes": false,
+  "err": null
+ },
+ "cruisintikiskeywest": {
+  "http": 200,
+  "currency": "USD",
+  "includeFees": false,
+  "includeTaxes": false,
+  "err": null
+ },
+ "dangercharters": {
+  "http": 200,
+  "currency": "USD",
+  "includeFees": false,
+  "includeTaxes": false,
+  "err": null
+ },
+ "dilligaffcharters": {
+  "http": 200,
+  "currency": "USD",
+  "includeFees": false,
+  "includeTaxes": false,
+  "err": null
+ },
+ "duckkeywatersports": {
+  "http": 200,
+  "currency": "USD",
+  "includeFees": false,
+  "includeTaxes": false,
+  "err": null
+ },
+ "everwatercharters": {
+  "http": 200,
+  "currency": "USD",
+  "includeFees": false,
+  "includeTaxes": false,
+  "err": null
+ },
+ "fishmonstermax": {
+  "http": 200,
+  "currency": "USD",
+  "includeFees": false,
+  "includeTaxes": false,
+  "err": null
+ },
+ "flkeysfoodtour": {
+  "http": 200,
+  "currency": "USD",
+  "includeFees": false,
+  "includeTaxes": false,
+  "err": null
+ },
+ "flkeysshuttle": {
+  "http": 200,
+  "currency": "USD",
+  "includeFees": false,
+  "includeTaxes": false,
+  "err": null
+ },
+ "floridakeysventures": {
+  "http": 200,
+  "currency": "USD",
+  "includeFees": false,
+  "includeTaxes": false,
+  "err": null
+ },
+ "floridakeyswildbirdcenter": {
+  "http": 200,
+  "currency": "USD",
+  "includeFees": false,
+  "includeTaxes": false,
+  "err": null
+ },
+ "glassbottomboatsofislamorada": {
+  "http": 200,
+  "currency": "USD",
+  "includeFees": false,
+  "includeTaxes": false,
+  "err": null
+ },
+ "gorillaboats": {
+  "http": 200,
+  "currency": "USD",
+  "includeFees": false,
+  "includeTaxes": false,
+  "err": null
+ },
+ "gulfstreamkeywest": {
+  "http": 200,
+  "currency": "USD",
+  "includeFees": false,
+  "includeTaxes": false,
+  "err": null
+ },
+ "havanafleet": {
+  "http": 200,
+  "currency": "USD",
+  "includeFees": false,
+  "includeTaxes": false,
+  "err": null
+ },
+ "hemingwayinkeywesttours": {
+  "http": 200,
+  "currency": "USD",
+  "includeFees": false,
+  "includeTaxes": false,
+  "err": null
+ },
+ "hounddawgcharters": {
+  "http": 200,
+  "currency": "USD",
+  "includeFees": false,
+  "includeTaxes": false,
+  "err": null
+ },
+ "islamoradafishingguidesandcharters": {
+  "http": 200,
+  "currency": "USD",
+  "includeFees": false,
+  "includeTaxes": false,
+  "err": null
+ },
+ "islanddolphincare": {
+  "http": 200,
+  "currency": "USD",
+  "includeFees": false,
+  "includeTaxes": false,
+  "err": null
+ },
+ "islanderfloridakeys": {
+  "http": 200,
+  "currency": "USD",
+  "includeFees": false,
+  "includeTaxes": false,
+  "err": null
+ },
+ "justcuzfishing": {
+  "http": 200,
+  "currency": "USD",
+  "includeFees": false,
+  "includeTaxes": false,
+  "err": null
+ },
+ "keyhaw": {
+  "http": 200,
+  "currency": "USD",
+  "includeFees": false,
+  "includeTaxes": false,
+  "err": null
+ },
+ "keylargoadventures": {
+  "http": 200,
+  "currency": "USD",
+  "includeFees": false,
+  "includeTaxes": false,
+  "err": null
+ },
+ "keylargodivecenter": {
+  "http": 200,
+  "currency": "USD",
+  "includeFees": false,
+  "includeTaxes": false,
+  "err": null
+ },
+ "keylargoprincess": {
+  "http": 200,
+  "currency": "USD",
+  "includeFees": false,
+  "includeTaxes": false,
+  "err": null
+ },
+ "keylimebiketours": {
+  "http": 200,
+  "currency": "USD",
+  "includeFees": false,
+  "includeTaxes": false,
+  "err": null
+ },
+ "keyskartz": {
+  "http": 200,
+  "currency": "USD",
+  "includeFees": false,
+  "includeTaxes": false,
+  "err": null
+ },
+ "keywestcoastalcharters": {
+  "http": 200,
+  "currency": "USD",
+  "includeFees": false,
+  "includeTaxes": false,
+  "err": null
+ },
+ "keywestconchlifecharters": {
+  "http": 200,
+  "currency": "USD",
+  "includeFees": false,
+  "includeTaxes": false,
+  "err": null
+ },
+ "keywestfishing-charters": {
+  "http": 200,
+  "currency": "USD",
+  "includeFees": false,
+  "includeTaxes": false,
+  "err": null
+ },
+ "keywesthunt": {
+  "http": 200,
+  "currency": "USD",
+  "includeFees": false,
+  "includeTaxes": false,
+  "err": null
+ },
+ "keywestpromotions": {
+  "http": 200,
+  "currency": "USD",
+  "includeFees": false,
+  "includeTaxes": false,
+  "err": null
+ },
+ "laidbackkeywest": {
+  "http": 200,
+  "currency": "USD",
+  "includeFees": false,
+  "includeTaxes": false,
+  "err": null
+ },
+ "lazydog": {
+  "http": 200,
+  "currency": "USD",
+  "includeFees": false,
+  "includeTaxes": false,
+  "err": null
+ },
+ "learntosailkeywest": {
+  "http": 200,
+  "currency": "USD",
+  "includeFees": false,
+  "includeTaxes": false,
+  "err": null
+ },
+ "lowtidecharter": {
+  "http": 200,
+  "currency": "USD",
+  "includeFees": false,
+  "includeTaxes": false,
+  "err": null
+ },
+ "makingmemoriescharters": {
+  "http": 200,
+  "currency": "USD",
+  "includeFees": false,
+  "includeTaxes": false,
+  "err": null
+ },
+ "marinelabunderseapark": {
+  "http": 200,
+  "currency": "USD",
+  "includeFees": false,
+  "includeTaxes": false,
+  "err": null
+ },
+ "mermaidcharterskeywest": {
+  "http": 200,
+  "currency": "USD",
+  "includeFees": false,
+  "includeTaxes": false,
+  "err": null
+ },
+ "morningstarcharters": {
+  "http": 200,
+  "currency": "USD",
+  "includeFees": false,
+  "includeTaxes": false,
+  "err": null
+ },
+ "namastealldaykeywest": {
+  "http": 200,
+  "currency": "USD",
+  "includeFees": false,
+  "includeTaxes": false,
+  "err": null
+ },
+ "namastekw": {
+  "http": 200,
+  "currency": "USD",
+  "includeFees": false,
+  "includeTaxes": false,
+  "err": null
+ },
+ "nauti-charters": {
+  "http": 200,
+  "currency": "USD",
+  "includeFees": false,
+  "includeTaxes": false,
+  "err": null
+ },
+ "niceguycharters": {
+  "http": 200,
+  "currency": "USD",
+  "includeFees": false,
+  "includeTaxes": false,
+  "err": null
+ },
+ "nudecharters": {
+  "http": 200,
+  "currency": "USD",
+  "includeFees": false,
+  "includeTaxes": false,
+  "err": null
+ },
+ "outboundcharters": {
+  "http": 200,
+  "currency": "USD",
+  "includeFees": false,
+  "includeTaxes": false,
+  "err": null
+ },
+ "paragondiving": {
+  "http": 200,
+  "currency": "USD",
+  "includeFees": false,
+  "includeTaxes": false,
+  "err": null
+ },
+ "pirateadventurecharters": {
+  "http": 200,
+  "currency": "USD",
+  "includeFees": false,
+  "includeTaxes": false,
+  "err": null
+ },
+ "reconsportfishing": {
+  "http": 200,
+  "currency": "USD",
+  "includeFees": false,
+  "includeTaxes": false,
+  "err": null
+ },
+ "reelparadisecharters": {
+  "http": 200,
+  "currency": "USD",
+  "includeFees": false,
+  "includeTaxes": false,
+  "err": null
+ },
+ "reelsharpsportfishing": {
+  "http": 200,
+  "currency": "USD",
+  "includeFees": false,
+  "includeTaxes": false,
+  "err": null
+ },
+ "restlessnative": {
+  "http": 200,
+  "currency": "USD",
+  "includeFees": false,
+  "includeTaxes": false,
+  "err": null
+ },
+ "ridethelagoon": {
+  "http": 200,
+  "currency": "USD",
+  "includeFees": false,
+  "includeTaxes": false,
+  "err": null
+ },
+ "robertthedollexperience": {
+  "http": 200,
+  "currency": "USD",
+  "includeFees": false,
+  "includeTaxes": false,
+  "err": null
+ },
+ "sail-keywest": {
+  "http": 200,
+  "currency": "USD",
+  "includeFees": false,
+  "includeTaxes": false,
+  "err": null
+ },
+ "sailargonavis": {
+  "http": 200,
+  "currency": "USD",
+  "includeFees": false,
+  "includeTaxes": false,
+  "err": null
+ },
+ "sailawaykeywest": {
+  "http": 200,
+  "currency": "USD",
+  "includeFees": false,
+  "includeTaxes": false,
+  "err": null
+ },
+ "sailbluq": {
+  "http": 200,
+  "currency": "USD",
+  "includeFees": false,
+  "includeTaxes": false,
+  "err": null
+ },
+ "sailschoonerhindu": {
+  "http": 200,
+  "currency": "USD",
+  "includeFees": true,
+  "includeTaxes": false,
+  "err": null
+ },
+ "saltybottomboats": {
+  "http": 200,
+  "currency": "USD",
+  "includeFees": false,
+  "includeTaxes": false,
+  "err": null
+ },
+ "saltysandbars": {
+  "http": 200,
+  "currency": "USD",
+  "includeFees": false,
+  "includeTaxes": false,
+  "err": null
+ },
+ "saltysoulcharters": {
+  "http": 200,
+  "currency": "USD",
+  "includeFees": false,
+  "includeTaxes": false,
+  "err": null
+ },
+ "sandandseakeywestcharters": {
+  "http": 200,
+  "currency": "USD",
+  "includeFees": false,
+  "includeTaxes": false,
+  "err": null
+ },
+ "sanddollarboatrentalskeylargo": {
+  "http": 200,
+  "currency": "USD",
+  "includeFees": false,
+  "includeTaxes": false,
+  "err": null
+ },
+ "schell-me": {
+  "http": 200,
+  "currency": "USD",
+  "includeFees": false,
+  "includeTaxes": false,
+  "err": null
+ },
+ "seaboundcharters": {
+  "http": 200,
+  "currency": "USD",
+  "includeFees": false,
+  "includeTaxes": false,
+  "err": null
+ },
+ "seadwellers": {
+  "http": 200,
+  "currency": "USD",
+  "includeFees": false,
+  "includeTaxes": false,
+  "err": null
+ },
+ "seahorsewateradventures": {
+  "http": 200,
+  "currency": "USD",
+  "includeFees": false,
+  "includeTaxes": false,
+  "err": null
+ },
+ "sealabcharters": {
+  "http": 200,
+  "currency": "USD",
+  "includeFees": true,
+  "includeTaxes": false,
+  "err": null
+ },
+ "seamonkeycharters": {
+  "http": 200,
+  "currency": "USD",
+  "includeFees": false,
+  "includeTaxes": false,
+  "err": null
+ },
+ "seamonkeydivers": {
+  "http": 200,
+  "currency": "USD",
+  "includeFees": true,
+  "includeTaxes": false,
+  "err": null
+ },
+ "seastays": {
+  "http": 200,
+  "currency": "USD",
+  "includeFees": true,
+  "includeTaxes": true,
+  "err": null
+ },
+ "snorkelthekeys": {
+  "http": 200,
+  "currency": "USD",
+  "includeFees": false,
+  "includeTaxes": false,
+  "err": null
+ },
+ "snuba-keywest": {
+  "http": 200,
+  "currency": "USD",
+  "includeFees": false,
+  "includeTaxes": false,
+  "err": null
+ },
+ "sofloeco": {
+  "http": 200,
+  "currency": "USD",
+  "includeFees": false,
+  "includeTaxes": false,
+  "err": null
+ },
+ "southernmostparknplay": {
+  "http": 200,
+  "currency": "USD",
+  "includeFees": false,
+  "includeTaxes": false,
+  "err": null
+ },
+ "southfloridafishing": {
+  "http": 200,
+  "currency": "USD",
+  "includeFees": false,
+  "includeTaxes": false,
+  "err": null
+ },
+ "southpointdiverskw": {
+  "http": 200,
+  "currency": "USD",
+  "includeFees": false,
+  "includeTaxes": false,
+  "err": null
+ },
+ "springadventures": {
+  "http": 200,
+  "currency": "USD",
+  "includeFees": false,
+  "includeTaxes": false,
+  "err": null
+ },
+ "sundancewatersports": {
+  "http": 200,
+  "currency": "USD",
+  "includeFees": false,
+  "includeTaxes": false,
+  "err": null
+ },
+ "sunsetsailkeywest": {
+  "http": 200,
+  "currency": "USD",
+  "includeFees": false,
+  "includeTaxes": true,
+  "err": null
+ },
+ "sunsetwatersportskeywest": {
+  "http": 200,
+  "currency": "USD",
+  "includeFees": false,
+  "includeTaxes": false,
+  "err": null
+ },
+ "sunshinecoastadventures": {
+  "http": 200,
+  "currency": "USD",
+  "includeFees": false,
+  "includeTaxes": false,
+  "err": null
+ },
+ "sweetvelocity": {
+  "http": 200,
+  "currency": "USD",
+  "includeFees": false,
+  "includeTaxes": false,
+  "err": null
+ },
+ "thatswhatseasaid": {
+  "http": 200,
+  "currency": "USD",
+  "includeFees": false,
+  "includeTaxes": true,
+  "err": null
+ },
+ "thebeachweekendkeywest": {
+  "http": 200,
+  "currency": "USD",
+  "includeFees": false,
+  "includeTaxes": false,
+  "err": null
+ },
+ "thebordencompany": {
+  "http": 200,
+  "currency": "USD",
+  "includeFees": false,
+  "includeTaxes": false,
+  "err": null
+ },
+ "tntchartersflkeys": {
+  "http": 200,
+  "currency": "USD",
+  "includeFees": false,
+  "includeTaxes": false,
+  "err": null
+ },
+ "tropicalepoxy": {
+  "http": 200,
+  "currency": "USD",
+  "includeFees": false,
+  "includeTaxes": false,
+  "err": null
+ },
+ "upthekeys": {
+  "http": 200,
+  "currency": "USD",
+  "includeFees": false,
+  "includeTaxes": false,
+  "err": null
+ },
+ "walktheplankadventures": {
+  "http": 200,
+  "currency": "USD",
+  "includeFees": false,
+  "includeTaxes": false,
+  "err": null
+ },
+ "walltowallfishingcharters": {
+  "http": 200,
+  "currency": "USD",
+  "includeFees": false,
+  "includeTaxes": false,
+  "err": null
+ }
+}
