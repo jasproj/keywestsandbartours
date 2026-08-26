@@ -1,0 +1,98 @@
+# Weekly availability sweep — DATA COLLECTION ONLY (s51, 2026-08-26).
+#
+# Runs scripts/sweep-availability.py --live on the full active population and
+# opens a PR with the result, the same shape as the hand-run sweeps #169
+# (2026-08-08) and #249 (2026-08-26): nextAvailableDate + nullConsecutiveSweeps
+# move, nothing else. Nothing is hidden or retired by this workflow — hides
+# stay human-ruled (scripts/s51-kwst-hide-apply.py). The one automatic reversal
+# the script carries (hidden:true cleared when a bookable date returns) is the
+# ruling shipped with the hide mechanism, and its count is printed in the report.
+#
+# Schedule: Tuesdays 09:17 UTC (05:17 ET) — a quiet hour before operators
+# recalendar for the day, off the :00 boundary. Manual runs via workflow_dispatch.
+name: availability-sweep
+
+on:
+  schedule:
+    - cron: '17 9 * * 2'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: availability-sweep
+  cancel-in-progress: false
+
+jobs:
+  sweep:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Run the sweep (--live, writes tours-data.json)
+        id: sweep
+        run: |
+          set -o pipefail
+          python3 scripts/sweep-availability.py --live 2>&1 | tee sweep-report.txt
+          echo "date=$(date -u +%Y-%m-%d)" >> "$GITHUB_OUTPUT"
+
+      - name: Structural check — only the two availability fields may change
+        run: |
+          python3 - <<'PY'
+          import json, subprocess, sys
+          new = {t['pk']: t for t in json.load(open('tours-data.json'))['tours']}
+          old = {t['pk']: t for t in json.loads(subprocess.check_output(['git', 'show', 'HEAD:tours-data.json']))['tours']}
+          assert set(new) == set(old), 'row set changed'
+          ALLOWED = {'nextAvailableDate', 'nullConsecutiveSweeps', 'hidden', 'hiddenReason'}
+          bad = [(pk, k) for pk in new for k in set(new[pk]) | set(old[pk]) if new[pk].get(k) != old[pk].get(k) and k not in ALLOWED]
+          assert not bad, f'fields outside the sweep vocabulary changed: {bad[:5]}'
+          newly_hidden = [pk for pk in new if new[pk].get('hidden') and not old[pk].get('hidden')]
+          assert not newly_hidden, f'the sweep must never hide: {newly_hidden[:5]}'
+          raw = open('tours-data.json').read()
+          assert json.dumps(json.loads(raw), indent=2) + '\n' == raw, 'serializer round-trip'
+          moved = sum(1 for pk in new if new[pk] != old[pk])
+          print(f'rows changed: {moved}')
+          PY
+
+      - name: Would-hide report (report-only, for the PR body)
+        run: python3 scripts/sweep-availability.py --report 2>&1 | tee would-hide.txt
+
+      - name: Open the sweep PR
+        env:
+          GH_TOKEN: ${{ github.token }}
+          DATE: ${{ steps.sweep.outputs.date }}
+        run: |
+          if git diff --quiet -- tours-data.json; then
+            echo "no change to tours-data.json — nothing to commit"; exit 0
+          fi
+          BR="sweep/$DATE"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git checkout -b "$BR"
+          git add tours-data.json
+          {
+            echo "chore(kwst): run availability sweep $DATE via scripts/sweep-availability.py --live (weekly workflow)"
+            echo
+            echo "Scheduled full-population run of the tracked writer (same conventions as #169 / #249:"
+            echo "one next-bookable-availability/v1 call per item, 8 workers, sweep UA)."
+            echo "Only nextAvailableDate / nullConsecutiveSweeps change (plus hidden:false reversals the"
+            echo "script performs when a bookable date returns); nothing is hidden or retired."
+            echo
+            cat sweep-report.txt
+            echo
+            cat would-hide.txt
+          } > msg.txt
+          git commit -q -F msg.txt
+          git push -q origin "$BR"
+          gh pr create --base main --head "$BR" \
+            --title "chore(kwst): availability sweep $DATE (weekly workflow, data only)" \
+            --body-file msg.txt
