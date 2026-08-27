@@ -8782,9 +8782,9 @@
       "category": "",
       "location": "United States/Florida/Key West",
       "island": "united states/florida/key west",
-      "price": 260.0,
-      "priceLabel": "6 PASS - FULL DAY RENTAL",
-      "priceConfidence": "medium",
+      "price": 130.0,
+      "priceLabel": "6 PASS - HALF DAY RENTAL",
+      "priceConfidence": "high",
       "qualityScore": 0,
       "currency": "USD",
       "duration": "",
@@ -8816,9 +8816,25 @@
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
       "_unknownFields": {
-        "priceSource": "fh-price-preview-v2-2026-08-20",
-        "priceCustomerType": "6 PASS - FULL DAY RENTAL",
-        "priceTierCount": 7
+        "priceSource": "s52-kwst-rental-floors",
+        "priceCustomerType": "6 PASS - HALF DAY RENTAL",
+        "priceTierCount": 1,
+        "priceVerifiedAt": "2026-08-27",
+        "probeDates": [
+          "2026-09-03",
+          "2026-09-17",
+          "2026-10-08",
+          "2026-10-24"
+        ],
+        "probeSampled": 4,
+        "probeDateValid": 4,
+        "priceMinPartySize": 1,
+        "priceUnit": "per cart, 12-hour half day",
+        "unitEvidence": "tier label: '6 PASS - HALF DAY RENTAL' (duration only, min_party_size=1 on every tier); vehicle from product name 'Six Passenger Gas Golf Cart Rental'; no tier, note or description says per person",
+        "priceBasis": "s52-kwst-rental-floors (2026-08-27): Jason ruling 2026-08-27 \u2014 live floor. Anchor tier \"6 PASS - HALF DAY RENTAL\" $130, 12 hours; sole live tier \"6 PASS - HALF DAY RENTAL\" $130 (note: \"12 Hours | Must be 22 years or older to rent | Valid drivers license required. Proof of Insurance Required.\"). Unit: per cart, 12-hour half day. prior stamp fh-price-preview-v2-2026-08-20 carried $260 \"6 PASS - FULL DAY RENTAL\", a tier absent from all 8 live readings (2026-08-27 x2 probes x 4 dates); stamp was 2x the sole live tier. 4/4 dated readings (4 date-valid) on 2026-09-03, 2026-09-17, 2026-10-08, 2026-10-24, include_breakdown=yes, re-probed immediately before write.",
+        "priceTiers": [
+          "6 PASS - HALF DAY RENTAL $130"
+        ]
       },
       "needsEnrichment": true,
       "nextAvailableDate": "2026-08-26",
@@ -25460,9 +25476,9 @@
       "category": "",
       "location": "United States/Florida/Key West",
       "island": "united states/florida/key west",
-      "price": 150,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "price": 130.0,
+      "priceLabel": "One Day Rental",
+      "priceConfidence": "high",
       "qualityScore": 85,
       "currency": "USD",
       "duration": null,
@@ -25498,7 +25514,28 @@
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
       "nextAvailableDate": "2026-08-26",
-      "nullConsecutiveSweeps": 0
+      "nullConsecutiveSweeps": 0,
+      "_unknownFields": {
+        "priceSource": "s52-kwst-rental-floors",
+        "priceVerifiedAt": "2026-08-27",
+        "priceCustomerType": "One Day Rental",
+        "priceTierCount": 7,
+        "probeDates": [
+          "2026-09-03",
+          "2026-09-17",
+          "2026-10-08",
+          "2026-10-24"
+        ],
+        "probeSampled": 4,
+        "probeDateValid": 4,
+        "priceMinPartySize": 1,
+        "priceUnit": "per cart, 1 day",
+        "unitEvidence": "tier label: 'One Day Rental' (duration only, min_party_size=1 on every tier); vehicle from product name '4 Seater Golf Cart Rentals'; no tier, note or description says per person",
+        "priceBasis": "s52-kwst-rental-floors (2026-08-27): Jason ruling 2026-08-27 \u2014 live floor. Anchor tier \"One Day Rental\" $130, 1 day; floor tier of 7-tier duration ladder: One Day $130 < Two Day $260 < Three Day $390 < Four Day $436 < Five Day $600 < Six Day $720 < Seven Day $840. Unit: per cart, 1 day. prior $150 was unstamped; no live tier at $150. 4/4 dated readings (4 date-valid) on 2026-09-03, 2026-09-17, 2026-10-08, 2026-10-24, include_breakdown=yes, re-probed immediately before write.",
+        "priceTiers": [
+          "One Day Rental $130 (floor; see priceBasis for ladder)"
+        ]
+      }
     },
     {
       "id": "671132",
@@ -25509,9 +25546,9 @@
       "category": "",
       "location": "United States/Florida/Key West",
       "island": "united states/florida/key west",
-      "price": 185,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "price": 150.0,
+      "priceLabel": "One Day Rental",
+      "priceConfidence": "high",
       "qualityScore": 85,
       "currency": "USD",
       "duration": null,
@@ -25542,7 +25579,28 @@
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
       "nextAvailableDate": "2026-08-26",
-      "nullConsecutiveSweeps": 0
+      "nullConsecutiveSweeps": 0,
+      "_unknownFields": {
+        "priceSource": "s52-kwst-rental-floors",
+        "priceVerifiedAt": "2026-08-27",
+        "priceCustomerType": "One Day Rental",
+        "priceTierCount": 7,
+        "probeDates": [
+          "2026-09-03",
+          "2026-09-17",
+          "2026-10-08",
+          "2026-10-24"
+        ],
+        "probeSampled": 4,
+        "probeDateValid": 4,
+        "priceMinPartySize": 1,
+        "priceUnit": "per cart, 1 day",
+        "unitEvidence": "tier label: 'One Day Rental' (duration only, min_party_size=1 on every tier); vehicle from product name '6 Seater Golf Cart Rentals'; no tier, note or description says per person",
+        "priceBasis": "s52-kwst-rental-floors (2026-08-27): Jason ruling 2026-08-27 \u2014 live floor. Anchor tier \"One Day Rental\" $150, 1 day; floor tier of 7-tier duration ladder: One Day $150 < Two Day $300 < Three Day $450 < Four Day $520 < Five Day $650 < Six Day $780 < Seven Day $840. Unit: per cart, 1 day. prior $185 was unstamped; no live tier at $185. 4/4 dated readings (4 date-valid) on 2026-09-03, 2026-09-17, 2026-10-08, 2026-10-24, include_breakdown=yes, re-probed immediately before write.",
+        "priceTiers": [
+          "One Day Rental $150 (floor; see priceBasis for ladder)"
+        ]
+      }
     },
     {
       "id": "739615",
@@ -32078,9 +32136,9 @@
       "category": "",
       "location": "United States/Florida/Key West",
       "island": "united states/florida/key west",
-      "price": 150,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "price": 120.0,
+      "priceLabel": "Four Hour Rental",
+      "priceConfidence": "high",
       "qualityScore": 85,
       "currency": "USD",
       "duration": "1440 minutes",
@@ -32111,7 +32169,26 @@
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
       "_unknownFields": {
-        "durationMinutes": 1440
+        "durationMinutes": 1440,
+        "priceSource": "s52-kwst-rental-floors",
+        "priceVerifiedAt": "2026-08-27",
+        "priceCustomerType": "Four Hour Rental",
+        "priceTierCount": 11,
+        "probeDates": [
+          "2026-09-03",
+          "2026-09-17",
+          "2026-10-08",
+          "2026-10-24"
+        ],
+        "probeSampled": 4,
+        "probeDateValid": 4,
+        "priceMinPartySize": 1,
+        "priceUnit": "per cart, 4 hours",
+        "unitEvidence": "tier label: 'Four Hour Rental' (duration only, min_party_size=1 on every tier); vehicle from product name 'Premium 4 Passenger Gas Cart Rental'; no tier, note or description says per person",
+        "priceBasis": "s52-kwst-rental-floors (2026-08-27): Jason ruling 2026-08-27 \u2014 live floor. Anchor tier \"Four Hour Rental\" $120, 4 hours; floor tier of 11-tier duration ladder: Four Hour $120 < Eight Hour $150 < One Day (24 hours) $180 < Two Day $300 < Three Day $420 < Four Day $540 < Five Day $660 < Six Day $780 < Seven Day $900 < Eight Day $1080 < Nine Day $1200. Unit: per cart, 4 hours. CONDITION on the floor tier, verbatim tier note: \"*NO DELIVERY on 4 hour rentals; Must select 8 hour if you want the cart delivered.*\" \u2014 $150 Eight Hour is the delivered floor. Prior $150 (unstamped) was the Eight Hour tier. 4/4 dated readings (4 date-valid) on 2026-09-03, 2026-09-17, 2026-10-08, 2026-10-24, include_breakdown=yes, re-probed immediately before write.",
+        "priceTiers": [
+          "Four Hour Rental $120 (floor; see priceBasis for ladder)"
+        ]
       },
       "nextAvailableDate": "2026-08-26",
       "nullConsecutiveSweeps": 0
@@ -32125,9 +32202,9 @@
       "category": "",
       "location": "United States/Florida/Key West",
       "island": "united states/florida/key west",
-      "price": 210,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "price": 170.0,
+      "priceLabel": "Four Hour Rental",
+      "priceConfidence": "high",
       "qualityScore": 85,
       "currency": "USD",
       "duration": "1440 minutes",
@@ -32158,7 +32235,26 @@
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
       "_unknownFields": {
-        "durationMinutes": 1440
+        "durationMinutes": 1440,
+        "priceSource": "s52-kwst-rental-floors",
+        "priceVerifiedAt": "2026-08-27",
+        "priceCustomerType": "Four Hour Rental",
+        "priceTierCount": 10,
+        "probeDates": [
+          "2026-09-03",
+          "2026-09-17",
+          "2026-10-08",
+          "2026-10-24"
+        ],
+        "probeSampled": 4,
+        "probeDateValid": 4,
+        "priceMinPartySize": 1,
+        "priceUnit": "per cart, 4 hours",
+        "unitEvidence": "tier label: 'Four Hour Rental' (duration only, min_party_size=1 on every tier); vehicle from product name 'Premium 6 Passenger Gas Cart Rental'; no tier, note or description says per person",
+        "priceBasis": "s52-kwst-rental-floors (2026-08-27): Jason ruling 2026-08-27 \u2014 live floor. Anchor tier \"Four Hour Rental\" $170, 4 hours; floor tier of 10-tier duration ladder: Four Hour $170 < Eight Hour $210 < One Day (24 hours) $250 < Two Day $395 < Three Day $540 < Four Day $685 < Five Day $830 < Six Day $975 < Seven Day $1120 < Eight Day $1370. Unit: per cart, 4 hours. prior $210 (unstamped) was the Eight Hour tier, not the floor. 4/4 dated readings (4 date-valid) on 2026-09-03, 2026-09-17, 2026-10-08, 2026-10-24, include_breakdown=yes, re-probed immediately before write.",
+        "priceTiers": [
+          "Four Hour Rental $170 (floor; see priceBasis for ladder)"
+        ]
       },
       "nextAvailableDate": "2026-08-26",
       "nullConsecutiveSweeps": 0
@@ -38588,9 +38684,9 @@
       "category": "",
       "location": "United States/Florida/Key West",
       "island": "united states/florida/key west",
-      "price": 179,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "price": 149.0,
+      "priceLabel": "Eight Hour Rental",
+      "priceConfidence": "high",
       "qualityScore": 100,
       "currency": "USD",
       "duration": "240 minutes",
@@ -38622,7 +38718,26 @@
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
       "_unknownFields": {
-        "durationMinutes": 240
+        "durationMinutes": 240,
+        "priceSource": "s52-kwst-rental-floors",
+        "priceVerifiedAt": "2026-08-27",
+        "priceCustomerType": "Eight Hour Rental",
+        "priceTierCount": 8,
+        "probeDates": [
+          "2026-09-03",
+          "2026-09-17",
+          "2026-10-08",
+          "2026-10-24"
+        ],
+        "probeSampled": 4,
+        "probeDateValid": 4,
+        "priceMinPartySize": 1,
+        "priceUnit": "per cart, 8 hours",
+        "unitEvidence": "tier label: 'Eight Hour Rental' (duration only, min_party_size=1 on every tier); vehicle from product name '4 Person Golf Cart'; no tier, note or description says per person",
+        "priceBasis": "s52-kwst-rental-floors (2026-08-27): Jason ruling 2026-08-27 \u2014 live floor. Anchor tier \"Eight Hour Rental\" $149, 8 hours; floor tier of 8-tier duration ladder: Eight Hour $149 < One Day (24 Hours) $179 < Two Day $300 < Three Day $420 < Four Day $540 < Five Day $660 < Six Day $780 < Seven Day $900. Unit: per cart, 8 hours. prior $179 (unstamped) was the One Day tier, not the floor. 4/4 dated readings (4 date-valid) on 2026-09-03, 2026-09-17, 2026-10-08, 2026-10-24, include_breakdown=yes, re-probed immediately before write.",
+        "priceTiers": [
+          "Eight Hour Rental $149 (floor; see priceBasis for ladder)"
+        ]
       },
       "nextAvailableDate": "2026-08-26",
       "nullConsecutiveSweeps": 0
@@ -38636,9 +38751,9 @@
       "category": "",
       "location": "United States/Florida/Key West",
       "island": "united states/florida/key west",
-      "price": 239,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "price": 199.0,
+      "priceLabel": "Eight Hour Rental",
+      "priceConfidence": "high",
       "qualityScore": 100,
       "currency": "USD",
       "duration": "240 minutes",
@@ -38668,7 +38783,26 @@
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
       "_unknownFields": {
-        "durationMinutes": 240
+        "durationMinutes": 240,
+        "priceSource": "s52-kwst-rental-floors",
+        "priceVerifiedAt": "2026-08-27",
+        "priceCustomerType": "Eight Hour Rental",
+        "priceTierCount": 8,
+        "probeDates": [
+          "2026-09-03",
+          "2026-09-17",
+          "2026-10-08",
+          "2026-10-24"
+        ],
+        "probeSampled": 4,
+        "probeDateValid": 4,
+        "priceMinPartySize": 1,
+        "priceUnit": "per cart, 8 hours",
+        "unitEvidence": "tier label: 'Eight Hour Rental' (duration only, min_party_size=1 on every tier); vehicle from product name '6 Person Golf Cart'; no tier, note or description says per person",
+        "priceBasis": "s52-kwst-rental-floors (2026-08-27): Jason ruling 2026-08-27 \u2014 live floor. Anchor tier \"Eight Hour Rental\" $199, 8 hours; floor tier of 8-tier duration ladder: Eight Hour $199 < One Day (24 Hours) $239 < Two Day $400 < Three Day $545 < Four Day $690 < Five Day $835 < Six Day $979 < Seven Day $1125. Unit: per cart, 8 hours. prior $239 (unstamped) was the One Day tier, not the floor. 4/4 dated readings (4 date-valid) on 2026-09-03, 2026-09-17, 2026-10-08, 2026-10-24, include_breakdown=yes, re-probed immediately before write.",
+        "priceTiers": [
+          "Eight Hour Rental $199 (floor; see priceBasis for ladder)"
+        ]
       },
       "nextAvailableDate": "2026-08-26",
       "nullConsecutiveSweeps": 0
