@@ -573,23 +573,111 @@ async function initAreaPage(areaSlug) {
 document.addEventListener('DOMContentLoaded', init);
 
 // ===== TOURISTTIP SCHEMA INJECTION =====
+
+// Schema price-unit gate (s53, network ruling). A bare Offer.price is read as
+// PER-PERSON by the Bing/ChatGPT/Copilot ecosystem, so the gate has three
+// states, decided by the row's own unit evidence:
+//   1. per-person affirmatively asserted  -> bare Offer.price, byte-identical
+//      to what this function has always emitted.
+//   2. non-per-person affirmatively asserted -> no bare price; a
+//      UnitPriceSpecification whose unitText is THE EXACT STRING THE CARD
+//      RENDERS — priceUnit(), i.e. _unknownFields.priceUnit, same field, same
+//      trim. If that field is empty the row emits no price at all: unitText
+//      never gets a parallel wording invented for it.
+//   3. no unit evidence either way -> no price at all. Absence of evidence is
+//      not per-person.
+//
+// Evidence, in the order the s52 audit used it: the card unit string first
+// (when the card asserts what the number buys, the schema mirrors its side),
+// then priceLabel / _unknownFields.priceCustomerType / the anchor tier — the
+// priceTiers entry whose price equals the emitted price. A tier's
+// parenthesized note ("Up to 6 Passengers") is corroborating capacity copy,
+// never the sole source, so it is excluded from classification entirely.
+// Within one string a whole-unit marker outranks a person noun ("Whole boat
+// 1-6 passengers" asserts whole-boat; "passengers" there is capacity
+// context). Across strings a conflict is not an assertion: it classifies as
+// unknown and the row goes silent.
+// Measured 2026-08-27 at 8327838: of the 1,069 rows this site emits offers
+// for, 174 are per-person ($43,695 face), 382 are non-per-person ($402,351
+// face that was being read as per-person), 513 carry no unit evidence
+// ($257,528 face).
+
+const SCHEMA_PER_PERSON_RE = /\bper\s+(person|adult|guest|passenger|snorkeler|diver|senior|student|child|kid)s?\b/i;
+const SCHEMA_PERSON_NOUN_RE = /\b(adults?|persons?|guests?|passengers?|students?|children|child|kids?|seniors?|divers?|snorkelers?|kayakers?|general admission|any persons|boarding pass|over 21)\b/i;
+const SCHEMA_WHOLE_UNIT_RE = /\b(charters?|whole[ -]boat|bareboat|rentals?|private|packages?|flat rate|per (couple|cart|boat|bike|bicycle|jet ?ski|golf cart|cabana|group|unit|vehicle|flight|package)|for (2|two)|entire boat|add-on|whole rental|whole package)\b/i;
+
+// The priceTiers entry whose price equals the row's emitted price — the tier
+// the "from" claim actually cites. Entries are strings shaped
+// "Label $1,234 (note)"; returns the label with the note stripped, or ''.
+function schemaAnchorTierLabel(tour) {
+    const tiers = (tour._unknownFields || {}).priceTiers || [];
+    for (const t of tiers) {
+        if (typeof t !== 'string') continue;
+        const m = t.match(/^(.*?)\s*\$([\d,]+(?:\.\d+)?)\s*(?:\((.*)\))?\s*$/);
+        if (!m) continue;
+        if (parseFloat(m[2].replace(/,/g, '')) === tour.price) return m[1].trim();
+    }
+    return '';
+}
+
+// -> 'per-person' | 'non-per-person' | 'unknown'. Exactly one state per row,
+// always: the three states partition the emitting population by construction.
+function classifySchemaPriceUnit(tour) {
+    const cardUnit = priceUnit(tour);
+    if (cardUnit) {
+        return SCHEMA_PER_PERSON_RE.test(cardUnit) ? 'per-person' : 'non-per-person';
+    }
+    const labels = [tour.priceLabel, (tour._unknownFields || {}).priceCustomerType, schemaAnchorTierLabel(tour)]
+        .filter(s => typeof s === 'string' && s.trim() !== '')
+        .map(s => s.trim());
+    let perPerson = false, wholeUnit = false;
+    for (const s of labels) {
+        if (SCHEMA_WHOLE_UNIT_RE.test(s)) wholeUnit = true;
+        else if (SCHEMA_PER_PERSON_RE.test(s) || SCHEMA_PERSON_NOUN_RE.test(s)) perPerson = true;
+    }
+    if (wholeUnit && !perPerson) return 'non-per-person';
+    if (perPerson && !wholeUnit) return 'per-person';
+    return 'unknown';
+}
+
 function generateTourSchema(tour) {
     const emitPrice = Number.isFinite(tour.price) && tour.priceConfidence !== 'low';
+    const unitState = emitPrice ? classifySchemaPriceUnit(tour) : 'unknown';
+    const cardUnit = priceUnit(tour);
+    let offers = null;
+    if (emitPrice && unitState === 'per-person') {
+        // State 1: byte-identical to the pre-s53 emission.
+        offers = {
+            "@type": "Offer",
+            "price": tour.price,
+            "priceCurrency": "USD",
+            "url": tour.bookingUrl,
+            "availability": "https://schema.org/InStock"
+        };
+    } else if (emitPrice && unitState === 'non-per-person' && cardUnit) {
+        // State 2: no bare price; the unit rides with the number, verbatim
+        // from the same field the card renders.
+        offers = {
+            "@type": "Offer",
+            "priceSpecification": {
+                "@type": "UnitPriceSpecification",
+                "price": tour.price,
+                "priceCurrency": "USD",
+                "unitText": cardUnit
+            },
+            "url": tour.bookingUrl,
+            "availability": "https://schema.org/InStock"
+        };
+    }
+    // State 3 — and state 2 with no card unit string to mirror — emits no
+    // offers at all. Silence is honest; a guess is not.
     return {
         "@context": "https://schema.org",
         "@type": "TouristTrip",
         "name": tour.name,
         "description": tour.description || "",
         "touristType": tour.tags ? tour.tags.join(", ") : "",
-        ...(emitPrice && {
-            "offers": {
-                "@type": "Offer",
-                "price": tour.price,
-                "priceCurrency": "USD",
-                "url": tour.bookingUrl,
-                "availability": "https://schema.org/InStock"
-            }
-        }),
+        ...(offers && { "offers": offers }),
         "provider": {
             "@type": "LocalBusiness",
             "name": tour.company
