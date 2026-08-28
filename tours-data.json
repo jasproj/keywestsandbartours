@@ -61184,8 +61184,8 @@
       "location": "United States/Florida/Key West",
       "island": "united states/florida/key west",
       "price": 129.95,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "priceLabel": "Adult",
+      "priceConfidence": "high",
       "qualityScore": 100,
       "currency": "USD",
       "duration": "300 minutes",
@@ -61219,7 +61219,37 @@
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
       "_unknownFields": {
-        "durationMinutes": 300
+        "durationMinutes": 300,
+        "priceSource": "s54-swk-adjudicate",
+        "priceVerifiedAt": "2026-08-28",
+        "probeDates": [
+          "2026-08-29",
+          "2026-08-30",
+          "2026-08-31",
+          "2026-09-01",
+          "2026-09-05",
+          "2026-09-12"
+        ],
+        "probeSampled": 6,
+        "probeDateValid": 6,
+        "priceCustomerType": "Adult",
+        "priceTierCount": 2,
+        "priceTiers": [
+          "Adult $129.95 (Ages 13+)",
+          "Youth $89.95 (Ages 6-12)",
+          "Child $0 (Ages 5 and Under)"
+        ],
+        "excludedTiers": [
+          "Youth $89.95 (Ages 6-12) [never]"
+        ],
+        "priceMinPartySize": 1,
+        "priceUnit": "per person",
+        "unitEvidence": "tier label: 'Adult'",
+        "observedPriceRange": [
+          129.95,
+          139.95
+        ],
+        "priceBasis": "s54-swk-adjudicate (2026-08-28): D-624 cheapest adult/base per-person tier: \"Adult\" $129.95 (note \"Ages 13+\"), unit \"per person\" (tier label: 'Adult'); not anchoring: Youth $89.95 (Ages 6-12) [never]; anchor varied $129.95-$139.95 across readings (floor published); 6/6 dated readings 2026-08-28 (5/6 date-valid), 2 ladder shape(s), include_breakdown=yes, probe.json sha256 71d6fde83762"
       },
       "nextAvailableDate": "2026-08-26",
       "nullConsecutiveSweeps": 0
@@ -61285,8 +61315,8 @@
       "location": "United States/Florida/Key West",
       "island": "united states/florida/key west",
       "price": 129.95,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "priceLabel": "Adult",
+      "priceConfidence": "high",
       "qualityScore": 100,
       "currency": "USD",
       "duration": "300 minutes",
@@ -61321,7 +61351,37 @@
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
       "_unknownFields": {
-        "durationMinutes": 300
+        "durationMinutes": 300,
+        "priceSource": "s54-swk-adjudicate",
+        "priceVerifiedAt": "2026-08-28",
+        "probeDates": [
+          "2026-08-29",
+          "2026-08-30",
+          "2026-08-31",
+          "2026-09-01",
+          "2026-09-05",
+          "2026-09-12"
+        ],
+        "probeSampled": 6,
+        "probeDateValid": 6,
+        "priceCustomerType": "Adult",
+        "priceTierCount": 2,
+        "priceTiers": [
+          "Adult $129.95 (Ages 13+)",
+          "Youth $89.95 (Ages 6 - 12)",
+          "Child $0 (Ages 5 and under)"
+        ],
+        "excludedTiers": [
+          "Youth $89.95 (Ages 6 - 12) [never]"
+        ],
+        "priceMinPartySize": 1,
+        "priceUnit": "per person",
+        "unitEvidence": "tier label: 'Adult'",
+        "observedPriceRange": [
+          129.95,
+          139.95
+        ],
+        "priceBasis": "s54-swk-adjudicate (2026-08-28): D-624 cheapest adult/base per-person tier: \"Adult\" $129.95 (note \"Ages 13+\"), unit \"per person\" (tier label: 'Adult'); not anchoring: Youth $89.95 (Ages 6 - 12) [never]; anchor varied $129.95-$139.95 across readings (floor published); 6/6 dated readings 2026-08-28 (5/6 date-valid), 3 ladder shape(s), include_breakdown=yes, probe.json sha256 71d6fde83762"
       },
       "nextAvailableDate": "2026-08-26",
       "nullConsecutiveSweeps": 0
@@ -61436,8 +61496,8 @@
       "location": "United States/Florida/Key West",
       "island": "united states/florida/key west",
       "price": 139.95,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "priceLabel": "Adult",
+      "priceConfidence": "high",
       "qualityScore": 100,
       "currency": "USD",
       "duration": "360 minutes",
@@ -61470,7 +61530,38 @@
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
       "_unknownFields": {
-        "durationMinutes": 360
+        "durationMinutes": 360,
+        "priceSource": "s54-swk-adjudicate",
+        "priceVerifiedAt": "2026-08-28",
+        "probeDates": [
+          "2026-08-29",
+          "2026-08-30",
+          "2026-08-31",
+          "2026-09-01",
+          "2026-09-05",
+          "2026-09-12"
+        ],
+        "probeSampled": 6,
+        "probeDateValid": 6,
+        "priceCustomerType": "Adult",
+        "priceTierCount": 2,
+        "priceTiers": [
+          "Adult $139.95 (13+)",
+          "Youth $109.95 (Ages 6-12)",
+          "Child $0 (Ages 5 and under)",
+          "Birthday Ticket $0 (One free ticket on your birthday!)"
+        ],
+        "excludedTiers": [
+          "Youth $109.95 (Ages 6-12) [never]"
+        ],
+        "priceMinPartySize": 1,
+        "priceUnit": "per person",
+        "unitEvidence": "tier label: 'Adult'",
+        "observedPriceRange": [
+          139.95,
+          149.95
+        ],
+        "priceBasis": "s54-swk-adjudicate (2026-08-28): D-624 cheapest adult/base per-person tier: \"Adult\" $139.95 (note \"13+\"), unit \"per person\" (tier label: 'Adult'); not anchoring: Youth $109.95 (Ages 6-12) [never]; anchor varied $139.95-$149.95 across readings (floor published); 6/6 dated readings 2026-08-28 (6/6 date-valid), 2 ladder shape(s), include_breakdown=yes, probe.json sha256 71d6fde83762"
       },
       "nextAvailableDate": "2026-08-27",
       "nullConsecutiveSweeps": 0
@@ -61659,8 +61750,8 @@
       "location": "United States/Florida/Key West",
       "island": "united states/florida/key west",
       "price": 69.95,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "priceLabel": "Adult",
+      "priceConfidence": "high",
       "qualityScore": 100,
       "currency": "USD",
       "duration": "120 minutes",
@@ -61695,7 +61786,38 @@
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
       "_unknownFields": {
-        "durationMinutes": 120
+        "durationMinutes": 120,
+        "priceSource": "s54-swk-adjudicate",
+        "priceVerifiedAt": "2026-08-28",
+        "probeDates": [
+          "2026-08-29",
+          "2026-08-30",
+          "2026-08-31",
+          "2026-09-01",
+          "2026-09-05",
+          "2026-09-12"
+        ],
+        "probeSampled": 6,
+        "probeDateValid": 6,
+        "priceCustomerType": "Adult",
+        "priceTierCount": 2,
+        "priceTiers": [
+          "Adult $69.95 (Ages 13+)",
+          "Youth $39.95 (Ages 6 - 12)",
+          "Child $0 (Ages 5 and Under)",
+          "Birthday Ticket $0 (One free ticket on your birthday!)"
+        ],
+        "excludedTiers": [
+          "Youth $39.95 (Ages 6 - 12) [never]"
+        ],
+        "priceMinPartySize": 1,
+        "priceUnit": "per person",
+        "unitEvidence": "tier label: 'Adult'",
+        "observedPriceRange": [
+          69.95,
+          79.95
+        ],
+        "priceBasis": "s54-swk-adjudicate (2026-08-28): D-624 cheapest adult/base per-person tier: \"Adult\" $69.95 (note \"Ages 13+\"), unit \"per person\" (tier label: 'Adult'); not anchoring: Youth $39.95 (Ages 6 - 12) [never]; anchor varied $69.95-$79.95 across readings (floor published); 6/6 dated readings 2026-08-28 (6/6 date-valid), 3 ladder shape(s), include_breakdown=yes, probe.json sha256 71d6fde83762"
       },
       "nextAvailableDate": "2026-08-26",
       "nullConsecutiveSweeps": 0
@@ -61815,8 +61937,8 @@
       "location": "United States/Florida/Key West",
       "island": "united states/florida/key west",
       "price": 45.95,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "priceLabel": "Adult",
+      "priceConfidence": "high",
       "qualityScore": 100,
       "currency": "USD",
       "duration": "180 minutes",
@@ -61849,7 +61971,38 @@
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
       "_unknownFields": {
-        "durationMinutes": 180
+        "durationMinutes": 180,
+        "priceSource": "s54-swk-adjudicate",
+        "priceVerifiedAt": "2026-08-28",
+        "probeDates": [
+          "2026-08-29",
+          "2026-08-30",
+          "2026-08-31",
+          "2026-09-01",
+          "2026-09-05",
+          "2026-09-12"
+        ],
+        "probeSampled": 6,
+        "probeDateValid": 6,
+        "priceCustomerType": "Adult",
+        "priceTierCount": 2,
+        "priceTiers": [
+          "Adult $45.95 (Ages 13+)",
+          "Youth $29.95 (Ages 6 - 12)",
+          "Child $0 (Ages 5 and Under)",
+          "Birthday Ticket $0 (One free ticket on your birthday!)"
+        ],
+        "excludedTiers": [
+          "Youth $29.95 (Ages 6 - 12) [never]"
+        ],
+        "priceMinPartySize": 1,
+        "priceUnit": "per person",
+        "unitEvidence": "tier label: 'Adult'",
+        "observedPriceRange": [
+          45.95,
+          50.95
+        ],
+        "priceBasis": "s54-swk-adjudicate (2026-08-28): D-624 cheapest adult/base per-person tier: \"Adult\" $45.95 (note \"Ages 13+\"), unit \"per person\" (tier label: 'Adult'); not anchoring: Youth $29.95 (Ages 6 - 12) [never]; anchor varied $45.95-$50.95 across readings (floor published); 6/6 dated readings 2026-08-28 (6/6 date-valid), 3 ladder shape(s), include_breakdown=yes, probe.json sha256 71d6fde83762"
       },
       "nextAvailableDate": "2026-08-27",
       "nullConsecutiveSweeps": 0
@@ -61913,8 +62066,8 @@
       "location": "United States/Florida/Key West",
       "island": "united states/florida/key west",
       "price": 59.95,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "priceLabel": "Adult",
+      "priceConfidence": "high",
       "qualityScore": 100,
       "currency": "USD",
       "duration": "180 minutes",
@@ -61947,7 +62100,34 @@
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
       "_unknownFields": {
-        "durationMinutes": 180
+        "durationMinutes": 180,
+        "priceSource": "s54-swk-adjudicate",
+        "priceVerifiedAt": "2026-08-28",
+        "probeDates": [
+          "2026-08-29",
+          "2026-08-30",
+          "2026-08-31",
+          "2026-09-01",
+          "2026-09-05",
+          "2026-09-12"
+        ],
+        "probeSampled": 6,
+        "probeDateValid": 6,
+        "priceCustomerType": "Adult",
+        "priceTierCount": 2,
+        "priceTiers": [
+          "Adult $59.95 (Ages 13+)",
+          "Youth $39.95 (Ages 6 - 12)",
+          "Child $0 (Ages 5 and Under)",
+          "Birthday Ticket $0 (One free ticket on your birthday!)"
+        ],
+        "excludedTiers": [
+          "Youth $39.95 (Ages 6 - 12) [never]"
+        ],
+        "priceMinPartySize": 1,
+        "priceUnit": "per person",
+        "unitEvidence": "tier label: 'Adult'",
+        "priceBasis": "s54-swk-adjudicate (2026-08-28): D-624 cheapest adult/base per-person tier: \"Adult\" $59.95 (note \"Ages 13+\"), unit \"per person\" (tier label: 'Adult'); not anchoring: Youth $39.95 (Ages 6 - 12) [never]; 6/6 dated readings 2026-08-28 (6/6 date-valid), 2 ladder shape(s), include_breakdown=yes, probe.json sha256 71d6fde83762"
       },
       "nextAvailableDate": "2026-08-26",
       "nullConsecutiveSweeps": 0
@@ -61962,8 +62142,8 @@
       "location": "United States/Florida/Key West",
       "island": "united states/florida/key west",
       "price": 64.95,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "priceLabel": "Adult",
+      "priceConfidence": "high",
       "qualityScore": 100,
       "currency": "USD",
       "duration": "180 minutes",
@@ -61996,7 +62176,34 @@
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
       "_unknownFields": {
-        "durationMinutes": 180
+        "durationMinutes": 180,
+        "priceSource": "s54-swk-adjudicate",
+        "priceVerifiedAt": "2026-08-28",
+        "probeDates": [
+          "2026-08-29",
+          "2026-08-30",
+          "2026-08-31",
+          "2026-09-01",
+          "2026-09-05",
+          "2026-09-12"
+        ],
+        "probeSampled": 6,
+        "probeDateValid": 6,
+        "priceCustomerType": "Adult",
+        "priceTierCount": 2,
+        "priceTiers": [
+          "Adult $64.95 (Ages 13+)",
+          "Youth $46.95 (Ages 6 - 12)",
+          "Child $0 (Ages 5 and Under)",
+          "Birthday Ticket $0 (One free ticket on your birthday!)"
+        ],
+        "excludedTiers": [
+          "Youth $46.95 (Ages 6 - 12) [never]"
+        ],
+        "priceMinPartySize": 1,
+        "priceUnit": "per person",
+        "unitEvidence": "tier label: 'Adult'",
+        "priceBasis": "s54-swk-adjudicate (2026-08-28): D-624 cheapest adult/base per-person tier: \"Adult\" $64.95 (note \"Ages 13+\"), unit \"per person\" (tier label: 'Adult'); not anchoring: Youth $46.95 (Ages 6 - 12) [never]; 6/6 dated readings 2026-08-28 (5/6 date-valid), 2 ladder shape(s), include_breakdown=yes, probe.json sha256 71d6fde83762"
       },
       "nextAvailableDate": "2026-08-26",
       "nullConsecutiveSweeps": 0
