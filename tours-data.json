@@ -57641,9 +57641,9 @@
       "category": "",
       "location": "United States/Florida/Key West",
       "island": "united states/florida/key west",
-      "price": 50,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "price": 40,
+      "priceLabel": "Half-Day Rental",
+      "priceConfidence": "high",
       "qualityScore": 95,
       "currency": "USD",
       "duration": "240 minutes",
@@ -57673,7 +57673,8 @@
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
       "_unknownFields": {
-        "durationMinutes": 240
+        "durationMinutes": 240,
+        "priceBasis": "s53 (2026-08-28): KWST Southernmost e-bike seasonal boundary settled and written. Two rungs. Rung 1 holds 2026-08-28 -> 2026-10-01, anchors on 'Half-Day Rental' (4 Hours) $40 (full ladder: Half-Day $40 / Full-Day 8h $50 / One Day 24h $60 / 2 Day $108 / 3 Day $162 / 4 Day $216 / 5 Day $270 / One Week $324). Rung 2 starts 2026-10-02, holds through 2026-12-31 (last bookable day): $50 / $60 / $70 / $126 / $189 / $252 / $315 / $378, every tier stepping one day-rate. Currently published: Rung 1, $40. Re-verified live 2026-08-28 via price-preview per-item/v2 (southernmostparknplay, item_pks=579068,579064,579067, include_breakdown=yes): date=2026-08-28 -> Half-Day $40 (start_at 2026-08-28T11:30:00, date-valid); date=2026-10-01 -> Half-Day $40 (start_at 2026-10-01T09:00:00, date-valid, still Rung 1); date=2026-10-02 -> Half-Day $50 (start_at 2026-10-02T09:00:00, date-valid, Rung 2 begins). Zero delta vs the ruling on all 8 tiers, all 3 dated reads. Supersedes the pre-s52 stored figure ($50, blank confidence, unstamped)."
       },
       "nextAvailableDate": "2026-08-26",
       "nullConsecutiveSweeps": 0
@@ -57687,9 +57688,9 @@
       "category": "",
       "location": "United States/Florida/Key West",
       "island": "united states/florida/key west",
-      "price": 60,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "price": 50,
+      "priceLabel": "Half-Day Rental",
+      "priceConfidence": "high",
       "qualityScore": 95,
       "currency": "USD",
       "duration": "240 minutes",
@@ -57723,7 +57724,8 @@
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
       "_unknownFields": {
-        "durationMinutes": 240
+        "durationMinutes": 240,
+        "priceBasis": "s53 (2026-08-28): KWST Southernmost e-bike seasonal boundary settled and written. Two rungs; ties 579067 on every tier, every dated read. Rung 1 holds 2026-08-28 -> 2026-10-01, anchors on 'Half-Day Rental' (4 Hours) $50 (full ladder: Half-Day $50 / Full-Day 8h $60 / One Day 24h $70 / 2 Day $126 / 3 Day $189 / 4 Day $252 / 5 Day $315 / One Week $378). Rung 2 starts 2026-10-02, holds through 2026-12-31 (last bookable day): $60 / $70 / $80 / $144 / $216 / $288 / $360 / $438, every tier stepping one day-rate. Currently published: Rung 1, $50. Re-verified live 2026-08-28 via price-preview per-item/v2 (southernmostparknplay, item_pks=579068,579064,579067, include_breakdown=yes): date=2026-08-28 -> Half-Day $50 (start_at 2026-08-28T11:30:00, date-valid); date=2026-10-01 -> Half-Day $50 (start_at 2026-10-01T09:00:00, date-valid, still Rung 1); date=2026-10-02 -> Half-Day $60 (start_at 2026-10-02T09:00:00, date-valid, Rung 2 begins). Zero delta vs the ruling on all 8 tiers, all 3 dated reads. Supersedes the pre-s52 stored figure ($60, blank confidence, unstamped)."
       },
       "nextAvailableDate": "2026-08-26",
       "nullConsecutiveSweeps": 0
@@ -57737,9 +57739,9 @@
       "category": "",
       "location": "United States/Florida/Key West",
       "island": "united states/florida/key west",
-      "price": 60,
-      "priceLabel": "",
-      "priceConfidence": "",
+      "price": 50,
+      "priceLabel": "Half-Day Rental",
+      "priceConfidence": "high",
       "qualityScore": 95,
       "currency": "USD",
       "duration": "240 minutes",
@@ -57773,7 +57775,8 @@
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
       "_unknownFields": {
-        "durationMinutes": 240
+        "durationMinutes": 240,
+        "priceBasis": "s53 (2026-08-28): KWST Southernmost e-bike seasonal boundary settled and written. Two rungs; ties 579064 on every tier, every dated read. Rung 1 holds 2026-08-28 -> 2026-10-01, anchors on 'Half-Day Rental' (4 Hours) $50 (full ladder: Half-Day $50 / Full-Day 8h $60 / One Day 24h $70 / 2 Day $126 / 3 Day $189 / 4 Day $252 / 5 Day $315 / One Week $378). Rung 2 starts 2026-10-02, holds through 2026-12-31 (last bookable day): $60 / $70 / $80 / $144 / $216 / $288 / $360 / $438, every tier stepping one day-rate. Currently published: Rung 1, $50. Re-verified live 2026-08-28 via price-preview per-item/v2 (southernmostparknplay, item_pks=579068,579064,579067, include_breakdown=yes): date=2026-08-28 -> Half-Day $50 (start_at 2026-08-28T11:30:00, date-valid); date=2026-10-01 -> Half-Day $50 (start_at 2026-10-01T09:00:00, date-valid, still Rung 1); date=2026-10-02 -> Half-Day $60 (start_at 2026-10-02T09:00:00, date-valid, Rung 2 begins). Zero delta vs the ruling on all 8 tiers, all 3 dated reads. Supersedes the pre-s52 stored figure ($60, blank confidence, unstamped)."
       },
       "nextAvailableDate": "2026-08-26",
       "nullConsecutiveSweeps": 0
