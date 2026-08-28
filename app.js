@@ -392,14 +392,90 @@ function applyFilters() {
     renderTours();
 }
 
+// ===== STATIC-GRID HYDRATION (s53) =====
+//
+// A grid the _tools static-grid generator baked carries
+// data-generated-from="<sha256 of tours-data.json>" and one .tour-card per
+// drawable row, in deterministic order, so a crawler or no-JS visitor gets
+// the complete inventory. This file must HYDRATE that DOM, not replace it:
+// 69 baked cards for a crawler against a random 12 for a browser is
+// differing content by user agent. Hydration is show/hide plus reorder of
+// the baked cards by pk, with no pagination — the whole set is already on
+// the page. It engages only when the baked pk set EQUALS the pool this file
+// just gated from the same tours-data.json; any mismatch (stale bake,
+// drifted data, unkeyed or duplicate cards, foreign markup) falls back to
+// the replace path below, so a wrong page is never silently kept.
+//
+// Cards are keyed by data-pk (generator markup) or data-id (createTourCard
+// markup — id and pk are the same number on every row); both are accepted.
+
+function bakedCardsByPk(grid) {
+    if (!grid || typeof grid.hasAttribute !== 'function' || !grid.hasAttribute('data-generated-from')) return null;
+    const map = new Map();
+    for (const card of grid.querySelectorAll('.tour-card')) {
+        const pk = card.getAttribute('data-pk') || card.getAttribute('data-id');
+        if (!pk || map.has(String(pk))) return null;
+        map.set(String(pk), card);
+    }
+    return map.size ? map : null;
+}
+
+// The baked card map when it matches `pool` exactly, else null.
+function hydratableGrid(grid, pool) {
+    const cards = bakedCardsByPk(grid);
+    if (!cards || !Array.isArray(pool) || cards.size !== pool.length) return null;
+    for (const t of pool) if (!cards.has(String(t.pk))) return null;
+    return cards;
+}
+
+// Show the cards in `ordered` (in that order), hide the rest. appendChild on
+// a node already in the grid MOVES it, so the loop leaves the grid in
+// `ordered` order without rebuilding anything. style.display is used rather
+// than the hidden attribute because an author display rule on .tour-card
+// would override the attribute's UA style.
+function hydrateBakedGrid(grid, baked, ordered) {
+    const shown = new Set();
+    for (const t of ordered) {
+        const card = baked.get(String(t.pk));
+        card.style.display = '';
+        grid.appendChild(card);
+        shown.add(card);
+    }
+    for (const card of baked.values()) {
+        if (!shown.has(card)) card.style.display = 'none';
+    }
+    let empty = grid.querySelector('.tours-empty');
+    if (ordered.length === 0) {
+        if (!empty) {
+            empty = document.createElement('p');
+            empty.className = 'loading tours-empty';
+            empty.textContent = 'No tours found. Try adjusting your filters.';
+            grid.appendChild(empty);
+        }
+        empty.style.display = '';
+    } else if (empty) {
+        empty.style.display = 'none';
+    }
+}
+
 // Render tours
 function renderTours() {
     const grid = document.getElementById('tours-grid');
     const loadMoreBtn = document.getElementById('load-more');
     const countEl = document.getElementById('tours-count');
-    
+
     if (!grid) return;
-    
+
+    // Baked grid: hydrate in place. No pagination; every card is on the page.
+    const baked = hydratableGrid(grid, allTours);
+    if (baked) {
+        hydrateBakedGrid(grid, baked, filteredTours);
+        displayedCount = filteredTours.length;
+        if (loadMoreBtn) loadMoreBtn.style.display = 'none';
+        if (countEl) countEl.textContent = `Showing ${displayedCount} of ${filteredTours.length} tours`;
+        return;
+    }
+
     const toursToShow = filteredTours.slice(0, displayedCount + TOURS_PER_PAGE);
     displayedCount = toursToShow.length;
     
@@ -426,6 +502,9 @@ function loadMore() {
 
     // No grid on this page — this function was never meant to run here.
     if (!grid) return;
+
+    // A hydrated baked grid has no pages to load; the button is already hidden.
+    if (hydratableGrid(grid, allTours)) return;
 
     const nextTours = filteredTours.slice(displayedCount, displayedCount + TOURS_PER_PAGE);
     displayedCount += nextTours.length;
@@ -540,10 +619,11 @@ async function initAreaPage(areaSlug) {
         allTours = allTours.filter(t => t.status !== 'inactive' && !t.bookingDead && !t.hidden);
 
         // Only priced inventory is eligible for the draw (see hasUsablePrice).
-        // islamorada is left with 23 eligible rows against TOURS_PER_PAGE = 24 and
-        // renders 23 cards. Accepted: that page was showing an expected 18.1 cards
-        // reading "Price on request" out of 24, so it trades one slot for 17.1
-        // usable ones. Do not special-case it.
+        // islamorada: this predicate returns 69 eligible rows (measured 2026-08-27
+        // by the s52 window and again 2026-08-28 at 3b5adb0 with the generator's
+        // vm run of this very function). An earlier comment here said 23, from a
+        // smaller pool. Nothing is special-cased: a page renders whatever the
+        // predicate leaves, even when that is under TOURS_PER_PAGE.
         allTours = allTours.filter(hasUsablePrice);
 
         // Fill the hero count slot before narrowing: updateAreaCounts() buckets
