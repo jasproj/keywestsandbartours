@@ -255,6 +255,18 @@ body {
     z-index: 2;
 }
 
+/* Mobile: category pages inherit .hero's 100svh — cap it so tours
+   are visible in 1 scroll. Homepage overrides via inline style. */
+@media (max-width: 767px) {
+    .hero {
+        min-height: auto;
+        padding: 55px 15px 10px;
+    }
+    .hero h1 { font-size: 1.1rem; margin-bottom: 4px; }
+    .hero p { font-size: 0.8rem; margin-bottom: 6px; }
+    .hero a { font-size: 0.85rem; }
+}
+
 @media (min-width: 768px) {
     .hero { 
         padding: 90px 20px 30px;
