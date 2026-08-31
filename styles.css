@@ -191,7 +191,7 @@ body {
 .hero {
     position: relative;
     padding: 55px 15px 10px;
-    background: linear-gradient(rgba(27, 58, 87, 0.6), rgba(59, 184, 195, 0.6));
+    background: none;
     text-align: center;
     color: white;
     overflow: hidden;
@@ -245,7 +245,7 @@ body {
 .hero-overlay {
     position: absolute;
     inset: 0;
-    background: linear-gradient(rgba(27, 58, 87, 0.6), rgba(59, 184, 195, 0.6));
+    background: none;
     z-index: 1;
     pointer-events: none;
 }
