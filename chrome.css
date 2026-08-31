@@ -28,7 +28,7 @@
 .site-footer-brand{max-width:1200px;margin:0 auto;padding:44px 20px 0;text-align:center}
 .site-footer-logo{display:block;height:160px;width:auto;max-width:600px;margin:0 auto 12px;object-fit:contain}
 .site-footer-brand p{color:#555;font-size:.9rem;margin:0 0 24px}
-.site-footer-inner{max-width:1200px;margin:0 auto;padding:44px 20px 24px;display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:32px}
+.site-footer-inner{max-width:1200px;margin:0 auto;padding:44px 20px 24px;display:flex;justify-content:center;gap:60px;flex-wrap:wrap}
 .site-footer-col h4{color:#3BB8C3;font-size:.8rem;letter-spacing:.09em;text-transform:uppercase;margin:0 0 14px}
 .site-footer-col ul{list-style:none;margin:0;padding:0}
 .site-footer-col li{margin-bottom:9px}
