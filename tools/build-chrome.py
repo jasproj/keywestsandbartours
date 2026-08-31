@@ -44,7 +44,7 @@ SITE_EMAIL = "walktheplankadventures@gmail.com"   # one line to change the addre
 LEGACY_EMAILS = ["info@keywestsandbartours.com"]
 SITE_PHONE_TEL  = "4074766190"
 SITE_PHONE_TEXT = "(407) 476-6190"
-SITE_LOGO = "/logo.png"
+SITE_LOGO = "/images/header-logo.png"
 
 # CANONICAL NAV — ruled 2026-08-22. Tiki Boats, Contact, Home and FAQs removed;
 # FAQs and Contact live in the footer.
@@ -116,7 +116,7 @@ def header_html():
     return f'''<header class="site-header">
     <div class="site-header-inner">
       <a href="/" class="site-logo">
-        <img src="{SITE_LOGO}" alt="{SITE_NAME}" width="40" height="40">
+        <picture><source type="image/webp" srcset="/images/header-logo-160.webp 160w, /images/header-logo-320.webp 320w, /images/header-logo-480.webp 480w" sizes="(max-width: 860px) 93px, 103px"><img src="{SITE_LOGO}" alt="{SITE_NAME}" loading="eager" decoding="async"></picture>
         <span class="site-logo-text">{SITE_NAME}</span>
       </a>
       <nav class="site-nav" aria-label="Main navigation">
