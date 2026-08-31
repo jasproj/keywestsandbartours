@@ -7,7 +7,8 @@
 .site-header{background:#1B3A57;position:relative;z-index:50}
 .site-header-inner{max-width:1200px;margin:0 auto;padding:12px 20px;display:flex;align-items:center;gap:20px}
 .site-logo{display:flex;align-items:center;gap:10px;text-decoration:none;color:#fff;font-weight:700;font-size:1rem;flex:0 0 auto}
-.site-logo img{display:block;width:40px;height:40px;object-fit:contain;filter:drop-shadow(0 0 1px rgba(255,255,255,.7)) drop-shadow(0 0 2px rgba(255,255,255,.4))}
+.site-logo-text{display:none}
+.site-logo img{display:block;height:44px;width:auto;object-fit:contain;filter:drop-shadow(0 0 2px rgba(255,255,255,.8)) drop-shadow(0 0 4px rgba(255,255,255,.5))}
 .site-nav{display:flex;gap:22px;margin-left:auto}
 .site-nav a{color:#fff;text-decoration:none;font-weight:600;font-size:.95rem;padding:6px 0}
 .site-nav a:hover{color:#3BB8C3}
@@ -20,7 +21,8 @@
 @media (max-width:860px){
   .site-nav{display:none}
   .site-nav-toggle{display:block;margin-left:auto}
-  .site-logo-text{display:none}
+  .site-logo img{height:36px}
+  .site-logo-text{display:none}  /* text baked into header logo image */
 }
 .site-footer{background:#132B42;color:#fff;margin-top:48px}
 .site-footer-inner{max-width:1200px;margin:0 auto;padding:44px 20px 24px;display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:32px}
