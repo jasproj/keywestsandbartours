@@ -135,6 +135,10 @@ def header_html():
 
 def footer_html():
     return f'''<footer class="site-footer">
+    <div class="site-footer-brand">
+      <a href="/"><img src="/images/header-logo.png" alt="{SITE_NAME}" class="site-footer-logo"></a>
+      <p>Book direct with local operators.</p>
+    </div>
     <div class="site-footer-inner">
       <div class="site-footer-col">
         <h4>Areas</h4>
