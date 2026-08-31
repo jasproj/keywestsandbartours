@@ -527,17 +527,17 @@ body {
 }
 
 .trust-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
     max-width: 1000px;
     margin: 0 auto;
+    flex-wrap: wrap;
 }
 
 @media (min-width: 768px) {
     .trust-container {
-        grid-template-columns: repeat(3, 1fr);
-        gap: 30px;
+        gap: 60px;
         padding: 10px 20px;
     }
 }
