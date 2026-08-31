@@ -1297,5 +1297,19 @@
         }
     </script>
   <script src="/chrome.js" defer></script>
+<script>
+document.addEventListener("DOMContentLoaded",function(){
+  document.querySelectorAll(".check-availability").forEach(function(el){
+    el.addEventListener("click",function(){
+      var name=this.getAttribute("data-tour-name")||"unknown";
+      var id=this.getAttribute("data-tour-id")||"unknown";
+      var page=window.location.pathname.replace(/\//g,"").replace(".html","");
+      if(typeof gtag==="function"){
+        gtag("event","booking_click",{tour_name:name,tour_id:id,page_type:page});
+      }
+    });
+  });
+});
+</script>
 </body>
 </html>
