@@ -8,7 +8,7 @@
 .site-header-inner{max-width:1200px;margin:0 auto;padding:12px 20px;display:flex;align-items:center;gap:20px}
 .site-logo{display:flex;align-items:center;gap:10px;text-decoration:none;color:#1B3A57;font-weight:700;font-size:1rem;flex:0 0 auto}
 .site-logo-text{display:none}
-.site-logo img{display:block;height:80px;width:auto;object-fit:contain}
+.site-logo img{display:block;height:90px;width:auto;object-fit:contain}
 .site-nav{display:flex;gap:22px;margin-left:auto}
 .site-nav a{color:#1B3A57;text-decoration:none;font-weight:600;font-size:.95rem;padding:6px 0}
 .site-nav a:hover{color:#3BB8C3}
