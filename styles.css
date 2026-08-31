@@ -1810,7 +1810,7 @@ main.blog-content p a, div.blog-content p a {
     width: 100%;
     max-height: 120px;
     object-fit: cover;
-    object-position: center 60%;
+    object-position: center 80%;
     display: block;
     margin-top: 60px;
 }
