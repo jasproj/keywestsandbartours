@@ -156,7 +156,7 @@ def footer_html():
         <h4>Company</h4>
         <ul>
 {_links(FOOTER_COMPANY)}
-          <li><a href="mailto:{SITE_EMAIL}">{SITE_EMAIL}</a></li>
+          <li><a href="mailto:{SITE_EMAIL}">Email Us</a></li>
         </ul>
       </div>
     </div>
