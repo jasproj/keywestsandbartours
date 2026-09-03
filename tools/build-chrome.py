@@ -122,7 +122,7 @@ def header_html():
     return f'''<header class="site-header">
     <div class="site-header-inner">
       <a href="/" class="site-logo">
-        <picture><source type="image/webp" srcset="/images/header-logo-160.webp 160w, /images/header-logo-320.webp 320w, /images/header-logo-480.webp 480w" sizes="(max-width: 860px) 93px, 103px"><img src="{SITE_LOGO}" alt="{SITE_NAME}" loading="eager" decoding="async"></picture>
+        <picture><source type="image/webp" srcset="/images/header-logo-160.webp 160w, /images/header-logo-320.webp 320w, /images/header-logo-480.webp 480w" sizes="(max-width: 860px) 93px, 103px"><img src="{SITE_LOGO}" alt="{SITE_NAME}" loading="eager" decoding="async" width="1916" height="821"></picture>
         <span class="site-logo-text">{SITE_NAME}</span>
       </a>
       <nav class="site-nav" aria-label="Main navigation">
