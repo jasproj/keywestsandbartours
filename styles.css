@@ -966,6 +966,13 @@ main.blog-content p a, div.blog-content p a {
    height + object-fit:cover makes uneven card heights structurally
    impossible. .related-card h3 a had zero styling (browser default blue
    underline) -- confirmed by measurement, not assumed. */
+/* Booking-path block on blog posts that had no route to a tour page (s56). */
+.post-booking-cta { max-width: 800px; margin: 32px auto; padding: 24px 28px; border-radius: 12px; background: linear-gradient(135deg, #1B3A57, #25747A); color: #fff; }
+.post-booking-cta h3 { margin: 0 0 8px; color: #fff; font-size: 1.25rem; }
+.post-booking-cta p { margin: 0 0 14px; color: rgba(255,255,255,0.92); }
+.post-booking-cta a { display: inline-block; background: #E87B4A; color: #0D1B2A; font-weight: 700; padding: 12px 20px; border-radius: 8px; text-decoration: none; min-height: 48px; line-height: 24px; }
+.post-booking-cta a:hover { background: #f08f62; }
+
 .related-grid {
     display: grid;
     grid-template-columns: 1fr;
