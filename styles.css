@@ -214,8 +214,8 @@ body {
 }
 
 .hero-slide:nth-child(1) {
-    background-image: url('images/hero-photo-1-1600.webp');
-    background-image: image-set(url('images/hero-photo-1-1600.webp') type('image/webp'), url('images/hero-photo-1.jpg') type('image/jpeg'));
+    background-image: url('images/keys/tiki-dock-sunrise-1600.webp');
+    background-image: image-set(url('images/keys/tiki-dock-sunrise-1600.webp') type('image/webp'), url('images/keys/tiki-dock-sunrise.jpg') type('image/jpeg'));
     animation-delay: 0s;
     opacity: 1;
 }
