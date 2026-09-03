@@ -45,6 +45,12 @@ LEGACY_EMAILS = ["info@keywestsandbartours.com"]
 SITE_PHONE_TEL  = "4074766190"
 SITE_PHONE_TEXT = "(407) 476-6190"
 SITE_LOGO = "/images/header-logo.png"
+# Footer mark renders at 373 CSS px, so it needs its own larger sources --
+# the header set tops out at 480w. Density-only srcsets always pick 1x, so
+# these are width descriptors with an explicit sizes, per the network rule.
+SITE_LOGO_FOOTER      = "/images/header-logo-800.png"
+SITE_LOGO_FOOTER_SET  = "/images/header-logo-480.webp 480w, /images/header-logo-800.webp 800w"
+SITE_LOGO_FOOTER_SIZES = "373px"
 
 # CANONICAL NAV — ruled 2026-08-22. Tiki Boats, Contact, Home and FAQs removed;
 # FAQs and Contact live in the footer.
@@ -136,7 +142,7 @@ def header_html():
 def footer_html():
     return f'''<footer class="site-footer">
     <div class="site-footer-brand">
-      <a href="/"><img src="/images/header-logo.png" alt="{SITE_NAME}" class="site-footer-logo"></a>
+      <a href="/"><picture><source type="image/webp" srcset="{SITE_LOGO_FOOTER_SET}" sizes="{SITE_LOGO_FOOTER_SIZES}"><img src="{SITE_LOGO_FOOTER}" alt="{SITE_NAME}" class="site-footer-logo" loading="lazy" decoding="async" width="800" height="343"></picture></a>
       <p>Book direct with local operators.</p>
     </div>
     <div class="site-footer-inner">
