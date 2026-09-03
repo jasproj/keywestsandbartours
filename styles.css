@@ -1,3 +1,8 @@
+/* Global image guard: an image can never exceed its container, so the
+   intrinsic width/height attributes below supply an aspect ratio only.
+   Matches the rule the other 7 network sites already carry. */
+img { max-width: 100%; height: auto; }
+
 /* Key West Sandbar Tours - Mobile-First Styles */
 /* Colors: Sand #FDF8F0, Navy #1B3A57, Coral #E87B4A, Teal #3BB8C3
    Text on Coral: #0D1B2A (6.10:1). White is 2.85:1 and fails AA; navy
