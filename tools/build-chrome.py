@@ -43,12 +43,10 @@ SITE_EMAIL = "walktheplankadventures@gmail.com"   # one line to change the addre
 # does not exist -- no mail service is configured on the domain.
 LEGACY_EMAILS = ["info@keywestsandbartours.com"]
 # Header click-to-call. Empty means the header renders no phone element at all.
-# Emptied 2026-09-04: the number was published on all 123 pages and harvested;
-# all 16 lifetime bookings came through FareHarbor online, none by phone.
-# To restore, put a number back in both fields and run --apply. Use a
-# forwarding number, not a personal line.
-SITE_PHONE_TEL  = ""
-SITE_PHONE_TEXT = ""
+# This is a Google Voice number, not a personal line -- it is the number meant
+# to be published, and it forwards. Confirmed by Jason 2026-09-04.
+SITE_PHONE_TEL  = "4074766190"
+SITE_PHONE_TEXT = "(407) 476-6190"
 SITE_LOGO = "/images/header-logo.png"
 # Footer mark renders at 373 CSS px, so it needs its own larger sources --
 # the header set tops out at 480w. Density-only srcsets always pick 1x, so
