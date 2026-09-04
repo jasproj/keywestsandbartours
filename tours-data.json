@@ -8735,7 +8735,7 @@
       "category": "",
       "location": "United States/Florida/Key West",
       "island": "united states/florida/key west",
-      "price": 180,
+      "price": 90,
       "priceLabel": "",
       "priceConfidence": "",
       "qualityScore": 95,
@@ -8768,7 +8768,9 @@
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
       "_unknownFields": {
-        "durationMinutes": 480
+        "durationMinutes": 480,
+        "priceSource": "s57-fh-price-preview",
+        "priceVerifiedAt": "2026-09-04"
       },
       "nextAvailableDate": "2026-08-26",
       "nullConsecutiveSweeps": 0
@@ -15233,7 +15235,7 @@
       "category": "",
       "location": "United States/Florida/Key West",
       "island": "united states/florida/key west",
-      "price": 50,
+      "price": 2400,
       "priceLabel": "",
       "priceConfidence": "",
       "qualityScore": 95,
@@ -15269,7 +15271,9 @@
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
       "_unknownFields": {
-        "durationMinutes": 300
+        "durationMinutes": 300,
+        "priceSource": "s57-fh-price-preview",
+        "priceVerifiedAt": "2026-09-04"
       },
       "nextAvailableDate": "2026-08-26",
       "nullConsecutiveSweeps": 0
@@ -16540,7 +16544,7 @@
       "category": "",
       "location": "United States/Florida/Islamorada",
       "island": "united states/florida/islamorada",
-      "price": 109,
+      "price": 119,
       "priceLabel": "",
       "priceConfidence": "",
       "qualityScore": 100,
@@ -16577,7 +16581,9 @@
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
       "_unknownFields": {
-        "durationMinutes": 240
+        "durationMinutes": 240,
+        "priceSource": "s57-fh-price-preview",
+        "priceVerifiedAt": "2026-09-04"
       },
       "nextAvailableDate": "2026-08-28",
       "nullConsecutiveSweeps": 0
@@ -22340,7 +22346,7 @@
       "category": "",
       "location": "United States/Florida/Islamorada",
       "island": "united states/florida/islamorada",
-      "price": 75,
+      "price": 100,
       "priceLabel": "",
       "priceConfidence": "",
       "qualityScore": 95,
@@ -22375,7 +22381,9 @@
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
       "_unknownFields": {
-        "durationMinutes": 240
+        "durationMinutes": 240,
+        "priceSource": "s57-fh-price-preview",
+        "priceVerifiedAt": "2026-09-04"
       },
       "nextAvailableDate": "2026-08-27",
       "nullConsecutiveSweeps": 0
@@ -23584,7 +23592,7 @@
       "category": "",
       "location": "United States/Florida/Islamorada",
       "island": "united states/florida/islamorada",
-      "price": 5000.0,
+      "price": 7000,
       "priceLabel": "2 nights / 3 Days",
       "priceConfidence": "medium",
       "qualityScore": 75,
@@ -23617,10 +23625,11 @@
       "nextAvailableDate": "2026-08-27",
       "nullConsecutiveSweeps": 0,
       "_unknownFields": {
-        "priceSource": "fh-price-preview-v2-2026-08-20",
+        "priceSource": "s57-fh-price-preview",
         "priceCustomerType": "2 nights / 3 Days",
         "priceTierCount": 1,
-        "priceUnit": "whole boat"
+        "priceUnit": "whole boat",
+        "priceVerifiedAt": "2026-09-04"
       }
     },
     {
@@ -26709,7 +26718,7 @@
       "category": "",
       "location": "United States/Florida/Key West",
       "island": "united states/florida/key west",
-      "price": 499,
+      "price": 549,
       "priceLabel": "",
       "priceConfidence": "",
       "qualityScore": 80,
@@ -26740,7 +26749,9 @@
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
       "_unknownFields": {
-        "durationMinutes": 180
+        "durationMinutes": 180,
+        "priceSource": "s57-fh-price-preview",
+        "priceVerifiedAt": "2026-09-04"
       },
       "nextAvailableDate": "2026-08-26",
       "nullConsecutiveSweeps": 0
@@ -37357,7 +37368,7 @@
       "category": "",
       "location": "United States/Florida/Key Largo",
       "island": "united states/florida/key largo",
-      "price": 350,
+      "price": 375,
       "priceLabel": "",
       "priceConfidence": "",
       "qualityScore": 85,
@@ -37388,7 +37399,11 @@
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
       "nextAvailableDate": "2026-08-27",
-      "nullConsecutiveSweeps": 0
+      "nullConsecutiveSweeps": 0,
+      "_unknownFields": {
+        "priceSource": "s57-fh-price-preview",
+        "priceVerifiedAt": "2026-09-04"
+      }
     },
     {
       "id": "585092",
@@ -43568,7 +43583,7 @@
       "category": "",
       "location": "United States/Florida/Key West",
       "island": "united states/florida/key west",
-      "price": 10,
+      "price": 10700,
       "priceLabel": "",
       "priceConfidence": "",
       "qualityScore": 85,
@@ -43597,7 +43612,11 @@
       "statusConsecutiveRuns": null,
       "lastUpdated": "",
       "nextAvailableDate": "2026-09-06",
-      "nullConsecutiveSweeps": 0
+      "nullConsecutiveSweeps": 0,
+      "_unknownFields": {
+        "priceSource": "s57-fh-price-preview",
+        "priceVerifiedAt": "2026-09-04"
+      }
     },
     {
       "id": "382401",
@@ -50814,7 +50833,7 @@
       "category": "",
       "location": "United States/Florida/Key West",
       "island": "united states/florida/key west",
-      "price": 699.0,
+      "price": 799,
       "priceLabel": "4 Hour Private Charter",
       "priceConfidence": "high",
       "qualityScore": 0,
@@ -50846,8 +50865,8 @@
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
       "_unknownFields": {
-        "priceSource": "s51-kwst-backfill",
-        "priceVerifiedAt": "2026-08-26",
+        "priceSource": "s57-fh-price-preview",
+        "priceVerifiedAt": "2026-09-04",
         "probeDates": [
           "2026-08-29",
           "2026-09-05",
@@ -63814,7 +63833,7 @@
       "category": "",
       "location": "United States/Florida/Tavernier",
       "island": "united states/florida/tavernier",
-      "price": 5995.0,
+      "price": 4995,
       "priceLabel": "Person",
       "priceConfidence": "high",
       "qualityScore": 75,
@@ -63847,9 +63866,10 @@
       "nextAvailableDate": "2026-09-07",
       "nullConsecutiveSweeps": 0,
       "_unknownFields": {
-        "priceSource": "fh-price-preview-v2-2026-08-20",
+        "priceSource": "s57-fh-price-preview",
         "priceCustomerType": "Person",
-        "priceTierCount": 1
+        "priceTierCount": 1,
+        "priceVerifiedAt": "2026-09-04"
       }
     },
     {
@@ -69271,7 +69291,7 @@
       "category": "",
       "location": "United States/Florida/Marathon",
       "island": "united states/florida/marathon",
-      "price": 875,
+      "price": 995,
       "priceLabel": "",
       "priceConfidence": "",
       "qualityScore": 85,
@@ -69302,7 +69322,11 @@
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
       "nextAvailableDate": "2027-05-01",
-      "nullConsecutiveSweeps": 0
+      "nullConsecutiveSweeps": 0,
+      "_unknownFields": {
+        "priceSource": "s57-fh-price-preview",
+        "priceVerifiedAt": "2026-09-04"
+      }
     },
     {
       "id": "558861",
@@ -70013,7 +70037,7 @@
       "category": "",
       "location": "United States/Florida/Key West",
       "island": "united states/florida/key west",
-      "price": 83,
+      "price": 350,
       "priceLabel": "",
       "priceConfidence": "",
       "qualityScore": 95,
@@ -70050,7 +70074,9 @@
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
       "_unknownFields": {
-        "durationMinutes": 240
+        "durationMinutes": 240,
+        "priceSource": "s57-fh-price-preview",
+        "priceVerifiedAt": "2026-09-04"
       },
       "nextAvailableDate": "2026-08-26",
       "nullConsecutiveSweeps": 0
@@ -70401,7 +70427,7 @@
       "category": "",
       "location": "United States/Florida/Key West",
       "island": "united states/florida/key west",
-      "price": 120,
+      "price": 75,
       "priceLabel": "",
       "priceConfidence": "",
       "qualityScore": 85,
@@ -70430,7 +70456,9 @@
       "statusConsecutiveRuns": null,
       "lastUpdated": "",
       "_unknownFields": {
-        "durationMinutes": 2880
+        "durationMinutes": 2880,
+        "priceSource": "s57-fh-price-preview",
+        "priceVerifiedAt": "2026-09-04"
       },
       "nextAvailableDate": "2026-08-27",
       "nullConsecutiveSweeps": 0
@@ -72258,7 +72286,7 @@
       "category": "",
       "location": "United States/Florida/Stock Island",
       "island": "united states/florida/stock island",
-      "price": 2200,
+      "price": 2400,
       "priceLabel": "unknown",
       "priceConfidence": "medium",
       "qualityScore": 60,
@@ -72289,7 +72317,8 @@
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-07-30T18:54:17Z",
       "_unknownFields": {
-        "priceSource": "v52-dominant-gate"
+        "priceSource": "s57-fh-price-preview",
+        "priceVerifiedAt": "2026-09-04"
       },
       "nextAvailableDate": "2026-08-27",
       "nullConsecutiveSweeps": 0
@@ -81989,7 +82018,7 @@
       "category": "",
       "location": "United States/Florida/Islamorada",
       "island": "united states/florida/islamorada",
-      "price": 1800.0,
+      "price": 1900,
       "priceLabel": "Private Charter",
       "priceConfidence": "high",
       "qualityScore": 54,
@@ -82020,14 +82049,15 @@
       "statusConsecutiveRuns": null,
       "lastUpdated": "2026-08-22T00:00:00Z",
       "_unknownFields": {
-        "priceSource": "fh-price-preview-v2-2026-08-22",
+        "priceSource": "s57-fh-price-preview",
         "priceCustomerType": "Private Charter",
         "priceTierCount": 1,
         "priceUnit": "whole boat",
         "unitEvidence": "tier label: 'Private Charter'",
         "priceMinPartySize": 1,
         "datedSampleDates": 8,
-        "stockedFrom": "monroe-county-stocking-2026-08-22"
+        "stockedFrom": "monroe-county-stocking-2026-08-22",
+        "priceVerifiedAt": "2026-09-04"
       },
       "nextAvailableDate": "2026-08-30",
       "nullConsecutiveSweeps": 0
