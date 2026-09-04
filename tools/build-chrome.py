@@ -42,8 +42,13 @@ SITE_EMAIL = "walktheplankadventures@gmail.com"   # one line to change the addre
 # info@keywestsandbartours.com was published across 119 pages by #227 and
 # does not exist -- no mail service is configured on the domain.
 LEGACY_EMAILS = ["info@keywestsandbartours.com"]
-SITE_PHONE_TEL  = "4074766190"
-SITE_PHONE_TEXT = "(407) 476-6190"
+# Header click-to-call. Empty means the header renders no phone element at all.
+# Emptied 2026-09-04: the number was published on all 123 pages and harvested;
+# all 16 lifetime bookings came through FareHarbor online, none by phone.
+# To restore, put a number back in both fields and run --apply. Use a
+# forwarding number, not a personal line.
+SITE_PHONE_TEL  = ""
+SITE_PHONE_TEXT = ""
 SITE_LOGO = "/images/header-logo.png"
 # Footer mark renders at 373 CSS px, so it needs its own larger sources --
 # the header set tops out at 480w. Density-only srcsets always pick 1x, so
@@ -119,6 +124,10 @@ def _links(items, cls=""):
 def header_html():
     nav = "\n".join(f'        <a href="{h}">{t}</a>' for h, t in NAV)
     mob = "\n".join(f'      <a href="{h}">{t}</a>' for h, t in NAV)
+    phone = (f'      <a class="site-phone" href="tel:{SITE_PHONE_TEL}">\n'
+             f'        <span class="site-phone-icon" aria-hidden="true">&#128222;</span>\n'
+             f'        <span class="site-phone-number">{SITE_PHONE_TEXT}</span>\n'
+             f'      </a>\n') if SITE_PHONE_TEL else ""
     return f'''<header class="site-header">
     <div class="site-header-inner">
       <a href="/" class="site-logo">
@@ -128,11 +137,7 @@ def header_html():
       <nav class="site-nav" aria-label="Main navigation">
 {nav}
       </nav>
-      <a class="site-phone" href="tel:{SITE_PHONE_TEL}">
-        <span class="site-phone-icon" aria-hidden="true">&#128222;</span>
-        <span class="site-phone-number">{SITE_PHONE_TEXT}</span>
-      </a>
-      <button class="site-nav-toggle" type="button" aria-label="Menu" aria-expanded="false" aria-controls="site-nav-mobile">&#9776;</button>
+{phone}      <button class="site-nav-toggle" type="button" aria-label="Menu" aria-expanded="false" aria-controls="site-nav-mobile">&#9776;</button>
     </div>
     <nav class="site-nav-mobile" id="site-nav-mobile" aria-label="Mobile navigation">
 {mob}
