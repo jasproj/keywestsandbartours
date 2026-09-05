@@ -557,6 +557,15 @@ document.querySelector('.nav-toggle')?.addEventListener('click', () => {
 
 // Initialize
 async function init() {
+    // 25 blog pages load app.js and have none of the elements this function
+    // writes to: no #tours-grid, no #verified-tours-count, no [data-area-count],
+    // no filter selects, no #hero-search. On those pages the fetch below
+    // resolved relative to /blog/, 404'd, and fell into the catch every time.
+    // Making the path absolute would be worse -- they would download 3.4 MB of
+    // tour data and use none of it. Nothing to fill, nothing to fetch.
+    if (!document.getElementById('tours-grid')
+        && !document.getElementById('verified-tours-count')
+        && !document.querySelector('[data-area-count]')) return;
     try {
         const response = await fetch('tours-data.json');
         const _raw = await response.json();
