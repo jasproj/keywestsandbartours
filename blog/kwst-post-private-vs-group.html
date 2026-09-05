@@ -88,7 +88,13 @@
   details div{padding:0 18px 16px;font-size:0.93rem;color:#aec6cf;line-height:1.7}
   .winner{color:#4caf7d;font-weight:700}
   .divider{border:none;border-top:1px solid rgba(255,255,255,0.08);margin:32px 0}
-</style>
+
+        /* These posts embed photos at their natural size -- up to 1600x2000 --
+           and this page does not load styles.css, which carries the img reset
+           the rest of the site gets. Without it the layout grew to 1600-2000px
+           wide and the whole page scrolled sideways on a phone. */
+        img { max-width: 100%; height: auto; }
+    </style>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-67D7X60CJF"></script>
 <script>

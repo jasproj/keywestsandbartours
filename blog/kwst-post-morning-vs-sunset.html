@@ -94,7 +94,13 @@
   .side-box h4{color:#F5B84C;margin-bottom:10px;font-size:1rem}
   .side-box ul{margin:0;padding-left:18px}
   .side-box li{font-size:0.92rem;margin-bottom:4px}
-</style>
+
+        /* These posts embed photos at their natural size -- up to 1600x2000 --
+           and this page does not load styles.css, which carries the img reset
+           the rest of the site gets. Without it the layout grew to 1600-2000px
+           wide and the whole page scrolled sideways on a phone. */
+        img { max-width: 100%; height: auto; }
+    </style>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-67D7X60CJF"></script>
 <script>
