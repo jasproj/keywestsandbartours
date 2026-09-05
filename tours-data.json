@@ -49521,6 +49521,9 @@
     {
       "id": "604938",
       "pk": 604938,
+      "hidden": true,
+      "hiddenReason": "s57 geo hide 2026-09-05: product is in Provincetown / Truro, Massachusetts, not the Florida Keys. Schooner Hindu winters in Key West and summers on Cape Cod; the location field says Key West for both. Its Key West rows are status=inactive while the boat is away and will go active on return, at which point these should be cleared.",
+      "hiddenAt": "2026-09-05",
       "name": "Hindu \u2022 Daysail in Provincetown",
       "company": "Hindu Charters LLC - Schooner Hindu",
       "bookingUrl": "https://fareharbor.com/embeds/book/sailschoonerhindu/items/604938/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&bookable-only=yes&full-items=yes&marketplace=yes&flow=no",
@@ -49592,6 +49595,9 @@
     {
       "id": "604940",
       "pk": 604940,
+      "hidden": true,
+      "hiddenReason": "s57 geo hide 2026-09-05: product is in Provincetown / Truro, Massachusetts, not the Florida Keys. Schooner Hindu winters in Key West and summers on Cape Cod; the location field says Key West for both. Its Key West rows are status=inactive while the boat is away and will go active on return, at which point these should be cleared.",
+      "hiddenAt": "2026-09-05",
       "name": "Hindu \u2022 Sunset Sail in Provincetown",
       "company": "Hindu Charters LLC - Schooner Hindu",
       "bookingUrl": "https://fareharbor.com/embeds/book/sailschoonerhindu/items/604940/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&bookable-only=yes&full-items=yes&marketplace=yes&flow=no",
@@ -49643,6 +49649,9 @@
     {
       "id": "611789",
       "pk": 611789,
+      "hidden": true,
+      "hiddenReason": "s57 geo hide 2026-09-05: product is in Provincetown / Truro, Massachusetts, not the Florida Keys. Schooner Hindu winters in Key West and summers on Cape Cod; the location field says Key West for both. Its Key West rows are status=inactive while the boat is away and will go active on return, at which point these should be cleared.",
+      "hiddenAt": "2026-09-05",
       "name": "Hindu \u2022 Private Charter in Provincetown",
       "company": "Hindu Charters LLC - Schooner Hindu",
       "bookingUrl": "https://fareharbor.com/embeds/book/sailschoonerhindu/items/611789/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&bookable-only=yes&full-items=yes&marketplace=yes&flow=no",
@@ -49717,6 +49726,9 @@
     {
       "id": "604943",
       "pk": 604943,
+      "hidden": true,
+      "hiddenReason": "s57 geo hide 2026-09-05: product is in Provincetown / Truro, Massachusetts, not the Florida Keys. Schooner Hindu winters in Key West and summers on Cape Cod; the location field says Key West for both. Its Key West rows are status=inactive while the boat is away and will go active on return, at which point these should be cleared.",
+      "hiddenAt": "2026-09-05",
       "name": "Bloodhound \u2022 Daysail in Provincetown",
       "company": "Hindu Charters LLC - Schooner Hindu",
       "bookingUrl": "https://fareharbor.com/embeds/book/sailschoonerhindu/items/604943/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&bookable-only=yes&full-items=yes&marketplace=yes&flow=no",
@@ -49788,6 +49800,9 @@
     {
       "id": "604951",
       "pk": 604951,
+      "hidden": true,
+      "hiddenReason": "s57 geo hide 2026-09-05: product is in Provincetown / Truro, Massachusetts, not the Florida Keys. Schooner Hindu winters in Key West and summers on Cape Cod; the location field says Key West for both. Its Key West rows are status=inactive while the boat is away and will go active on return, at which point these should be cleared.",
+      "hiddenAt": "2026-09-05",
       "name": "Bloodhound \u2022 Sunset Sail in Provincetown",
       "company": "Hindu Charters LLC - Schooner Hindu",
       "bookingUrl": "https://fareharbor.com/embeds/book/sailschoonerhindu/items/604951/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&bookable-only=yes&full-items=yes&marketplace=yes&flow=no",
@@ -49839,6 +49854,9 @@
     {
       "id": "611676",
       "pk": 611676,
+      "hidden": true,
+      "hiddenReason": "s57 geo hide 2026-09-05: product is in Provincetown / Truro, Massachusetts, not the Florida Keys. Schooner Hindu winters in Key West and summers on Cape Cod; the location field says Key West for both. Its Key West rows are status=inactive while the boat is away and will go active on return, at which point these should be cleared.",
+      "hiddenAt": "2026-09-05",
       "name": "Bloodhound \u2022 Private Charter in Provincetown",
       "company": "Hindu Charters LLC - Schooner Hindu",
       "bookingUrl": "https://fareharbor.com/embeds/book/sailschoonerhindu/items/611676/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&bookable-only=yes&full-items=yes&marketplace=yes&flow=no",
@@ -49910,6 +49928,9 @@
     {
       "id": "707135",
       "pk": 707135,
+      "hidden": true,
+      "hiddenReason": "s57 geo hide 2026-09-05: product is in Provincetown / Truro, Massachusetts, not the Florida Keys. Schooner Hindu winters in Key West and summers on Cape Cod; the location field says Key West for both. Its Key West rows are status=inactive while the boat is away and will go active on return, at which point these should be cleared.",
+      "hiddenAt": "2026-09-05",
       "name": "Sip, Sail, Celebrate - Truro Vineyard Tastings on the Historic Schooner Hindu",
       "company": "Hindu Charters LLC - Schooner Hindu",
       "bookingUrl": "https://fareharbor.com/embeds/book/sailschoonerhindu/items/707135/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&bookable-only=yes&full-items=yes&marketplace=yes&flow=no",
