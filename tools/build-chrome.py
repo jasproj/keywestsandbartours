@@ -74,7 +74,8 @@ FOOTER_POPULAR = [("/sandbar-tours.html","Sandbar Tours"), ("/sunset-cruises.htm
                   ("/snorkeling.html","Snorkeling Tours"), ("/dolphin-tours.html","Dolphin Tours"),
                   ("/private-charters.html","Private Charters"), ("/tiki-boats-key-west.html","Tiki Boats")]
 FOOTER_COMPANY = [("/about.html","About"), ("/faq.html","FAQs"),
-                  ("/contact.html","Contact"), ("/advertise.html","Advertise")]
+                  ("/contact.html","Contact"), ("/advertise.html","Advertise"),
+                  ("/conch-shell-awards.html","Conch Shell Awards")]
 
 CSS_HREF = "/chrome.css"
 JS_SRC   = "/chrome.js"
