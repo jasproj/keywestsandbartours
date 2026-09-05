@@ -96,7 +96,13 @@
   .cat-col h4{color:#89c4f4}
   .speed-col h4{color:#F5B84C}
   .spec-table td:first-child{color:#fff;font-weight:500;width:40%}
-</style>
+
+        /* These posts embed photos at their natural size -- up to 1600x2000 --
+           and this page does not load styles.css, which carries the img reset
+           the rest of the site gets. Without it the layout grew to 1600-2000px
+           wide and the whole page scrolled sideways on a phone. */
+        img { max-width: 100%; height: auto; }
+    </style>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-67D7X60CJF"></script>
 <script>
