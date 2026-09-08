@@ -4,7 +4,7 @@
    page body. 17 of 119 pages do not link styles.css, which is why the chrome
    carries its own stylesheet rather than depending on the site theme.
    --------------------------------------------------------------------------- */
-.site-header{background:#FFFFFF;position:relative;z-index:50;border-bottom:1px solid rgba(27,58,87,.12)}
+.site-header{background:#FFFFFF;position:sticky;top:0;z-index:50;border-bottom:1px solid rgba(27,58,87,.12)}
 .site-header-inner{max-width:1200px;margin:0 auto;padding:12px 20px;display:flex;align-items:center;gap:20px}
 .site-logo{display:flex;align-items:center;gap:10px;text-decoration:none;color:#1B3A57;font-weight:700;font-size:1rem;flex:0 0 auto}
 .site-logo-text{display:none}
