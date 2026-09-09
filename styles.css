@@ -23,11 +23,6 @@ body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
     color: #333;
     line-height: 1.6;
-    padding-bottom: 80px; /* Space for mobile CTA */
-}
-
-@media (min-width: 768px) {
-    body { padding-bottom: 0; }
 }
 
 /* Header - Mobile First */
