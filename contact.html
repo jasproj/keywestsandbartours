@@ -167,6 +167,8 @@
             <input type="hidden" name="_subject" value="KWST Contact Form Submission">
 
             <div class="submit-wrap">
+                <!-- Honeypot spam protection - bots fill this, humans don't see it -->
+                <input type="text" name="_gotcha" style="display:none !important" tabindex="-1" autocomplete="off">
                 <button type="submit" class="btn-primary">Send Inquiry</button>
                 <p class="note">We typically reply within one business day.</p>
             </div>
