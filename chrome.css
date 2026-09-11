@@ -24,6 +24,15 @@
   .site-logo img{height:60px}
   .site-logo-text{display:none}  /* text baked into header logo image */
 }
+/* s60: 48px tap targets, and the header fits a 320px phone. The number stays
+   visible down to 381px; below that it is visually hidden but remains the
+   link's accessible name, and the icon stays a 48px tap-to-call target. */
+@media (max-width:860px){.site-nav-toggle{min-width:48px;min-height:48px}.site-phone{min-height:48px}}
+@media (max-width:430px){.site-header-inner{gap:12px;padding:12px 16px}}
+@media (max-width:380px){
+  .site-phone{min-width:48px;justify-content:center}
+  .site-phone-number{position:absolute;width:1px;height:1px;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
+}
 .site-footer{background:#FDF5E6;color:#1B3A57;margin-top:48px;border-top:1px solid #E8DFD0}
 .site-footer-brand{max-width:1200px;margin:0 auto;padding:44px 20px 0;text-align:center}
 .site-footer-logo{display:block;height:160px;width:auto;max-width:100%;margin:0 auto 12px;object-fit:contain}
