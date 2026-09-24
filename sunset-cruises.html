@@ -3,36 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Key West Sunset Cruises | Key West Sandbar Tours</title>
-    <meta name="description" content="Private sunset cruises in Key West from $59.95. Romantic sails, proposals, dinner cruises. Perfect for couples.">
+    <title>Key West Sunset Cruises | Champagne Sails from $49.95, Private Boats from $350</title>
+    <meta name="description" content="Compare Key West sunset cruises with live prices: champagne catamaran sails from $49.95 per person, live-music and tiki sunset boats, and private sunset charters from $350. Check availability on the operator&#x27;s own calendar.">
     <link rel="canonical" href="https://keywestsandbartours.com/sunset-cruises.html">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
-    
-    <!-- Open Graph -->
+
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://keywestsandbartours.com/sunset-cruises.html">
-    <meta property="og:title" content="Key West Sunset Cruises">
-    <meta property="og:description" content="Private sunset cruises in Key West from $59.95. Romantic sails, proposals, dinner cruises. Perfect for couples.">
-    <meta property="og:image" content="https://keywestsandbartours.com/og-image.jpg">
+    <meta property="og:title" content="Key West Sunset Cruises | Champagne Sails from $49.95, Private Boats from $350">
+    <meta property="og:description" content="Compare Key West sunset cruises with live prices: champagne catamaran sails from $49.95 per person, live-music and tiki sunset boats, and private sunset charters from $350. Check availability on the operator&#x27;s own calendar.">
+    <meta property="og:image" content="https://keywestsandbartours.com/og-sunset-cruises.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://keywestsandbartours.com/og-sunset-cruises.png">
     
-    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
     
-    <!-- Schema -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "BreadcrumbList",
-        "itemListElement": [
-            {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://keywestsandbartours.com/"},
-            {"@type": "ListItem", "position": 2, "name": "Key West Sunset Cruises", "item": "https://keywestsandbartours.com/sunset-cruises.html"}
-        ]
-    }
-    </script>
-    
-    <!-- GA4 -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-67D7X60CJF"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -41,81 +30,711 @@
         gtag('config', 'G-67D7X60CJF');
     </script>
     
-    <link rel="stylesheet" href="styles.css">
     <style>
         :root {
+            /* Base (constant) */
             --sand: #F5E6D3;
             --ocean-deep: #0A3D62;
             --ocean-light: #1E90FF;
             --white: #FFFFFF;
-            --off-white: #FAFAFA;
             --text-dark: #1A1A2E;
             --text-muted: #6B7280;
-            --accent: #F59E0B;
+            
+            /* Theme */
+            --accent: #FF6B6B;
+            --accent-glow: var(--accent-glow);
+            --accent-text: var(--white);
         }
-
-        body { font-family: 'DM Sans', sans-serif; color: var(--text-dark); line-height: 1.6; }
-        .header { background: var(--white); padding: 16px 20px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
-        .header-inner { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
-        .logo { font-size: 1.1rem; font-weight: 700; color: var(--ocean-deep); text-decoration: none; display: flex; align-items: center; gap: 8px; white-space: nowrap; }
-        .logo-img { width: 24px; height: 24px; }
-        .nav-toggle { width: 48px; height: 48px; }
-        @media (max-width: 599px) {
-            .logo-text { display: none; }
-            .header-phone .phone-number { display: none; }
+        
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        
+        body {
+            font-family: 'DM Sans', sans-serif;
+            color: var(--text-dark);
+            line-height: 1.6;
+            background: var(--white);
+            padding-top: 60px;
         }
-
-        .hero { background: linear-gradient(135deg, var(--ocean-deep) 0%, var(--ocean-light) 100%); color: var(--white); padding: 48px 20px; text-align: center; }
-        .hero h1 { font-family: 'Playfair Display', serif; font-size: 2.5rem; margin-bottom: 16px; }
-        .hero p { font-size: 1.1rem; margin-bottom: 24px; opacity: 0.95; }
-        .hero a { display: inline-block; background: var(--accent); color: var(--ocean-deep); padding: 14px 32px; border-radius: 50px; text-decoration: none; font-weight: 700; }
         
-        .intro { max-width: 1200px; margin: 0 auto; padding: 48px 20px; }
-        .intro h2 { font-family: 'Playfair Display', serif; font-size: 1.75rem; margin-bottom: 20px; }
-        .intro p { font-size: 1rem; line-height: 1.8; color: var(--text-muted); margin-bottom: 16px; }
+        .sticky-cta {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: var(--ocean-deep);
+            padding: 12px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 999;
+            transform: translateY(100%);
+            transition: transform 0.3s ease;
+        }
         
-        .tours { background: var(--sand); padding: 48px 20px; }
-        .tours-inner { max-width: 1200px; margin: 0 auto; }
-        .section-label { display: inline-block; background: var(--accent); color: var(--ocean-deep); padding: 6px 14px; border-radius: 4px; font-size: 0.85rem; font-weight: 700; margin-bottom: 12px; }
-        .section-title { font-family: 'Playfair Display', serif; font-size: 1.75rem; margin-bottom: 32px; text-align: center; }
+        .sticky-cta.visible { transform: translateY(0); }
+        .sticky-cta-text { color: var(--white); font-weight: 600; }
+        .sticky-cta-text span { color: var(--accent); }
         
-        .tours-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 20px; }
-        .tour-card { background: var(--white); border-radius: 12px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.1); transition: transform 0.3s, box-shadow 0.3s; }
-        .tour-card:hover { transform: translateY(-8px); box-shadow: 0 8px 20px rgba(0,0,0,0.15); }
-        .tour-card-image { height: 200px; background-size: cover; background-position: center; position: relative; }
-        .tour-card-badge, .tour-card-price { position: absolute; padding: 8px 14px; border-radius: 6px; font-size: 0.85rem; font-weight: 700; }
-        .tour-card-badge { top: 12px; left: 12px; background: var(--accent); color: var(--ocean-deep); }
-        .tour-card-price { top: 12px; right: 12px; background: var(--ocean-deep); color: var(--white); }
+        .sticky-cta-btn {
+            background: var(--accent);
+            color: var(--accent-text);
+            padding: 12px 28px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 700;
+            min-height: 48px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .header {
+            background: var(--white);
+            padding: 12px 20px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .header-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: var(--ocean-deep);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .logo-img { width: 36px; height: 36px; border-radius: 8px; }
+        
+        .header-cta {
+            background: var(--ocean-deep);
+            color: var(--white);
+            padding: 10px 24px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.9rem;
+            min-height: 48px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .hero-video {
+            position: relative;
+            height: 70vh;
+            max-height: 550px;
+            min-height: 400px;
+            overflow: hidden;
+            background: var(--ocean-deep);
+        }
+        
+        @media (max-width: 768px) {
+            .hero-video {
+                height: auto;
+                min-height: 120px;
+                max-height: none;
+                padding: 20px 0;
+            }
+            .hero-video__badge {
+                display: none;
+            }
+            .hero-video__title {
+                font-size: 24px;
+            }
+            .hero-video__subtitle {
+                font-size: 14px;
+            }
+            .hero-video__cta {
+                padding: 12px 24px;
+                font-size: 14px;
+            }
+        }
+        
+        .hero-video__media {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center center;
+            z-index: 1;
+        }
+        
+        .hero-video__overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(
+                to bottom,
+                rgba(10, 61, 98, 0.3) 0%,
+                rgba(10, 61, 98, 0.5) 50%,
+                rgba(10, 61, 98, 0.7) 100%
+            );
+            z-index: 2;
+        }
+        
+        .hero-video__content {
+            position: relative;
+            z-index: 3;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+            color: var(--white);
+        }
+        
+        .hero-video__badge {
+            background: var(--accent);
+            color: var(--accent-text);
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            padding: 8px 16px;
+            border-radius: 4px;
+            margin-bottom: 16px;
+        }
+        
+        .hero-video__title {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(28px, 6vw, 56px);
+            font-weight: 700;
+            line-height: 1.1;
+            margin: 0 0 16px 0;
+            text-shadow: 0 2px 20px rgba(0,0,0,0.3);
+        }
+        
+        .hero-video__subtitle {
+            font-size: clamp(16px, 2.5vw, 20px);
+            opacity: 0.95;
+            margin: 0 0 24px 0;
+            max-width: 500px;
+        }
+        
+        .hero-video__stats {
+            display: flex;
+            gap: 32px;
+            margin-bottom: 28px;
+        }
+        
+        .hero-video__stat { text-align: center; }
+        .hero-video__stat-number { font-size: 1.5rem; font-weight: 700; }
+        .hero-video__stat-label { font-size: 0.8rem; opacity: 0.85; }
+        
+        .hero-video__cta {
+            display: inline-block;
+            background: var(--accent);
+            color: var(--accent-text);
+            font-size: 16px;
+            font-weight: 700;
+            text-decoration: none;
+            padding: 16px 40px;
+            border-radius: 50px;
+            min-height: 48px;
+            box-shadow: 0 8px 30px var(--accent-glow);
+        }
+        
+        .trust-bar {
+            background: var(--ocean-deep);
+            padding: 16px 0;
+            overflow: hidden;
+        }
+        
+        .trust-bar-inner {
+            display: flex;
+            animation: trustScroll 25s linear infinite;
+        }
+        
+        @keyframes trustScroll {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+        
+        .trust-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            color: var(--white);
+            font-size: 0.9rem;
+            font-weight: 500;
+            white-space: nowrap;
+            padding: 0 24px;
+        }
+        
+        .trust-item svg { width: 20px; height: 20px; flex-shrink: 0; }
+        
+        /* ===== PERFECT FOR PILLS (auto-scroll marquee) ===== */
+        .best-for {
+            background: linear-gradient(135deg, #FDF2F8 0%, var(--sand) 100%);
+            padding: 16px 20px;
+            overflow: hidden;
+        }
+        
+        .best-for-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        
+        .best-for h2 {
+            font-family: 'Playfair Display', serif;
+            color: var(--ocean-deep);
+            margin-bottom: 12px;
+            font-size: 1.1rem;
+        }
+        
+        .marquee-wrapper {
+            overflow: hidden;
+            width: 100%;
+            mask-image: linear-gradient(to right, transparent, black 3%, black 97%, transparent);
+            -webkit-mask-image: linear-gradient(to right, transparent, black 3%, black 97%, transparent);
+        }
+        
+        .best-for-grid {
+            display: flex;
+            gap: 12px;
+            animation: marquee 25s linear infinite;
+            width: max-content;
+            padding: 4px 0 8px;
+        }
+        
+        .best-for-grid:hover {
+            animation-play-state: paused;
+        }
+        
+        @keyframes marquee {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+        
+        .best-for-pill {
+            background: var(--white);
+            padding: 10px 18px;
+            border-radius: 50px;
+            font-size: 0.85rem;
+            font-weight: 500;
+            color: var(--text-dark);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+            flex-shrink: 0;
+            white-space: nowrap;
+        }
+        
+        /* ===== TOP PICKS MODULE ===== */
+        .top-picks {
+            padding: 40px 20px 0;
+            background: var(--sand);
+        }
+        
+        .top-picks-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        
+        .top-picks-intro {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            margin-bottom: 20px;
+        }
+        
+        .top-picks-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-bottom: 32px;
+        }
+        
+        .pick-card {
+            background: var(--white);
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            border: 2px solid var(--accent);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        
+        .pick-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 40px rgba(0,0,0,0.15);
+        }
+        
+        .pick-card-image {
+            height: 180px;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+        
+        .pick-card-label {
+            position: absolute;
+            top: 12px;
+            left: 12px;
+            background: var(--accent);
+            color: var(--accent-text);
+            padding: 8px 14px;
+            border-radius: 6px;
+            font-size: 0.85rem;
+            font-weight: 700;
+        }
+        
+        .pick-card-price {
+            position: absolute;
+            top: 12px;
+            right: 12px;
+            background: var(--ocean-deep);
+            color: var(--white);
+            padding: 8px 14px;
+            border-radius: 6px;
+            font-size: 1.1rem;
+            font-weight: 700;
+        }
+        
+        .pick-card-content {
+            padding: 16px 20px 20px;
+        }
+        
+        .pick-card-company {
+            font-size: 0.75rem;
+            color: #0071DE;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 4px;
+        }
+        
+        .pick-card-content h3 {
+            font-size: 1.1rem;
+            color: var(--ocean-deep);
+            margin-bottom: 8px;
+            font-weight: 700;
+        }
+        
+        .pick-card-meta {
+            display: flex;
+            gap: 12px;
+            margin-bottom: 12px;
+            font-size: 0.8rem;
+            color: var(--text-muted);
+        }
+        
+        .pick-card-cta {
+            display: block;
+            background: var(--accent);
+            color: var(--accent-text);
+            text-align: center;
+            padding: 12px 16px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 0.9rem;
+            min-height: 48px;
+        }
+        
+        .top-picks-divider {
+            text-align: center;
+            padding: 24px 0 8px;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+        
+        .tours {
+            padding: 48px 20px;
+            background: var(--sand);
+        }
+        
+        .tours-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        
+        .section-label {
+            display: inline-block;
+            background: var(--accent);
+            color: var(--accent-text);
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            padding: 6px 14px;
+            border-radius: 4px;
+            margin-bottom: 12px;
+        }
+        
+        .section-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.75rem;
+            color: var(--ocean-deep);
+            margin-bottom: 8px;
+        }
+        
+        .section-subtitle {
+            color: var(--text-muted);
+            font-size: 1rem;
+            margin-bottom: 24px;
+        }
+        
+        .tours-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+            gap: 24px;
+        }
+        
+        .tour-card {
+            background: var(--white);
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        
+        .tour-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 40px rgba(0,0,0,0.12);
+        }
+        
+        .tour-card-image {
+            height: 200px;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+        
+        .tour-card-badge {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background: var(--accent);
+            color: var(--accent-text);
+            padding: 5px 10px;
+            border-radius: 4px;
+            font-size: 0.7rem;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+        
+        .tour-card-price {
+            position: absolute;
+            top: 12px;
+            right: 12px;
+            background: var(--accent);
+            color: var(--white);
+            padding: 8px 14px;
+            border-radius: 6px;
+            font-size: 1.2rem;
+            font-weight: 700;
+        }
+        
         .tour-card-content { padding: 20px; }
-        .tour-card-company { font-size: 0.75rem; color: #0071DE; font-weight: 700; text-transform: uppercase; margin-bottom: 8px; }
-        .tour-card-content h3 { font-size: 1.1rem; color: var(--ocean-deep); margin-bottom: 8px; }
-        .tour-card-meta { display: flex; gap: 12px; margin-bottom: 12px; font-size: 0.85rem; color: var(--text-muted); }
-        .tour-card-description { font-size: 0.9rem; color: var(--text-muted); margin-bottom: 16px; }
-        .tour-card-cta { display: block; background: var(--accent); color: var(--ocean-deep); text-align: center; padding: 12px 16px; border-radius: 8px; text-decoration: none; font-weight: 700; }
-        .tour-card-cta:hover { background: #f3a500; }
         
-        .cta-box { background: var(--white); border-radius: 12px; padding: 32px 20px; text-align: center; margin: 32px 0; }
-        .cta-box h3 { font-size: 1.5rem; margin-bottom: 16px; }
-        .cta-box a { display: inline-block; background: var(--accent); color: var(--ocean-deep); padding: 14px 32px; border-radius: 50px; text-decoration: none; font-weight: 700; }
+        .tour-card-company {
+            font-size: 0.8rem;
+            color: #0071DE;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 6px;
+        }
         
-        .faq { background: var(--off-white); padding: 48px 20px; }
-        .faq-inner { max-width: 1200px; margin: 0 auto; }
-        .faq h2 { font-family: 'Playfair Display', serif; font-size: 1.75rem; text-align: center; margin-bottom: 32px; }
-        .faq-item { background: var(--white); border-radius: 8px; margin-bottom: 12px; overflow: hidden; }
-        .faq-q { background: var(--sand); padding: 16px; border: none; cursor: pointer; display: flex; justify-content: space-between; align-items: center; width: 100%; font-size: 1rem; font-weight: 600; text-align: left; }
-        .faq-q:hover { background: #ede6d3; }
-        .faq-a { padding: 16px; background: var(--white); color: var(--text-muted); }
-        .faq-toggle { display: inline-block; width: 24px; text-align: center; }
+        .tour-card-content h3 {
+            font-size: 1.15rem;
+            color: var(--ocean-deep);
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
         
-        .footer { background: var(--text-dark); color: var(--white); padding: 24px 20px; text-align: center; font-size: 0.9rem; }
-        .footer a { color: var(--accent); text-decoration: none; }
+        .tour-card-meta {
+            display: flex;
+            gap: 16px;
+            margin-bottom: 12px;
+            font-size: 0.85rem;
+            color: var(--text-muted);
+        }
+        
+        .tour-card-description {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            line-height: 1.6;
+            margin-bottom: 16px;
+        }
+        
+        .tour-card-cta {
+            display: block;
+            background: var(--accent);
+            color: var(--accent-text);
+            text-align: center;
+            padding: 14px 20px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 0.95rem;
+            min-height: 48px;
+            transition: background 0.2s;
+        }
+        
+        .tour-card-cta:hover { background: #db2777; }
+        
+        .faq {
+            position: relative;
+            padding: 60px 20px;
+            overflow: hidden;
+        }
+        
+        .faq-video {
+            position: absolute;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            object-fit: cover;
+            z-index: 1;
+        }
+        
+        .faq-overlay {
+            position: absolute;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            background: linear-gradient(
+                to bottom,
+                rgba(10, 61, 98, 0.3) 0%,
+                rgba(10, 61, 98, 0.5) 50%,
+                rgba(10, 61, 98, 0.7) 100%
+            );
+            z-index: 2;
+        }
+        
+        .faq-inner {
+            position: relative;
+            z-index: 3;
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        
+        .faq .section-label,
+        .faq .section-title { color: var(--white); }
+        
+        .faq-list {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            margin-top: 22px;
+        }
+        
+        .faq-item {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 24px 28px;
+            border-radius: 12px;
+            text-align: left;
+        }
+        
+        .faq-question {
+            font-weight: 700;
+            color: var(--ocean-deep);
+            margin-bottom: 8px;
+            font-size: 1rem;
+        }
+        
+        .faq-answer {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+        
+        /* ===== BRANDING SECTION ===== */
+        .branding {
+            text-align: center;
+            padding: 40px 20px;
+            background: var(--sand);
+        }
+        
+        .branding-logo {
+            max-width: 180px;
+            height: auto;
+            margin-bottom: 12px;
+        }
+        
+        .branding p {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+        
+        .final-cta {
+            background: linear-gradient(135deg, var(--ocean-deep) 0%, #0C4A6E 100%);
+            padding: 60px 20px;
+            text-align: center;
+        }
+        
+        .final-cta h2 {
+            font-family: 'Playfair Display', serif;
+            color: var(--white);
+            font-size: clamp(1.5rem, 4vw, 2rem);
+            margin-bottom: 12px;
+        }
+        
+        .final-cta p {
+            color: rgba(255,255,255,0.85);
+            margin-bottom: 24px;
+        }
+        
+        .final-cta-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: var(--accent);
+            color: var(--accent-text);
+            padding: 16px 32px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 700;
+            min-height: 48px;
+        }
+        
+        .footer {
+            background: var(--text-dark);
+            color: var(--white);
+            padding: 30px 20px;
+            text-align: center;
+        }
+        
+        .footer a { color: var(--white); text-decoration: none; }
+        
+        @media (max-width: 768px) {
+            .hero-video__media {
+                object-position: 70% center;
+            }
+        }
         
         @media (max-width: 600px) {
-            .hero { padding: 84px 16px 8px; }
-            .hero h1 { font-size: 1.1rem; }
-            .hero p { display: none; }
+            .hero-video__stats { gap: 20px; }
+            
+            .trust-bar-inner { gap: 16px; }
+            
             .tours-grid { grid-template-columns: 1fr; }
-            .faq-q { padding: 14px; font-size: 0.95rem; }
+            
+            .sticky-cta {
+                flex-direction: column;
+                gap: 10px;
+                text-align: center;
+            }
         }
         .header-phone {
             display: inline-flex;
@@ -127,217 +746,505 @@
             margin-left: auto;
         }
         .header-phone:hover { text-decoration: underline; }
+        .hero-phone-cta {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            flex-wrap: wrap;
+            margin-top: 1rem;
+        }
+        .hero-phone-link {
+            background: #ffc107;
+            color: #000;
+            padding: 0.75rem 1.25rem;
+            border-radius: 6px;
+            text-decoration: none;
+            font-size: 1.1rem;
+        }
+        .hero-phone-link:hover { filter: brightness(0.95); }
+        .hero-phone-or { opacity: 0.8; }
+        .hero-phone-secondary { color: #fff; text-decoration: underline; }
+        @media (max-width: 600px) {
+            .hero-phone-cta { justify-content: center; }
+            .hero-phone-link { font-size: 1.25rem; padding: 0.85rem 1.4rem; }
+        }
     </style>
-<script type="application/ld+json">
+<script src="/tracking.js" defer></script>
+    <link rel="stylesheet" href="/sponsor-slot.css">
+    <script src="/sponsor-slot.js" defer></script>
+    <link rel="stylesheet" href="/chrome.css">
+
+    <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Ready to Book?",
+      "name": "What time do Key West sunset cruises leave?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Browse our tours above and secure your adventure in Key West."
+        "text": "Departure moves with the sunset: roughly 5:00 PM in December and 7:30 PM in June, usually 60 to 90 minutes before the sun goes down. The exact time is on the operator's calendar when you check availability."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is alcohol included?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "On most shared sails, yes — champagne, beer, wine and soft drinks are part of the ticket, and a few include a full open bar. Private charters are usually BYOB or include a welcome bottle; the card says which."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Shared sail or private boat?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Shared sails run $49.95 to $108 per person and are the right call for two people or a small group who want it easy. A private boat starts around $350 for up to six, so it is cheaper than a shared sail once you have five or more — and you control the music, the route and who is aboard."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What if the weather turns?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Captains call it, not you. If the operator cancels for weather you get a full refund or a rebook. Light rain rarely cancels; lightning and high wind do. Book for an early night of your trip so you have a backup evening."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Where do the boats leave from?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Almost all depart from the Historic Seaport (Key West Bight) or the Margaritaville Resort marina, both walkable from Duval Street. Parking near the seaport is tight — walk, bike or take a cab."
       }
     }
   ]
 }
-</script>
-<script type="application/ld+json">
+    </script>
+    <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "TouristTrip",
-  "name": "Key West Sunset Cruise",
-  "description": "Private sunset cruise in Key West, Florida. Romantic sails, proposals, dinner cruises. Perfect for couples and small groups.",
-  "touristType": ["Couple", "Family", "Group"],
-  "itinerary": {
-    "@type": "Place",
-    "name": "Key West Sunset Waters",
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Key West",
-      "addressRegion": "FL",
-      "addressCountry": "US"
-    }
-  },
-  "provider": {
-    "@type": "TravelAgency",
-    "@id": "https://keywestsandbartours.com/#business",
-    "name": "Key West Sandbar Tours",
-    "url": "https://keywestsandbartours.com/"
-  },
-  "offers": {
-    "@type": "Offer",
-    "priceCurrency": "USD",
-    "price": "59.95",
-    "availability": "https://schema.org/InStock",
-    "url": "https://keywestsandbartours.com/sunset-cruises.html"
-  }
-}
-</script>
-<script src="/tracking.js" defer></script>
-    <link rel="stylesheet" href="/sponsor-slot.css">
-    <script src="/sponsor-slot.js" defer></script>
-    <link rel="stylesheet" href="/chrome.css">
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@graph": [
+  "@type": "ItemList",
+  "name": "Key West Sunset Cruises",
+  "url": "https://keywestsandbartours.com/sunset-cruises.html",
+  "numberOfItems": 15,
+  "itemListElement": [
     {
-      "@type": "TouristTrip",
-      "name": "Key West Champagne Sunset Sail on Schooner America 2.0",
-      "description": "The sail usually runs in light rain and other moderate weather situations. The only time we cancel a trip is in the event of severe or unsafe weather conditions.",
-      "touristType": "Boat Tour",
-      "offers": {
-        "@type": "Offer",
-        "price": 108,
-        "priceCurrency": "USD",
-        "url": "https://fareharbor.com/embeds/book/sail-keywest/items/26520/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&bookable-only=yes&full-items=yes&marketplace=yes&flow=no",
-        "availability": "https://schema.org/InStock"
-      },
-      "provider": {
-        "@type": "LocalBusiness",
-        "name": "Classic Harbor Line - Key West"
-      }
-    },
-    {
-      "@type": "TouristTrip",
-      "name": "Private Sunset Sail",
-      "description": "Coastal Living Magazine ranked Danger Charter’s Wind and Wine Sail one of the top two Sunset Sails in all of North America.  Danger Charter’s Wind and Wine Cruise is unparalleled for folks who want an upscale, yet relaxed and intimate, sunset sail.",
-      "touristType": "Boat Tour",
-      "offers": {
-        "@type": "Offer",
-        "priceSpecification": {
-          "@type": "UnitPriceSpecification",
-          "price": 3269,
-          "priceCurrency": "USD",
-          "unitText": "whole boat · up to 30 guests"
+      "@type": "ListItem",
+      "position": 1,
+      "item": {
+        "@type": "TouristTrip",
+        "name": "Catamaran Champagne Sunset Sail",
+        "url": "https://fareharbor.com/embeds/book/keywestsebago/items/64485/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&full-items=yes&flow=no",
+        "image": "https://cdn.filestackcontent.com/resize=w:1200,fit:max/auto_image/compress/xgXZKDkAStOtZCSaRVGk",
+        "provider": {
+          "@type": "LocalBusiness",
+          "name": "Sebago Watersports"
         },
-        "url": "https://fareharbor.com/embeds/book/dangercharters/items/3998/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&bookable-only=yes&full-items=yes&marketplace=yes&flow=no",
-        "availability": "https://schema.org/InStock"
-      },
-      "provider": {
-        "@type": "LocalBusiness",
-        "name": "Danger Charters"
-      }
-    },
-    {
-      "@type": "TouristTrip",
-      "name": "Sunset Cruise",
-      "description": "Enjoy front-row seats to a private sunset cruise around the historic Key West Harbor. Skip the crowd and explore the island from a different view as you sail into the vibrant colors of the setting sun.",
-      "touristType": "Boat Tour",
-      "provider": {
-        "@type": "LocalBusiness",
-        "name": "Seabound Charters"
-      }
-    },
-    {
-      "@type": "TouristTrip",
-      "name": "Sunset Cruise - Still Dreamin'",
-      "description": "Amazing Sunset Views • 2 Hours • Up to 6 people • All Ages!",
-      "touristType": "",
-      "offers": {
-        "@type": "Offer",
-        "priceSpecification": {
-          "@type": "UnitPriceSpecification",
-          "price": 600,
+        "touristType": [
+          "Couples",
+          "Families",
+          "Groups"
+        ],
+        "offers": {
+          "@type": "Offer",
+          "price": "49.95",
           "priceCurrency": "USD",
-          "unitText": "whole boat · up to 6 passengers"
+          "availability": "https://schema.org/InStock",
+          "url": "https://fareharbor.com/embeds/book/keywestsebago/items/64485/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&full-items=yes&flow=no"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "item": {
+        "@type": "TouristTrip",
+        "name": "Snorkel & Sunset Sail Rum & Reggae Combo",
+        "url": "https://fareharbor.com/embeds/book/furycat/items/2581/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&full-items=yes&flow=no",
+        "image": "https://cdn.filestackcontent.com/resize=w:1200,fit:max/auto_image/compress/449EYMdmSbSDoY0qQ2e8",
+        "provider": {
+          "@type": "LocalBusiness",
+          "name": "Fury Water Adventures"
         },
-        "url": "https://fareharbor.com/embeds/book/casualmondaycharters/items/689390/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&bookable-only=yes&full-items=yes&marketplace=yes&flow=no",
-        "availability": "https://schema.org/InStock"
-      },
-      "provider": {
-        "@type": "LocalBusiness",
-        "name": "Casual Monday Charters"
-      }
-    },
-    {
-      "@type": "TouristTrip",
-      "name": "Sunset Sail",
-      "description": "On this an exclusive PRIVATE \"Sunset Sail.\" We take you through several extraordinary locations and watch the sun drop with the music of your choice creating a sonic landscape that matches the occasion.",
-      "touristType": "Boat Tour-Sailing",
-      "provider": {
-        "@type": "LocalBusiness",
-        "name": "Restless Native Charters"
-      }
-    },
-    {
-      "@type": "TouristTrip",
-      "name": "Namaste Sunset",
-      "description": "Escape the hustle and bustle of everyday life and enjoy the crystal-clear waters, sandy shores, and breathtaking views of the Florida Keys.",
-      "touristType": "Boat Tour",
-      "offers": {
-        "@type": "Offer",
-        "priceSpecification": {
-          "@type": "UnitPriceSpecification",
-          "price": 375,
+        "touristType": [
+          "Couples",
+          "Families",
+          "Groups"
+        ],
+        "offers": {
+          "@type": "Offer",
+          "price": "49.00",
           "priceCurrency": "USD",
-          "unitText": "whole boat"
+          "availability": "https://schema.org/InStock",
+          "url": "https://fareharbor.com/embeds/book/furycat/items/2581/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&full-items=yes&flow=no"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "item": {
+        "@type": "TouristTrip",
+        "name": "Hula Hank's Tiki Sunset Cruise",
+        "url": "https://fareharbor.com/embeds/book/keywestsebago/items/577267/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&full-items=yes&flow=no",
+        "image": "https://cdn.filestackcontent.com/resize=w:1200,fit:max/auto_image/compress/HWBWXFUQiiyJYSnfomaQ",
+        "provider": {
+          "@type": "LocalBusiness",
+          "name": "Sebago Watersports"
         },
-        "url": "https://fareharbor.com/embeds/book/namastealldaykeywest/items/626352/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&bookable-only=yes&full-items=yes&marketplace=yes&flow=no",
-        "availability": "https://schema.org/InStock"
-      },
-      "provider": {
-        "@type": "LocalBusiness",
-        "name": "Namaste Here LLC"
+        "touristType": [
+          "Couples",
+          "Families",
+          "Groups"
+        ],
+        "offers": {
+          "@type": "Offer",
+          "price": "59.95",
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock",
+          "url": "https://fareharbor.com/embeds/book/keywestsebago/items/577267/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&full-items=yes&flow=no"
+        }
       }
     },
     {
-      "@type": "TouristTrip",
-      "name": "Sunset Cruise",
-      "description": "Experience the magic of a Key West sunset from the tranquility of your own private charter, a perfect way to celebrate special occasions or simply enjoy a serene evening on the water.",
-      "touristType": "Boat Tour",
-      "provider": {
-        "@type": "LocalBusiness",
-        "name": "Dilligaff Charters"
+      "@type": "ListItem",
+      "position": 4,
+      "item": {
+        "@type": "TouristTrip",
+        "name": "Land's End Sunset Sail",
+        "url": "https://fareharbor.com/embeds/book/keywestsebago/items/64486/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&full-items=yes&flow=no",
+        "image": "https://cdn.filestackcontent.com/resize=w:1200,fit:max/auto_image/compress/KeaM2wLYSAeHv2dd1cEK",
+        "provider": {
+          "@type": "LocalBusiness",
+          "name": "Sebago Watersports"
+        },
+        "touristType": [
+          "Couples",
+          "Families",
+          "Groups"
+        ],
+        "offers": {
+          "@type": "Offer",
+          "price": "59.95",
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock",
+          "url": "https://fareharbor.com/embeds/book/keywestsebago/items/64486/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&full-items=yes&flow=no"
+        }
       }
     },
     {
-      "@type": "TouristTrip",
-      "name": "Sunset Dinner Cruise",
-      "description": "Indulge in a freshly prepared tropical buffet, served by our friendly crew and featuring local flavors that capture the spirit of Key West.",
-      "touristType": "Boat Tour-Fishing",
-      "provider": {
-        "@type": "LocalBusiness",
-        "name": "Sunset Watersports"
+      "@type": "ListItem",
+      "position": 5,
+      "item": {
+        "@type": "TouristTrip",
+        "name": "Commotion on the Ocean: Live Music Sunset Sail",
+        "url": "https://fareharbor.com/embeds/book/furycat/items/2570/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&full-items=yes&flow=no",
+        "image": "https://cdn.filestackcontent.com/resize=w:1200,fit:max/auto_image/compress/2xxZ7YYrTdP1dohntxAV",
+        "provider": {
+          "@type": "LocalBusiness",
+          "name": "Fury Water Adventures"
+        },
+        "touristType": [
+          "Couples",
+          "Families",
+          "Groups"
+        ],
+        "offers": {
+          "@type": "Offer",
+          "price": "63.00",
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock",
+          "url": "https://fareharbor.com/embeds/book/furycat/items/2570/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&full-items=yes&flow=no"
+        }
       }
     },
     {
-      "@type": "TouristTrip",
-      "name": "Sushi & Sunset Cruise",
-      "description": "Departing from the Garrison Bight Marina, your sunset cruise takes you on a unique path apart from the rush of boats leaving from downtown Key West. Relax and revel in a carefree cruise where the Atlantic Ocean meets the Gulf of Mexico.",
-      "touristType": "Boat Tour",
-      "provider": {
-        "@type": "LocalBusiness",
-        "name": "Barefoot Charters"
+      "@type": "ListItem",
+      "position": 6,
+      "item": {
+        "@type": "TouristTrip",
+        "name": "Sunset Sip & Sail",
+        "url": "https://fareharbor.com/embeds/book/sunsetwatersportskeywest/items/263707/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&full-items=yes&flow=no",
+        "image": "https://cdn.filestackcontent.com/resize=w:1200,fit:max/auto_image/compress/2h14r8LQ7OFv3qLIIndL",
+        "provider": {
+          "@type": "LocalBusiness",
+          "name": "Sunset Watersports"
+        },
+        "touristType": [
+          "Couples",
+          "Families",
+          "Groups"
+        ],
+        "offers": {
+          "@type": "Offer",
+          "price": "69.95",
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock",
+          "url": "https://fareharbor.com/embeds/book/sunsetwatersportskeywest/items/263707/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&full-items=yes&flow=no"
+        }
       }
     },
     {
-      "@type": "TouristTrip",
-      "name": "Two Reef Snorkel Tour With Sunset Cruise",
-      "description": "Join us for a beautiful late afternoon sail out to two locations on our living coral reef. Enjoy a refreshing afternoon dip in the crystal clear waters, and top it all off with a gorgeous sunset as you cruise back to shore!",
-      "touristType": "Boat Tour-Catamaran-Sailing-Snorkel",
-      "offers": {
-        "@type": "Offer",
-        "price": 59.95,
-        "priceCurrency": "USD",
-        "url": "https://fareharbor.com/embeds/book/sunsetwatersportskeywest/items/263718/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&bookable-only=yes&full-items=yes&marketplace=yes&flow=no",
-        "availability": "https://schema.org/InStock"
-      },
-      "provider": {
-        "@type": "LocalBusiness",
-        "name": "Sunset Watersports"
+      "@type": "ListItem",
+      "position": 7,
+      "item": {
+        "@type": "TouristTrip",
+        "name": "Key West Champagne Sunset Sail on Schooner America 2.0",
+        "url": "https://fareharbor.com/embeds/book/sail-keywest/items/26520/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&full-items=yes&flow=no",
+        "image": "https://cdn.filestackcontent.com/resize=w:1200,fit:max/auto_image/compress/JbJokeykSwSJ0uTW2gyD",
+        "provider": {
+          "@type": "LocalBusiness",
+          "name": "Classic Harbor Line - Key West"
+        },
+        "touristType": [
+          "Couples",
+          "Families",
+          "Groups"
+        ],
+        "offers": {
+          "@type": "Offer",
+          "price": "108.00",
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock",
+          "url": "https://fareharbor.com/embeds/book/sail-keywest/items/26520/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&full-items=yes&flow=no"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 8,
+      "item": {
+        "@type": "TouristTrip",
+        "name": "Sunset and Dolphin Watching Excursion",
+        "url": "https://fareharbor.com/embeds/book/pirateadventurecharters/items/315395/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&full-items=yes&flow=no",
+        "image": "https://cdn.filestackcontent.com/resize=w:1200,fit:max/auto_image/compress/42KIVSdQiqb5MKxwWAdm",
+        "provider": {
+          "@type": "LocalBusiness",
+          "name": "Pirate Adventure Charters"
+        },
+        "touristType": [
+          "Couples",
+          "Families",
+          "Groups"
+        ],
+        "offers": {
+          "@type": "Offer",
+          "price": "350.00",
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock",
+          "url": "https://fareharbor.com/embeds/book/pirateadventurecharters/items/315395/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&full-items=yes&flow=no"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 9,
+      "item": {
+        "@type": "TouristTrip",
+        "name": "Sunset Celebration",
+        "url": "https://fareharbor.com/embeds/book/fly-keywest/items/249381/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&full-items=yes&flow=no",
+        "image": "https://cdn.filestackcontent.com/resize=w:1200,fit:max/auto_image/compress/8TBSr0QTgmF7vyMn3JsC",
+        "provider": {
+          "@type": "LocalBusiness",
+          "name": "Fly-KeyWest"
+        },
+        "touristType": [
+          "Couples",
+          "Families",
+          "Groups"
+        ],
+        "offers": {
+          "@type": "Offer",
+          "price": "369.00",
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock",
+          "url": "https://fareharbor.com/embeds/book/fly-keywest/items/249381/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&full-items=yes&flow=no"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 10,
+      "item": {
+        "@type": "TouristTrip",
+        "name": "Namaste Sunset",
+        "url": "https://fareharbor.com/embeds/book/namastealldaykeywest/items/626352/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&full-items=yes&flow=no",
+        "image": "https://cdn.filestackcontent.com/resize=w:1200,fit:max/auto_image/compress/jv6PEvGRb2mqwccirKTN",
+        "provider": {
+          "@type": "LocalBusiness",
+          "name": "Namaste Here LLC"
+        },
+        "touristType": [
+          "Couples",
+          "Families",
+          "Groups"
+        ],
+        "offers": {
+          "@type": "Offer",
+          "price": "375.00",
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock",
+          "url": "https://fareharbor.com/embeds/book/namastealldaykeywest/items/626352/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&full-items=yes&flow=no"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 11,
+      "item": {
+        "@type": "TouristTrip",
+        "name": "Complementary Champagne Sunset and Dolphin Watching Excursion",
+        "url": "https://fareharbor.com/embeds/book/mermaidcharterskeywest/items/44068/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&full-items=yes&flow=no",
+        "image": "https://cdn.filestackcontent.com/resize=w:1200,fit:max/auto_image/compress/yvqrAhrbTReCe92L3YNq",
+        "provider": {
+          "@type": "LocalBusiness",
+          "name": "Mermaid Charters Key West"
+        },
+        "touristType": [
+          "Couples",
+          "Families",
+          "Groups"
+        ],
+        "offers": {
+          "@type": "Offer",
+          "price": "500.00",
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock",
+          "url": "https://fareharbor.com/embeds/book/mermaidcharterskeywest/items/44068/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&full-items=yes&flow=no"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 12,
+      "item": {
+        "@type": "TouristTrip",
+        "name": "Sunset Sail",
+        "url": "https://fareharbor.com/embeds/book/mysticbluesailingadventures/items/712476/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&full-items=yes&flow=no",
+        "image": "https://cdn.filestackcontent.com/resize=w:1200,fit:max/auto_image/compress/OjPOttQYmqcDVZnki2wQ",
+        "provider": {
+          "@type": "LocalBusiness",
+          "name": "Mystic Blue Sailing Adventures"
+        },
+        "touristType": [
+          "Couples",
+          "Families",
+          "Groups"
+        ],
+        "offers": {
+          "@type": "Offer",
+          "price": "699.00",
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock",
+          "url": "https://fareharbor.com/embeds/book/mysticbluesailingadventures/items/712476/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&full-items=yes&flow=no"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 13,
+      "item": {
+        "@type": "TouristTrip",
+        "name": "2hr Champagne Sunset Cruise - 35' Carolina Classic",
+        "url": "https://fareharbor.com/embeds/book/goodtimeskeywest/items/336268/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&full-items=yes&flow=no",
+        "image": "https://cdn.filestackcontent.com/resize=w:1200,fit:max/auto_image/compress/AErcAyfgT4SgDWMuaMnE",
+        "provider": {
+          "@type": "LocalBusiness",
+          "name": "Good Times Key West"
+        },
+        "touristType": [
+          "Couples",
+          "Families",
+          "Groups"
+        ],
+        "offers": {
+          "@type": "Offer",
+          "price": "800.00",
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock",
+          "url": "https://fareharbor.com/embeds/book/goodtimeskeywest/items/336268/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&full-items=yes&flow=no"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 14,
+      "item": {
+        "@type": "TouristTrip",
+        "name": "Sandbar and Sunset Excursion",
+        "url": "https://fareharbor.com/embeds/book/mermaidcharterskeywest/items/302525/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&full-items=yes&flow=no",
+        "image": "https://cdn.filestackcontent.com/resize=w:1200,fit:max/auto_image/compress/aScNq5iISRK94eU7PP4V",
+        "provider": {
+          "@type": "LocalBusiness",
+          "name": "Mermaid Charters Key West"
+        },
+        "touristType": [
+          "Couples",
+          "Families",
+          "Groups"
+        ],
+        "offers": {
+          "@type": "Offer",
+          "price": "800.00",
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock",
+          "url": "https://fareharbor.com/embeds/book/mermaidcharterskeywest/items/302525/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&full-items=yes&flow=no"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 15,
+      "item": {
+        "@type": "TouristTrip",
+        "name": "Sunset Sail",
+        "url": "https://fareharbor.com/embeds/book/restlessnative/items/105623/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&full-items=yes&flow=no",
+        "image": "https://cdn.filestackcontent.com/resize=w:1200,fit:max/auto_image/compress/56XE5Oj9QveoUrVUoQyJ",
+        "provider": {
+          "@type": "LocalBusiness",
+          "name": "Restless Native Charters"
+        },
+        "touristType": [
+          "Couples",
+          "Families",
+          "Groups"
+        ],
+        "offers": {
+          "@type": "Offer",
+          "price": "1200.00",
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock",
+          "url": "https://fareharbor.com/embeds/book/restlessnative/items/105623/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&full-items=yes&flow=no"
+        }
       }
     }
   ]
 }
-</script>
+    </script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://keywestsandbartours.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Sunset Cruises",
+      "item": "https://keywestsandbartours.com/sunset-cruises.html"
+    }
+  ]
+}
+    </script>
 </head>
 <body>
-    <!-- HEADER -->
     <header class="site-header">
     <div class="site-header-inner">
       <a href="/" class="site-logo">
@@ -363,212 +1270,428 @@
       <a href="/about.html">About</a>
     </nav>
   </header>
-
-    <nav class="nav-mobile">
-        <a href="/#tours-section">Tours</a>
-        <a href="blog/">Blog</a>
-        <a href="about.html">About</a>
-    </nav>
-
-    <!-- HERO -->
-    <section class="hero">
-        <h1>Key West Sunset Cruises</h1>
-        <p>Private sunset cruises in Key West from $59.95. Romantic sails, proposals, dinner cruises. Perfect for couples.</p>
-        <a href="#tours-grid">Browse Tours</a>
+    
+    <div class="sticky-cta visible" id="stickyCta">
+        <div class="sticky-cta-text">Sunset sails from <span>$49.95</span></div>
+        <a href="#top-picks" class="sticky-cta-btn">See Top Picks</a>
+    </div>
+    
+    <section class="hero-video">
+        <img class="hero-video__media" src="og-sunset-cruises.png" alt="Sunset over the water off Key West" fetchpriority="high">
+        <div class="hero-video__overlay"></div>
+        <div class="hero-video__content">
+            <span class="hero-video__badge">Sunset Sails &amp; Private Sunset Charters</span>
+            <h1 class="hero-video__title">Key West Sunset Cruises:<br>Shared Sails &amp; Private Boats</h1>
+            <p class="hero-video__subtitle">Every sunset boat in Key West with a real price on it: two-hour champagne sails from $49.95 a seat, live-music catamarans, the tiki boat, and private charters for a proposal or anniversary.</p>
+            <div class="hero-phone-cta">
+              <a href="tel:4074766190" class="hero-phone-link">
+                Call <strong>(407) 476-6190</strong>
+              </a>
+              <span class="hero-phone-or">or</span>
+              <a href="#top-picks" class="hero-phone-secondary">See Top Picks</a>
+            </div>
+            <div class="hero-video__stats">
+                <div class="hero-video__stat">
+                    <div class="hero-video__stat-number">From $49.95</div>
+                    <div class="hero-video__stat-label">Per person, drinks included</div>
+                </div>
+                <div class="hero-video__stat">
+                    <div class="hero-video__stat-number">From $350</div>
+                    <div class="hero-video__stat-label">Private boat, up to 6</div>
+                </div>
+            </div>
+            <a href="#top-picks" class="hero-video__cta" onclick="gtag('event','scroll_to_tours',{page_type:'sunset-cruises'})">See the Best Sunset Cruises</a>
+            <p style="margin-top: 12px; font-size: 0.85rem; opacity: 0.9;">Short on time? <a href="#top-picks" style="color: var(--accent); text-decoration: underline;">Start with our top picks →</a></p>
+        </div>
     </section>
     
-    <!-- INTRO -->
-    <section class="intro">
-        <h2>Key West Sunset Cruises</h2>
-        <p>Experience Key West's most iconic moment—the legendary sunset—aboard a private sailing vessel. Our sunset cruises are perfect for romantic evenings, proposals, or simply watching nature's daily masterpiece from the water.
+    <section class="best-for">
+        <div class="best-for-inner">
 
-From intimate two-hour sails to full-evening experiences with dinner service, each cruise is tailored to your group. Many operators offer special packages for proposals, anniversaries, and celebrations. You'll sail past Mallory Square and experience where the Gulf of Mexico meets the Atlantic Ocean.
-
-Most sunset cruises operate May through October, departing 5-7 PM depending on seasonal sunsets. Popular options include private sailing charters, catamaran experiences, and glass-bottom boats. Book in advance—during peak season, sunset cruises often sell out 1-2 days ahead.</p>
+            <h2>Perfect For</h2>
+            <div class="marquee-wrapper">
+                <div class="best-for-grid">
+                    <!-- First set -->
+                    <div class="best-for-pill">💍 Proposals</div>
+                    <div class="best-for-pill">🥂 Anniversaries</div>
+                    <div class="best-for-pill">👫 Date Night</div>
+                    <div class="best-for-pill">🍾 Birthdays</div>
+                    <div class="best-for-pill">📸 Photography</div>
+                    <div class="best-for-pill">💒 Honeymoons</div>
+                    <div class="best-for-pill">👯 Girls Night</div>
+                    <div class="best-for-pill">👨‍👩‍👧 Families</div>
+                    <div class="best-for-pill">🎉 Celebrations</div>
+                    <div class="best-for-pill">🌅 First Night in Key West</div>
+                    <!-- Duplicate set for seamless loop -->
+                    <div class="best-for-pill">💍 Proposals</div>
+                    <div class="best-for-pill">🥂 Anniversaries</div>
+                    <div class="best-for-pill">👫 Date Night</div>
+                    <div class="best-for-pill">🍾 Birthdays</div>
+                    <div class="best-for-pill">📸 Photography</div>
+                    <div class="best-for-pill">💒 Honeymoons</div>
+                    <div class="best-for-pill">👯 Girls Night</div>
+                    <div class="best-for-pill">👨‍👩‍👧 Families</div>
+                    <div class="best-for-pill">🎉 Celebrations</div>
+                    <div class="best-for-pill">🌅 First Night in Key West</div>
+                </div>
+            </div>
+        </div>
     </section>
     
-    <!-- TOURS -->
-    <section class="tours">
+    <!-- TOP PICKS MODULE -->
+    <section class="top-picks" id="top-picks">
+        <div class="top-picks-inner">
+            <div class="section-label">Editor's Picks</div>
+            <h2 class="section-title">Top 3 Key West Sunset Cruises</h2>
+            <p class="top-picks-intro">Three picks that cover most people: the cheapest sail that still pours champagne, the boat that photographs best, and the private charter to book if you're proposing.</p>
+            <div class="top-picks-grid">
+                <div class="pick-card">
+                    <div class="pick-card-image" style="background-color: var(--sand); background-image: url('https://cdn.filestackcontent.com/resize=w:1200,fit:max/auto_image/compress/xgXZKDkAStOtZCSaRVGk')">
+                        <span class="pick-card-label">Best Value Shared Sail</span>
+                        <span class="pick-card-price">$49.95</span>
+                    </div>
+                    <div class="pick-card-content">
+                        <div class="pick-card-company">Sebago Watersports</div>
+                        <h3>Catamaran Champagne Sunset Sail</h3>
+                        <div class="pick-card-meta"><span>⏱ 2 hours</span><span>👥 Shared, per person</span></div>
+                        <a href="https://fareharbor.com/embeds/book/keywestsebago/items/64485/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&full-items=yes&flow=no" target="_blank" class="pick-card-cta" data-tour-name="Catamaran Champagne Sunset Sail" data-tour-id="64485">Check Availability</a>
+                    </div>
+                </div>
+                <div class="pick-card">
+                    <div class="pick-card-image" style="background-color: var(--sand); background-image: url('https://cdn.filestackcontent.com/resize=w:1200,fit:max/auto_image/compress/JbJokeykSwSJ0uTW2gyD')">
+                        <span class="pick-card-label">Most Photogenic</span>
+                        <span class="pick-card-price">$108</span>
+                    </div>
+                    <div class="pick-card-content">
+                        <div class="pick-card-company">Classic Harbor Line - Key West</div>
+                        <h3>Key West Champagne Sunset Sail on Schooner America 2.0</h3>
+                        <div class="pick-card-meta"><span>⏱ 2 hours</span><span>👥 Shared, per person</span></div>
+                        <a href="https://fareharbor.com/embeds/book/sail-keywest/items/26520/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&full-items=yes&flow=no" target="_blank" class="pick-card-cta" data-tour-name="Key West Champagne Sunset Sail on Schooner America 2.0" data-tour-id="26520">Check Availability</a>
+                    </div>
+                </div>
+                <div class="pick-card">
+                    <div class="pick-card-image" style="background-color: var(--sand); background-image: url('https://cdn.filestackcontent.com/resize=w:1200,fit:max/auto_image/compress/yvqrAhrbTReCe92L3YNq')">
+                        <span class="pick-card-label">Best for a Proposal</span>
+                        <span class="pick-card-price">$500</span>
+                    </div>
+                    <div class="pick-card-content">
+                        <div class="pick-card-company">Mermaid Charters Key West</div>
+                        <h3>Complementary Champagne Sunset and Dolphin Watching Excursion</h3>
+                        <div class="pick-card-meta"><span>⏱ 2 hours</span><span>👥 Private boat</span></div>
+                        <a href="https://fareharbor.com/embeds/book/mermaidcharterskeywest/items/44068/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&full-items=yes&flow=no" target="_blank" class="pick-card-cta" data-tour-name="Complementary Champagne Sunset and Dolphin Watching Excursion" data-tour-id="44068">Check Availability</a>
+                    </div>
+                </div>
+            </div>
+            <p class="top-picks-divider">— or browse every sunset boat below —</p>
+        </div>
+    </section>
+    
+    <section class="tours" id="tours">
         <div class="tours-inner">
-            <div class="section-label">Sunset Sails</div>
-            <h2 class="section-title">Available Tours</h2>
-            
-            <div id="tours-grid" class="tours-grid">
-                <!-- TOUR 1 -->
+            <div class="section-label">All Sunset Boats</div>
+            <h2 class="section-title">Every Key West Sunset Cruise (15 available)</h2>
+            <div class="tours-grid">
+                <div class="tour-card">
+                    <div class="tour-card-image" style="background-color: var(--sand); background-image: url('https://cdn.filestackcontent.com/resize=w:1200,fit:max/auto_image/compress/xgXZKDkAStOtZCSaRVGk')">
+                        <span class="tour-card-badge">💰 Best Value</span>
+                        <span class="tour-card-price">$49.95</span>
+                    </div>
+                    <div class="tour-card-content">
+                        <div class="tour-card-company">Sebago Watersports</div>
+                        <h3>Catamaran Champagne Sunset Sail</h3>
+                        <div class="tour-card-meta"><span>⏱ 2 hours</span><span>👥 Shared, per person</span></div>
+                        <p class="tour-card-description">The classic: a two-hour catamaran sail with champagne, beer, wine and soft drinks included. The lowest-priced sunset sail in Key West that still pours.</p>
+                        <a href="https://fareharbor.com/embeds/book/keywestsebago/items/64485/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&full-items=yes&flow=no" target="_blank" class="tour-card-cta" data-tour-name="Catamaran Champagne Sunset Sail" data-tour-id="64485">Check Availability</a>
+                    </div>
+                </div>
+                <div class="tour-card">
+                    <div class="tour-card-image" style="background-color: var(--sand); background-image: url('https://cdn.filestackcontent.com/resize=w:1200,fit:max/auto_image/compress/449EYMdmSbSDoY0qQ2e8')">
+                        <span class="tour-card-badge">🤿 Snorkel Combo</span>
+                        <span class="tour-card-price">$49</span>
+                    </div>
+                    <div class="tour-card-content">
+                        <div class="tour-card-company">Fury Water Adventures</div>
+                        <h3>Snorkel &amp; Sunset Sail Rum &amp; Reggae Combo</h3>
+                        <div class="tour-card-meta"><span>⏱ 4 hours</span><span>👥 Shared, per person</span></div>
+                        <p class="tour-card-description">Afternoon reef snorkel that rolls straight into the sunset sail with rum punch and reggae. Two trips for less than most single sails.</p>
+                        <a href="https://fareharbor.com/embeds/book/furycat/items/2581/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&full-items=yes&flow=no" target="_blank" class="tour-card-cta" data-tour-name="Snorkel &amp; Sunset Sail Rum &amp; Reggae Combo" data-tour-id="2581">Check Availability</a>
+                    </div>
+                </div>
+                <div class="tour-card">
+                    <div class="tour-card-image" style="background-color: var(--sand); background-image: url('https://cdn.filestackcontent.com/resize=w:1200,fit:max/auto_image/compress/HWBWXFUQiiyJYSnfomaQ')">
+                        <span class="tour-card-badge">🌺 Tiki Boat</span>
+                        <span class="tour-card-price">$59.95</span>
+                    </div>
+                    <div class="tour-card-content">
+                        <div class="tour-card-company">Sebago Watersports</div>
+                        <h3>Hula Hank&#x27;s Tiki Sunset Cruise</h3>
+                        <div class="tour-card-meta"><span>⏱ 1.5 hours</span><span>👥 Shared, per person</span></div>
+                        <p class="tour-card-description">Key West's floating tiki bar at sunset. Casual, loud in a good way, and one of the most-booked boats on this site.</p>
+                        <a href="https://fareharbor.com/embeds/book/keywestsebago/items/577267/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&full-items=yes&flow=no" target="_blank" class="tour-card-cta" data-tour-name="Hula Hank&#x27;s Tiki Sunset Cruise" data-tour-id="577267">Check Availability</a>
+                    </div>
+                </div>
+                <div class="tour-card">
+                    <div class="tour-card-image" style="background-color: var(--sand); background-image: url('https://cdn.filestackcontent.com/resize=w:1200,fit:max/auto_image/compress/KeaM2wLYSAeHv2dd1cEK')">
+                        <span class="tour-card-badge">🎸 Live Music</span>
+                        <span class="tour-card-price">$59.95</span>
+                    </div>
+                    <div class="tour-card-content">
+                        <div class="tour-card-company">Sebago Watersports</div>
+                        <h3>Land&#x27;s End Sunset Sail</h3>
+                        <div class="tour-card-meta"><span>⏱ 2 hours</span><span>👥 Shared, per person</span></div>
+                        <p class="tour-card-description">Sebago's larger catamaran with a live band, full bar and appetizers. The one to pick if you want a party, not a quiet sail.</p>
+                        <a href="https://fareharbor.com/embeds/book/keywestsebago/items/64486/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&full-items=yes&flow=no" target="_blank" class="tour-card-cta" data-tour-name="Land&#x27;s End Sunset Sail" data-tour-id="64486">Check Availability</a>
+                    </div>
+                </div>
+                <div class="tour-card">
+                    <div class="tour-card-image" style="background-color: var(--sand); background-image: url('https://cdn.filestackcontent.com/resize=w:1200,fit:max/auto_image/compress/2xxZ7YYrTdP1dohntxAV')">
+                        <span class="tour-card-badge">🎶 Live Band</span>
+                        <span class="tour-card-price">$63</span>
+                    </div>
+                    <div class="tour-card-content">
+                        <div class="tour-card-company">Fury Water Adventures</div>
+                        <h3>Commotion on the Ocean: Live Music Sunset Sail</h3>
+                        <div class="tour-card-meta"><span>⏱ 2 hours</span><span>👥 Shared, per person</span></div>
+                        <p class="tour-card-description">Fury's live-music sunset sail on a big stable catamaran. Includes drinks; easiest boat for groups who don't want to plan anything.</p>
+                        <a href="https://fareharbor.com/embeds/book/furycat/items/2570/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&full-items=yes&flow=no" target="_blank" class="tour-card-cta" data-tour-name="Commotion on the Ocean: Live Music Sunset Sail" data-tour-id="2570">Check Availability</a>
+                    </div>
+                </div>
+                <div class="tour-card">
+                    <div class="tour-card-image" style="background-color: var(--sand); background-image: url('https://cdn.filestackcontent.com/resize=w:1200,fit:max/auto_image/compress/2h14r8LQ7OFv3qLIIndL')">
+                        <span class="tour-card-badge">🍹 Open Bar</span>
+                        <span class="tour-card-price">$69.95</span>
+                    </div>
+                    <div class="tour-card-content">
+                        <div class="tour-card-company">Sunset Watersports</div>
+                        <h3>Sunset Sip &amp; Sail</h3>
+                        <div class="tour-card-meta"><span>⏱ 2 hours</span><span>👥 Shared, per person</span></div>
+                        <p class="tour-card-description">Unlimited well bar with rum runners and margaritas for the whole two hours. Best drink-per-dollar of the shared sails.</p>
+                        <a href="https://fareharbor.com/embeds/book/sunsetwatersportskeywest/items/263707/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&full-items=yes&flow=no" target="_blank" class="tour-card-cta" data-tour-name="Sunset Sip &amp; Sail" data-tour-id="263707">Check Availability</a>
+                    </div>
+                </div>
                 <div class="tour-card">
                     <div class="tour-card-image" style="background-color: var(--sand); background-image: url('https://cdn.filestackcontent.com/resize=w:1200,fit:max/auto_image/compress/JbJokeykSwSJ0uTW2gyD')">
-                        <span class="tour-card-badge">Boat Tour</span>
+                        <span class="tour-card-badge">⛵ Schooner</span>
                         <span class="tour-card-price">$108</span>
                     </div>
                     <div class="tour-card-content">
                         <div class="tour-card-company">Classic Harbor Line - Key West</div>
                         <h3>Key West Champagne Sunset Sail on Schooner America 2.0</h3>
-                        <div class="tour-card-meta"><span>⏱ 2 Hour</span><span>👥 Key West</span><span>💵 per person</span></div>
-                        <p class="tour-card-description">The sail usually runs in light rain and other moderate weather situations. The only time we cancel a trip is in the even...</p>
-                        <a href="https://fareharbor.com/embeds/book/sail-keywest/items/26520/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&bookable-only=yes&full-items=yes&marketplace=yes&flow=no" target="_blank" class="tour-card-cta" data-tour-name="Key West Champagne Sunset Sail on Schooner America 2.0" data-tour-id="26520">Check Availability</a>
+                        <div class="tour-card-meta"><span>⏱ 2 hours</span><span>👥 Shared, per person</span></div>
+                        <p class="tour-card-description">Sunset aboard the 105-foot Schooner America 2.0 with champagne and hors d'oeuvres. The photogenic pick and the one people frame.</p>
+                        <a href="https://fareharbor.com/embeds/book/sail-keywest/items/26520/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&full-items=yes&flow=no" target="_blank" class="tour-card-cta" data-tour-name="Key West Champagne Sunset Sail on Schooner America 2.0" data-tour-id="26520">Check Availability</a>
                     </div>
                 </div>
-                                <!-- TOUR 2 -->
                 <div class="tour-card">
-                    <div class="tour-card-image" style="background-color: var(--sand); background-image: url('https://cdn.filestackcontent.com/resize=w:1200,fit:max/auto_image/compress/wPadwBiOTbiORshz2mTG')">
-                        <span class="tour-card-badge">Boat Tour</span>
-                        <span class="tour-card-price">$3,269</span>
+                    <div class="tour-card-image" style="background-color: var(--sand); background-image: url('https://cdn.filestackcontent.com/resize=w:1200,fit:max/auto_image/compress/42KIVSdQiqb5MKxwWAdm')">
+                        <span class="tour-card-badge">🐬 Dolphins</span>
+                        <span class="tour-card-price">$350</span>
                     </div>
                     <div class="tour-card-content">
-                        <div class="tour-card-company">Danger Charters</div>
-                        <h3>Private Sunset Sail</h3>
-                        <div class="tour-card-meta"><span>⏱ 2 hour</span><span>👥 Key West</span><span>💵 whole boat · Accommodates up to 30 guests</span></div>
-                        <p class="tour-card-description">Coastal Living Magazine ranked Danger Charterâ€™s Wind and Wine Sail one of the top two Sunset Sails in all of North Ame...</p>
-                        <a href="https://fareharbor.com/embeds/book/dangercharters/items/3998/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&bookable-only=yes&full-items=yes&marketplace=yes&flow=no" target="_blank" class="tour-card-cta" data-tour-name="Private Sunset Sail" data-tour-id="3998">Check Availability</a>
+                        <div class="tour-card-company">Pirate Adventure Charters</div>
+                        <h3>Sunset and Dolphin Watching Excursion</h3>
+                        <div class="tour-card-meta"><span>⏱ 2 hours</span><span>👥 Private boat</span></div>
+                        <p class="tour-card-description">Private two-hour run out to the dolphin grounds timed to end at sunset, with complimentary beer, wine and champagne. Up to 6 guests.</p>
+                        <a href="https://fareharbor.com/embeds/book/pirateadventurecharters/items/315395/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&full-items=yes&flow=no" target="_blank" class="tour-card-cta" data-tour-name="Sunset and Dolphin Watching Excursion" data-tour-id="315395">Check Availability</a>
                     </div>
                 </div>
-                                <!-- TOUR 3 -->
-                                <!-- TOUR 4 -->
                 <div class="tour-card">
-                    <div class="tour-card-image" style="background-color: var(--sand); background-image: url('https://cdn.filestackcontent.com/resize=w:1200,fit:max/auto_image/compress/ktDMoLD8Rpueuwdoqvl6')">
-                        <span class="tour-card-badge">Boat Tour</span>
-                        <span class="tour-card-price">$600</span>
+                    <div class="tour-card-image" style="background-color: var(--sand); background-image: url('https://cdn.filestackcontent.com/resize=w:1200,fit:max/auto_image/compress/8TBSr0QTgmF7vyMn3JsC')">
+                        <span class="tour-card-badge">🚁 Helicopter</span>
+                        <span class="tour-card-price">$369</span>
                     </div>
                     <div class="tour-card-content">
-                        <div class="tour-card-company">Casual Monday Charters</div>
-                        <h3>Sunset Cruise — Still Dreamin&#39;</h3>
-                        <div class="tour-card-meta"><span>⏱ 1.5 Hours</span><span>👥 Key West</span><span>💵 whole boat · Up to six passengers</span></div>
-                        <p class="tour-card-description">Private sunset charter aboard Still Dreamin&#39;. Whole boat, your group only, unobstructed Key West sunset from the water.</p>
-                        <a href="https://fareharbor.com/embeds/book/casualmondaycharters/items/689390/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&bookable-only=yes&full-items=yes&marketplace=yes&flow=no" target="_blank" class="tour-card-cta" data-tour-name="Sunset Cruise - Still Dreamin&#39;" data-tour-id="689390">Check Availability</a>
+                        <div class="tour-card-company">Fly-KeyWest</div>
+                        <h3>Sunset Celebration</h3>
+                        <div class="tour-card-meta"><span>⏱ 20 min</span><span>👥 Per person</span></div>
+                        <p class="tour-card-description">The only sunset in Key West with nothing between you and the horizon. Short flight, champagne toast, unobstructed view. Priced per seat.</p>
+                        <a href="https://fareharbor.com/embeds/book/fly-keywest/items/249381/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&full-items=yes&flow=no" target="_blank" class="tour-card-cta" data-tour-name="Sunset Celebration" data-tour-id="249381">Check Availability</a>
                     </div>
                 </div>
-                <!-- TOUR 5 -->
-                <div class="tour-card">
-                    <div class="tour-card-image" style="background-color: var(--sand); background-image: url('https://cdn.filestackcontent.com/resize=w:1200,fit:max/auto_image/compress/56XE5Oj9QveoUrVUoQyJ')">
-                        <span class="tour-card-badge">Boat Tour-Sailing</span>
-                        <span class="tour-card-price">$1,200</span>
-                    </div>
-                    <div class="tour-card-content">
-                        <div class="tour-card-company">Restless Native Charters</div>
-                        <h3>Sunset Sail</h3>
-                        <div class="tour-card-meta"><span>⏱ 3 Hour Charter</span><span>👥 Key West</span><span>💵 whole boat · ARIA $1,200 or ZODIAC $2,200, Max 6 people</span></div>
-                        <p class="tour-card-description">On this an exclusive PRIVATE "Sunset Sail." We take you through several extraordinary locations and watch the sun drop w...</p>
-                        <a href="https://fareharbor.com/embeds/book/restlessnative/items/105623/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&bookable-only=yes&full-items=yes&marketplace=yes&flow=no" target="_blank" class="tour-card-cta" data-tour-name="Sunset Sail" data-tour-id="105623">Check Availability</a>
-                    </div>
-                </div>
-                                <!-- TOUR 6 -->
                 <div class="tour-card">
                     <div class="tour-card-image" style="background-color: var(--sand); background-image: url('https://cdn.filestackcontent.com/resize=w:1200,fit:max/auto_image/compress/jv6PEvGRb2mqwccirKTN')">
-                        <span class="tour-card-badge">Boat Tour</span>
+                        <span class="tour-card-badge">🧘 Small Group</span>
                         <span class="tour-card-price">$375</span>
                     </div>
                     <div class="tour-card-content">
                         <div class="tour-card-company">Namaste Here LLC</div>
                         <h3>Namaste Sunset</h3>
-                        <div class="tour-card-meta"><span>⏱ 2 hour</span><span>👥 Key West</span><span>💵 whole boat</span></div>
-                        <p class="tour-card-description">Escape the hustle and bustle of everyday life and enjoy the crystal-clear waters, sandy shores, and views o...</p>
-                        <a href="https://fareharbor.com/embeds/book/namastealldaykeywest/items/626352/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&bookable-only=yes&full-items=yes&marketplace=yes&flow=no" target="_blank" class="tour-card-cta" data-tour-name="Namaste Sunset" data-tour-id="626352">Check Availability</a>
+                        <div class="tour-card-meta"><span>⏱ 2 hours</span><span>👥 Private boat</span></div>
+                        <p class="tour-card-description">A quiet private sunset charter for couples and small groups — sandbar stop first if the tide allows, then the sun going down from the water.</p>
+                        <a href="https://fareharbor.com/embeds/book/namastealldaykeywest/items/626352/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&full-items=yes&flow=no" target="_blank" class="tour-card-cta" data-tour-name="Namaste Sunset" data-tour-id="626352">Check Availability</a>
                     </div>
                 </div>
-                                <!-- TOUR 7 -->
-                                <!-- TOUR 9 -->
-                                <!-- TOUR 10 -->
-                                <!-- TOUR 11 -->
-                                <!-- TOUR 12 -->
-
                 <div class="tour-card">
-                    <div class="tour-card-image" style="background-color: var(--sand); background-image: url('https://cdn.filestackcontent.com/resize=w:1200,fit:max/auto_image/compress/fxl9Z25GTruTF9A7FCfw')">
-                        <span class="tour-card-badge">Sunset Cruise</span>
-                        <span class="tour-card-price">$79.95</span>
+                    <div class="tour-card-image" style="background-color: var(--sand); background-image: url('https://cdn.filestackcontent.com/resize=w:1200,fit:max/auto_image/compress/yvqrAhrbTReCe92L3YNq')">
+                        <span class="tour-card-badge">🥂 Proposal Pick</span>
+                        <span class="tour-card-price">$500</span>
                     </div>
                     <div class="tour-card-content">
-                        <div class="tour-card-company">Sunset Watersports</div>
-                        <h3>Sunset Dinner Cruise</h3>
-                        <div class="tour-card-meta"><span>⏱ 2 Hour</span><span>👥 Key West</span><span>💵 per person</span></div>
-                        <p class="tour-card-description">A 2-hour evening cruise with a tropical buffet dinner served on board as the sun goes down.</p>
-                        <a href="https://fareharbor.com/embeds/book/sunsetwatersportskeywest/items/263702/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&bookable-only=yes&full-items=yes&marketplace=yes&flow=no" target="_blank" rel="noopener" class="tour-card-cta check-availability" data-tour-name="Sunset Dinner Cruise" data-tour-id="263702">Check Availability</a>
+                        <div class="tour-card-company">Mermaid Charters Key West</div>
+                        <h3>Complementary Champagne Sunset and Dolphin Watching Excursion</h3>
+                        <div class="tour-card-meta"><span>⏱ 2 hours</span><span>👥 Private boat</span></div>
+                        <p class="tour-card-description">Private coastline cruise with complimentary champagne and dolphin watching on the way. The one to book if you are asking a question at sunset.</p>
+                        <a href="https://fareharbor.com/embeds/book/mermaidcharterskeywest/items/44068/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&full-items=yes&flow=no" target="_blank" class="tour-card-cta" data-tour-name="Complementary Champagne Sunset and Dolphin Watching Excursion" data-tour-id="44068">Check Availability</a>
                     </div>
                 </div>
-
                 <div class="tour-card">
-                    <div class="tour-card-image" style="background-color: var(--sand); background-image: url('https://cdn.filestackcontent.com/resize=w:1200,fit:max/auto_image/compress/Zl3tg2RyRfah0x9E8YQ1')">
-                        <span class="tour-card-badge">Sunset Cruise</span>
-                        <span class="tour-card-price">$79.99</span>
+                    <div class="tour-card-image" style="background-color: var(--sand); background-image: url('https://cdn.filestackcontent.com/resize=w:1200,fit:max/auto_image/compress/OjPOttQYmqcDVZnki2wQ')">
+                        <span class="tour-card-badge">⛵ Private Sail</span>
+                        <span class="tour-card-price">$699</span>
                     </div>
                     <div class="tour-card-content">
-                        <div class="tour-card-company">Barefoot Charters</div>
-                        <h3>Sushi &amp; Sunset Cruise</h3>
-                        <div class="tour-card-meta"><span>⏱ 2 Hour</span><span>👥 Key West</span><span>💵 per person</span></div>
-                        <p class="tour-card-description">A calm 2-hour sunset cruise from Garrison Bight with sushi aboard, away from the busier harbor routes.</p>
-                        <a href="https://fareharbor.com/embeds/book/barefootbillyskw/items/273058/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&bookable-only=yes&full-items=yes&marketplace=yes&flow=no" target="_blank" rel="noopener" class="tour-card-cta check-availability" data-tour-name="Sushi &amp; Sunset Cruise" data-tour-id="273058">Check Availability</a>
+                        <div class="tour-card-company">Mystic Blue Sailing Adventures</div>
+                        <h3>Sunset Sail</h3>
+                        <div class="tour-card-meta"><span>⏱ 2 hours</span><span>👥 Private boat</span></div>
+                        <p class="tour-card-description">A private two-hour sail on a sailing catamaran — engine off, sails up, no crowd. BYOB.</p>
+                        <a href="https://fareharbor.com/embeds/book/mysticbluesailingadventures/items/712476/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&full-items=yes&flow=no" target="_blank" class="tour-card-cta" data-tour-name="Sunset Sail" data-tour-id="712476">Check Availability</a>
                     </div>
                 </div>
-
                 <div class="tour-card">
-                    <div class="tour-card-image" style="background-color: var(--sand); background-image: url('https://cdn.filestackcontent.com/resize=w:1200,fit:max/auto_image/compress/KDQQIgu8Q22j5kCJGtge')">
-                        <span class="tour-card-badge">Sunset Cruise</span>
-                        <span class="tour-card-price">$59.95</span>
+                    <div class="tour-card-image" style="background-color: var(--sand); background-image: url('https://cdn.filestackcontent.com/resize=w:1200,fit:max/auto_image/compress/AErcAyfgT4SgDWMuaMnE')">
+                        <span class="tour-card-badge">🛥 Classic Boat</span>
+                        <span class="tour-card-price">$800</span>
                     </div>
                     <div class="tour-card-content">
-                        <div class="tour-card-company">Sunset Watersports</div>
-                        <h3>Two Reef Snorkel Tour With Sunset Cruise</h3>
-                        <div class="tour-card-meta"><span>⏱ 3 Hour</span><span>👥 Key West</span><span>💵 per person</span></div>
-                        <p class="tour-card-description">A late-afternoon sail to two spots on the living reef, then a snorkel and the sunset on the way back.</p>
-                        <a href="https://fareharbor.com/embeds/book/sunsetwatersportskeywest/items/263718/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&bookable-only=yes&full-items=yes&marketplace=yes&flow=no" target="_blank" rel="noopener" class="tour-card-cta check-availability" data-tour-name="Two Reef Snorkel Tour With Sunset Cruise" data-tour-id="263718">Check Availability</a>
+                        <div class="tour-card-company">Good Times Key West</div>
+                        <h3>2hr Champagne Sunset Cruise - 35&#x27; Carolina Classic</h3>
+                        <div class="tour-card-meta"><span>⏱ 2 hours</span><span>👥 Private boat</span></div>
+                        <p class="tour-card-description">A 35-foot Carolina Classic for up to six, champagne included, fully customizable route. Comfortable seating for people who do not want a bench.</p>
+                        <a href="https://fareharbor.com/embeds/book/goodtimeskeywest/items/336268/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&full-items=yes&flow=no" target="_blank" class="tour-card-cta" data-tour-name="2hr Champagne Sunset Cruise - 35&#x27; Carolina Classic" data-tour-id="336268">Check Availability</a>
                     </div>
                 </div>
-                            </div>
+                <div class="tour-card">
+                    <div class="tour-card-image" style="background-color: var(--sand); background-image: url('https://cdn.filestackcontent.com/resize=w:1200,fit:max/auto_image/compress/aScNq5iISRK94eU7PP4V')">
+                        <span class="tour-card-badge">🏝 Sandbar + Sunset</span>
+                        <span class="tour-card-price">$800</span>
+                    </div>
+                    <div class="tour-card-content">
+                        <div class="tour-card-company">Mermaid Charters Key West</div>
+                        <h3>Sandbar and Sunset Excursion</h3>
+                        <div class="tour-card-meta"><span>⏱ 4 hours</span><span>👥 Private boat</span></div>
+                        <p class="tour-card-description">Four hours: afternoon at the sandbar, then a sunset run home. The right pick for families who want swimming and the sunset in one booking.</p>
+                        <a href="https://fareharbor.com/embeds/book/mermaidcharterskeywest/items/302525/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&full-items=yes&flow=no" target="_blank" class="tour-card-cta" data-tour-name="Sandbar and Sunset Excursion" data-tour-id="302525">Check Availability</a>
+                    </div>
+                </div>
+                <div class="tour-card">
+                    <div class="tour-card-image" style="background-color: var(--sand); background-image: url('https://cdn.filestackcontent.com/resize=w:1200,fit:max/auto_image/compress/56XE5Oj9QveoUrVUoQyJ')">
+                        <span class="tour-card-badge">⛵ Three Hours</span>
+                        <span class="tour-card-price">$1,200</span>
+                    </div>
+                    <div class="tour-card-content">
+                        <div class="tour-card-company">Restless Native Charters</div>
+                        <h3>Sunset Sail</h3>
+                        <div class="tour-card-meta"><span>⏱ 3 hours</span><span>👥 Private boat</span></div>
+                        <p class="tour-card-description">A three-hour private sunset sail on a classic sailboat that takes the long way through the backcountry first.</p>
+                        <a href="https://fareharbor.com/embeds/book/restlessnative/items/105623/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&full-items=yes&flow=no" target="_blank" class="tour-card-cta" data-tour-name="Sunset Sail" data-tour-id="105623">Check Availability</a>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
     
-    <!-- CTA -->
-    <div class="cta-box">
-        <h3>Ready to Book?</h3>
-        <p>Browse our tours above and secure your adventure in Key West.</p>
-        <a href="#tours-grid">See Available Tours</a>
+    <div class="trust-bar">
+        <div class="trust-bar-inner">
+            <!-- First set (6 items) -->
+            <div class="trust-item">
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+                Secure Checkout
+            </div>
+            <div class="trust-item">
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                Verified Local Operators
+            </div>
+            <div class="trust-item">
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                Same-Day Booking
+            </div>
+            <div class="trust-item">
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z"/></svg>
+                No Hidden Fees
+            </div>
+            <div class="trust-item">
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg>
+                Thousands of Happy Guests
+            </div>
+            <div class="trust-item">
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                24/7 Support
+            </div>
+            <!-- Duplicate set for seamless loop -->
+            <div class="trust-item">
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+                Secure Checkout
+            </div>
+            <div class="trust-item">
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                Verified Local Operators
+            </div>
+            <div class="trust-item">
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                Same-Day Booking
+            </div>
+            <div class="trust-item">
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z"/></svg>
+                No Hidden Fees
+            </div>
+            <div class="trust-item">
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg>
+                Thousands of Happy Guests
+            </div>
+            <div class="trust-item">
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                24/7 Support
+            </div>
+        </div>
     </div>
     
     <div class="sponsor-slot" data-slot-id="landing-native" data-slot-type="native" data-slot-page="landing"></div>
 
-    <!-- FAQ -->
-    <section class="faq">
+    <section class="faq" id="faq">
+        <video class="faq-video" id="faqVideo" autoplay muted loop playsinline>
+            <source src="wtpa_hero_drone.mp4" type="video/mp4">
+        </video>
+        <div class="faq-overlay"></div>
         <div class="faq-inner">
-            <h2>Frequently Asked Questions</h2>
+            <div class="section-label">FAQ</div>
+            <h2 class="section-title">Sunset Cruise Questions</h2>
+            <div class="faq-list">
                 <div class="faq-item">
-                    <button class="faq-q" onclick="toggleFaq(event)">
-                        <span>What time do sunset cruises depart?</span>
-                        <span class="faq-toggle">+</span>
-                    </button>
-                    <div class="faq-a" style="display: none;">
-                        Departure times vary by season. Most cruises depart 5-7 PM, timed to catch the sunset. Your captain will confirm the exact time based on that day's sunset time.
-                    </div>
+                    <div class="faq-question">What time do Key West sunset cruises leave?</div>
+                    <p class="faq-answer">Departure moves with the sunset: roughly 5:00 PM in December and 7:30 PM in June, usually 60 to 90 minutes before the sun goes down. The exact time is on the operator's calendar when you check availability.</p>
                 </div>
-                                <div class="faq-item">
-                    <button class="faq-q" onclick="toggleFaq(event)">
-                        <span>Can you help with a proposal?</span>
-                        <span class="faq-toggle">+</span>
-                    </button>
-                    <div class="faq-a" style="display: none;">
-                        Many operators specialize in proposal packages. Let them know in advance—they can help with timing, champagne, rings, and even photography coordination.
-                    </div>
+                <div class="faq-item">
+                    <div class="faq-question">Is alcohol included?</div>
+                    <p class="faq-answer">On most shared sails, yes — champagne, beer, wine and soft drinks are part of the ticket, and a few include a full open bar. Private charters are usually BYOB or include a welcome bottle; the card says which.</p>
                 </div>
-                                <div class="faq-item">
-                    <button class="faq-q" onclick="toggleFaq(event)">
-                        <span>What if weather is bad?</span>
-                        <span class="faq-toggle">+</span>
-                    </button>
-                    <div class="faq-a" style="display: none;">
-                        Most operators offer full refunds or rescheduling if weather is severe. Cloudy sunsets are often the most dramatic.
-                    </div>
+                <div class="faq-item">
+                    <div class="faq-question">Shared sail or private boat?</div>
+                    <p class="faq-answer">Shared sails run $49.95 to $108 per person and are the right call for two people or a small group who want it easy. A private boat starts around $350 for up to six, so it is cheaper than a shared sail once you have five or more — and you control the music, the route and who is aboard.</p>
                 </div>
-                                <div class="faq-item">
-                    <button class="faq-q" onclick="toggleFaq(event)">
-                        <span>Private vs. shared cruises?</span>
-                        <span class="faq-toggle">+</span>
-                    </button>
-                    <div class="faq-a" style="display: none;">
-                        Private means your group and captain only. Shared cruises have other guests but cost less. Both see the same sunset.
-                    </div>
+                <div class="faq-item">
+                    <div class="faq-question">What if the weather turns?</div>
+                    <p class="faq-answer">Captains call it, not you. If the operator cancels for weather you get a full refund or a rebook. Light rain rarely cancels; lightning and high wind do. Book for an early night of your trip so you have a backup evening.</p>
                 </div>
-                        </div>
+                <div class="faq-item">
+                    <div class="faq-question">Where do the boats leave from?</div>
+                    <p class="faq-answer">Almost all depart from the Historic Seaport (Key West Bight) or the Margaritaville Resort marina, both walkable from Duval Street. Parking near the seaport is tight — walk, bike or take a cab.</p>
+                </div>
+            </div>
+        </div>
     </section>
     
-    <!-- FOOTER -->
+    <!-- BRANDING -->
+    <div class="branding">
+        <img src="logo.png" alt="Key West Sandbar Tours" class="branding-logo" width="350" height="360">
+        <p>Your local guide to Key West sunset cruises</p>
+    </div>
+    
+    <section class="final-cta">
+        <h2>Ready to Book a Key West Sunset Cruise?</h2>
+        <p>Live prices · Instant confirmation on the operator's calendar · Weather cancellations refunded</p>
+        <a href="#top-picks" class="final-cta-btn">Back to Top Picks <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" width="20" height="20"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg></a>
+    </section>
+    
     <footer class="site-footer">
     <div class="site-footer-brand">
       <a href="/"><picture><source type="image/webp" srcset="/images/header-logo-480.webp 480w, /images/header-logo-800.webp 800w" sizes="373px"><img src="/images/header-logo-800.png" alt="Key West Sandbar Tours" class="site-footer-logo" loading="lazy" decoding="async" width="800" height="343"></picture></a>
@@ -627,18 +1750,27 @@ Most sunset cruises operate May through October, departing 5-7 PM depending on s
   </footer>
     
     <script>
-        function toggleFaq(event) {
-            const item = event.target.closest('.faq-item');
-            const answer = item.querySelector('.faq-a');
-            const toggle = item.querySelector('.faq-toggle');
-            
-            answer.style.display = answer.style.display === 'none' ? 'block' : 'none';
-            toggle.textContent = toggle.textContent === '+' ? '−' : '+';
-        }
-
-        document.querySelector('.nav-toggle')?.addEventListener('click', () => {
-            document.querySelector('.nav-mobile')?.classList.toggle('active');
+        // Sticky CTA — visible from the top, hide once into the tours grid.
+        // The markup ships with .visible because this listener only fires on
+        // scroll: gating on scrollY > 400 left the bar translated fully off
+        // screen for the whole first screen, 0px visible at 664 and 844 alike.
+        const stickyCta = document.getElementById('stickyCta');
+        const toursSection = document.getElementById('tours');
+        window.addEventListener('scroll', () => {
+            const scrollY = window.scrollY;
+            const toursTop = toursSection.offsetTop;
+            if (scrollY >= 0 && scrollY < toursTop - 200) {
+                stickyCta.classList.add('visible');
+            } else {
+                stickyCta.classList.remove('visible');
+            }
         });
+        
+        // FAQ Video Slowdown (50% speed)
+        const faqVideo = document.getElementById('faqVideo');
+        if (faqVideo) faqVideo.playbackRate = 0.5;
+        
+        // Grid order is deliberate: shared sails cheapest-first, then private boats. No shuffle.
     </script>
   <script src="/chrome.js" defer></script>
 <script>
