@@ -3,36 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Key West Snorkeling Tours | Key West Sandbar Tours</title>
-    <meta name="description" content="Best snorkeling tours in Key West. Coral reefs, marine life, shallow waters. Book private or group snorkel tours.">
+    <title>Key West Snorkeling Tours | Reef Trips from $39, Private Charters from $447</title>
+    <meta name="description" content="Every Key West snorkeling tour with live prices: morning reef trips from $39, dolphin and sandbar combos, sail-and-snorkel days, and private snorkel charters from $447. Which reef, which boat, and what&#x27;s included.">
     <link rel="canonical" href="https://keywestsandbartours.com/snorkeling.html">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
-    
-    <!-- Open Graph -->
+
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://keywestsandbartours.com/snorkeling.html">
-    <meta property="og:title" content="Key West Snorkeling Tours">
-    <meta property="og:description" content="Best snorkeling tours in Key West. Coral reefs, marine life, shallow waters. Book private or group snorkel tours.">
-    <meta property="og:image" content="https://keywestsandbartours.com/og-image.jpg">
+    <meta property="og:title" content="Key West Snorkeling Tours | Reef Trips from $39, Private Charters from $447">
+    <meta property="og:description" content="Every Key West snorkeling tour with live prices: morning reef trips from $39, dolphin and sandbar combos, sail-and-snorkel days, and private snorkel charters from $447. Which reef, which boat, and what&#x27;s included.">
+    <meta property="og:image" content="https://keywestsandbartours.com/snorkelers1.webp">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://keywestsandbartours.com/snorkelers1.webp">
     
-    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
     
-    <!-- Schema -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "BreadcrumbList",
-        "itemListElement": [
-            {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://keywestsandbartours.com/"},
-            {"@type": "ListItem", "position": 2, "name": "Key West Snorkeling Tours", "item": "https://keywestsandbartours.com/snorkeling.html"}
-        ]
-    }
-    </script>
-    
-    <!-- GA4 -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-67D7X60CJF"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -41,288 +30,1417 @@
         gtag('config', 'G-67D7X60CJF');
     </script>
     
-    <link rel="stylesheet" href="styles.css">
     <style>
         :root {
+            /* Base (constant) */
             --sand: #F5E6D3;
             --ocean-deep: #0A3D62;
             --ocean-light: #1E90FF;
             --white: #FFFFFF;
-            --off-white: #FAFAFA;
             --text-dark: #1A1A2E;
             --text-muted: #6B7280;
-            --accent: #F59E0B;
+            
+            /* Theme */
+            --accent: #FF6B6B;
+            --accent-glow: var(--accent-glow);
+            --accent-text: var(--white);
         }
-
-        body { font-family: 'DM Sans', sans-serif; color: var(--text-dark); line-height: 1.6; }
-        .header { background: var(--white); padding: 16px 20px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
-        .header-inner { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
-        .logo { font-size: 1.1rem; font-weight: 700; color: var(--ocean-deep); text-decoration: none; display: flex; align-items: center; gap: 8px; white-space: nowrap; }
-        .logo-img { width: 24px; height: 24px; }
-        .nav-toggle { width: 48px; height: 48px; }
-        @media (max-width: 599px) {
-            .logo-text { display: none; }
+        
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        
+        body {
+            font-family: 'DM Sans', sans-serif;
+            color: var(--text-dark);
+            line-height: 1.6;
+            background: var(--white);
+            padding-top: 60px;
         }
-
-        .hero { background: linear-gradient(135deg, var(--ocean-deep) 0%, var(--ocean-light) 100%); color: var(--white); padding: 48px 20px; text-align: center; }
-        .hero h1 { font-family: 'Playfair Display', serif; font-size: 2.5rem; margin-bottom: 16px; }
-        .hero p { font-size: 1.1rem; margin-bottom: 24px; opacity: 0.95; }
-        .hero a { display: inline-block; background: var(--accent); color: var(--ocean-deep); padding: 14px 32px; border-radius: 50px; text-decoration: none; font-weight: 700; }
         
-        .intro { max-width: 1200px; margin: 0 auto; padding: 48px 20px; }
-        .intro h2 { font-family: 'Playfair Display', serif; font-size: 1.75rem; margin-bottom: 20px; }
-        .intro p { font-size: 1rem; line-height: 1.8; color: var(--text-muted); margin-bottom: 16px; }
+        .sticky-cta {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: var(--ocean-deep);
+            padding: 12px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 999;
+            transform: translateY(100%);
+            transition: transform 0.3s ease;
+        }
         
-        .tours { background: var(--sand); padding: 48px 20px; }
-        .tours-inner { max-width: 1200px; margin: 0 auto; }
-        .section-label { display: inline-block; background: var(--accent); color: var(--ocean-deep); padding: 6px 14px; border-radius: 4px; font-size: 0.85rem; font-weight: 700; margin-bottom: 12px; }
-        .section-title { font-family: 'Playfair Display', serif; font-size: 1.75rem; margin-bottom: 32px; text-align: center; }
+        .sticky-cta.visible { transform: translateY(0); }
+        .sticky-cta-text { color: var(--white); font-weight: 600; }
+        .sticky-cta-text span { color: var(--accent); }
         
-        .tours-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 20px; }
-        .tour-card { background: var(--white); border-radius: 12px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.1); transition: transform 0.3s, box-shadow 0.3s; }
-        .tour-card:hover { transform: translateY(-8px); box-shadow: 0 8px 20px rgba(0,0,0,0.15); }
-        .tour-card-image { height: 200px; background-size: cover; background-position: center; position: relative; }
-        .tour-card-badge, .tour-card-price { position: absolute; padding: 8px 14px; border-radius: 6px; font-size: 0.85rem; font-weight: 700; }
-        .tour-card-badge { top: 12px; left: 12px; background: var(--accent); color: var(--ocean-deep); }
-        .tour-card-price { top: 12px; right: 12px; background: var(--ocean-deep); color: var(--white); }
+        .sticky-cta-btn {
+            background: var(--accent);
+            color: var(--accent-text);
+            padding: 12px 28px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 700;
+            min-height: 48px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .header {
+            background: var(--white);
+            padding: 12px 20px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .header-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: var(--ocean-deep);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .logo-img { width: 36px; height: 36px; border-radius: 8px; }
+        
+        .header-cta {
+            background: var(--ocean-deep);
+            color: var(--white);
+            padding: 10px 24px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.9rem;
+            min-height: 48px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .hero-video {
+            position: relative;
+            height: 70vh;
+            max-height: 550px;
+            min-height: 400px;
+            overflow: hidden;
+            background: var(--ocean-deep);
+        }
+        
+        @media (max-width: 768px) {
+            .hero-video {
+                height: auto;
+                min-height: 120px;
+                max-height: none;
+                padding: 20px 0;
+            }
+            .hero-video__badge {
+                display: none;
+            }
+            .hero-video__title {
+                font-size: 24px;
+            }
+            .hero-video__subtitle {
+                font-size: 14px;
+            }
+            .hero-video__cta {
+                padding: 12px 24px;
+                font-size: 14px;
+            }
+        }
+        
+        .hero-video__media {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center center;
+            z-index: 1;
+        }
+        
+        .hero-video__overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(
+                to bottom,
+                rgba(10, 61, 98, 0.3) 0%,
+                rgba(10, 61, 98, 0.5) 50%,
+                rgba(10, 61, 98, 0.7) 100%
+            );
+            z-index: 2;
+        }
+        
+        .hero-video__content {
+            position: relative;
+            z-index: 3;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+            color: var(--white);
+        }
+        
+        .hero-video__badge {
+            background: var(--accent);
+            color: var(--accent-text);
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            padding: 8px 16px;
+            border-radius: 4px;
+            margin-bottom: 16px;
+        }
+        
+        .hero-video__title {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(28px, 6vw, 56px);
+            font-weight: 700;
+            line-height: 1.1;
+            margin: 0 0 16px 0;
+            text-shadow: 0 2px 20px rgba(0,0,0,0.3);
+        }
+        
+        .hero-video__subtitle {
+            font-size: clamp(16px, 2.5vw, 20px);
+            opacity: 0.95;
+            margin: 0 0 24px 0;
+            max-width: 500px;
+        }
+        
+        .hero-video__stats {
+            display: flex;
+            gap: 32px;
+            margin-bottom: 28px;
+        }
+        
+        .hero-video__stat { text-align: center; }
+        .hero-video__stat-number { font-size: 1.5rem; font-weight: 700; }
+        .hero-video__stat-label { font-size: 0.8rem; opacity: 0.85; }
+        
+        .hero-video__cta {
+            display: inline-block;
+            background: var(--accent);
+            color: var(--accent-text);
+            font-size: 16px;
+            font-weight: 700;
+            text-decoration: none;
+            padding: 16px 40px;
+            border-radius: 50px;
+            min-height: 48px;
+            box-shadow: 0 8px 30px var(--accent-glow);
+        }
+        
+        .trust-bar {
+            background: var(--ocean-deep);
+            padding: 16px 0;
+            overflow: hidden;
+        }
+        
+        .trust-bar-inner {
+            display: flex;
+            animation: trustScroll 25s linear infinite;
+        }
+        
+        @keyframes trustScroll {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+        
+        .trust-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            color: var(--white);
+            font-size: 0.9rem;
+            font-weight: 500;
+            white-space: nowrap;
+            padding: 0 24px;
+        }
+        
+        .trust-item svg { width: 20px; height: 20px; flex-shrink: 0; }
+        
+        /* ===== PERFECT FOR PILLS (auto-scroll marquee) ===== */
+        .best-for {
+            background: linear-gradient(135deg, #FDF2F8 0%, var(--sand) 100%);
+            padding: 16px 20px;
+            overflow: hidden;
+        }
+        
+        .best-for-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        
+        .best-for h2 {
+            font-family: 'Playfair Display', serif;
+            color: var(--ocean-deep);
+            margin-bottom: 12px;
+            font-size: 1.1rem;
+        }
+        
+        .marquee-wrapper {
+            overflow: hidden;
+            width: 100%;
+            mask-image: linear-gradient(to right, transparent, black 3%, black 97%, transparent);
+            -webkit-mask-image: linear-gradient(to right, transparent, black 3%, black 97%, transparent);
+        }
+        
+        .best-for-grid {
+            display: flex;
+            gap: 12px;
+            animation: marquee 25s linear infinite;
+            width: max-content;
+            padding: 4px 0 8px;
+        }
+        
+        .best-for-grid:hover {
+            animation-play-state: paused;
+        }
+        
+        @keyframes marquee {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+        
+        .best-for-pill {
+            background: var(--white);
+            padding: 10px 18px;
+            border-radius: 50px;
+            font-size: 0.85rem;
+            font-weight: 500;
+            color: var(--text-dark);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+            flex-shrink: 0;
+            white-space: nowrap;
+        }
+        
+        /* ===== TOP PICKS MODULE ===== */
+        .top-picks {
+            padding: 40px 20px 0;
+            background: var(--sand);
+        }
+        
+        .top-picks-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        
+        .top-picks-intro {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            margin-bottom: 20px;
+        }
+        
+        .top-picks-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-bottom: 32px;
+        }
+        
+        .pick-card {
+            background: var(--white);
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            border: 2px solid var(--accent);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        
+        .pick-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 40px rgba(0,0,0,0.15);
+        }
+        
+        .pick-card-image {
+            height: 180px;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+        
+        .pick-card-label {
+            position: absolute;
+            top: 12px;
+            left: 12px;
+            background: var(--accent);
+            color: var(--accent-text);
+            padding: 8px 14px;
+            border-radius: 6px;
+            font-size: 0.85rem;
+            font-weight: 700;
+        }
+        
+        .pick-card-price {
+            position: absolute;
+            top: 12px;
+            right: 12px;
+            background: var(--ocean-deep);
+            color: var(--white);
+            padding: 8px 14px;
+            border-radius: 6px;
+            font-size: 1.1rem;
+            font-weight: 700;
+        }
+        
+        .pick-card-content {
+            padding: 16px 20px 20px;
+        }
+        
+        .pick-card-company {
+            font-size: 0.75rem;
+            color: #0071DE;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 4px;
+        }
+        
+        .pick-card-content h3 {
+            font-size: 1.1rem;
+            color: var(--ocean-deep);
+            margin-bottom: 8px;
+            font-weight: 700;
+        }
+        
+        .pick-card-meta {
+            display: flex;
+            gap: 12px;
+            margin-bottom: 12px;
+            font-size: 0.8rem;
+            color: var(--text-muted);
+        }
+        
+        .pick-card-cta {
+            display: block;
+            background: var(--accent);
+            color: var(--accent-text);
+            text-align: center;
+            padding: 12px 16px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 0.9rem;
+            min-height: 48px;
+        }
+        
+        .top-picks-divider {
+            text-align: center;
+            padding: 24px 0 8px;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+        
+        .tours {
+            padding: 48px 20px;
+            background: var(--sand);
+        }
+        
+        .tours-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        
+        .section-label {
+            display: inline-block;
+            background: var(--accent);
+            color: var(--accent-text);
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            padding: 6px 14px;
+            border-radius: 4px;
+            margin-bottom: 12px;
+        }
+        
+        .section-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.75rem;
+            color: var(--ocean-deep);
+            margin-bottom: 8px;
+        }
+        
+        .section-subtitle {
+            color: var(--text-muted);
+            font-size: 1rem;
+            margin-bottom: 24px;
+        }
+        
+        .tours-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+            gap: 24px;
+        }
+        
+        .tour-card {
+            background: var(--white);
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        
+        .tour-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 40px rgba(0,0,0,0.12);
+        }
+        
+        .tour-card-image {
+            height: 200px;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+        
+        .tour-card-badge {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background: var(--accent);
+            color: var(--accent-text);
+            padding: 5px 10px;
+            border-radius: 4px;
+            font-size: 0.7rem;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+        
+        .tour-card-price {
+            position: absolute;
+            top: 12px;
+            right: 12px;
+            background: var(--accent);
+            color: var(--white);
+            padding: 8px 14px;
+            border-radius: 6px;
+            font-size: 1.2rem;
+            font-weight: 700;
+        }
+        
         .tour-card-content { padding: 20px; }
-        .tour-card-company { font-size: 0.75rem; color: #0071DE; font-weight: 700; text-transform: uppercase; margin-bottom: 8px; }
-        .tour-card-content h3 { font-size: 1.1rem; color: var(--ocean-deep); margin-bottom: 8px; }
-        .tour-card-meta { display: flex; gap: 12px; margin-bottom: 12px; font-size: 0.85rem; color: var(--text-muted); }
-        .tour-card-description { font-size: 0.9rem; color: var(--text-muted); margin-bottom: 16px; }
-        .tour-card-cta { display: block; background: var(--accent); color: var(--ocean-deep); text-align: center; padding: 12px 16px; border-radius: 8px; text-decoration: none; font-weight: 700; }
-        .tour-card-cta:hover { background: #f3a500; }
         
-        .cta-box { background: var(--white); border-radius: 12px; padding: 32px 20px; text-align: center; margin: 32px 0; }
-        .cta-box h3 { font-size: 1.5rem; margin-bottom: 16px; }
-        .cta-box a { display: inline-block; background: var(--accent); color: var(--ocean-deep); padding: 14px 32px; border-radius: 50px; text-decoration: none; font-weight: 700; }
+        .tour-card-company {
+            font-size: 0.8rem;
+            color: #0071DE;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 6px;
+        }
         
-        .faq { background: var(--off-white); padding: 48px 20px; }
-        .faq-inner { max-width: 1200px; margin: 0 auto; }
-        .faq h2 { font-family: 'Playfair Display', serif; font-size: 1.75rem; text-align: center; margin-bottom: 32px; }
-        .faq-item { background: var(--white); border-radius: 8px; margin-bottom: 12px; overflow: hidden; }
-        .faq-q { background: var(--sand); padding: 16px; border: none; cursor: pointer; display: flex; justify-content: space-between; align-items: center; width: 100%; font-size: 1rem; font-weight: 600; text-align: left; }
-        .faq-q:hover { background: #ede6d3; }
-        .faq-a { padding: 16px; background: var(--white); color: var(--text-muted); }
-        .faq-toggle { display: inline-block; width: 24px; text-align: center; }
+        .tour-card-content h3 {
+            font-size: 1.15rem;
+            color: var(--ocean-deep);
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
         
-        .footer { background: var(--text-dark); color: var(--white); padding: 24px 20px; text-align: center; font-size: 0.9rem; }
-        .footer a { color: var(--accent); text-decoration: none; }
+        .tour-card-meta {
+            display: flex;
+            gap: 16px;
+            margin-bottom: 12px;
+            font-size: 0.85rem;
+            color: var(--text-muted);
+        }
+        
+        .tour-card-description {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            line-height: 1.6;
+            margin-bottom: 16px;
+        }
+        
+        .tour-card-cta {
+            display: block;
+            background: var(--accent);
+            color: var(--accent-text);
+            text-align: center;
+            padding: 14px 20px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 0.95rem;
+            min-height: 48px;
+            transition: background 0.2s;
+        }
+        
+        .tour-card-cta:hover { background: #db2777; }
+        
+        .faq {
+            position: relative;
+            padding: 60px 20px;
+            overflow: hidden;
+        }
+        
+        .faq-video {
+            position: absolute;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            object-fit: cover;
+            z-index: 1;
+        }
+        
+        .faq-overlay {
+            position: absolute;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            background: linear-gradient(
+                to bottom,
+                rgba(10, 61, 98, 0.3) 0%,
+                rgba(10, 61, 98, 0.5) 50%,
+                rgba(10, 61, 98, 0.7) 100%
+            );
+            z-index: 2;
+        }
+        
+        .faq-inner {
+            position: relative;
+            z-index: 3;
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        
+        .faq .section-label,
+        .faq .section-title { color: var(--white); }
+        
+        .faq-list {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            margin-top: 22px;
+        }
+        
+        .faq-item {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 24px 28px;
+            border-radius: 12px;
+            text-align: left;
+        }
+        
+        .faq-question {
+            font-weight: 700;
+            color: var(--ocean-deep);
+            margin-bottom: 8px;
+            font-size: 1rem;
+        }
+        
+        .faq-answer {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+        
+        /* ===== BRANDING SECTION ===== */
+        .branding {
+            text-align: center;
+            padding: 40px 20px;
+            background: var(--sand);
+        }
+        
+        .branding-logo {
+            max-width: 180px;
+            height: auto;
+            margin-bottom: 12px;
+        }
+        
+        .branding p {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+        
+        .final-cta {
+            background: linear-gradient(135deg, var(--ocean-deep) 0%, #0C4A6E 100%);
+            padding: 60px 20px;
+            text-align: center;
+        }
+        
+        .final-cta h2 {
+            font-family: 'Playfair Display', serif;
+            color: var(--white);
+            font-size: clamp(1.5rem, 4vw, 2rem);
+            margin-bottom: 12px;
+        }
+        
+        .final-cta p {
+            color: rgba(255,255,255,0.85);
+            margin-bottom: 24px;
+        }
+        
+        .final-cta-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: var(--accent);
+            color: var(--accent-text);
+            padding: 16px 32px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 700;
+            min-height: 48px;
+        }
+        
+        .footer {
+            background: var(--text-dark);
+            color: var(--white);
+            padding: 30px 20px;
+            text-align: center;
+        }
+        
+        .footer a { color: var(--white); text-decoration: none; }
+        
+        @media (max-width: 768px) {
+            .hero-video__media {
+                object-position: 70% center;
+            }
+        }
         
         @media (max-width: 600px) {
-            .hero { padding: 84px 16px 8px; }
-            .hero h1 { font-size: 1.1rem; }
-            .hero p { display: none; }
+            .hero-video__stats { gap: 20px; }
+            
+            .trust-bar-inner { gap: 16px; }
+            
             .tours-grid { grid-template-columns: 1fr; }
-            .faq-q { padding: 14px; font-size: 0.95rem; }
+            
+            .sticky-cta {
+                flex-direction: column;
+                gap: 10px;
+                text-align: center;
+            }
         }
+        .header-phone {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+            text-decoration: none;
+            color: inherit;
+            font-weight: 600;
+            margin-left: auto;
+        }
+        .header-phone:hover { text-decoration: underline; }
+        .hero-phone-cta {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            flex-wrap: wrap;
+            margin-top: 1rem;
+        }
+        .hero-phone-link {
+            background: #ffc107;
+            color: #000;
+            padding: 0.75rem 1.25rem;
+            border-radius: 6px;
+            text-decoration: none;
+            font-size: 1.1rem;
+        }
+        .hero-phone-link:hover { filter: brightness(0.95); }
+        .hero-phone-or { opacity: 0.8; }
+        .hero-phone-secondary { color: #fff; text-decoration: underline; }
+        @media (max-width: 600px) {
+            .hero-phone-cta { justify-content: center; }
+            .hero-phone-link { font-size: 1.25rem; padding: 0.85rem 1.4rem; }
+        }
+    
+        /* decision content */
+        .decision { background: var(--white); padding: 56px 20px; }
+        .decision-inner { max-width: 1100px; margin: 0 auto; }
+        .decision p { color: #3d4a5c; line-height: 1.7; max-width: 800px; margin: 0 auto 18px; font-size: 1.02rem; }
+        .decision h3 { font-family: 'Playfair Display', serif; color: var(--navy, #1B3A57); font-size: 1.35rem; margin: 34px auto 12px; max-width: 800px; }
+        .size-table { width: 100%; border-collapse: collapse; margin: 22px 0 8px; font-size: 0.95rem; }
+        .size-table th, .size-table td { padding: 12px 10px; text-align: left; border-bottom: 1px solid #e6ebf1; vertical-align: top; }
+        .size-table th { font-size: 0.78rem; letter-spacing: 1px; text-transform: uppercase; color: #6b7a90; }
+        .size-table td strong { color: var(--navy, #1B3A57); }
+        .size-table .ph { color: var(--accent, #E87B4A); font-weight: 700; white-space: nowrap; }
+        .size-table a { color: var(--accent, #E87B4A); font-weight: 600; text-decoration: none; }
+        @media (max-width: 720px) { .size-table { display: block; overflow-x: auto; white-space: nowrap; } .size-table td, .size-table th { white-space: normal; min-width: 120px; } }
+        .decision ul { max-width: 800px; margin: 0 auto 18px; padding-left: 22px; color: #3d4a5c; line-height: 1.7; }
     </style>
-<script type="application/ld+json">
+<script src="/tracking.js" defer></script>
+    <link rel="stylesheet" href="/sponsor-slot.css">
+    <script src="/sponsor-slot.js" defer></script>
+    <link rel="stylesheet" href="/chrome.css">
+
+    <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Ready to Book?",
+      "name": "Where do Key West snorkeling tours go?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Browse our tours above and secure your adventure in Key West."
+        "text": "Most go to the reef line six to seven miles south of the island — Sand Key, Eastern Dry Rocks, Rock Key and Western Sambo, depending on wind and visibility that day. The captain picks the site the morning of. It is the only living coral barrier reef in the continental United States."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is snorkeling in Key West good for beginners?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. The reef sits in 5 to 25 feet of water, the shared boats supply mask, snorkel, fins and a flotation vest, and crew are in the water with you. Morning trips are calmer than afternoon ones; if anyone is nervous, book the morning."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Shared boat or private charter?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Shared trips run $39 to $129 per person and are the right call for one to four people. A private boat starts at $447 for up to six — under $75 a head — and you skip the crowd, pick your pace, and can add a sandbar or dolphin stop. From five people the private boat is usually cheaper."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is included in the price?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Gear (mask, snorkel, fins, vest) on every shared trip and most private ones; drinks after the snorkel on most shared boats; lunch on a few of the combos. Not included: the 15–20% crew tip, and reef-safe sunscreen — bring your own, and make sure it is reef-safe."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the best time of day and year to snorkel?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Mornings, for calmer water and better visibility. May through September has the warmest, clearest water; winter fronts stir it up and cancel some trips. Weather cancellations by the captain are refunded."
       }
     }
   ]
 }
-</script>
-<script src="/tracking.js" defer></script>
-    <link rel="stylesheet" href="/sponsor-slot.css">
-    <script src="/sponsor-slot.js" defer></script>
-    <link rel="stylesheet" href="/chrome.css">
-
-<script type="application/ld+json">
+    </script>
+    <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@graph": [
+  "@type": "ItemList",
+  "name": "Snorkeling Tours",
+  "url": "https://keywestsandbartours.com/snorkeling.html",
+  "numberOfItems": 22,
+  "itemListElement": [
     {
-      "@type": "TouristTrip",
-      "name": "Private Snorkel Adventure",
-      "description": "Explore the vibrant coral reefs with tropical fish, colorful marine life, and fascinating sea creatures. Our expert guides will lead you to the best snorkeling spots, ensuring an unforgettable experience for beginners and seasoned snorkelers.",
-      "touristType": "Boat Tour-Private-Snorkel",
-      "provider": {
-        "@type": "LocalBusiness",
-        "name": "Six Fins Charter"
-      }
-    },
-    {
-      "@type": "TouristTrip",
-      "name": "Multi Day All-Inclusive Boating Package!",
-      "description": "Customers will receive a full refund in case of operator cancellation due to weather or other unforeseen circumstances. Must cancel 72 hours before reservation in order to receive a full refund.",
-      "touristType": "Boat Rental-Snorkel-SUP",
-      "provider": {
-        "@type": "LocalBusiness",
-        "name": "The Beach Weekend - Key West"
-      }
-    },
-    {
-      "@type": "TouristTrip",
-      "name": "Private Sail & Snorkel",
-      "description": "Sail, snorkel, and explore the unique Florida's Reef on one of our historic 65-foot schooners! On the scenic sail out to the reef, the crew will serve you fresh fruit whilst teaching you about the history and ecology of Key West.",
-      "touristType": "Private-Sailing-Snorkel",
-      "provider": {
-        "@type": "LocalBusiness",
-        "name": "Danger Charters"
-      }
-    },
-    {
-      "@type": "TouristTrip",
-      "name": "Combo:  Snorkeling, Boca Grand & Sunset Excursion!",
-      "description": "*If you would like to bring your own food and drinks along we will have cooler space available.\nBring your own food and drinks aboard to create your own adventure.",
-      "touristType": "Boat Rental-Boat Tour-Private-Snorkel",
-      "offers": {
-        "@type": "Offer",
-        "priceSpecification": {
-          "@type": "UnitPriceSpecification",
-          "price": 950,
-          "priceCurrency": "USD",
-          "unitText": "whole boat · up to 6 passengers"
+      "@type": "ListItem",
+      "position": 1,
+      "item": {
+        "@type": "TouristTrip",
+        "name": "Morning Snorkel Trip",
+        "url": "https://fareharbor.com/embeds/book/furycat/items/2579/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&full-items=yes&flow=no",
+        "image": "https://cdn.filestackcontent.com/resize=w:1200,fit:max/auto_image/compress/E4ITfa9hRJ2xocGgEaqp",
+        "provider": {
+          "@type": "LocalBusiness",
+          "name": "Fury Water Adventures"
         },
-        "url": "https://fareharbor.com/embeds/book/mermaidcharterskeywest/items/293676/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&bookable-only=yes&full-items=yes&marketplace=yes&flow=no",
-        "availability": "https://schema.org/InStock"
-      },
-      "provider": {
-        "@type": "LocalBusiness",
-        "name": "Mermaid Charters Key West"
-      }
-    },
-    {
-      "@type": "TouristTrip",
-      "name": "Half Day Sandbar & Snorkel Trip - Still Dreamin'",
-      "description": "32' Belzona Luxury Center Console • Up to 6 people • All Ages!",
-      "touristType": "",
-      "offers": {
-        "@type": "Offer",
-        "priceSpecification": {
-          "@type": "UnitPriceSpecification",
-          "price": 1200,
+        "touristType": [
+          "Couples",
+          "Families",
+          "Groups"
+        ],
+        "offers": {
+          "@type": "Offer",
+          "price": "39.00",
           "priceCurrency": "USD",
-          "unitText": "whole boat · up to 6 passengers"
-        },
-        "url": "https://fareharbor.com/embeds/book/casualmondaycharters/items/689391/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&bookable-only=yes&full-items=yes&marketplace=yes&flow=no",
-        "availability": "https://schema.org/InStock"
-      },
-      "provider": {
-        "@type": "LocalBusiness",
-        "name": "Casual Monday Charters"
+          "availability": "https://schema.org/InStock",
+          "url": "https://fareharbor.com/embeds/book/furycat/items/2579/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&full-items=yes&flow=no"
+        }
       }
     },
     {
-      "@type": "TouristTrip",
-      "name": "Combo: Snorkeling,  Boca Grand Sandbar & Dolphin Watching",
-      "description": "*If you would like to bring your own food and drinks along we will have cooler space available.\nBring your own food and drinks aboard to create your own adventure.",
-      "touristType": "Boat Rental-Boat Tour-Dolphin-Private-Snorkel",
-      "offers": {
-        "@type": "Offer",
-        "priceSpecification": {
-          "@type": "UnitPriceSpecification",
-          "price": 800,
+      "@type": "ListItem",
+      "position": 2,
+      "item": {
+        "@type": "TouristTrip",
+        "name": "Key West Afternoon Snorkel",
+        "url": "https://fareharbor.com/embeds/book/keywestsebago/items/64475/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&full-items=yes&flow=no",
+        "image": "https://cdn.filestackcontent.com/resize=w:1200,fit:max/auto_image/compress/fhfAruuiR7GRQEEenPVt",
+        "provider": {
+          "@type": "LocalBusiness",
+          "name": "Sebago Watersports"
+        },
+        "touristType": [
+          "Couples",
+          "Families",
+          "Groups"
+        ],
+        "offers": {
+          "@type": "Offer",
+          "price": "44.95",
           "priceCurrency": "USD",
-          "unitText": "whole boat · up to 6 passengers"
-        },
-        "url": "https://fareharbor.com/embeds/book/mermaidcharterskeywest/items/294807/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&bookable-only=yes&full-items=yes&marketplace=yes&flow=no",
-        "availability": "https://schema.org/InStock"
-      },
-      "provider": {
-        "@type": "LocalBusiness",
-        "name": "Mermaid Charters Key West"
+          "availability": "https://schema.org/InStock",
+          "url": "https://fareharbor.com/embeds/book/keywestsebago/items/64475/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&full-items=yes&flow=no"
+        }
       }
     },
     {
-      "@type": "TouristTrip",
-      "name": "Snorkeling & Sunset",
-      "description": "We can accommodate groups of up to six people on this private charter. And don't worry about the equipment - we'll provide everything you need for the activity, and we sanitize all of our equipment after each use.",
-      "touristType": "Boat Rental-Boat Tour-Snorkel",
-      "offers": {
-        "@type": "Offer",
-        "priceSpecification": {
-          "@type": "UnitPriceSpecification",
-          "price": 650,
+      "@type": "ListItem",
+      "position": 3,
+      "item": {
+        "@type": "TouristTrip",
+        "name": "Mimosa Morning Snorkel Sail",
+        "url": "https://fareharbor.com/embeds/book/keywestsebago/items/64477/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&full-items=yes&flow=no",
+        "image": "https://cdn.filestackcontent.com/resize=w:1200,fit:max/auto_image/compress/amXJulrJTZ2UDTfdNhZA",
+        "provider": {
+          "@type": "LocalBusiness",
+          "name": "Sebago Watersports"
+        },
+        "touristType": [
+          "Couples",
+          "Families",
+          "Groups"
+        ],
+        "offers": {
+          "@type": "Offer",
+          "price": "44.95",
           "priceCurrency": "USD",
-          "unitText": "whole boat · up to 6 passengers"
+          "availability": "https://schema.org/InStock",
+          "url": "https://fareharbor.com/embeds/book/keywestsebago/items/64477/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&full-items=yes&flow=no"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "item": {
+        "@type": "TouristTrip",
+        "name": "Afternoon Snorkel Trip: Reef & Ritas",
+        "url": "https://fareharbor.com/embeds/book/furycat/items/2580/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&full-items=yes&flow=no",
+        "image": "https://cdn.filestackcontent.com/resize=w:1200,fit:max/auto_image/compress/xrnnUOaMQ4aqsLGG1dbG",
+        "provider": {
+          "@type": "LocalBusiness",
+          "name": "Fury Water Adventures"
         },
-        "url": "https://fareharbor.com/embeds/book/mermaidcharterskeywest/items/326749/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&bookable-only=yes&full-items=yes&marketplace=yes&flow=no",
-        "availability": "https://schema.org/InStock"
-      },
-      "provider": {
-        "@type": "LocalBusiness",
-        "name": "Mermaid Charters Key West"
+        "touristType": [
+          "Couples",
+          "Families",
+          "Groups"
+        ],
+        "offers": {
+          "@type": "Offer",
+          "price": "49.00",
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock",
+          "url": "https://fareharbor.com/embeds/book/furycat/items/2580/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&full-items=yes&flow=no"
+        }
       }
     },
     {
-      "@type": "TouristTrip",
-      "name": "Rise & Reef Morning Snorkel",
-      "description": "Whether you're a first-time snorkeler or a seasoned pro, this trip is designed for all experience levels. Our friendly and professional crew provides top-notch instruction and high-quality gear, so you can snorkel with confidence and ease.",
-      "touristType": "Catamaran-Sailing-Snorkel",
-      "offers": {
-        "@type": "Offer",
-        "price": 45.95,
-        "priceCurrency": "USD",
-        "url": "https://fareharbor.com/embeds/book/sunsetwatersportskeywest/items/263709/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&bookable-only=yes&full-items=yes&marketplace=yes&flow=no",
-        "availability": "https://schema.org/InStock"
-      },
-      "provider": {
-        "@type": "LocalBusiness",
-        "name": "Sunset Watersports"
+      "@type": "ListItem",
+      "position": 5,
+      "item": {
+        "@type": "TouristTrip",
+        "name": "Snorkel & Sunset Sail Rum & Reggae Combo",
+        "url": "https://fareharbor.com/embeds/book/furycat/items/2581/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&full-items=yes&flow=no",
+        "image": "https://cdn.filestackcontent.com/resize=w:1200,fit:max/auto_image/compress/449EYMdmSbSDoY0qQ2e8",
+        "provider": {
+          "@type": "LocalBusiness",
+          "name": "Fury Water Adventures"
+        },
+        "touristType": [
+          "Couples",
+          "Families",
+          "Groups"
+        ],
+        "offers": {
+          "@type": "Offer",
+          "price": "49.00",
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock",
+          "url": "https://fareharbor.com/embeds/book/furycat/items/2581/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&full-items=yes&flow=no"
+        }
       }
     },
     {
-      "@type": "TouristTrip",
-      "name": "Dolphin, Snorkel & Sunset Combo",
-      "description": "Next, we’ll head to one of Key West’s top coral reef sites for a guided snorkeling session. Dive into the warm, turquoise waters and explore a vibrant underwater world where you may spot sea turtles, majestic eagle rays, and schools of colorful reef...",
-      "touristType": "Boat Tour-Dolphin-Snorkel",
-      "provider": {
-        "@type": "LocalBusiness",
-        "name": "Sunset Watersports"
+      "@type": "ListItem",
+      "position": 6,
+      "item": {
+        "@type": "TouristTrip",
+        "name": "Rise & Reef Morning Snorkel",
+        "url": "https://fareharbor.com/embeds/book/sunsetwatersportskeywest/items/263709/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&full-items=yes&flow=no",
+        "image": "https://cdn.filestackcontent.com/resize=w:1200,fit:max/auto_image/compress/e02GYdKPRGIe2ZBunuMg",
+        "provider": {
+          "@type": "LocalBusiness",
+          "name": "Sunset Watersports"
+        },
+        "touristType": [
+          "Couples",
+          "Families",
+          "Groups"
+        ],
+        "offers": {
+          "@type": "Offer",
+          "price": "50.95",
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock",
+          "url": "https://fareharbor.com/embeds/book/sunsetwatersportskeywest/items/263709/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&full-items=yes&flow=no"
+        }
       }
     },
     {
-      "@type": "TouristTrip",
-      "name": "Morning Dolphin & Snorkel Combo",
-      "description": "But the adventure doesn’t stop there. After your dolphin encounter, we’ll head to one of Key West’s most vibrant living coral reefs for an incredible snorkeling session.",
-      "touristType": "Boat Tour-Dolphin-Snorkel",
-      "offers": {
-        "@type": "Offer",
-        "price": 64.95,
-        "priceCurrency": "USD",
-        "url": "https://fareharbor.com/embeds/book/sunsetwatersportskeywest/items/263720/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&bookable-only=yes&full-items=yes&marketplace=yes&flow=no",
-        "availability": "https://schema.org/InStock"
-      },
-      "provider": {
-        "@type": "LocalBusiness",
-        "name": "Sunset Watersports"
+      "@type": "ListItem",
+      "position": 7,
+      "item": {
+        "@type": "TouristTrip",
+        "name": "Dolphin Watch & Snorkel Combo",
+        "url": "https://fareharbor.com/embeds/book/furycat/items/2568/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&full-items=yes&flow=no",
+        "image": "https://cdn.filestackcontent.com/resize=w:1200,fit:max/auto_image/compress/BTsv7VpQASmoDiOuOY1w",
+        "provider": {
+          "@type": "LocalBusiness",
+          "name": "Fury Water Adventures"
+        },
+        "touristType": [
+          "Couples",
+          "Families",
+          "Groups"
+        ],
+        "offers": {
+          "@type": "Offer",
+          "price": "63.00",
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock",
+          "url": "https://fareharbor.com/embeds/book/furycat/items/2568/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&full-items=yes&flow=no"
+        }
       }
     },
     {
-      "@type": "TouristTrip",
-      "name": "Do It All (Without Parasail)",
-      "description": "Grilled Lunch, prepared fresh everyday in our on-board kitchen. Our chef will prepare you a freshly made lunch of BBQ pork sandwiches, hot dogs, chicken nuggets, veggies & dipping tray,  potato salad, french fries, chips and soft drinks.",
-      "touristType": "Boat Rental-Boat Tour-Climbing-Rafting-Snorkel-Water Activities",
-      "offers": {
-        "@type": "Offer",
-        "price": 139.95,
-        "priceCurrency": "USD",
-        "url": "https://fareharbor.com/embeds/book/sunsetwatersportskeywest/items/266316/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&bookable-only=yes&full-items=yes&marketplace=yes&flow=no",
-        "availability": "https://schema.org/InStock"
-      },
-      "provider": {
-        "@type": "LocalBusiness",
-        "name": "Sunset Watersports"
+      "@type": "ListItem",
+      "position": 8,
+      "item": {
+        "@type": "TouristTrip",
+        "name": "Morning Dolphin & Snorkel Combo",
+        "url": "https://fareharbor.com/embeds/book/sunsetwatersportskeywest/items/263720/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&full-items=yes&flow=no",
+        "image": "https://cdn.filestackcontent.com/resize=w:1200,fit:max/auto_image/compress/oY73FJGhRD2Mxf0xG33f",
+        "provider": {
+          "@type": "LocalBusiness",
+          "name": "Sunset Watersports"
+        },
+        "touristType": [
+          "Couples",
+          "Families",
+          "Groups"
+        ],
+        "offers": {
+          "@type": "Offer",
+          "price": "64.95",
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock",
+          "url": "https://fareharbor.com/embeds/book/sunsetwatersportskeywest/items/263720/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&full-items=yes&flow=no"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 9,
+      "item": {
+        "@type": "TouristTrip",
+        "name": "Two Reef Snorkel Tour With Sunset Cruise",
+        "url": "https://fareharbor.com/embeds/book/sunsetwatersportskeywest/items/263718/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&full-items=yes&flow=no",
+        "image": "https://cdn.filestackcontent.com/resize=w:1200,fit:max/auto_image/compress/KDQQIgu8Q22j5kCJGtge",
+        "provider": {
+          "@type": "LocalBusiness",
+          "name": "Sunset Watersports"
+        },
+        "touristType": [
+          "Couples",
+          "Families",
+          "Groups"
+        ],
+        "offers": {
+          "@type": "Offer",
+          "price": "64.95",
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock",
+          "url": "https://fareharbor.com/embeds/book/sunsetwatersportskeywest/items/263718/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&full-items=yes&flow=no"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 10,
+      "item": {
+        "@type": "TouristTrip",
+        "name": "Morning Sail, Snorkel & Kayak Excursion",
+        "url": "https://fareharbor.com/embeds/book/dangercharters/items/3995/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&full-items=yes&flow=no",
+        "image": "https://cdn.filestackcontent.com/resize=w:1200,fit:max/auto_image/compress/wo9N556MTmSakuMlSob2",
+        "provider": {
+          "@type": "LocalBusiness",
+          "name": "Danger Charters"
+        },
+        "touristType": [
+          "Couples",
+          "Families",
+          "Groups"
+        ],
+        "offers": {
+          "@type": "Offer",
+          "price": "105.00",
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock",
+          "url": "https://fareharbor.com/embeds/book/dangercharters/items/3995/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&full-items=yes&flow=no"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 11,
+      "item": {
+        "@type": "TouristTrip",
+        "name": "Dolphin Watch + Guided Snorkel & Sandbar aboard SQUID",
+        "url": "https://fareharbor.com/embeds/book/honesteco-fl/items/479256/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&full-items=yes&flow=no",
+        "image": "https://cdn.filestackcontent.com/resize=w:1200,fit:max/auto_image/compress/b6WZH3QrT9WHseH8csu1",
+        "provider": {
+          "@type": "LocalBusiness",
+          "name": "Honest Eco"
+        },
+        "touristType": [
+          "Couples",
+          "Families",
+          "Groups"
+        ],
+        "offers": {
+          "@type": "Offer",
+          "price": "109.00",
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock",
+          "url": "https://fareharbor.com/embeds/book/honesteco-fl/items/479256/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&full-items=yes&flow=no"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 12,
+      "item": {
+        "@type": "TouristTrip",
+        "name": "Snorkeling & Sandbar Tour – Papa’s Cat Adventure in Key West",
+        "url": "https://fareharbor.com/embeds/book/papascat/items/677533/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&full-items=yes&flow=no",
+        "image": "https://cdn.filestackcontent.com/resize=w:1200,fit:max/auto_image/compress/DldkOwtQTKWM1g7nJp9q",
+        "provider": {
+          "@type": "LocalBusiness",
+          "name": "Papa's Cat"
+        },
+        "touristType": [
+          "Couples",
+          "Families",
+          "Groups"
+        ],
+        "offers": {
+          "@type": "Offer",
+          "price": "124.00",
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock",
+          "url": "https://fareharbor.com/embeds/book/papascat/items/677533/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&full-items=yes&flow=no"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 13,
+      "item": {
+        "@type": "TouristTrip",
+        "name": "Key West Dolphin Watching & Snorkeling Tour | Small Group",
+        "url": "https://fareharbor.com/embeds/book/safaricharters/items/56506/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&full-items=yes&flow=no",
+        "image": "https://cdn.filestackcontent.com/resize=w:1200,fit:max/auto_image/compress/tbvytbVhRiaxHtntgsv0",
+        "provider": {
+          "@type": "LocalBusiness",
+          "name": "Dolphin Safari"
+        },
+        "touristType": [
+          "Couples",
+          "Families",
+          "Groups"
+        ],
+        "offers": {
+          "@type": "Offer",
+          "price": "129.00",
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock",
+          "url": "https://fareharbor.com/embeds/book/safaricharters/items/56506/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&full-items=yes&flow=no"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 14,
+      "item": {
+        "@type": "TouristTrip",
+        "name": "Snorkeling",
+        "url": "https://fareharbor.com/embeds/book/sandandseakeywestcharters/items/571024/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&full-items=yes&flow=no",
+        "image": "https://cdn.filestackcontent.com/resize=w:1200,fit:max/auto_image/compress/SScGupY7QOKQ614Cx5KY",
+        "provider": {
+          "@type": "LocalBusiness",
+          "name": "Sand & Sea Key West Charters"
+        },
+        "touristType": [
+          "Couples",
+          "Families",
+          "Groups"
+        ],
+        "offers": {
+          "@type": "Offer",
+          "price": "447.00",
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock",
+          "url": "https://fareharbor.com/embeds/book/sandandseakeywestcharters/items/571024/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&full-items=yes&flow=no"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 15,
+      "item": {
+        "@type": "TouristTrip",
+        "name": "Snorkeling Excursion!",
+        "url": "https://fareharbor.com/embeds/book/mermaidcharterskeywest/items/57527/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&full-items=yes&flow=no",
+        "image": "https://cdn.filestackcontent.com/resize=w:1200,fit:max/auto_image/compress/w32hhtwUSoywlrQ2L0Ti",
+        "provider": {
+          "@type": "LocalBusiness",
+          "name": "Mermaid Charters Key West"
+        },
+        "touristType": [
+          "Couples",
+          "Families",
+          "Groups"
+        ],
+        "offers": {
+          "@type": "Offer",
+          "price": "500.00",
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock",
+          "url": "https://fareharbor.com/embeds/book/mermaidcharterskeywest/items/57527/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&full-items=yes&flow=no"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 16,
+      "item": {
+        "@type": "TouristTrip",
+        "name": "Snorkeling & Sunset",
+        "url": "https://fareharbor.com/embeds/book/mermaidcharterskeywest/items/326749/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&full-items=yes&flow=no",
+        "image": "https://cdn.filestackcontent.com/resize=w:1200,fit:max/auto_image/compress/lt6keCgITeWdHrKTEdDl",
+        "provider": {
+          "@type": "LocalBusiness",
+          "name": "Mermaid Charters Key West"
+        },
+        "touristType": [
+          "Couples",
+          "Families",
+          "Groups"
+        ],
+        "offers": {
+          "@type": "Offer",
+          "price": "650.00",
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock",
+          "url": "https://fareharbor.com/embeds/book/mermaidcharterskeywest/items/326749/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&full-items=yes&flow=no"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 17,
+      "item": {
+        "@type": "TouristTrip",
+        "name": "4 Hour Snorkeling",
+        "url": "https://fareharbor.com/embeds/book/pirateadventurecharters/items/315407/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&full-items=yes&flow=no",
+        "image": "https://cdn.filestackcontent.com/resize=w:1200,fit:max/auto_image/compress/w9eMb2ndR2CtDqBKbjP5",
+        "provider": {
+          "@type": "LocalBusiness",
+          "name": "Pirate Adventure Charters"
+        },
+        "touristType": [
+          "Couples",
+          "Families",
+          "Groups"
+        ],
+        "offers": {
+          "@type": "Offer",
+          "price": "699.00",
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock",
+          "url": "https://fareharbor.com/embeds/book/pirateadventurecharters/items/315407/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&full-items=yes&flow=no"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 18,
+      "item": {
+        "@type": "TouristTrip",
+        "name": "Half Day Snorkel & Sandbar Charter",
+        "url": "https://fareharbor.com/embeds/book/thehappycaptainfl/items/643119/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&full-items=yes&flow=no",
+        "image": "https://cdn.filestackcontent.com/resize=w:1200,fit:max/auto_image/compress/DlvvzzYfQb2gG4hqxkyU",
+        "provider": {
+          "@type": "LocalBusiness",
+          "name": "The Happy Captain"
+        },
+        "touristType": [
+          "Couples",
+          "Families",
+          "Groups"
+        ],
+        "offers": {
+          "@type": "Offer",
+          "price": "699.00",
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock",
+          "url": "https://fareharbor.com/embeds/book/thehappycaptainfl/items/643119/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&full-items=yes&flow=no"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 19,
+      "item": {
+        "@type": "TouristTrip",
+        "name": "Private Charter Sandbar + Snorkel aboard COWFiSH",
+        "url": "https://fareharbor.com/embeds/book/honesteco-fl/items/479443/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&full-items=yes&flow=no",
+        "image": "https://cdn.filestackcontent.com/resize=w:1200,fit:max/auto_image/compress/OR9OuzT8a6D7bz1D10uw",
+        "provider": {
+          "@type": "LocalBusiness",
+          "name": "Honest Eco"
+        },
+        "touristType": [
+          "Couples",
+          "Families",
+          "Groups"
+        ],
+        "offers": {
+          "@type": "Offer",
+          "price": "799.00",
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock",
+          "url": "https://fareharbor.com/embeds/book/honesteco-fl/items/479443/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&full-items=yes&flow=no"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 20,
+      "item": {
+        "@type": "TouristTrip",
+        "name": "Combo: Snorkeling,  Boca Grand Sandbar & Dolphin Watching",
+        "url": "https://fareharbor.com/embeds/book/mermaidcharterskeywest/items/294807/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&full-items=yes&flow=no",
+        "image": "https://cdn.filestackcontent.com/resize=w:1200,fit:max/auto_image/compress/3aXL1P79R9ugNBcuomcp",
+        "provider": {
+          "@type": "LocalBusiness",
+          "name": "Mermaid Charters Key West"
+        },
+        "touristType": [
+          "Couples",
+          "Families",
+          "Groups"
+        ],
+        "offers": {
+          "@type": "Offer",
+          "price": "800.00",
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock",
+          "url": "https://fareharbor.com/embeds/book/mermaidcharterskeywest/items/294807/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&full-items=yes&flow=no"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 21,
+      "item": {
+        "@type": "TouristTrip",
+        "name": "4hr Private Dolphin Watch / Snorkel Sail",
+        "url": "https://fareharbor.com/embeds/book/sunsetsailkeywest/items/1395/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&full-items=yes&flow=no",
+        "image": "https://cdn.filestackcontent.com/resize=w:1200,fit:max/auto_image/compress/x4Ay0QaRsCHMibQVLhP4",
+        "provider": {
+          "@type": "LocalBusiness",
+          "name": "Sunset Sail Key West"
+        },
+        "touristType": [
+          "Couples",
+          "Families",
+          "Groups"
+        ],
+        "offers": {
+          "@type": "Offer",
+          "price": "908.38",
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock",
+          "url": "https://fareharbor.com/embeds/book/sunsetsailkeywest/items/1395/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&full-items=yes&flow=no"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 22,
+      "item": {
+        "@type": "TouristTrip",
+        "name": "Private Charter Sail, Snorkel & Kayak",
+        "url": "https://fareharbor.com/embeds/book/dangercharters/items/291446/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&full-items=yes&flow=no",
+        "image": "https://cdn.filestackcontent.com/resize=w:1200,fit:max/auto_image/compress/alF7ONkqTJWFeY3QghOC",
+        "provider": {
+          "@type": "LocalBusiness",
+          "name": "Danger Charters"
+        },
+        "touristType": [
+          "Couples",
+          "Families",
+          "Groups"
+        ],
+        "offers": {
+          "@type": "Offer",
+          "price": "2250.00",
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock",
+          "url": "https://fareharbor.com/embeds/book/dangercharters/items/291446/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&full-items=yes&flow=no"
+        }
       }
     }
   ]
 }
-</script>
+    </script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://keywestsandbartours.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Snorkeling Tours",
+      "item": "https://keywestsandbartours.com/snorkeling.html"
+    }
+  ]
+}
+    </script>
 </head>
 <body>
-    <!-- HEADER -->
     <header class="site-header">
     <div class="site-header-inner">
       <a href="/" class="site-logo">
@@ -348,243 +1466,520 @@
       <a href="/about.html">About</a>
     </nav>
   </header>
-
-    <nav class="nav-mobile">
-        <a href="/#tours-section">Tours</a>
-        <a href="blog/">Blog</a>
-        <a href="about.html">About</a>
-    </nav>
-
-    <!-- HERO -->
-    <section class="hero">
-        <h1>Key West Snorkeling Tours</h1>
-        <p>Best snorkeling tours in Key West. Coral reefs, marine life, shallow waters. Book private or group snorkel tours.</p>
-        <a href="#tours-grid">Browse Tours</a>
+    
+    <div class="sticky-cta visible" id="stickyCta">
+        <div class="sticky-cta-text">Reef trips from <span>$39</span></div>
+        <a href="#top-picks" class="sticky-cta-btn">See Top Picks</a>
+    </div>
+    
+    <section class="hero-video">
+        <img class="hero-video__media" src="snorkelers1.webp" alt="Four snorkelers waving from the water over the Key West reef" fetchpriority="high">
+        <div class="hero-video__overlay"></div>
+        <div class="hero-video__content">
+            <span class="hero-video__badge">Reef Snorkeling &amp; Private Snorkel Charters</span>
+            <h1 class="hero-video__title">Key West Snorkeling Tours:<br>Reef Trips &amp; Private Charters</h1>
+            <p class="hero-video__subtitle">The only living coral reef in the continental US is seven miles off Key West. Here is every boat that takes you there with a real price: shared reef trips from $39, combos with dolphins or the sandbar, and private snorkel charters from $447.</p>
+            <div class="hero-phone-cta">
+              <a href="tel:4074766190" class="hero-phone-link">
+                Call <strong>(407) 476-6190</strong>
+              </a>
+              <span class="hero-phone-or">or</span>
+              <a href="#top-picks" class="hero-phone-secondary">See Top Picks</a>
+            </div>
+            <div class="hero-video__stats">
+                <div class="hero-video__stat">
+                    <div class="hero-video__stat-number">From $39</div>
+                    <div class="hero-video__stat-label">Per person, gear included</div>
+                </div>
+                <div class="hero-video__stat">
+                    <div class="hero-video__stat-number">From $447</div>
+                    <div class="hero-video__stat-label">Private boat, up to 6</div>
+                </div>
+            </div>
+            <a href="#top-picks" class="hero-video__cta" onclick="gtag('event','scroll_to_tours',{page_type:'snorkeling'})">See the Best Snorkeling Tours</a>
+            <p style="margin-top: 12px; font-size: 0.85rem; opacity: 0.9;">Not sure which boat? <a href="#which-boat" style="color: var(--accent); text-decoration: underline;">Start with our top picks →</a></p>
+        </div>
     </section>
     
-    <!-- INTRO -->
-    <section class="intro">
+    <section class="best-for">
+        <div class="best-for-inner">
 
-<!-- s57-internal-links -->
-<aside style="border:1px solid #dbe1e8;border-left:4px solid #E87B4A;border-radius:8px;padding:16px 18px;margin:28px 0;background:#f7fafc">
-<p style="margin:0 0 10px;font-weight:600;font-size:1rem">Most-booked trips right now</p>
-<ul style="margin:0;padding-left:20px;line-height:1.7">
-<li style="margin:0 0 6px"><a href="/blog/key-west-glass-bottom-boat.html" style="color:#E87B4A">Key West Glass Bottom Boat Tours</a></li>
-<li style="margin:0 0 6px"><a href="/blog/key-west-shark-diving.html" style="color:#E87B4A">Key West Shark Diving</a></li>
-</ul>
-</aside>
-        <h2>Key West Snorkeling Tours</h2>
-        <p>Discover the underwater treasures of Key West with professional snorkeling tours. From shallow coral gardens teeming with tropical fish to deeper reef systems, our snorkeling experiences offer something for everyone—whether you're a first-timer or experienced snorkeler.
-
-Most tours visit the shallow backcountry reefs or offshore coral formations. You'll encounter colorful tropical fish, sea turtles, rays, and if you're lucky, dolphins. Tours include all gear (mask, fins, snorkel), though many people prefer bringing their own. Water temperatures range from 73°F in winter to 86°F in summer.
-
-Tours typically last 2-4 hours, with 1-2 hours of actual snorkeling time. Most are suitable for families and beginners. Some advanced tours visit deeper reefs with more diverse marine life. Many tours combine snorkeling with other activities like sunset viewing, dolphin watching, or fishing.</p>
+            <h2>Perfect For</h2>
+            <div class="marquee-wrapper">
+                <div class="best-for-grid">
+                    <!-- First set -->
+                    <div class="best-for-pill">🐠 First-Time Snorkelers</div>
+                    <div class="best-for-pill">👨‍👩‍👧 Families</div>
+                    <div class="best-for-pill">🐬 Dolphin Combos</div>
+                    <div class="best-for-pill">🏝 Sandbar + Reef</div>
+                    <div class="best-for-pill">⛵ Sail & Snorkel</div>
+                    <div class="best-for-pill">🌅 Snorkel + Sunset</div>
+                    <div class="best-for-pill">📸 Underwater Photos</div>
+                    <div class="best-for-pill">🛥 Private Groups</div>
+                    <div class="best-for-pill">🍹 Reef & Ritas</div>
+                    <div class="best-for-pill">🐢 Turtles & Rays</div>
+                    <!-- Duplicate set for seamless loop -->
+                    <div class="best-for-pill">🐠 First-Time Snorkelers</div>
+                    <div class="best-for-pill">👨‍👩‍👧 Families</div>
+                    <div class="best-for-pill">🐬 Dolphin Combos</div>
+                    <div class="best-for-pill">🏝 Sandbar + Reef</div>
+                    <div class="best-for-pill">⛵ Sail & Snorkel</div>
+                    <div class="best-for-pill">🌅 Snorkel + Sunset</div>
+                    <div class="best-for-pill">📸 Underwater Photos</div>
+                    <div class="best-for-pill">🛥 Private Groups</div>
+                    <div class="best-for-pill">🍹 Reef & Ritas</div>
+                    <div class="best-for-pill">🐢 Turtles & Rays</div>
+                </div>
+            </div>
+        </div>
     </section>
     
-    <!-- TOURS -->
-    <section class="tours">
+    <!-- TOP PICKS MODULE -->
+    <section class="top-picks" id="top-picks">
+        <div class="top-picks-inner">
+            <div class="section-label">Editor's Picks</div>
+            <h2 class="section-title">Top 3 Key West Snorkeling Tours</h2>
+            <p class="top-picks-intro">Three that cover most people: the cheapest reef trip that still includes gear, the sail-and-snorkel day that regulars book, and the private boat that puts six of you on the reef alone.</p>
+            <div class="top-picks-grid">
+                <div class="pick-card">
+                    <div class="pick-card-image" style="background-color: var(--sand); background-image: url('https://cdn.filestackcontent.com/resize=w:1200,fit:max/auto_image/compress/E4ITfa9hRJ2xocGgEaqp')">
+                        <span class="pick-card-label">Cheapest Reef Trip</span>
+                        <span class="pick-card-price">$39</span>
+                    </div>
+                    <div class="pick-card-content">
+                        <div class="pick-card-company">Fury Water Adventures</div>
+                        <h3>Morning Snorkel Trip</h3>
+                        <div class="pick-card-meta"><span>⏱ 3 hours</span><span>👥 Shared, per person</span></div>
+                        <a href="https://fareharbor.com/embeds/book/furycat/items/2579/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&full-items=yes&flow=no" target="_blank" class="pick-card-cta" data-tour-name="Morning Snorkel Trip" data-tour-id="2579">Check Availability</a>
+                    </div>
+                </div>
+                <div class="pick-card">
+                    <div class="pick-card-image" style="background-color: var(--sand); background-image: url('https://cdn.filestackcontent.com/resize=w:1200,fit:max/auto_image/compress/wo9N556MTmSakuMlSob2')">
+                        <span class="pick-card-label">Best All-Round Day</span>
+                        <span class="pick-card-price">$105</span>
+                    </div>
+                    <div class="pick-card-content">
+                        <div class="pick-card-company">Danger Charters</div>
+                        <h3>Morning Sail, Snorkel &amp; Kayak Excursion</h3>
+                        <div class="pick-card-meta"><span>⏱ 4.5 hours</span><span>👥 Shared, per person</span></div>
+                        <a href="https://fareharbor.com/embeds/book/dangercharters/items/3995/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&full-items=yes&flow=no" target="_blank" class="pick-card-cta" data-tour-name="Morning Sail, Snorkel &amp; Kayak Excursion" data-tour-id="3995">Check Availability</a>
+                    </div>
+                </div>
+                <div class="pick-card">
+                    <div class="pick-card-image" style="background-color: var(--sand); background-image: url('https://cdn.filestackcontent.com/resize=w:1200,fit:max/auto_image/compress/w32hhtwUSoywlrQ2L0Ti')">
+                        <span class="pick-card-label">Best Private Value</span>
+                        <span class="pick-card-price">$500</span>
+                    </div>
+                    <div class="pick-card-content">
+                        <div class="pick-card-company">Mermaid Charters Key West</div>
+                        <h3>Snorkeling Excursion!</h3>
+                        <div class="pick-card-meta"><span>⏱ 3 hours</span><span>👥 Private, up to 6</span></div>
+                        <a href="https://fareharbor.com/embeds/book/mermaidcharterskeywest/items/57527/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&full-items=yes&flow=no" target="_blank" class="pick-card-cta" data-tour-name="Snorkeling Excursion!" data-tour-id="57527">Check Availability</a>
+                    </div>
+                </div>
+            </div>
+            <p class="top-picks-divider">— or browse every snorkeling tour below —</p>
+        </div>
+    </section>
+
+    
+    <section class="tours" id="tours">
         <div class="tours-inner">
-            <div class="section-label">Snorkel Adventures</div>
-            <h2 class="section-title">Available Tours</h2>
-            
-            <div id="tours-grid" class="tours-grid">
-                <!-- TOUR 1 -->
+            <div class="section-label">Reef Trips, Combos & Private Charters</div>
+            <h2 class="section-title">Every Key West Snorkeling Tour (22 available)</h2>
+            <div class="tours-grid">
                 <div class="tour-card">
-                    <div class="tour-card-image" style="background-color: var(--sand); background-image: url('https://cdn.filestackcontent.com/resize=w:1200,fit:max/auto_image/compress/nZOAr70bR8yPM5lbbwiq')">
-                        <span class="tour-card-badge">Boat Tour-Private-Snorkel</span>
-                        
+                    <div class="tour-card-image" style="background-color: var(--sand); background-image: url('https://cdn.filestackcontent.com/resize=w:1200,fit:max/auto_image/compress/E4ITfa9hRJ2xocGgEaqp')">
+                        <span class="tour-card-badge">💰 Cheapest</span>
+                        <span class="tour-card-price">$39</span>
                     </div>
                     <div class="tour-card-content">
-                        <div class="tour-card-company">Six Fins Charter</div>
-                        <h3>Private Snorkel Adventure</h3>
-                        <div class="tour-card-meta"><span>⏱ 4 Hour</span><span>👥 Stock Island</span></div>
-                        <p class="tour-card-description">Explore the vibrant coral reefs with tropical fish, colorful marine life, and fascinating sea creatures. Our expert guid...</p>
-                        <a href="https://fareharbor.com/embeds/book/sixfinscharter/items/532224/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&bookable-only=yes&full-items=yes&marketplace=yes&flow=no" target="_blank" class="tour-card-cta" data-tour-name="Private Snorkel Adventure" data-tour-id="532224">Check Availability</a>
+                        <div class="tour-card-company">Fury Water Adventures</div>
+                        <h3>Morning Snorkel Trip</h3>
+                        <div class="tour-card-meta"><span>⏱ 3 hours</span><span>👥 Shared, per person</span></div>
+                        <p class="tour-card-description">Fury's three-hour morning reef trip on a big catamaran. Mask, snorkel, fins and vest included. The lowest price to the reef in Key West.</p>
+                        <a href="https://fareharbor.com/embeds/book/furycat/items/2579/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&full-items=yes&flow=no" target="_blank" class="tour-card-cta" data-tour-name="Morning Snorkel Trip" data-tour-id="2579">Check Availability</a>
                     </div>
                 </div>
-                                <!-- TOUR 2 -->
                 <div class="tour-card">
-                    <div class="tour-card-image" style="background-color: var(--sand); background-image: url('https://cdn.filestackcontent.com/resize=w:1200,fit:max/auto_image/compress/KUs5GGppTqKKwRBE5Jpw')">
-                        <span class="tour-card-badge">Boat Rental-Snorkel-SUP</span>
-                        
+                    <div class="tour-card-image" style="background-color: var(--sand); background-image: url('https://cdn.filestackcontent.com/resize=w:1200,fit:max/auto_image/compress/fhfAruuiR7GRQEEenPVt')">
+                        <span class="tour-card-badge">☀️ Afternoon</span>
+                        <span class="tour-card-price">$44.95</span>
                     </div>
                     <div class="tour-card-content">
-                        <div class="tour-card-company">The Beach Weekend - Key West</div>
-                        <h3>Multi Day All-Inclusive Boating Package!</h3>
-                        <div class="tour-card-meta"><span>⏱ Varies</span><span>👥 Stock Island</span></div>
-                        <p class="tour-card-description">Customers will receive a full refund in case of operator cancellation due to weather or other unforeseen circumstances. ...</p>
-                        <a href="https://fareharbor.com/embeds/book/thebeachweekendkeywest/items/453327/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&bookable-only=yes&full-items=yes&marketplace=yes&flow=no" target="_blank" class="tour-card-cta" data-tour-name="Multi Day All-Inclusive Boating Package!" data-tour-id="453327">Check Availability</a>
+                        <div class="tour-card-company">Sebago Watersports</div>
+                        <h3>Key West Afternoon Snorkel</h3>
+                        <div class="tour-card-meta"><span>⏱ 3 hours</span><span>👥 Shared, per person</span></div>
+                        <p class="tour-card-description">Sebago's afternoon reef trip with gear, and beer, wine and soda on the ride home. Same reef, later start.</p>
+                        <a href="https://fareharbor.com/embeds/book/keywestsebago/items/64475/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&full-items=yes&flow=no" target="_blank" class="tour-card-cta" data-tour-name="Key West Afternoon Snorkel" data-tour-id="64475">Check Availability</a>
                     </div>
                 </div>
-                                <!-- TOUR 3 -->
-                                <!-- TOUR 4 -->
-                                <!-- TOUR 5 -->
-                                <!-- TOUR 6 -->
-                                <!-- TOUR 7 -->
-                                <!-- TOUR 8 -->
                 <div class="tour-card">
-                    <div class="tour-card-image" style="background-color: var(--sand); background-image: url('https://cdn.filestackcontent.com/resize=w:1200,fit:max/auto_image/compress/QE8cR6KjTWywlekkauSR')">
-                        <span class="tour-card-badge">Boat Rental-Boat Tour-Private-Snorkel</span>
-                        
+                    <div class="tour-card-image" style="background-color: var(--sand); background-image: url('https://cdn.filestackcontent.com/resize=w:1200,fit:max/auto_image/compress/amXJulrJTZ2UDTfdNhZA')">
+                        <span class="tour-card-badge">🥂 Mimosas</span>
+                        <span class="tour-card-price">$44.95</span>
                     </div>
                     <div class="tour-card-content">
-                        <div class="tour-card-company">Mermaid Charters Key West</div>
-                        <h3>Combo:  Snorkeling, Boca Grand & Sunset Excursion!</h3>
-                        <div class="tour-card-meta"><span>⏱ Duration: 4 Hour</span><span>👥 Key West</span></div>
-                        <p class="tour-card-description">*If you would like to bring your own food and drinks along we will have cooler space available.
-Bring your own food and ...</p>
-                        <a href="https://fareharbor.com/embeds/book/mermaidcharterskeywest/items/293676/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&bookable-only=yes&full-items=yes&marketplace=yes&flow=no" target="_blank" class="tour-card-cta" data-tour-name="Combo: Snorkeling, Boca Grand &amp; Sunset Excursion!" data-tour-id="293676">Check Availability</a>
+                        <div class="tour-card-company">Sebago Watersports</div>
+                        <h3>Mimosa Morning Snorkel Sail</h3>
+                        <div class="tour-card-meta"><span>⏱ 3 hours</span><span>👥 Shared, per person</span></div>
+                        <p class="tour-card-description">Morning sail to the reef on a catamaran with mimosas on the way out. Kids under 12 are $14.95.</p>
+                        <a href="https://fareharbor.com/embeds/book/keywestsebago/items/64477/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&full-items=yes&flow=no" target="_blank" class="tour-card-cta" data-tour-name="Mimosa Morning Snorkel Sail" data-tour-id="64477">Check Availability</a>
                     </div>
                 </div>
-                                <!-- TOUR 9 -->
                 <div class="tour-card">
-                    <div class="tour-card-image" style="background-color: var(--sand); background-image: url('https://cdn.filestackcontent.com/resize=w:1200,fit:max/auto_image/compress/ktDMoLD8Rpueuwdoqvl6')">
-                        <span class="tour-card-badge">Snorkel</span>
+                    <div class="tour-card-image" style="background-color: var(--sand); background-image: url('https://cdn.filestackcontent.com/resize=w:1200,fit:max/auto_image/compress/xrnnUOaMQ4aqsLGG1dbG')">
+                        <span class="tour-card-badge">🍹 Reef & Ritas</span>
+                        <span class="tour-card-price">$49</span>
                     </div>
                     <div class="tour-card-content">
-                        <div class="tour-card-company">Casual Monday Charters</div>
-                        <h3>Half Day Sandbar &amp; Snorkel Trip — Still Dreamin&#39;</h3>
-                        <div class="tour-card-meta"><span>⏱ 4 Hours</span><span>👥 Key West</span></div>
-                        <p class="tour-card-description">Half day private sandbar and snorkel trip aboard Still Dreamin&#39;. Whole boat, gear included.</p>
-                        <a href="https://fareharbor.com/embeds/book/casualmondaycharters/items/689391/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&bookable-only=yes&full-items=yes&marketplace=yes&flow=no" target="_blank" class="tour-card-cta" data-tour-name="Half Day Sandbar &amp; Snorkel Trip - Still Dreamin&#39;" data-tour-id="689391">Check Availability</a>
+                        <div class="tour-card-company">Fury Water Adventures</div>
+                        <h3>Afternoon Snorkel Trip: Reef &amp; Ritas</h3>
+                        <div class="tour-card-meta"><span>⏱ 3 hours</span><span>👥 Shared, per person</span></div>
+                        <p class="tour-card-description">Afternoon snorkel with margaritas, beer and wine after you climb out. The social one.</p>
+                        <a href="https://fareharbor.com/embeds/book/furycat/items/2580/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&full-items=yes&flow=no" target="_blank" class="tour-card-cta" data-tour-name="Afternoon Snorkel Trip: Reef &amp; Ritas" data-tour-id="2580">Check Availability</a>
                     </div>
                 </div>
-                                <!-- TOUR 11 -->
                 <div class="tour-card">
-                    <div class="tour-card-image" style="background-color: var(--sand); background-image: url('https://cdn.filestackcontent.com/resize=w:1200,fit:max/auto_image/compress/3aXL1P79R9ugNBcuomcp')">
-                        <span class="tour-card-badge">Boat Rental-Boat Tour-Dolphin-Private-Snorkel</span>
-                        
+                    <div class="tour-card-image" style="background-color: var(--sand); background-image: url('https://cdn.filestackcontent.com/resize=w:1200,fit:max/auto_image/compress/449EYMdmSbSDoY0qQ2e8')">
+                        <span class="tour-card-badge">🌅 Snorkel + Sunset</span>
+                        <span class="tour-card-price">$49</span>
                     </div>
                     <div class="tour-card-content">
-                        <div class="tour-card-company">Mermaid Charters Key West</div>
-                        <h3>Combo: Snorkeling,  Boca Grand Sandbar & Dolphin Watching</h3>
-                        <div class="tour-card-meta"><span>⏱ Duration: 4 Hour</span><span>👥 Key West</span></div>
-                        <p class="tour-card-description">*If you would like to bring your own food and drinks along we will have cooler space available.
-Bring your own food and ...</p>
-                        <a href="https://fareharbor.com/embeds/book/mermaidcharterskeywest/items/294807/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&bookable-only=yes&full-items=yes&marketplace=yes&flow=no" target="_blank" class="tour-card-cta" data-tour-name="Combo: Snorkeling, Boca Grand Sandbar &amp; Dolphin Watching" data-tour-id="294807">Check Availability</a>
+                        <div class="tour-card-company">Fury Water Adventures</div>
+                        <h3>Snorkel &amp; Sunset Sail Rum &amp; Reggae Combo</h3>
+                        <div class="tour-card-meta"><span>⏱ 4 hours</span><span>👥 Shared, per person</span></div>
+                        <p class="tour-card-description">Reef snorkel that rolls into the Rum &amp; Reggae sunset sail. Two trips on one ticket for $49.</p>
+                        <a href="https://fareharbor.com/embeds/book/furycat/items/2581/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&full-items=yes&flow=no" target="_blank" class="tour-card-cta" data-tour-name="Snorkel &amp; Sunset Sail Rum &amp; Reggae Combo" data-tour-id="2581">Check Availability</a>
                     </div>
                 </div>
-                                <!-- TOUR 12 -->
-                <div class="tour-card">
-                    <div class="tour-card-image" style="background-color: var(--sand); background-image: url('https://cdn.filestackcontent.com/resize=w:1200,fit:max/auto_image/compress/lt6keCgITeWdHrKTEdDl')">
-                        <span class="tour-card-badge">Boat Rental-Boat Tour-Snorkel</span>
-                        
-                    </div>
-                    <div class="tour-card-content">
-                        <div class="tour-card-company">Mermaid Charters Key West</div>
-                        <h3>Snorkeling & Sunset</h3>
-                        <div class="tour-card-meta"><span>⏱ 4 Hrs</span><span>👥 Key West</span></div>
-                        <p class="tour-card-description">We can accommodate groups of up to six people on this private charter. And don't worry about the equipment - we'll provi...</p>
-                        <a href="https://fareharbor.com/embeds/book/mermaidcharterskeywest/items/326749/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&bookable-only=yes&full-items=yes&marketplace=yes&flow=no" target="_blank" class="tour-card-cta" data-tour-name="Snorkeling &amp; Sunset" data-tour-id="326749">Check Availability</a>
-                    </div>
-                </div>
-
                 <div class="tour-card">
                     <div class="tour-card-image" style="background-color: var(--sand); background-image: url('https://cdn.filestackcontent.com/resize=w:1200,fit:max/auto_image/compress/e02GYdKPRGIe2ZBunuMg')">
-                        <span class="tour-card-badge">Snorkel</span>
+                        <span class="tour-card-badge">🌊 Two Reefs</span>
+                        <span class="tour-card-price">$50.95</span>
                     </div>
                     <div class="tour-card-content">
                         <div class="tour-card-company">Sunset Watersports</div>
                         <h3>Rise &amp; Reef Morning Snorkel</h3>
-                        <div class="tour-card-meta"><span>⏱ 3 Hour</span><span>👥 Key West</span></div>
-                        <p class="tour-card-description">A morning catamaran sail out to Key West's living reef for a guided snorkel. Built for all levels, gear included.</p>
-                        <a href="https://fareharbor.com/embeds/book/sunsetwatersportskeywest/items/263709/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&bookable-only=yes&full-items=yes&marketplace=yes&flow=no" target="_blank" rel="noopener" class="tour-card-cta check-availability" data-tour-name="Rise &amp; Reef Morning Snorkel" data-tour-id="263709">Check Availability</a>
+                        <div class="tour-card-meta"><span>⏱ 3 hours</span><span>👥 Shared, per person</span></div>
+                        <p class="tour-card-description">Rise &amp; Reef: two reef stops in the morning on the big Sunset Watersports cat, breakfast aboard.</p>
+                        <a href="https://fareharbor.com/embeds/book/sunsetwatersportskeywest/items/263709/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&full-items=yes&flow=no" target="_blank" class="tour-card-cta" data-tour-name="Rise &amp; Reef Morning Snorkel" data-tour-id="263709">Check Availability</a>
                     </div>
                 </div>
-
                 <div class="tour-card">
-                    <div class="tour-card-image" style="background-color: var(--sand); background-image: url('https://cdn.filestackcontent.com/resize=w:1200,fit:max/auto_image/compress/8q6viVMQUyInxmICcnqb')">
-                        <span class="tour-card-badge">Snorkel</span>
+                    <div class="tour-card-image" style="background-color: var(--sand); background-image: url('https://cdn.filestackcontent.com/resize=w:1200,fit:max/auto_image/compress/BTsv7VpQASmoDiOuOY1w')">
+                        <span class="tour-card-badge">🐬 Dolphins + Reef</span>
+                        <span class="tour-card-price">$63</span>
                     </div>
                     <div class="tour-card-content">
-                        <div class="tour-card-company">Sunset Watersports</div>
-                        <h3>Dolphin, Snorkel &amp; Sunset Combo</h3>
-                        <div class="tour-card-meta"><span>⏱ 3 Hour</span><span>👥 Key West</span></div>
-                        <p class="tour-card-description">Dolphin watching, a guided reef snorkel, and a sunset sail in one trip. Gear provided.</p>
-                        <a href="https://fareharbor.com/embeds/book/sunsetwatersportskeywest/items/263727/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&bookable-only=yes&full-items=yes&marketplace=yes&flow=no" target="_blank" rel="noopener" class="tour-card-cta check-availability" data-tour-name="Dolphin, Snorkel &amp; Sunset Combo" data-tour-id="263727">Check Availability</a>
+                        <div class="tour-card-company">Fury Water Adventures</div>
+                        <h3>Dolphin Watch &amp; Snorkel Combo</h3>
+                        <div class="tour-card-meta"><span>⏱ 3 hours</span><span>👥 Shared, per person</span></div>
+                        <p class="tour-card-description">Fury's dolphin watch in the backcountry, then a snorkel stop. The pick if the group wants both and won't pay for a private boat.</p>
+                        <a href="https://fareharbor.com/embeds/book/furycat/items/2568/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&full-items=yes&flow=no" target="_blank" class="tour-card-cta" data-tour-name="Dolphin Watch &amp; Snorkel Combo" data-tour-id="2568">Check Availability</a>
                     </div>
                 </div>
-
                 <div class="tour-card">
                     <div class="tour-card-image" style="background-color: var(--sand); background-image: url('https://cdn.filestackcontent.com/resize=w:1200,fit:max/auto_image/compress/oY73FJGhRD2Mxf0xG33f')">
-                        <span class="tour-card-badge">Snorkel</span>
+                        <span class="tour-card-badge">🐬 Dolphin Combo</span>
+                        <span class="tour-card-price">$64.95</span>
                     </div>
                     <div class="tour-card-content">
                         <div class="tour-card-company">Sunset Watersports</div>
                         <h3>Morning Dolphin &amp; Snorkel Combo</h3>
-                        <div class="tour-card-meta"><span>⏱ 3 Hour</span><span>👥 Key West</span></div>
-                        <p class="tour-card-description">A morning trip pairing wild dolphin watching with a guided snorkel at a Key West reef site.</p>
-                        <a href="https://fareharbor.com/embeds/book/sunsetwatersportskeywest/items/263720/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&bookable-only=yes&full-items=yes&marketplace=yes&flow=no" target="_blank" rel="noopener" class="tour-card-cta check-availability" data-tour-name="Morning Dolphin &amp; Snorkel Combo" data-tour-id="263720">Check Availability</a>
+                        <div class="tour-card-meta"><span>⏱ 3 hours</span><span>👥 Shared, per person</span></div>
+                        <p class="tour-card-description">Sunset Watersports' morning dolphin and snorkel combo with lunch aboard.</p>
+                        <a href="https://fareharbor.com/embeds/book/sunsetwatersportskeywest/items/263720/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&full-items=yes&flow=no" target="_blank" class="tour-card-cta" data-tour-name="Morning Dolphin &amp; Snorkel Combo" data-tour-id="263720">Check Availability</a>
                     </div>
                 </div>
-
                 <div class="tour-card">
-                    <div class="tour-card-image" style="background-color: var(--sand); background-image: url('https://cdn.filestackcontent.com/resize=w:1200,fit:max/auto_image/compress/UeoABCSk6jX5bw8KtzMw')">
-                        <span class="tour-card-badge">Snorkel</span>
+                    <div class="tour-card-image" style="background-color: var(--sand); background-image: url('https://cdn.filestackcontent.com/resize=w:1200,fit:max/auto_image/compress/KDQQIgu8Q22j5kCJGtge')">
+                        <span class="tour-card-badge">🌅 Reef + Sunset</span>
+                        <span class="tour-card-price">$64.95</span>
                     </div>
                     <div class="tour-card-content">
                         <div class="tour-card-company">Sunset Watersports</div>
-                        <h3>Do It All (Without Parasail)</h3>
-                        <div class="tour-card-meta"><span>⏱ 6 Hour</span><span>👥 Key West</span></div>
-                        <p class="tour-card-description">A full-day catamaran trip: reef snorkel, water toys, and a fresh grilled lunch aboard. Gear included.</p>
-                        <a href="https://fareharbor.com/embeds/book/sunsetwatersportskeywest/items/266316/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&bookable-only=yes&full-items=yes&marketplace=yes&flow=no" target="_blank" rel="noopener" class="tour-card-cta check-availability" data-tour-name="Do It All (Without Parasail)" data-tour-id="266316">Check Availability</a>
+                        <h3>Two Reef Snorkel Tour With Sunset Cruise</h3>
+                        <div class="tour-card-meta"><span>⏱ 3 hours</span><span>👥 Shared, per person</span></div>
+                        <p class="tour-card-description">Two reef stops in the afternoon and the sunset cruise on the way in, with drinks.</p>
+                        <a href="https://fareharbor.com/embeds/book/sunsetwatersportskeywest/items/263718/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&full-items=yes&flow=no" target="_blank" class="tour-card-cta" data-tour-name="Two Reef Snorkel Tour With Sunset Cruise" data-tour-id="263718">Check Availability</a>
                     </div>
                 </div>
-                            </div>
+                <div class="tour-card">
+                    <div class="tour-card-image" style="background-color: var(--sand); background-image: url('https://cdn.filestackcontent.com/resize=w:1200,fit:max/auto_image/compress/wo9N556MTmSakuMlSob2')">
+                        <span class="tour-card-badge">⛵ Sail, Snorkel, Kayak</span>
+                        <span class="tour-card-price">$105</span>
+                    </div>
+                    <div class="tour-card-content">
+                        <div class="tour-card-company">Danger Charters</div>
+                        <h3>Morning Sail, Snorkel &amp; Kayak Excursion</h3>
+                        <div class="tour-card-meta"><span>⏱ 4.5 hours</span><span>👥 Shared, per person</span></div>
+                        <p class="tour-card-description">Danger Charters' morning: sail out on a schooner, snorkel the reef, kayak the mangroves. Small groups, the one repeat visitors book.</p>
+                        <a href="https://fareharbor.com/embeds/book/dangercharters/items/3995/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&full-items=yes&flow=no" target="_blank" class="tour-card-cta" data-tour-name="Morning Sail, Snorkel &amp; Kayak Excursion" data-tour-id="3995">Check Availability</a>
+                    </div>
+                </div>
+                <div class="tour-card">
+                    <div class="tour-card-image" style="background-color: var(--sand); background-image: url('https://cdn.filestackcontent.com/resize=w:1200,fit:max/auto_image/compress/b6WZH3QrT9WHseH8csu1')">
+                        <span class="tour-card-badge">🌿 Eco Catamaran</span>
+                        <span class="tour-card-price">$109</span>
+                    </div>
+                    <div class="tour-card-content">
+                        <div class="tour-card-company">Honest Eco</div>
+                        <h3>Dolphin Watch + Guided Snorkel &amp; Sandbar aboard SQUID</h3>
+                        <div class="tour-card-meta"><span>⏱ 4 hours</span><span>👥 Shared, per person</span></div>
+                        <p class="tour-card-description">Honest Eco's electric catamaran: dolphins, a guided snorkel with a naturalist, and a sandbar stop. Quiet boat, small group.</p>
+                        <a href="https://fareharbor.com/embeds/book/honesteco-fl/items/479256/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&full-items=yes&flow=no" target="_blank" class="tour-card-cta" data-tour-name="Dolphin Watch + Guided Snorkel &amp; Sandbar aboard SQUID" data-tour-id="479256">Check Availability</a>
+                    </div>
+                </div>
+                <div class="tour-card">
+                    <div class="tour-card-image" style="background-color: var(--sand); background-image: url('https://cdn.filestackcontent.com/resize=w:1200,fit:max/auto_image/compress/DldkOwtQTKWM1g7nJp9q')">
+                        <span class="tour-card-badge">🏝 Snorkel + Sandbar</span>
+                        <span class="tour-card-price">$124</span>
+                    </div>
+                    <div class="tour-card-content">
+                        <div class="tour-card-company">Papa&#x27;s Cat</div>
+                        <h3>Snorkeling &amp; Sandbar Tour – Papa’s Cat Adventure in Key West</h3>
+                        <div class="tour-card-meta"><span>⏱ 4 hours</span><span>👥 Shared, per person</span></div>
+                        <p class="tour-card-description">Papa's Cat: reef snorkel plus a sandbar afternoon on a sailing catamaran.</p>
+                        <a href="https://fareharbor.com/embeds/book/papascat/items/677533/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&full-items=yes&flow=no" target="_blank" class="tour-card-cta" data-tour-name="Snorkeling &amp; Sandbar Tour – Papa’s Cat Adventure in Key West" data-tour-id="677533">Check Availability</a>
+                    </div>
+                </div>
+                <div class="tour-card">
+                    <div class="tour-card-image" style="background-color: var(--sand); background-image: url('https://cdn.filestackcontent.com/resize=w:1200,fit:max/auto_image/compress/tbvytbVhRiaxHtntgsv0')">
+                        <span class="tour-card-badge">🐬 Dolphin Safari</span>
+                        <span class="tour-card-price">$129</span>
+                    </div>
+                    <div class="tour-card-content">
+                        <div class="tour-card-company">Dolphin Safari</div>
+                        <h3>Key West Dolphin Watching &amp; Snorkeling Tour | Small Group</h3>
+                        <div class="tour-card-meta"><span>⏱ 3.5 hours</span><span>👥 Shared, per person</span></div>
+                        <p class="tour-card-description">Dolphin watching and snorkeling on a fast catamaran with a marine-life guide. Infants $69.</p>
+                        <a href="https://fareharbor.com/embeds/book/safaricharters/items/56506/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&full-items=yes&flow=no" target="_blank" class="tour-card-cta" data-tour-name="Key West Dolphin Watching &amp; Snorkeling Tour | Small Group" data-tour-id="56506">Check Availability</a>
+                    </div>
+                </div>
+                <div class="tour-card">
+                    <div class="tour-card-image" style="background-color: var(--sand); background-image: url('https://cdn.filestackcontent.com/resize=w:1200,fit:max/auto_image/compress/SScGupY7QOKQ614Cx5KY')">
+                        <span class="tour-card-badge">🛥 Cheapest Private</span>
+                        <span class="tour-card-price">$447</span>
+                    </div>
+                    <div class="tour-card-content">
+                        <div class="tour-card-company">Sand &amp; Sea Key West Charters</div>
+                        <h3>Snorkeling</h3>
+                        <div class="tour-card-meta"><span>⏱ 3 hours</span><span>👥 Private, up to 6</span></div>
+                        <p class="tour-card-description">A three-hour private snorkel charter for up to six from Sand &amp; Sea. Four hours is $596.</p>
+                        <a href="https://fareharbor.com/embeds/book/sandandseakeywestcharters/items/571024/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&full-items=yes&flow=no" target="_blank" class="tour-card-cta" data-tour-name="Snorkeling" data-tour-id="571024">Check Availability</a>
+                    </div>
+                </div>
+                <div class="tour-card">
+                    <div class="tour-card-image" style="background-color: var(--sand); background-image: url('https://cdn.filestackcontent.com/resize=w:1200,fit:max/auto_image/compress/w32hhtwUSoywlrQ2L0Ti')">
+                        <span class="tour-card-badge">🛥 Private Reef Trip</span>
+                        <span class="tour-card-price">$500</span>
+                    </div>
+                    <div class="tour-card-content">
+                        <div class="tour-card-company">Mermaid Charters Key West</div>
+                        <h3>Snorkeling Excursion!</h3>
+                        <div class="tour-card-meta"><span>⏱ 3 hours</span><span>👥 Private, up to 6</span></div>
+                        <p class="tour-card-description">Mermaid Charters' three-hour private snorkel excursion. Your boat, your reef, your pace.</p>
+                        <a href="https://fareharbor.com/embeds/book/mermaidcharterskeywest/items/57527/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&full-items=yes&flow=no" target="_blank" class="tour-card-cta" data-tour-name="Snorkeling Excursion!" data-tour-id="57527">Check Availability</a>
+                    </div>
+                </div>
+                <div class="tour-card">
+                    <div class="tour-card-image" style="background-color: var(--sand); background-image: url('https://cdn.filestackcontent.com/resize=w:1200,fit:max/auto_image/compress/lt6keCgITeWdHrKTEdDl')">
+                        <span class="tour-card-badge">🌅 Private + Sunset</span>
+                        <span class="tour-card-price">$650</span>
+                    </div>
+                    <div class="tour-card-content">
+                        <div class="tour-card-company">Mermaid Charters Key West</div>
+                        <h3>Snorkeling &amp; Sunset</h3>
+                        <div class="tour-card-meta"><span>⏱ 4 hours</span><span>👥 Private, up to 6</span></div>
+                        <p class="tour-card-description">Private afternoon snorkel that ends with the sunset from the water. Up to six.</p>
+                        <a href="https://fareharbor.com/embeds/book/mermaidcharterskeywest/items/326749/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&full-items=yes&flow=no" target="_blank" class="tour-card-cta" data-tour-name="Snorkeling &amp; Sunset" data-tour-id="326749">Check Availability</a>
+                    </div>
+                </div>
+                <div class="tour-card">
+                    <div class="tour-card-image" style="background-color: var(--sand); background-image: url('https://cdn.filestackcontent.com/resize=w:1200,fit:max/auto_image/compress/w9eMb2ndR2CtDqBKbjP5')">
+                        <span class="tour-card-badge">🛥 Four Hours Private</span>
+                        <span class="tour-card-price">$699</span>
+                    </div>
+                    <div class="tour-card-content">
+                        <div class="tour-card-company">Pirate Adventure Charters</div>
+                        <h3>4 Hour Snorkeling</h3>
+                        <div class="tour-card-meta"><span>⏱ 4 hours</span><span>👥 Private, up to 6</span></div>
+                        <p class="tour-card-description">Pirate Adventure Charters' four-hour private snorkel trip, up to six. Six hours is $899.</p>
+                        <a href="https://fareharbor.com/embeds/book/pirateadventurecharters/items/315407/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&full-items=yes&flow=no" target="_blank" class="tour-card-cta" data-tour-name="4 Hour Snorkeling" data-tour-id="315407">Check Availability</a>
+                    </div>
+                </div>
+                <div class="tour-card">
+                    <div class="tour-card-image" style="background-color: var(--sand); background-image: url('https://cdn.filestackcontent.com/resize=w:1200,fit:max/auto_image/compress/DlvvzzYfQb2gG4hqxkyU')">
+                        <span class="tour-card-badge">🏝 Snorkel + Sandbar Private</span>
+                        <span class="tour-card-price">$699</span>
+                    </div>
+                    <div class="tour-card-content">
+                        <div class="tour-card-company">The Happy Captain</div>
+                        <h3>Half Day Snorkel &amp; Sandbar Charter</h3>
+                        <div class="tour-card-meta"><span>⏱ 4 hours</span><span>👥 Private, up to 6</span></div>
+                        <p class="tour-card-description">Half-day private charter splitting time between the reef and a sandbar. Up to six.</p>
+                        <a href="https://fareharbor.com/embeds/book/thehappycaptainfl/items/643119/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&full-items=yes&flow=no" target="_blank" class="tour-card-cta" data-tour-name="Half Day Snorkel &amp; Sandbar Charter" data-tour-id="643119">Check Availability</a>
+                    </div>
+                </div>
+                <div class="tour-card">
+                    <div class="tour-card-image" style="background-color: var(--sand); background-image: url('https://cdn.filestackcontent.com/resize=w:1200,fit:max/auto_image/compress/OR9OuzT8a6D7bz1D10uw')">
+                        <span class="tour-card-badge">🌿 Private Eco Cat</span>
+                        <span class="tour-card-price">$799</span>
+                    </div>
+                    <div class="tour-card-content">
+                        <div class="tour-card-company">Honest Eco</div>
+                        <h3>Private Charter Sandbar + Snorkel aboard COWFiSH</h3>
+                        <div class="tour-card-meta"><span>⏱ 4 hours</span><span>👥 Private, up to 6</span></div>
+                        <p class="tour-card-description">Honest Eco's Cowfish, private for six: sandbar and guided snorkel on a quiet electric catamaran.</p>
+                        <a href="https://fareharbor.com/embeds/book/honesteco-fl/items/479443/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&full-items=yes&flow=no" target="_blank" class="tour-card-cta" data-tour-name="Private Charter Sandbar + Snorkel aboard COWFiSH" data-tour-id="479443">Check Availability</a>
+                    </div>
+                </div>
+                <div class="tour-card">
+                    <div class="tour-card-image" style="background-color: var(--sand); background-image: url('https://cdn.filestackcontent.com/resize=w:1200,fit:max/auto_image/compress/3aXL1P79R9ugNBcuomcp')">
+                        <span class="tour-card-badge">🐬 Private Triple</span>
+                        <span class="tour-card-price">$800</span>
+                    </div>
+                    <div class="tour-card-content">
+                        <div class="tour-card-company">Mermaid Charters Key West</div>
+                        <h3>Combo: Snorkeling,  Boca Grand Sandbar &amp; Dolphin Watching</h3>
+                        <div class="tour-card-meta"><span>⏱ 4 hours</span><span>👥 Private, up to 6</span></div>
+                        <p class="tour-card-description">Mermaid's private combo: snorkeling, the Boca Grande sandbar and dolphin watching in one four-hour charter.</p>
+                        <a href="https://fareharbor.com/embeds/book/mermaidcharterskeywest/items/294807/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&full-items=yes&flow=no" target="_blank" class="tour-card-cta" data-tour-name="Combo: Snorkeling,  Boca Grand Sandbar &amp; Dolphin Watching" data-tour-id="294807">Check Availability</a>
+                    </div>
+                </div>
+                <div class="tour-card">
+                    <div class="tour-card-image" style="background-color: var(--sand); background-image: url('https://cdn.filestackcontent.com/resize=w:1200,fit:max/auto_image/compress/x4Ay0QaRsCHMibQVLhP4')">
+                        <span class="tour-card-badge">⛵ Private for 12</span>
+                        <span class="tour-card-price">$908.38</span>
+                    </div>
+                    <div class="tour-card-content">
+                        <div class="tour-card-company">Sunset Sail Key West</div>
+                        <h3>4hr Private Dolphin Watch / Snorkel Sail</h3>
+                        <div class="tour-card-meta"><span>⏱ 4 hours</span><span>👥 Private, up to 12</span></div>
+                        <p class="tour-card-description">Sunset Sail Key West's private dolphin-watch and snorkel sail for up to twelve. About $76 a head full.</p>
+                        <a href="https://fareharbor.com/embeds/book/sunsetsailkeywest/items/1395/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&full-items=yes&flow=no" target="_blank" class="tour-card-cta" data-tour-name="4hr Private Dolphin Watch / Snorkel Sail" data-tour-id="1395">Check Availability</a>
+                    </div>
+                </div>
+                <div class="tour-card">
+                    <div class="tour-card-image" style="background-color: var(--sand); background-image: url('https://cdn.filestackcontent.com/resize=w:1200,fit:max/auto_image/compress/alF7ONkqTJWFeY3QghOC')">
+                        <span class="tour-card-badge">⛵ Private for 22</span>
+                        <span class="tour-card-price">$2,250</span>
+                    </div>
+                    <div class="tour-card-content">
+                        <div class="tour-card-company">Danger Charters</div>
+                        <h3>Private Charter Sail, Snorkel &amp; Kayak</h3>
+                        <div class="tour-card-meta"><span>⏱ 4.5 hours</span><span>👥 Private, up to 22</span></div>
+                        <p class="tour-card-description">Danger Charters' private sail, snorkel and kayak day for up to 22 guests. About $102 a head full.</p>
+                        <a href="https://fareharbor.com/embeds/book/dangercharters/items/291446/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&full-items=yes&flow=no" target="_blank" class="tour-card-cta" data-tour-name="Private Charter Sail, Snorkel &amp; Kayak" data-tour-id="291446">Check Availability</a>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
     
-    <!-- CTA -->
-    <div class="cta-box">
-        <h3>Ready to Book?</h3>
-        <p>Browse our tours above and secure your adventure in Key West.</p>
-        <a href="#tours-grid">See Available Tours</a>
+    <div class="trust-bar">
+        <div class="trust-bar-inner">
+            <!-- First set (6 items) -->
+            <div class="trust-item">
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+                Secure Checkout
+            </div>
+            <div class="trust-item">
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                Verified Local Operators
+            </div>
+            <div class="trust-item">
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                Same-Day Booking
+            </div>
+            <div class="trust-item">
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z"/></svg>
+                No Hidden Fees
+            </div>
+            <div class="trust-item">
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg>
+                Thousands of Happy Guests
+            </div>
+            <div class="trust-item">
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                24/7 Support
+            </div>
+            <!-- Duplicate set for seamless loop -->
+            <div class="trust-item">
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+                Secure Checkout
+            </div>
+            <div class="trust-item">
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                Verified Local Operators
+            </div>
+            <div class="trust-item">
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                Same-Day Booking
+            </div>
+            <div class="trust-item">
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z"/></svg>
+                No Hidden Fees
+            </div>
+            <div class="trust-item">
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg>
+                Thousands of Happy Guests
+            </div>
+            <div class="trust-item">
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                24/7 Support
+            </div>
+        </div>
     </div>
     
-    <!-- FAQ -->
-    <section class="faq">
+    <div class="sponsor-slot" data-slot-id="landing-native" data-slot-type="native" data-slot-page="landing"></div>
+
+    <section class="faq" id="faq">
+        <video class="faq-video" id="faqVideo" autoplay muted loop playsinline>
+            <source src="wtpa_hero_drone.mp4" type="video/mp4">
+        </video>
+        <div class="faq-overlay"></div>
         <div class="faq-inner">
-            <h2>Frequently Asked Questions</h2>
+            <div class="section-label">FAQ</div>
+            <h2 class="section-title">Key West Snorkeling Questions</h2>
+            <div class="faq-list">
                 <div class="faq-item">
-                    <button class="faq-q" onclick="toggleFaq(event)">
-                        <span>Do I need to be a strong swimmer?</span>
-                        <span class="faq-toggle">+</span>
-                    </button>
-                    <div class="faq-a" style="display: none;">
-                        No. Most Key West snorkeling is in shallow, calm water. Guides help beginners feel comfortable. Life jackets available upon request.
-                    </div>
+                    <div class="faq-question">Where do Key West snorkeling tours go?</div>
+                    <p class="faq-answer">Most go to the reef line six to seven miles south of the island — Sand Key, Eastern Dry Rocks, Rock Key and Western Sambo, depending on wind and visibility that day. The captain picks the site the morning of. It is the only living coral barrier reef in the continental United States.</p>
                 </div>
-                                <div class="faq-item">
-                    <button class="faq-q" onclick="toggleFaq(event)">
-                        <span>What will I see?</span>
-                        <span class="faq-toggle">+</span>
-                    </button>
-                    <div class="faq-a" style="display: none;">
-                        Tropical fish, sea turtles, rays, starfish, and colorful coral. Occasionally dolphins and nurse sharks (harmless). Marine life varies by location and season.
-                    </div>
+                <div class="faq-item">
+                    <div class="faq-question">Is snorkeling in Key West good for beginners?</div>
+                    <p class="faq-answer">Yes. The reef sits in 5 to 25 feet of water, the shared boats supply mask, snorkel, fins and a flotation vest, and crew are in the water with you. Morning trips are calmer than afternoon ones; if anyone is nervous, book the morning.</p>
                 </div>
-                                <div class="faq-item">
-                    <button class="faq-q" onclick="toggleFaq(event)">
-                        <span>Can I bring my own gear?</span>
-                        <span class="faq-toggle">+</span>
-                    </button>
-                    <div class="faq-a" style="display: none;">
-                        Yes, most operators welcome personal gear. All-inclusive tours provide mask, fins, and snorkel. Wetsuits available for cold months.
-                    </div>
+                <div class="faq-item">
+                    <div class="faq-question">Shared boat or private charter?</div>
+                    <p class="faq-answer">Shared trips run $39 to $129 per person and are the right call for one to four people. A private boat starts at $447 for up to six — under $75 a head — and you skip the crowd, pick your pace, and can add a sandbar or dolphin stop. From five people the private boat is usually cheaper.</p>
                 </div>
-                                <div class="faq-item">
-                    <button class="faq-q" onclick="toggleFaq(event)">
-                        <span>How long is the snorkeling time?</span>
-                        <span class="faq-toggle">+</span>
-                    </button>
-                    <div class="faq-a" style="display: none;">
-                        Typical tours are 3-4 hours with 1-2 hours in the water. Some tours offer multiple snorkel sites with time to rest between.
-                    </div>
+                <div class="faq-item">
+                    <div class="faq-question">What is included in the price?</div>
+                    <p class="faq-answer">Gear (mask, snorkel, fins, vest) on every shared trip and most private ones; drinks after the snorkel on most shared boats; lunch on a few of the combos. Not included: the 15–20% crew tip, and reef-safe sunscreen — bring your own, and make sure it is reef-safe.</p>
                 </div>
-                        </div>
+                <div class="faq-item">
+                    <div class="faq-question">What is the best time of day and year to snorkel?</div>
+                    <p class="faq-answer">Mornings, for calmer water and better visibility. May through September has the warmest, clearest water; winter fronts stir it up and cancel some trips. Weather cancellations by the captain are refunded.</p>
+                </div>
+            </div>
+        </div>
     </section>
     
-    <!-- FOOTER -->
+    <!-- BRANDING -->
+    <div class="branding">
+        <img src="logo.png" alt="Key West Sandbar Tours" class="branding-logo" width="350" height="360">
+        <p>Your local guide to Key West snorkeling</p>
+    </div>
+    
+    <section class="final-cta">
+        <h2>Ready to Snorkel the Key West Reef?</h2>
+        <p>Live prices · Instant confirmation on the operator's calendar · Weather cancellations refunded</p>
+        <a href="#top-picks" class="final-cta-btn">Back to Top Picks <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" width="20" height="20"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg></a>
+    </section>
+    
     <footer class="site-footer">
     <div class="site-footer-brand">
       <a href="/"><picture><source type="image/webp" srcset="/images/header-logo-480.webp 480w, /images/header-logo-800.webp 800w" sizes="373px"><img src="/images/header-logo-800.png" alt="Key West Sandbar Tours" class="site-footer-logo" loading="lazy" decoding="async" width="800" height="343"></picture></a>
@@ -643,19 +2038,42 @@ Bring your own food and ...</p>
   </footer>
     
     <script>
-        function toggleFaq(event) {
-            const item = event.target.closest('.faq-item');
-            const answer = item.querySelector('.faq-a');
-            const toggle = item.querySelector('.faq-toggle');
-            
-            answer.style.display = answer.style.display === 'none' ? 'block' : 'none';
-            toggle.textContent = toggle.textContent === '+' ? '−' : '+';
-        }
-
-        document.querySelector('.nav-toggle')?.addEventListener('click', () => {
-            document.querySelector('.nav-mobile')?.classList.toggle('active');
+        // Sticky CTA — visible from the top, hide once into the tours grid.
+        // The markup ships with .visible because this listener only fires on
+        // scroll: gating on scrollY > 400 left the bar translated fully off
+        // screen for the whole first screen, 0px visible at 664 and 844 alike.
+        const stickyCta = document.getElementById('stickyCta');
+        const toursSection = document.getElementById('tours');
+        window.addEventListener('scroll', () => {
+            const scrollY = window.scrollY;
+            const toursTop = toursSection.offsetTop;
+            if (scrollY >= 0 && scrollY < toursTop - 200) {
+                stickyCta.classList.add('visible');
+            } else {
+                stickyCta.classList.remove('visible');
+            }
         });
+        
+        // FAQ Video Slowdown (50% speed)
+        const faqVideo = document.getElementById('faqVideo');
+        if (faqVideo) faqVideo.playbackRate = 0.5;
+        
+        // Grid order is deliberate. No shuffle.
     </script>
   <script src="/chrome.js" defer></script>
+<script>
+document.addEventListener("DOMContentLoaded",function(){
+  document.querySelectorAll(".check-availability").forEach(function(el){
+    el.addEventListener("click",function(){
+      var name=this.getAttribute("data-tour-name")||"unknown";
+      var id=this.getAttribute("data-tour-id")||"unknown";
+      var page=window.location.pathname.replace(/\//g,"").replace(".html","");
+      if(typeof gtag==="function"){
+        gtag("event","booking_click",{tour_name:name,tour_id:id,page_type:page});
+      }
+    });
+  });
+});
+</script>
 </body>
 </html>
