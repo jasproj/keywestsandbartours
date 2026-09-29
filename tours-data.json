@@ -17661,7 +17661,10 @@
         "durationMinutes": 360
       },
       "nextAvailableDate": "2026-08-27",
-      "nullConsecutiveSweeps": 0
+      "nullConsecutiveSweeps": 0,
+      "bookingDead": true,
+      "bookingDeadCheckedAt": "2026-09-29",
+      "bookingDeadReason": "no price on any open date"
     },
     {
       "id": "217057",
@@ -81473,7 +81476,7 @@
       "location": "United States/Florida/Key West",
       "island": "united states/florida/key west",
       "price": 99.95,
-      "priceLabel": "from $99.95 (Adult); observed to $119.95",
+      "priceLabel": "from $99.95 (Adult); observed to $129.95",
       "priceConfidence": "medium",
       "qualityScore": 75,
       "currency": "USD",
@@ -81499,7 +81502,7 @@
       "statusReason": null,
       "statusFirstSeen": null,
       "statusConsecutiveRuns": null,
-      "lastUpdated": "2026-08-22T00:00:00Z",
+      "lastUpdated": "2026-09-29T00:00:00Z",
       "_unknownFields": {
         "priceSource": "fh-price-preview-v2-2026-08-22",
         "priceCustomerType": "Adult",
@@ -81785,7 +81788,7 @@
       "category": "",
       "location": "United States/Florida/Key West",
       "island": "united states/florida/key west",
-      "price": 695.0,
+      "price": 749.0,
       "priceLabel": "Private charter",
       "priceConfidence": "high",
       "qualityScore": 86,
@@ -81812,7 +81815,7 @@
       "statusReason": null,
       "statusFirstSeen": null,
       "statusConsecutiveRuns": null,
-      "lastUpdated": "2026-08-22T00:00:00Z",
+      "lastUpdated": "2026-09-29T00:00:00Z",
       "_unknownFields": {
         "priceSource": "fh-price-preview-v2-2026-08-22",
         "priceCustomerType": "Private charter",
@@ -83501,7 +83504,10 @@
         ]
       },
       "nextAvailableDate": "2026-08-27",
-      "nullConsecutiveSweeps": 0
+      "nullConsecutiveSweeps": 0,
+      "bookingDead": true,
+      "bookingDeadCheckedAt": "2026-09-29",
+      "bookingDeadReason": "no bookable dates Oct-Dec 2026, no price"
     },
     {
       "id": "733617",
