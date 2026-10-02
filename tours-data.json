@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0.8",
-  "lastNormalized": "2026-05-20T21:14:02Z",
+  "lastNormalized": "2026-10-02T22:32:43Z",
   "tours": [
     {
       "id": "622770",
@@ -53678,7 +53678,7 @@
       "category": "",
       "location": "United States/Florida/Marathon",
       "island": "united states/florida/marathon",
-      "price": 130.0,
+      "price": 109.99,
       "priceLabel": "Adult",
       "priceConfidence": "medium",
       "qualityScore": 0,
@@ -53715,7 +53715,10 @@
       },
       "needsEnrichment": true,
       "nextAvailableDate": "2026-08-26",
-      "nullConsecutiveSweeps": 0
+      "nullConsecutiveSweeps": 0,
+      "priceSource": "s62-kwst-price-refresh",
+      "priceEnrichmentAt": "2026-10-02T22:32:43Z",
+      "priceBasis": "s62-kwst-price-refresh: Adult $130.00 -> $109.99 (stale); re-measured on FareHarbor asn=fhdn across 4 dates, identical each time"
     },
     {
       "id": "653282",
@@ -61306,7 +61309,7 @@
       "category": "",
       "location": "United States/Florida/Key West",
       "island": "united states/florida/key west",
-      "price": 134.95,
+      "price": 129.95,
       "priceLabel": "Adult",
       "priceConfidence": "medium",
       "qualityScore": 0,
@@ -61346,7 +61349,10 @@
       },
       "needsEnrichment": true,
       "nextAvailableDate": "2026-08-26",
-      "nullConsecutiveSweeps": 0
+      "nullConsecutiveSweeps": 0,
+      "priceSource": "s62-kwst-price-refresh",
+      "priceEnrichmentAt": "2026-10-02T22:32:43Z",
+      "priceBasis": "s62-kwst-price-refresh: Adult $134.95 -> $129.95 (stale); re-measured on FareHarbor asn=fhdn across 4 dates, identical each time"
     },
     {
       "id": "459008",
@@ -77039,7 +77045,7 @@
       "category": "",
       "location": "United States/Florida/Key West",
       "island": "united states/florida/key west",
-      "price": 181.0,
+      "price": 143,
       "priceLabel": "6.5HR Full Day Guest",
       "priceConfidence": "high",
       "qualityScore": 79,
@@ -77081,7 +77087,10 @@
         ]
       },
       "nextAvailableDate": "2026-08-27",
-      "nullConsecutiveSweeps": 0
+      "nullConsecutiveSweeps": 0,
+      "priceSource": "s62-kwst-price-refresh",
+      "priceEnrichmentAt": "2026-10-02T22:32:43Z",
+      "priceBasis": "s62-kwst-price-refresh: 6.5HR Full Day Guest $181.00 -> $143.00 (stale); re-measured on FareHarbor asn=fhdn across 4 dates, identical each time"
     },
     {
       "id": "2568",
@@ -122234,7 +122243,7 @@
       "category": "",
       "location": "United States/Florida/Key West",
       "island": "united states/florida/key west",
-      "price": 793.94,
+      "price": 687.94,
       "priceLabel": "Private Charter - 4 Hours",
       "priceConfidence": "high",
       "qualityScore": 34,
@@ -122312,7 +122321,10 @@
           "price": 1376.94,
           "minPartySize": 1
         }
-      ]
+      ],
+      "priceSource": "s62-kwst-price-refresh",
+      "priceEnrichmentAt": "2026-10-02T22:32:43Z",
+      "priceBasis": "s62-kwst-price-refresh: Private Charter - 4 Hours $793.94 -> $687.94 (stale); re-measured on FareHarbor asn=fhdn across 4 dates, identical each time"
     },
     {
       "id": "435906",
