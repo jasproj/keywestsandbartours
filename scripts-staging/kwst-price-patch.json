@@ -1,0 +1,64 @@
+{
+ "generated": "2026-10-02",
+ "site": "kwst",
+ "source": "fareharbor price-preview asn=fhdn, 4 dates",
+ "rule": "price := exact priceLabel tier price",
+ "auto": [
+  {
+   "co": "seahorsewateradventures",
+   "pk": "653254",
+   "name": "Sandbar / Snorkel Combo",
+   "oldPrice": 130.0,
+   "newPrice": 109.99,
+   "oldLabel": "Adult",
+   "newLabel": "Adult",
+   "cls": "STALE",
+   "note": "exact-label price identical on all 4 dates tested"
+  },
+  {
+   "co": "sunsetwatersportskeywest",
+   "pk": "609827",
+   "name": "Key West Kayak Tour",
+   "oldPrice": 134.95,
+   "newPrice": 129.95,
+   "oldLabel": "Adult",
+   "newLabel": "Adult",
+   "cls": "STALE",
+   "note": "exact-label price identical on all 4 dates tested"
+  },
+  {
+   "co": "furycat",
+   "pk": "2567",
+   "name": "Ultimate Adventure H2.O",
+   "oldPrice": 181.0,
+   "newPrice": 143.0,
+   "oldLabel": "6.5HR Full Day Guest",
+   "newLabel": "6.5HR Full Day Guest",
+   "cls": "STALE",
+   "note": "exact-label price identical on all 4 dates tested"
+  },
+  {
+   "co": "sunsurfsandcharters",
+   "pk": "464528",
+   "name": "4 or 6 Hour Private Charter or Rental",
+   "oldPrice": 793.94,
+   "newPrice": 687.94,
+   "oldLabel": "Private Charter - 4 Hours",
+   "newLabel": "Private Charter - 4 Hours",
+   "cls": "STALE",
+   "note": "exact-label price identical on all 4 dates tested"
+  }
+ ],
+ "flag": [
+  {
+   "co": "sunsetwatersportskeywest",
+   "pk": "263702",
+   "name": "Sunset Dinner Cruise",
+   "card": 79.95,
+   "label": "",
+   "tiers": [],
+   "reason": "priceLabel is empty and FareHarbor returned no customer types for this item, so the price cannot be checked by label"
+  }
+ ],
+ "delist": []
+}
