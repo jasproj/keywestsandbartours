@@ -4,7 +4,12 @@
 // Fallback for tour records with no image. Applied at render time, not just via
 // onerror: `src="undefined"` costs a real 404 before onerror can rescue it.
 // Local + ORIGINAL Capt. Dane photography, recorded in ATTRIBUTION.md.
-const FALLBACK_IMAGE = '/images/keys/dane_drone.webp';
+const FALLBACK_IMAGE = '/images/keys/dane_drone-800.webp';
+// s65: ask Filestack for an 800px webp instead of the original.
+function cardImage(url) {
+    const m = /^https:\/\/cdn\.filestackcontent\.com\/([A-Za-z0-9]{15,25})(?:\/convert\?.*)?$/.exec(url || '');
+    return m ? `https://cdn.filestackcontent.com/resize=w:800/output=format:webp,quality:75/${m[1]}` : url;
+}
 
 let allTours = [];
 
@@ -273,7 +278,7 @@ function createTourCard(tour) {
         <article class="tour-card" data-id="${escapeHtml(tour.id)}">
             <script type="application/ld+json">${schemaJson}</script>
             <div class="tour-image">
-                <img src="${tour.image || FALLBACK_IMAGE}" alt="${escapeHtml(tour.name)}" loading="lazy" width="400" height="300" onerror="this.src='${FALLBACK_IMAGE}'" style="width: 100%; height: auto; object-fit: cover;">
+                <img src="${cardImage(tour.image) || FALLBACK_IMAGE}" alt="${escapeHtml(tour.name)}" loading="lazy" width="400" height="300" onerror="this.src='${FALLBACK_IMAGE}'" style="width: 100%; height: auto; object-fit: cover;">
                 ${priceHtml}
                 <div class="tour-badges">${badges.join('')}</div>
                 <div class="tour-location">📍 ${escapeHtml(areaName)}</div>
@@ -659,7 +664,11 @@ async function initAreaPage(areaSlug) {
 }
 
 // Start
-document.addEventListener('DOMContentLoaded', init);
+// s65: tours-data.json is 5.7 MB and the grid is prerendered; run init after first paint.
+document.addEventListener('DOMContentLoaded', () => {
+    const start = () => setTimeout(init, 300);
+    if (document.readyState === 'complete') start(); else window.addEventListener('load', start, { once: true });
+});
 
 // ===== TOURISTTIP SCHEMA INJECTION =====
 

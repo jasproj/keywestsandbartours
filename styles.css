@@ -201,6 +201,7 @@ body {
     position: absolute;
     inset: 0;
     z-index: 0;
+    background: #0b3a4a;
 }
 
 .hero-slide {
@@ -244,6 +245,13 @@ body {
     25% { opacity: 1; transform: scale(1); }
     29% { opacity: 0; transform: scale(1); }
     100% { opacity: 0; transform: scale(1.05); }
+}
+
+/* s65: mobile gets one static 800px hero, no slideshow */
+@media (max-width: 768px) {
+    .hero-slide { animation: none; transform: none; }
+    .hero-slide:nth-child(1) { background-image: url('images/keys/tiki-dock-sunrise-800.webp'); opacity: 1; }
+    .hero-slide:nth-child(2), .hero-slide:nth-child(3), .hero-slide:nth-child(4) { display: none; }
 }
 
 .hero-overlay {
