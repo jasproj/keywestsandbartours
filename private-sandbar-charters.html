@@ -583,6 +583,50 @@
   ]
 }
 </script>
+
+<style id="hero-v2">
+/* ---- hero v2 (s66): mobile-first video hero ---- */
+body{padding-top:0 !important}
+.hero-video{position:relative;height:72vh;max-height:760px;min-height:520px;overflow:hidden;background:#0a1928;padding:0}
+.hero-video__media{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 40%;z-index:1}
+.hero-video__overlay{position:absolute;inset:0;z-index:2;background:linear-gradient(180deg,rgba(10,25,40,.25) 0%,rgba(10,25,40,.55) 45%,rgba(10,25,40,.92) 100%)}
+.hero-video__content{position:relative;z-index:3;height:100%;display:flex;flex-direction:column;justify-content:flex-end;align-items:flex-start;text-align:left;padding:24px 20px 28px;color:#fff;max-width:640px}
+.hero-v2__eyebrow{display:inline-block;font:700 11px/1 'DM Sans',sans-serif;letter-spacing:.14em;text-transform:uppercase;color:#FFB08A;margin:0 0 12px}
+.hero-video__title{font-family:'Playfair Display',serif;font-size:2rem;line-height:1.12;font-weight:700;margin:0 0 10px;text-shadow:0 2px 14px rgba(0,0,0,.35);max-width:22ch}
+.hero-video__subtitle{font-size:1rem;line-height:1.45;margin:0 0 18px;opacity:.95;max-width:46ch}
+.hero-v2__cta{display:flex;align-items:center;justify-content:center;width:100%;min-height:52px;padding:14px 20px;border-radius:12px;background:var(--accent,#E87B4A);color:var(--accent-text,#fff);font:700 1.05rem/1 'DM Sans',sans-serif;text-decoration:none;box-shadow:0 10px 26px rgba(0,0,0,.28)}
+.hero-v2__cta:hover{filter:brightness(1.05)}
+.hero-v2__call{margin:12px 0 0;font-size:.92rem;opacity:.92}
+.hero-v2__call a{color:#fff;font-weight:700;text-decoration:underline;text-underline-offset:3px}
+.hero-v2__chips{display:flex;gap:8px;flex-wrap:nowrap;margin:16px 0 0;padding:0;list-style:none;max-width:100%;overflow:hidden}
+.hero-v2__chips li{flex:0 1 auto;white-space:nowrap;font:600 12px/1 'DM Sans',sans-serif;padding:8px 11px;border-radius:999px;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.28);backdrop-filter:blur(4px)}
+/* retire v1 pieces if any survive */
+.hero-video__badge,.hero-phone-cta,.hero-video__stats,.hero-video__cta,.hero-video__cta-group,.hero-v1-note{display:none !important}
+/* picker heroes keep their centered content but get the same frame */
+.hero-video--picker{height:auto;min-height:520px;max-height:none}
+.hero-video--picker .hero-video__content{justify-content:center;align-items:center;text-align:center;max-width:none;padding:32px 20px 36px}
+.hero-video--picker .hero-video__title{font-size:1.65rem}
+.hero-video--picker .hero-video__subtitle{font-size:.95rem;margin-bottom:22px}
+@media (min-width:769px){.hero-video--picker .hero-video__title{font-size:2.6rem}.hero-video--picker .hero-video__subtitle{font-size:1.1rem}}
+.hero-video--picker .hero-video__title{max-width:none}
+.hero-video--picker .hero-video__subtitle{max-width:60ch}
+/* sticky bar: one line, one CTA, hidden until the hero scrolls out */
+.sticky-cta{flex-direction:row !important;gap:12px;text-align:left;padding:10px 16px calc(10px + env(safe-area-inset-bottom));transform:translateY(100%)}
+.sticky-cta.visible{transform:translateY(0)}
+.sticky-cta-text{font-size:.95rem}
+.sticky-cta-btn{padding:10px 20px;min-height:44px;white-space:nowrap}
+@media (min-width:769px){
+  .hero-video{height:70vh;max-height:720px;min-height:560px}
+  .hero-video__content{padding:40px 48px 56px;max-width:720px}
+  .hero-video__title{font-size:3.2rem}
+  .hero-video__subtitle{font-size:1.15rem}
+  .hero-v2__cta{width:auto;min-width:260px}
+  .hero-v2__chips li{font-size:13px;padding:9px 14px}
+}
+@media (min-width:1024px){.sticky-cta{display:none !important}}
+@media (prefers-reduced-motion:reduce){video.hero-video__media{display:none}.hero-video__poster{display:block !important}}
+.hero-video__poster{display:none;position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:1}
+</style>
 </head>
 <body>
     <header class="site-header">
@@ -611,13 +655,13 @@
     </nav>
   </header>
 
-    <div class="sticky-cta visible" id="stickyCta">
+    <div class="sticky-cta" id="stickyCta">
         <div class="sticky-cta-text">Sandbar seats from <span>$125/person</span></div>
         <a href="#shared" class="sticky-cta-btn">See Trips</a>
     </div>
 
     <!-- HERO: the decision -->
-    <section class="hero-video">
+    <section class="hero-video hero-video--picker">
         <video class="hero-video__media" autoplay muted loop playsinline poster="og-private-sandbar-charters.png">
             <source src="private-boat-charters-hero-slow.mp4" type="video/mp4">
         </video>
@@ -981,5 +1025,18 @@ document.addEventListener("DOMContentLoaded",function(){
   });
 });
 </script>
+
+    <script>
+        // Hero v2: reduced-motion poster fallback (sticky bar keeps this page's own logic).
+        (function(){
+          var hero = document.querySelector('.hero-video'); if (!hero) return;
+          // Reduced motion: show the poster, don't autoplay the video.
+          var v = hero.querySelector('video.hero-video__media');
+          if (v && window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+            v.removeAttribute('autoplay'); try { v.pause(); } catch(x) {}
+            if (v.poster) { var img = document.createElement('img'); img.className = 'hero-video__poster'; img.src = v.poster; img.alt = ''; v.insertAdjacentElement('afterend', img); }
+          }
+        })();
+    </script>
 </body>
 </html>
