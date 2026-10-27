@@ -311,6 +311,24 @@
   ]
 }
 </script>
+<style id="hero-v2">
+/* s66 mobile audit: image hero, one CTA, chips (same pattern as #447) */
+body{padding-top:0 !important}
+.hero.hero-v2{position:relative;height:62vh;max-height:640px;min-height:440px;overflow:hidden;background:#0a1928;padding:0;text-align:left}
+.hero-v2__bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 45%;z-index:1}
+.hero-v2__overlay{position:absolute;inset:0;z-index:2;background:linear-gradient(180deg,rgba(10,25,40,.22) 0%,rgba(10,25,40,.52) 45%,rgba(10,25,40,.92) 100%)}
+.hero-v2__content{position:relative;z-index:3;height:100%;display:flex;flex-direction:column;justify-content:flex-end;align-items:flex-start;padding:24px 20px 28px;color:#fff;max-width:640px}
+.hero.hero-v2 p.hero-v2__eyebrow{display:inline-block;font:700 11px/1 'DM Sans',sans-serif;letter-spacing:.14em;text-transform:uppercase;color:#FFB08A;margin:0 0 12px}
+.hero.hero-v2 h1{font-family:'Playfair Display',serif;font-size:2rem;line-height:1.12;font-weight:700;margin:0 0 10px;text-shadow:0 2px 14px rgba(0,0,0,.35);max-width:16ch;color:#fff}
+.hero.hero-v2 p.hero-v2__sub{display:block;font-size:1rem;line-height:1.45;margin:0 0 18px;opacity:.95;max-width:46ch}
+.hero.hero-v2 a.hero-v2__cta{display:flex;align-items:center;justify-content:center;width:100%;min-height:52px;padding:14px 20px;border-radius:12px;background:var(--accent,#E87B4A);color:#fff;font:700 1.05rem/1 'DM Sans',sans-serif;text-decoration:none;box-shadow:0 10px 26px rgba(0,0,0,.28)}
+.hero.hero-v2 p.hero-v2__call{margin:12px 0 0;font-size:.92rem;opacity:.92;display:block}
+.hero.hero-v2 p.hero-v2__call a{color:#fff;font-weight:700;text-decoration:underline;text-underline-offset:3px;display:inline;background:none;padding:0;border-radius:0}
+.hero-v2__chips{display:flex;gap:8px;flex-wrap:nowrap;margin:16px 0 0;padding:0;list-style:none;max-width:100%;overflow:hidden}
+.hero-v2__chips li{flex:0 1 auto;white-space:nowrap;font:600 12px/1 'DM Sans',sans-serif;padding:8px 11px;border-radius:999px;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.28);backdrop-filter:blur(4px)}
+.most-booked-row{grid-column:1/-1}
+@media (min-width:769px){.hero.hero-v2{height:66vh;max-height:700px;min-height:540px}.hero-v2__content{padding:40px 48px 56px;max-width:760px}.hero.hero-v2 h1{font-size:3.2rem}.hero.hero-v2 p.hero-v2__sub{font-size:1.15rem}.hero.hero-v2 a.hero-v2__cta{width:auto;min-width:260px}.hero-v2__chips li{font-size:13px;padding:9px 14px}}
+</style>
 </head>
 <body>
     <!-- HEADER -->
@@ -347,24 +365,24 @@
     </nav>
 
     <!-- HERO -->
-    <section class="hero">
-        <h1>Private Boat Charters Key West</h1>
-        <p>Private boat charters in Key West. Rent a boat for your group. Custom itineraries, fishing, snorkeling, celebrations. Planning a full-day or multi-stop trip? See the <a href="/private-boat-charters.html" style="color:inherit;text-decoration:underline">custom charter options</a>.</p>
-        <a href="#tours-grid">Browse Tours</a>
+    <section class="hero hero-v2" id="top-hero">
+        <img class="hero-v2__bg" src="https://cdn.filestackcontent.com/resize=w:1400,fit:max/auto_image/compress/Of6SGtmZTSOg2XiUDrVg" alt="" width="1400" height="933" loading="eager" fetchpriority="high" decoding="async">
+        <div class="hero-v2__overlay"></div>
+        <div class="hero-v2__content">
+            <p class="hero-v2__eyebrow">Key West · Whole boat</p>
+            <h1>Private Boat Charters Key West</h1>
+            <p class="hero-v2__sub">Your own boat, captain and route — sandbar, snorkel, fish or sunset.</p>
+            <a class="hero-v2__cta" href="#tours-grid">See tours &darr;</a>
+            <p class="hero-v2__call">Questions? Call <a href="tel:4074766190">(407) 476-6190</a></p>
+            <ul class="hero-v2__chips"><li>From $500</li><li>Whole boat</li><li>Key West</li></ul>
+        </div>
     </section>
     
     <!-- INTRO -->
     <section class="intro">
 
-<!-- s57-internal-links -->
-<aside style="border:1px solid #dbe1e8;border-left:4px solid #E87B4A;border-radius:8px;padding:16px 18px;margin:28px 0;background:#f7fafc">
-<p style="margin:0 0 10px;font-weight:600;font-size:1rem">Most-booked trips right now</p>
-<ul style="margin:0;padding-left:20px;line-height:1.7">
-<li style="margin:0 0 6px"><a href="/private-sandbar-charters.html" style="color:#E87B4A">Which Key West Sandbar Trip Is Right for You</a></li>
-<li style="margin:0 0 6px"><a href="/stock-island.html" style="color:#E87B4A">Stock Island Tours</a></li>
-</ul>
-</aside>
-        <h2>Private Boat Charters Key West</h2>
+
+        <h2>About Private Boat Charters Key West</h2>
         <p>Create your perfect day on the water with a private boat charter. Whether you're planning a family outing, corporate event, wedding celebration, or adventure trip, a private charter gives you complete control over your itinerary and experience.
 
 Charter boats range from 20-foot fishing vessels to 50-foot luxury catamarans. With captain and crew included, you can focus on relaxing and enjoying. Popular activities include snorkeling, fishing, exploring mangrove channels, swimming at sandbars, diving, and simply cruising. Many charters include food and beverage service.
@@ -411,6 +429,14 @@ Full-day and multi-day charters are available. Prices vary based on boat size, c
                         <a href="https://fareharbor.com/embeds/book/casualmondaycharters/items/689389/?asn=fhdn&asn-ref=walktheplankadventures&ref=walktheplankadventures&bookable-only=yes&full-items=yes&marketplace=yes&flow=no" target="_blank" class="tour-card-cta" data-tour-name="Full Day Sandbar Charter - Still Dreamin&#39;" data-tour-id="689389">Check Availability</a>
                     </div>
                 </div>
+                <div class="most-booked-row"><!-- s57-internal-links -->
+<aside style="border:1px solid #dbe1e8;border-left:4px solid #E87B4A;border-radius:8px;padding:16px 18px;margin:8px 0 0;background:#f7fafc">
+<p style="margin:0 0 10px;font-weight:600;font-size:1rem">Most-booked trips right now</p>
+<ul style="margin:0;padding-left:20px;line-height:1.7">
+<li style="margin:0 0 6px"><a href="/private-sandbar-charters.html" style="color:#E87B4A">Which Key West Sandbar Trip Is Right for You</a></li>
+<li style="margin:0 0 6px"><a href="/stock-island.html" style="color:#E87B4A">Stock Island Tours</a></li>
+</ul>
+</aside></div>
                 <!-- TOUR 8 -->
                 <div class="tour-card">
                     <div class="tour-card-image" style="background-color: var(--sand); background-image: url('https://cdn.filestackcontent.com/resize=w:1200,fit:max/auto_image/compress/NLfJzRCHTc241whgMt1p')">

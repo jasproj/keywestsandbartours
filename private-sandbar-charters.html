@@ -1000,10 +1000,11 @@ body{padding-top:0 !important}
         // whole first screen, 4px tall in a 664 and an 844 viewport alike.
         const stickyCta = document.getElementById('stickyCta');
         const sharedSection = document.getElementById('shared');
+        const heroEl = document.querySelector('.hero-video, .hero'); const heroBottom = () => heroEl ? heroEl.offsetTop + heroEl.offsetHeight - 40 : 350;
         window.addEventListener('scroll', () => {
             const scrollY = window.scrollY;
             const sharedTop = sharedSection ? sharedSection.offsetTop : Infinity;
-            if (scrollY >= 0 && scrollY < sharedTop - 200) {
+            if (scrollY > heroBottom() && scrollY < sharedTop - 200) {
                 stickyCta.classList.add('visible');
             } else {
                 stickyCta.classList.remove('visible');

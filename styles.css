@@ -1843,9 +1843,9 @@ main.blog-content p a, div.blog-content p a {
     padding: 32px 20px 64px;
     color: #333;
 }
-.page-content.no-banner { padding-top: 92px; }
+.page-content.no-banner { padding-top: 36px; }
 @media (min-width: 768px) {
-    .page-content.no-banner { padding-top: 110px; }
+    .page-content.no-banner { padding-top: 48px; }
 }
 .page-content h1 {
     color: #1B3A57;
