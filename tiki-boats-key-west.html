@@ -879,10 +879,11 @@ body{padding-top:0 !important}
         // Sticky bottom CTA — show after some scroll, hide once into the tiers
         const stickyCta = document.getElementById('stickyCta');
         const firstTier = document.getElementById('per-person');
+        const heroEl = document.querySelector('.hero-video, .hero'); const heroBottom = () => heroEl ? heroEl.offsetTop + heroEl.offsetHeight - 40 : 350;
         window.addEventListener('scroll', () => {
             const y = window.scrollY;
             const top = firstTier ? firstTier.offsetTop : Infinity;
-            if (y > 350 && y < top - 200) stickyCta.classList.add('visible');
+            if (y > heroBottom() && y < top - 200) stickyCta.classList.add('visible');
             else stickyCta.classList.remove('visible');
         });
     </script>
