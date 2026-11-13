@@ -100795,9 +100795,9 @@
       "timeOfDay": "",
       "capacity": null,
       "enrichmentSource": "s61-marketplace-stock",
-      "status": "active",
-      "statusReason": null,
-      "statusFirstSeen": "2026-09-22",
+      "status": "inactive",
+      "statusReason": "no-availability-90d",
+      "statusFirstSeen": "2026-11-11",
       "statusConsecutiveRuns": 1,
       "lastUpdated": "2026-09-22",
       "_unknownFields": {
